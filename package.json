@@ -1,0 +1,24 @@
+{
+  "name": "mobachillerato",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "geopattern": "^1.2.3",
+    "localforage": "^1.10.0",
+    "mathjax-vue3": "^0.0.1",
+    "vue": "^3.2.16"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "pug": "^3.0.2",
+    "sass": "^1.43.4",
+    "vite": "^2.6.4",
+    "vite-plugin-fonts": "^0.2.2",
+    "vite-plugin-live-reload": "^2.1.0"
+  }
+}

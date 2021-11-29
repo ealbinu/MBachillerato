@@ -1,0 +1,37 @@
+.text-center
+    text-align: center
+.text-left
+    text-align: left
+.text-right
+    text-align: right
+
+//MARGIN
+.ma-auto
+    margin: auto
+.ml-auto
+    margin: auto
+.mr-auto
+    margin: auto
+.mt-auto
+    margin: auto
+.mb-auto
+    margin: auto
+@for $i from 0 through 10
+    $multi: $i*10
+    .ma-#{$i}
+        margin: #{$multi}px
+    .my-#{$i}
+        margin-top: #{$multi}px
+        margin-bottom: #{$multi}px
+    .mt-#{$i}
+        margin-top: #{$multi}px
+    .mb-#{$i}
+        margin-bottom: #{$multi}px
+    .mx-#{$i}
+        margin-left: #{$multi}px
+        margin-right: #{$multi}px
+    .ml-#{$i}
+        margin-left: #{$multi}px
+    .mr-#{$i}
+        margin-right: #{$multi}px
+    

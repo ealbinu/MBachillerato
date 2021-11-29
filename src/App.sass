@@ -1,0 +1,149 @@
+// ----------- COLORS
+$clear: #fafafa
+$light: #cad6d9
+$dark: #464F60
+$main: #586A8D
+$high: #4FBF9C
+// ----------- MIXINS
+@mixin font
+    font-family: 'Fira Sans', sans-serif
+@mixin floatcard
+    border-radius: 14px
+    box-shadow: 0 8px 12px rgba(0,0,0,0.08)
+    box-sizing: border-box
+
+@mixin floatcardsmall
+    @include floatcard
+    box-shadow: 0 6px 8px rgba(0,0,0,0.04)
+    border-radius: 7px
+@mixin centerize
+    display: flex
+    justify-content: center
+    align-items: center
+// ------------ STYLES
+*
+    padding: 0
+    margin: 0
+html
+    height: 100%
+body
+    width: 100%
+    height: 100%
+    background: linear-gradient(lighten($clear,10%),$light)
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    @include font
+    display: flex
+    justify-content: center
+    align-items: center
+
+#app
+    background: $clear
+    width: 98%
+    height: 98%
+    @include floatcard
+    display: flex
+    background-size: 800%
+    position: relative
+    padding: 2%
+
+
+.dialog
+    position: absolute
+    left: 5%
+    right: 5%
+    top: 5%
+    bottom: 5%
+    width: 90%
+    height:90%
+    @include floatcard
+    background: #fff
+    @include centerize
+
+button
+    border: none
+    background: transparent
+    color: $main
+    font-weight: bold
+    padding: 5px 10px
+    cursor: pointer
+    border-radius: 3px
+    &:hover
+        background:$clear
+    &:active
+        color: $clear
+        background: $main
+    &.important
+        font-size: 1.2rem
+        color: $clear
+        background: $main
+        &:active
+            color: $main
+            background: $clear
+    &:disabled
+        opacity: 0.1
+        transform: scale(0.6)
+        transition: all 0.5s
+
+//-------- Transitions
+.zoom-enter-active
+    animation: zoomAnimation .4s
+.zoom-leave-active
+    animation: zoomAnimation .4s reverse
+
+@keyframes zoomAnimation
+    0%
+        transform: scale(0)
+    50%
+        transform: scale(1.1)
+    100%
+        transform: scale(1)
+
+
+
+.slide-enter-active
+    animation: slideAnimationEnter .4s
+.slide-leave-active
+    animation: slideAnimationExit .2s
+
+@keyframes slideAnimationExit
+    0%
+        transform: translateY(0)
+        opacity:1
+    100%
+        transform: translateY(-100px)
+        opacity:0
+@keyframes slideAnimationEnter
+    0%
+        opacity: 0
+        position: absolute
+    50%
+        position: static
+        transform: translateY(100px)
+        opacity: 0
+    100%
+        transform: translateY(0)
+        opacity:1
+        
+
+
+
+
+.icon
+    display: inline-block
+    width: 20px
+    height: 20px
+    vertical-align: middle
+    background-size: contain
+    &.ico-pantallas
+        background-image: url(icons/ico-pantallas.svg)
+        &.active
+            background-image: url(icons/ico-pantallas-active.svg)
+    &.ico-progreso
+        background-image: url(icons/ico-progreso.svg)
+    &.ico-puntaje
+        background-image: url(icons/ico-puntaje.svg)
+    &.ico-right
+        background-image: url(icons/ico-right.svg)
+    &.ico-left
+        background-image: url(icons/ico-left.svg)
