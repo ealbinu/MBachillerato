@@ -12,31 +12,30 @@ export default {
   setup () {
     //###########################
 
-    const main = ref({
-      state: '@activity'
-    })
-    const changestate = ((newstate) => {
-      main.value.state = newstate
-    })
-    
-    const activityFile = inject('activityFile')
-
-    
     const statusFile = ref(
       {
+        state: '@intro',
         screen: 0
       }
     )
 
     provide('statusFile', ref(statusFile))
 
+    const changestate = ((newstate) => {
+      statusFile.value.state = newstate
+    })
+    
+    const activityFile = inject('activityFile')
+
+    
+    
+
 
     ////////////////////////////
     return {
-      main,
       changestate,
       activityFile,
-      status
+      statusFile
     }
   }
 }
@@ -44,12 +43,12 @@ export default {
 
 <template lang="pug">
 template(v-if="activityFile")
-  template(v-if="main.state == '@intro'")
+  template(v-if="statusFile.state == '@intro'")
     Intro(@start="changestate('@activity')")
-  template(v-else-if="main.state == '@activity'")
+  template(v-else-if="statusFile.state == '@activity'")
     ActivitySidebar
-    ActivityWindow(v-model:screenModel="status.screen")
-  template(v-else-if="main.state == '@ended'")
+    ActivityWindow(v-model:screenModel="statusFile.screen")
+  template(v-else-if="statusFile.state == '@ended'")
     p Ended
 </template>
 

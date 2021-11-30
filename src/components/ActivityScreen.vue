@@ -3,7 +3,7 @@
 div.activityScreen(:style="cssVars")
     template(v-for="(i, index) in screen.blocks")
         transition(name="slide")
-            ScreenBlocks(:block="i" v-show="useSteps(index)" @step-next="step++" @screen-next="$emit('screenNext', $event)")
+            ScreenBlocks(:block="i" v-show="useSteps(index)" @step-next="step++" @screen-next="$emit('screenNext', $event)" :blockid="screenindex+'-'+index")
     ActivityScreenSteps(v-if="screen.steps" v-model:modelValue="step" :steps="screen.blocks.length")
 
 </template>
@@ -14,6 +14,9 @@ import ActivityScreenSteps from './ActivityScreenSteps.vue'
 export default {
     components: {ScreenBlocks},
     props: {
+        screenindex: {
+            type: Number
+        },
         screen: {
             type: Object,
             required: true
@@ -52,7 +55,6 @@ export default {
 .activityScreen
     overflow-y: auto
     overflow-x: hidden
-    position: relative
     background: $clear
     height: 100%
     @include centerize
@@ -62,5 +64,6 @@ export default {
     flex-wrap: wrap
     justify-content: center
     align-items: center
-    
+    padding-bottom: 40px
+
 </style>

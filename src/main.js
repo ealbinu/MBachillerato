@@ -8,7 +8,7 @@ import MathJax, { initMathJax, renderByMathjax } from 'mathjax-vue3'
 
 import backgroundGenerator from './components/backgroundGenerator.js'
 
-
+import 'animate.css'
 
 var app = createApp(App)
 

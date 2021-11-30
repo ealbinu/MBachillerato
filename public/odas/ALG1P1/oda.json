@@ -4,6 +4,7 @@
     "screens": [
         {
             "title": "Introducción",
+            "icon": "info",
             "steps": true,
             "blocks": [
                 {
@@ -55,10 +56,11 @@
         },
         {
             "title": "Actividad",
+            "icon": "games",
             "steps": true,
             "blocks": [
                 {
-                    "width": "60%",
+                    "width": "100%",
                     "content": [
                         "Lee los siguientes enunciados, identifica si la literal corresponde a una variable dependiente o independiente desplazándola hacia la opción correcta."
                     ],
@@ -66,10 +68,158 @@
                 },
                 {
                     "width": "100%",
-                    "type": "drag&drop",
                     "content": [
-                        {"dragdrop": "hola"}
+                        "Javier trabaja en un autolavado en el que le pagan $25 por cada automóvil que lava en un día, para conocer las ganancias que tiene en un día formuló la siguiente expresión algebraica ",
+                        {"math": "g = 25a", "block": true},
+                        {
+                            "dragdrop": true,
+                            "drags": [
+                                    [{"math": "g", "size": "2rem"}, "vd"]
+                                ],
+                            "dropsLeft":[["Variable dependiente", "vd"]],
+                            "dropsRight":[["Variable independiente", "vi"]]
+                        }
                     ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        "Manuel tiene un becerro de 172 kg al momento de ser destetado, después del destete su peso aumenta a un promedio de 1.3 kg por día. Para conocer el peso del becerro de acuerdo con los días que transcurren, Manuel formuló la siguiente expresión algebraica ",
+                        {"math": "p = 172 + 1.3d", "block": true},
+                        {
+                            "dragdrop": true,
+                            "drags": [
+                                    [{"math": "d", "size": "2rem"}, "vi"]
+                                ],
+                            "dropsLeft":[["Variable dependiente", "vd"]],
+                            "dropsRight":[["Variable independiente", "vi"]]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        "El perímetro de un círculo está dado por la siguiente expresión algebraica ",
+                        {"math": "p = \\pi d", "block": true},
+                        {
+                            "dragdrop": true,
+                            "drags": [
+                                    [{"math": "p", "size": "2rem"}, "vd"]
+                                ],
+                            "dropsLeft":[["Variable dependiente", "vd"]],
+                            "dropsRight":[["Variable independiente", "vi"]]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        "Lourdes aplica uñas y hace diseños con gelish por lo que cobra $550, de los cuales utiliza $225 para surtir los materiales que usa y lo demás es ganancia. Para conocer sus ganancias escribió la siguiente expresión algebraica",
+                        {"math": "g = (550 – 225)u", "block": true},
+                        {
+                            "dragdrop": true,
+                            "drags": [
+                                    [{"math": "u", "size": "2rem"}, "vi"]
+                                ],
+                            "dropsLeft":[["Variable dependiente", "vd"]],
+                            "dropsRight":[["Variable independiente", "vi"]]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        "María adquirió una hectárea de sembradíos de manzanas, de la que obtiene un promedio anual de ganancias de $50 000. Para conocer sus beneficios en múltiples años escribió la expresión algebraica",
+                        {"math": "g = 50\\ 000a", "block": true},
+                        {
+                            "dragdrop": true,
+                            "drags": [
+                                    [{"math": "a", "size": "2rem"}, "vi"]
+                                ],
+                            "dropsLeft":[["Variable dependiente", "vd"]],
+                            "dropsRight":[["Variable independiente", "vi"]]
+                        }
+                    ],
+                    "buttonNextScreen": "Siguiente actividad"
+                }
+            ]
+        },
+        {
+            "title": "Actividad 2",
+            "icon": "games",
+            "steps": true,
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        "Identifica si la expresión algebraica representa la relación funcional en los siguientes enunciados y desplazala hacia la opción correcta."
+                    ],
+                    "buttonNextStep": "Comenzar actividad"
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        "La tercera parte del producto de dos números.",
+                        {
+                            "dragdrop": true,
+                            "drags": [
+                                    [{"math": "\\frac{x + y}{3}", "size": "2rem"}, "no"]
+                                ],
+                            "dropsLeft":[["Corresponde.", "si"]],
+                            "dropsRight":[["No corresponde.", "no"]]
+                        },
+                        "El doble de un número más el triple de un número diferente.",
+                        {
+                            "dragdrop": true,
+                            "drags": [
+                                    [{"math": "2x + 3y", "size": "2rem"}, "si"]
+                                ],
+                            "dropsLeft":[["Corresponde.", "si"]],
+                            "dropsRight":[["No corresponde.", "no"]]
+                        },
+                        "La diferencia de un número cualquiera menos la cuarta parte de la suma de un número diferente más cuatro.",
+                        {
+                            "dragdrop": true,
+                            "drags": [
+                                    [{"math": "x - \\frac{y + 4}{4}", "size": "2rem"}, "si"]
+                                ],
+                            "dropsLeft":[["Corresponde.", "si"]],
+                            "dropsRight":[["No corresponde.", "no"]]
+                        },
+                        "La mitad de la resta de dos números diferentes.",
+                        {
+                            "dragdrop": true,
+                            "drags": [
+                                    [{"math": "\\frac{x}{2} - 2y", "size": "2rem"}, "no"]
+                                ],
+                            "dropsLeft":[["Corresponde.", "si"]],
+                            "dropsRight":[["No corresponde.", "no"]]
+                        },
+                        "El área de un trapecio es igual a la mitad suma de las bases multiplicada por la altura.",
+                        {
+                            "dragdrop": true,
+                            "drags": [
+                                    [{"math": "A = \\frac{P \\times a}{2}", "size": "2rem"}, "no"]
+                                ],
+                            "dropsLeft":[["Corresponde.", "si"]],
+                            "dropsRight":[["No corresponde.", "no"]]
+                        }
+                    ],
+                    "buttonNextScreen": "Siguiente actividad"
+                }
+            ]
+        },
+        {
+            "title": "Actividad 3",
+            "icon": "games",
+            "steps": true,
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        "Lee los siguientes enunciados, identifica la expresión algebraica en la que se presenta el número generalizado y selecciona la opción correcta."
+                    ],
+                    "buttonNextStep": "Comenzar actividad"
                 }
             ]
         }

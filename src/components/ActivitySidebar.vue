@@ -4,7 +4,6 @@ transition(name="zoom")
         .openclosebtn(@click="wide=!wide")
             span.material-icons-two-tone(v-if="wide") navigate_before
             span.material-icons-two-tone(v-else) navigate_next
-            //span.icon(:class="[wide?'ico-left':'ico-right']")
         .container
             div.area
                 h1 {{Activity.title}}
@@ -17,7 +16,7 @@ transition(name="zoom")
                 ul
                     template(v-for="(i, index) in Activity.screens")
                         li(:class="index == Status.screen ? 'active': ''" @click="goToScreen(index)").screenItem
-                            span.material-icons-two-tone(:class="index == Status.screen ? 'active': ''")  info
+                            span.material-icons-two-tone(:class="index == Status.screen ? 'active': ''")  {{i.icon}}
                             span.label &nbsp;{{i.title}}
             hr
             div.area

@@ -1,14 +1,19 @@
 <template lang="pug">
-math-jax(:latex="data.math" :block="data.block" )
+span(:style="cssVars"): math-jax(:latex="data.math" :block="data.block" )
 </template>
 <script>
-import {ref} from 'vue'
+import {ref, computed} from 'vue'
 export default {
     components:{},
     props:['data'],
     setup(props,context){
+        const cssVars = computed(() => {
+                return {
+                    '--fontSize' : props.data.size || '1rem',
+                }
+            })
         return {
-
+            cssVars
         }
     }
 }
@@ -18,4 +23,6 @@ export default {
     text-align: center
     width: 100%
     font-size: 1.5rem
+.MathJax
+    font-size: var(--fontSize)
 </style>

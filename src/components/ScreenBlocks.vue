@@ -9,7 +9,7 @@
             // Math jax
             BlockMath(v-else-if="i.math" :data="i")
             //Drag & drop
-            BlockDragDrop(v-if="i.dragdrop" :data="i")
+            BlockDragDrop(v-if="i.dragdrop" :data="i" :blockid="blockid+'-'+index")
 
 
     //::::::::::::::: NAV BUTTONS
@@ -31,7 +31,7 @@ export default {
         BlockMath,
         BlockDragDrop
     },
-    props: ["block"],
+    props: ["block", "blockid"],
     setup(props, context){
 
         const cssVars = computed(() => {
@@ -55,6 +55,4 @@ export default {
         padding: 1%
         background: #fff
         @include floatcardsmall
-        &>div
-            margin: 10px
 </style>

@@ -45,7 +45,7 @@ export default {
     align-items: center
     position: absolute
     width: 100%
-    bottom:0
+    bottom:20px
     left:0
     margin: 6px 0
     .step
@@ -60,7 +60,6 @@ export default {
             animation: zoomAnimation .4s
         
 button:not(.active)
-    .icon
-        width: 30px
-        height: 30px
+    .material-icons-two-tone
+        font-size: 30px
 </style>
