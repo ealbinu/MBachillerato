@@ -74,7 +74,7 @@
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "g", "size": "2rem"}, "vd"]
+                                    [{"math": "g", "size": "1.5rem"}, "vd"]
                                 ],
                             "dropsLeft":[["Variable dependiente", "vd"]],
                             "dropsRight":[["Variable independiente", "vi"]]
@@ -89,7 +89,7 @@
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "d", "size": "2rem"}, "vi"]
+                                    [{"math": "d", "size": "1.5rem"}, "vi"]
                                 ],
                             "dropsLeft":[["Variable dependiente", "vd"]],
                             "dropsRight":[["Variable independiente", "vi"]]
@@ -104,7 +104,7 @@
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "p", "size": "2rem"}, "vd"]
+                                    [{"math": "p", "size": "1.5rem"}, "vd"]
                                 ],
                             "dropsLeft":[["Variable dependiente", "vd"]],
                             "dropsRight":[["Variable independiente", "vi"]]
@@ -119,7 +119,7 @@
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "u", "size": "2rem"}, "vi"]
+                                    [{"math": "u", "size": "1.5rem"}, "vi"]
                                 ],
                             "dropsLeft":[["Variable dependiente", "vd"]],
                             "dropsRight":[["Variable independiente", "vi"]]
@@ -134,7 +134,7 @@
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "a", "size": "2rem"}, "vi"]
+                                    [{"math": "a", "size": "1.5rem"}, "vi"]
                                 ],
                             "dropsLeft":[["Variable dependiente", "vd"]],
                             "dropsRight":[["Variable independiente", "vi"]]
@@ -163,7 +163,7 @@
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "\\frac{x + y}{3}", "size": "2rem"}, "no"]
+                                    [{"math": "\\frac{x + y}{3}", "size": "1.5rem"}, "no"]
                                 ],
                             "dropsLeft":[["Corresponde.", "si"]],
                             "dropsRight":[["No corresponde.", "no"]]
@@ -172,7 +172,7 @@
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "2x + 3y", "size": "2rem"}, "si"]
+                                    [{"math": "2x + 3y", "size": "1.5rem"}, "si"]
                                 ],
                             "dropsLeft":[["Corresponde.", "si"]],
                             "dropsRight":[["No corresponde.", "no"]]
@@ -181,7 +181,7 @@
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "x - \\frac{y + 4}{4}", "size": "2rem"}, "si"]
+                                    [{"math": "x - \\frac{y + 4}{4}", "size": "1.5rem"}, "si"]
                                 ],
                             "dropsLeft":[["Corresponde.", "si"]],
                             "dropsRight":[["No corresponde.", "no"]]
@@ -190,7 +190,7 @@
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "\\frac{x}{2} - 2y", "size": "2rem"}, "no"]
+                                    [{"math": "\\frac{x}{2} - 2y", "size": "1.5rem"}, "no"]
                                 ],
                             "dropsLeft":[["Corresponde.", "si"]],
                             "dropsRight":[["No corresponde.", "no"]]
@@ -199,7 +199,7 @@
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "A = \\frac{P \\times a}{2}", "size": "2rem"}, "no"]
+                                    [{"math": "A = \\frac{P \\times a}{2}", "size": "1.5rem"}, "no"]
                                 ],
                             "dropsLeft":[["Corresponde.", "si"]],
                             "dropsRight":[["No corresponde.", "no"]]

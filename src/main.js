@@ -3,7 +3,7 @@ import App from './App.vue'
 import axios from 'axios'
 import { ref, provide } from 'vue'
 
-import MathJax, { initMathJax, renderByMathjax } from 'mathjax-vue3'
+//import MathJax, { initMathJax, renderByMathjax } from 'mathjax-vue3'
 
 
 import backgroundGenerator from './components/backgroundGenerator.js'
@@ -13,13 +13,13 @@ import 'animate.css'
 var app = createApp(App)
 
 
+gsap.registerPlugin(Draggable)
 
 
-
-
+/*
 
 function onMathJaxReady () {
-    loadOdaFile()
+    
 }
 initMathJax({
     options:{
@@ -28,7 +28,13 @@ initMathJax({
 }, onMathJaxReady)
 
 app.use(MathJax)
+*/
 
+
+
+
+
+loadOdaFile()
 
 
 

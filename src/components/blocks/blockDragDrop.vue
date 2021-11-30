@@ -1,5 +1,5 @@
 <template lang="pug">
-.blockDragDrop(:id="'block-'+blockid")
+.blockDragDrop(:id="'block-'+blockid" ref="block")
     //Droppables LEFT
     section(v-if="data.dropsLeft").drops.dropsLeft
             template(v-for="(i, index) in data.dropsLeft")
@@ -37,6 +37,11 @@ var dragsId = '#block-'+props.blockid
 var drops = null
 const createDrags = () => {
     drops = document.querySelectorAll(dragsId + ' .drop')
+    
+    //var drags = document.querySelector(dragsId + ' .drag')
+
+    
+
     Draggable.create(dragsId + ' .drag', {
         type:"x,y",
         bounds: dragsId,
@@ -83,9 +88,20 @@ const createDrags = () => {
     }
 
 
-setTimeout(function (){
-    createDrags()
-}, 1000)
+const initializer = setInterval(function () {
+    if(Draggable){
+        createDrags()
+        clearInt()
+    } else {
+        console.warn('Loading draggable')
+    }
+}, 500)
+
+const clearInt = () => {
+    console.warn('cleaning')
+    clearInterval(initializer)
+}
+
 </script>
 
 
