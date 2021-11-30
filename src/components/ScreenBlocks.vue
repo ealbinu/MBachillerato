@@ -51,7 +51,7 @@ export default {
     margin: 1%
     width: var(--block-width)
     .blockContainer
-        //text-align: var(--block-align)
+        text-align: center
         padding: 1%
         background: #fff
         @include floatcardsmall

@@ -1,9 +1,11 @@
 <template lang="pug">
 .stepsNavigation
-    button(@click="navigate(-1)" :disabled="modelValue==0"): span.icon.ico-left
+    button(@click="navigate(-1)" :disabled="modelValue==0"): span.material-icons-two-tone navigate_before
     template(v-for="(i, index) in steps")
         .step(:class="[modelValue==index?'active':'non-active']")
-    button(@click="navigate(1)" :disabled="modelValue==steps-1"): span.icon.ico-right
+    button(@click="navigate(1)" :disabled="modelValue==steps-1"): span.material-icons-two-tone navigate_next
+    
+    
 </template>
 <script>
 import {ref} from 'vue'

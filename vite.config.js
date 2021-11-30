@@ -12,7 +12,7 @@ export default defineConfig({
     vue(),
     ViteFonts({
       google: {
-        families: ['Fira Sans']
+        families: ['Fira Sans', 'Material+Icons+Two+Tone']
       }
     }),
     liveReload('public/odas/**/oda.json', {alwaysReload: false})

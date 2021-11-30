@@ -1,7 +1,10 @@
 <template lang="pug">
 transition(name="zoom")
     aside.ActivitySidebar(:class="[wide?'':'mini']")
-        .openclosebtn(@click="wide=!wide"): span.icon(:class="[wide?'ico-left':'ico-right']")
+        .openclosebtn(@click="wide=!wide")
+            span.material-icons-two-tone(v-if="wide") navigate_before
+            span.material-icons-two-tone(v-else) navigate_next
+            //span.icon(:class="[wide?'ico-left':'ico-right']")
         .container
             div.area
                 h1 {{Activity.title}}
@@ -14,15 +17,19 @@ transition(name="zoom")
                 ul
                     template(v-for="(i, index) in Activity.screens")
                         li(:class="index == Status.screen ? 'active': ''" @click="goToScreen(index)").screenItem
-                            span.icon.ico-pantallas(:class="index == Status.screen ? 'active': ''") 
-                            span.label &nbsp; {{i.title}}
+                            span.material-icons-two-tone(:class="index == Status.screen ? 'active': ''")  info
+                            span.label &nbsp;{{i.title}}
             hr
             div.area
-                h2 #[span.icon.ico-progreso] #[span.label Progreso]
+                h2 
+                    span.material-icons-two-tone donut_large
+                    span.label &nbsp;Progreso
                 div.progreso: .bar(:style="'width:'+70+'%'")
             hr
             div.area
-                h2 #[span.icon.ico-puntaje] #[span.label Puntaje]
+                h2 
+                    span.material-icons-two-tone auto_awesome
+                    span.label &nbsp;Puntaje
                 .puntaje 10 #[span.label /100]
 </template>
 <script>
