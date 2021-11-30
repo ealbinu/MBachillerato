@@ -8,12 +8,14 @@ import MathJax, { initMathJax, renderByMathjax } from 'mathjax-vue3'
 
 import backgroundGenerator from './components/backgroundGenerator.js'
 
+
+
 var app = createApp(App)
 
 
 
 
-import.meta.glob('./odas/*/oda.json')
+
 
 
 function onMathJaxReady () {
@@ -26,7 +28,6 @@ initMathJax({
 }, onMathJaxReady)
 
 app.use(MathJax)
-
 
 
 
@@ -50,7 +51,7 @@ async function loadOdaFile(){
         alert('ODA no definida')
     }
 }
-
+/*
 async function reLoadOdaFile(){
     const queryString = window.location.search
     const params = new URLSearchParams(queryString)
@@ -70,3 +71,4 @@ async function reLoadOdaFile(){
 import.meta.hot.on('vite:beforeUpdate', () => {
     reLoadOdaFile()
 })
+*/

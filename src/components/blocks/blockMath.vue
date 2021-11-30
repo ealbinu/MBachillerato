@@ -1,24 +1,21 @@
 <template lang="pug">
-div.ButtonNextStep: button(@click="clicked" v-html="label")
+math-jax(:latex="data.math" :block="data.block" )
 </template>
 <script>
 import {ref} from 'vue'
 export default {
     components:{},
-    props:['label'],
+    props:['data'],
     setup(props,context){
-        const clicked = () => {
-            context.emit('clicked')
-        }
         return {
-            clicked
+
         }
     }
 }
 </script>
-
 <style lang="sass">
-.ButtonNextStep
+.MathJax[display]
     text-align: center
-    margin: 10px 0
+    width: 100%
+    font-size: 1.5rem
 </style>
