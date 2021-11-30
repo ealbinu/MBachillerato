@@ -1,0 +1,76 @@
+{
+    "id": "ALG1P1",
+    "title": "Variables",
+    "screens": [
+        {
+            "title": "Introducción",
+            "steps": true,
+            "blocks": [
+                {
+                    "width": "50%",
+                    "content": [
+                        "Las literales tienen la función de representar un <strong>valor numérico</strong> por medio de letras y símbolos."
+                    ],
+                    "buttonNextStep": "Leer más"
+                },
+                {
+                    "width": "80%",
+                    "content": [
+                        "De acuerdo con la solución que se requiere en cada planteamiento de un problema, es posible emplear las variables como número general dentro de una sucesión numérica, como incógnita dentro de una ecuación o como variable dentro de una función.",
+                        {"math": "\\frac{x+y}{3}", "block": true}
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        "Cuando una literal se utiliza como un número general se puede encontrar en una expresión algebraica, en ésta, el valor de la literal puede representar cualquier número real, por ejemplo:",
+                        {"math":"2x+3y", "block":true},
+                        "En este caso el valor de la  representa un número cualquiera."
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        "Cuando una expresión algebraica es igualada a un número se convierte en una ecuación, en las ecuaciones las literales son utilizadas como incógnita ya que, en éstas es posible determinar el valor de la literal mediante operaciones matemáticas, por ejemplo:",
+                        {"math": "x-\\frac{y+4}{4}", "block":true}
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        "En este caso el valor de la literal es 2, porque al reemplazar este valor en la igualdad, ésta se cumple:",
+                        {"math": "\\frac{x}{2} - 2y", "block":true}
+                    ],
+                    "buttonNextStep": "Leer más"
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        "Por último, cuando una expresión algebraica es igual a otra literal, se convierte en una función, porque el valor de una variable estará en función de la otra mediante una relación de dependencia.",
+                        {"math": "A=\\frac{P \\times a}{2}", "block":true}
+                    ],
+                    "buttonNextScreen": "Continuar"
+                }
+            ]
+        },
+        {
+            "title": "Actividad",
+            "steps": true,
+            "blocks": [
+                {
+                    "width": "60%",
+                    "content": [
+                        "Lee los siguientes enunciados, identifica si la literal corresponde a una variable dependiente o independiente desplazándola hacia la opción correcta."
+                    ],
+                    "buttonNextStep": "Comenzar actividad"
+                },
+                {
+                    "width": "100%",
+                    "type": "drag&drop",
+                    "content": []
+                }
+            ]
+        }
+
+    ]
+}
