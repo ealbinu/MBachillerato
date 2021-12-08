@@ -3,36 +3,43 @@
 div.activityScreen(:style="cssVars")
     template(v-for="(i, index) in screen.blocks")
         transition(name="slide")
-            ScreenBlocks(:block="i" v-show="useSteps(index)" @step-next="step++" @screen-next="$emit('screenNext', $event)" :blockid="screenindex+'-'+index")
-    ActivityScreenSteps(v-if="screen.steps" v-model:modelValue="step" :steps="screen.blocks.length")
+            
+            ScreenBlocks(:block="i" v-show="useSteps(index)" @step-next="stepNext" @screen-next="$emit('screenNext', $event)" :blockid="screenindex+'-'+index")
+    ActivityScreenSteps(v-if="screen.steps" :steps="screen.blocks.length")
 
 </template>
-<script>
+
+<script setup>
 import { ref, inject, computed } from 'vue'
 import ScreenBlocks from './ScreenBlocks.vue'
 import ActivityScreenSteps from './ActivityScreenSteps.vue'
-export default {
-    components: {ScreenBlocks},
-    props: {
-        screenindex: {
-            type: Number
-        },
-        screen: {
-            type: Object,
-            required: true
-        }
-    },
-    setup(props) {
-        const step = ref(0)
+
+       const props = defineProps({
+            screenindex: {
+                type: Number
+            },
+            screen: {
+                type: Object,
+                required: true
+            }
+        })
+
+        const Status = inject("statusFile");
+
         const cssVars = computed(() => {
             return {
                 //'--screen-direction' : props.screen.direction || 'row',
             }
         })
 
+        const stepNext = () => {
+
+            Status.value.step++
+        }
+
         const useSteps = (index) => {
             if(props.screen.steps){
-                if(step.value == index){
+                if(Status.value.step == index){
                     return true
                 } else {
                     return false
@@ -42,18 +49,14 @@ export default {
             }
         }
 
-        return {
-            cssVars,
-            useSteps,
-            step
-        }
-    },
-    components: { ScreenBlocks, ActivityScreenSteps }
-}
 </script>
 <style lang="sass">
+.ps
+    
+    height: 400px
+    box-sizing: border-box
 .activityScreen
-    overflow-y: auto
+    overflow-y: scroll
     overflow-x: hidden
     background: $clear
     height: 100%

@@ -3,34 +3,22 @@ transition(name="zoom")
     section.Activity
         template(v-for="(i, index) in Activity.screens")
             ActivityScreen(:screen="i" v-show="index==Status.screen" @screen-next="changeScreen" :screenindex="index")
+
 </template>
-<script>
+<script setup>
 import ActivityScreen from './ActivityScreen.vue'
 import { ref, inject } from 'vue'
-export default{
-    components: { ActivityScreen },
-    props: {
-        screenModel: {
-            type: Number,
-            default: 0,
-            required: true
-        }
-    },
-    setup(props, context) {
-        const Activity = inject("activityFile");
-        const Status = inject("statusFile");
 
-        const changeScreen = (dir) => {
-            Status.value.screen += dir
-        }
 
-        return {
-            Activity,
-            Status,
-            changeScreen
-        };
-    },
+const Activity = inject("activityFile")
+const Status = inject("statusFile")
+
+const changeScreen = (dir) => {
+    Status.value.step = 0
+    Status.value.screen += dir
 }
+
+
 </script>
 <style lang="sass">
 section.Activity

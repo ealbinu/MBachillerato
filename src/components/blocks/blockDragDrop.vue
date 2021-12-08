@@ -31,20 +31,17 @@ const props = defineProps({
     blockid: String,
     data: Object
 })
-//const emit = defineEmits(['change', 'delete'])
+
 const block = ref()
 var dragsId = '#block-'+props.blockid
 var drops = null
 const createDrags = () => {
     drops = document.querySelectorAll(dragsId + ' .drop')
     
-    //var drags = document.querySelector(dragsId + ' .drag')
-
-    
-
     Draggable.create(dragsId + ' .drag', {
         type:"x,y",
         bounds: dragsId,
+        zIndexBoost:false,
         onDrag: function (e) { DraggableOnDrag(e, this) },
         onClick: function (e) { DraggableOnClick(e,this) },
         onDragEnd: function (e){ DraggableOnDragEnd(e,this) }
@@ -93,12 +90,12 @@ const initializer = setInterval(function () {
         createDrags()
         clearInt()
     } else {
-        console.warn('Loading draggable')
+        //console.warn('Loading draggable')
     }
 }, 500)
 
 const clearInt = () => {
-    console.warn('cleaning')
+    //console.warn('cleaning')
     clearInterval(initializer)
 }
 
@@ -110,7 +107,7 @@ const clearInt = () => {
 .blockDragDrop
     position: relative
     width: 100%
-    min-height: 280px
+    min-height: 240px
     display: flex
     justify-content: space-evenly
     .drag

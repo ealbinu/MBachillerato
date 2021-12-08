@@ -5,11 +5,15 @@
     .blockContainer
         template(v-for="(i, index) in block.content")
             // Simple text
-            span(v-if="typeof i === 'string' " v-html="i" )
+            span(v-if="typeof i === 'string' " v-html="i")
+            // Block text
+            div(v-else-if="i.text" v-html="i.text" :class="i.class || 'my-2'")
             // Math jax
-            BlockMath(v-else-if="i.math" :data="i")
+            BlockMath(v-else-if="i.math" :data="i" ref="question")
             //Drag & drop
             BlockDragDrop(v-if="i.dragdrop" :data="i" :blockid="blockid+'-'+index")
+            //Select
+            BlockSelect(v-if="i.select" :data="i" :blockid="blockid+'-'+index")
 
 
     //::::::::::::::: NAV BUTTONS
@@ -20,35 +24,29 @@
 
 
 </template>
-<script>
+<script setup>
 import {ref, computed} from 'vue'
 
 import BlockMath from './blocks/blockMath.vue';
 import BlockDragDrop from './blocks/blockDragDrop.vue';
+import BlockSelect from './blocks/blockSelect.vue';
 
-export default {
-    components: {
-        BlockMath,
-        BlockDragDrop
-    },
-    props: ["block", "blockid"],
-    setup(props, context){
+const props = defineProps({
+    "block": Object,
+    "blockid": String
+})
 
-        const cssVars = computed(() => {
-            return {
-                '--block-width' : props.block.width || '100%'
-            }
-        })
-        return {
-            cssVars
-        }
+const cssVars = computed(() => {
+    return {
+        '--block-width' : props.block.width || '100%'
     }
-}
+})
+       
 </script>
 <style lang="sass">
 
 .block
-    margin: 1%
+    margin: 1% 0
     width: var(--block-width)
     .blockContainer
         text-align: center

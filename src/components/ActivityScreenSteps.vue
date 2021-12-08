@@ -1,41 +1,35 @@
 <template lang="pug">
 .stepsNavigation
-    button(@click="navigate(-1)" :disabled="modelValue==0"): span.material-icons-two-tone navigate_before
+    button(@click="navigate(-1)" :disabled="Status.step==0"): span.material-icons-two-tone navigate_before
     template(v-for="(i, index) in steps")
-        .step(:class="[modelValue==index?'active':'non-active']")
-    button(@click="navigate(1)" :disabled="modelValue==steps-1"): span.material-icons-two-tone navigate_next
+        .step(:class="[Status.step==index?'active':'non-active']")
+    button(@click="navigate(1)" :disabled="Status.step==steps-1"): span.material-icons-two-tone navigate_next
     
     
 </template>
-<script>
-import {ref} from 'vue'
-export default {
-    components:{},
-    props:{
-        modelValue: {
-            type: Number,
-            default: 0,
-            required: true
-        },
-        steps: {
-            type: Number,
-            required: true
-        }
-    },
-    setup(props,context){
-        const currentStep = ref(0)
-        const navigate = (dir) => {
-            if((dir == -1 && props.modelValue>0)  ||  (dir==1 && props.modelValue<props.steps-1) ){
-                const goto = props.modelValue + dir
-                context.emit('update:modelValue', goto)
-            }
-        }
-        return {
-            navigate,
-            currentStep
-        }
+<script setup>
+import {ref, inject} from 'vue'
+
+const props = defineProps({
+    steps: {
+        type: Number,
+        required: true
     }
+})
+const Status = inject("statusFile")
+
+const currentStep = ref(0)
+const navigate = (dir) => {
+    
+    if(
+        (dir == -1 && Status.value.step>0) ||
+        (dir==1 && Status.value.step<props.steps-1)
+    ){
+        Status.value.step += dir
+    }
+
 }
+        
 </script>
 
 <style lang="sass">
@@ -44,10 +38,15 @@ export default {
     justify-content: center
     align-items: center
     position: absolute
-    width: 100%
-    bottom:20px
-    left:0
-    margin: 6px 0
+    width: fit-content
+    bottom:7px
+    right:0
+    margin-left: auto
+    margin-right: auto
+    z-index: 10
+    background: $main
+    border-radius: 7px 0 7px 7px
+    padding: .5%
     .step
         width: 12px
         height: 12px
@@ -56,10 +55,14 @@ export default {
         &.active
             background: $high
         &.non-active
-            background: $light
+            background: $clear
             animation: zoomAnimation .4s
         
 button:not(.active)
     .material-icons-two-tone
+        filter: invert(100%)  sepia(94%)  hue-rotate(150deg)
         font-size: 30px
+        &:hover
+            filter: invert(50%)  sepia(94%)  hue-rotate(150deg)
+
 </style>

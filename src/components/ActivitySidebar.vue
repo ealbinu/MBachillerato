@@ -7,11 +7,12 @@ transition(name="zoom")
         .container
             div.area
                 h1 {{Activity.title}}
-            
-            //    hr
-                div.area.instrucciones
-                    span.label Instrucciones a realizar cuando la actividad cargue que el usuario podrá consultar cuantas veces quiera.
             hr
+            .area.row.vertical.extrainfo
+                button() Aprendizajes esperados
+                button() Contenido central
+            hr
+                
             div.area.pantallas
                 ul
                     template(v-for="(i, index) in Activity.screens")
@@ -19,39 +20,41 @@ transition(name="zoom")
                             span.material-icons-two-tone(:class="index == Status.screen ? 'active': ''")  {{i.icon}}
                             span.label &nbsp;{{i.title}}
             hr
+            
             div.area
                 h2 
                     span.material-icons-two-tone donut_large
                     span.label &nbsp;Progreso
                 div.progreso: .bar(:style="'width:'+70+'%'")
-            hr
+                hr
             div.area
                 h2 
                     span.material-icons-two-tone auto_awesome
                     span.label &nbsp;Puntaje
                 .puntaje 10 #[span.label /100]
+            hr
+            .area.row
+                button(@click="resetApp") Reiniciar
 </template>
-<script>
+<script setup>
 import { ref, inject } from 'vue'
-export default{
+import { useStorage } from "vue3-storage"
 
-    setup (props, context) {
-        const Activity = inject('activityFile')
-        const Status = inject('statusFile')
-        const wide = ref(true)
+const Activity = inject('activityFile')
+const Status = inject('statusFile')
+const wide = ref(true)
 
-        const goToScreen = (index) => {
-            Status.value.screen = index
-        }
-
-        return{
-            wide,
-            Activity,
-            Status,
-            goToScreen
-        }
-    }
+const goToScreen = (index) => {
+    Status.value.step = 0
+    Status.value.screen = index
 }
+const resetApp = () => {
+    console.log(Activity.id)
+    const storage = useStorage(Activity.id+'_')
+    storage.removeStorageSync('status')
+    location.reload()
+}
+
 </script>
 <style lang="sass">
 aside.ActivitySidebar
@@ -146,7 +149,7 @@ aside.ActivitySidebar
         width: 60px
         transition: width .2s ease-out
         text-align: center
-        h1, .label, hr
+        h1, .label, hr, .extrainfo
             display: none
             display: none
         

@@ -1,6 +1,10 @@
 {
     "id": "ALG1P1",
+    "materia": "algebra",
+    "asignatura": "Álgebra I",
     "title": "Variables",
+    "aprendizaje": "Reconoce la existencia de las variables y distingue sus usos como número general, como incógnita y como relación funcional.",
+    "contenidocentral": "Uso de las variables y las expresiones algebraicas.",
     "screens": [
         {
             "title": "Introducción",
@@ -8,16 +12,10 @@
             "steps": true,
             "blocks": [
                 {
-                    "width": "50%",
+                    "width": "100%",
                     "content": [
-                        "Las literales tienen la función de representar un <strong>valor numérico</strong> por medio de letras y símbolos."
-                    ],
-                    "buttonNextStep": "Leer más"
-                },
-                {
-                    "width": "80%",
-                    "content": [
-                        "De acuerdo con la solución que se requiere en cada planteamiento de un problema, es posible emplear las variables como número general dentro de una sucesión numérica, como incógnita dentro de una ecuación o como variable dentro de una función.",
+                        "Las literales tienen la función de representar un <strong>valor numérico</strong> por medio de letras y símbolos.",
+                        {"text": "De acuerdo con la solución que se requiere en cada planteamiento de un problema, es posible emplear las variables como número general dentro de una sucesión numérica, como incógnita dentro de una ecuación o como variable dentro de una función."},
                         {"math": "\\frac{x+y}{3}", "block": true}
                     ]
                 },
@@ -25,37 +23,53 @@
                     "width": "100%",
                     "content": [
                         "Cuando una literal se utiliza como un número general se puede encontrar en una expresión algebraica, en ésta, el valor de la literal puede representar cualquier número real, por ejemplo:",
-                        {"math":"2x+3y", "block":true},
-                        "En este caso el valor de la  representa un número cualquiera."
+                        {"math":"3x + 1", "block":true},
+                        "En este caso el valor de la ",
+                        {"math":"x"},
+                        " representa un número cualquiera."
                     ]
                 },
                 {
                     "width": "100%",
                     "content": [
                         "Cuando una expresión algebraica es igualada a un número se convierte en una ecuación, en las ecuaciones las literales son utilizadas como incógnita ya que, en éstas es posible determinar el valor de la literal mediante operaciones matemáticas, por ejemplo:",
-                        {"math": "x-\\frac{y+4}{4}", "block":true}
+                        {"math": "3x + 1 = 7", "block":true},
+                        {"text":"En este caso el valor de la literal es 2, porque al reemplazar este valor en la igualdad, ésta se cumple:"},
+                        {"math": "3(2) + 1 = 7", "block":true},
+                        {"math": "6 + 1 = 7", "block":true},
+                        {"math": "7 = 7", "block":true}
                     ]
                 },
                 {
                     "width": "100%",
                     "content": [
-                        "En este caso el valor de la literal es 2, porque al reemplazar este valor en la igualdad, ésta se cumple:",
-                        {"math": "\\frac{x}{2} - 2y", "block":true}
-                    ],
-                    "buttonNextStep": "Leer más"
-                },
-                {
-                    "width": "100%",
-                    "content": [
-                        "Por último, cuando una expresión algebraica es igual a otra literal, se convierte en una función, porque el valor de una variable estará en función de la otra mediante una relación de dependencia.",
-                        {"math": "A=\\frac{P \\times a}{2}", "block":true}
+                        "Cuando una expresión algebraica es igual a otra literal se convierte en una función. Esto se da porque el valor de una variable estará en función de la otra a través de una relación funcional, por ejemplo:",
+                        {"math": "y = 4x + 5", "block":true},
+                        "En este caso no hay un único valor de ",
+                        {"math":"x"},
+                        " que satisfaga esta ecuación ya que, por ejemplo, si se le da el valor de 3 a ",
+                        {"math": "x"},
+                        ", el valor de ",
+                        {"math": "y"},
+                        " será ",
+                        {"math": "y = 4(3) + 5 = 17"},
+                        " pero si ",
+                        {"math": "x"},
+                        " adquiere el valor de 7, el valor de ",
+                        {"math": "y"},
+                        " será ",
+                        {"math": "y = 4(7) + 5 = 33"},
+                        ". Ambas literales cambian su valor y la igualdad se cumple con cualquier valor que se le dé a ",
+                        {"math": "x"},
+                        ", es por ello que en una relación funcional las literales actúan como variables."
+
                     ],
                     "buttonNextScreen": "Continuar"
                 }
             ]
         },
         {
-            "title": "Actividad",
+            "title": "Actividad 1",
             "icon": "games",
             "steps": true,
             "blocks": [
@@ -69,12 +83,12 @@
                 {
                     "width": "100%",
                     "content": [
-                        "Javier trabaja en un autolavado en el que le pagan $25 por cada automóvil que lava en un día, para conocer las ganancias que tiene en un día formuló la siguiente expresión algebraica ",
-                        {"math": "g = 25a", "block": true},
+                        "1. Javier es gestor de recursos de una casa hogar para niños en situaciones vulnerables y logró que un autolavado done $5 por cada automóvil que lava al día. Para conocer las donaciones que obtiene en un día formuló la siguiente expresión algebraica: ",
+                        {"math": "d = 5a", "block": true},
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "g", "size": "1.5rem"}, "vd"]
+                                    [{"math": "d", "size": "1.5rem"}, "vd"]
                                 ],
                             "dropsLeft":[["Variable dependiente", "vd"]],
                             "dropsRight":[["Variable independiente", "vi"]]
@@ -84,12 +98,12 @@
                 {
                     "width": "100%",
                     "content": [
-                        "Manuel tiene un becerro de 172 kg al momento de ser destetado, después del destete su peso aumenta a un promedio de 1.3 kg por día. Para conocer el peso del becerro de acuerdo con los días que transcurren, Manuel formuló la siguiente expresión algebraica ",
-                        {"math": "p = 172 + 1.3d", "block": true},
+                        "2. Manuel empezó su entrenamiento para participar en un maratón corriendo 1.2 km el primer día, después aumentó la distancia 0.3 km por día. Para conocer la distancia que corre de acuerdo con los días que trascurren, Manuel formuló la siguiente expresión algebraica: ",
+                        {"math": "d = 1.2 + 0.3n", "block": true},
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "d", "size": "1.5rem"}, "vi"]
+                                    [{"math": "n", "size": "1.5rem"}, "vi"]
                                 ],
                             "dropsLeft":[["Variable dependiente", "vd"]],
                             "dropsRight":[["Variable independiente", "vi"]]
@@ -99,7 +113,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        "El perímetro de un círculo está dado por la siguiente expresión algebraica ",
+                        "3. El perímetro de un círculo está dado por la siguiente expresión algebraica: ",
                         {"math": "p = \\pi d", "block": true},
                         {
                             "dragdrop": true,
@@ -114,7 +128,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        "Lourdes aplica uñas y hace diseños con gelish por lo que cobra $550, de los cuales utiliza $225 para surtir los materiales que usa y lo demás es ganancia. Para conocer sus ganancias escribió la siguiente expresión algebraica",
+                        "4. Lourdes inició un proyecto de nutrición en el que vende desayunos saludables. El paquete mensual de desayunos lo vende a $550, de los cuales destina $225 para gastos de insumos y renta del local, el resto es su ganancia. Para conocer sus ganancias escribió la siguiente expresión algebraica: ",
                         {"math": "g = (550 – 225)u", "block": true},
                         {
                             "dragdrop": true,
@@ -129,7 +143,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        "María adquirió una hectárea de sembradíos de manzanas, de la que obtiene un promedio anual de ganancias de $50 000. Para conocer sus beneficios en múltiples años escribió la expresión algebraica",
+                        "5. María cultiva una parcela utilizando técnicas agroecológicas de la que obtiene una ganancia promedio anual de $50 000. Para conocer sus ganancias en varios años escribió la siguiente expresión algebraica: ",
                         {"math": "g = 50\\ 000a", "block": true},
                         {
                             "dragdrop": true,
@@ -159,7 +173,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        "La tercera parte del producto de dos números.",
+                        "1. La tercera parte del producto de dos números.",
                         {
                             "dragdrop": true,
                             "drags": [
@@ -168,7 +182,7 @@
                             "dropsLeft":[["Corresponde.", "si"]],
                             "dropsRight":[["No corresponde.", "no"]]
                         },
-                        "El doble de un número más el triple de un número diferente.",
+                        "2. El doble de un número más el triple de un número diferente.",
                         {
                             "dragdrop": true,
                             "drags": [
@@ -177,7 +191,7 @@
                             "dropsLeft":[["Corresponde.", "si"]],
                             "dropsRight":[["No corresponde.", "no"]]
                         },
-                        "La diferencia de un número cualquiera menos la cuarta parte de la suma de un número diferente más cuatro.",
+                        "3. La diferencia de un número cualquiera menos la cuarta parte de la suma de un número diferente más cuatro.",
                         {
                             "dragdrop": true,
                             "drags": [
@@ -186,7 +200,7 @@
                             "dropsLeft":[["Corresponde.", "si"]],
                             "dropsRight":[["No corresponde.", "no"]]
                         },
-                        "La mitad de la resta de dos números diferentes.",
+                        "4. La mitad de la resta de dos números diferentes.",
                         {
                             "dragdrop": true,
                             "drags": [
@@ -195,7 +209,7 @@
                             "dropsLeft":[["Corresponde.", "si"]],
                             "dropsRight":[["No corresponde.", "no"]]
                         },
-                        "El área de un trapecio es igual a la mitad suma de las bases multiplicada por la altura.",
+                        "5. El área de un trapecio es igual a la mitad suma de las bases multiplicada por la altura.",
                         {
                             "dragdrop": true,
                             "drags": [
@@ -220,6 +234,83 @@
                         "Lee los siguientes enunciados, identifica la expresión algebraica en la que se presenta el número generalizado y selecciona la opción correcta."
                     ],
                     "buttonNextStep": "Comenzar actividad"
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        "1. Es la representación en lenguaje algebraico de la tercera parte de un número menos la octava parte de otro número.",
+                        {
+                            "select": true,
+                            "options": [
+                                [{"math": "3x - 8y"}, false],
+                                [{"math": "\\frac{x}{3} - \\frac{y}{8}"}, true],
+                                [{"math": "\\frac{x}{3} - 8y"}, false],
+                                [{"math": "3x - \\frac{y}{8}"}, false]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        "2. Es la representación en lenguaje común de ",
+                        {"math":"(4x - 2y)^2", "block": true},
+                        {
+                            "select": true,
+                            "options": [
+                                ["El cuadrado del cuádruple de un número menos el doble de otro número.", false],
+                                ["El cubo del cuádruple de un número menos el doble de otro número.", false],
+                                ["El cuádruple de un número menos el cuadrado del doble de otro número.", false],
+                                ["El cuadrado de la diferencia del cuádruple de un número y el doble de otro.", true]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        "3. Es la representación en lenguaje algebraico de la inversa de la suma de la quinta parte de un número más el triple de otro número al cubo.",
+                        {
+                            "select": true,
+                            "options": [
+                                [{"math": "\\frac{1}{\\frac{x}{5}+3y^3}"}, true],
+                                [{"math": "\\frac{1}{\\frac{x}{5}}+3y^3"}, false],
+                                [{"math": "\\frac{1}{5x+3y^3}"}, false],
+                                [{"math": "(5x + 3y^3)^{-1}"}, false]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        "4. Es la representación en lenguaje común de ",
+                        {"math":"\\frac{9x}{(2y + 6)^2}", "block": true},
+                        {
+                            "select": true,
+                            "options": [
+                                ["El cociente del nónuplo de un número por el cuadrado de la suma del doble de otro número más seis.", false],
+                                ["El cociente del nónuplo de un número entre el cuadrado de la suma del doble de otro número más seis.", true],
+                                ["El producto del nónuplo de un número por el cuadrado de la suma del doble de otro número más seis.", false],
+                                ["El inverso del nónuplo de un número entre el cuadrado de la suma del doble de otro número más seis.", false]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        "5. Es la representación en lenguaje algebraico del quíntuple de un número más el triple del cuadrado de la suma de la mitad de otro número más siete.",
+                        {
+                            "select": true,
+                            "options": [
+                                [{"math": "\\frac{x}{5} + 3 ( \\frac{y}{2} + 7 )^2"}, false],
+                                [{"math": "\\frac{x}{5} + 3 (2y + 7)^2"}, false],
+                                [{"math": "5x + 3 (\\frac{y}{2}+7)^2"}, true],
+                                [{"math": "5x + 3 (2y + 7)^2"}, false]
+                            ]
+                        }
+                    ]
                 }
             ]
         }

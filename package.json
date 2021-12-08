@@ -10,9 +10,11 @@
     "animate.css": "^4.1.1",
     "axios": "^0.24.0",
     "geopattern": "^1.2.3",
-    "localforage": "^1.10.0",
-    "mathjax-vue3": "^0.0.1",
-    "vue": "^3.2.16"
+    "js-base64": "^3.7.2",
+    "lottie-web": "^5.8.1",
+    "mitt": "^3.0.0",
+    "vue": "^3.2.16",
+    "vue3-storage": "^0.1.11"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",

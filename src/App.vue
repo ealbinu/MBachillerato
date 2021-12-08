@@ -1,54 +1,32 @@
-<script>
+<script setup>
+import axios from 'axios'
 
 import Intro from './components/Intro.vue'
 import ActivitySidebar from './components/ActivitySidebar.vue'
 import ActivityWindow from './components/ActivityWindow.vue'
-import axios from 'axios'
 
-import { ref, inject, provide } from 'vue'
+import { ref, inject, provide, watch, watchEffect } from 'vue'
 
-export default {
-  components:{Intro, ActivitySidebar, ActivityWindow},
-  setup () {
-    //###########################
-
-    const statusFile = ref(
-      {
-        state: '@intro',
-        screen: 0
-      }
-    )
-
-    provide('statusFile', ref(statusFile))
-
-    const changestate = ((newstate) => {
-      statusFile.value.state = newstate
-    })
-    
-    const activityFile = inject('activityFile')
-
-    
-    
+const Activity = inject('activityFile')
+const Status = inject("statusFile");
 
 
-    ////////////////////////////
-    return {
-      changestate,
-      activityFile,
-      statusFile
-    }
-  }
-}
+const changestate = ((newstate) => {
+  Status.value.state = newstate
+})
+
+  
+
 </script>
 
 <template lang="pug">
-template(v-if="activityFile")
-  template(v-if="statusFile.state == '@intro'")
+template(v-if="Activity && Status")
+  template(v-if="Status.state == '@intro'")
     Intro(@start="changestate('@activity')")
-  template(v-else-if="statusFile.state == '@activity'")
+  template(v-else-if="Status.state == '@activity'")
     ActivitySidebar
-    ActivityWindow(v-model:screenModel="statusFile.screen")
-  template(v-else-if="statusFile.state == '@ended'")
+    ActivityWindow
+  template(v-else-if="Status.state == '@ended'")
     p Ended
 </template>
 
