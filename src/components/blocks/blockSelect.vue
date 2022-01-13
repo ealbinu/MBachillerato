@@ -1,15 +1,22 @@
 <template lang="pug">
 .blockSelect(:id="'block-'+blockid" ref="block")
     template(v-for="(i, index) in data.options")
-        div.blockSelectOption(@click="clicked(index)" :class=" options[index] ? 'active' : '' " )
+        div.blockSelectOption(@click="clicked(index)" :class=" options[index] ? 'active' : '' ")
             .material-icons-two-tone touch_app
             .option-letter {{letterop(index)}}
             .content(v-if="typeof i[0] === 'string' " v-html="i[0]")
             BlockMath(v-else-if="i[0].math" :data="i[0]" )
+SolveModule(@solve="solve")
 </template>
 <script setup>
-import {ref} from 'vue'
+import {ref, getCurrentInstance, computed, inject} from 'vue'
 import BlockMath from './blockMath.vue'
+import SolveModule from '../SolveModule.vue'
+
+
+const Status = inject('statusFile')
+
+const currentInstance = getCurrentInstance()
 
 const props = defineProps({
     blockid: String,
@@ -36,6 +43,13 @@ const builder = () => {
     }
     isSingleSelectionFN()
 
+
+    //Load stored answers
+    if(Status.value.answers[props.blockid]){
+        options.value = Status.value.answers[props.blockid]
+    } else {
+        Status.value.answers[props.blockid] = null
+    }
 }
 // Is single selection
 const isSingleSelectionFN = () => {
@@ -49,6 +63,9 @@ builder()
 
 
 const clicked = (index) => {
+    
+    
+
     if(singleSelection.value){
         for(var i  in options.value){
             options.value[i] = false
@@ -57,7 +74,37 @@ const clicked = (index) => {
     } else {
         options.value[index] = !options.value[index]
     }
+
+
+    //STORE in Status File
+    Status.value.answers[props.blockid] = options.value
 }
+
+
+
+const solve = () => {
+    var dataOptions = props.data.options
+    for(var i=0; i<dataOptions.length; i++){
+        if(dataOptions[i][1]){
+            options.value[i] = true
+        } else {
+            options.value[i] = false
+        }
+    }
+}
+
+const isAnswered = computed( () => {
+    
+})
+
+
+currentInstance.appContext.config.globalProperties.emitter.on('solve', (evt) => {
+    solve()
+})
+currentInstance.appContext.config.globalProperties.emitter.on('finalize', (evt) => {
+    console.log('Select, emit')
+})
+
 
 </script>
 
@@ -69,7 +116,7 @@ const clicked = (index) => {
     justify-content: space-evenly
     .blockSelectOption
         margin: 1% 0
-        padding: 26px 2% 2% 2%
+        padding: 20px 2% 2% 2%
         display: flex
         flex-direction: column
         justify-content: center

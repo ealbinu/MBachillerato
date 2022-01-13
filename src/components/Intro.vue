@@ -7,7 +7,7 @@ transition(name="zoom" @after-leave="start")
                 p {{Activity.asignatura}}
                 hr
                 h4.my-1 Aprendizajes esperados
-                p.mb-2 {{Activity.aprendizaje}}
+                p.mb-2 {{Activity.aprendizajes}}
                 h4.my-1 Contenido central
                 p.mb-2 {{Activity.contenidocentral}}
             button.important(@click="close") Comenzar

@@ -23,10 +23,10 @@ app.use(Vue3Storage)
 
 
 
-
 gsap.registerPlugin(Draggable)
 
-
+// Show all screens (test only)
+app.provide('view', ref(false))
 
 loadOdaFile()
 
@@ -34,6 +34,18 @@ loadOdaFile()
 async function loadOdaFile(){
     const queryString = window.location.search
     const params = new URLSearchParams(queryString)
+    
+    // ODA IS IN TEST
+    const istest = params.get('test')
+    if(istest!=null){
+        console.log('%c Test Mode! ', 'background: #222; color: #bada55');
+        
+        app.provide('test', true)
+    } else {
+        app.provide('test', false)
+    }
+    
+    // LOAD ODA
     const oda = params.get('oda')
     if(oda){
         try {
@@ -48,7 +60,10 @@ async function loadOdaFile(){
             const startStatusFile = {
                 state: '@intro',
                 screen: 0,
-                step: 0
+                step: 0,
+                answers: {
+                    
+                }
             }
 
             const statusFile = ref(startStatusFile)

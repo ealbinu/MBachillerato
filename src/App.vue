@@ -30,6 +30,6 @@ template(v-if="Activity && Status")
     p Ended
 </template>
 
-<style>
-
+<style lang="sass">
+@import "./App.sass"
 </style>

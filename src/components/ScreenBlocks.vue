@@ -17,20 +17,22 @@
 
 
     //::::::::::::::: NAV BUTTONS
-    template(v-if="block.buttonNextStep")
-        .text-center.my-1: button(@click="$emit('stepNext')") {{block.buttonNextStep}}
-    template(v-if="block.buttonNextScreen")
-        .text-center.my-2: button(@click="$emit('screenNext', 1)").important {{block.buttonNextScreen}}
+    template(v-if="!view")
+        template(v-if="block.buttonNextStep")
+            .text-center.my-1: button(@click="$emit('stepNext')") {{block.buttonNextStep}}
+        template(v-if="block.buttonNextScreen")
+            .text-center.my-2: button(@click="$emit('screenNext', 1)").important {{block.buttonNextScreen}}
 
 
 </template>
 <script setup>
-import {ref, computed} from 'vue'
+import {ref, computed, inject} from 'vue'
 
 import BlockMath from './blocks/blockMath.vue';
 import BlockDragDrop from './blocks/blockDragDrop.vue';
 import BlockSelect from './blocks/blockSelect.vue';
 
+const view = inject('view')
 const props = defineProps({
     "block": Object,
     "blockid": String

@@ -1,46 +1,24 @@
-.row
+// ----------- COLORS
+$clear: #fafafa
+$light: #cad6d9
+$dark: #464F60
+$main: #586A8D
+$high: #4FBF9C
+$test: #F4BD02
+// ----------- MIXINS
+@mixin font
+    font-family: 'Fira Sans', sans-serif
+@mixin floatcard
+    border-radius: 14px
+    box-shadow: 0 8px 12px rgba(0,0,0,0.08)
+    box-sizing: border-box
+
+@mixin floatcardsmall
+    @include floatcard
+    box-shadow: 0 6px 8px rgba(0,0,0,0.04)
+    border-radius: 7px
+@mixin centerize
     display: flex
-    justify-content: space-evenly
-    &.vertical
-        flex-direction: column
-    &.center
-        justify-content: center
-    &.vecenter
-        align-items: center
+    justify-content: center
+    align-items: center
 
-.text-center
-    text-align: center
-.text-left
-    text-align: left
-.text-right
-    text-align: right
-
-//MARGIN
-.ma-auto
-    margin: auto
-.ml-auto
-    margin: auto
-.mr-auto
-    margin: auto
-.mt-auto
-    margin: auto
-.mb-auto
-    margin: auto
-@for $i from 0 through 10
-    $multi: $i*10
-    .ma-#{$i}
-        margin: #{$multi}px
-    .my-#{$i}
-        margin-top: #{$multi}px
-        margin-bottom: #{$multi}px
-    .mt-#{$i}
-        margin-top: #{$multi}px
-    .mb-#{$i}
-        margin-bottom: #{$multi}px
-    .mx-#{$i}
-        margin-left: #{$multi}px
-        margin-right: #{$multi}px
-    .ml-#{$i}
-        margin-left: #{$multi}px
-    .mr-#{$i}
-        margin-right: #{$multi}px

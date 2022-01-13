@@ -21,7 +21,6 @@ export default defineConfig({
     preprocessorOptions: {
       sass: {
         additionalData: `
-          @import "./src/App.sass"
           @import "./src/Utilities.sass"
         `
       }

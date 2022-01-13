@@ -10,7 +10,7 @@
     //DRAGGABLES
     section.drags
         template(v-for="(i, index) in data.drags")
-            div.drag(:data="i[1]")
+            div.drag(:data="b64(i[1])" :data-index="index")
                 .material-icons-two-tone pan_tool
                 .content(v-if="typeof i[0] === 'string' " v-html="i[0]")
                 BlockMath(v-else-if="i[0].math" :data="i[0]" )
@@ -21,12 +21,17 @@
                 div.drop(:data="i[1]")
                     .content(v-if="typeof i[0] === 'string' " v-html="i[0]")
                     BlockMath(v-else-if="i[0].math" :data="i[0]" )
-
+SolveModule(@solve="solve")
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, getCurrentInstance, inject} from 'vue'
 import BlockMath from './blockMath.vue'
+import SolveModule from '../SolveModule.vue'
+
+const Status = inject('statusFile')
+const currentInstance = getCurrentInstance()
+
 const props = defineProps({
     blockid: String,
     data: Object
@@ -34,11 +39,13 @@ const props = defineProps({
 
 const block = ref()
 var dragsId = '#block-'+props.blockid
+var dragItems = dragsId + ' .drag'
+var dropItems = dragsId + ' .drop'
 var drops = null
 const createDrags = () => {
     drops = document.querySelectorAll(dragsId + ' .drop')
     
-    Draggable.create(dragsId + ' .drag', {
+    Draggable.create(dragItems, {
         type:"x,y",
         bounds: dragsId,
         zIndexBoost:false,
@@ -59,12 +66,14 @@ const createDrags = () => {
                 
             }
         }
+
     }
     const DraggableOnClick = (e, drag) => {
         var drags = document.querySelector(dragsId+' .drags')
         if(drag.target.parentElement!=drags){
             drags.append(drag.target)
             TweenLite.to(drag.target, 0.2, { x: 0, y: 0 });
+            storeInStatusFile()
         }
     }
     const DraggableOnDragEnd = (e, drag) => {
@@ -76,14 +85,36 @@ const createDrags = () => {
                 TweenLite.to(drag.target, 0.2, { x: 0, y: 0 });
                 drag.target.classList.remove('hover')
                 drops[i].classList.remove('hover')
+                
+                storeInStatusFile()
+
             }
         }
         if(!dropped){
             TweenLite.to(drag.target, 0.2, { x: 0, y: 0 });
             
         }
+
     }
 
+
+const b64 = (itm) => {
+    var hash = btoa(itm)
+    return hash
+    console.log(hash)
+}
+
+const storeInStatusFile = () => {
+    //STORE in Status File
+    var drgs = document.querySelectorAll(dragItems)
+    var options = []
+    for(var i=0; i<drgs.length; i++){
+        var dragDataIndex = drgs[i].getAttribute('data-index')
+        var dropData = drgs[i].parentElement.getAttribute('data')
+        options.push([dragDataIndex, dropData])
+    }
+    Status.value.answers[props.blockid] = options
+}
 
 const initializer = setInterval(function () {
     if(Draggable){
@@ -97,7 +128,48 @@ const initializer = setInterval(function () {
 const clearInt = () => {
     //console.warn('cleaning')
     clearInterval(initializer)
+
+    //Load stored answers
+    LoadStoredAnswers()
+
+
 }
+
+
+const LoadStoredAnswers = () => {
+    if(Status.value.answers[props.blockid]){
+        var options = Status.value.answers[props.blockid]
+        for(var i in options){
+            var op = options[i]
+            if(op[1]){
+                var drag = document.querySelector(dragItems+'[data-index="'+op[0]+'"]')
+                console.log(dropItems+'[data='+op[1]+']')
+                var dropzone = document.querySelector(dropItems+'[data='+op[1]+']')
+                dropzone.append(drag)
+            }
+        }
+    } else {
+        Status.value.answers[props.blockid] = null
+    }
+}
+
+const solve = () => {
+    var drgs = document.querySelectorAll(dragItems)
+    for(var i=0; i<drgs.length; i++){
+        var answer = atob(drgs[i].getAttribute('data'))
+        var dropzone = document.querySelector(dropItems+'[data='+answer+']')
+        dropzone.append(drgs[i])
+
+    }
+ 
+}
+
+currentInstance.appContext.config.globalProperties.emitter.on('solve', (evt) => {
+    solve()
+})
+currentInstance.appContext.config.globalProperties.emitter.on('finalize', (evt) => {
+    console.log( 'Drag, EMITIDO' )
+})
 
 </script>
 

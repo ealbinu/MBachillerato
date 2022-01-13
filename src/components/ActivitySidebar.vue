@@ -9,10 +9,16 @@ transition(name="zoom")
                 h1 {{Activity.title}}
             hr
             .area.row.vertical.extrainfo
-                button() Aprendizajes esperados
-                button() Contenido central
+                BlockSimpleDialog(label="Aprendizajes esperados")
+                    .text-center
+                        h1.main.mb-1 Aprendizajes esperados
+                        div.main {{Activity.aprendizajes}}
+                BlockSimpleDialog(label="Contenido central")
+                    .text-center
+                        h1.main.mb-1 Contenido central
+                        div.main {{Activity.contenidocentral}}
+
             hr
-                
             div.area.pantallas
                 ul
                     template(v-for="(i, index) in Activity.screens")
@@ -32,6 +38,9 @@ transition(name="zoom")
                     span.material-icons-two-tone auto_awesome
                     span.label &nbsp;Puntaje
                 .puntaje 10 #[span.label /100]
+            
+            SidebarTestMenu
+            
             hr
             .area.row
                 button(@click="resetApp") Reiniciar
@@ -39,6 +48,8 @@ transition(name="zoom")
 <script setup>
 import { ref, inject } from 'vue'
 import { useStorage } from "vue3-storage"
+import BlockSimpleDialog from './blocks/blockSimpleDialog.vue'
+import SidebarTestMenu from './SidebarTestMenu.vue'
 
 const Activity = inject('activityFile')
 const Status = inject('statusFile')
