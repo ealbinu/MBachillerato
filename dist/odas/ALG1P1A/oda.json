@@ -1,9 +1,9 @@
 {
-    "id": "ALG1P1",
+    "id": "ALG1P1A",
     "materia": "algebra",
     "asignatura": "Álgebra I",
     "title": "Variables",
-    "aprendizaje": "Reconoce la existencia de las variables y distingue sus usos como número general, como incógnita y como relación funcional.",
+    "aprendizajes": "Reconoce la existencia de las variables y distingue sus usos como número general, como incógnita y como relación funcional.",
     "contenidocentral": "Uso de las variables y las expresiones algebraicas.",
     "screens": [
         {
@@ -309,8 +309,20 @@
                                 [{"math": "5x + 3 (\\frac{y}{2}+7)^2"}, true],
                                 [{"math": "5x + 3 (2y + 7)^2"}, false]
                             ]
+
                         }
-                    ]
+                    ],
+                    "buttonNextScreen": "Continuar"
+                }
+            ]
+        },
+        {
+            "title": "Finalizar",
+            "icon": "flag",
+            "end": true,
+            "blocks": [
+                {
+                "content": []
                 }
             ]
         }
