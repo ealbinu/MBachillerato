@@ -46,6 +46,11 @@ const builder = () => {
 
 
     //Load stored answers
+    if(!Status.value.answers){
+        Status.value.answers = {}
+    }
+
+        
     if(Status.value.answers[props.blockid]){
         options.value = Status.value.answers[props.blockid]
     } else {

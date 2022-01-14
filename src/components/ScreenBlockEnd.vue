@@ -51,22 +51,25 @@ const stats = computed(() => {
     var answers = Status.value.answers
     var data = {
         tot: '',
-        total: Object.keys(answers).length,
+        total: 0,
         unanswered: {},
         unansweredLength:0
     }
-    var unaList = {}
-    Object.keys(answers).forEach(function (key) {
-        var ans = answers[key]
-        if(answers[key] == null){
-            unaList[key] = ans
-            data.unansweredLength++
-        }
+    if(answers){
+        data.total = Object.keys(answers).length
+        var unaList = {}
+        Object.keys(answers).forEach(function (key) {
+            var ans = answers[key]
+            if(answers[key] == null){
+                unaList[key] = ans
+                data.unansweredLength++
+            }
 
-    })
-    _(unaList).keys().sort().each(function (key){
-        data.unanswered[key] = unaList[key]
-    })
+        })
+        _(unaList).keys().sort().each(function (key){
+            data.unanswered[key] = unaList[key]
+        })
+    }
     return data
 })
 

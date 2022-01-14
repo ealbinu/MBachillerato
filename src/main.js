@@ -52,7 +52,8 @@ async function loadOdaFile(){
             
             const res = await axios.get('./odas/'+oda+'/oda.json')
             
-            app.provide('activityFile', res.data)
+            const Activity = res.data
+            app.provide('activityFile', Activity)
             
             backgroundGenerator.buildBG(res.data.id)
 
@@ -84,7 +85,8 @@ async function loadOdaFile(){
                 },
                 { deep: true }
               )
-            
+            // SET TITLE
+            document.title = Activity.id + ' | ' + Activity.title
 
         } catch (err){
             alert('Ocurrió un error al cargar la ODA')

@@ -117,6 +117,7 @@ const storeInStatusFile = () => {
         var dropData = drgs[i].parentElement.getAttribute('data')
         options.push([dragDataIndex, dropData])
     }
+    
     Status.value.answers[props.blockid] = options
 }
 
@@ -141,6 +142,9 @@ const clearInt = () => {
 
 
 const LoadStoredAnswers = () => {
+    if(!Status.value.answers){
+        Status.value.answers = {}
+    }
     if(Status.value.answers[props.blockid]){
         var options = Status.value.answers[props.blockid]
         for(var i in options){
