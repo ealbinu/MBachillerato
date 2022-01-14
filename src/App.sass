@@ -63,7 +63,9 @@ button
         opacity: 0.4
         transform: scale(0.6)
         transition: all 0.5s
-
+    &.high
+        background: $high
+        color: $clear !important
 //-------- Transitions
 .zoom-enter-active
     animation: zoomAnimation .4s
@@ -125,7 +127,8 @@ button
         justify-content: center
     &.vecenter
         align-items: center
-
+    &.wrap
+        flex-wrap: wrap
 .text-center
     text-align: center
 .text-left
@@ -164,6 +167,37 @@ button
         margin-right: #{$multi}px
 
 
+//PADDING
+.pa-auto
+    padding: auto
+.pl-auto
+    padding: auto
+.pr-auto
+    padding: auto
+.pt-auto
+    padding: auto
+.pb-auto
+    padding: auto
+@for $i from 0 through 10
+    $multi: $i*10
+    .pa-#{$i}
+        padding: #{$multi}px
+    .py-#{$i}
+        padding-top: #{$multi}px
+        padding-bottom: #{$multi}px
+    .pt-#{$i}
+        padding-top: #{$multi}px
+    .pb-#{$i}
+        padding-bottom: #{$multi}px
+    .px-#{$i}
+        padding-left: #{$multi}px
+        padding-right: #{$multi}px
+    .pl-#{$i}
+        padding-left: #{$multi}px
+    .pr-#{$i}
+        padding-right: #{$multi}px
+
+
 
 .dark
     color: $dark !important
@@ -175,3 +209,50 @@ button
     color: $light !important
 .high
     color: $high !important
+.negative
+    color: $negative !important
+
+.bg-dark
+    background: $dark !important
+.bg-main
+    background: $main !important
+.bg-clear
+    background: $clear !important
+.bg-light
+    background: $light !important
+.bg-high
+    background: $high !important
+.bg-negative
+    background: $negative !important
+
+
+.floatcard
+    @include floatcard
+
+.isok, .notok
+    position: relative
+    &:before, &:after
+        content: ""
+        position: absolute
+        right: 0px
+        top: 0px
+        width: 24px
+        height: 24px
+        text-align: center
+        @include floatcardsmall
+        @include centerize
+        z-index: 99
+    &:after
+        font-family: "Material Icons Two Tone"
+        font-size: 18px
+        filter: invert(100%)
+.isok
+    &:after
+        content: "check"
+    &:before
+        background: $high
+.notok
+    &:after
+        content: "clear"
+    &:before
+        background: $negative

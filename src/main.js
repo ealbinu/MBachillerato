@@ -7,14 +7,14 @@ import { useStorage } from "vue3-storage"
 import { Base64 } from 'js-base64';
 
 
-import { ref, provide, watch, inject } from 'vue'
+import { ref, provide, watch, inject, getCurrentInstance } from 'vue'
 
 import backgroundGenerator from './components/backgroundGenerator.js'
 
 import 'animate.css'
 
-
 const emitter = mitt()
+const currentInstance = getCurrentInstance()
 var app = createApp(App)
 
 app.config.globalProperties.emitter = emitter
@@ -39,7 +39,6 @@ async function loadOdaFile(){
     const istest = params.get('test')
     if(istest!=null){
         console.log('%c Test Mode! ', 'background: #222; color: #bada55');
-        
         app.provide('test', true)
     } else {
         app.provide('test', false)
@@ -61,9 +60,8 @@ async function loadOdaFile(){
                 state: '@intro',
                 screen: 0,
                 step: 0,
-                answers: {
-                    
-                }
+                answers: {},
+                result: {}
             }
 
             const statusFile = ref(startStatusFile)
@@ -97,6 +95,17 @@ async function loadOdaFile(){
     }
 }
 
+
+
+
+
+window.addEventListener('resize', function () {
+    if(window.innerWidth<=600){
+        console.log('ressszzz')
+        console.log(app.config)
+        app.config.globalProperties.emitter.emit('sidebarmini')
+    }
+})
 
 
 

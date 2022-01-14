@@ -46,7 +46,7 @@ transition(name="zoom")
                 button(@click="resetApp") Reiniciar
 </template>
 <script setup>
-import { ref, inject } from 'vue'
+import { ref, inject, getCurrentInstance } from 'vue'
 import { useStorage } from "vue3-storage"
 import BlockSimpleDialog from './blocks/blockSimpleDialog.vue'
 import SidebarTestMenu from './SidebarTestMenu.vue'
@@ -54,6 +54,7 @@ import SidebarTestMenu from './SidebarTestMenu.vue'
 const Activity = inject('activityFile')
 const Status = inject('statusFile')
 const wide = ref(true)
+const currentInstance = getCurrentInstance()
 
 const goToScreen = (index) => {
     Status.value.step = 0
@@ -65,6 +66,9 @@ const resetApp = () => {
     storage.removeStorageSync('status')
     location.reload()
 }
+currentInstance.appContext.config.globalProperties.emitter.on('sidebarmini', (evt) => {
+    wide.value = false
+})
 
 </script>
 <style lang="sass">
@@ -164,7 +168,8 @@ aside.ActivitySidebar
             display: none
             display: none
         
-        @media (max-width: 600px)
+        
+        //@media (max-width: 600px)
             position: fixed
             left: 2%
             top: 2%

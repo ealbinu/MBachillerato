@@ -1,6 +1,6 @@
 <template lang="pug">
-.block(:style="cssVars")
 
+.block(:style="cssVars" v-if="block.content.length")
     //::::::::::::::: BLOCKS
     .blockContainer
         template(v-for="(i, index) in block.content")

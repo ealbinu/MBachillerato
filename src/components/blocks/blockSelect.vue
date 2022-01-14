@@ -12,8 +12,9 @@ SolveModule(@solve="solve")
 import {ref, getCurrentInstance, computed, inject} from 'vue'
 import BlockMath from './blockMath.vue'
 import SolveModule from '../SolveModule.vue'
+import _ from 'lodash'
 
-
+const result = ref()
 const Status = inject('statusFile')
 
 const currentInstance = getCurrentInstance()
@@ -91,18 +92,32 @@ const solve = () => {
             options.value[i] = false
         }
     }
+    //STORE in Status File
+    Status.value.answers[props.blockid] = options.value
 }
 
-const isAnswered = computed( () => {
-    
-})
-
+const finalize = () => {
+    var nooks = 0
+    var dataOptions = props.data.options
+    var correctOptions = []
+    for(var i=0; i<dataOptions.length; i++){
+        correctOptions.push(dataOptions[i][1])
+    }
+    if(_.isEqual(correctOptions, options.value)){
+        result.value = true
+        block.value.classList.add('isok')
+    } else {
+        result.value = false
+        block.value.classList.add('notok')
+    }
+    Status.value.result[props.blockid] = result.value
+}
 
 currentInstance.appContext.config.globalProperties.emitter.on('solve', (evt) => {
     solve()
 })
 currentInstance.appContext.config.globalProperties.emitter.on('finalize', (evt) => {
-    console.log('Select, emit')
+    finalize()
 })
 
 

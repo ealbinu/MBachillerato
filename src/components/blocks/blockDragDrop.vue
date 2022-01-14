@@ -37,15 +37,17 @@ const props = defineProps({
     data: Object
 })
 
+const result = ref()
 const block = ref()
 var dragsId = '#block-'+props.blockid
 var dragItems = dragsId + ' .drag'
 var dropItems = dragsId + ' .drop'
 var drops = null
+var draggables
 const createDrags = () => {
     drops = document.querySelectorAll(dragsId + ' .drop')
     
-    Draggable.create(dragItems, {
+    draggables = Draggable.create(dragItems, {
         type:"x,y",
         bounds: dragsId,
         zIndexBoost:false,
@@ -69,6 +71,9 @@ const createDrags = () => {
 
     }
     const DraggableOnClick = (e, drag) => {
+        if(result.value!=null){
+            return false
+        }
         var drags = document.querySelector(dragsId+' .drags')
         if(drag.target.parentElement!=drags){
             drags.append(drag.target)
@@ -101,7 +106,6 @@ const createDrags = () => {
 const b64 = (itm) => {
     var hash = btoa(itm)
     return hash
-    console.log(hash)
 }
 
 const storeInStatusFile = () => {
@@ -143,7 +147,7 @@ const LoadStoredAnswers = () => {
             var op = options[i]
             if(op[1]){
                 var drag = document.querySelector(dragItems+'[data-index="'+op[0]+'"]')
-                console.log(dropItems+'[data='+op[1]+']')
+
                 var dropzone = document.querySelector(dropItems+'[data='+op[1]+']')
                 dropzone.append(drag)
             }
@@ -151,6 +155,12 @@ const LoadStoredAnswers = () => {
     } else {
         Status.value.answers[props.blockid] = null
     }
+
+    //Disable if finalized
+    if(Status.value.finalize){
+        finalize()
+    }
+
 }
 
 const solve = () => {
@@ -161,14 +171,41 @@ const solve = () => {
         dropzone.append(drgs[i])
 
     }
- 
+    storeInStatusFile()
 }
+
+
+const finalize = () => {
+    var drgs = document.querySelectorAll(dragItems)
+    var oks = 0
+    var nooks = 0
+    for(var i=0; i<drgs.length; i++){
+        draggables[i].disable()
+        var dragData = atob(drgs[i].getAttribute('data'))
+        var parentData = drgs[i].parentElement.getAttribute('data')
+        if(dragData == parentData){
+            drgs[i].classList.add('isok')
+            oks++
+        } else {
+            drgs[i].classList.add('notok')
+            nooks++
+        }
+    }
+    //CORRECTA / INCORRECTA
+    if(nooks == 0){
+        result.value = true
+    } else {
+        result.value = false
+    }
+    Status.value.result[props.blockid] = result.value
+}
+
 
 currentInstance.appContext.config.globalProperties.emitter.on('solve', (evt) => {
     solve()
 })
 currentInstance.appContext.config.globalProperties.emitter.on('finalize', (evt) => {
-    console.log( 'Drag, EMITIDO' )
+    finalize()
 })
 
 </script>

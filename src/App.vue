@@ -26,8 +26,6 @@ template(v-if="Activity && Status")
   template(v-else-if="Status.state == '@activity'")
     ActivitySidebar
     ActivityWindow
-  template(v-else-if="Status.state == '@ended'")
-    p Ended
 </template>
 
 <style lang="sass">
