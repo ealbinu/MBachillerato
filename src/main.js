@@ -87,7 +87,10 @@ async function loadOdaFile(){
               )
             // SET TITLE
             document.title = Activity.id + ' | ' + Activity.title
+            if(istest){
+                document.title ='::TEST:: ' + Activity.id + ' | ' + Activity.title
 
+            }
         } catch (err){
             alert('Ocurrió un error al cargar la ODA')
             console.log(err)
