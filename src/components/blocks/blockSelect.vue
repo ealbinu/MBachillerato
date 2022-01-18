@@ -2,7 +2,7 @@
 .blockSelect(:id="'block-'+blockid" ref="block")
     template(v-for="(i, index) in data.options")
         div.blockSelectOption(@click="clicked(index)" :class=" options[index] ? 'active' : '' ")
-            .material-icons-two-tone touch_app
+            icon touch_app
             .option-letter {{letterop(index)}}
             .content(v-if="typeof i[0] === 'string' " v-html="i[0]")
             BlockMath(v-else-if="i[0].math" :data="i[0]" )
@@ -13,6 +13,8 @@ import {ref, getCurrentInstance, computed, inject} from 'vue'
 import BlockMath from './blockMath.vue'
 import SolveModule from '../SolveModule.vue'
 import _ from 'lodash'
+import icon from '../icon.vue'
+
 
 const result = ref()
 const Status = inject('statusFile')

@@ -11,7 +11,7 @@
     section.drags
         template(v-for="(i, index) in data.drags")
             div.drag(:data="b64(i[1])" :data-index="index")
-                .material-icons-two-tone pan_tool
+                icon pan_tool
                 .content(v-if="typeof i[0] === 'string' " v-html="i[0]")
                 BlockMath(v-else-if="i[0].math" :data="i[0]" )
 

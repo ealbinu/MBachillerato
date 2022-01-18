@@ -1,14 +1,15 @@
 <template lang="pug">
 .stepsNavigation
-    button(@click="navigate(-1)" :disabled="Status.step==0"): span.material-icons-two-tone navigate_before
+    button(@click="navigate(-1)" :disabled="Status.step==0"): icon navigate_before
     template(v-for="(i, index) in steps")
         .step(:class="[Status.step==index?'active':'non-active']")
-    button(@click="navigate(1)" :disabled="Status.step==steps-1"): span.material-icons-two-tone navigate_next
+    button(@click="navigate(1)" :disabled="Status.step==steps-1"): icon navigate_next
     
     
 </template>
 <script setup>
 import {ref, inject} from 'vue'
+import icon from './icon.vue'
 
 const props = defineProps({
     steps: {

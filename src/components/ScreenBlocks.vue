@@ -4,12 +4,19 @@
     //::::::::::::::: BLOCKS
     .blockContainer
         template(v-for="(i, index) in block.content")
+            
             // Simple text
             span(v-if="typeof i === 'string' " v-html="i")
+            // Break
+            br(v-else-if="i.br")
             // Block text
             div(v-else-if="i.text" v-html="i.text" :class="i.class || 'my-2'")
+            // Block Term
+            BlockTerm(v-else-if="i.term" :data="i")
+            // Block Image
+            BlockImg(v-else-if="i.img" :data="i")
             // Math jax
-            BlockMath(v-else-if="i.math" :data="i" ref="question")
+            BlockMath(v-else-if="i.math" :data="i")
             //Drag & drop
             BlockDragDrop(v-if="i.dragdrop" :data="i" :blockid="blockid+'-'+index")
             //Select
@@ -31,6 +38,9 @@ import {ref, computed, inject} from 'vue'
 import BlockMath from './blocks/blockMath.vue';
 import BlockDragDrop from './blocks/blockDragDrop.vue';
 import BlockSelect from './blocks/blockSelect.vue';
+import BlockTerm from './blocks/blockTerm.vue';
+import BlockImg from './blocks/blockImg.vue';
+
 
 const view = inject('view')
 const props = defineProps({

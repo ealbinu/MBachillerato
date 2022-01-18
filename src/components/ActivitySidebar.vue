@@ -2,8 +2,8 @@
 transition(name="zoom")
     aside.ActivitySidebar(:class="[wide?'':'mini']")
         .openclosebtn(@click="wide=!wide")
-            span.material-icons-two-tone(v-if="wide") navigate_before
-            span.material-icons-two-tone(v-else) navigate_next
+            icon(v-if="wide") navigate_before
+            icon(v-else) navigate_next
         .container
             div.area
                 h1 {{Activity.title}}
@@ -13,7 +13,7 @@ transition(name="zoom")
                     .text-center
                         h1.main.mb-1 Aprendizajes esperados
                         div.main {{Activity.aprendizajes}}
-                BlockSimpleDialog(label="Contenido central")
+                BlockSimpleDialog(label="Contenido central" v-if="Activity.contenidocentral")
                     .text-center
                         h1.main.mb-1 Contenido central
                         div.main {{Activity.contenidocentral}}
@@ -23,19 +23,19 @@ transition(name="zoom")
                 ul
                     template(v-for="(i, index) in Activity.screens")
                         li(:class="index == Status.screen ? 'active': ''" @click="goToScreen(index)").screenItem
-                            span.material-icons-two-tone(:class="index == Status.screen ? 'active': ''")  {{i.icon}}
+                            icon(:class="index == Status.screen ? 'active': ''")  {{i.icon}}
                             span.label &nbsp;{{i.title}}
             hr
             
             div.area
                 h2 
-                    span.material-icons-two-tone donut_large
+                    icon donut_large
                     span.label &nbsp;Progreso
                 div.progreso: .bar(:style="'width:'+70+'%'")
                 hr
             div.area
                 h2 
-                    span.material-icons-two-tone auto_awesome
+                    icon auto_awesome
                     span.label &nbsp;Puntaje
                 .puntaje 10 #[span.label /100]
             
@@ -50,6 +50,7 @@ import { ref, inject, getCurrentInstance } from 'vue'
 import { useStorage } from "vue3-storage"
 import BlockSimpleDialog from './blocks/blockSimpleDialog.vue'
 import SidebarTestMenu from './SidebarTestMenu.vue'
+import icon from './icon.vue'
 
 const Activity = inject('activityFile')
 const Status = inject('statusFile')

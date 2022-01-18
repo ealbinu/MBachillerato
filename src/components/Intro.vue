@@ -8,8 +8,9 @@ transition(name="zoom" @after-leave="start")
                 hr
                 h4.my-1 Aprendizajes esperados
                 p.mb-2 {{Activity.aprendizajes}}
-                h4.my-1 Contenido central
-                p.mb-2 {{Activity.contenidocentral}}
+                template(v-if="Activity.contenidocentral")
+                    h4.my-1 Contenido central
+                    p.mb-2 {{Activity.contenidocentral}}
             button.important(@click="close") Comenzar
         .lottie(:data-animation-path="'odas/animations/intro_'+Activity.materia+'.json'" data-anim-loop="true" :data-name="'intro_'+Activity.materia")
 </template>

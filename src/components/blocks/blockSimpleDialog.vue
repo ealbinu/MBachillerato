@@ -2,12 +2,13 @@
 button(@click="open" v-html="label")
 transition(name="zoom")
     .dialog(v-if="dialog")
-        button.close(@click="close"): .material-icons-two-tone close
+        button.close(@click="close"): icon close
         .ma-1
             slot
 </template>
 <script setup>
 import {ref} from 'vue'
+import icon from '../icon.vue'
 const props = defineProps({
     label: String
 })
