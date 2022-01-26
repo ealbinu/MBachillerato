@@ -24,7 +24,6 @@ const Status = inject("statusFile")
 
 const currentStep = ref(0)
 const navigate = (dir) => {
-    
     if(
         (dir == -1 && Status.value.step>0) ||
         (dir==1 && Status.value.step<props.steps-1)
@@ -34,7 +33,6 @@ const navigate = (dir) => {
     }
 
 }
-        
 </script>
 
 <style lang="sass" scoped>

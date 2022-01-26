@@ -1,7 +1,7 @@
 <template lang="pug">
 transition(name="zoom")
     section.Activity(:class="view ? 'desplegado' : '' ")
-        template(v-for="(i, index) in Activity.screens")
+        template(v-for="(i, index) in Activity.screens" :key="index")
             ActivityScreen(:screen="i" v-show="isVisibleScreen(index)" @screen-next="changeScreen" :screenindex="index")
 </template>
 <script setup>

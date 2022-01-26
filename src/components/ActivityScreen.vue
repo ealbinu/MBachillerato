@@ -8,14 +8,14 @@ div.activityScreen(:style="cssVars" :class="view ? 'desplegado' : '' ")
         template(v-else)
             ScreenBlockEnd(v-show="screen.end")
 
-    ActivityScreenSteps(v-if="screen.steps && !view" :steps="screen.blocks.length" @step-changed="updatedSteps")
+    ActivityScreenSteps(v-if="screen.steps && !view" :steps="screen.blocks.length")
 
 
 
 </template>
 
 <script setup>
-import { ref, inject, computed } from 'vue'
+import { ref, inject, computed, watch } from 'vue'
 import ScreenBlocks from './ScreenBlocks.vue'
 import ScreenBlockEnd from './ScreenBlockEnd.vue'
 import ActivityScreenSteps from './ActivityScreenSteps.vue'
@@ -42,7 +42,6 @@ const cssVars = computed(() => {
 
 const stepNext = () => {
     Status.value.step++
-    updatedSteps()
 }
 
 const useSteps = (index) => {
@@ -60,9 +59,14 @@ const useSteps = (index) => {
     }
 }
 
-const updatedSteps = () =>{
-    scroll.value.$el.scrollTop = 0
-}
+
+
+watch(() => Status.value.step, (newVal, oldVal) => {
+    if(scroll.value.$el.scrollTop>0){
+        scroll.value.$el.scrollTop = 0
+    }
+})
+
 
 
 </script>

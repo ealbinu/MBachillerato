@@ -17,6 +17,16 @@ import PerfectScrollbar from 'vue3-perfect-scrollbar'
 import 'vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css'
 
 
+
+const consoleStyles = [
+    'color: #446699',
+    'background: #ddff99',
+    'font-size: 9px',
+    'padding: 2px 5px',
+    'border-radius: 4px'
+  ].join(';')
+
+
 const emitter = mitt()
 const currentInstance = getCurrentInstance()
 var app = createApp(App)
@@ -41,7 +51,7 @@ async function loadOdaFile(){
     // ODA IS IN TEST
     const istest = params.get('test')
     if(istest!=null){
-        console.log('%c Test Mode! ', 'background: #222; color: #bada55');
+        console.log('%c%s', consoleStyles, '::TestMode');
         app.provide('test', true)
     } else {
         app.provide('test', false)
@@ -86,8 +96,17 @@ async function loadOdaFile(){
             const getStatus = storage.getStorageSync('status')
             if(getStatus){
                 statusFile.value = JSON.parse(Base64.atob(getStatus))
-                console.log('Saved data loaded')                
+                console.log('%c%s', consoleStyles, '::LoadedData');             
             }
+
+            // DATA PASSED FROM URL
+
+            const dataStatus = params.get('status')
+            if(dataStatus){
+                statusFile.value = JSON.parse(Base64.atob(dataStatus))
+                console.log('%c%s', consoleStyles, '::UrlData');
+            }
+
             
             watch(
                 () => statusFile,
@@ -105,10 +124,11 @@ async function loadOdaFile(){
             }
         } catch (err){
             alert('Ocurrió un error al cargar la ODA')
-            console.log(err)
+            console.log('%c%s', consoleStyles, '::Error: '+err);
         }
     } else {
-        alert('ODA no definida')
+        var container = document.getElementById("app")
+        container.innerHTML = '<div class="erroroda">ODA NO ENCONTRADA</div>'
     }
 }
 
@@ -118,7 +138,6 @@ async function loadOdaFile(){
 
 window.addEventListener('resize', function () {
     if(window.innerWidth<=600){
-        console.log('ressszzz')
         console.log(app.config)
         app.config.globalProperties.emitter.emit('sidebarmini')
     }

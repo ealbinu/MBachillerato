@@ -70,6 +70,7 @@ currentInstance.appContext.config.globalProperties.emitter.on('sidebarmini', (ev
 
 </script>
 <style lang="sass">
+
 aside.ActivitySidebar
     position: relative
     display: block
@@ -90,6 +91,8 @@ aside.ActivitySidebar
         display: flex
         flex-direction: column
         overflow-y: auto
+        .ps__rail-x
+            display: none !important
     .area
         &.pantallas
             flex-grow: 1
