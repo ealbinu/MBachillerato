@@ -1,13 +1,14 @@
 <template lang="pug">
 div.activityScreen(:style="cssVars" :class="view ? 'desplegado' : '' ")
     div.activityScreenTitle(v-if="view") {{screen.title}}
-    template(v-for="(i, index) in screen.blocks")
-        transition(name="slide")
-            ScreenBlocks(:block="i" v-show="useSteps(index)" @step-next="stepNext" @screen-next="$emit('screenNext', $event)" :blockid="screenindex+'-'+index")
-            
-        ScreenBlockEnd(v-show="screen.end")
+    perfect-scrollbar(ref="scroll")
+        template(v-for="(i, index) in screen.blocks" v-if="!screen.end")
+            transition(name="slide")
+                ScreenBlocks(:block="i" v-show="useSteps(index)" @step-next="stepNext" @screen-next="$emit('screenNext', $event)" :blockid="screenindex+'-'+index")
+        template(v-else)
+            ScreenBlockEnd(v-show="screen.end")
 
-    ActivityScreenSteps(v-if="screen.steps && !view" :steps="screen.blocks.length")
+    ActivityScreenSteps(v-if="screen.steps && !view" :steps="screen.blocks.length" @step-changed="updatedSteps")
 
 
 
@@ -20,7 +21,7 @@ import ScreenBlockEnd from './ScreenBlockEnd.vue'
 import ActivityScreenSteps from './ActivityScreenSteps.vue'
 
 const view = inject('view')
-
+const scroll = ref()
 const props = defineProps({
     screenindex: {
         type: Number
@@ -40,8 +41,8 @@ const cssVars = computed(() => {
 })
 
 const stepNext = () => {
-
     Status.value.step++
+    updatedSteps()
 }
 
 const useSteps = (index) => {
@@ -59,17 +60,19 @@ const useSteps = (index) => {
     }
 }
 
+const updatedSteps = () =>{
+    scroll.value.$el.scrollTop = 0
+}
 
 
 </script>
-<style lang="sass">
+<style lang="sass" scoped>
 .ps
-    
-    height: 400px
+    width: 100%
+    max-height: 100%
     box-sizing: border-box
+    
 .activityScreen
-    overflow-y: scroll
-    overflow-x: hidden
     background: $clear
     height: 100%
     @include centerize

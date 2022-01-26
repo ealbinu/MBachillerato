@@ -13,14 +13,17 @@ import backgroundGenerator from './components/backgroundGenerator.js'
 
 import 'animate.css'
 
+import PerfectScrollbar from 'vue3-perfect-scrollbar'
+import 'vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css'
+
+
 const emitter = mitt()
 const currentInstance = getCurrentInstance()
 var app = createApp(App)
 
 app.config.globalProperties.emitter = emitter
 app.use(Vue3Storage)
-
-
+app.use(PerfectScrollbar)
 
 
 gsap.registerPlugin(Draggable)
@@ -67,6 +70,15 @@ async function loadOdaFile(){
 
             const statusFile = ref(startStatusFile)
             app.provide('statusFile', statusFile)
+
+            const resultsFile = ref({
+                total: 0,
+                oks: 0,
+                errors: 0,
+                oksPercentage: 0,
+                errorsPercentage: 0
+            })
+            app.provide('resultsFile', resultsFile)
             
             app.mount('#app')
 

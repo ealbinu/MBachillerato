@@ -11,7 +11,7 @@
     section.drags
         template(v-for="(i, index) in data.drags")
             div.drag(:data="b64(i[1])" :data-index="index")
-                icon pan_tool
+                Icon pan_tool
                 .content(v-if="typeof i[0] === 'string' " v-html="i[0]")
                 BlockMath(v-else-if="i[0].math" :data="i[0]" )
 
@@ -28,6 +28,7 @@ SolveModule(@solve="solve")
 import { ref, getCurrentInstance, inject} from 'vue'
 import BlockMath from './blockMath.vue'
 import SolveModule from '../SolveModule.vue'
+import Icon from '../icon.vue'
 
 const Status = inject('statusFile')
 const currentInstance = getCurrentInstance()

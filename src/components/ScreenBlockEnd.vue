@@ -14,9 +14,9 @@
         div.my-4: button.important(@click="finalize") Finalizar
     template(v-else)
         div.my-3: strong Actividad finalizada.
-        template(v-if="results.total>0")
-            div.my-3 De un total de #[strong {{results.total}} preguntas] obtuviste un #[strong.high {{results.oksPercentage}}% de aciertos].
-            template(v-if="results.errors>0")
+        template(v-if="Results.total>0")
+            div.my-3 De un total de #[strong {{Results.total}} preguntas] obtuviste un #[strong.high {{Results.oksPercentage}}% de aciertos].
+            template(v-if="Results.errors>0")
                 div.my-3 A continuación podrás ver un resúmen de tus resultados:
                 .row.wrap
                     template(v-for="(i, index) in Status.result")
@@ -37,12 +37,13 @@ import _ from 'lodash'
 
 const Activity = inject('activityFile')
 const Status = inject("statusFile")
+const Results = inject("resultsFile")
 const currentInstance = getCurrentInstance()
 const props = defineProps({})
 
 
 const unansweredBlock = (blockid) => {
-    console.log(blockid)
+
     var sp = blockid.split('-')
     var scr = sp[0]
     var blk = sp[1]
@@ -83,36 +84,31 @@ const stats = computed(() => {
     return data
 })
 
-const results = ref({
-    total: 0,
-    oks: 0,
-    errors: 0,
-    oksPercentage: 0,
-    errorsPercentage: 0
-})
 
 
 
 const finalize = () => {
+
     Status.value.finalize = true
     currentInstance.appContext.config.globalProperties.emitter.emit('finalize')
     for(var i in Status.value.result){
-        results.value.total++
+        Results.value.total++
         if(Status.value.result[i]){
-            results.value.oks++
+            Results.value.oks++
         } else {
-            results.value.errors++
+            Results.value.errors++
         }
     }
-    if(results.value.total){
-        results.value.oksPercentage = Math.round((results.value.oks*100)/results.value.total)
-        results.value.errorsPercentage = 100 - results.value.oksPercentage
+    if(Results.value.total){
+        Results.value.oksPercentage = Math.round((Results.value.oks*100)/Results.value.total)
+        Results.value.errorsPercentage = 100 - Results.value.oksPercentage
     }
 }
 if(Status.value.finalize){
     setTimeout(function () {
         finalize()
     }, 1000)
+    
 }
 
 const resetApp = () => {

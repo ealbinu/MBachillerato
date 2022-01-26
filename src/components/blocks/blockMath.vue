@@ -27,7 +27,7 @@ div.blockmathCont
     text-align: center
     width: 100%
     font-size: 1.5rem
-    padding: 2%
+    padding: 2% 0
 span.blockmathCont
     font-size: var(--fontSize)
 </style>

@@ -1,7 +1,7 @@
 <template lang="pug">
 template(v-if="istest")
     hr
-    .area.row: button(@click="solveAll").test Resolver todo
+    .area.row.mb-1: button(@click="solveAll").test Resolver todo
     .area.row: button(@click="viewChange").test
         template(v-if="!view") Mostrar pantallas
         template(v-else) Cerrar pantallas

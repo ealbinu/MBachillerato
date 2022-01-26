@@ -1,16 +1,19 @@
 <template lang="pug">
 .stepsNavigation
-    button(@click="navigate(-1)" :disabled="Status.step==0"): icon navigate_before
+    button(@click="navigate(-1)" :disabled="Status.step==0")
+        Icon navigate_before
+        span.txt Anterior
     template(v-for="(i, index) in steps")
         .step(:class="[Status.step==index?'active':'non-active']")
-    button(@click="navigate(1)" :disabled="Status.step==steps-1"): icon navigate_next
-    
+    button(@click="navigate(1)" :disabled="Status.step==steps-1")
+        span.txt Siguiente
+        Icon navigate_next
     
 </template>
 <script setup>
 import {ref, inject} from 'vue'
-import icon from './icon.vue'
-
+import Icon from './icon.vue'
+const emit = defineEmits()
 const props = defineProps({
     steps: {
         type: Number,
@@ -27,20 +30,23 @@ const navigate = (dir) => {
         (dir==1 && Status.value.step<props.steps-1)
     ){
         Status.value.step += dir
+        emit('stepChanged')
     }
 
 }
         
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 .stepsNavigation
     display: flex
     justify-content: center
     align-items: center
     position: absolute
-    width: fit-content
-    bottom:7px
+    width: 100%
+    box-sizing: border-box
+    bottom:0
+    left: 0
     right:0
     margin-left: auto
     margin-right: auto
@@ -60,10 +66,22 @@ const navigate = (dir) => {
             animation: zoomAnimation .4s
         
 button:not(.active)
+    color: $clear
+    margin: 0 10px
+    display: flex
+    align-items: center
     .material-icons-two-tone
         filter: invert(100%)  sepia(94%)  hue-rotate(150deg)
-        font-size: 30px
-        &:hover
+        font-size: 20px
+    &:hover
+        color: $main
+        .material-icons-two-tone
             filter: invert(50%)  sepia(94%)  hue-rotate(150deg)
-
+button
+    span.txt
+        @media (max-width: 680px)
+            display: none
+    &:disabled
+        span.txt
+            display: none
 </style>

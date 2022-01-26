@@ -40,7 +40,6 @@ section.Activity
     margin-left: 2%
     @include floatcard
     box-sizing: border-box
-    padding: 2% 1%
     display: flex
     flex-direction: column
     position: relative

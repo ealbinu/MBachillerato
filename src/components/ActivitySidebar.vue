@@ -2,14 +2,15 @@
 transition(name="zoom")
     aside.ActivitySidebar(:class="[wide?'':'mini']")
         .openclosebtn(@click="wide=!wide")
-            icon(v-if="wide") navigate_before
-            icon(v-else) navigate_next
-        .container
+            Icon(v-if="wide") navigate_before
+            Icon(v-else) navigate_next
+        
+        perfect-scrollbar.container
             div.area
                 h1 {{Activity.title}}
             hr
             .area.row.vertical.extrainfo
-                BlockSimpleDialog(label="Aprendizajes esperados")
+                BlockSimpleDialog(label="Aprendizajes esperados" :classinit="['mb-1']")
                     .text-center
                         h1.main.mb-1 Aprendizajes esperados
                         div.main {{Activity.aprendizajes}}
@@ -23,21 +24,12 @@ transition(name="zoom")
                 ul
                     template(v-for="(i, index) in Activity.screens")
                         li(:class="index == Status.screen ? 'active': ''" @click="goToScreen(index)").screenItem
-                            icon(:class="index == Status.screen ? 'active': ''")  {{i.icon}}
+                            Icon(:class="index == Status.screen ? 'active': ''")  {{i.icon}}
                             span.label &nbsp;{{i.title}}
             hr
             
-            div.area
-                h2 
-                    icon donut_large
-                    span.label &nbsp;Progreso
-                div.progreso: .bar(:style="'width:'+70+'%'")
-                hr
-            div.area
-                h2 
-                    icon auto_awesome
-                    span.label &nbsp;Puntaje
-                .puntaje 10 #[span.label /100]
+            Progreso
+            Puntaje
             
             SidebarTestMenu
             
@@ -50,9 +42,14 @@ import { ref, inject, getCurrentInstance } from 'vue'
 import { useStorage } from "vue3-storage"
 import BlockSimpleDialog from './blocks/blockSimpleDialog.vue'
 import SidebarTestMenu from './SidebarTestMenu.vue'
-import icon from './icon.vue'
+import Icon from './icon.vue'
+import Progreso from './Progreso.vue'
+import Puntaje from './Puntaje.vue'
+
+
 
 const Activity = inject('activityFile')
+
 const Status = inject('statusFile')
 const wide = ref(true)
 const currentInstance = getCurrentInstance()
@@ -62,7 +59,7 @@ const goToScreen = (index) => {
     Status.value.screen = index
 }
 const resetApp = () => {
-    console.log(Activity.id)
+    //console.log(Activity.id)
     const storage = useStorage(Activity.id+'_')
     storage.removeStorageSync('status')
     location.reload()
@@ -122,25 +119,7 @@ aside.ActivitySidebar
                 @include floatcardsmall
                 background: $high
                 color: $clear
-    .progreso
-        width: 100%
-        @include floatcardsmall
-        background: $clear
-        padding: 3px
-        .bar
-            height: 20px
-            background: $high
-            border-radius: 7px
-    .puntaje
-        width: 100%
-        font-weight: bold
-        text-align: center
-        @include floatcardsmall
-        padding: 2px 12px
-        background: $clear
-        span
-            color: $light
-            font-weight: normal
+    
     .instrucciones
         font-size: 0.8rem
     .openclosebtn

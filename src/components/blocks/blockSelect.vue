@@ -2,7 +2,7 @@
 .blockSelect(:id="'block-'+blockid" ref="block")
     template(v-for="(i, index) in data.options")
         div.blockSelectOption(@click="clicked(index)" :class=" options[index] ? 'active' : '' ")
-            icon touch_app
+            Icon touch_app
             .option-letter {{letterop(index)}}
             .content(v-if="typeof i[0] === 'string' " v-html="i[0]")
             BlockMath(v-else-if="i[0].math" :data="i[0]" )
@@ -13,7 +13,7 @@ import {ref, getCurrentInstance, computed, inject} from 'vue'
 import BlockMath from './blockMath.vue'
 import SolveModule from '../SolveModule.vue'
 import _ from 'lodash'
-import icon from '../icon.vue'
+import Icon from '../icon.vue'
 
 
 const result = ref()
@@ -58,6 +58,8 @@ const builder = () => {
     } else {
         Status.value.answers[props.blockid] = null
     }
+
+    
 }
 // Is single selection
 const isSingleSelectionFN = () => {
@@ -72,7 +74,9 @@ builder()
 
 const clicked = (index) => {
     
-    
+    if(Status.value.finalize){
+        return false
+    }
 
     if(singleSelection.value){
         for(var i  in options.value){
@@ -102,6 +106,8 @@ const solve = () => {
     //STORE in Status File
     Status.value.answers[props.blockid] = options.value
 }
+
+
 
 const finalize = () => {
     var nooks = 0

@@ -25,10 +25,12 @@
 
     //::::::::::::::: NAV BUTTONS
     template(v-if="!view")
-        template(v-if="block.buttonNextStep")
-            .text-center.my-1: button(@click="$emit('stepNext')") {{block.buttonNextStep}}
-        template(v-if="block.buttonNextScreen")
-            .text-center.my-2: button(@click="$emit('screenNext', 1)").important {{block.buttonNextScreen}}
+        .text-center.my-2
+
+            template(v-if="block.buttonNextStep")
+                button(@click="$emit('stepNext')") {{block.buttonNextStep}}
+            template(v-if="block.buttonNextScreen")
+                button(@click="$emit('screenNext', 1)").important {{block.buttonNextScreen}}
 
 
 </template>
@@ -60,7 +62,10 @@ const cssVars = computed(() => {
 .block
     margin: 1% 0
     width: var(--block-width)
+    box-sizing: border-box
+    padding-bottom: 40px
     .blockContainer
+        font-size: 1.1rem
         text-align: center
         padding: 1%
         background: #fff

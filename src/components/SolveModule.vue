@@ -16,4 +16,6 @@ const solve = () => {
 <style lang="sass">
 button.solveModule
     color: $test
+    display: block
+    margin: 40px auto
 </style>

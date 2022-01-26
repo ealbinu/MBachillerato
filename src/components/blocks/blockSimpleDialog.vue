@@ -1,16 +1,17 @@
 <template lang="pug">
-button(@click="open" v-html="label")
+button(@click="open" v-html="label" :class="classinit")
 transition(name="zoom")
     .dialog(v-if="dialog")
-        button.close(@click="close"): icon close
+        button.close(@click="close"): Icon close
         .ma-1
             slot
 </template>
 <script setup>
 import {ref} from 'vue'
-import icon from '../icon.vue'
+import Icon from '../icon.vue'
 const props = defineProps({
-    label: String
+    label: String,
+    classinit: Object
 })
 const dialog = ref(false)
 const open = () => {
@@ -23,7 +24,6 @@ const close = () => {
 <style lang="sass" scoped>
 .dialog
     position: fixed
-    z-index: 10
     color: $dark
     font-size: 1rem
     button.close

@@ -3,7 +3,7 @@ div(:title="data.d" @click="open").blockTerm
     
     span(v-html="data.t" v-if="data.t")
     BlockImg(:data="{img:data.i}" v-if="data.i")
-    icon contact_support
+    Icon contact_support
     .termDefinition(v-if="tooltip")
         template(v-if="typeof data.d==='string'")
             p {{data.d}}
@@ -15,7 +15,7 @@ div(:title="data.d" @click="open").blockTerm
 </template>
 <script setup>
 import {ref} from 'vue'
-import icon from '../icon.vue';
+import Icon from '../icon.vue';
 import BlockImg from './blockImg.vue';
 import BlockMath from './blockMath.vue'
 
