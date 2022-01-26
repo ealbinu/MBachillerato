@@ -33,9 +33,10 @@ transition(name="zoom")
             
             SidebarTestMenu
             
-            hr
-            .area.row
-                button(@click="resetApp") Reiniciar
+            template(v-if="!Blocked")
+                hr
+                .area.row
+                    button(@click="resetApp") Reiniciar
 </template>
 <script setup>
 import { ref, inject, getCurrentInstance } from 'vue'
@@ -46,7 +47,7 @@ import Icon from './icon.vue'
 import Progreso from './Progreso.vue'
 import Puntaje from './Puntaje.vue'
 
-
+const Blocked = inject('blocked')
 
 const Activity = inject('activityFile')
 
