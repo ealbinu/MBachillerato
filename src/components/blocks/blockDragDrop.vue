@@ -31,6 +31,7 @@ import SolveModule from '../SolveModule.vue'
 import Icon from '../icon.vue'
 
 const Status = inject('statusFile')
+const Blocked = inject('blocked')
 const currentInstance = getCurrentInstance()
 
 const props = defineProps({
@@ -48,6 +49,10 @@ var draggables
 const createDrags = () => {
     drops = document.querySelectorAll(dragsId + ' .drop')
     
+    if(Blocked){
+        return false
+    }
+
     draggables = Draggable.create(dragItems, {
         type:"x,y",
         bounds: dragsId,
@@ -212,6 +217,10 @@ currentInstance.appContext.config.globalProperties.emitter.on('solve', (evt) => 
 currentInstance.appContext.config.globalProperties.emitter.on('finalize', (evt) => {
     finalize()
 })
+
+
+
+
 
 </script>
 

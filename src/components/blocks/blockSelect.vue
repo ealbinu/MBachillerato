@@ -18,6 +18,7 @@ import Icon from '../icon.vue'
 
 const result = ref()
 const Status = inject('statusFile')
+const Blocked = inject('blocked')
 
 const currentInstance = getCurrentInstance()
 
@@ -73,7 +74,9 @@ builder()
 
 
 const clicked = (index) => {
-    
+    if(Blocked){
+        return false
+    }
     if(Status.value.finalize){
         return false
     }
