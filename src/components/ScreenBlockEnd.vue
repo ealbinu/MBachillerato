@@ -5,13 +5,14 @@
             div.my-3: span De un total de #[strong {{stats.total}} preguntas] tienes #[strong.high {{stats.unansweredLength}} sin contestar].
             template(v-for="(i, index) in stats.unanswered")
                 button(@click="gotoUnanswered(index)").high.ma-1 {{unansweredBlock(index)}}
-                div.my-3 ¿Deseas finalizar?
+                
             
         template(v-else-if="stats.total>0")
             div.my-3: span Has contestado todas las preguntas. Verifica tus respuestas y da clic en #[strong "finalizar"].
         template(v-else)
             div.my-3: span Muy bien. Has llegado al final de la actividad.
         template(v-if="!Blocked")
+                div.my-3 ¿Deseas finalizar?
                 hr
                 div.my-4: button.important(@click="finalize") Finalizar
     template(v-else)
