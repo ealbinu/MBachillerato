@@ -162,7 +162,9 @@ async function loadOdaFile(){
                     results: statusFile.value.finalize? resultsFile.value : null
                 }
                 var endDataString = JSON.stringify(endData)
-                parent.postMessage(endDataString, "*")
+                window.top.postMessage(endDataString, "*")
+
+
             }, 2000)
 
             
@@ -205,7 +207,7 @@ const receiveMessage = (event) => {
     var dataSt = event.data
     if(typeof dataSt == 'string'){
         var dataJSON = JSON.parse(dataSt)
-        console.log('Message: ', dataJSON)
+        console.log('iFrameInternalMessage: ', dataJSON)
     }
 }
 window.addEventListener('message', receiveMessage, false)
