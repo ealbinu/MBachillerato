@@ -162,7 +162,7 @@ async function loadOdaFile(){
                     results: statusFile.value.finalize? resultsFile.value : null
                 }
                 var endDataString = JSON.stringify(endData)
-                window.top.postMessage(endDataString, "*")
+                parent.postMessage(endDataString, "*")
             }, 2000)
 
             
