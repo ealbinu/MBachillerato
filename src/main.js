@@ -62,6 +62,7 @@ async function loadOdaFile(){
     const isblocked = params.get('blocked')
     const oda = params.get('oda')
     const dataStatus = params.get('status')
+    const builder = params.get('builder')
 
 
     // ODA IS IN TEST
@@ -104,6 +105,7 @@ async function loadOdaFile(){
     app.provide('resultsFile', resultsFile)
 
 
+
    
 
     // LOAD ODA
@@ -127,6 +129,7 @@ async function loadOdaFile(){
             app.mount('#app')
 
             // DATA FROM LOCALSTORAGE
+            /*
             const getStatus = storage.getStorageSync('status')
             if(getStatus){
                 const decodeStatus = Base64.atob(getStatus)
@@ -136,6 +139,7 @@ async function loadOdaFile(){
                 statusFile.value = parsedStatus
                 console.log('%c%s', consoleStyles, '::LoadedData');             
             }
+            */
 
             // DATA PASSED FROM URL            
             if(dataStatus!=null && dataStatus.length>4){
@@ -192,8 +196,15 @@ async function loadOdaFile(){
             container.innerHTML = '<div class="erroroda">ERROR DE CARGA</div>'
         }
     } else {
-        var container = document.getElementById("app")
-        container.innerHTML = '<div class="erroroda">ODA NO ENCONTRADA</div>'
+        if(builder!=null){
+            app.provide('statusFile', false)
+            app.provide('activityFile', false)
+            app.provide('builderFile', true)
+            app.mount('#app')
+        } else {
+           var container = document.getElementById("app")
+           container.innerHTML = '<div class="erroroda">ODA NO ENCONTRADA</div>'
+       }
     }
 }
 

@@ -8,6 +8,10 @@ import ViteFonts from 'vite-plugin-fonts'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  define: {
+    'process.env': {},
+    'global.env': {}
+  },
   plugins: [
     vue(),
     ViteFonts({

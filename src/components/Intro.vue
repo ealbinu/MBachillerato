@@ -33,9 +33,11 @@ const start = (() => {
 })
 
 lottie.searchAnimations()
+
 </script>
 
-<style lang="sass">
+
+<style lang="sass" scoped>
 hr
         border: none
         border-top: 1px solid rgba($main,0.1)

@@ -33,7 +33,7 @@ transition(name="zoom")
             
             SidebarTestMenu
             
-            template(v-if="!Blocked")
+            //template(v-if="!Blocked")
                 hr
                 .area.row
                     button(@click="resetApp") Reiniciar

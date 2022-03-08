@@ -1,5 +1,5 @@
 {
-  "name": "mobachillerato",
+  "name": "mbachillerato",
   "version": "0.1.0",
   "scripts": {
     "dev": "vite",
@@ -8,18 +8,20 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
-    "axios": "^0.24.0",
+    "axios": "^0.26.0",
     "geopattern": "^1.2.3",
     "js-base64": "^3.7.2",
     "lodash": "^4.17.21",
     "lottie-web": "^5.8.1",
     "mitt": "^3.0.0",
+    "typescript": "^4.5.5",
     "vue": "^3.2.16",
+    "vue-json-pretty": "^2.0.6",
     "vue3-perfect-scrollbar": "^1.5.5",
     "vue3-storage": "^0.1.11"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^1.9.3",
+    "@vitejs/plugin-vue": "^2.2.4",
     "pug": "^3.0.2",
     "sass": "^1.43.4",
     "vite": "^2.6.4",

@@ -5,10 +5,13 @@ template(v-if="istest")
     .area.row: button(@click="viewChange").test
         template(v-if="!view") Mostrar pantallas
         template(v-else) Cerrar pantallas
-
+    hr
+    .area.row
+        button(@click="resetApp") Reiniciar
 </template>
 <script setup>
 import {ref, inject, provide, getCurrentInstance} from 'vue'
+import { useStorage } from "vue3-storage"
 
 const currentInstance = getCurrentInstance()
 
@@ -23,6 +26,13 @@ const view = inject('view')
 const viewChange = () => {
     view.value = !view.value
     console.log( view.value )
+}
+
+const resetApp = () => {
+    //console.log(Activity.id)
+    const storage = useStorage(Activity.id+'_')
+    storage.removeStorageSync('status')
+    location.reload()
 }
 
 </script>
