@@ -7,6 +7,9 @@ import { useStorage } from "vue3-storage"
 import { Base64 } from 'js-base64';
 import _ from 'lodash'
 
+import VueApexCharts from "vue3-apexcharts";
+
+
 import { ref, provide, watch, inject, getCurrentInstance } from 'vue'
 
 import backgroundGenerator from './components/backgroundGenerator.js'
@@ -34,6 +37,8 @@ var app = createApp(App)
 app.config.globalProperties.emitter = emitter
 app.use(Vue3Storage)
 app.use(PerfectScrollbar)
+
+app.use(VueApexCharts)
 
 
 gsap.registerPlugin(Draggable)
@@ -128,18 +133,20 @@ async function loadOdaFile(){
             
             app.mount('#app')
 
-            // DATA FROM LOCALSTORAGE
-            /*
-            const getStatus = storage.getStorageSync('status')
-            if(getStatus){
-                const decodeStatus = Base64.atob(getStatus)
-                if(!decodeStatus) return false
-                const parsedStatus = JSON.parse(decodeStatus)
-                if(!parsedStatus) return false
-                statusFile.value = parsedStatus
-                console.log('%c%s', consoleStyles, '::LoadedData');             
+            // DATA FROM LOCALSTORAGE only on TEST
+            console.log('TEST:::', istest)
+            if(istest != null){
+                const getStatus = storage.getStorageSync('status')
+                if(getStatus){
+                    const decodeStatus = Base64.atob(getStatus)
+                    if(!decodeStatus) return false
+                    const parsedStatus = JSON.parse(decodeStatus)
+                    if(!parsedStatus) return false
+                    statusFile.value = parsedStatus
+                    console.log('%c%s', consoleStyles, '::LoadedData');             
+                }
             }
-            */
+
 
             // DATA PASSED FROM URL            
             if(dataStatus!=null && dataStatus.length>4){
@@ -185,8 +192,12 @@ async function loadOdaFile(){
               )
             // SET TITLE
             document.title = Activity.id + ' | ' + Activity.title
-            if(istest){
+            if(istest != null){
                 document.title ='::TEST:: ' + Activity.id + ' | ' + Activity.title
+                
+                
+                
+
 
             }
         } catch (err){
@@ -218,7 +229,7 @@ const receiveMessage = (event) => {
     var dataSt = event.data
     if(typeof dataSt == 'string'){
         var dataJSON = JSON.parse(dataSt)
-        console.log('iFrameInternalMessage: ', dataJSON)
+        //console.log('iFrameInternalMessage: ', dataJSON)
     }
 }
 window.addEventListener('message', receiveMessage, false)

@@ -13,4 +13,5 @@ const props = defineProps({
 <style lang="sass" scoped>
 .blockImg
     vertical-align: middle
+    max-width: 100%
 </style>

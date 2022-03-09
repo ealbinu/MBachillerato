@@ -92,7 +92,7 @@ import Icon from './icon.vue'
 const props = defineProps({})
 const importData = ref(null)
 const builderbar = ref('json')
-// ----- blocks list ----
+//- ----- blocks list ----
 const blockText = {text: "", class: ""}
 const blockMath = { math:"", size: "2rem"}
 const itemContent = {
@@ -120,7 +120,7 @@ const itemContent = {
     br: {br:1},
 
 }
-            // ----- / blocks list ----
+            //- ----- / blocks list ----
 
 const itemBlock = {
     width: '100%',
@@ -165,7 +165,7 @@ const addBlocks = (index) => {
 const addContent = (indexScreen, indexBlocks, type) => {
 
     const item = JSON.parse(JSON.stringify(itemContent[type]))
-    console.log()
+
     data.value.screens[indexScreen].blocks[indexBlocks].content.push(item)
 }
 
@@ -183,7 +183,7 @@ const removeContent = (indexScreen, indexBlocks, indexContent) => {
 const replaceData = () => {
     const imported = JSON.parse(importData.value)
     importData.value = ""
-    console.log(imported)
+
     data.value = imported
 }
 

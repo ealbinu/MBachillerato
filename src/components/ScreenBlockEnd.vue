@@ -117,7 +117,7 @@ if(Status.value.finalize){
 }
 
 const resetApp = () => {
-    console.log(Activity.id)
+
     const storage = useStorage(Activity.id+'_')
     storage.removeStorageSync('status')
     location.reload()

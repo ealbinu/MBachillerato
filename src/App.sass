@@ -67,6 +67,8 @@ button
     &.high
         background: $high
         color: $clear !important
+    &.clean
+        background: transparent
 //-------- Transitions
 .zoom-enter-active
     animation: zoomAnimation .4s
@@ -136,6 +138,9 @@ button
     text-align: left
 .text-right
     text-align: right
+
+.text-bold
+    font-weight: bold
 
 //MARGIN
 .ma-auto
@@ -271,3 +276,23 @@ button
     @include centerize
     background: $negative
     color: $clear
+
+
+
+.h1
+    font-size: 3rem
+.h2
+    font-size: 2.4rem
+.h3
+    font-size: 1.8rem
+.h4
+    font-size: 1.4rem
+.h5
+    font-size: 1.2rem
+.p
+    font-size: 1rem
+
+
+hr
+    border: none
+    border-top: 2px solid $light

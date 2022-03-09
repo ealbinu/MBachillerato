@@ -1,11 +1,12 @@
 <template lang="pug">
-.blockSelect(:id="'block-'+blockid" ref="block")
+.blockSelect(:id="'block-'+blockid" ref="block" :style="cssVars")
     template(v-for="(i, index) in data.options")
         div.blockSelectOption(@click="clicked(index)" :class=" options[index] ? 'active' : '' ")
             Icon touch_app
             .option-letter {{letterop(index)}}
-            .content(v-if="typeof i[0] === 'string' " v-html="i[0]")
-            BlockMath(v-else-if="i[0].math" :data="i[0]" )
+            BlocksRenderer(:item="i[0]" :blockid=" blockid+'-selectitem' ")
+            //.content(v-if="typeof i[0] === 'string' " v-html="i[0]")
+            //BlockMath(v-else-if="i[0].math" :data="i[0]" )
 SolveModule(@solve="solve")
 </template>
 <script setup>
@@ -14,6 +15,7 @@ import BlockMath from './blockMath.vue'
 import SolveModule from '../SolveModule.vue'
 import _ from 'lodash'
 import Icon from '../icon.vue'
+import BlocksRenderer from '../BlocksRenderer.vue'
 
 
 const result = ref()
@@ -62,7 +64,7 @@ const builder = () => {
 
     
 }
-// Is single selection
+//- Is single selection
 const isSingleSelectionFN = () => {
     var counts = 0
     props.data.options.forEach((x)=> { if(x[1]){ counts+=1 } })
@@ -70,7 +72,7 @@ const isSingleSelectionFN = () => {
     //console.log(singleSelection.value?'SingleSelection':'Multiple')
 }
 builder()
-// /////// Builder 
+//- Builder 
 
 
 const clicked = (index) => {
@@ -137,14 +139,27 @@ currentInstance.appContext.config.globalProperties.emitter.on('finalize', (evt) 
 })
 
 
+
+const cssVars = computed(() => {
+    return {
+        '--block-grid-template-columns' : props.data.columns || '1fr 1fr 1fr 1fr',
+        '--block-grid-template-columns-responsive' : props.data.columnsResponsive || '1fr',
+        '--block-grid-gap' : props.data.gap || '10px'
+    }
+})
+
 </script>
 
 <style lang="sass">
 .blockSelect
+    width: 100%
     margin: 5% 0
-    display: flex
-    flex-wrap: wrap
     justify-content: space-evenly
+    display: grid
+    grid-template-columns: var(--block-grid-template-columns)
+    grid-gap: var(--block-grid-gap)
+    @media (max-width: 680px)
+        grid-template-columns: var(--block-grid-template-columns-responsive)
     .blockSelectOption
         margin: 1% 0
         padding: 20px 2% 2% 2%
@@ -156,6 +171,8 @@ currentInstance.appContext.config.globalProperties.emitter.on('finalize', (evt) 
         position: relative
         cursor: pointer
         border: 2px solid $clear
+        width: 100%
+        min-height: 80px
         .option-letter
             position: absolute
             font-size: 12px

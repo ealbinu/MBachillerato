@@ -12,7 +12,7 @@ template(v-if="istest")
 <script setup>
 import {ref, inject, provide, getCurrentInstance} from 'vue'
 import { useStorage } from "vue3-storage"
-
+const Activity = inject('activityFile')
 const currentInstance = getCurrentInstance()
 
 const props = defineProps({})
@@ -25,7 +25,7 @@ const view = inject('view')
 
 const viewChange = () => {
     view.value = !view.value
-    console.log( view.value )
+
 }
 
 const resetApp = () => {
