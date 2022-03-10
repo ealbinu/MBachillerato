@@ -3,8 +3,7 @@
 .block(:style="cssVars" v-if="block.content.length")
     //::::::::::::::: BLOCKS
     .blockContainer
-        template(v-for="(i, index) in block.content")
-            BlocksRenderer(:item="i" :blockid="blockid+'-'+index")
+            BlocksRenderer( v-for="(i, index) in block.content" :item="i" :blockid="blockid+'-'+index" :key="index")
 
     //::::::::::::::: NAV BUTTONS
     template(v-if="!view")

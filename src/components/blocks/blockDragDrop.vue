@@ -4,23 +4,26 @@
     section(v-if="data.dropsLeft").drops.dropsLeft
             template(v-for="(i, index) in data.dropsLeft")
                 div.drop(:data="i[1]")
-                    .content(v-if="typeof i[0] === 'string' " v-html="i[0]")
-                    BlockMath(v-else-if="i[0].math" :data="i[0]" )
+                    //.content(v-if="typeof i[0] === 'string' " v-html="i[0]")
+                    //BlockMath(v-else-if="i[0].math" :data="i[0]" )
+                    BlocksRenderer(:item="i[0]" :blockid=" blockid+'-dropLeft-'+index ")
     
     //DRAGGABLES
     section.drags
         template(v-for="(i, index) in data.drags")
             div.drag(:data="b64(i[1])" :data-index="index")
                 Icon pan_tool
-                .content(v-if="typeof i[0] === 'string' " v-html="i[0]")
-                BlockMath(v-else-if="i[0].math" :data="i[0]" )
+                //.content(v-if="typeof i[0] === 'string' " v-html="i[0]")
+                //BlockMath(v-else-if="i[0].math" :data="i[0]" )
+                BlocksRenderer(:item="i[0]" :blockid=" blockid+'-drag-'+index ")
 
     //Droppables RIGHT
     section(v-if="data.dropsRight").drops.dropsRight
             template(v-for="(i, index) in data.dropsRight")
                 div.drop(:data="i[1]")
-                    .content(v-if="typeof i[0] === 'string' " v-html="i[0]")
-                    BlockMath(v-else-if="i[0].math" :data="i[0]" )
+                    //.content(v-if="typeof i[0] === 'string' " v-html="i[0]")
+                    //BlockMath(v-else-if="i[0].math" :data="i[0]" )
+                    BlocksRenderer(:item="i[0]" :blockid=" blockid+'-dropRight-'+index ")
 SolveModule(@solve="solve")
 </template>
 
@@ -29,6 +32,7 @@ import { ref, getCurrentInstance, inject} from 'vue'
 import BlockMath from './blockMath.vue'
 import SolveModule from '../SolveModule.vue'
 import Icon from '../icon.vue'
+import BlocksRenderer from '../BlocksRenderer.vue';
 
 const Status = inject('statusFile')
 const Blocked = inject('blocked')
@@ -229,10 +233,15 @@ currentInstance.appContext.config.globalProperties.emitter.on('finalize', (evt) 
 <style lang="sass" scoped>
 .blockDragDrop
     position: relative
-    width: 100%
+    width: 90%
+    margin: 5%
     min-height: 240px
-    display: flex
+    display: grid
+    
     justify-content: space-evenly
+    grid-auto-columns: 33%
+    grid-auto-flow: column
+    gap: 10px
     .drag
         @include floatcard
         padding: 10px

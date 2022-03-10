@@ -184,6 +184,7 @@ button
     padding: auto
 .pb-auto
     padding: auto
+
 @for $i from 0 through 10
     $multi: $i*10
     .pa-#{$i}
@@ -203,7 +204,16 @@ button
     .pr-#{$i}
         padding-right: #{$multi}px
 
-
+// MAX WIDTH
+@for $i from 0 through 100
+    $multi: $i*10
+    .maxw-#{$i}
+        max-width:  #{$multi}px
+// WIDTH
+@for $i from 0 through 100
+    $multi: $i*10
+    .w-#{$i}
+        width:  #{$multi}px
 
 .dark
     color: $dark !important
@@ -296,3 +306,4 @@ button
 hr
     border: none
     border-top: 2px solid $light
+

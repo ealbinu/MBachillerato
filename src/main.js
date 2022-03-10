@@ -19,6 +19,9 @@ import 'animate.css'
 import PerfectScrollbar from 'vue3-perfect-scrollbar'
 import 'vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css'
 
+import VueObserveVisibility from 'vue-observe-visibility'
+
+
 
 
 const consoleStyles = [
@@ -39,6 +42,7 @@ app.use(Vue3Storage)
 app.use(PerfectScrollbar)
 
 app.use(VueApexCharts)
+app.use(VueObserveVisibility)
 
 
 gsap.registerPlugin(Draggable)
@@ -128,7 +132,7 @@ async function loadOdaFile(){
 
             
             app.provide('statusFile', statusFile)
-
+            app.provide('builderFile', false)
             
             
             app.mount('#app')

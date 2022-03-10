@@ -9,7 +9,9 @@ hr(v-else-if="item.hr").my-2
 //-Break
 br(v-else-if="item.br")
 //-Block text
-div(v-else-if="item.text" v-html="item.text" :class="item.class || 'my-2'")
+//div(v-else-if="item.text" v-html="item.text" :class="item.class || 'my-2'")
+//-Block Text
+BlockText(v-else-if="item.text" :data="item" :key="blockid")
 //-Block Term
 BlockTerm(v-else-if="item.term" :data="item")
 //-Block Image
@@ -47,6 +49,7 @@ import BlockDialog from './blocks/blockDialog.vue';
 import BlockGrid from './blocks/blockGrid.vue';
 import BlockGroup from './blocks/blockGroup.vue';
 import BlockSortable from './blocks/blockSortable.vue';
+import BlockText from './blocks/blockText.vue';
 
 const props = defineProps({
     item: [Object, String],

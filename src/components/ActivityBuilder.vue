@@ -11,8 +11,6 @@ perfect-scrollbar: .theform
                 input(v-model="data.programa" placeholder="programa" type="radio" value="DGB")
                 span DGB 
     .row
-        .field Materia:
-            input(v-model="data.materia")
         .field Asignatura:
             input(v-model="data.asignatura")
     .field Titulo:
