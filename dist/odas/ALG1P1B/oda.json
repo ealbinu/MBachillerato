@@ -1,8 +1,8 @@
 {
     "id": "ALG1P1B",
     "programa": "DGETI",
-    "materia": "algebra",
-    "asignatura": "Álgebra I",
+    "materia": "ALGEBRAI",
+    "bgimgs": 2,
     "title": "Variables",
     "aprendizajes": "Reconoce la existencia de las variables y distingue sus usos como número general, como incógnita y como relación funcional.",
     "contenidocentral": "Uso de las variables y las expresiones algebraicas.",
@@ -15,9 +15,22 @@
                 {
                     "width": "100%",
                     "content": [
-                        "Las literales tienen la función de representar un <strong>valor numérico</strong> por medio de letras y símbolos.",
-                        {"text": "De acuerdo con la solución que se requiere en cada planteamiento de un problema, es posible emplear las variables como número general dentro de una sucesión numérica, como incógnita dentro de una ecuación o como variable dentro de una función."},
-                        {"math": "\\frac{x+y}{3}", "block": true}
+                        {
+                            "grid": 1,
+                            "columns": "1fr 1fr",
+                            "content":[
+                                {
+                                    "group": 1,
+                                    "content":[
+                                        "Las literales tienen la función de representar un <strong>valor numérico</strong> por medio de letras y símbolos.",
+                                        {"br":1},
+                                        {"br":1},
+                                        {"text": "De acuerdo con la solución que se requiere en cada planteamiento de un problema, es posible emplear las variables como número general dentro de una sucesión numérica, como incógnita dentro de una ecuación o como variable dentro de una función."}
+                                    ]
+                                },
+                                {"math": "\\frac{x+y}{3}", "block": true, "size": "3rem"}
+                            ]
+                        }
                     ]
                 },
                 {

@@ -22,6 +22,7 @@ import 'vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css'
 import VueObserveVisibility from 'vue-observe-visibility'
 
 
+import materias from './materias.js'
 
 
 const consoleStyles = [
@@ -74,6 +75,11 @@ async function loadOdaFile(){
     const builder = params.get('builder')
 
 
+
+    // Materia
+
+    
+
     // ODA IS IN TEST
     if(istest!=null){
         console.log('%c%s', consoleStyles, '::TestMode');
@@ -121,14 +127,21 @@ async function loadOdaFile(){
     
     if(oda){
         try {
+
+            
+
             const storage = useStorage(oda+'_')
             
             const res = await axios.get('./odas/'+oda+'/oda.json')
             
             const Activity = res.data
+
+            Activity.conf = materias[Activity.programa][Activity.materia]
+
+
             app.provide('activityFile', Activity)
             
-            backgroundGenerator.buildBG(res.data.id)
+            backgroundGenerator.buildBG(Activity.conf.color)
 
             
             app.provide('statusFile', statusFile)

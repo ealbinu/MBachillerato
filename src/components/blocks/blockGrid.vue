@@ -23,6 +23,7 @@ const cssVars = computed(() => {
     display: grid
     grid-template-columns: var(--block-grid-template-columns)
     grid-gap: var(--block-grid-gap)
+    align-items: center
     @media (max-width: 680px)
         grid-template-columns: var(--block-grid-template-columns-responsive)
 </style>

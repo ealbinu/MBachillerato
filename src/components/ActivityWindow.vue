@@ -1,12 +1,15 @@
 <template lang="pug">
-transition(name="zoom")
+Transition(name="zoom")
     section.Activity(:class="view ? 'desplegado' : '' ")
         template(v-for="(i, index) in Activity.screens" :key="index")
             ActivityScreen(:screen="i" v-show="isVisibleScreen(index)" @screen-next="changeScreen" :screenindex="index")
+        ActivityBG
 </template>
 <script setup>
 import ActivityScreen from './ActivityScreen.vue'
 import { ref, inject, computed } from 'vue'
+
+import ActivityBG from './ActivityBG.vue';
 
 
 const view = inject('view')
@@ -32,13 +35,10 @@ const isVisibleScreen = (screenIndex) => {
 <style lang="sass">
 section.Activity
     display: block
-    background: rgba($clear,0.9)
-    color: $main
     width: 100%
     height: 100%
     border: none
     margin-left: 2%
-    @include floatcard
     box-sizing: border-box
     display: flex
     flex-direction: column

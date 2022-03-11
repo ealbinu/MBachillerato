@@ -1,6 +1,6 @@
 <template lang="pug">
 transition(name="zoom")
-    aside.ActivitySidebar(:class="[wide?'':'mini']")
+    aside.ActivitySidebar(:class="[wide?'':'mini']" :style="cssVars")
         .openclosebtn(@click="wide=!wide")
             Icon(v-if="wide") navigate_before
             Icon(v-else) navigate_next
@@ -39,7 +39,7 @@ transition(name="zoom")
                     button(@click="resetApp") Reiniciar
 </template>
 <script setup>
-import { ref, inject, getCurrentInstance } from 'vue'
+import { ref, inject, getCurrentInstance , computed} from 'vue'
 import { useStorage } from "vue3-storage"
 import BlockSimpleDialog from './blocks/blockSimpleDialog.vue'
 import SidebarTestMenu from './SidebarTestMenu.vue'
@@ -50,6 +50,7 @@ import Puntaje from './Puntaje.vue'
 const Blocked = inject('blocked')
 
 const Activity = inject('activityFile')
+console.log(Activity.conf.color)
 
 const Status = inject('statusFile')
 const wide = ref(true)
@@ -67,6 +68,13 @@ const resetApp = () => {
 }
 currentInstance.appContext.config.globalProperties.emitter.on('sidebarmini', (evt) => {
     wide.value = false
+})
+
+
+const cssVars = computed(() => {
+    return {
+        '--block-active-color': Activity.conf.color
+    }
 })
 
 </script>
@@ -121,7 +129,7 @@ aside.ActivitySidebar
             &.active
                 font-weight: bold
                 @include floatcardsmall
-                background: $high
+                background: var(--block-active-color)
                 color: $clear
     
     .instrucciones
@@ -142,7 +150,7 @@ aside.ActivitySidebar
         &:hover
             background: $clear
         &:active
-            background: $high
+            background: var(--block-active-color)
     //MINI SIDEBAR 
     &.mini
         width: 60px

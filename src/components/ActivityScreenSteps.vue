@@ -49,8 +49,6 @@ const navigate = (dir) => {
     margin-left: auto
     margin-right: auto
     z-index: 10
-    background: $main
-    border-radius: 7px 0 7px 7px
     padding: .5%
     .step
         width: 12px

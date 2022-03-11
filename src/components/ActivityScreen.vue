@@ -3,7 +3,7 @@ div.activityScreen(:style="cssVars" :class="view ? 'desplegado' : '' ")
     div.activityScreenTitle(v-if="view") {{screen.title}}
     perfect-scrollbar(ref="scroll")
         template(v-for="(i, index) in screen.blocks" v-if="!screen.end")
-            transition(name="slide")
+            Transition(name="slide" mode="out-in" appear)
                 ScreenBlocks(:block="i" v-show="useSteps(index)" @step-next="stepNext" @screen-next="$emit('screenNext', $event)" :blockid="screenindex+'-'+index")
         template(v-else)
             ScreenBlockEnd(v-show="screen.end")
@@ -19,7 +19,7 @@ import { ref, inject, computed, watch } from 'vue'
 import ScreenBlocks from './ScreenBlocks.vue'
 import ScreenBlockEnd from './ScreenBlockEnd.vue'
 import ActivityScreenSteps from './ActivityScreenSteps.vue'
-
+const Activity = inject("activityFile")
 const view = inject('view')
 const scroll = ref()
 const props = defineProps({
@@ -36,7 +36,7 @@ const Status = inject("statusFile");
 
 const cssVars = computed(() => {
     return {
-        //'--screen-direction' : props.screen.direction || 'row',
+        '--activity-bg' : Activity.conf.color || '#ffffff',
     }
 })
 
@@ -77,7 +77,7 @@ watch(() => Status.value.step, (newVal, oldVal) => {
     box-sizing: border-box
     
 .activityScreen
-    background: $clear
+    background: transparent
     height: 100%
     @include centerize
     @include floatcard
@@ -87,6 +87,8 @@ watch(() => Status.value.step, (newVal, oldVal) => {
     justify-content: center
     align-items: center
     padding-bottom: 40px
+    position: relative
+    z-index: 1
     &.desplegado
         display: block
         height: auto

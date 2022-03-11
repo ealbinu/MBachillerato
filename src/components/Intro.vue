@@ -1,20 +1,24 @@
 <template lang="pug">
 transition(name="zoom" @after-leave="start")
-    div.dialog.intro(v-if="dialog" ref="introContainer")
-        .container.text-center
-            .description.my-2
-                h1.my-2 {{Activity.title}}
-                p {{Activity.asignatura}}
+    div.dialog.intro(v-if="dialog" ref="introContainer" :style="'background:' + Activity.conf.color ")
+        .container.text-center()
+            .description.my-2( :style="'background:'+Activity.conf.color")
+                img(:src="'odas/iconos/'+Activity.programa+'/'+Activity.materia+'.png'").materiaicon
+                h1.my-2.text-clear {{Activity.title}}
+                p.text-clear {{Activity.conf.materia}}
                 hr
-                h4.my-1 Aprendizajes esperados
-                p.mb-2 {{Activity.aprendizajes}}
+                h4.my-1.text-clear Aprendizajes esperados
+                p.mb-2.text-clear {{Activity.aprendizajes}}
                 template(v-if="Activity.contenidocentral")
-                    h4.my-1 Contenido central
-                    p.mb-2 {{Activity.contenidocentral}}
+                    h4.my-1.text-clear Contenido central
+                    p.mb-2.text-clear {{Activity.contenidocentral}}
             button.important(@click="close") Comenzar
-        .lottie(:data-animation-path="'odas/animations/intro_'+Activity.materia+'.json'" data-anim-loop="true" :data-name="'intro_'+Activity.materia")
+        //.lottie(:data-animation-path="'odas/animations/intro_'+Activity.materia+'.json'" data-anim-loop="true" :data-name="'intro_'+Activity.materia")
 </template>
 <script setup>
+
+
+
 import { ref, inject } from 'vue'
 import lottie from 'lottie-web'
 
@@ -38,6 +42,8 @@ lottie.searchAnimations()
 
 
 <style lang="sass" scoped>
+.materiaicon
+    max-width: 60px
 hr
         border: none
         border-top: 1px solid rgba($main,0.1)
@@ -49,9 +55,7 @@ h4
     opacity: 0.8
     color: $dark
 .description
-    background: rgba(#fff,0.8)
-    padding: 10px
-    @include floatcard
+
 p
     max-width: 600px
     color: $dark

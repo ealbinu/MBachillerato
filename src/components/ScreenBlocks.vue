@@ -3,7 +3,7 @@
 .block(:style="cssVars" v-if="block.content.length")
     //::::::::::::::: BLOCKS
     .blockContainer
-            BlocksRenderer( v-for="(i, index) in block.content" :item="i" :blockid="blockid+'-'+index" :key="index")
+        BlocksRenderer( v-for="(i, index) in block.content" :item="i" :blockid="blockid+'-'+index" :key="index")
 
     //::::::::::::::: NAV BUTTONS
     template(v-if="!view")
@@ -43,10 +43,10 @@ const cssVars = computed(() => {
     width: var(--block-width)
     box-sizing: border-box
     padding-bottom: 40px
+    position: relative
     .blockContainer
         font-size: 1.1rem
-        text-align: center
         padding: 1%
-        background: #fff
-        @include floatcardsmall
+        color: $clear
+        line-height: 1.4
 </style>

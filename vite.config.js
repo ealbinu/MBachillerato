@@ -29,5 +29,6 @@ export default defineConfig({
         `
       }
     }
-  }
+  },
+  assetsInclude: ['**/assets/DGETI/*.png']
 })
