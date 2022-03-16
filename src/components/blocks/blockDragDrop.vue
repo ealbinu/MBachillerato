@@ -34,6 +34,7 @@ import SolveModule from '../SolveModule.vue'
 import Icon from '../icon.vue'
 import BlocksRenderer from '../BlocksRenderer.vue';
 
+const Audios = inject('Audios')
 const Status = inject('statusFile')
 const Blocked = inject('blocked')
 const currentInstance = getCurrentInstance()
@@ -84,6 +85,7 @@ const createDrags = () => {
         if(result.value!=null){
             return false
         }
+        Audios.scancel.play()
         var drags = document.querySelector(dragsId+' .drags')
         if(drag.target.parentElement!=drags){
             drags.append(drag.target)
@@ -106,8 +108,9 @@ const createDrags = () => {
             }
         }
         if(!dropped){
-            TweenLite.to(drag.target, 0.2, { x: 0, y: 0 });
-            
+            TweenLite.to(drag.target, 0.2, { x: 0, y: 0 });   
+        } else {
+            Audios.sBlockDrag.play()
         }
 
     }
@@ -253,9 +256,10 @@ currentInstance.appContext.config.globalProperties.emitter.on('finalize', (evt) 
         min-height: 50px
         min-width: 50px
         position: relative
+        text-align: center
         &.hover
             border: 2px solid $high
-        .material-icons-two-tone
+        .material-icons
             font-size: 12px
             margin-top: -8px
             margin-bottom: 4px
@@ -268,6 +272,7 @@ currentInstance.appContext.config.globalProperties.emitter.on('finalize', (evt) 
         @include centerize
         flex-direction: column
         padding: 2%
+        text-align: center
         .content
             background: $clear
             @include centerize
@@ -276,7 +281,7 @@ currentInstance.appContext.config.globalProperties.emitter.on('finalize', (evt) 
             font-weight: bold
         .drag
             margin: 1%
-            .material-icons-two-tone
+            .material-icons
                 display: none
         &.hover
             border-color: $high

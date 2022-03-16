@@ -21,9 +21,11 @@ const props = defineProps({
     }
 })
 const Status = inject("statusFile")
+const Audios = inject("Audios")
 
 const currentStep = ref(0)
 const navigate = (dir) => {
+    Audios.sclick.play()
     if(
         (dir == -1 && Status.value.step>0) ||
         (dir==1 && Status.value.step<props.steps-1)
@@ -66,12 +68,12 @@ button:not(.active)
     margin: 0 10px
     display: flex
     align-items: center
-    .material-icons-two-tone
+    .material-icons
         filter: invert(100%)  sepia(94%)  hue-rotate(150deg)
         font-size: 20px
     &:hover
         color: $main
-        .material-icons-two-tone
+        .material-icons
             filter: invert(50%)  sepia(94%)  hue-rotate(150deg)
 button
     span.txt

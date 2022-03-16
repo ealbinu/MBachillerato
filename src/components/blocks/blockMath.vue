@@ -1,9 +1,17 @@
 <template lang="pug">
 template(v-if="loaded")
 
-    div(v-if="data.block" :style="cssVars" v-html="mjax(data.math)").blockmathCont.animate__animated.animate__jello.animate__delay-2s
-    span(v-else :style="cssVars" v-html="mjax(data.math)").blockmathCont
-        
+    div(v-if="data.block"
+        :style="cssVars"
+        :class="[data.dark?'dark':'light']"
+        v-html="mjax(data.math)"
+    ).blockmathCont.animate__animated.animate__jello.animate__delay-2s
+    
+    span(v-else
+        :style="cssVars" 
+        :class="[data.dark?'dark':'light']"
+        v-html="mjax(data.math)"
+    ).blockmathCont
 
 </template>
 <script setup>
@@ -25,7 +33,7 @@ const mjax = (data) => {
 
 setTimeout(()=>{
     loaded.value = true
-}, 500)
+}, 200)
 </script>
 <style lang="sass">
 div.blockmathCont
@@ -40,6 +48,9 @@ div.blockmathCont
     margin: 2px auto
     svg
         max-width: 100%
+        margin: 0 auto
+    &.dark
+        color: $main
 span.blockmathCont
     font-size: var(--fontSize)
     color: $light
@@ -48,6 +59,11 @@ span.blockmathCont
     display: inline-block
     background: rgba(255,255,255,0.03)
     max-width: 100%
+    text-align: center
     svg
         max-width: 100%
+    &.dark
+        color: $main
+.blockSelectOption.active .blockmathCont
+    color: $main !important
 </style>

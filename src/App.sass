@@ -26,20 +26,6 @@ body
     padding: .5%
     box-sizing: border-box
 
-
-.dialog
-    position: absolute
-    left: 5%
-    right: 5%
-    top: 5%
-    bottom: 5%
-    width: 90%
-    height:90%
-    @include floatcard
-    background: #fff
-    @include centerize
-    z-index: 99
-
 button
     border: none
     background: $light
@@ -94,13 +80,13 @@ button
 
 
 .slide-enter-active
-    animation: jackInTheBox
+    animation: fadeIn
     animation-duration: 1s
 .slide-leave-active
     //animation: zoomOutUp
     //animation-duration: 1s
 
-.material-icons-two-tone
+.material-icons
     vertical-align: middle
     font-size: 18px
     filter: invert(50%)  sepia(94%)  hue-rotate(150deg)
@@ -260,16 +246,20 @@ button
         @include floatcardsmall
         @include centerize
         z-index: 99
+        color: #fff
     &:after
-        font-family: "Material Icons Two Tone"
+        font-family: "Material Icons"
         font-size: 18px
         filter: invert(100%)
+        color: #fff
 .isok
+    color: #fff
     &:after
         content: "check"
     &:before
         background: $high
 .notok
+    color: #fff
     &:after
         content: "clear"
     &:before
@@ -303,7 +293,8 @@ button
     font-size: 1.2rem
 .p
     font-size: 1rem
-
+.small
+    font-size: 0.8rem
 
 hr
     border: none

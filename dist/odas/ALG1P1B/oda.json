@@ -2,10 +2,17 @@
     "id": "ALG1P1B",
     "programa": "DGETI",
     "materia": "ALGEBRAI",
-    "bgimgs": 2,
+    "bgimgs": 5,
     "title": "Variables",
-    "aprendizajes": "Reconoce la existencia de las variables y distingue sus usos como número general, como incógnita y como relación funcional.",
-    "contenidocentral": "Uso de las variables y las expresiones algebraicas.",
+    "ficha":[
+        ["Nivel educativo", "Bachillerato"],
+        ["Sistema educativo", "Bachillerato tecnológico"],
+        ["Semestre o grado", "Primer semestre"],
+        ["Asignatura", "Álgebra I"],
+        ["Tema", "Variables"],
+        ["Aprendizajes esperados", "Reconoce la existencia de las variables y distingue sus usos como número general, como incógnita y como relación funcional."],
+        ["Contenido cental", "Uso de las variables y las expresiones algebraicas."]
+    ],
     "screens": [
         {
             "title": "Introducción",
@@ -15,71 +22,69 @@
                 {
                     "width": "100%",
                     "content": [
+                        "Las literales tienen la función de representar un valor numérico por medio de letras, cuando dicho valor no es fijo son consideradas como variables.",
+                        {"br":1},
+                        {"br":1},
                         {
                             "grid": 1,
                             "columns": "1fr 1fr",
                             "content":[
+                                "De acuerdo con la solución que se requiere en cada planteamiento de un problema es posible emplear las literales como número general dentro de una sucesión numérica, como incógnita dentro de una ecuación o como una variable dentro de una ecuación donde además hay una relación funcional.",
                                 {
-                                    "group": 1,
-                                    "content":[
-                                        "Las literales tienen la función de representar un <strong>valor numérico</strong> por medio de letras y símbolos.",
-                                        {"br":1},
-                                        {"br":1},
-                                        {"text": "De acuerdo con la solución que se requiere en cada planteamiento de un problema, es posible emplear las variables como número general dentro de una sucesión numérica, como incógnita dentro de una ecuación o como variable dentro de una función."}
+                                    "dialog":1,
+                                    "button": [{"icon":"contact_support", "size": "3rem", "block":true}," Leer más"],
+                                    "style":"margin: auto; text-align:center; width: 100%;",
+                                    "content": [
+                                        "Cuando una literal se utiliza como un número general se puede encontrar en una expresión algebraica. En ésta, el valor de la literal puede representar cualquier número real, por ejemplo:",
+                                        {"math": "3x+1", "block": true, "size": "3rem", "dark": true},
+                                        "En este caso el valor de la ",
+                                        {"math": "x", "dark": true},
+                                        " representa un número cualquiera."
                                     ]
-                                },
-                                {"math": "\\frac{x+y}{3}", "block": true, "size": "3rem"}
+                                }
+                            ]
+                        },
+                        {"br":1},
+                        "Cuando una expresión algebraica es igualada a un número se convierte en una ecuación. En las ecuaciones, las literales son utilizadas como incógnita ya que en éstas es posible determinar el valor de la literal mediante operaciones aritméticas, por ejemplo:",
+                        {"math": "3x + 1 = 7", "block":1},
+                        {"br":1},
+                        "En este caso el valor de la literal es 2 porque al reemplazar este valor en la igualdad ésta se cumple:",
+                        {"math": "3(2)+1=7", "block":1},
+                        {"math": "6+1=7", "block":1},
+                        {"math": "7=7", "block":1},
+                        {"br": 1},
+                        {
+                            "dialog":1,
+                            "button": [{"icon":"contact_support", "size": "3rem"}," Leer más"],
+                            "style":"margin: auto; text-align:center; width: 100%;",
+                            "content": [
+                                "Cuando una expresión algebraica es igual a otra literal se convierte en una función.",
+                                {"br":1},
+                                "Esto se da porque el valor de una variable estará en función de la otra a través de una relación funcional, por ejemplo:",
+                                {"math": "y=4x+5", "block": true, "size": "3rem", "dark": true},
+                                "En este caso no hay un único valor de ",
+                                {"math": "x", "dark":1},
+                                " que satisfaga esta ecuación ya que, por ejemplo, si se le da el valor de 3 a ",
+                                {"math": "x", "dark":1},
+                                ", el valor de ",
+                                {"math": "y", "dark":1},
+                                " será ",
+                                {"math": "y = 4(3)+5=17", "dark":1},
+                                ", pero si ",
+                                {"math": "x", "dark":1},
+                                " adquiere el valor de 7, el valor de ",
+                                {"math": "y", "dark":1},
+                                " será ",
+                                {"math": "y=4(7)+5=33", "dark":1},
+                                ". Ambas literales cambian su valor y la igualdad se cumple con cualquier valor que se le dé a ",
+                                {"math": "x", "dark":1},
+                                " es por ello que en una relación funcional las literales actúan como variables."
                             ]
                         }
-                    ]
-                },
-                {
-                    "width": "100%",
-                    "content": [
-                        "Cuando una literal se utiliza como un número general se puede encontrar en una expresión algebraica, en ésta, el valor de la literal puede representar cualquier número real, por ejemplo:",
-                        {"math":"3x + 1", "block":true},
-                        "En este caso el valor de la ",
-                        {"math":"x"},
-                        " representa un número cualquiera."
-                    ]
-                },
-                {
-                    "width": "100%",
-                    "content": [
-                        "Cuando una expresión algebraica es igualada a un número se convierte en una ecuación, en las ecuaciones las literales son utilizadas como incógnita ya que, en éstas es posible determinar el valor de la literal mediante operaciones matemáticas, por ejemplo:",
-                        {"math": "3x + 1 = 7", "block":true},
-                        {"text":"En este caso el valor de la literal es 2, porque al reemplazar este valor en la igualdad, ésta se cumple:"},
-                        {"math": "3(2) + 1 = 7", "block":true},
-                        {"math": "6 + 1 = 7", "block":true},
-                        {"math": "7 = 7", "block":true}
-                    ]
-                },
-                {
-                    "width": "100%",
-                    "content": [
-                        "Cuando una expresión algebraica es igual a otra literal se convierte en una función. Esto se da porque el valor de una variable estará en función de la otra a través de una relación funcional, por ejemplo:",
-                        {"math": "y = 4x + 5", "block":true},
-                        "En este caso no hay un único valor de ",
-                        {"math":"x"},
-                        " que satisfaga esta ecuación ya que, por ejemplo, si se le da el valor de 3 a ",
-                        {"math": "x"},
-                        ", el valor de ",
-                        {"math": "y"},
-                        " será ",
-                        {"math": "y = 4(3) + 5 = 17"},
-                        " pero si ",
-                        {"math": "x"},
-                        " adquiere el valor de 7, el valor de ",
-                        {"math": "y"},
-                        " será ",
-                        {"math": "y = 4(7) + 5 = 33"},
-                        ". Ambas literales cambian su valor y la igualdad se cumple con cualquier valor que se le dé a ",
-                        {"math": "x"},
-                        ", es por ello que en una relación funcional las literales actúan como variables."
-
                     ],
                     "buttonNextScreen": "Continuar"
                 }
+                
             ]
         },
         {
@@ -90,19 +95,20 @@
                 {
                     "width": "100%",
                     "content": [
-                        "Lee los siguientes enunciados, identifica si la literal corresponde a una variable dependiente o independiente desplazándola hacia la opción correcta."
-                    ],
-                    "buttonNextStep": "Comenzar actividad"
-                },
-                {
-                    "width": "100%",
-                    "content": [
-                        "1. Javier es gestor de recursos de una casa hogar para niños en situaciones vulnerables y logró que un autolavado done $5 por cada automóvil que lava al día. Para conocer las donaciones que obtiene en un día formuló la siguiente expresión algebraica: ",
+                        {
+                            "instruction":1,
+                            "content": [
+                                {"icon": "back_hand", "size":"2rem", "class":"animate__animated animate__shakeX animate__slower animate__infinite"},
+                                "Lee los siguientes enunciados, identifica si la literal corresponde a una variable dependiente o independiente y desplázala hacia la opción correcta."
+                            ]
+                        },
+                        {"br":1},
+                        {"text": "1. Javier es gestor de recursos de una casa hogar para niños en situaciones vulnerables y logró que un autolavado done $5 por cada automóvil que lava al día. Para conocer las donaciones que obtiene en un día formuló la siguiente expresión algebraica:", "class":"h5"},
                         {"math": "d = 5a", "block": true},
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "d", "size": "1.5rem"}, "vd"]
+                                    [{"math": "g", "size": "1.5rem", "dark":1}, "vd"]
                                 ],
                             "dropsLeft":[["Variable dependiente", "vd"]],
                             "dropsRight":[["Variable independiente", "vi"]]
@@ -112,12 +118,12 @@
                 {
                     "width": "100%",
                     "content": [
-                        "2. Manuel empezó su entrenamiento para participar en un maratón corriendo 1.2 km el primer día, después aumentó la distancia 0.3 km por día. Para conocer la distancia que corre de acuerdo con los días que trascurren, Manuel formuló la siguiente expresión algebraica: ",
+                        {"text": "2. Manuel empezó su entrenamiento para participar en un maratón corriendo 1.2 km el primer día, después aumentó la distancia 0.3 km por día. Para conocer la distancia que corre de acuerdo con los días que trascurren, Manuel formuló la siguiente expresión algebraica:", "class":"h5"},
                         {"math": "d = 1.2 + 0.3n", "block": true},
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "n", "size": "1.5rem"}, "vi"]
+                                    [{"math": "n", "size": "1.5rem", "dark":1}, "vi"]
                                 ],
                             "dropsLeft":[["Variable dependiente", "vd"]],
                             "dropsRight":[["Variable independiente", "vi"]]
@@ -127,12 +133,12 @@
                 {
                     "width": "100%",
                     "content": [
-                        "3. El perímetro de un círculo está dado por la siguiente expresión algebraica: ",
+                        {"text":"3. El perímetro de un círculo está dado por la siguiente expresión algebraica:", "class":"h5"},
                         {"math": "p = \\pi d", "block": true},
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "p", "size": "1.5rem"}, "vd"]
+                                    [{"math": "p", "size": "1.5rem", "dark":1}, "vd"]
                                 ],
                             "dropsLeft":[["Variable dependiente", "vd"]],
                             "dropsRight":[["Variable independiente", "vi"]]
@@ -142,12 +148,12 @@
                 {
                     "width": "100%",
                     "content": [
-                        "4. Lourdes inició un proyecto de nutrición en el que vende desayunos saludables. El paquete mensual de desayunos lo vende a $550, de los cuales destina $225 para gastos de insumos y renta del local, el resto es su ganancia. Para conocer sus ganancias escribió la siguiente expresión algebraica: ",
+                        {"text":"4. Lourdes inició un proyecto de nutrición en el que vende desayunos saludables. El paquete mensual de desayunos lo vende a $550, de los cuales destina $225 para gastos de insumos y renta del local, el resto es su ganancia. Para conocer sus ganancias escribió la siguiente expresión algebraica: ", "class":"h5"},
                         {"math": "g = (550 – 225)u", "block": true},
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "u", "size": "1.5rem"}, "vi"]
+                                    [{"math": "u", "size": "1.5rem", "dark":1}, "vi"]
                                 ],
                             "dropsLeft":[["Variable dependiente", "vd"]],
                             "dropsRight":[["Variable independiente", "vi"]]
@@ -157,18 +163,17 @@
                 {
                     "width": "100%",
                     "content": [
-                        "5. María cultiva una parcela utilizando técnicas agroecológicas de la que obtiene una ganancia promedio anual de $50 000. Para conocer sus ganancias en varios años escribió la siguiente expresión algebraica: ",
+                        {"text":"5. María cultiva una parcela utilizando técnicas agroecológicas de la que obtiene una ganancia promedio anual de $50 000. Para conocer sus ganancias en varios años escribió la siguiente expresión algebraica: ", "class":"h5"},
                         {"math": "g = 50\\ 000a", "block": true},
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "a", "size": "1.5rem"}, "vi"]
+                                    [{"math": "a", "size": "1.5rem", "dark":1}, "vi"]
                                 ],
                             "dropsLeft":[["Variable dependiente", "vd"]],
                             "dropsRight":[["Variable independiente", "vi"]]
                         }
-                    ],
-                    "buttonNextScreen": "Siguiente actividad"
+                    ]
                 }
             ]
         },
@@ -180,60 +185,60 @@
                 {
                     "width": "100%",
                     "content": [
-                        "Identifica si la expresión algebraica representa la relación funcional en los siguientes enunciados y desplazala hacia la opción correcta."
-                    ],
-                    "buttonNextStep": "Comenzar actividad"
-                },
-                {
-                    "width": "100%",
-                    "content": [
-                        "1. La tercera parte del producto de dos números.",
+                        {
+                            "instruction":1,
+                            "content": [
+                                {"icon": "back_hand", "size":"2rem", "class":"animate__animated animate__shakeX animate__slower animate__infinite"},
+                                "Lee los siguientes enunciados, identifica si la literal corresponde a una variable dependiente o independiente y desplázala hacia la opción correcta."
+                            ]
+                        },
+                        {"br": 1},
+                        {"text": "1. La tercera parte del producto de dos números.", "class":"h5"},
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "\\frac{x + y}{3}", "size": "1.5rem"}, "no"]
+                                    [{"math": "\\frac{x + y}{3}", "size": "1.5rem", "dark":1}, "no"]
                                 ],
                             "dropsLeft":[["Corresponde.", "si"]],
                             "dropsRight":[["No corresponde.", "no"]]
                         },
-                        "2. El doble de un número más el triple de un número diferente.",
+                        {"text": "2. El doble de un número más el triple de un número diferente.", "class":"h5"},
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "2x + 3y", "size": "1.5rem"}, "si"]
+                                    [{"math": "2x + 3y", "size": "1.5rem", "dark":1}, "si"]
                                 ],
                             "dropsLeft":[["Corresponde.", "si"]],
                             "dropsRight":[["No corresponde.", "no"]]
                         },
-                        "3. La diferencia de un número cualquiera menos la cuarta parte de la suma de un número diferente más cuatro.",
+                        {"text": "3. La diferencia de un número cualquiera menos la cuarta parte de la suma de un número diferente más cuatro.", "class":"h5"},
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "x - \\frac{y + 4}{4}", "size": "1.5rem"}, "si"]
+                                    [{"math": "x - \\frac{y + 4}{4}", "size": "1.5rem", "dark":1}, "si"]
                                 ],
                             "dropsLeft":[["Corresponde.", "si"]],
                             "dropsRight":[["No corresponde.", "no"]]
                         },
-                        "4. La mitad de la resta de dos números diferentes.",
+                        {"text": "4. La mitad de la resta de dos números diferentes.", "class":"h5"},
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "\\frac{x}{2} - 2y", "size": "1.5rem"}, "no"]
+                                    [{"math": "\\frac{x}{2} - 2y", "size": "1.5rem", "dark":1}, "no"]
                                 ],
                             "dropsLeft":[["Corresponde.", "si"]],
                             "dropsRight":[["No corresponde.", "no"]]
                         },
-                        "5. El área de un trapecio es igual a la mitad suma de las bases multiplicada por la altura.",
+                        {"text": "5. El área de un trapecio es igual a la mitad suma de las bases multiplicada por la altura.", "class":"h5"},
                         {
                             "dragdrop": true,
                             "drags": [
-                                    [{"math": "A = \\frac{P \\times a}{2}", "size": "1.5rem"}, "no"]
+                                    [{"math": "A = \\frac{P \\times a}{2}", "size": "1.5rem", "dark":1}, "no"]
                                 ],
                             "dropsLeft":[["Corresponde.", "si"]],
                             "dropsRight":[["No corresponde.", "no"]]
                         }
-                    ],
-                    "buttonNextScreen": "Siguiente actividad"
+                    ]
                 }
             ]
         },
@@ -245,14 +250,15 @@
                 {
                     "width": "100%",
                     "content": [
-                        "Lee los siguientes enunciados, identifica la expresión algebraica en la que se presenta el número generalizado y selecciona la opción correcta."
-                    ],
-                    "buttonNextStep": "Comenzar actividad"
-                },
-                {
-                    "width": "100%",
-                    "content": [
-                        "1. Es la representación en lenguaje algebraico de la tercera parte de un número menos la octava parte de otro número.",
+                        {
+                            "instruction":1,
+                            "content": [
+                                {"icon": "touch_app", "size":"2rem", "class":"animate__animated animate__flash animate__slower animate__infinite"},
+                                "Lee los siguientes enunciados, identifica si la literal corresponde a una variable dependiente o independiente y desplázala hacia la opción correcta."
+                            ]
+                        },
+                        {"br": 1},
+                        {"text": "1. Es la representación en lenguaje algebraico de la tercera parte de un número menos la octava parte de otro número.", "class":"h5"},
                         {
                             "select": true,
                             "options": [
@@ -267,7 +273,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        "2. Es la representación en lenguaje común de ",
+                        {"text": "2. Es la representación en lenguaje común de ", "class":"h5"},
                         {"math":"(4x - 2y)^2", "block": true},
                         {
                             "select": true,
@@ -283,7 +289,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        "3. Es la representación en lenguaje algebraico de la inversa de la suma de la quinta parte de un número más el triple de otro número al cubo.",
+                        {"text": "3. Es la representación en lenguaje algebraico de la inversa de la suma de la quinta parte de un número más el triple de otro número al cubo.", "class":"h5"},
                         {
                             "select": true,
                             "options": [
@@ -298,7 +304,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        "4. Es la representación en lenguaje común de ",
+                        {"text": "4. Es la representación en lenguaje común de ", "class":"h5"},
                         {"math":"\\frac{9x}{(2y + 6)^2}", "block": true},
                         {
                             "select": true,
@@ -314,7 +320,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        "5. Es la representación en lenguaje algebraico del quíntuple de un número más el triple del cuadrado de la suma de la mitad de otro número más siete.",
+                        {"text": "5. Es la representación en lenguaje algebraico del quíntuple de un número más el triple del cuadrado de la suma de la mitad de otro número más siete.", "class":"h5"},
                         {
                             "select": true,
                             "options": [
@@ -325,8 +331,7 @@
                             ]
 
                         }
-                    ],
-                    "buttonNextScreen": "Continuar"
+                    ]
                 }
             ]
         },

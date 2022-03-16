@@ -38,7 +38,7 @@ const open = () => {
     font-weight: bold
     cursor: pointer
     position: relative
-    .material-icons-two-tone
+    .material-icons
         font-size: 14px
         vertical-align: top
     .termDefinition

@@ -21,6 +21,7 @@ import BlocksRenderer from '../BlocksRenderer.vue'
 const result = ref()
 const Status = inject('statusFile')
 const Blocked = inject('blocked')
+const Audios = inject('Audios')
 
 const currentInstance = getCurrentInstance()
 
@@ -82,7 +83,7 @@ const clicked = (index) => {
     if(Status.value.finalize){
         return false
     }
-
+    Audios.sBlockSelect.play()
     if(singleSelection.value){
         for(var i  in options.value){
             options.value[i] = false
@@ -179,7 +180,7 @@ const cssVars = computed(() => {
             top: 2px
             left: 6px
             color: $light
-        .material-icons-two-tone
+        .material-icons
             position: absolute
             font-size: 12px
             top: 2px
@@ -190,8 +191,8 @@ const cssVars = computed(() => {
             box-sizing: border-box
         &.active
             background: $high
-            color: #fff
-            .material-icons-two-tone
+            color: $dark
+            .material-icons
                 display: none
             
 </style>

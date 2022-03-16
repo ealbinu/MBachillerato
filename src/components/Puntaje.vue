@@ -41,18 +41,18 @@ const colorStyles = () => {
     &.ok4
         background: $high
         color: $clear
-        .material-icons-two-tone
+        .material-icons
             filter: invert(100%)
     &.ok3
         background: $accent
         color:$clear
-        .material-icons-two-tone
+        .material-icons
             filter: invert(100%)
     &.ok2
         background: $test
     &.ok1
         background: $negative
         color:$clear
-        .material-icons-two-tone
+        .material-icons
             filter: invert(100%)
 </style>

@@ -6,23 +6,23 @@ import Vue3Storage from "vue3-storage"
 import { useStorage } from "vue3-storage"
 import { Base64 } from 'js-base64';
 import _ from 'lodash'
-
 import VueApexCharts from "vue3-apexcharts";
-
-
 import { ref, provide, watch, inject, getCurrentInstance } from 'vue'
-
 import backgroundGenerator from './components/backgroundGenerator.js'
-
 import 'animate.css'
-
 import PerfectScrollbar from 'vue3-perfect-scrollbar'
 import 'vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css'
 
-import VueObserveVisibility from 'vue-observe-visibility'
-
+import { Howl, Howler } from 'howler';
 
 import materias from './materias.js'
+
+
+
+
+
+
+
 
 
 const consoleStyles = [
@@ -41,15 +41,29 @@ var app = createApp(App)
 app.config.globalProperties.emitter = emitter
 app.use(Vue3Storage)
 app.use(PerfectScrollbar)
-
 app.use(VueApexCharts)
-app.use(VueObserveVisibility)
-
 
 gsap.registerPlugin(Draggable)
 
-// Show all screens (test only)
+//- Show all screens (test only)
 app.provide('view', ref(false))
+
+
+
+
+//- Audios
+/* sounds */
+app.provide('Audios', { 
+    sclick : new Howl({src:['odas/assets/sounds/click.mp3']}),
+    scancel : new Howl({src:['odas/assets/sounds/cancel.mp3']}),
+    sopen : new Howl({src:['odas/assets/sounds/open.mp3']}),
+    sclose : new Howl({src:['odas/assets/sounds/close.mp3']}),
+    schange: new Howl({src:['odas/assets/sounds/change.mp3']}),
+    sBlockSelect: new Howl({src:['odas/assets/sounds/blockSelect.mp3']}),
+    sBlockDrag: new Howl({src:['odas/assets/sounds/blockDrag.mp3']}),
+    send: new Howl({src:['odas/assets/sounds/end.mp3']}),
+ })
+
 
 loadOdaFile()
 
@@ -151,7 +165,6 @@ async function loadOdaFile(){
             app.mount('#app')
 
             // DATA FROM LOCALSTORAGE only on TEST
-            console.log('TEST:::', istest)
             if(istest != null){
                 const getStatus = storage.getStorageSync('status')
                 if(getStatus){
@@ -195,6 +208,9 @@ async function loadOdaFile(){
 
             }, 2000)
 
+
+            
+
             
             watch(
                 () => statusFile,
@@ -203,6 +219,7 @@ async function loadOdaFile(){
                         return false
                     }
                     saveDataToStorage(actual, prev)
+                    
                     
                 },
                 { deep: true }

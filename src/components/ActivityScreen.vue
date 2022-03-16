@@ -4,7 +4,7 @@ div.activityScreen(:style="cssVars" :class="view ? 'desplegado' : '' ")
     perfect-scrollbar(ref="scroll")
         template(v-for="(i, index) in screen.blocks" v-if="!screen.end")
             Transition(name="slide" mode="out-in" appear)
-                ScreenBlocks(:block="i" v-show="useSteps(index)" @step-next="stepNext" @screen-next="$emit('screenNext', $event)" :blockid="screenindex+'-'+index")
+                ScreenBlocks(:islast="screen.blocks.length-1 == index" :block="i" v-show="useSteps(index)" @step-next="stepNext" @screen-next="$emit('screenNext', $event)" :blockid="screenindex+'-'+index")
         template(v-else)
             ScreenBlockEnd(v-show="screen.end")
 

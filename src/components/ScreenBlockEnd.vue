@@ -39,6 +39,7 @@ import {ref, getCurrentInstance, inject, computed} from 'vue'
 import { useStorage } from "vue3-storage"
 import _ from 'lodash'
 
+const Audios = inject('Audios')
 const Activity = inject('activityFile')
 const Status = inject("statusFile")
 const Results = inject("resultsFile")
@@ -108,6 +109,7 @@ const finalize = () => {
         Results.value.oksPercentage = Math.round((Results.value.oks*100)/Results.value.total)
         Results.value.errorsPercentage = 100 - Results.value.oksPercentage
     }
+    Audios.send.play()
 }
 if(Status.value.finalize){
     setTimeout(function () {
@@ -124,3 +126,8 @@ const resetApp = () => {
 }
 
 </script>
+
+<style lang="sass" scoped>
+.ScreenBlockEnd
+    color: $light
+</style>

@@ -35,7 +35,6 @@ const stats = computed(() => {
 
 <style lang="sass" scoped>
 .progreso
-    
     width: 100%
     @include floatcardsmall
     background: $clear

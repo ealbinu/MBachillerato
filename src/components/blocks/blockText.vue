@@ -1,6 +1,5 @@
 <template lang="pug">
 .blockText(
-    v-observe-visibility="{callback: visibilityChanged}"
     :style="cssVars"
     :class="[ data.class]"
     v-html="text"

@@ -6,18 +6,12 @@ transition(name="zoom")
             Icon(v-else) navigate_next
         
         perfect-scrollbar.container
-            div.area
-                h1 {{Activity.title}}
+            div.area.text-center
+                img(:src="'odas/assets/icons/'+Activity.programa+'/'+Activity.materia+'.png'").w-3
+                .h4 {{Activity.title}}
+                .small {{Activity.conf.materia}}
             hr
-            .area.row.vertical.extrainfo
-                BlockSimpleDialog(label="Aprendizajes esperados" :classinit="['mb-1']")
-                    .text-center
-                        h1.main.mb-1 Aprendizajes esperados
-                        div.main {{Activity.aprendizajes}}
-                BlockSimpleDialog(label="Contenido central" v-if="Activity.contenidocentral")
-                    .text-center
-                        h1.main.mb-1 Contenido central
-                        div.main {{Activity.contenidocentral}}
+            .area.text-center: FichaTecnica
 
             hr
             div.area.pantallas
@@ -31,6 +25,7 @@ transition(name="zoom")
             Progreso
             Puntaje
             
+            MontenegroIcon
             SidebarTestMenu
             
             //template(v-if="!Blocked")
@@ -46,11 +41,12 @@ import SidebarTestMenu from './SidebarTestMenu.vue'
 import Icon from './icon.vue'
 import Progreso from './Progreso.vue'
 import Puntaje from './Puntaje.vue'
+import FichaTecnica from './FichaTecnica.vue'
+import MontenegroIcon from './MontenegroIcon.vue'
 
 const Blocked = inject('blocked')
 
 const Activity = inject('activityFile')
-console.log(Activity.conf.color)
 
 const Status = inject('statusFile')
 const wide = ref(true)

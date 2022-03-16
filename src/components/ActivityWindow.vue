@@ -2,6 +2,7 @@
 Transition(name="zoom")
     section.Activity(:class="view ? 'desplegado' : '' ")
         template(v-for="(i, index) in Activity.screens" :key="index")
+            //Arrow(v-if="isVisibleScreen(index)" :screenindex="'arrow-'+index")
             ActivityScreen(:screen="i" v-show="isVisibleScreen(index)" @screen-next="changeScreen" :screenindex="index")
         ActivityBG
 </template>
@@ -10,6 +11,7 @@ import ActivityScreen from './ActivityScreen.vue'
 import { ref, inject, computed } from 'vue'
 
 import ActivityBG from './ActivityBG.vue';
+import Arrow from './Arrow.vue';
 
 
 const view = inject('view')

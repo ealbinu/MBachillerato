@@ -4,17 +4,17 @@
 span(v-if="typeof item === 'string' " v-html="item")
 //-Break
 br(v-else-if="item.br")
-//-Break
+//-Hr
 hr(v-else-if="item.hr").my-2
-//-Break
-br(v-else-if="item.br")
-//-Block text
-//div(v-else-if="item.text" v-html="item.text" :class="item.class || 'my-2'")
-//-Block Text
+//-Icon
+BlockIcon(v-else-if="item.icon" :data="item")
+//-Text
 BlockText(v-else-if="item.text" :data="item" :key="blockid")
-//-Block Term
+//-Instructions
+BlockInstructions(v-else-if="item.instruction" :data="item" :key="blockid")
+//-Term
 BlockTerm(v-else-if="item.term" :data="item")
-//-Block Image
+//-Image
 BlockImg(v-else-if="item.img" :data="item")
 //-Math jax
 BlockMath(v-else-if="item.math" :data="item")
@@ -34,6 +34,7 @@ BlockPlot(v-if="item.plot" :data="item" :blockid="blockid")
 BlockGrid(v-if="item.grid" :data="item" :blockid="blockid")
 //-Group
 BlockGroup(v-if="item.group" :data="item" :blockid="blockid")
+
 </template>
 <script setup>
 import {ref} from 'vue'
@@ -50,9 +51,12 @@ import BlockGrid from './blocks/blockGrid.vue';
 import BlockGroup from './blocks/blockGroup.vue';
 import BlockSortable from './blocks/blockSortable.vue';
 import BlockText from './blocks/blockText.vue';
+import BlockIcon from './blocks/blockIcon.vue';
+import BlockInstructions from './blocks/blockInstructions.vue';
 
 const props = defineProps({
     item: [Object, String],
     blockid: String
 })
+
 </script>

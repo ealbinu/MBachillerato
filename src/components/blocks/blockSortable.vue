@@ -74,7 +74,7 @@ const finalize = () => {
         result.value = false
         block.value.classList.add('notok')
     }
-    console.log(result.value)
+
     Status.value.result[props.blockid] = result.value
 }
 

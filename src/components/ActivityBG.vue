@@ -7,8 +7,12 @@ template(v-for="(i, index) in Activity.bgimgs")
 </template>
 <script setup>
 import { ref, inject, computed } from 'vue'
-const props = defineProps({})
+const props = defineProps({
+    speed: Number
+})
 const Activity = inject("activityFile")
+
+const speedshow = props.speed?props.speed : 6000
 
 const counter = ref(1)
 
@@ -18,7 +22,7 @@ setInterval(() => {
     } else {
         counter.value = 1
     }
-}, 6000)
+}, speedshow)
 
 </script>
 <style lang="sass" scoped>
