@@ -30,13 +30,14 @@ change()
     display: flex
     justify-content: center
     align-items: center
-    margin: 12px auto
-    width: 120px
-    height: 40px
+    margin: 10px auto
+    width: 100%
+    height: 32px
     position: relative
     text-align: center
     cursor: pointer
     img
-        height: 40px
+        height: 32px
         position: absolute
+        max-width: 100%
 </style>

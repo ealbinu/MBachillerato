@@ -8,6 +8,7 @@ transition(name="zoom")
         perfect-scrollbar.container
             div.area.text-center
                 img(:src="'odas/assets/icons/'+Activity.programa+'/'+Activity.materia+'.png'").w-3
+            div.area.text-center.areaTitle
                 .h4 {{Activity.title}}
                 .small {{Activity.conf.materia}}
             hr
@@ -19,7 +20,7 @@ transition(name="zoom")
                     template(v-for="(i, index) in Activity.screens")
                         li(:class="index == Status.screen ? 'active': ''" @click="goToScreen(index)").screenItem
                             Icon(:class="index == Status.screen ? 'active': ''")  {{i.icon}}
-                            span.label &nbsp;{{i.title}}
+                            span.p &nbsp;{{i.title}}
             hr
             
             Progreso
@@ -101,17 +102,7 @@ aside.ActivitySidebar
     .area
         &.pantallas
             flex-grow: 1
-    h1
-        font-size: 1.2rem
-        color: $dark
-        text-align: center
-        span
-            display: block
-            font-size: 1rem
-    h2
-        font-size: 0.8rem
-        color: $dark
-        margin-bottom: 6px
+
     hr
         border: none
         border-top: 1px solid rgba($main,0.1)
@@ -152,11 +143,13 @@ aside.ActivitySidebar
         width: 60px
         transition: width .2s ease-out
         text-align: center
-        h1, .label, hr, .extrainfo
+        .h4, .label,
+        .extrainfo,
+        .areaTitle,
+        .FichaTecnica button>span
             display: none
-            display: none
-        
-        
+
+            
         //@media (max-width: 600px)
             position: fixed
             left: 2%

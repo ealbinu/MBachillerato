@@ -1,7 +1,7 @@
 <template lang="pug">
 .FichaTecnica
-    BlockSimpleDialog(label="Ficha Técnica")
-        .h2 Ficha Técnica
+    BlockSimpleDialog(label="Ficha Técnica" icon="assignment")
+        span.h2 Ficha Técnica
         template(v-for="(i, index) in Activity.ficha")
             .grid
                 div.text-bold {{i[0]}}:
@@ -10,6 +10,7 @@
 <script setup>
 import {ref, inject} from 'vue'
 import BlockSimpleDialog from './blocks/blockSimpleDialog.vue';
+import Icon from './icon.vue';
 const props = defineProps({})
 const Activity = inject('activityFile')
 </script>

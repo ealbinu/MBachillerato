@@ -1,5 +1,5 @@
 <template lang="pug">
-.material-icons: slot
+.material-icons.theicon: slot
 </template>
 <script setup>
 import {ref} from 'vue'

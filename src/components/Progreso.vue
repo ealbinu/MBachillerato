@@ -1,6 +1,6 @@
 <template lang="pug">
 div.area
-    h2 
+    .p.mb-1
         Icon donut_large
         span.label &nbsp;Progreso {{stats.total-stats.unanswered}} /{{stats.total}}
     div.progreso: .bar(:style="'width:'+Math.round(((stats.total-stats.unanswered)/stats.total)*100)+'%'")

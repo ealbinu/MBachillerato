@@ -1,5 +1,7 @@
 <template lang="pug">
-button(@click="open" v-html="label" :class="classinit")
+button(@click="open" :class="classinit")
+    Icon(v-if="icon") {{icon}}
+    span(v-html="label" )
 transition(name="zoom")
     .dialog(v-if="dialog")
         .dialog-content
@@ -12,6 +14,7 @@ import {ref} from 'vue'
 import Icon from '../icon.vue'
 const props = defineProps({
     label: String,
+    icon: String,
     classinit: Object
 })
 const dialog = ref(false)
@@ -56,5 +59,9 @@ p
     color: $dark !important
 strong
     color: $main !important
-
+span
+    display: inline-block
+    padding: 1px 4px
+.theicon
+    line-height: 1px
 </style>
