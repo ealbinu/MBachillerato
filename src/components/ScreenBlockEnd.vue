@@ -2,7 +2,7 @@
 .block.ScreenBlockEnd: .text-center
     template(v-if="!Status.finalize")
         template(v-if="stats.unansweredLength")
-            div.my-3: span De un total de #[strong {{stats.total}} preguntas] tienes #[strong.high {{stats.unansweredLength}} sin contestar].
+            div.my-6.text-2xl: span De un total de #[strong {{stats.total}} preguntas] tienes #[strong.high {{stats.unansweredLength}} sin contestar].
             template(v-for="(i, index) in stats.unanswered")
                 button(@click="gotoUnanswered(index)").btn.high.btn-sm.m-1 {{unansweredBlock(index)}}
                 
@@ -12,8 +12,7 @@
         template(v-else)
             div.my-3: span Muy bien. Has llegado al final de la actividad.
         template(v-if="!Blocked")
-                div.my-3 ¿Deseas finalizar?
-                hr
+                div.my-6.text-xl ¿Deseas finalizar?
                 div.my-4: button.btn-accent.btn-wide.important(@click="finalize").btn-lg Finalizar
     template(v-else)
         div.my-3: strong Actividad finalizada.
@@ -29,15 +28,17 @@
         //0 preguntas
         //End links
         div.my-3 Puedes ver tus resultados individuales o repasar los contenidos navegando con el menú de la izquierda.
-        template(v-if="!Blocked")
+        template(v-if="!Blocked && !reseting")
             div.my-3 También puedes reiniciar la actividad:
             button(@click="resetApp").btn.btn-accent Reiniciar
+    Arrow(v-if="reseting")
 
 </template>
 <script setup>
 import {ref, getCurrentInstance, inject, computed} from 'vue'
 import { useStorage } from "vue3-storage"
 import _ from 'lodash'
+import Arrow from './Arrow.vue';
 
 const Audios = inject('Audios')
 const Activity = inject('activityFile')
@@ -47,7 +48,7 @@ const currentInstance = getCurrentInstance()
 const props = defineProps({})
 
 const Blocked = inject('blocked')
-
+const reseting = ref(false)
 const unansweredBlock = (blockid) => {
 
     var sp = blockid.split('-')
@@ -119,10 +120,15 @@ if(Status.value.finalize){
 }
 
 const resetApp = () => {
+    reseting.value = true
+    var endDataString = JSON.stringify({reset: true})
+    window.top.postMessage(endDataString, "*")
+    setTimeout(()=>{
+        const storage = useStorage(Activity.id+'_')
+        storage.removeStorageSync('status')
+        location.reload()
+    }, 1000)
 
-    const storage = useStorage(Activity.id+'_')
-    storage.removeStorageSync('status')
-    location.reload()
 }
 
 </script>

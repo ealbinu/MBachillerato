@@ -2,13 +2,13 @@
 .arrowtransition( v-if="arrow")
 </template>
 <script setup>
-import {ref, inject} from 'vue'
+import { ref, inject } from 'vue'
 const props = defineProps({})
 const arrow = ref(true)
 const Audios = inject('Audios')
 Audios.schange.play()
-setTimeout(()=> {
-arrow.value = false
+setTimeout(() => {
+    arrow.value = false
 }, 1000)
 </script>
 <style lang="sass" scoped>
