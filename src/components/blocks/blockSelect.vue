@@ -5,8 +5,9 @@
             Icon touch_app
             .option-letter {{letterop(index)}}
             BlocksRenderer(:item="i[0]" :blockid=" blockid+'-selectitem' ")
-            //.content(v-if="typeof i[0] === 'string' " v-html="i[0]")
-            //BlockMath(v-else-if="i[0].math" :data="i[0]" )
+            .feedback.bg-white.text-dark.p-1.text-sm.rounded.mt-2(v-if="i[2]") {{i[2]}}
+
+
 SolveModule(@solve="solve")
 </template>
 <script setup>
@@ -194,5 +195,8 @@ const cssVars = computed(() => {
             color: $dark
             .material-icons
                 display: none
-            
+            .feedback
+                display: block
+.feedback
+    display: none
 </style>

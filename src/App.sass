@@ -317,5 +317,31 @@ hr
     border-top: 2px solid $light
 
 
+.m-h-screen
+    min-height: 100vh
+
 .blockSimple
     display: inline-block
+
+
+
+.splitting .char 
+    animation: slide-in 1.6s cubic-bezier(.2, 0, .1, 1) both
+    animation-delay: calc(30ms * var(--char-index))
+
+    transform-origin: top left
+
+
+.splitting .word 
+    animation: slide-in 1.6s cubic-bezier(.2, 0, .1, 1) both
+    animation-delay: calc(30ms * var(--word-index))
+
+    transform-origin: top left
+
+
+@keyframes slide-in
+    from 
+        transform: translateY(10px) scaleY(1.5)
+        opacity: 0
+
+

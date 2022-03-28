@@ -1,6 +1,6 @@
 <template lang="pug">
 
-.absolute.p-1.bg-white.rounded(class="bottom-0.5 left-0.5 right-0.5")
+.fixed.p-1.bg-white.rounded(class="bottom-1 left-4 lg:left-60 right-7")
     .btn-group.justify-center
         button.btn.btn-xs(@click="navigate(-1)" :class="Status.step==0?'btn-disabled':''" )
             Icon navigate_before

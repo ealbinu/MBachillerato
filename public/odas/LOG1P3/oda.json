@@ -1,0 +1,377 @@
+{
+    "id": "LOG1P3",
+    "programa": "DGETI",
+    "materia": "LOGICA",
+    "asignatura": "Lógica I",
+    "title": "La argumentación como práctica contextualizada",
+    "bgimgs": 4,
+    "ficha": [
+        ["Aprendizaje esperado", "Evaluar la adecuación de argumentos y argumentaciones en determinados contextos y circunstancias."],
+        ["Eje transversal", "Habilidades lectoras."]
+    ],
+    "screens": [
+        {
+            "title": "Presentaciones y slides",
+            "icon": "info",
+            "steps": false,
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {"by":"chars", "textAnimation":"En contexto", "class": "h1"},
+                        
+                        {"by":"words", "textAnimation": "La finalidad de toda argumentación es lograr que el <strong>auditorio</strong>, es decir, la o las personas sobre las que quiere influir un orador, se adhiera a sus ideas o que dicha adhesión se fortalezca si aquellas ya son compartidas por ellas. Para lograrlo, el orador debe conocer a su auditorio y, además, adaptar el discurso a sus características. Es importante recordar la importancia de respetar el derecho del otro a expresar y defender lo que piensa; comprender que cada persona ve las cosas desde una perspectiva distinta y nadie tiene por qué imponer sus ideas a los demás. La adhesión de una persona a una idea debe ser voluntaria y el convencimiento por medio de la razón."},
+                        {
+                            "grid":1,
+                            "class": "flex justify-center my-2",
+                            "content": [
+                                {"img": "img/im1.jpg", "class": "w-96 "}
+                            ]
+                        }
+                    ],
+                    "buttonNextScreen": "Continuar"
+                }
+            ]
+        },
+        {
+            "title": "Cómo ser un gran orador",
+            "icon": "document_scanner",
+            "steps": false,
+            "blocks": [
+                {
+                    "width": "70%",
+                    "class": "m-h-screen flex justify-center items-center flex-col",
+                    "content": [
+                        {
+                            "group": 1,
+                            "class": "flex flex-col items-center",
+                            "content": [
+                                {
+                                    "grid":1,
+                                    "content": [
+                                        {"by":"words", "textAnimation": "Aprender estrategias para ser un buen orador es importante, aunque pienses que es algo sólo para políticos o conferencistas profesionales. Lo cierto es que lo largo de tu vida te verás en situaciones en las que tendrás que explicar un tema, expresar tu opinión o convencer a los demás de algo que consideras correcto; en todos estos casos, el arte de la oratoria puede facilitarte las cosas."},
+                                        {"img": "img/im2.jpg", "class": "w-32 "}
+                                    ]
+                                },
+                                {"br":1},
+                                {"icon": "south", "class": "animate__animated animate__fadeOutDown animate__slower animate__infinite"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "70%",
+                    "class": "m-h-screen flex justify-center items-center flex-col",
+                    "content": [
+                        {
+                            "group": 1,
+                            "scrollClass": "animate__animated animate__rotateInDownLeft" ,
+                            "content": [
+                                {"text": "Exponer temas en clase, presentar un proyecto, un plan de trabajo, por ejemplo; o si te interesa, además, explotar tus capacidades de liderazgo, debes saber que necesitas ser un gran comunicador; y la oratoria será una herramienta imprescindible para lograrlo. A continuación, te presentamos una serie de tips o claves para ayudarte a sobresalir como orador, sea cual sea el contexto en que lo pongas en práctica."}
+                            ]
+                        },
+                        {"br":1},
+                        {"icon": "south", "class": "animate__animated animate__fadeOutDown animate__slower animate__infinite"}
+                    ],
+                    "buttonNextScreen": false
+                },
+                {
+                    "width": "70%",
+                    "class": "m-h-screen flex justify-center items-center flex-col",
+                    "content": [
+                        {
+                            "group": 1,
+                            "scrollClass": "animate__animated animate__bounceInLeft" ,
+                            "content": [
+                                {
+                                    "grid": 1,
+                                    "content":[
+                                        {"text": "En primer lugar, define si tu objetivo es <strong>convencer</strong> a tu público o <strong>persuadirlo</strong>, es decir, ¿deseas probar un punto o tesis exponiendo razones para que el público concluya a tu favor (convencer)?, ¿o deseas que las personas adopten como suyas tus opiniones e ideas (persuadir)? Si tu objetivo es el primero, debes utilizar argumentos lógicos, basados en datos y autoridades, mientras que, para el segundo, puedes apelar a las emociones."},
+                                        {"img":"img/im3.jpg"}
+
+                                    ]
+                                }
+                            ]
+                        },
+                        {"br":1},
+                        {"icon": "south", "class": "animate__animated animate__fadeOutDown animate__slower animate__infinite"}
+                    ],
+                    "buttonNextScreen": false
+                },
+                {
+                    "width": "70%",
+                    "class": "m-h-screen flex justify-center items-center flex-col",
+                    "content": [
+                        {
+                            "group": 1,
+                            "scrollClass": "animate__animated animate__backInLeft",
+                            "content": [
+                                {"text": "Por otra parte, debes centrarte en las necesidades de tu público, puesto que, aunque se trate del mismo tema, si la audiencia es distinta, debes cambiar el enfoque, ya que cada auditorio tiene sus propias características y necesidades y un buen orador es capaz de identificarlas para adaptar su discurso a éstas."}
+                            ]
+                        },
+                        {"br":1},
+                        {
+                            "group": 1,
+                            "scrollClass": "animate__animated animate__backInRight",
+                            "content": [
+                                {"text": "¿Qué aspectos debes considerar en este sentido? Como mínimo, la edad, el género, el nivel académico, el nivel socioeconómico, las preferencias políticas y creencias religiosas, y tanto el nivel de información que tengan sobre el tema como el acceso a la información con que cuenten. Recuerda que existen dos tipos de auditorio, <strong>particular</strong> y <strong>universal</strong>. En el caso del primero, por ejemplo, debes utilizar un vocabulario especializado en el tema que expones, pues las personas saben perfectamente de lo que estás hablando. Por su parte, si el auditorio es universal entonces puedes utilizar un vocabulario más sencillo."}
+                            ]
+                        },
+                        {"br":1},
+                        {"icon": "south", "class": "animate__animated animate__fadeOutDown animate__slower animate__infinite"}
+                    ],
+                    "buttonNextScreen": false
+                },
+                {
+                    "width": "70%",
+                    "class": "m-h-screen flex justify-center items-center flex-col",
+                    "content": [
+                        {
+                            "group": 1,
+                            "scrollClass": "animate__animated animate__fadeInDown",
+                            "content": [
+                                {"text": "La siguiente clave es la estructura, no hay nada oculto en este punto, la organización básica de toda presentación es presentación, nudo y desenlace. Plantea el tema y expresa lo que pueden esperar de tu discurso en la presentación, desarróllalo en el nudo y termina de manera que dejes un gran impacto en la audiencia."}
+                            ]
+                        },
+                        {"br":1},
+                        {
+                            "group": 1,
+                            "scrollClass": "animate__animated animate__fadeInUp" ,
+                            "content": [
+                                {
+                                    "grid": 1,
+                                    "content":[
+                                        {"text": "Un consejo importante es no memorizar la presentación, pues podrían presentarse imprevistos que te recorten el tiempo y algo así te haría dejar pasar detalles importantes, o bien, extenderlo y te verías en la necesidad de improvisar y ponerte nervioso. Lo mejor es hacer un esquema y fichas con las ideas principales para guiarte."},
+                                        {"img":"img/im4.jpg"}
+
+                                    ]
+                                }
+                            ]
+                        },
+                        {"br":1},
+                        {"icon": "south", "class": "animate__animated animate__fadeOutDown animate__slower animate__infinite"}
+                    ],
+                    "buttonNextScreen": false
+                },
+                {
+                    "width": "80%",
+                    "class": "m-h-screen flex justify-center items-center flex-col",
+                    "content": [
+                        {
+                            "group": 1,
+                            "scrollClass": "animate__animated animate__rotateInDownLeft" ,
+                            "content": [
+                                {"text": "Toma en cuenta el lenguaje no verbal, cuida tu presentación personal, tus gestos, los movimientos que haces de manera involuntaria y, sobre todo, la posición de tus manos. Trata de no meterlas al bolsillo o cerradas, eso inspira desconfianza. Haz pausas, modula tu voz de acuerdo para llamar la atención sobre ciertas frases, etcétera."}
+                            ]
+                        },
+                        {"br":1},
+                        {"icon": "south", "class": "animate__animated animate__fadeOutDown animate__slower animate__infinite"}
+                    ],
+                    "buttonNextScreen": false
+                },
+                {
+                    "width": "90%",
+                    "class": "m-h-screen flex justify-center items-center flex-col",
+                    "content": [
+                        {
+                            "group": 1,
+                            "scrollClass": "animate__animated animate__rotateInDownRight" ,
+                            "content": [
+                                {"text": "También es importante considerar el tipo de auditorio físico en el que darás tu discurso, por ejemplo, si es al aire libre toma en cuenta que habrá muchas distracciones por lo que mantener la atención del público será una tarea complicada y desgastante. El caso de los auditorios cerrados no está exento de problemas, pues la acústica del lugar puede interferir y complicar que el mensaje llegue a la audiencia. En ambos casos, trabaja en el control de la intensidad y claridad de la voz aún si dispones de equipo de sonido."}
+                            ]
+                        },
+                        {"br":1},
+                        {"icon": "south", "class": "animate__animated animate__fadeOutDown animate__slower animate__infinite"}
+                    ],
+                    "buttonNextScreen": false
+                },
+                {
+                    "width": "100%",
+                    "class": "m-h-screen flex justify-center items-center flex-col",
+                    "content": [
+                        {
+                            "group": 1,
+                            "scrollClass": "animate__animated animate__rotateInDownLeft" ,
+                            "content": [
+                                {"text": "Finalmente, observa a tu audiencia e interactúa con ella, en ocasiones es una buena manera de no perder su atención ya que rompe lo rígido del monólogo. Haz preguntas que den pie a un punto a tratar, pide que repitan frases, hazlos recordar objetos, frases o hechos que se relacionen con el tema, etcétera, pero no te extiendas ni abuses de este recurso porque podría resultar contraproducente, recuerda que puedes encontrarte con un público favorable que facilitará las cosas, pero no siempre será así, existe la posibilidad de que éste sea neutro e incluso mostrar una actitud negativa."}
+                            ]
+                        },
+                        {"br":1},
+                        {"br":1},
+                        {"br":1},
+                        {
+                            "instruction": 1,
+                            "content": [
+                                "Fuente: Claves para ser un gran orador. (2010). Capacitarte Blog. Cursos y Programas Ejecutivos.",
+                                {"br":1},
+                                "Recuperado de: <a href='https://bit.ly/3j0rpln' target='_blank'>https://bit.ly/3j0rpln</a> (Consulta: 17 de agosto de 2021)."
+                            ]
+                        }
+                    ],
+                    "buttonNextScreen": "Continuar"
+                }
+            ]
+        },
+        {
+            "title": "Configuración para la interacción",
+            "icon": "games",
+            "steps": true,
+            "blocks": [
+                {
+                    "width": "80%",
+                    "class": "flex justify-center flex-col items-center text-center",
+                    "content": [
+                        { "class":"h3", "align": "center","textAnimation":"¡Hola! Vamos a trabajar con algunas situaciones que evaluarás para definir si lo que se requiere es convencer o persuadir. <br> ¿De acuerdo? ¿Cómo te llamas?"},
+                        {"br": 1},
+                        {"br": 1},
+                        {"br": 1},
+                        {"input": 1, "label": "Tu nombre"}
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "instruction":1,
+                            "content": [
+                                {"icon": "touch_app", "size":"2rem", "class":"animate__animated animate__flash animate__slower animate__infinite"},
+                                "Lee los siguientes enunciados y selecciona \"Convencer\" o \"Persuadir\"."
+                            ]
+                        },
+                        {"br": 1},
+                        {
+                            "group": 1,
+                            "class": "h5 text-center",
+                            "content": [
+                                "1. ¡Bienvenido, ",
+                                { "variable": "2-0-4" },
+                                "! La primera situación es la siguiente: un alumno quiere lograr que sus compañeros se unan a un club escolar sobre derechos humanos y ciudadanía. ¿El alumno debe convencer o persuadir a sus compañeros?"
+                            ]
+                        },
+                        {"br": 1},
+                        {
+                            "select": 1,
+                            "columns": "1fr 1fr",
+                            "options": [
+                                ["Convencer", false, "Lo siento, pero en este caso no basta exponer razones, también se puede apelar a las emociones para influir en la decisión de sus compañeros."],
+                                ["Persuadir", true, "¡Correcto! Para que sus compañeros se unan al club, necesita influir en su decisión y para lograrlo puede apelar a las emociones. Vamos con el siguiente caso."]
+                            ]
+                        },
+                        {"br": 1},
+                        {"br": 1},
+                        {
+                            "group": 1,
+                            "class": "h5 text-center",
+                            "content": [
+                                "2. El director de una escuela propone a la mesa directiva la instalación de cámaras de seguridad en el exterior y alrededores de la escuela. ¿El director debe convencer o persuadir a la mesa directiva?"
+                            ]
+                        },
+                        {"br": 1},
+                        {
+                            "select": 1,
+                            "columns": "1fr 1fr",
+                            "options": [
+                                ["Convencer", true, "¡Excelente! El director debe probar la necesidad de su propuesta exponiendo razones y datos a la mesa directiva. Continúa con la siguiente situación."],
+                                ["Persuadir", false, "Aunque podría hacerlo, en este caso el director no debe apelar a las emociones sino exponer razones para conseguir su objetivo."]
+                            ]
+                        }
+
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        { "class": "h5", "align": "center", "text":"3. El presidente municipal propone al cabildo aprobar un reglamento para la igualdad de género en el ayuntamiento. ¿Es necesario convencer o persuadir al cabildo?"},
+                        {"br": 1},
+                        {
+                            "select": 1,
+                            "columns": "1fr 1fr",
+                            "options": [
+                                ["Convencer", true, "¡Muy bien! El presidente municipal debe exponer razones válidas y objetivas para que los miembros del cabildo voten a favor de su propuesta. Sigue con un nuevo caso."],
+                                ["Persuadir", false, "En este caso lo que propone el presidente no es una opinión personal sino una necesidad legal, por lo que no basta apelar a las emociones, sino que debe recurrirse a los datos y argumentos."]
+                            ]
+                        },
+                        {"br": 1},
+                        {"br": 1},
+                        { "class": "h5", "align": "center", "text":"4. Un grupo de estudiantes realizan un performance para crear consciencia sobre el problema del cambio climático. ¿Es necesario convencer o persuadir para crear consciencia en el público?"},
+                        {"br": 1},
+                        {
+                            "select": 1,
+                            "columns": "1fr 1fr",
+                            "options": [
+                                ["Convencer", false, "Aunque existen datos suficientes para lograr que las personas se convenzan sobre el problema del cambio climático, en este caso es más efectivo apelar a las emociones."],
+                                ["Persuadir", true, "¡Correcto! En este caso los estudiantes buscan causar un impacto en los espectadores y conmoverlos para que se adhieran a su causa. Vamos a un caso más."]
+                            ]
+                        }
+
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        { "class": "h5", "align": "center", "text":"5. Un reclutador de una universidad expone a un grupo de bachillerato las carreras que ofrece su institución. ¿Debe convencer o persuadir a los estudiantes de elegir la universidad que representa?"},
+                        {"br": 1},
+                        {
+                            "select": 1,
+                            "columns": "1fr 1fr",
+                            "options": [
+                                ["Convencer", false, "Aunque los datos y argumentos pueden ayudar a tomar la decisión, considerando la edad de los estudiantes resulta más efectivo apelar a las emociones para influir en sus decisiones."],
+                                ["Persuadir", true, "¡Muy bien! En este caso el reclutador puede recurrir a aspectos sociales atractivos de la vida en el campus para influir en la decisión de los estudiantes. Continúa con la siguiente situación."]
+                            ]
+                        },
+                        {"br": 1},
+                        {"br": 1},
+                        { "class": "h5", "align": "center", "text":"6. Un representante farmacéutico desea que un grupo de médicos prescriban un medicamento de reciente aparición. ¿Debe convencer o persuadir a los médicos para lograrlo?"},
+                        {"br": 1},
+                        {
+                            "select": 1,
+                            "columns": "1fr 1fr",
+                            "options": [
+                                ["Convencer", true, "¡Excelente! En este caso el representante debe ofrecer a los médicos datos de los estudios y resultados probados del medicamento. Vamos con un caso más."],
+                                ["Persuadir", false, "Dado que se trata de especialistas en la materia, las emociones son secundarias a los datos científicos de la efectividad del medicamento."]
+                            ]
+                        }
+
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        { "class": "h5", "align": "center", "text":"7. Un integrante del equipo de futbol desea el puesto de capitán y se lo pide al entrenador. ¿Debe convencerlo o persuadirlo?"},
+                        {"br": 1},
+                        {
+                            "select": 1,
+                            "columns": "1fr 1fr",
+                            "options": [
+                                ["Convencer", true, "¡Excelente! El integrante puede exponer al entrenador datos estadísticos que sustenten su petición, para que éste decida a su favor. Vamos por un último caso."],
+                                ["Persuadir", false, "En este caso al entrenador le importan los datos objetivos sobre el nivel y efectividad del jugador para tomar su decisión, no basta con apelar a sus emociones."]
+                            ]
+                        },
+                        {"br": 1},
+                        {"br": 1},
+                        { "class": "h5", "align": "center", "text":"8. Una asociación inicia una campaña para dar a conocer los beneficios de una dieta saludable en la prevención de enfermedades. ¿Su campaña debe enfocarse en convencer o en persuadir al público?"},
+                        {"br": 1},
+                        {
+                            "select": 1,
+                            "columns": "1fr 1fr",
+                            "options": [
+                                ["Convencer", true, "¡Perfecto! En este caso la asociación debe exponer datos concretos y ejemplos demostrables de su propuesta para que el público adopte su idea."],
+                                ["Persuadir", false, "Dado que se trata de una campaña informativa, la exposición de datos y razones es fundamental para que el público adopte las ideas que se proponen."]
+                            ]
+                        }
+
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Finalizar",
+            "icon": "flag",
+            "end": true,
+            "blocks": [{
+                "content": []
+            }]
+        }
+
+    ]
+}

@@ -18,6 +18,7 @@ import { themeChange } from 'theme-change'
 import daisyuiColors from 'daisyui/src/colors/themes'
 import Popper from "vue3-popper"
 
+
 //Internal libs
 import backgroundGenerator from './components/backgroundGenerator.js'
 import materias from './materias.js'

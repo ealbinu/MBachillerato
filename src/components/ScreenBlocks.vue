@@ -2,13 +2,12 @@
 
 .block(:style="cssVars" v-if="block.content.length")
     //::::::::::::::: BLOCKS
-    .blockContainer(:class="[block.style]")
-        p {{block.style}}
+    .blockContainer(:class="[block.class]")
         BlocksRenderer( v-for="(i, index) in block.content" :item="i" :blockid="blockid+'-'+index" :key="index")
 
     //::::::::::::::: NAV BUTTONS
     template(v-if="!view")
-        .text-center.my-2
+        .text-center.my-2.mb-16
 
             template(v-if="evaluationsInScreen.length > 0 && allAnswered")
                 template(v-if="!islast")
@@ -24,10 +23,10 @@
 
 </template>
 <script setup>
-import {ref, computed, inject, watch} from 'vue'
-
-
+import {ref, computed, inject, watch, onMounted} from 'vue'
 import BlocksRenderer from './BlocksRenderer.vue';
+
+
 
 const evaluationsInScreen = ref([])
 const allAnswered = ref(false)
@@ -69,6 +68,8 @@ setTimeout(() => {
 watch(Status.value.answers, (value) => {
     findAnswereds()
 }, { deep: true })
+
+
 
 
 
