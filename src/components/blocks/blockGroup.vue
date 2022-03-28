@@ -35,7 +35,7 @@ onMounted(()=>{
                     el.classList.add(...el.getAttribute('data-scroll-classes').split(','));
                 },
                 onChange: function(element, ctx, scrollingElement) {
-                    console.log('onchange')
+
                 }
             });
     

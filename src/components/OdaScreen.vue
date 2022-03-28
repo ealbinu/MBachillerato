@@ -57,13 +57,18 @@ const useSteps = (index) => {
 }
 
 
-/*
+
 watch(() => Status.value.step, (newVal, oldVal) => {
-    
+    var scrollElement = document.querySelector('.drawer-content')
+    if(scrollElement.scrollTop>0){
+        scrollElement.scrollTop = 0
+    }
+    /*    
     if(scroll.value.$el.scrollTop>0){
         scroll.value.$el.scrollTop = 0
     }
+    */
 })
-*/
+
 
 </script>
