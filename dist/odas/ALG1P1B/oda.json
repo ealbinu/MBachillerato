@@ -29,6 +29,7 @@
                                 {
                                     "dialog":1,
                                     "button": [{"icon":"contact_support", "size": "3rem", "block":true}," Leer más"],
+                                    "buttonClass": "btn",
                                     "style":"margin: auto; text-align:center; width: 100%;",
                                     "content": [
                                         "Cuando una literal se utiliza como un número general se puede encontrar en una expresión algebraica. En ésta, el valor de la literal puede representar cualquier número real, por ejemplo:",
@@ -52,6 +53,7 @@
                         {
                             "dialog":1,
                             "button": [{"icon":"contact_support", "size": "3rem"}," Leer más"],
+                            "buttonClass": "btn",
                             "style":"margin: auto; text-align:center; width: 100%;",
                             "content": [
                                 "Cuando una expresión algebraica es igual a otra literal se convierte en una función.",
@@ -86,7 +88,7 @@
         {
             "title": "Actividad 1",
             "icon": "games",
-            "steps": true,
+            "steps": false,
             "blocks": [
                 {
                     "width": "100%",
@@ -176,7 +178,7 @@
         {
             "title": "Actividad 2",
             "icon": "games",
-            "steps": true,
+            "steps": false,
             "blocks": [
                 {
                     "width": "100%",
@@ -241,7 +243,7 @@
         {
             "title": "Actividad 3",
             "icon": "games",
-            "steps": true,
+            "steps": false,
             "blocks": [
                 {
                     "width": "100%",
