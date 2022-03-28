@@ -2,7 +2,8 @@
 
 .block(:style="cssVars" v-if="block.content.length")
     //::::::::::::::: BLOCKS
-    .blockContainer
+    .blockContainer(:class="[block.style]")
+        p {{block.style}}
         BlocksRenderer( v-for="(i, index) in block.content" :item="i" :blockid="blockid+'-'+index" :key="index")
 
     //::::::::::::::: NAV BUTTONS

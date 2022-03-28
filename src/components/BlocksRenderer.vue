@@ -1,6 +1,7 @@
 <template lang="pug">
 
 
+
 //-Simple text
 span(v-if="typeof item === 'string' " v-html="item")
 //-Break
@@ -37,6 +38,9 @@ BlockPlot(v-if="item.plot" :data="item" :blockid="blockid")
 BlockGrid(v-if="item.grid" :data="item" :blockid="blockid")
 //-Group
 BlockGroup(v-if="item.group" :data="item" :blockid="blockid")
+
+
+
 
 </template>
 <script setup>

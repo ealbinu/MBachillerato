@@ -58,6 +58,9 @@ setTimeout(()=> {
     max-width: 500px
     text-align: center
     margin: 0 auto
+    color: $dark !important
+    background: #fff
+    border-radius: 6px
     .function-plot
         max-width: 100% !important
         margin: 0 auto

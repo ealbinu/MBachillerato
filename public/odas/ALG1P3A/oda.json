@@ -1,11 +1,15 @@
 {
 	"id": "ALG1P3A",
 	"programa": "DGETI",
-	"materia": "algebra",
-	"asignatura": "Álgebra",
+	"materia": "ALGEBRAI",
+	"asignatura": "Álgebra I",
 	"title": "Resolución de ecuaciones lineales",
-	"aprendizajes": "Interpreta la solución de un sistema de ecuaciones lineales.",
-	"contenidocentral": "Representación y resolución de sistemas de ecuaciones lineales.",
+	"bgimgs": 5,
+	"ficha": [
+		["Aprendizaje esperado", "Interpreta la solución de un sistema de ecuaciones lineales."],
+		["Contenido central", "Representación y resolución de sistemas de ecuaciones lineales."],
+		["Eje transversal", "Habilidades lectoras."]
+	],
 	"screens": [{
 			"title": "Introducción",
 			"icon": "info",
@@ -14,13 +18,30 @@
 					"width": "100%",
 					"content": [
 						"Una <strong>ecuación</strong> es una igualdad que se presenta entre dos <strong>expresiones algebraicas</strong> en las que las literales representan valores desconocidos denominados <strong>incógnitas</strong>.",
+						{"br":1},
+						{"grid": 1,  "content":[
+							{"img": "imgs/eq.jpg", "class":"w-48 place-self-center my-2", "parent":"flex"}
+						]},
+						{"br":1},
 						"Las ecuaciones en general se clasifican de acuerdo al <strong>grado</strong> de las incógnitas, que se define como la máxima potencia a la que se eleva uno de sus exponentes."
+						
 					]
 				},
 				{
 					"width": "100%",
 					"content": [
-						"Las <strong>ecuaciones de primer grado</strong> son aquellas en las que una o más incógnitas se encuentran elevadas a la primera potencia. Al graficar estas ecuaciones se obtienen como resultado <strong>líneas rectas</strong>, de ahí que también sean conocidas como <strong>ecuaciones lineales</strong>."
+						"Las <strong>ecuaciones de primer grado</strong> son aquellas en las que una o más incógnitas se encuentran elevadas a la primera potencia. Al graficar estas ecuaciones se obtienen como resultado <strong>líneas rectas</strong>, de ahí que también sean conocidas como <strong>ecuaciones lineales</strong>.",
+						{"br":1},
+						{"br":1},
+						{
+							"plot": true,
+							"yAxis": { "domain": [-0.5, 5.5], "label": "y  " },
+							"xAxis": { "domain": [-0.5, 3.5], "label": "x  " },
+							"data": [ 
+								{"fn": "x*1-1.7", "fnType": "implicit" }
+							],
+							"annotations": [ { "y": 1}]
+						}
 					]
 				},
 				{
@@ -32,8 +53,9 @@
 							"class": "text-bold my-2"
 						},
 						{
-							"math": "2x = 9",
-							"size": "2rem"
+							"dark":1, "math": "2x = 9",
+							"size": "2rem",
+							"block": 1
 						},
 						{
 							"br": 1
@@ -43,8 +65,9 @@
 							"class": "text-bold my-2"
 						},
 						{
-							"math": "2x + 3y = 13",
-							"size": "2rem"
+							"dark":1, "math": "2x + 3y = 13",
+							"size": "2rem",
+							"block": 1
 						},
 						{
 							"br": 1
@@ -54,12 +77,12 @@
 						},
 						"Las gráficas de las ecuaciones lineales con una incógnita son perpendiculares a uno de los ejes en un sistema de coordenadas. Cuando la gráfica de una ecuación lineal con una incógnita es perpendicular al eje ",
 						{
-							"math": "y",
+							"dark":1, "math": "y",
 							"size": "1.4rem"
 						},
 						" la tasa de cambio promedio es cero, y si es perpendicular al eje ",
 						{
-							"math": "x",
+							"dark":1, "math": "x",
 							"size": "1.4rem"
 						},
 						", la tasa de cambio promedio es indefinida ya que implica una división entre cero."
@@ -75,68 +98,76 @@
 				"width": "70%",
 				"content": [
 					{
-						"dialog": 1,
-						"button": "Tasa de cambio promedio indefinida",
-						"buttonClass": "high my-2",
-						"content": [{
-								"plot": "Tasa de cambio promedio indefinida",
-								"yAxis": { "domain": [-0.5, 5.5], "label": "y  " },
-								"xAxis": { "domain": [-0.5, 3.5], "label": "x  " },
-								"data": [ 
-									{"fn": "x*1-1.7", "fnType": "implicit" }
-								],
-								"annotations": [ { "y": 1, "text": "x = 1.7" }]
-							}]
-					},
-					{"br":1},
-					{
-						"dialog": 1,
-						"button": "Tasa de cambio promedio de cero",
-						"buttonClass": "high my-2",
-						"content": [{
-							"plot": "Tasa de cambio promedio de cero",
-							"yAxis": { "domain": [0, 5], "label": "y  " },
-							"xAxis": { "domain": [-0.5, 3.5], "label": "x  " },
-							"data": [ 
-								{"fn": "y = 4.3"}
-							],
-							"annotations": [ { "y": 2, "text": "y = 4.3" }]
-						}]
-					},
-					{"br":1},
-					"Por otra parte, las ecuaciones lineales con dos incógnitas dan lugar a gráficas con tasa de cambio promedio definida y diferente de cero.",
-					{"br":1},
-					{
-						"dialog": 1,
-						"button": "Tasa de cambio promedio positiva",
-						"buttonClass": "high my-2",
-						"content": [{
-							"plot": "Tasa de cambio promedio positiva",
-							"yAxis": { "domain": [0, 25], "label": "y  " },
-							"xAxis": { "domain": [-1, 6], "label": "x  " },
-							"data": [ 
-								{"fn": "y = 4x + 3"}
-							],
-							"annotations": [ { "y": 10, "text": "y = 4x + 3" }]
-						}]
-					},
-					{"br":1},
-					{
-						"dialog": 1,
-						"button": "Tasa de cambio promedio negativa",
-						"buttonClass": "high my-2",
-						"content": [{
-							"plot": "Tasa de cambio promedio negativa",
-							"yAxis": { "domain": [-10, 8], "label": "y  " },
-							"xAxis": { "domain": [-1, 5], "label": "x  " },
-							"data": [ 
-								{"fn": "y = -3x + 5"}
-							],
-							"annotations": [ { "y": 0, "text": "y = -3x + 5" }]
-						}]
-					}
+						"group": 1,
+						"class": "flex justify-center flex-col items-center",
+						"content": [
+							{
+								"dialog": 1,
+								"button": ["Tasa de cambio promedio indefinida"],
+								"buttonClass": "btn",
+								"content": [{
+										"plot": "Tasa de cambio promedio indefinida",
+										"yAxis": { "domain": [-0.5, 5.5], "label": "y  " },
+										"xAxis": { "domain": [-0.5, 3.5], "label": "x  " },
+										"data": [ 
+											{"fn": "x*1-1.7", "fnType": "implicit" }
+										],
+										"annotations": [ { "y": 1, "text": "x = 1.7" }]
+									}]
+							},
+							{"br":1},
+							{
+								"dialog": 1,
+								"button": ["Tasa de cambio promedio de cero"],
+								"buttonClass": "btn my-2",
+								"content": [{
+									"plot": "Tasa de cambio promedio de cero",
+									"yAxis": { "domain": [0, 5], "label": "y  " },
+									"xAxis": { "domain": [-0.5, 3.5], "label": "x  " },
+									"data": [ 
+										{"fn": "y = 4.3"}
+									],
+									"annotations": [ { "y": 2, "text": "y = 4.3" }]
+								}]
+							},
+							{"br":1},
+							"Por otra parte, las ecuaciones lineales con dos incógnitas dan lugar a gráficas con tasa de cambio promedio definida y diferente de cero.",
+							{"br":1},
+							
 
-					
+								
+							{
+								"dialog": 1,
+								"button": ["Tasa de cambio promedio positiva"],
+								"buttonClass": "btn my-2",
+								"content": [{
+									"plot": "Tasa de cambio promedio positiva",
+									"yAxis": { "domain": [0, 25], "label": "y  " },
+									"xAxis": { "domain": [-1, 6], "label": "x  " },
+									"data": [ 
+										{"fn": "y = 4x + 3"}
+									],
+									"annotations": [ { "y": 10, "text": "y = 4x + 3" }]
+								}]
+							},
+							{"br":1},
+							{
+								"dialog": 1,
+								"button": ["Tasa de cambio promedio negativa"],
+								"buttonClass": "btn my-2",
+								"content": [{
+									"plot": "Tasa de cambio promedio negativa",
+									"yAxis": { "domain": [-10, 8], "label": "y  " },
+									"xAxis": { "domain": [-1, 5], "label": "x  " },
+									"data": [ 
+										{"fn": "y = -3x + 5"}
+									],
+									"annotations": [ { "y": 0, "text": "y = -3x + 5" }]
+								}]
+							}
+
+						]
+					}
 
 					
 				]
@@ -148,15 +179,17 @@
 			"steps": true,
 			"blocks": [{
 				"width": "100%",
+				"style": "",
 				"content": [
 					{
 						"grid": 1,
+						"class": "text-center",
 						"columns": "auto auto auto",
 						"columnsResponsive": "auto auto auto",
 						"content": [
 							{
 								"dialog":1,
-								"button": {"img": "imgs/p1.png"},
+								"button": [{"img": "imgs/p1.png"}],
 								"buttonClass": "clean pulse",
 								"content": [
 									{"text":"Propiedad de potencia y raíz", "class": "h2"},
@@ -173,19 +206,19 @@
 												"content": [
 													{"text": "Aritmético", "class": "h3"},
 													{"br":1},
-													{"math": "(-8-2)^2 = (-10-)^3"},
+													{"dark":1, "math": "(-8-2)^2 = (-10-)^3"},
 													" entonces ",
-													{"math": "-1000 = -1000"},
+													{"dark":1, "math": "-1000 = -1000"},
 													", la igualdad se mantiene.",
 													{"hr":1},
-													{"math":"\\sqrt[3]{50+14} = \\sqrt[3]{64}"},
+													{"dark":1, "math":"\\sqrt[3]{50+14} = \\sqrt[3]{64}"},
 													" entonces ",
-													{"math": "4=4"},
+													{"dark":1, "math": "4=4"},
 													", la igualdad se mantiene.",
 													{"hr":1},
-													{"math":"(\\frac{1}{4} - \\frac{1}{36})^2 = (\\frac{2}{9})^2"},
+													{"dark":1, "math":"(\\frac{1}{4} - \\frac{1}{36})^2 = (\\frac{2}{9})^2"},
 													" entonces ",
-													{"math": "\\frac{4}{81} = \\frac{4}{81}"},
+													{"dark":1, "math": "\\frac{4}{81} = \\frac{4}{81}"},
 													", la igualdad se mantiene."
 													
 
@@ -197,19 +230,19 @@
 												"content": [
 													{"text": "Algebraico", "class": "h3"},
 													{"br":1},
-													{"math": "\\sqrt{x^2} = \\sqrt{25}"},
+													{"dark":1, "math": "\\sqrt{x^2} = \\sqrt{25}"},
 													" entonces ",
-													{"math": "x = 5"},
+													{"dark":1, "math": "x = 5"},
 													", la igualdad se mantiene.",
 													{"hr":1},
-													{"math":"(\\frac{2}{b})^3 = (a)^3"},
+													{"dark":1, "math":"(\\frac{2}{b})^3 = (a)^3"},
 													" entonces ",
-													{"math": "\\frac{8}{b^3} = a^3"},
+													{"dark":1, "math": "\\frac{8}{b^3} = a^3"},
 													", la igualdad se mantiene.",
 													{"hr":1},
-													{"math":"(\\sqrt{2x+1})^2 = (-23)^2"},
+													{"dark":1, "math":"(\\sqrt{2x+1})^2 = (-23)^2"},
 													" entonces ",
-													{"math": "2x + 1 = 529"},
+													{"dark":1, "math": "2x + 1 = 529"},
 													", la igualdad se mantiene."
 												]
 											}
@@ -219,7 +252,7 @@
 							},
 							{
 								"dialog":1,
-								"button": {"img": "imgs/p2.png"},
+								"button": [{"img": "imgs/p2.png"}],
 								"buttonClass": "clean",
 								"content": [
 									{"text":"Propiedad reflectiva", "class": "h2"},
@@ -236,13 +269,13 @@
 												"content": [
 													{"text": "Aritmético", "class": "h3"},
 													{"br":1},
-													{"math": "19=19"},
+													{"dark":1, "math": "19=19"},
 													{"hr":1},
-													{"math": "-13=-13"},
+													{"dark":1, "math": "-13=-13"},
 													{"hr":1},
-													{"math": "\\frac{3}{8} = \\frac{3}{8}"},
+													{"dark":1, "math": "\\frac{3}{8} = \\frac{3}{8}"},
 													{"hr":1},
-													{"math": "-2.8 = -2.8"}
+													{"dark":1, "math": "-2.8 = -2.8"}
 													
 
 												]
@@ -253,13 +286,13 @@
 												"content": [
 													{"text": "Algebraico", "class": "h3"},
 													{"br":1},
-													{"math": "xy=xy"},
+													{"dark":1, "math": "xy=xy"},
 													{"hr":1},
-													{"math": "-a=-a"},
+													{"dark":1, "math": "-a=-a"},
 													{"hr":1},
-													{"math": "\\frac{x}{3} = \\frac{x}{3}"},
+													{"dark":1, "math": "\\frac{x}{3} = \\frac{x}{3}"},
 													{"hr":1},
-													{"math": "-cd= -cd"}
+													{"dark":1, "math": "-cd= -cd"}
 												]
 											}
 										]
@@ -268,7 +301,7 @@
 							},
 							{
 								"dialog":1,
-								"button": {"img": "imgs/p3.png"},
+								"button": [{"img": "imgs/p3.png"}],
 								"buttonClass": "clean",
 								"content": [
 									{"text":"Propiedad simétrica", "class": "h2"},
@@ -286,24 +319,24 @@
 													{"text": "Aritmético", "class": "h3"},
 													{"br":1},
 													"Si ",
-													{"math":"3+5=8"},
+													{"dark":1, "math":"3+5=8"},
 													", entonces, ",
-													{"math":"8=3+5"},
+													{"dark":1, "math":"8=3+5"},
 													{"hr":1},
 													"Si ",
-													{"math":"-13 \\times 2 = -26"},
+													{"dark":1, "math":"-13 \\times 2 = -26"},
 													", entonces, ",
-													{"math":"-26 = -13 \\times 2"},
+													{"dark":1, "math":"-26 = -13 \\times 2"},
 													{"hr":1},
 													"Si ",
-													{"math":"\\frac{3}{8} + \\frac{7}{4} = \\frac{17}{8}"},
+													{"dark":1, "math":"\\frac{3}{8} + \\frac{7}{4} = \\frac{17}{8}"},
 													", entonces, ",
-													{"math":"\\frac{17}{8} = \\frac{3}{8} + \\frac{7}{4}"},
+													{"dark":1, "math":"\\frac{17}{8} = \\frac{3}{8} + \\frac{7}{4}"},
 													{"hr":1},
 													"Si ",
-													{"math":"3.2 + 4.5 = 7.7"},
+													{"dark":1, "math":"3.2 + 4.5 = 7.7"},
 													", entonces, ",
-													{"math":"7.7 = 3.2+4.5"}
+													{"dark":1, "math":"7.7 = 3.2+4.5"}
 
 
 												]
@@ -315,24 +348,24 @@
 													{"text": "Algebraico", "class": "h3"},
 													{"br":1},
 													"Si ",
-													{"math":"xy-2=-z"},
+													{"dark":1, "math":"xy-2=-z"},
 													", entonces, ",
-													{"math":"-z=xy-2"},
+													{"dark":1, "math":"-z=xy-2"},
 													{"hr":1},
 													"Si ",
-													{"math":"a+b=c"},
+													{"dark":1, "math":"a+b=c"},
 													", entonces, ",
-													{"math":"x=a+b"},
+													{"dark":1, "math":"x=a+b"},
 													{"hr":1},
 													"Si ",
-													{"math":"\\frac{x}{5} + 1 = y"},
+													{"dark":1, "math":"\\frac{x}{5} + 1 = y"},
 													", entonces, ",
-													{"math":"y = \\frac{x}{5} + 1"},
+													{"dark":1, "math":"y = \\frac{x}{5} + 1"},
 													{"hr":1},
 													"Si ",
-													{"math":"-a+d = c"},
+													{"dark":1, "math":"-a+d = c"},
 													", entonces, ",
-													{"math":"c=-a+d"}
+													{"dark":1, "math":"c=-a+d"}
 												]
 											}
 										]
@@ -344,7 +377,7 @@
 							"",
 							{
 								"dialog":1,
-								"button": {"img": "imgs/p4.png"},
+								"button": [{"img": "imgs/p4.png"}],
 								"buttonClass": "clean",
 								"content": [
 									{"text":"Propiedad multiplicativa", "class": "h2"},
@@ -361,19 +394,19 @@
 												"content": [
 													{"text": "Aritmético", "class": "h3"},
 													{"br":1},
-													{"math":"(8-2) \\times 5 = 6 \\times 5"},
+													{"dark":1, "math":"(8-2) \\times 5 = 6 \\times 5"},
 													", entonces, ",
-													{"math":"30 = 30"},
+													{"dark":1, "math":"30 = 30"},
 													" la igualdad se mantiene.",
 													{"hr":1},
-													{"math":"(-4-8) \\div 3 = (-12) \\div 3"},
+													{"dark":1, "math":"(-4-8) \\div 3 = (-12) \\div 3"},
 													", entonces, ",
-													{"math":"-4=-4"},
+													{"dark":1, "math":"-4=-4"},
 													" la igualdad se mantiene.",
 													{"hr":1},
-													{"math":"(\\frac{5}{2}) \\times (-\\frac{1}{3}) = \\frac{17}{6} \\times (-\\frac{1}{3})"},
+													{"dark":1, "math":"(\\frac{5}{2}) \\times (-\\frac{1}{3}) = \\frac{17}{6} \\times (-\\frac{1}{3})"},
 													", entonces, ",
-													{"math":"\\frac{17}{18} = \\frac{17}{18}"},
+													{"dark":1, "math":"\\frac{17}{18} = \\frac{17}{18}"},
 													" la igualdad se mantiene."
 												]
 											},
@@ -383,19 +416,19 @@
 												"content": [
 													{"text": "Algebraico", "class": "h3"},
 													{"br":1},
-													{"math":"(x-2y = 4) \\div (-2y) "},
+													{"dark":1, "math":"(x-2y = 4) \\div (-2y) "},
 													", entonces, ",
-													{"math":"-\\frac{x}{2y}+1 = \\frac{2}{y}"},
+													{"dark":1, "math":"-\\frac{x}{2y}+1 = \\frac{2}{y}"},
 													" la igualdad se mantiene.",
 													{"hr":1},
-													{"math":"(2a+\\frac{3}{b}) \\times b = 4 \\times b"},
+													{"dark":1, "math":"(2a+\\frac{3}{b}) \\times b = 4 \\times b"},
 													", entonces, ",
-													{"math":"2ab + 3 = 4b"},
+													{"dark":1, "math":"2ab + 3 = 4b"},
 													" la igualdad se mantiene.",
 													{"hr":1},
-													{"math":"-2y \\times 5 = -2y \\times 5"},
+													{"dark":1, "math":"-2y \\times 5 = -2y \\times 5"},
 													", entonces, ",
-													{"math":"-10y = -10y"},
+													{"dark":1, "math":"-10y = -10y"},
 													" la igualdad se mantiene."
 												]
 											}
@@ -405,7 +438,7 @@
 							},
 							{
 								"dialog":1,
-								"button": {"img": "imgs/p5.png"},
+								"button": [{"img": "imgs/p5.png"}],
 								"buttonClass": "clean",
 								"content": [
 									{"text":"Propiedad aditiva", "class": "h2"},
@@ -422,19 +455,19 @@
 												"content": [
 													{"text": "Aritmético", "class": "h3"},
 													{"br":1},
-													{"math":"8+2+5 = 10+5"},
+													{"dark":1, "math":"8+2+5 = 10+5"},
 													", entonces, ",
-													{"math":"15 = 15"},
+													{"dark":1, "math":"15 = 15"},
 													" la igualdad se mantiene.",
 													{"hr":1},
-													{"math":"-3-7-3 = -11-3"},
+													{"dark":1, "math":"-3-7-3 = -11-3"},
 													", entonces, ",
-													{"math":"-14 = -14"},
+													{"dark":1, "math":"-14 = -14"},
 													" la igualdad se mantiene.",
 													{"hr":1},
-													{"math":"(\\frac{5}{7} + \\frac{2}{3} - \\frac{1}{3} = \\frac{29}{21} - \\frac{1}{3}"},
+													{"dark":1, "math":"(\\frac{5}{7} + \\frac{2}{3} - \\frac{1}{3} = \\frac{29}{21} - \\frac{1}{3}"},
 													", entonces, ",
-													{"math":"\\frac{22}{21} = \\frac{22}{21}"},
+													{"dark":1, "math":"\\frac{22}{21} = \\frac{22}{21}"},
 													" la igualdad se mantiene."
 												]
 											},
@@ -444,13 +477,13 @@
 												"content": [
 													{"text": "Algebraico", "class": "h3"},
 													{"br":1},
-													{"math":"x - 2y + 2y = z + 2y"},
+													{"dark":1, "math":"x - 2y + 2y = z + 2y"},
 													" la igualdad se mantiene.",
 													{"hr":1},
-													{"math":"2a + \\frac{2}{b} - 2a = a - 2a"},
+													{"dark":1, "math":"2a + \\frac{2}{b} - 2a = a - 2a"},
 													" la igualdad se mantiene.",
 													{"hr":1},
-													{"math":"\\frac{2x}{3} - 21 + x = y+z"},
+													{"dark":1, "math":"\\frac{2x}{3} - 21 + x = y+z"},
 													" la igualdad se mantiene."
 												]
 											}
@@ -460,7 +493,7 @@
 							},
 							{
 								"dialog":1,
-								"button": {"img": "imgs/p6.png"},
+								"button": [{"img": "imgs/p6.png"}],
 								"buttonClass": "clean",
 								"content": [
 									{"text":"Propiedad transitiva", "class": "h2"},
@@ -478,25 +511,25 @@
 													{"text": "Aritmético", "class": "h3"},
 													{"br":1},
 													"Si ",
-													{"math": "7+2 = 9"},
+													{"dark":1, "math": "7+2 = 9"},
 													" y ",
-													{"math": "3x3=9"},
+													{"dark":1, "math": "3x3=9"},
 													", entonces, ",
-													{"math": "7+2=3 \\times 3"},
+													{"dark":1, "math": "7+2=3 \\times 3"},
 													{"hr":1},
 													"Si ",
-													{"math": "-5-6=-11"},
+													{"dark":1, "math": "-5-6=-11"},
 													" y ",
-													{"math": "-5.5 \\times 2 = -11"},
+													{"dark":1, "math": "-5.5 \\times 2 = -11"},
 													", entonces, ",
-													{"math": "-5-6 = -5.5x2"},
+													{"dark":1, "math": "-5-6 = -5.5x2"},
 													{"hr":1},
 													"Si ",
-													{"math": "\\frac{5}{3} + \\frac{7}{3} = \\frac{41}{12} "},
+													{"dark":1, "math": "\\frac{5}{3} + \\frac{7}{3} = \\frac{41}{12} "},
 													" y ",
-													{"math": " \\frac{23}{12} + \\frac{9}{6} = \\frac{41}{12}"},
+													{"dark":1, "math": " \\frac{23}{12} + \\frac{9}{6} = \\frac{41}{12}"},
 													", entonces, ",
-													{"math": " \\frac{5}{3} + \\frac{7}{4} = \\frac{23}{12} + \\frac{9}{6}"}
+													{"dark":1, "math": " \\frac{5}{3} + \\frac{7}{4} = \\frac{23}{12} + \\frac{9}{6}"}
 
 
 												]
@@ -508,25 +541,25 @@
 													{"text": "Algebraico", "class": "h3"},
 													{"br":1},
 													"Si ",
-													{"math": "x - 2y = z"},
+													{"dark":1, "math": "x - 2y = z"},
 													" y ",
-													{"math": "ab = z"},
+													{"dark":1, "math": "ab = z"},
 													", entonces, ",
-													{"math": "x-2y = ab"},
+													{"dark":1, "math": "x-2y = ab"},
 													{"hr":1},
 													"Si ",
-													{"math": "a + \\frac{1}{b} = x"},
+													{"dark":1, "math": "a + \\frac{1}{b} = x"},
 													" y ",
-													{"math": "n - 2m = x"},
+													{"dark":1, "math": "n - 2m = x"},
 													", entonces, ",
-													{"math": "a + \\frac{1}{b} = n -2m"},
+													{"dark":1, "math": "a + \\frac{1}{b} = n -2m"},
 													{"hr":1},
 													"Si ",
-													{"math": " \\frac{x}{3} + 1 = y"},
+													{"dark":1, "math": " \\frac{x}{3} + 1 = y"},
 													" y ",
-													{"math": "ab = y"},
+													{"dark":1, "math": "ab = y"},
 													", entonces, ",
-													{"math": " \\frac{x}{3} + 1 = ab = y"}
+													{"dark":1, "math": " \\frac{x}{3} + 1 = ab = y"}
 
 												]
 											}
@@ -553,56 +586,56 @@
 							"content": [
 								{
 									"dialog": 1,
-									"button": "Ejemplo 1",
-									"buttonClass": "important ma-4",
+									"button": ["Ejemplo 1"],
+									"buttonClass": "btn m-1",
 									"content": [
 										"En la ecuación lineal:",
-										{"math": "2(x+3)=12", "block":1},
+										{"dark":1, "math": "2(x+3)=12", "block":1},
 										{"br":1},
 										"Si se aplica la propiedad multiplicativa:",
-										{"math": "2(x+3) \\div 2 = 12 \\div 2", "block":1},
-										{"math": "x+3=6", "block":1},
+										{"dark":1, "math": "2(x+3) \\div 2 = 12 \\div 2", "block":1},
+										{"dark":1, "math": "x+3=6", "block":1},
 										{"br":1},
 										"Si se aplica la propiedad aditiva:",
-										{"math": "x+3-3=6-3", "block":1},
-										{"math": "x=3", "block":1}
+										{"dark":1, "math": "x+3-3=6-3", "block":1},
+										{"dark":1, "math": "x=3", "block":1}
 									]
 								},
 								{
 									"dialog": 1,
-									"button": "Ejemplo 2",
-									"buttonClass": "important ma-4",
+									"button": ["Ejemplo 2"],
+									"buttonClass": "btn m-1",
 									"content": [
 										"En la ecuación lineal:",
-										{"math": " \\frac{x^2}{3}+5=17", "block":1},
+										{"dark":1, "math": " \\frac{x^2}{3}+5=17", "block":1},
 										{"br":1},
 										"Si se aplica la propiedad aditiva:",
-										{"math": "\\frac{x^2}{3}+5-5 = 17-5", "block":1},
-										{"math": "\\frac{x^2}{3}=12", "block":1},
+										{"dark":1, "math": "\\frac{x^2}{3}+5-5 = 17-5", "block":1},
+										{"dark":1, "math": "\\frac{x^2}{3}=12", "block":1},
 										{"br":1},
 										"Si se aplica la propiedad multiplicativa:",
-										{"math": "\\frac{x^2}{3} \\times 3 = 12 \\times 3", "block":1} ,
-										{"math": "x^2 = 36", "block":1},
+										{"dark":1, "math": "\\frac{x^2}{3} \\times 3 = 12 \\times 3", "block":1} ,
+										{"dark":1, "math": "x^2 = 36", "block":1},
 										"Si se aplica la propiedad de potencia y raíz:",
-										{"math": "\\sqrt{x^2} = \\sqrt{36}", "block":1},
-										{"math": "x=6", "block":1}
+										{"dark":1, "math": "\\sqrt{x^2} = \\sqrt{36}", "block":1},
+										{"dark":1, "math": "x=6", "block":1}
 									]
 								},
 								{
 									"dialog": 1,
-									"button": "Ejemplo 3",
-									"buttonClass": "important ma-4",
+									"button": ["Ejemplo 3"],
+									"buttonClass": "btn m-1",
 									"content": [
 										"En la ecuación lineal:",
-										{"math": "7x + 3(x + 2) - 4(2 - x) = 2(x + 3) - 7(4 - 2x) + 3", "block":1},
+										{"dark":1, "math": "7x + 3(x + 2) - 4(2 - x) = 2(x + 3) - 7(4 - 2x) + 3", "block":1},
 										"El primer paso para la solución es realizar las operaciones:",
-										{"math": "7x + 3x + 6 - 8 + 4x = 2x + 6 - 28 + 14x + 3", "block":1},
+										{"dark":1, "math": "7x + 3x + 6 - 8 + 4x = 2x + 6 - 28 + 14x + 3", "block":1},
 										"El siguiente paso consiste en reducir los términos semejantes:",
-										{"math": "14x-2=16x-19", "block":1},
+										{"dark":1, "math": "14x-2=16x-19", "block":1},
 										"Si se aplica la propiedad aditiva:",
-										{"math": "14x-2 + 19 - 14x = 16x - 19 + 19-14x", "block":1},
-										{"math": "17 \\div 2 = 2x \\div 2", "block":1},
-										{"math": " \\frac{17}{2} = x", "block":1}
+										{"dark":1, "math": "14x-2 + 19 - 14x = 16x - 19 + 19-14x", "block":1},
+										{"dark":1, "math": "17 \\div 2 = 2x \\div 2", "block":1},
+										{"dark":1, "math": " \\frac{17}{2} = x", "block":1}
 
 									]
 								}
@@ -615,12 +648,20 @@
 		{
 			"title": "Ordena las listas",
 			"icon": "games",
-			"steps": true,
+			"steps": false,
 			"blocks": [
 				{
 					"width": "100%",
 					"content": [
-						"1. Analiza la siguiente ecuación y ordena los pasos y propiedades que debes aplicar para resolvera.",
+						{
+                            "instruction":1,
+                            "content": [
+                                {"icon": "swipe_vertical", "size":"2rem", "class":"animate__animated animate__flash animate__slower animate__infinite"},
+                                "Desplaza los elementos y ordénalos de la forma que se solicita."
+                            ]
+                        },
+						{"br":1},
+						"1. Analiza la siguiente ecuación y ordena los pasos y propiedades que debes aplicar para resolvera",
 						{"math": "(2a+3)^2 - 7 = 23", "block":1},
 						{
                             "sortable": true,
@@ -709,11 +750,19 @@
 		{
 			"title": "Actividad",
 			"icon": "games",
-			"steps": true,
+			"steps": false,
 			"blocks": [
 				{
 					"width": "100%",
 					"content": [
+						{
+                            "instruction":1,
+                            "content": [
+                                {"icon": "touch_app", "size":"2rem", "class":"animate__animated animate__flash animate__slower animate__infinite"},
+                                "Lee las preguntas y elige la respuesta correcta"
+                            ]
+                        },
+						{"br": 1},
 						"1. ¿Cuál de las siguientes gráficas representa una ecuación lineal con una incógnita?",
 						{
                             "select": true,
@@ -765,12 +814,12 @@
 						"2. ¿Cuál de los siguientes valores resuelve correctamente la ecuación lineal? ",
 						{"math": "x^2+3 = 6 \\times 2 + 7", "block":1},
 						{
-                            "select": true,
-                            "options": [
-								[{"math": "x=-8"}, false],
-								[{"math": "x=2"}, false],
-								[{"math": "x=4"}, true],
-								[{"math": "x=3.5"}, false]
+							"select": true,
+							"options": [
+								[{ "math": "x=-8"}, false],
+								[{ "math": "x=2"}, false],
+								[{ "math": "x=4"}, true],
+								[{ "math": "x=3.5"}, false]
 							]
 						}
 					]
@@ -781,12 +830,12 @@
 						"3. ¿Cuál de los siguientes valores resuelve correctamente la ecuación lineal?",
 						{"math": "3b + 7(3+2b) = 32+b(4-3)", "block":1},
 						{
-                            "select": true,
-                            "options": [
-								[{"math": "b= \\frac{11}{17}"}, false],
-								[{"math": "b= \\frac{11}{16}"}, true],
-								[{"math": "b= \\frac{53}{16}"}, false],
-								[{"math": "b= 0.8275"}, false]
+							"select": true,
+							"options": [
+								[{ "math": "b= \\frac{11}{17}"}, false],
+								[{ "math": "b= \\frac{11}{16}"}, true],
+								[{ "math": "b= \\frac{53}{16}"}, false],
+								[{ "math": "b= 0.8275"}, false]
 							]
 						}
 					]
@@ -795,14 +844,14 @@
 					"width": "100%",
 					"content": [
 						"4. ¿Cuál de los siguientes valores resuelve correctamente la ecuación lineal? ",
-						{"math": "3+(2z-3)^3 = 51", "block":1},
+						{ "math": "3+(2z-3)^3 = 51", "block":1},
 						{
-                            "select": true,
-                            "options": [
-								[{"math": "z=5"}, true],
-								[{"math": "z=2"}, false],
-								[{"math": "z=-\\frac{2}{5}"}, false],
-								[{"math": "z= \\frac{7}{3}"}, false]
+							"select": true,
+							"options": [
+								[{ "math": "z=5"}, true],
+								[{ "math": "z=2"}, false],
+								[{ "math": "z=-\\frac{2}{5}"}, false],
+								[{ "math": "z= \\frac{7}{3}"}, false]
 							]
 						}
 					]
@@ -811,14 +860,14 @@
 					"width": "100%",
 					"content": [
 						"5. ¿Cuál de los siguientes valores resuelve correctamente la ecuación lineal? ",
-						{"math": " \\frac{1}{3} (a+3) - \\frac{1}{2} (4-3a) + 27 = \\frac{1}{4} (8-7a) + 3 (a-7) + \\frac{a}{2} ", "block":1},
+						{ "math": " \\frac{1}{3} (a+3) - \\frac{1}{2} (4-3a) + 27 = \\frac{1}{4} (8-7a) + 3 (a-7) + \\frac{a}{2} ", "block":1},
 						{
-                            "select": true,
-                            "options": [
-								[{"math": "a= \\frac{7}{2}"}, false],
-								[{"math": "a= -\\frac{4}{7}"}, false],
-								[{"math": "a= 540"}, false],
-								[{"math": "a= -540"}, true]
+							"select": true,
+							"options": [
+								[{ "math": "a= \\frac{7}{2}"}, false],
+								[{ "math": "a= -\\frac{4}{7}"}, false],
+								[{ "math": "a= 540"}, false],
+								[{ "math": "a= -540"}, true]
 							]
 						}
 					]

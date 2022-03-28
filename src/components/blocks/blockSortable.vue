@@ -3,7 +3,7 @@
     draggable(v-model="itemsModel" item-key="id" @end="storeAnswer" :sort="(Blocked || Status.finalize)?false:true")
         template(#item="{element, index}")
            div.sortable-item(:data="index+1" :class="[data.numbers?'shownumbers':'']")
-                Icon swipe_vertical
+                .gestureIcon: Icon swipe_vertical
                 BlocksRenderer(:item="element" :blockid=" blockid+'-sortableitem' ")
 
 SolveModule(@solve="solve")
@@ -106,13 +106,18 @@ currentInstance.appContext.config.globalProperties.emitter.on('finalize', (evt) 
         position: relative
         cursor: pointer
         margin: 10px
+        color: $dark
+        padding-left: 40px
+        .gestureIcon
+            position: absolute
+            top: 0
+            right: 0
         &.shownumbers
             position: relative
             &::before
                 content: attr(data)
                 position: absolute
                 left: 1%
-                
                 background: $high
                 color: $clear
                 width: 18px
