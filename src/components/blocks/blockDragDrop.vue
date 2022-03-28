@@ -16,6 +16,10 @@
                 //.content(v-if="typeof i[0] === 'string' " v-html="i[0]")
                 //BlockMath(v-else-if="i[0].math" :data="i[0]" )
                 BlocksRenderer(:item="i[0]" :blockid=" blockid+'-drag-'+index ")
+                //Feedback
+                template(v-if="i[2]")
+                    .feedback.f0.animate__animated.animate__flash: BlocksRenderer(:item="i[2][0]" :blockid=" blockid+'-dropRight-'+index+'-feedback' ")
+                    .feedback.f1.animate__animated.animate__flash: BlocksRenderer(:item="i[2][1]" :blockid=" blockid+'-dropRight-'+index+'-feedback' ")
 
     //Droppables RIGHT
     section(v-if="data.dropsRight").drops.dropsRight
@@ -67,53 +71,57 @@ const createDrags = () => {
         onDragEnd: function (e){ DraggableOnDragEnd(e,this) }
     })
 }
-    const DraggableOnDrag = (e, drag) => {
-        for(var i = 0; i<drops.length; i++){
-            if (drag.hitTest(drops[i], '40%')) {
-                drag.target.classList.add('hover')
-                drops[i].classList.add('hover')
-                return false
-            } else {
-                drag.target.classList.remove('hover')
-                drops[i].classList.remove('hover')
-                
-            }
-        }
-
-    }
-    const DraggableOnClick = (e, drag) => {
-        if(result.value!=null){
+const DraggableOnDrag = (e, drag) => {
+    for(var i = 0; i<drops.length; i++){
+        if (drag.hitTest(drops[i], '40%')) {
+            drag.target.classList.add('hover')
+            drops[i].classList.add('hover')
             return false
-        }
-        Audios.scancel.play()
-        var drags = document.querySelector(dragsId+' .drags')
-        if(drag.target.parentElement!=drags){
-            drags.append(drag.target)
-            TweenLite.to(drag.target, 0.2, { x: 0, y: 0 });
-            storeInStatusFile()
-        }
-    }
-    const DraggableOnDragEnd = (e, drag) => {
-        var dropped = false
-        for(var i = 0; i<drops.length; i++){
-            if (drag.hitTest(drops[i], '40%')) {
-                dropped = true
-                drops[i].append(drag.target)
-                TweenLite.to(drag.target, 0.2, { x: 0, y: 0 });
-                drag.target.classList.remove('hover')
-                drops[i].classList.remove('hover')
-                
-                storeInStatusFile()
-
-            }
-        }
-        if(!dropped){
-            TweenLite.to(drag.target, 0.2, { x: 0, y: 0 });   
         } else {
-            Audios.sBlockDrag.play()
+            drag.target.classList.remove('hover')
+            drops[i].classList.remove('hover')
+            
         }
-
     }
+    
+
+}
+const DraggableOnClick = (e, drag) => {
+    if(result.value!=null){
+        return false
+    }
+    Audios.scancel.play()
+    var drags = document.querySelector(dragsId+' .drags')
+    if(drag.target.parentElement!=drags){
+        drags.append(drag.target)
+        TweenLite.to(drag.target, 0.2, { x: 0, y: 0 });
+        drag.target.removeAttribute('data-feedback')
+        storeInStatusFile()
+        
+    }
+}
+const DraggableOnDragEnd = (e, drag) => {
+    var dropped = false
+    for(var i = 0; i<drops.length; i++){
+        if (drag.hitTest(drops[i], '40%')) {
+            dropped = true
+            drops[i].append(drag.target)
+            TweenLite.to(drag.target, 0.2, { x: 0, y: 0 });
+            drag.target.classList.remove('hover')
+            drops[i].classList.remove('hover')
+            
+            isRightOrWrong(drag.target)
+
+            storeInStatusFile()
+
+        }
+    }
+    if(!dropped){
+        TweenLite.to(drag.target, 0.2, { x: 0, y: 0 });   
+    } else {
+        Audios.sBlockDrag.play()
+    }
+}
 
 
 const b64 = (itm) => {
@@ -164,7 +172,6 @@ const LoadStoredAnswers = () => {
             var op = options[i]
             if(op[1]){
                 var drag = document.querySelector(dragItems+'[data-index="'+op[0]+'"]')
-
                 var dropzone = document.querySelector(dropItems+'[data='+op[1]+']')
                 dropzone.append(drag)
             }
@@ -172,7 +179,6 @@ const LoadStoredAnswers = () => {
     } else {
         Status.value.answers[props.blockid] = null
     }
-
     //Disable if finalized
     if(Status.value.finalize){
         finalize()
@@ -192,6 +198,17 @@ const solve = () => {
 }
 
 
+const isRightOrWrong = (dragItem) => {
+    var dragData = atob(dragItem.getAttribute('data'))
+    var parentData = dragItem.parentElement.getAttribute('data')
+    if(dragData == parentData){
+        //OK Atributte
+        dragItem.setAttribute('data-feedback', 0)
+    } else {
+        dragItem.setAttribute('data-feedback', 1)
+    }
+}
+
 const finalize = () => {
     var drgs = document.querySelectorAll(dragItems)
     var oks = 0
@@ -207,6 +224,7 @@ const finalize = () => {
             drgs[i].classList.add('notok')
             nooks++
         }
+        isRightOrWrong(drgs[i])
     }
     //CORRECTA / INCORRECTA
     if(nooks == 0){
@@ -234,6 +252,13 @@ currentInstance.appContext.config.globalProperties.emitter.on('finalize', (evt) 
 
 
 <style lang="sass" scoped>
+.feedback
+    color: $dark
+    display: none
+[data-feedback="0"] .feedback.f0
+    display: block
+[data-feedback="1"] .feedback.f1
+    display: block
 .blockDragDrop
     position: relative
     width: 90%

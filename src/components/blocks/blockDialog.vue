@@ -22,18 +22,23 @@ const Audios = inject('Audios')
 const HideMenu = inject('hidemenu')
 const props = defineProps({
     data: Object,
-    blockid: String
+    blockid: String,
+    hidesmenu: Boolean
 })
 const dialog = ref(false)
 const open = () => {
     dialog.value = true
     Audios.sopen.play()
-    HideMenu.value = true
+    if(props.hidesmenu){
+        HideMenu.value = true
+    }
 }
 const close = () => {
     dialog.value = false
     Audios.sclose.play()
-    HideMenu.value = false
+    if(props.hidesmenu){
+        HideMenu.value = false
+    }
 }
 </script>
 <style lang="sass" scoped>

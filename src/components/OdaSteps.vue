@@ -6,7 +6,7 @@
             Icon navigate_before
             span Anterior
         template(v-for="(i, index) in steps")
-            button.btn.btn-xs(:class="[Status.step==index?'btn-active':'non-active']") {{index+1}}
+            button.btn.btn-xs(:class="[Status.step==index?'btn-active':'non-active']" @click="gotoStep(index)") {{index+1}}
         button.btn.btn-xs(@click="navigate(1)" :class="Status.step==steps-1?'btn-disabled':''" )
             | Siguiente
             Icon navigate_next
@@ -25,6 +25,10 @@ const Status = inject("statusFile")
 const Audios = inject("Audios")
 
 const currentStep = ref(0)
+const gotoStep = (step) => {
+    Status.value.step = step
+    emit('stepChanged')
+}
 const navigate = (dir) => {
     Audios.sclick.play()
     if(

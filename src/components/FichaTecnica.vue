@@ -1,6 +1,6 @@
 <template lang="pug">
 .FichaTecnica
-    BlockDialog(:data='buttonBlock')
+    BlockDialog(:data='buttonBlock' :hidesmenu="true")
 
 </template>
 <script setup>
