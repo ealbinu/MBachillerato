@@ -1,5 +1,49 @@
 <template lang="pug">
-transition(name="zoom")
+.fixed.top-0.left-0.p-1.z-10.w-full(class="md:hidden")
+    .navbar.bg-base-100.rounded.w-full
+        .navbar-start
+            img(:src="'odas/assets/icons/'+Activity.programa+'/'+Activity.materia+'.png'").w-12
+        .navbar-center
+            .text-lg.font-bold {{Activity.title}}
+        .navbar-end.text-right
+            MontenegroIcon
+    .navbar.bg-base-100.rounded.mt-1.w-full
+        .navbar-start
+        .navbar-center
+            perfect-scrollbar
+                ul.menu.bg-base-100.w-full(class="menu-horizontal md:menu-vertical")
+                    template(v-for="(i, index) in Activity.screens")
+                        li( @click="goToScreen(index)").leading-3.rounded
+                            div.flex-col(:class="index == Status.screen ? 'active': ''").text-center.rounded.lending-3
+                                div: Icon(:class="['text-sm', index == Status.screen ? 'text-white': '']")  {{i.icon}}
+                                div {{i.title}}
+        .navbar-end
+
+
+
+.menu.bg-base-100.justify-between.rounded(class="w-56 hidden md:flex")
+    div.menu-title
+        img(:src="'odas/assets/icons/'+Activity.programa+'/'+Activity.materia+'.png'").w-12.mx-auto
+    div.menu-title.text-center.text-lg {{Activity.title}}
+    div.menu-title.text-center.text-sm {{Activity.conf.materia}}
+    div.menu-title.my-5.flex.justify-center
+        //FichaTecnica
+    hr
+    perfect-scrollbar
+        ul.menu.bg-base-100.w-full(class="menu-horizontal md:menu-vertical")
+             template(v-for="(i, index) in Activity.screens")
+                li( @click="goToScreen(index)")
+                    div.gap-px(:class="index == Status.screen ? 'active': ''")
+                        Icon(:class="['text-sm', index == Status.screen ? 'text-white': '']")  {{i.icon}}
+                        | &nbsp;{{i.title}}
+    div.mt-auto
+    Progreso
+    Puntaje
+    MontenegroIcon.mx-auto.my-2
+
+
+
+//-transition(name="zoom")
     aside.ActivitySidebar(:class="[wide?'':'mini']" :style="cssVars")
         .openclosebtn(@click="wide=!wide")
             Icon(v-if="wide") navigate_before
@@ -77,7 +121,7 @@ const cssVars = computed(() => {
 </script>
 <style lang="sass">
 
-aside.ActivitySidebar
+//aside.ActivitySidebar
     position: relative
     display: block
     background: rgba($clear,0.9)
@@ -159,8 +203,11 @@ aside.ActivitySidebar
             z-index: 2 !important
     &:not(.mini)
         min-width: 180px
-.screenItem
+//.screenItem
     cursor: pointer
     &:hover
         color: $light
+.ps
+    width: 100vw
+    height: 100%
 </style>

@@ -1,11 +1,10 @@
-
 // ------------ STYLES
 *
     padding: 0
     margin: 0
 html
     height: 100%
-body
+//body
     width: 100%
     height: 100%
     background: linear-gradient(lighten($clear,10%),$light)
@@ -16,7 +15,7 @@ body
     justify-content: center
     align-items: center
 
-#app
+//#app
     background: $clear
     width: 100%
     height: 100%
@@ -86,7 +85,7 @@ button
     //animation: zoomOutUp
     //animation-duration: 1s
 
-.material-icons
+//.material-icons
     vertical-align: middle
     font-size: 18px
     filter: invert(50%)  sepia(94%)  hue-rotate(150deg)
@@ -128,7 +127,7 @@ button
     margin: auto
 .mb-auto
     margin: auto
-@for $i from 0 through 10
+//@for $i from 0 through 10
     $multi: $i*10
     .ma-#{$i}
         margin: #{$multi}px
@@ -149,18 +148,19 @@ button
 
 
 //PADDING
-.pa-auto
-    padding: auto
-.pl-auto
-    padding: auto
-.pr-auto
-    padding: auto
-.pt-auto
-    padding: auto
-.pb-auto
-    padding: auto
+//
+    .pa-auto
+        padding: auto
+    .pl-auto
+        padding: auto
+    .pr-auto
+        padding: auto
+    .pt-auto
+        padding: auto
+    .pb-auto
+        padding: auto
 
-@for $i from 0 through 10
+//@for $i from 0 through 10
     $multi: $i*10
     .pa-#{$i}
         padding: #{$multi}px
@@ -179,13 +179,14 @@ button
     .pr-#{$i}
         padding-right: #{$multi}px
 
+    
 // MAX WIDTH
-@for $i from 0 through 100
+//@for $i from 0 through 100
     $multi: $i*10
     .maxw-#{$i}
         max-width:  #{$multi}px
 // WIDTH
-@for $i from 0 through 100
+//@for $i from 0 through 100
     $multi: $i*10
     .w-#{$i}
         width:  #{$multi}px

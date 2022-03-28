@@ -1,27 +1,29 @@
+// Vue libs
 import { createApp } from 'vue'
+import { ref, provide, watch, inject, getCurrentInstance } from 'vue'
 import App from './App.vue'
+
+//External libs
+import _ from 'lodash'
 import axios from 'axios'
 import mitt from 'mitt'
 import Vue3Storage from "vue3-storage"
 import { useStorage } from "vue3-storage"
 import { Base64 } from 'js-base64';
-import _ from 'lodash'
 import VueApexCharts from "vue3-apexcharts";
-import { ref, provide, watch, inject, getCurrentInstance } from 'vue'
-import backgroundGenerator from './components/backgroundGenerator.js'
-import 'animate.css'
 import PerfectScrollbar from 'vue3-perfect-scrollbar'
 import 'vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css'
+import Wad from 'web-audio-daw';
+import { themeChange } from 'theme-change'
+import daisyuiColors from 'daisyui/src/colors/themes'
 
-import { Howl, Howler } from 'howler';
-
+//Internal libs
+import backgroundGenerator from './components/backgroundGenerator.js'
 import materias from './materias.js'
 
-
-
-
-
-
+//Style libs
+import 'animate.css'
+import './index.css'
 
 
 
@@ -48,20 +50,22 @@ gsap.registerPlugin(Draggable)
 //- Show all screens (test only)
 app.provide('view', ref(false))
 
+app.provide('hidemenu', ref(false))
 
 
 
 //- Audios
 /* sounds */
 app.provide('Audios', { 
-    sclick : new Howl({src:['odas/assets/sounds/click.mp3']}),
-    scancel : new Howl({src:['odas/assets/sounds/cancel.mp3']}),
-    sopen : new Howl({src:['odas/assets/sounds/open.mp3']}),
-    sclose : new Howl({src:['odas/assets/sounds/close.mp3']}),
-    schange: new Howl({src:['odas/assets/sounds/change.mp3']}),
-    sBlockSelect: new Howl({src:['odas/assets/sounds/blockSelect.mp3']}),
-    sBlockDrag: new Howl({src:['odas/assets/sounds/blockDrag.mp3']}),
-    send: new Howl({src:['odas/assets/sounds/end.mp3']}),
+    sclick : new Wad({source : 'odas/assets/sounds/click.mp3' }),
+    scancel : new Wad({source : 'odas/assets/sounds/cancel.mp3'}),
+    sopen : new Wad({source : 'odas/assets/sounds/open.mp3'}),
+    sclose : new Wad({source : 'odas/assets/sounds/close.mp3'}),
+    schange: new Wad({source : 'odas/assets/sounds/change.mp3'}),
+    sBlockSelect: new Wad({source : 'odas/assets/sounds/blockSelect.mp3'}),
+    sBlockDrag: new Wad({source : 'odas/assets/sounds/blockDrag.mp3'}),
+    send: new Wad({source : 'odas/assets/sounds/end.mp3'}),
+
  })
 
 
@@ -142,26 +146,27 @@ async function loadOdaFile(){
     if(oda){
         try {
 
-            
 
-            const storage = useStorage(oda+'_')
-            
+            const storage = useStorage(oda+'_')            
             const res = await axios.get('./odas/'+oda+'/oda.json')
-            
             const Activity = res.data
-
             Activity.conf = materias[Activity.programa][Activity.materia]
+
+            // SET ODA primary COLOR
+            const colorprincipal = Activity.conf.color
+            var htmldom = document.querySelector('html')
+            if(htmldom){
+                htmldom.style.setProperty('--p', colorprincipal)
+            }
 
 
             app.provide('activityFile', Activity)
-            
-            backgroundGenerator.buildBG(Activity.conf.color)
 
+            backgroundGenerator.buildBG(Activity.conf.color)
             
             app.provide('statusFile', statusFile)
             app.provide('builderFile', false)
-            
-            
+                        
             app.mount('#app')
 
             // DATA FROM LOCALSTORAGE only on TEST
@@ -194,7 +199,7 @@ async function loadOdaFile(){
 
             }
 
-
+            // SAVE DATA TO LOCALSRTORAGE (only if test)
             const saveDataToStorage = _.throttle(function (actual, prev) {
                 const enc =  Base64.btoa(JSON.stringify(actual.value))
                 storage.setStorageSync('status', enc)
@@ -208,10 +213,6 @@ async function loadOdaFile(){
 
             }, 2000)
 
-
-            
-
-            
             watch(
                 () => statusFile,
                 (actual, prev) => {
@@ -219,13 +220,14 @@ async function loadOdaFile(){
                         return false
                     }
                     saveDataToStorage(actual, prev)
-                    
-                    
                 },
                 { deep: true }
               )
+
+
             // SET TITLE
             document.title = Activity.id + ' | ' + Activity.title
+
             if(istest != null){
                 document.title ='::TEST:: ' + Activity.id + ' | ' + Activity.title
                 
@@ -300,3 +302,5 @@ import.meta.hot.on('vite:beforeUpdate', () => {
     reLoadOdaFile()
 })
 */
+
+

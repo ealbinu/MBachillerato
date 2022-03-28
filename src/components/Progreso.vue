@@ -1,10 +1,9 @@
 <template lang="pug">
 div.area
     .p.mb-1
-        Icon donut_large
-        span.label &nbsp;Progreso {{stats.total-stats.unanswered}} /{{stats.total}}
+        Icon(class="text-sm") donut_large
+        | &nbsp;Progreso {{stats.total-stats.unanswered}} /{{stats.total}}
     div.progreso: .bar(:style="'width:'+Math.round(((stats.total-stats.unanswered)/stats.total)*100)+'%'")
-    hr
 </template>
 <script setup>
 import {ref, inject, computed} from 'vue'

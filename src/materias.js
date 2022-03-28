@@ -1,47 +1,47 @@
 var DGETI = {
   ALGEBRAI: {
     materia: "Álgebra I",
-    color: "#3361a3",
+    color: "215 52% 42%",
   },
   LECTURAEOEI: {
     materia: "Lectura, Expresión Oral y Escrita I",
-    color: "#3361a3",
+    color: "215 52% 42%",
   },
   LOGICA: {
     materia: "Lógica",
-    color: "#3361a3",
+    color: "215 52% 42%",
   },
   QUIMICAI: {
     materia: "Química I",
-    color: "#3361a3",
+    color: "215 52% 42%",
   },
   TECNOLOGIASIC: {
     materia: "Tecnologías de la Información y la Comunicación",
-    color: "#3361a3",
+    color: "215 52% 42%",
   },
   BIOLOGIA: {
     materia: "Biología",
-    color: "#aa3435",
+    color: "359 53% 44%",
   },
   ETICA: {
     materia: "Ética",
-    color: "#aa3435",
+    color: "359 53% 44%",
   },
   GEOMETRIAA: {
     materia: "Geometría Analítica",
-    color: "#aa3435",
+    color: "359 53% 44%",
   },
   CALCULOI: {
     materia: "Cálculo Integral",
-    color: "#42734a",
+    color: "130 27% 35%",
   },
   CIENCIATSV: {
     materia: "Ciencia, Tecnología, Sociedad y Valores",
-    color: "#42734a",
+    color: "130 27% 35%",
   },
   FISICAII: {
     materia: "Física II",
-    color: "#42734a",
+    color: "130 27% 35%",
   },
 };
 var DGB = {

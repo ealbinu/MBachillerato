@@ -1,27 +1,41 @@
 <template lang="pug">
-transition(name="zoom" @after-leave="start")
-    div.intro(v-if="dialog" ref="introContainer").text-center
-        .content
-            MontenegroIcon
-            .my-1: img(:src="'odas/assets/icons/'+Activity.programa+'/'+Activity.materia+'.png'").w-7
-            .my-1
-                .h4 {{Activity.title}}
-                .small {{Activity.conf.materia}}
-            .my-1: FichaTecnica
-            hr
-            button.important(@click="close" :style="'color:#fff; background:' + Activity.conf.color") Comenzar
-            //.lottie(:data-animation-path="'odas/animations/intro_'+Activity.materia+'.json'" data-anim-loop="true" :data-name="'intro_'+Activity.materia")
-        ActivityBG(:speed="3000")
+
+input(type="checkbox" id="my-modal" class="modal-toggle" v-model="dialog")
+.modal
+    .modal-box.relative(class="w-11/12 max-w-5xl")
+        //.absolute.right-2.top-2
+            Icon dark_mode
+            input(type="checkbox" data-act-class="darkmode" data-toggle-theme="dark,light").toggle
+        .hero.relative
+            .hero-content.text-center.relative.z-10
+                .max-w-md.text-center
+                    div.text-center: img(:src="'odas/assets/icons/'+Activity.programa+'/'+Activity.materia+'.png'").w-28.mx-auto
+                    h3.text-lg {{Activity.conf.programa == 'DGETI' ? 'Bachillerato Tecnológico' : 'Bachillerato General'}}
+                    h1.text-4xl.font-bold.mt-2 {{Activity.title}}
+                    h2.text-xl {{Activity.conf.materia}}
+                    .mt-10: button.btn(@click="close") Comenzar
+                    .mt-10: MontenegroIcon(:logo="true")
+
+            ActivityBG(:speed="3000")
+
 </template>
 <script setup>
 
 
 
-import { ref, inject } from 'vue'
+import { ref, inject, onMounted } from 'vue'
 import lottie from 'lottie-web'
 import FichaTecnica from './FichaTecnica.vue'
 import ActivityBG from './ActivityBG.vue';
 import MontenegroIcon from './MontenegroIcon.vue';
+import { themeChange } from 'theme-change'
+import Icon from './icon.vue';
+
+onMounted(()=>{
+    themeChange(false)
+    console.log('tjhemed')
+})
+
 const Activity = inject("activityFile")
 const Status = inject("statusFile")
 
@@ -31,10 +45,10 @@ const introContainer = ref()
 const dialog = ref(true)
 const close = (()=>{
     dialog.value = false
-})
-const start = (() => {
     emit('start')
+
 })
+
 
 //lottie.searchAnimations()
 

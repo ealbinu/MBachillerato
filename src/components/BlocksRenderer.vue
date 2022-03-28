@@ -1,11 +1,14 @@
 <template lang="pug">
 
+
 //-Simple text
 span(v-if="typeof item === 'string' " v-html="item")
 //-Break
 br(v-else-if="item.br")
 //-Hr
 hr(v-else-if="item.hr").my-2
+//-Direct HTML
+div(v-else-if="item.html" v-html="item.html")
 //-Icon
 BlockIcon(v-else-if="item.icon" :data="item")
 //-Text

@@ -7,6 +7,7 @@ import ActivityWindow from './components/ActivityWindow.vue'
 import ActivityBuilder from './components/ActivityBuilder.vue'
 
 import { ref, inject, provide, watch, watchEffect } from 'vue'
+import Oda from './components/Oda.vue'
 
 const Activity = inject('activityFile')
 const Status = inject("statusFile");
@@ -17,7 +18,12 @@ const changestate = ((newstate) => {
   Status.value.state = newstate
 })
 
+
+
   
+
+
+
 
 </script>
 
@@ -29,8 +35,10 @@ template(v-if="Activity && Status")
   template(v-if="Status.state == '@intro'")
     Intro(@start="changestate('@activity')")
   template(v-else-if="Status.state == '@activity'")
-    ActivitySidebar
-    ActivityWindow
+    //ActivitySidebar
+    //ActivityWindow
+    Oda
+
 </template>
 
 <style lang="sass">

@@ -4,12 +4,8 @@
     "materia": "ALGEBRAI",
     "bgimgs": 5,
     "title": "Variables",
+    "asignatura": "Álgebra I",
     "ficha":[
-        ["Nivel educativo", "Bachillerato"],
-        ["Sistema educativo", "Bachillerato tecnológico"],
-        ["Semestre o grado", "Primer semestre"],
-        ["Asignatura", "Álgebra I"],
-        ["Tema", "Variables"],
         ["Aprendizajes esperados", "Reconoce la existencia de las variables y distingue sus usos como número general, como incógnita y como relación funcional."],
         ["Contenido cental", "Uso de las variables y las expresiones algebraicas."]
     ],

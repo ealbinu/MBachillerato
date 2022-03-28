@@ -50,6 +50,7 @@ const colorStyles = () => {
             filter: invert(100%)
     &.ok2
         background: $test
+        color: #fff
     &.ok1
         background: $negative
         color:$clear

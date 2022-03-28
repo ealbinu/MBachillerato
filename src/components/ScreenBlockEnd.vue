@@ -4,7 +4,7 @@
         template(v-if="stats.unansweredLength")
             div.my-3: span De un total de #[strong {{stats.total}} preguntas] tienes #[strong.high {{stats.unansweredLength}} sin contestar].
             template(v-for="(i, index) in stats.unanswered")
-                button(@click="gotoUnanswered(index)").high.ma-1 {{unansweredBlock(index)}}
+                button(@click="gotoUnanswered(index)").btn.high.btn-sm.m-1 {{unansweredBlock(index)}}
                 
             
         template(v-else-if="stats.total>0")
@@ -14,7 +14,7 @@
         template(v-if="!Blocked")
                 div.my-3 ¿Deseas finalizar?
                 hr
-                div.my-4: button.important(@click="finalize") Finalizar
+                div.my-4: button.btn-accent.btn-wide.important(@click="finalize").btn-lg Finalizar
     template(v-else)
         div.my-3: strong Actividad finalizada.
         template(v-if="Results.total>0")
@@ -23,15 +23,15 @@
                 div.my-3 A continuación podrás ver un resúmen de tus resultados:
                 .row.wrap
                     template(v-for="(i, index) in Status.result")
-                        div(:class="i?'isok':'notok'").px-3.bg-light.ma-1.floatcard
-                            button(@click="gotoUnanswered(index)").bg-clear.ma-1 {{unansweredBlock(index)}}
+                        div(:class="i?'isok':'notok'").px-3.ma-1.floatcard
+                            button.btn.btn-sm.m-1(@click="gotoUnanswered(index)").ma-1 {{unansweredBlock(index)}}
         template(v-else)
         //0 preguntas
         //End links
         div.my-3 Puedes ver tus resultados individuales o repasar los contenidos navegando con el menú de la izquierda.
         template(v-if="!Blocked")
             div.my-3 También puedes reiniciar la actividad:
-            button(@click="resetApp").important Reiniciar
+            button(@click="resetApp").btn.btn-accent Reiniciar
 
 </template>
 <script setup>

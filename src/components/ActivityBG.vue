@@ -1,8 +1,9 @@
 <template lang="pug">
-template(v-for="(i, index) in Activity.bgimgs")
-    Transition(name="fadebg" mode="out-in")
-        .ActBG(v-if="counter == (index+1)")
-            .ActivityBG(:style=" 'background-image:url(odas/'+Activity.id+'/bg/'+'bg'+(index+1)+'.jpg' + ')'  ")
+.activitybgcontainer
+    template(v-for="(i, index) in Activity.bgimgs")
+        Transition(name="fadebg" mode="out-in")
+            .ActBG(v-if="counter == (index+1)")
+                .ActivityBG(:style=" 'background-image:url(odas/'+Activity.id+'/bg/'+'bg'+(index+1)+'.jpg' + ')'  ")
 
 </template>
 <script setup>
@@ -26,6 +27,11 @@ setInterval(() => {
 
 </script>
 <style lang="sass" scoped>
+.activitybgcontainer
+    position: fixed
+    z-index: 0
+    width: 100%
+    height: 100%
 .ActBG
     position: absolute
     z-index: 0

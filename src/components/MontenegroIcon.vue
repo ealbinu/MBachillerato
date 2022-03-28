@@ -1,9 +1,8 @@
 <template lang="pug">
 
-.montenegroIcon(@click="change" mode="out-in" :duration="{enter:1000, leave: 3000}" appear)
-    transition(name="zoom")
-        img(src="/odas/assets/icons/Montenegro-icon.svg" v-if="mode")
-        img(src="/odas/assets/icons/Montenegro.svg" v-else)
+.montenegroIcon(:duration="{enter:1000, leave: 3000}" appear :class="logo?'logo':'icon'")
+    img(src="/odas/assets/icons/Montenegro-icon.svg" v-if="!logo")
+    img(src="/odas/assets/icons/Montenegro.svg" v-else)
 
 
 //.lottie.montenegroicon(:data-animation-path="'odas/assets/icons/micon.json'" data-anim-loop="true" data-name="montenegroicon")
@@ -12,7 +11,12 @@
 <script setup>
 import {ref} from 'vue'
 import lottie from 'lottie-web'
-const props = defineProps({})
+const props = defineProps({
+    logo: {
+        type: Boolean,
+        default: false
+    }
+})
 const mode = ref(true)
 //lottie.searchAnimations()
 const change = () => {
@@ -30,12 +34,14 @@ change()
     display: flex
     justify-content: center
     align-items: center
-    margin: 10px auto
-    width: 100%
+
     height: 32px
     position: relative
     text-align: center
-    cursor: pointer
+    &.logo
+        width: 100%
+    &.icon
+        width: 32px
     img
         height: 32px
         position: absolute

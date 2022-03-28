@@ -1,10 +1,10 @@
 <template lang="pug">
-Transition(name="zoom")
-    section.Activity(:class="view ? 'desplegado' : '' ")
-        template(v-for="(i, index) in Activity.screens" :key="index")
-            //Arrow(v-if="isVisibleScreen(index)" :screenindex="'arrow-'+index")
-            ActivityScreen(:screen="i" v-show="isVisibleScreen(index)" @screen-next="changeScreen" :screenindex="index")
-        ActivityBG
+//Transition(name="zoom")
+section.Activity(:class="[view ? 'desplegado' : ''] ")
+    template(v-for="(i, index) in Activity.screens" :key="index")
+        //Arrow(v-if="isVisibleScreen(index)" :screenindex="'arrow-'+index")
+        ActivityScreen(:screen="i" v-show="isVisibleScreen(index)" @screen-next="changeScreen" :screenindex="index")
+    //ActivityBG
 </template>
 <script setup>
 import ActivityScreen from './ActivityScreen.vue'
@@ -36,16 +36,18 @@ const isVisibleScreen = (screenIndex) => {
 </script>
 <style lang="sass">
 section.Activity
-    display: block
     width: 100%
     height: 100%
     border: none
-    margin-left: 2%
+    margin-left: 1%
     box-sizing: border-box
-    display: flex
-    flex-direction: column
+    flex-grow: 1
     position: relative
-    .container
+    //
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    //.container
         height: 100%
         display: flex
         flex-direction: column
