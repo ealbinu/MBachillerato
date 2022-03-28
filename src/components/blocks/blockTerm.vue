@@ -1,10 +1,20 @@
 <template lang="pug">
-div(:title="data.d" @click="open").blockTerm
-    
-    span(v-html="data.t" v-if="data.t")
-    BlockImg(:data="{img:data.i}" v-if="data.i")
+Popper
+    BlocksRenderer(:item="data.term")
+    Icon.termIcon.animate__animated.animate__pulse.animate__infinite.animate__slow contact_support
+    template(#content)
+        template(v-for="(i, index) in data.content"  :key="index")
+            BlocksRenderer(:item="i")
+//div(:title="data.d" @click="open").blockTerm
+    BlocksRenderer
+    //span(v-html="data.t" v-if="data.t")
+    //BlockImg(:data="{img:data.i}" v-if="data.i")
     Icon contact_support
-    .termDefinition(v-if="tooltip")
+    Popper
+        button
+        template(#content)
+            BlocksRenderer
+    //.termDefinition(v-if="tooltip")
         template(v-if="typeof data.d==='string'")
             p {{data.d}}
         template(v-else)
@@ -18,6 +28,7 @@ import {ref} from 'vue'
 import Icon from '../icon.vue';
 import BlockImg from './blockImg.vue';
 import BlockMath from './blockMath.vue'
+import BlocksRenderer from '../BlocksRenderer.vue';
 
 const tooltip = ref(false)
 
@@ -32,6 +43,12 @@ const open = () => {
 </script>
 
 <style lang="sass" scoped>
+
+
+.termIcon
+    cursor: pointer
+    opacity: 0.8
+
 .blockTerm
     display: inline
     color: $high

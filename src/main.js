@@ -16,6 +16,7 @@ import 'vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css'
 import Wad from 'web-audio-daw';
 import { themeChange } from 'theme-change'
 import daisyuiColors from 'daisyui/src/colors/themes'
+import Popper from "vue3-popper"
 
 //Internal libs
 import backgroundGenerator from './components/backgroundGenerator.js'
@@ -44,6 +45,8 @@ app.config.globalProperties.emitter = emitter
 app.use(Vue3Storage)
 app.use(PerfectScrollbar)
 app.use(VueApexCharts)
+
+app.component("Popper", Popper)
 
 gsap.registerPlugin(Draggable)
 

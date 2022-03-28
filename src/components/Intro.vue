@@ -33,7 +33,6 @@ import Icon from './icon.vue';
 
 onMounted(()=>{
     themeChange(false)
-    console.log('tjhemed')
 })
 
 const Activity = inject("activityFile")

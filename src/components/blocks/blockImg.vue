@@ -17,6 +17,7 @@ const cssVars = computed(() => {
 </script>
 <style lang="sass" scoped>
 .blockImg
+    display: inline-block
     vertical-align: middle
     max-width: 100%
 </style>
