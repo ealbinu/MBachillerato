@@ -1,11 +1,15 @@
 <template lang="pug">
 .blockSelect(:id="'block-'+blockid" ref="block" :style="cssVars")
     template(v-for="(i, index) in data.options")
-        div.blockSelectOption(@click="clicked(index)" :class=" options[index] ? 'active' : '' ")
+        div.blockSelectOption(@click="clicked(index)" :class="options[index] ? 'active' : '' ")
             Icon touch_app
             .option-letter {{letterop(index)}}
             BlocksRenderer(:item="i[0]" :blockid=" blockid+'-selectitem' ")
-            .feedback.bg-white.text-dark.p-1.text-sm.rounded.mt-2(v-if="i[2]") {{i[2]}}
+            template(v-if="i[2]")
+                .feedback.bg-white.text-dark.p-1.text-sm.rounded.mt-2 {{i[2]}}
+            template(v-else-if="data.feedback")
+                .feedback.bg-white.text-dark.p-1.text-sm.rounded.mt-2 {{data.feedback[i[1]?0:1]}}
+
 
 
 SolveModule(@solve="solve")

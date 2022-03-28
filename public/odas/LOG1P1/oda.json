@@ -6,8 +6,14 @@
     "title": "Los fines de la argumentación",
     "bgimgs": 4,
     "ficha": [
-        ["Aprendizaje esperado", "Evaluar si se cumplen, y de qué manera, las intenciones argumentativas en diferentes contextos."],
-        ["Eje transversal", "Habilidades lectoras."]
+        [
+            "Aprendizaje esperado",
+            "Evaluar si se cumplen, y de qué manera, las intenciones argumentativas en diferentes contextos."
+        ],
+        [
+            "Eje transversal",
+            "Habilidades lectoras."
+        ]
     ],
     "screens": [
         {
@@ -18,12 +24,18 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"text":"En contexto", "class": "h1"},
                         {
-                            "grid":1,
+                            "text": "En contexto",
+                            "class": "h1"
+                        },
+                        {
+                            "grid": 1,
                             "content": [
                                 "Argumentar es una actividad que va más allá del estudio de la filosofía y la lógica. Se puede afirmar que se encuentra presente en todos los intercambios discursivos, desde los más formales hasta las conversaciones cotidianas en donde la argumentación se usa, incluso de forma inconsciente. La argumentación tiene cabida en donde sea necesario el debate constructivo, de aquí la importancia de conocer no sólo el cómo, sino el por qué y para qué se argumenta.",
-                                {"img": "img/im1.jpg", "class": "w-48"}
+                                {
+                                    "img": "img/im1.jpg",
+                                    "class": "w-48"
+                                }
                             ]
                         }
                     ]
@@ -38,9 +50,12 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"text":"Intenciones de la argumentación", "class": "h1"},
                         {
-                            "grid":1,
+                            "text": "Intenciones de la argumentación",
+                            "class": "h1"
+                        },
+                        {
+                            "grid": 1,
                             "content": [
                                 {
                                     "group": 1,
@@ -48,151 +63,196 @@
                                         "Todas las personas argumentan, o al menos lo intentan, ya que en más de una ocasión hemos tratado de influir en otras personas para lograr fines específicos, lo cual significa que, de la misma manera, otras personas han utilizado argumentos para influir en nosotros para lograr sus propios fines, por ejemplo, cuando vemos un anuncio publicitario, la empresa que lo colocó tiene la intención de ",
                                         {
                                             "dialog": 1,
-                                            "button":"persuadir",
+                                            "button": "persuadir",
                                             "buttonClass": "btn btn-white btn-sm",
-                                            "content":[
-                                                {"text":"Persuadir", "class": "h4"},
+                                            "content": [
+                                                {
+                                                    "text": "Persuadir",
+                                                    "class": "h4"
+                                                },
                                                 "Inducir, a través de razones y argumentos, a una persona para que piense, crea o actúe de un modo determinado.",
                                                 {
-                                                    "grid":1,
+                                                    "grid": 1,
                                                     "content": [
-                                                        {"img":"img/im3.jpg"},
                                                         {
-                                                            "group":1,
-                                                            "content":[
-                                                                {"text":"Ejemplo", "class":"text-bold"},
+                                                            "img": "img/im3.jpg"
+                                                        },
+                                                        {
+                                                            "group": 1,
+                                                            "content": [
+                                                                {
+                                                                    "text": "Ejemplo",
+                                                                    "class": "text-bold"
+                                                                },
                                                                 "Una chica le menciona a su mejor amiga que el chico que la invitó a salir no le inspira confianza y que en su opinión debería cancelar la cita, por lo que le muestra algunas fotos de sus redes sociales donde se le ve realizando actos reprobables."
                                                             ]
                                                         }
                                                     ]
                                                 }
-                                            
                                             ]
                                         },
                                         " al público para que compren su producto, para lo cual apelarán a las emociones y sentimientos con tal de lograr su objetivo; en otros casos se ",
                                         {
                                             "dialog": 1,
-                                            "button":"cuestiona",
+                                            "button": "cuestiona",
                                             "buttonClass": "btn btn-white btn-sm",
-                                            "content":[
-                                                {"text":"Cuestionar", "class": "h4"},
+                                            "content": [
+                                                {
+                                                    "text": "Cuestionar",
+                                                    "class": "h4"
+                                                },
                                                 "Poner en duda lo aceptado o afirmado por alguien, aportando las pruebas y razonamientos para lograrlo.",
                                                 {
-                                                    "grid":1,
+                                                    "grid": 1,
                                                     "content": [
-                                                        {"img":"img/im4.jpg"},
                                                         {
-                                                            "group":1,
-                                                            "content":[
-                                                                {"text":"Ejemplo", "class":"text-bold"},
+                                                            "img": "img/im4.jpg"
+                                                        },
+                                                        {
+                                                            "group": 1,
+                                                            "content": [
+                                                                {
+                                                                    "text": "Ejemplo",
+                                                                    "class": "text-bold"
+                                                                },
                                                                 "Una persona le menciona a su amigo que no cree en la vacuna contra el coronavirus porque leyó un artículo que prueba un complot mundial, a lo que él le menciona datos que refutan los argumentos de dicho artículo."
                                                             ]
                                                         }
                                                     ]
                                                 }
-                                            
                                             ]
                                         },
                                         " a la otra persona para que ésta dé razones, ya sea para ponerla en evidencia o para acalarar dudas; también se argumenta con el fin de enfrentar ideas opuestas y generar ",
                                         {
                                             "dialog": 1,
-                                            "button":"polémica",
+                                            "button": "polémica",
                                             "buttonClass": "btn btn-white btn-sm",
-                                            "content":[
-                                                {"text":"Polemizar", "class": "h4"},
+                                            "content": [
+                                                {
+                                                    "text": "Polemizar",
+                                                    "class": "h4"
+                                                },
                                                 "Sostener un diálogo o charla controversial, en la que existen puntos de vista contrapuestos.",
                                                 {
-                                                    "grid":1,
+                                                    "grid": 1,
                                                     "content": [
-                                                        {"img":"img/im5.jpg"},
                                                         {
-                                                            "group":1,
-                                                            "content":[
-                                                                {"text":"Ejemplo", "class":"text-bold"},
+                                                            "img": "img/im5.jpg"
+                                                        },
+                                                        {
+                                                            "group": 1,
+                                                            "content": [
+                                                                {
+                                                                    "text": "Ejemplo",
+                                                                    "class": "text-bold"
+                                                                },
                                                                 "Una pareja se ha disgustado porque ella desea asistir a una marcha en favor de los derechos de la mujer, pero él está en desacuerdo con las protestas que dañan monumentos y edificios. "
                                                             ]
                                                         }
                                                     ]
                                                 }
-                                            
                                             ]
                                         },
                                         "; o bien para ",
                                         {
                                             "dialog": 1,
-                                            "button":"deliberar",
+                                            "button": "deliberar",
                                             "buttonClass": "btn btn-white btn-sm",
-                                            "content":[
-                                                {"text":"Deliberar", "class": "h4"},
+                                            "content": [
+                                                {
+                                                    "text": "Deliberar",
+                                                    "class": "h4"
+                                                },
                                                 "Pensar detenidamente los pros y contras de una elección o decisión antes de adoptarla.",
                                                 {
-                                                    "grid":1,
+                                                    "grid": 1,
                                                     "content": [
-                                                        {"img":"img/im6.jpg"},
                                                         {
-                                                            "group":1,
-                                                            "content":[
-                                                                {"text":"Ejemplo", "class":"text-bold"},
+                                                            "img": "img/im6.jpg"
+                                                        },
+                                                        {
+                                                            "group": 1,
+                                                            "content": [
+                                                                {
+                                                                    "text": "Ejemplo",
+                                                                    "class": "text-bold"
+                                                                },
                                                                 "Los padres de una chica están pensando en cambiarla de una escuela pública a una privada pues sus vecinos les han recomendado un colegio, pero antes deben considerar la situación económica."
                                                             ]
                                                         }
                                                     ]
                                                 }
-                                            
                                             ]
                                         },
                                         " sobre los distintos aspectos de una situación, problema o hecho sobre el que deba tomarse una decisión; en ocasiones apelar a las emociones no es suficiente y es necesario ",
                                         {
                                             "dialog": 1,
-                                            "button":"convencer",
+                                            "button": "convencer",
                                             "buttonClass": "btn btn-white btn-sm",
-                                            "content":[
-                                                {"text":"Convencer", "class": "h4"},
+                                            "content": [
+                                                {
+                                                    "text": "Convencer",
+                                                    "class": "h4"
+                                                },
                                                 "Probar algo de manera racional, de forma tal que no se pueda negar ni contradecir.",
                                                 {
-                                                    "grid":1,
+                                                    "grid": 1,
                                                     "content": [
-                                                        {"img":"img/im7.jpg"},
                                                         {
-                                                            "group":1,
-                                                            "content":[
-                                                                {"text":"Ejemplo", "class":"text-bold"},
+                                                            "img": "img/im7.jpg"
+                                                        },
+                                                        {
+                                                            "group": 1,
+                                                            "content": [
+                                                                {
+                                                                    "text": "Ejemplo",
+                                                                    "class": "text-bold"
+                                                                },
                                                                 "Un médico le menciona a su paciente que debe dejar de consumir azúcar pues los resultados de sus análisis sanguíneos lo ubican en un grupo de alto riesgo de padecer diabetes."
                                                             ]
                                                         }
                                                     ]
                                                 }
-                                            
                                             ]
                                         },
                                         " a la otra persona con razonamientos lógicos; otra intención es la de ",
                                         {
                                             "dialog": 1,
-                                            "button":"demostrar",
+                                            "button": "demostrar",
                                             "buttonClass": "btn btn-white btn-sm",
-                                            "content":[
-                                                {"text":"Demostrar", "class": "h4"},
+                                            "content": [
+                                                {
+                                                    "text": "Demostrar",
+                                                    "class": "h4"
+                                                },
                                                 "Hacer patente que una verdad particular está comprendida en una verdad universal de la que se tiene completa certeza o se cumple.",
                                                 {
-                                                    "grid":1,
+                                                    "grid": 1,
                                                     "content": [
-                                                        {"img":"img/im8.jpg"},
                                                         {
-                                                            "group":1,
-                                                            "content":[
-                                                                {"text":"Ejemplo", "class":"text-bold"},
+                                                            "img": "img/im8.jpg"
+                                                        },
+                                                        {
+                                                            "group": 1,
+                                                            "content": [
+                                                                {
+                                                                    "text": "Ejemplo",
+                                                                    "class": "text-bold"
+                                                                },
                                                                 "Una persona desea invertir en un negocio que le propone un familiar, pero su contadora le plantea que, según los cálculos de sus finanzas, no está en condiciones de hacerlo."
                                                             ]
                                                         }
                                                     ]
                                                 }
-                                            
                                             ]
                                         },
                                         " con argumentos una afirmación para no dejar lugar a ninguna duda."
                                     ]
                                 },
-                                {"img": "img/im2.jpg", "class": "w-48"}
+                                {
+                                    "img": "img/im2.jpg",
+                                    "class": "w-48"
+                                }
                             ]
                         }
                     ]
@@ -206,125 +266,479 @@
             "blocks": [
                 {
                     "width": "100%",
-                    "content":[
+                    "content": [
                         {
-                                "instruction":1,
+                            "instruction": 1,
                             "content": [
-                                {"icon": "touch_app", "size":"2rem", "class":"animate__animated animate__flash animate__slower animate__infinite"},
+                                {
+                                    "icon": "touch_app",
+                                    "size": "2rem",
+                                    "class": "animate__animated animate__flash animate__slower animate__infinite"
+                                },
                                 "Selecciona SÍ o NO de acuerdo a la necesidad de argumentos de cada situación."
+                            ]
+                        },
+                        {
+                            "br": 1
+                        },
+                        {
+                            "group": 1,
+                            "class": "flex flex-col justify-center text-center",
+                            "content": [
+                                {
+                                    "text": "1. Discutir con un amigo al que no le gusta tu película favorita.",
+                                    "class": "h5",
+                                    "align": "center"
+                                },
+                                {
+                                    "dragdrop": 1,
+                                    "drags": [
+                                        [
+                                            {
+                                                "img": "img/im9.jpg",
+                                                "class": "w-64 mx-auto"
+                                            },
+                                            "si",
+                                            [
+                                                "¡Correcto!",
+                                                "Cuando participas en una <strong>polémica</strong> necesitas argumentos que apoyen tu postura."
+                                            ]
+                                        ]
+                                    ],
+                                    "dropsLeft": [
+                                        [
+                                            "Sí",
+                                            "si"
+                                        ]
+                                    ],
+                                    "dropsRight": [
+                                        [
+                                            "No",
+                                            "no"
+                                        ]
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "group": 1,
+                            "class": "flex flex-col justify-center text-center",
+                            "content": [
+                                {
+                                    "text": "2. Establecer las reglas de convivencia en una vivienda compartida.",
+                                    "class": "h5",
+                                    "align": "center"
+                                },
+                                {
+                                    "dragdrop": 1,
+                                    "drags": [
+                                        [
+                                            {
+                                                "img": "img/im10.jpg",
+                                                "class": "w-64 mx-auto"
+                                            },
+                                            "si",
+                                            [
+                                                "¡Correcto!",
+                                                "Para establecer acuerdos es necesario llevar a cabo una <strong>deliberación</strong>."
+                                            ]
+                                        ]
+                                    ],
+                                    "dropsLeft": [
+                                        [
+                                            "Sí",
+                                            "si"
+                                        ]
+                                    ],
+                                    "dropsRight": [
+                                        [
+                                            "No",
+                                            "no"
+                                        ]
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "group": 1,
+                            "class": "flex flex-col justify-center text-center",
+                            "content": [
+                                {
+                                    "text": "3. La directora da a una empleada indicaciones sobre el trabajo que debe realizar.",
+                                    "class": "h5",
+                                    "align": "center"
+                                },
+                                {
+                                    "dragdrop": 1,
+                                    "drags": [
+                                        [
+                                            {
+                                                "img": "img/im11.jpg",
+                                                "class": "w-64 mx-auto"
+                                            },
+                                            "no",
+                                            [
+                                                "¡Correcto!",
+                                                "Dado que existe un contrato firmado por la empleada, la directora no necesita <strong>convencer</strong> o <strong>persuadir</strong> a la empleada de hacer su trabajo."
+                                            ]
+                                        ]
+                                    ],
+                                    "dropsLeft": [
+                                        [
+                                            "Sí",
+                                            "si"
+                                        ]
+                                    ],
+                                    "dropsRight": [
+                                        [
+                                            "No",
+                                            "no"
+                                        ]
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "group": 1,
+                            "class": "flex flex-col justify-center text-center",
+                            "content": [
+                                {
+                                    "text": "4. Una abogada defiende a un acusado en un juicio.",
+                                    "class": "h5",
+                                    "align": "center"
+                                },
+                                {
+                                    "dragdrop": 1,
+                                    "drags": [
+                                        [
+                                            {
+                                                "img": "img/im12.jpg",
+                                                "class": "w-64 mx-auto"
+                                            },
+                                            "si",
+                                            [
+                                                "¡Correcto!",
+                                                "Recuerda que para <strong>demostrar</strong> la inocencia de alguien se necesitan evidencias."
+                                            ]
+                                        ]
+                                    ],
+                                    "dropsLeft": [
+                                        [
+                                            "Sí",
+                                            "si"
+                                        ]
+                                    ],
+                                    "dropsRight": [
+                                        [
+                                            "No",
+                                            "no"
+                                        ]
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "group": 1,
+                            "class": "flex flex-col justify-center text-center",
+                            "content": [
+                                {
+                                    "text": "5. Un alumno pide a su maestra oportunidad de presentar un trabajo fuera de tiempo.",
+                                    "class": "h5",
+                                    "align": "center"
+                                },
+                                {
+                                    "dragdrop": 1,
+                                    "drags": [
+                                        [
+                                            {
+                                                "img": "img/im13.jpg",
+                                                "class": "w-64 mx-auto"
+                                            },
+                                            "si",
+                                            [
+                                                "¡Correcto!",
+                                                "Recuerda que para <strong>convencer</strong> a otra persona se necesitan argumentos."
+                                            ]
+                                        ]
+                                    ],
+                                    "dropsLeft": [
+                                        [
+                                            "Sí",
+                                            "si"
+                                        ]
+                                    ],
+                                    "dropsRight": [
+                                        [
+                                            "No",
+                                            "no"
+                                        ]
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "group": 1,
+                            "class": "flex flex-col justify-center text-center",
+                            "content": [
+                                {
+                                    "text": "6. Un agente de migración impide el paso a un país porque el pasaporte está vencido.",
+                                    "class": "h5",
+                                    "align": "center"
+                                },
+                                {
+                                    "dragdrop": 1,
+                                    "drags": [
+                                        [
+                                            {
+                                                "img": "img/im14.jpg",
+                                                "class": "w-64 mx-auto"
+                                            },
+                                            "no",
+                                            [
+                                                "¡Correcto!",
+                                                "Recuerda que las leyes son incuestionables y deben cumplirse sin excepción."
+                                            ]
+                                        ]
+                                    ],
+                                    "dropsLeft": [
+                                        [
+                                            "Sí",
+                                            "si"
+                                        ]
+                                    ],
+                                    "dropsRight": [
+                                        [
+                                            "No",
+                                            "no"
+                                        ]
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Intención argumentativa",
+            "icon": "games",
+            "steps": true,
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "instruction": 1,
+                            "content": [
+                                {
+                                    "icon": "touch_app",
+                                    "size": "2rem",
+                                    "class": "animate__animated animate__flash animate__slower animate__infinite"
+                                },
+                                "Selecciona la opción que corresponda a la intención argumentativa correcta."
+                            ]
+                        },
+                        {
+                            "br": 1
+                        },
+                        {
+                            "class": "h5",
+                            "align": "center",
+                            "text": "1. ¿Realmente crees que es buena idea asistir todos los días al curso de pintura? Es mejor que pases tu tiempo libre con tus amigos para aligerar el estrés de los trabajos escolares."
+                        },
+                        {
+                            "grid": 1,
+                            "columns": "1fr 1fr",
+                            "content": [
+                                {
+                                    "img": "img/im15.png"
+                                },
+                                {
+                                    "select": 1,
+                                    "columns": "1fr 1fr",
+                                    "options": [
+                                        [ "Persuadir", false ],
+                                        [ "Demostrar", false ],
+                                        [ "Deliberar", false ],
+                                        [ "Cuestionar", true ]
+                                    ],
+                                    "feedback": [
+                                        "¡Acertaste!",
+                                        "No acertaste. Observa cómo la pregunta tiene la intención de poner en duda lo aceptado o afirmado por alguien, aportando las pruebas y razonamientos para lograrlo. Intenta de nuevo."
+                                    ]
+                                }
                             ]
                         },
                         {"br":1},
                         {
-                            "group": 1,
-                            "class": "flex flex-col justify-center text-center",
-                            "content":[
-                                {"text": "1. Discutir con un amigo al que no le gusta tu película favorita.", "class": "h5", "align": "center"},
+                            "class": "h5",
+                            "align": "center",
+                            "text": "2. Si bien el arte es una actividad que contribuye al desarrollo emocional de las personas lo mejor para los jóvenes en la actualidad es dedicar más tiempo a actividades relacionadas con el emprendimiento económico pues esto les facilitará su inserción en el ámbito laboral."
+                        },
+                        {
+                            "grid": 1,
+                            "columns": "1fr 1fr",
+                            "content": [
                                 {
-                                    "dragdrop": 1,
-                                    "drags": [
-                                         [{"img": "img/im9.jpg", "class":"w-64 mx-auto"}, "si", ["¡Correcto!", "Cuando participas en una <strong>polémica</strong> necesitas argumentos que apoyen tu postura."]]
+                                    "select": 1,
+                                    "columns": "1fr 1fr",
+                                    "options": [
+                                        [ "Deliberar", false ],
+                                        [ "Cuestionar", false ],
+                                        [ "Polemizar", true ],
+                                        [ "Convencer", false ]
                                     ],
-                                    "dropsLeft": [["Sí", "si"]],
-                                    "dropsRight": [["No", "no"]]
-                                }
+                                    "feedback": [
+                                        "¡Acertaste!",
+                                        "Tu respuesta es incorrecta. En este caso la argumentación es parte de un diálogo controversial, en el que existen puntos de vista contrapuestos. Intenta de nuevo."
+                                    ]
+                                },
+                                { "img": "img/im16.png" }
                             ]
                         }
                     ]
                 },
                 {
                     "width": "100%",
-                    "content":[
+                    "content": [
                         {
-                            "group": 1,
-                            "class": "flex flex-col justify-center text-center",
-                            "content":[
-                                {"text": "2. Establecer las reglas de convivencia en una vivienda compartida.", "class": "h5", "align": "center"},
+                            "class": "h5",
+                            "align": "center",
+                            "text": "3. Estudiar artes me ayudará a explotar mi creatividad y desarrollar mi talento artístico, sin embargo, el mercado laboral es limitado y los empleos poco remunerados, por lo que tendré que buscar buenos proyectos que impulsen mi carrera y den a conocer mi trabajo como artista."
+                        },
+                        {
+                            "grid": 1,
+                            "columns": "1fr 1fr",
+                            "content": [
                                 {
-                                    "dragdrop": 1,
-                                    "drags": [
-                                         [{"img": "img/im10.jpg", "class":"w-64 mx-auto"}, "si", ["¡Correcto!", "Para establecer acuerdos es necesario llevar a cabo una <strong>deliberación</strong>."]]
+                                    "img": "img/im17.png"
+                                },
+                                {
+                                    "select": 1,
+                                    "columns": "1fr 1fr",
+                                    "options": [
+                                        [ "Deliberar", true ],
+                                        [ "Persuadir", false ],
+                                        [ "Polemizar", false ],
+                                        [ "Convencer", false ]
                                     ],
-                                    "dropsLeft": [["Sí", "si"]],
-                                    "dropsRight": [["No", "no"]]
+                                    "feedback": [
+                                        "¡Acertaste!",
+                                        "No acertaste. La intención de esta argumentación es pensar detenidamente los pros y contras de una elección o decisión antes de adoptarla. Intenta una vez más."
+                                    ]
                                 }
                             ]
-                        }
-                    ]
-                },{
-                    "width": "100%",
-                    "content":[
+                        },
+                        {"br":1},
                         {
-                            "group": 1,
-                            "class": "flex flex-col justify-center text-center",
-                            "content":[
-                                {"text": "3. La directora da a una empleada indicaciones sobre el trabajo que debe realizar.", "class": "h5", "align": "center"},
-                                {
-                                    "dragdrop": 1,
-                                    "drags": [
-                                         [{"img": "img/im11.jpg", "class":"w-64 mx-auto"}, "no", ["¡Correcto!", "Dado que existe un contrato firmado por la empleada, la directora no necesita <strong>convencer</strong> o <strong>persuadir</strong> a la empleada de hacer su trabajo."]]
-                                    ],
-                                    "dropsLeft": [["Sí", "si"]],
-                                    "dropsRight": [["No", "no"]]
-                                }
-                            ]
-                        }
-                    ]
-                },{
-                    "width": "100%",
-                    "content":[
+                            "class": "h5",
+                            "align": "center",
+                            "text": "4. Sabes que soy muy buen estudiante, puedo estudiar y tomar el curso de pintura a la vez pues ya lo hice en una ocasión, cuando tomé el curso de inglés. Además, el curso es gratuito por lo que no representaría un gasto para la casa."
+                        },
                         {
-                            "group": 1,
-                            "class": "flex flex-col justify-center text-center",
-                            "content":[
-                                {"text": "4. Una abogada defiende a un acusado en un juicio.", "class": "h5", "align": "center"},
+                            "grid": 1,
+                            "columns": "1fr 1fr",
+                            "content": [
                                 {
-                                    "dragdrop": 1,
-                                    "drags": [
-                                         [{"img": "img/im12.jpg", "class":"w-64 mx-auto"}, "si", ["¡Correcto!", "Recuerda que para <strong>demostrar</strong> la inocencia de alguien se necesitan evidencias."]]
+                                    "select": 1,
+                                    "columns": "1fr 1fr",
+                                    "options": [
+                                        [ "Deliberar", false ],
+                                        [ "Demostrar", false ],
+                                        [ "Persuadir", false ],
+                                        [ "Convencer", true ]
                                     ],
-                                    "dropsLeft": [["Sí", "si"]],
-                                    "dropsRight": [["No", "no"]]
-                                }
-                            ]
-                        }
-                    ]
-                },{
-                    "width": "100%",
-                    "content":[
-                        {
-                            "group": 1,
-                            "class": "flex flex-col justify-center text-center",
-                            "content":[
-                                {"text": "5. Un alumno pide a su maestra oportunidad de presentar un trabajo fuera de tiempo.", "class": "h5", "align": "center"},
-                                {
-                                    "dragdrop": 1,
-                                    "drags": [
-                                         [{"img": "img/im13.jpg", "class":"w-64 mx-auto"}, "si", ["¡Correcto!", "Recuerda que para <strong>convencer</strong> a otra persona se necesitan argumentos."]]
-                                    ],
-                                    "dropsLeft": [["Sí", "si"]],
-                                    "dropsRight": [["No", "no"]]
-                                }
+                                    "feedback": [
+                                        "¡Acertaste!",
+                                        "Tu respuesta es incorrecta. Observa como la argumentación intenta probar algo de manera racional, de forma tal que no se pueda negar ni contradecir. Inténtalo de nuevo."
+                                    ]
+                                },
+                                { "img": "img/im18.png" }
                             ]
                         }
                     ]
                 },
                 {
                     "width": "100%",
-                    "content":[
+                    "content": [
                         {
-                            "group": 1,
-                            "class": "flex flex-col justify-center text-center",
-                            "content":[
-                                {"text": "6. Un agente de migración impide el paso a un país porque el pasaporte está vencido.", "class": "h5", "align": "center"},
+                            "class": "h5",
+                            "align": "center",
+                            "text": "5. No puedes dedicarte a la pintura, decepcionarías a tu padre y estarías arruinando una gran oportunidad para tu futuro al no estudiar medicina como él y su padre lo hicieron."
+                        },
+                        {
+                            "grid": 1,
+                            "columns": "1fr 1fr",
+                            "content": [
                                 {
-                                    "dragdrop": 1,
-                                    "drags": [
-                                         [{"img": "img/im14.jpg", "class":"w-64 mx-auto"}, "no", ["¡Correcto!", "Recuerda que las leyes son incuestionables y deben cumplirse sin excepción."]]
+                                    "img": "img/im19.png"
+                                },
+                                {
+                                    "select": 1,
+                                    "columns": "1fr 1fr",
+                                    "options": [
+                                        [ "Deliberar", false ],
+                                        [ "Persuadir", true ],
+                                        [ "Convencer", false ],
+                                        [ "Demostrar", false ]
                                     ],
-                                    "dropsLeft": [["Sí", "si"]],
-                                    "dropsRight": [["No", "no"]]
+                                    "feedback": [
+                                        "¡Acertaste!",
+                                        " Tu respuesta no es la correcta. Observa cómo lo que se busca con la argumentación es inducir a una persona para que piense, crea o actúe de un modo determinado. Intenta una vez más."
+                                    ]
                                 }
+                            ]
+                        },
+                        {"br":1},
+                        {
+                            "class": "h5",
+                            "align": "center",
+                            "text": "6. En el último encuentro cultural de escuelas en la ciudad mi pintura se llevó el primer lugar, lo que me hizo acreedor a un premio en efectivo y un viaje para conocer el museo de arte moderno en la capital del país. Esto significa que el trabajo artístico puede rendir frutos cuando se hace con dedicación."
+                        },
+                        {
+                            "grid": 1,
+                            "columns": "1fr 1fr",
+                            "content": [
+                                {
+                                    "select": 1,
+                                    "columns": "1fr 1fr",
+                                    "options": [
+                                        [ "Demostrar", true ],
+                                        [ "Persuadir", false ],
+                                        [ "Cuestionar", false ],
+                                        [ "Deliberar", false ]
+                                    ],
+                                    "feedback": [
+                                        "¡Acertaste!",
+                                        "Tu respuesta es incorrecta. Esta argumentación tiene la intención de hacer patente que una verdad particular está comprendida en una verdad universal de la que se tiene completa certeza. Inténtalo de nuevo."
+                                    ]
+                                },
+                                { "img": "img/im20.png" }
                             ]
                         }
                     ]
@@ -337,10 +751,9 @@
             "end": true,
             "blocks": [
                 {
-                "content": []
+                    "content": []
                 }
             ]
         }
-
     ]
 }
