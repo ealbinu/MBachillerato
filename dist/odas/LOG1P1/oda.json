@@ -582,10 +582,22 @@
                                     "select": 1,
                                     "columns": "1fr 1fr",
                                     "options": [
-                                        [ "Persuadir", false ],
-                                        [ "Demostrar", false ],
-                                        [ "Deliberar", false ],
-                                        [ "Cuestionar", true ]
+                                        [
+                                            "Persuadir",
+                                            false
+                                        ],
+                                        [
+                                            "Demostrar",
+                                            false
+                                        ],
+                                        [
+                                            "Deliberar",
+                                            false
+                                        ],
+                                        [
+                                            "Cuestionar",
+                                            true
+                                        ]
                                     ],
                                     "feedback": [
                                         "¡Acertaste!",
@@ -594,7 +606,9 @@
                                 }
                             ]
                         },
-                        {"br":1},
+                        {
+                            "br": 1
+                        },
                         {
                             "class": "h5",
                             "align": "center",
@@ -608,17 +622,31 @@
                                     "select": 1,
                                     "columns": "1fr 1fr",
                                     "options": [
-                                        [ "Deliberar", false ],
-                                        [ "Cuestionar", false ],
-                                        [ "Polemizar", true ],
-                                        [ "Convencer", false ]
+                                        [
+                                            "Deliberar",
+                                            false
+                                        ],
+                                        [
+                                            "Cuestionar",
+                                            false
+                                        ],
+                                        [
+                                            "Polemizar",
+                                            true
+                                        ],
+                                        [
+                                            "Convencer",
+                                            false
+                                        ]
                                     ],
                                     "feedback": [
                                         "¡Acertaste!",
                                         "Tu respuesta es incorrecta. En este caso la argumentación es parte de un diálogo controversial, en el que existen puntos de vista contrapuestos. Intenta de nuevo."
                                     ]
                                 },
-                                { "img": "img/im16.png" }
+                                {
+                                    "img": "img/im16.png"
+                                }
                             ]
                         }
                     ]
@@ -642,10 +670,22 @@
                                     "select": 1,
                                     "columns": "1fr 1fr",
                                     "options": [
-                                        [ "Deliberar", true ],
-                                        [ "Persuadir", false ],
-                                        [ "Polemizar", false ],
-                                        [ "Convencer", false ]
+                                        [
+                                            "Deliberar",
+                                            true
+                                        ],
+                                        [
+                                            "Persuadir",
+                                            false
+                                        ],
+                                        [
+                                            "Polemizar",
+                                            false
+                                        ],
+                                        [
+                                            "Convencer",
+                                            false
+                                        ]
                                     ],
                                     "feedback": [
                                         "¡Acertaste!",
@@ -654,7 +694,9 @@
                                 }
                             ]
                         },
-                        {"br":1},
+                        {
+                            "br": 1
+                        },
                         {
                             "class": "h5",
                             "align": "center",
@@ -668,17 +710,31 @@
                                     "select": 1,
                                     "columns": "1fr 1fr",
                                     "options": [
-                                        [ "Deliberar", false ],
-                                        [ "Demostrar", false ],
-                                        [ "Persuadir", false ],
-                                        [ "Convencer", true ]
+                                        [
+                                            "Deliberar",
+                                            false
+                                        ],
+                                        [
+                                            "Demostrar",
+                                            false
+                                        ],
+                                        [
+                                            "Persuadir",
+                                            false
+                                        ],
+                                        [
+                                            "Convencer",
+                                            true
+                                        ]
                                     ],
                                     "feedback": [
                                         "¡Acertaste!",
                                         "Tu respuesta es incorrecta. Observa como la argumentación intenta probar algo de manera racional, de forma tal que no se pueda negar ni contradecir. Inténtalo de nuevo."
                                     ]
                                 },
-                                { "img": "img/im18.png" }
+                                {
+                                    "img": "img/im18.png"
+                                }
                             ]
                         }
                     ]
@@ -702,10 +758,22 @@
                                     "select": 1,
                                     "columns": "1fr 1fr",
                                     "options": [
-                                        [ "Deliberar", false ],
-                                        [ "Persuadir", true ],
-                                        [ "Convencer", false ],
-                                        [ "Demostrar", false ]
+                                        [
+                                            "Deliberar",
+                                            false
+                                        ],
+                                        [
+                                            "Persuadir",
+                                            true
+                                        ],
+                                        [
+                                            "Convencer",
+                                            false
+                                        ],
+                                        [
+                                            "Demostrar",
+                                            false
+                                        ]
                                     ],
                                     "feedback": [
                                         "¡Acertaste!",
@@ -714,7 +782,9 @@
                                 }
                             ]
                         },
-                        {"br":1},
+                        {
+                            "br": 1
+                        },
                         {
                             "class": "h5",
                             "align": "center",
@@ -728,17 +798,439 @@
                                     "select": 1,
                                     "columns": "1fr 1fr",
                                     "options": [
-                                        [ "Demostrar", true ],
-                                        [ "Persuadir", false ],
-                                        [ "Cuestionar", false ],
-                                        [ "Deliberar", false ]
+                                        [
+                                            "Demostrar",
+                                            true
+                                        ],
+                                        [
+                                            "Persuadir",
+                                            false
+                                        ],
+                                        [
+                                            "Cuestionar",
+                                            false
+                                        ],
+                                        [
+                                            "Deliberar",
+                                            false
+                                        ]
                                     ],
                                     "feedback": [
                                         "¡Acertaste!",
                                         "Tu respuesta es incorrecta. Esta argumentación tiene la intención de hacer patente que una verdad particular está comprendida en una verdad universal de la que se tiene completa certeza. Inténtalo de nuevo."
                                     ]
                                 },
-                                { "img": "img/im20.png" }
+                                {
+                                    "img": "img/im20.png"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Argumentos",
+            "icon": "games",
+            "steps": false,
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "instruction": 1,
+                            "content": [
+                                {
+                                    "icon": "touch_app",
+                                    "size": "2rem",
+                                    "class": "animate__animated animate__flash animate__slower animate__infinite"
+                                },
+                                "Selecciona los argumentos que puedes utilizar para lograr que el ayuntamiento de la ciudad done una cantidad de árboles para reforestar un parque cercano a tu colonia."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "class": "h5",
+                            "align": "center",
+                            "text": "1. Las zonas arboladas de las ciudades ofrecen beneficios ambientales entre los que se encuentran reducir la contaminación del aire, regular la temperatura y la humedad del ambiente, y amortiguar los ruidos ocasionados por el tráfico."
+                        },
+                        {
+                            "select": 1,
+                            "class": "",
+                            "columns": "1fr 1fr",
+                            "options": [
+                                [
+                                    {
+                                        "img": "img/icon-like.png",
+                                        "class": "w-32 mx-auto"
+                                    },
+                                    true
+                                ],
+                                [
+                                    {
+                                        "img": "img/icon-dislike.png",
+                                        "class": "w-32 mx-auto"
+                                    },
+                                    false
+                                ]
+                            ],
+                            "optionClass": "aspect-square card cursor-pointer flex justify-center items-center w-60 mx-auto",
+                            "optionClassActive": "bg-white animate__animated animate__tada",
+                            "feedback": [
+                                [
+                                    {
+                                        "css": "#block-4-1{background:rgba(97, 196, 84,0.7);  }"
+                                    },
+                                    "¡Correcto!",
+                                    {
+                                        "colorize": "rgba(97, 196, 84,1)",
+                                        "destroy": 1
+                                    }
+                                ],
+                                [
+                                    {
+                                        "css": "#block-4-1{background:rgba(194, 85, 79, 0.7);}"
+                                    },
+                                    "Tu respuesta no es la correcta.",
+                                    {
+                                        "colorize": "rgba(194, 85, 79,1)",
+                                        "destroy": 1
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "class": "h5",
+                            "align": "center",
+                            "text": "2. Uno de las principales aplicaciones que se le da a la madera es en la construcción de viviendas, lo cual representa una alternativa más económica que la opción del ladrillo y el concreto."
+                        },
+                        {
+                            "select": 1,
+                            "class": "",
+                            "columns": "1fr 1fr",
+                            "options": [
+                                [
+                                    {
+                                        "img": "img/icon-like.png",
+                                        "class": "w-32 mx-auto"
+                                    },
+                                    false
+                                ],
+                                [
+                                    {
+                                        "img": "img/icon-dislike.png",
+                                        "class": "w-32 mx-auto"
+                                    },
+                                    true
+                                ]
+                            ],
+                            "optionClass": "aspect-square card cursor-pointer flex justify-center items-center w-60 mx-auto",
+                            "optionClassActive": "bg-white animate__animated animate__tada",
+                            "feedback": [
+                                [
+                                    {
+                                        "css": "#block-4-2{background:rgba(97, 196, 84,0.7);  }"
+                                    },
+                                    "¡Correcto!",
+                                    {
+                                        "colorize": "rgba(97, 196, 84,1)",
+                                        "destroy": 1
+                                    }
+                                ],
+                                [
+                                    {
+                                        "css": "#block-4-2{background:rgba(194, 85, 79, 0.7);}"
+                                    },
+                                    "El argumento expone una ventaja del uso de madera en la construcción de viviendas, pero la intención argumentativa es convencer al ayuntamiento de donar árboles para ser utilizados en un parque.",
+                                    {
+                                        "colorize": "rgba(194, 85, 79,1)",
+                                        "destroy": 1
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "class": "h5",
+                            "align": "center",
+                            "text": "3. Vivir cerca de una zona arbolada es una similar a tener una clase de educación ambiental, pues los árboles atraen fauna local, ayudan a entender mejor los ecosistemas, y los niños integran todos estos elementos como parte de su vida diaria."
+                        },
+                        {
+                            "select": 1,
+                            "class": "",
+                            "columns": "1fr 1fr",
+                            "options": [
+                                [
+                                    {
+                                        "img": "img/icon-like.png",
+                                        "class": "w-32 mx-auto"
+                                    },
+                                    true
+                                ],
+                                [
+                                    {
+                                        "img": "img/icon-dislike.png",
+                                        "class": "w-32 mx-auto"
+                                    },
+                                    false
+                                ]
+                            ],
+                            "optionClass": "aspect-square card cursor-pointer flex justify-center items-center w-60 mx-auto",
+                            "optionClassActive": "bg-white animate__animated animate__tada",
+                            "feedback": [
+                                [
+                                    {
+                                        "css": "#block-4-3{background:rgba(97, 196, 84,0.7);  }"
+                                    },
+                                    "¡Correcto!",
+                                    {
+                                        "colorize": "rgba(97, 196, 84,1)",
+                                        "destroy": 1
+                                    }
+                                ],
+                                [
+                                    {
+                                        "css": "#block-4-3{background:rgba(194, 85, 79, 0.7);}"
+                                    },
+                                    "Tu respuesta no es la correcta.",
+                                    {
+                                        "colorize": "rgba(194, 85, 79,1)",
+                                        "destroy": 1
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "class": "h5",
+                            "align": "center",
+                            "text": "4. Las zonas arboladas ofrecen a las personas una oportunidad de conectarse con la naturaleza, lo cual contribuye a reducir el estrés ocasionado por las ocupaciones cotidianas, ya que se ha demostrado que la contemplación del paisaje y pasar tiempo en un entorno natural relaja, fomenta la creatividad y las capacidades afectivas, además de reducir la ansiedad."
+                        },
+                        {
+                            "select": 1,
+                            "class": "",
+                            "columns": "1fr 1fr",
+                            "options": [
+                                [
+                                    {
+                                        "img": "img/icon-like.png",
+                                        "class": "w-32 mx-auto"
+                                    },
+                                    true
+                                ],
+                                [
+                                    {
+                                        "img": "img/icon-dislike.png",
+                                        "class": "w-32 mx-auto"
+                                    },
+                                    false
+                                ]
+                            ],
+                            "optionClass": "aspect-square card cursor-pointer flex justify-center items-center w-60 mx-auto",
+                            "optionClassActive": "bg-white animate__animated animate__tada",
+                            "feedback": [
+                                [
+                                    {
+                                        "css": "#block-4-4{background:rgba(97, 196, 84,0.7);  }"
+                                    },
+                                    "¡Correcto!",
+                                    {
+                                        "colorize": "rgba(97, 196, 84,1)",
+                                        "destroy": 1
+                                    }
+                                ],
+                                [
+                                    {
+                                        "css": "#block-4-4{background:rgba(194, 85, 79, 0.7);}"
+                                    },
+                                    "Tu respuesta no es la correcta.",
+                                    {
+                                        "colorize": "rgba(194, 85, 79,1)",
+                                        "destroy": 1
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "class": "h5",
+                            "align": "center",
+                            "text": "5. Uno de los mayores problemas de la desforestación es el aumento de la erosión del suelo, ya que éste queda expuesto a factores ambientales como el viento o la lluvia. Un ejemplo es Brasil donde se pierden más de 50 millones de toneladas de suelo al año debido a la deforestación."
+                        },
+                        {
+                            "select": 1,
+                            "class": "",
+                            "columns": "1fr 1fr",
+                            "options": [
+                                [
+                                    {
+                                        "img": "img/icon-like.png",
+                                        "class": "w-32 mx-auto"
+                                    },
+                                    false
+                                ],
+                                [
+                                    {
+                                        "img": "img/icon-dislike.png",
+                                        "class": "w-32 mx-auto"
+                                    },
+                                    true
+                                ]
+                            ],
+                            "optionClass": "aspect-square card cursor-pointer flex justify-center items-center w-60 mx-auto",
+                            "optionClassActive": "bg-white animate__animated animate__tada",
+                            "feedback": [
+                                [
+                                    {
+                                        "css": "#block-4-5{background:rgba(97, 196, 84,0.7);  }"
+                                    },
+                                    "¡Correcto!",
+                                    {
+                                        "colorize": "rgba(97, 196, 84,1)",
+                                        "destroy": 1
+                                    }
+                                ],
+                                [
+                                    {
+                                        "css": "#block-4-5{background:rgba(194, 85, 79, 0.7);}"
+                                    },
+                                    "La deforestación es, sin duda, una problemática ambiental que presenta consecuencias negativas como la erosión, sin embargo, la intención argumentativa no es demostrar las consecuencias negativas de la deforestación sino las ventajas de reforestar. Además, el ejemplo expuesto está fuera de contexto.",
+                                    {
+                                        "colorize": "rgba(194, 85, 79,1)",
+                                        "destroy": 1
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "class": "h5",
+                            "align": "center",
+                            "text": "6. Distintos estudios han demostrado que las zonas arboladas mejoran las relaciones sociales al propiciar que la gente, sobre todo los jóvenes, se reúna en ellas para realizar actividades recreativas al aire libre, lo cual también ayuda a que se forme en ellas un sentido de pertenencia y comunidad."
+                        },
+                        {
+                            "select": 1,
+                            "class": "",
+                            "columns": "1fr 1fr",
+                            "options": [
+                                [
+                                    {
+                                        "img": "img/icon-like.png",
+                                        "class": "w-32 mx-auto"
+                                    },
+                                    true
+                                ],
+                                [
+                                    {
+                                        "img": "img/icon-dislike.png",
+                                        "class": "w-32 mx-auto"
+                                    },
+                                    false
+                                ]
+                            ],
+                            "optionClass": "aspect-square card cursor-pointer flex justify-center items-center w-60 mx-auto",
+                            "optionClassActive": "bg-white animate__animated animate__tada",
+                            "feedback": [
+                                [
+                                    {
+                                        "css": "#block-4-6{background:rgba(97, 196, 84,0.7);  }"
+                                    },
+                                    "¡Correcto!",
+                                    {
+                                        "colorize": "rgba(97, 196, 84,1)",
+                                        "destroy": 1
+                                    }
+                                ],
+                                [
+                                    {
+                                        "css": "#block-4-6{background:rgba(194, 85, 79, 0.7);}"
+                                    },
+                                    "Tu respuesta no es la correcta.",
+                                    {
+                                        "colorize": "rgba(194, 85, 79,1)",
+                                        "destroy": 1
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "class": "h5",
+                            "align": "center",
+                            "text": "7. Los árboles son de gran utilidad para las actividades humanas, pues es posible aprovechar casi todas sus partes para obtener aceites, gomas, resinas y celulosa con las cuales es posible elaborar diversos productos industriales."
+                        },
+                        {
+                            "select": 1,
+                            "class": "",
+                            "columns": "1fr 1fr",
+                            "options": [
+                                [
+                                    {
+                                        "img": "img/icon-like.png",
+                                        "class": "w-32 mx-auto"
+                                    },
+                                    false
+                                ],
+                                [
+                                    {
+                                        "img": "img/icon-dislike.png",
+                                        "class": "w-32 mx-auto"
+                                    },
+                                    true
+                                ]
+                            ],
+                            "optionClass": "aspect-square card cursor-pointer flex justify-center items-center w-60 mx-auto",
+                            "optionClassActive": "bg-white animate__animated animate__tada",
+                            "feedback": [
+                                [
+                                    {
+                                        "css": "#block-4-7{background:rgba(97, 196, 84,0.7);  }"
+                                    },
+                                    "¡Correcto!",
+                                    {
+                                        "colorize": "rgba(97, 196, 84,1)",
+                                        "destroy": 1
+                                    }
+                                ],
+                                [
+                                    {
+                                        "css": "#block-4-7{background:rgba(194, 85, 79, 0.7);}"
+                                    },
+                                    "La intención argumentativa de la petición es lograr que el ayuntamiento done árboles para reforestar el parque con fines ambientales y recreativos, no para darles un uso industrial.",
+                                    {
+                                        "colorize": "rgba(194, 85, 79,1)",
+                                        "destroy": 1
+                                    }
+                                ]
                             ]
                         }
                     ]

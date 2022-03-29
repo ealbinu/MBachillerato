@@ -1,17 +1,21 @@
 <template lang="pug">
 .blockSelect(:id="'block-'+blockid" ref="block" :style="cssVars")
     template(v-for="(i, index) in data.options")
-        div.blockSelectOption(@click="clicked(index)" :class="options[index] ? 'active' : '' ")
-            Icon touch_app
-            .option-letter {{letterop(index)}}
+        div(@click="clicked(index)" :class="[ options[index] ? 'active '+data.optionClassActive : '' , data.optionClass || 'blockSelectOption' ]")
+            template(v-if="!data.optionClass")
+                Icon touch_app
+                .option-letter {{letterop(index)}}
             BlocksRenderer(:item="i[0]" :blockid=" blockid+'-selectitem' ")
-            template(v-if="i[2]")
-                .feedback.bg-white.text-dark.p-1.text-sm.rounded.mt-2 {{i[2]}}
-            template(v-else-if="data.feedback")
-                .feedback.bg-white.text-dark.p-1.text-sm.rounded.mt-2 {{data.feedback[i[1]?0:1]}}
-
-
-
+//-Feedback
+.feedback.text-center
+    template(v-if="data.feedback && options.some( (e)=>{return e==true} )")
+        template(v-if="typeof data.feedback[result?0:1] == 'string'") 
+            //.animate__animated.animate__swing
+            BlocksRenderer(:item="data.feedback[result?0:1]"  :blockid=" blockid+'-selectitem-feedback'")
+        template(v-else)
+            template(v-for="(iblock, indexblock) in data.feedback[result?0:1]"  :key="indexblock")
+                //.animate__animated.animate__swing
+                BlocksRenderer(:item="iblock" :blockid=" blockid+'-selectitem-feedback-'+indexblock")
 SolveModule(@solve="solve")
 </template>
 <script setup>
@@ -23,7 +27,7 @@ import Icon from '../icon.vue'
 import BlocksRenderer from '../BlocksRenderer.vue'
 
 
-const result = ref()
+const result = ref(undefined)
 const Status = inject('statusFile')
 const Blocked = inject('blocked')
 const Audios = inject('Audios')
@@ -39,6 +43,25 @@ const block = ref()
 const options = ref([])
 
 var singleSelection = ref(true)
+
+
+
+
+
+const isRightOrWrong = () => {
+    var dataOptions = props.data.options
+    var correctOptions = []
+    for(var i=0; i<dataOptions.length; i++){
+        correctOptions.push(dataOptions[i][1])
+    }
+    if(_.isEqual(correctOptions, options.value)){
+        result.value = true
+    } else {
+        result.value = false
+    }
+}
+
+
 
 
 const letterop = (index) => {
@@ -61,9 +84,11 @@ const builder = () => {
         Status.value.answers = {}
     }
 
+    
         
     if(Status.value.answers[props.blockid]){
         options.value = Status.value.answers[props.blockid]
+        isRightOrWrong()
     } else {
         Status.value.answers[props.blockid] = null
     }
@@ -88,6 +113,9 @@ const clicked = (index) => {
     if(Status.value.finalize){
         return false
     }
+    
+    
+
     Audios.sBlockSelect.play()
     if(singleSelection.value){
         for(var i  in options.value){
@@ -98,6 +126,7 @@ const clicked = (index) => {
         options.value[index] = !options.value[index]
     }
 
+    isRightOrWrong()
 
     //STORE in Status File
     Status.value.answers[props.blockid] = options.value
@@ -120,8 +149,11 @@ const solve = () => {
 
 
 
+
+
+
+
 const finalize = () => {
-    var nooks = 0
     var dataOptions = props.data.options
     var correctOptions = []
     for(var i=0; i<dataOptions.length; i++){
@@ -199,8 +231,5 @@ const cssVars = computed(() => {
             color: $dark
             .material-icons
                 display: none
-            .feedback
-                display: block
-.feedback
-    display: none
+
 </style>

@@ -6,6 +6,8 @@
 span(v-if="typeof item === 'string' " v-html="item")
 //-Simple variable
 span(v-if="item.variable " v-html="Status.answers[item.variable]")
+//-Result variable
+span(v-if="item.variableR " v-html="Status.result[item.variable]")
 //-Break
 br(v-else-if="item.br")
 //-Hr
@@ -44,8 +46,10 @@ BlockGrid(v-if="item.grid" :data="item" :blockid="blockid")
 BlockGroup(v-if="item.group" :data="item" :blockid="blockid")
 //-Input
 BlockInput(v-if="item.input" :data="item" :blockid="blockid")
-
-
+//-Colorize
+BlockColorize(v-if="item.colorize" :data="item" :blockid="blockid")
+//-Css
+BlockCss(v-if="item.css" :data="item" :blockid="blockid" :key="Math.random()")
 
 </template>
 <script setup>
@@ -67,6 +71,8 @@ import BlockIcon from './blocks/blockIcon.vue';
 import BlockInstructions from './blocks/blockInstructions.vue';
 import BlockTextAnimation from './blocks/blockTextAnimation.vue';
 import BlockInput from './blocks/blockInput.vue';
+import BlockColorize from './blocks/blockColorize.vue';
+import BlockCss from './blocks/blockCss.vue';
 
 const props = defineProps({
     item: [Object, String],

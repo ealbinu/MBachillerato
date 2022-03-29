@@ -1,6 +1,6 @@
 <template lang="pug">
 
-.block(:style="cssVars" v-if="block.content.length")
+.block(:style="cssVars" v-if="block.content.length").rounded
     //::::::::::::::: BLOCKS
     .blockContainer(:class="[block.class]")
         BlocksRenderer( v-for="(i, index) in block.content" :item="i" :blockid="blockid+'-'+index" :key="index")
@@ -9,12 +9,14 @@
     template(v-if="!view")
         .text-center.my-2.mb-16
 
-            template(v-if="evaluationsInScreen.length > 0 && allAnswered")
-                template(v-if="!islast")
-                    button(@click="$emit('stepNext')").btn.btn-ghost.text-white.animate__animated.animate__tada Siguiente
-                template(v-else)
-                    button(@click="$emit('screenNext', 1)").btn.btn-accent.btn-wide Continuar
-            
+            // Auto
+            template(v-if="steps")
+                template(v-if="evaluationsInScreen.length > 0 && allAnswered")
+                    template(v-if="!islast")
+                        button(@click="$emit('stepNext')").btn.btn-ghost.text-white.animate__animated.animate__tada Siguiente
+                    template(v-else)
+                        button(@click="$emit('screenNext', 1)").btn.btn-accent.btn-wide Continuar
+
             template(v-if="block.buttonNextStep")
                 button(@click="$emit('stepNext')").btn.btn-ghost.text-white {{block.buttonNextStep}}
             template(v-if="block.buttonNextScreen")
@@ -38,7 +40,8 @@ const view = inject('view')
 const props = defineProps({
     "block": Object,
     "blockid": String,
-    "islast": Boolean
+    "islast": Boolean,
+    "steps": Boolean
 })
 
 const cssVars = computed(() => {
@@ -92,10 +95,12 @@ setTimeout(function () {
 
 .block
     margin: 1% auto
+    margin-bottom: 20px
+    padding-bottom: 20px
     width: var(--block-width)
     box-sizing: border-box
-    padding-bottom: 40px
     position: relative
+    max-width: 980px
     .blockContainer
         font-size: 1.1rem
         padding: 1%
