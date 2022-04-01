@@ -4,7 +4,6 @@
 <script setup>
 import { data } from 'browserslist';
 import {ref, computed, watch, inject} from 'vue'
-import { w } from '../../../dist/assets/vendor.c9187376';
 const props = defineProps({
     data: Object,
     blockid: String

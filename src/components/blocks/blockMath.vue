@@ -46,6 +46,7 @@ div.blockmathCont
     background: rgba(255,255,255,0.03)
     border-radius: 4px
     margin: 2px auto
+    vertical-align: middle
     svg
         max-width: 100%
         margin: 0 auto
@@ -60,6 +61,7 @@ span.blockmathCont
     background: rgba(255,255,255,0.03)
     max-width: 100%
     text-align: center
+    vertical-align: middle
     svg
         max-width: 100%
     &.dark

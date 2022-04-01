@@ -17,6 +17,9 @@
                     template(v-else)
                         button(@click="$emit('screenNext', 1)").btn.btn-accent.btn-wide Continuar
 
+            //template(v-if="!steps && islast")
+                button(@click="$emit('screenNext', 1)").btn.btn-accent.btn-wide Continuar
+
             template(v-if="block.buttonNextStep")
                 button(@click="$emit('stepNext')").btn.btn-ghost.text-white {{block.buttonNextStep}}
             template(v-if="block.buttonNextScreen")
@@ -94,9 +97,7 @@ setTimeout(function () {
 <style lang="sass">
 
 .block
-    margin: 1% auto
-    margin-bottom: 20px
-    padding-bottom: 20px
+    margin: 0 auto 20px auto
     width: var(--block-width)
     box-sizing: border-box
     position: relative

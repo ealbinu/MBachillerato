@@ -7,7 +7,7 @@ span(v-if="typeof item === 'string' " v-html="item")
 //-Simple variable
 span(v-if="item.variable " v-html="Status.answers[item.variable]")
 //-Result variable
-span(v-if="item.variableR " v-html="Status.result[item.variable]")
+span(v-if="item.variableR " v-html="Status.result[item.variableR]")
 //-Break
 br(v-else-if="item.br")
 //-Hr
@@ -49,7 +49,9 @@ BlockInput(v-if="item.input" :data="item" :blockid="blockid")
 //-Colorize
 BlockColorize(v-if="item.colorize" :data="item" :blockid="blockid")
 //-Css
-BlockCss(v-if="item.css" :data="item" :blockid="blockid" :key="Math.random()")
+BlockCss(v-if="item.css" :data="item" :blockid="blockid")
+//-Chatbot
+BlockChatbot(v-if="item.chatbot" :data="item" :blockid="blockid")
 
 </template>
 <script setup>
@@ -73,6 +75,7 @@ import BlockTextAnimation from './blocks/blockTextAnimation.vue';
 import BlockInput from './blocks/blockInput.vue';
 import BlockColorize from './blocks/blockColorize.vue';
 import BlockCss from './blocks/blockCss.vue';
+import BlockChatbot from './blocks/blockChatbot.vue';
 
 const props = defineProps({
     item: [Object, String],

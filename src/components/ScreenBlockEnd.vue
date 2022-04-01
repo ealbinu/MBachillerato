@@ -110,7 +110,7 @@ const finalize = () => {
         Results.value.oksPercentage = Math.round((Results.value.oks*100)/Results.value.total)
         Results.value.errorsPercentage = 100 - Results.value.oksPercentage
     }
-    Audios.send.play()
+    Audios.sfinalize.play()
 }
 if(Status.value.finalize){
     setTimeout(function () {

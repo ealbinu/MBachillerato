@@ -68,7 +68,9 @@ app.provide('Audios', {
     schange: new Wad({source : 'odas/assets/sounds/change.mp3'}),
     sBlockSelect: new Wad({source : 'odas/assets/sounds/blockSelect.mp3'}),
     sBlockDrag: new Wad({source : 'odas/assets/sounds/blockDrag.mp3'}),
-    send: new Wad({source : 'odas/assets/sounds/end.mp3'}),
+    sfinalize: new Wad({source : 'odas/assets/sounds/end.mp3'}),
+    snotification: new Wad({source : 'odas/assets/sounds/notification.mp3'}),
+    ssend: new Wad({source : 'odas/assets/sounds/send.mp3'}),
 
  })
 
