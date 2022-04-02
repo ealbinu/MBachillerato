@@ -1,5 +1,6 @@
 <template lang="pug">
-.blockGroup(:style="cssVars" :class="data.class" ref="group" :data-scroll="data.scrollClass?true: undefined")
+
+.blockGroup(:id="data.id" :data="data.data" :style="cssVars" :class="data.class" ref="group" :data-scroll="data.scrollClass?true: undefined" )
     template(v-for="(i, index) in data.content")
         BlocksRenderer(:item="i" :blockid="blockid+'-'+index")
 </template>
@@ -13,6 +14,8 @@ const props = defineProps({
     blockid: String
 })
 const group = ref()
+
+
 
 
 const cssVars = computed(() => {

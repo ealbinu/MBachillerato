@@ -287,8 +287,7 @@
                             "content": [
                                 {
                                     "text": "1. Discutir con un amigo al que no le gusta tu película favorita.",
-                                    "class": "h5",
-                                    "align": "center"
+                                    "class": "h5 text-center"
                                 },
                                 {
                                     "dragdrop": 1,
@@ -331,8 +330,7 @@
                             "content": [
                                 {
                                     "text": "2. Establecer las reglas de convivencia en una vivienda compartida.",
-                                    "class": "h5",
-                                    "align": "center"
+                                    "class": "h5 text-center"
                                 },
                                 {
                                     "dragdrop": 1,
@@ -375,8 +373,7 @@
                             "content": [
                                 {
                                     "text": "3. La directora da a una empleada indicaciones sobre el trabajo que debe realizar.",
-                                    "class": "h5",
-                                    "align": "center"
+                                    "class": "h5 text-center"
                                 },
                                 {
                                     "dragdrop": 1,
@@ -419,8 +416,7 @@
                             "content": [
                                 {
                                     "text": "4. Una abogada defiende a un acusado en un juicio.",
-                                    "class": "h5",
-                                    "align": "center"
+                                    "class": "h5 text-center"
                                 },
                                 {
                                     "dragdrop": 1,
@@ -463,8 +459,7 @@
                             "content": [
                                 {
                                     "text": "5. Un alumno pide a su maestra oportunidad de presentar un trabajo fuera de tiempo.",
-                                    "class": "h5",
-                                    "align": "center"
+                                    "class": "h5 text-center"
                                 },
                                 {
                                     "dragdrop": 1,
@@ -507,8 +502,7 @@
                             "content": [
                                 {
                                     "text": "6. Un agente de migración impide el paso a un país porque el pasaporte está vencido.",
-                                    "class": "h5",
-                                    "align": "center"
+                                    "class": "h5 text-center"
                                 },
                                 {
                                     "dragdrop": 1,
@@ -567,9 +561,8 @@
                             "br": 1
                         },
                         {
-                            "class": "h5",
-                            "align": "center",
-                            "text": "1. ¿Realmente crees que es buena idea asistir todos los días al curso de pintura? Es mejor que pases tu tiempo libre con tus amigos para aligerar el estrés de los trabajos escolares."
+                            "class": "h5 text-center"
+                            ,"text": "1. ¿Realmente crees que es buena idea asistir todos los días al curso de pintura? Es mejor que pases tu tiempo libre con tus amigos para aligerar el estrés de los trabajos escolares."
                         },
                         {
                             "grid": 1,
@@ -610,9 +603,8 @@
                             "br": 1
                         },
                         {
-                            "class": "h5",
-                            "align": "center",
-                            "text": "2. Si bien el arte es una actividad que contribuye al desarrollo emocional de las personas lo mejor para los jóvenes en la actualidad es dedicar más tiempo a actividades relacionadas con el emprendimiento económico pues esto les facilitará su inserción en el ámbito laboral."
+                            "class": "h5 text-center"
+                            ,"text": "2. Si bien el arte es una actividad que contribuye al desarrollo emocional de las personas lo mejor para los jóvenes en la actualidad es dedicar más tiempo a actividades relacionadas con el emprendimiento económico pues esto les facilitará su inserción en el ámbito laboral."
                         },
                         {
                             "grid": 1,
@@ -655,9 +647,8 @@
                     "width": "100%",
                     "content": [
                         {
-                            "class": "h5",
-                            "align": "center",
-                            "text": "3. Estudiar artes me ayudará a explotar mi creatividad y desarrollar mi talento artístico, sin embargo, el mercado laboral es limitado y los empleos poco remunerados, por lo que tendré que buscar buenos proyectos que impulsen mi carrera y den a conocer mi trabajo como artista."
+                            "class": "h5 text-center"
+                            ,"text": "3. Estudiar artes me ayudará a explotar mi creatividad y desarrollar mi talento artístico, sin embargo, el mercado laboral es limitado y los empleos poco remunerados, por lo que tendré que buscar buenos proyectos que impulsen mi carrera y den a conocer mi trabajo como artista."
                         },
                         {
                             "grid": 1,
@@ -698,9 +689,8 @@
                             "br": 1
                         },
                         {
-                            "class": "h5",
-                            "align": "center",
-                            "text": "4. Sabes que soy muy buen estudiante, puedo estudiar y tomar el curso de pintura a la vez pues ya lo hice en una ocasión, cuando tomé el curso de inglés. Además, el curso es gratuito por lo que no representaría un gasto para la casa."
+                            "class": "h5 text-center"
+                            ,"text": "4. Sabes que soy muy buen estudiante, puedo estudiar y tomar el curso de pintura a la vez pues ya lo hice en una ocasión, cuando tomé el curso de inglés. Además, el curso es gratuito por lo que no representaría un gasto para la casa."
                         },
                         {
                             "grid": 1,
@@ -743,9 +733,8 @@
                     "width": "100%",
                     "content": [
                         {
-                            "class": "h5",
-                            "align": "center",
-                            "text": "5. No puedes dedicarte a la pintura, decepcionarías a tu padre y estarías arruinando una gran oportunidad para tu futuro al no estudiar medicina como él y su padre lo hicieron."
+                            "class": "h5 text-center"
+                            ,"text": "5. No puedes dedicarte a la pintura, decepcionarías a tu padre y estarías arruinando una gran oportunidad para tu futuro al no estudiar medicina como él y su padre lo hicieron."
                         },
                         {
                             "grid": 1,
@@ -786,9 +775,8 @@
                             "br": 1
                         },
                         {
-                            "class": "h5",
-                            "align": "center",
-                            "text": "6. En el último encuentro cultural de escuelas en la ciudad mi pintura se llevó el primer lugar, lo que me hizo acreedor a un premio en efectivo y un viaje para conocer el museo de arte moderno en la capital del país. Esto significa que el trabajo artístico puede rendir frutos cuando se hace con dedicación."
+                            "class": "h5 text-center"
+                            ,"text": "6. En el último encuentro cultural de escuelas en la ciudad mi pintura se llevó el primer lugar, lo que me hizo acreedor a un premio en efectivo y un viaje para conocer el museo de arte moderno en la capital del país. Esto significa que el trabajo artístico puede rendir frutos cuando se hace con dedicación."
                         },
                         {
                             "grid": 1,
@@ -854,9 +842,8 @@
                     "width": "100%",
                     "content": [
                         {
-                            "class": "h5",
-                            "align": "center",
-                            "text": "1. Las zonas arboladas de las ciudades ofrecen beneficios ambientales entre los que se encuentran reducir la contaminación del aire, regular la temperatura y la humedad del ambiente, y amortiguar los ruidos ocasionados por el tráfico."
+                            "class": "h5 text-center"
+                            ,"text": "1. Las zonas arboladas de las ciudades ofrecen beneficios ambientales entre los que se encuentran reducir la contaminación del aire, regular la temperatura y la humedad del ambiente, y amortiguar los ruidos ocasionados por el tráfico."
                         },
                         {
                             "select": 1,
@@ -909,9 +896,8 @@
                     "width": "100%",
                     "content": [
                         {
-                            "class": "h5",
-                            "align": "center",
-                            "text": "2. Uno de las principales aplicaciones que se le da a la madera es en la construcción de viviendas, lo cual representa una alternativa más económica que la opción del ladrillo y el concreto."
+                            "class": "h5 text-center"
+                            ,"text": "2. Uno de las principales aplicaciones que se le da a la madera es en la construcción de viviendas, lo cual representa una alternativa más económica que la opción del ladrillo y el concreto."
                         },
                         {
                             "select": 1,
@@ -964,9 +950,8 @@
                     "width": "100%",
                     "content": [
                         {
-                            "class": "h5",
-                            "align": "center",
-                            "text": "3. Vivir cerca de una zona arbolada es una similar a tener una clase de educación ambiental, pues los árboles atraen fauna local, ayudan a entender mejor los ecosistemas, y los niños integran todos estos elementos como parte de su vida diaria."
+                            "class": "h5 text-center"
+                            ,"text": "3. Vivir cerca de una zona arbolada es una similar a tener una clase de educación ambiental, pues los árboles atraen fauna local, ayudan a entender mejor los ecosistemas, y los niños integran todos estos elementos como parte de su vida diaria."
                         },
                         {
                             "select": 1,
@@ -1019,9 +1004,8 @@
                     "width": "100%",
                     "content": [
                         {
-                            "class": "h5",
-                            "align": "center",
-                            "text": "4. Las zonas arboladas ofrecen a las personas una oportunidad de conectarse con la naturaleza, lo cual contribuye a reducir el estrés ocasionado por las ocupaciones cotidianas, ya que se ha demostrado que la contemplación del paisaje y pasar tiempo en un entorno natural relaja, fomenta la creatividad y las capacidades afectivas, además de reducir la ansiedad."
+                            "class": "h5 text-center"
+                            ,"text": "4. Las zonas arboladas ofrecen a las personas una oportunidad de conectarse con la naturaleza, lo cual contribuye a reducir el estrés ocasionado por las ocupaciones cotidianas, ya que se ha demostrado que la contemplación del paisaje y pasar tiempo en un entorno natural relaja, fomenta la creatividad y las capacidades afectivas, además de reducir la ansiedad."
                         },
                         {
                             "select": 1,
@@ -1074,9 +1058,8 @@
                     "width": "100%",
                     "content": [
                         {
-                            "class": "h5",
-                            "align": "center",
-                            "text": "5. Uno de los mayores problemas de la desforestación es el aumento de la erosión del suelo, ya que éste queda expuesto a factores ambientales como el viento o la lluvia. Un ejemplo es Brasil donde se pierden más de 50 millones de toneladas de suelo al año debido a la deforestación."
+                            "class": "h5 text-center"
+                            ,"text": "5. Uno de los mayores problemas de la desforestación es el aumento de la erosión del suelo, ya que éste queda expuesto a factores ambientales como el viento o la lluvia. Un ejemplo es Brasil donde se pierden más de 50 millones de toneladas de suelo al año debido a la deforestación."
                         },
                         {
                             "select": 1,
@@ -1129,9 +1112,8 @@
                     "width": "100%",
                     "content": [
                         {
-                            "class": "h5",
-                            "align": "center",
-                            "text": "6. Distintos estudios han demostrado que las zonas arboladas mejoran las relaciones sociales al propiciar que la gente, sobre todo los jóvenes, se reúna en ellas para realizar actividades recreativas al aire libre, lo cual también ayuda a que se forme en ellas un sentido de pertenencia y comunidad."
+                            "class": "h5 text-center"
+                            ,"text": "6. Distintos estudios han demostrado que las zonas arboladas mejoran las relaciones sociales al propiciar que la gente, sobre todo los jóvenes, se reúna en ellas para realizar actividades recreativas al aire libre, lo cual también ayuda a que se forme en ellas un sentido de pertenencia y comunidad."
                         },
                         {
                             "select": 1,
@@ -1184,9 +1166,8 @@
                     "width": "100%",
                     "content": [
                         {
-                            "class": "h5",
-                            "align": "center",
-                            "text": "7. Los árboles son de gran utilidad para las actividades humanas, pues es posible aprovechar casi todas sus partes para obtener aceites, gomas, resinas y celulosa con las cuales es posible elaborar diversos productos industriales."
+                            "class": "h5 text-center"
+                            ,"text": "7. Los árboles son de gran utilidad para las actividades humanas, pues es posible aprovechar casi todas sus partes para obtener aceites, gomas, resinas y celulosa con las cuales es posible elaborar diversos productos industriales."
                         },
                         {
                             "select": 1,

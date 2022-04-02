@@ -5,15 +5,17 @@
 //-Simple text
 span(v-if="typeof item === 'string' " v-html="item")
 //-Simple variable
-span(v-if="item.variable " v-html="Status.answers[item.variable]")
+span(v-else-if="item.variable " v-html="Status.answers[item.variable]")
 //-Result variable
-span(v-if="item.variableR " v-html="Status.result[item.variableR]")
+span(v-else-if="item.variableR " v-html="Status.result[item.variableR]")
 //-Break
-br(v-else-if="item.br")
+template(v-else-if="item.br"): br(v-for="(i, index) in item.br")
 //-Hr
 hr(v-else-if="item.hr").my-2
+//-Span Texts
+span(v-else-if="item.span" v-html="item.span" :class="[item.class]" )
 //-Direct HTML
-div(v-else-if="item.html" v-html="item.html")
+div(v-else-if="item.html" v-html="item.html" :class="item.class" :id="item.id")
 //-Icon
 BlockIcon(v-else-if="item.icon" :data="item")
 //-Text
@@ -29,30 +31,35 @@ BlockImg(v-else-if="item.img" :data="item")
 //-Math jax
 BlockMath(v-else-if="item.math" :data="item")
 //- Drag & drop
-BlockDragDrop(v-if="item.dragdrop" :data="item" :blockid="blockid")
+BlockDragDrop(v-else-if="item.dragdrop" :data="item" :blockid="blockid")
 //- Sortable
-BlockSortable(v-if="item.sortable" :data="item" :blockid="blockid")
+BlockSortable(v-else-if="item.sortable" :data="item" :blockid="blockid")
 //- Select
-BlockSelect(v-if="item.select" :data="item" :blockid="blockid")
+BlockSelect(v-else-if="item.select" :data="item" :blockid="blockid")
 //-Chart
-BlockChart(v-if="item.chart" :data="item" :blockid="blockid")
+BlockChart(v-else-if="item.chart" :data="item" :blockid="blockid")
 //-Dialog
-BlockDialog(v-if="item.dialog" :data="item" :blockid="blockid")
+BlockDialog(v-else-if="item.dialog" :data="item" :blockid="blockid")
 //-Plot
-BlockPlot(v-if="item.plot" :data="item" :blockid="blockid")
+BlockPlot(v-else-if="item.plot" :data="item" :blockid="blockid")
 //-Grid
-BlockGrid(v-if="item.grid" :data="item" :blockid="blockid")
+BlockGrid(v-else-if="item.grid" :data="item" :blockid="blockid")
 //-Group
-BlockGroup(v-if="item.group" :data="item" :blockid="blockid")
+BlockGroup(v-else-if="item.group" :data="item" :blockid="blockid")
 //-Input
-BlockInput(v-if="item.input" :data="item" :blockid="blockid")
+BlockInput(v-else-if="item.input" :data="item" :blockid="blockid")
 //-Colorize
-BlockColorize(v-if="item.colorize" :data="item" :blockid="blockid")
+BlockColorize(v-else-if="item.colorize" :data="item" :blockid="blockid")
 //-Css
-BlockCss(v-if="item.css" :data="item" :blockid="blockid")
+BlockCss(v-else-if="item.css" :data="item" :blockid="blockid")
 //-Chatbot
-BlockChatbot(v-if="item.chatbot" :data="item" :blockid="blockid")
-
+BlockChatbot(v-else-if="item.chatbot" :data="item" :blockid="blockid")
+//-Card
+BlockCard(v-else-if="item.card" :data="item" :blockid="blockid")
+//-Drag Single Item
+BlockDragItem(v-else-if="item.drag" :data="item" :blockid="blockid")
+//-Line
+BlockLine(v-else-if="item.line" :data="item")
 </template>
 <script setup>
 import {ref, inject} from 'vue'
@@ -76,6 +83,9 @@ import BlockInput from './blocks/blockInput.vue';
 import BlockColorize from './blocks/blockColorize.vue';
 import BlockCss from './blocks/blockCss.vue';
 import BlockChatbot from './blocks/blockChatbot.vue';
+import BlockCard from './blocks/blockCard.vue';
+import BlockDragItem from './blocks/blockDragItem.vue';
+import BlockLine from './blocks/blockLine.vue';
 
 const props = defineProps({
     item: [Object, String],

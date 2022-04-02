@@ -29,7 +29,7 @@ const fullTextArray = props.data.text.match(/.{1,10}/g)
 
 const cssVars = computed(() => {
     return {
-        '--block-align' : props.data.align || 'left',
+        //'--block-align' : props.data.align || 'left',
 
     }
 })
@@ -38,6 +38,5 @@ const cssVars = computed(() => {
 </script>
 
 <style lang="sass" scoped>
-.blockText
-    text-align: var(--block-align)
+//.blockText
 </style>

@@ -1,10 +1,9 @@
 <template lang="pug">
-.menu.justify-between.rounded.w-56.overflow-y-auto.p-4.bg-white.m-1
-    .menu-title: img(:src="'odas/assets/icons/'+Activity.programa+'/'+Activity.materia+'.png'").w-12.mx-auto
-    div.text-center: h1.text-dark.text-xl.font-bold.mt-2 {{Activity.title}}
+.menu.justify-between.rounded.w-56.overflow-y-auto.p-2.bg-white.m-1
+    div.text-center: img(:src="'odas/assets/icons/'+Activity.programa+'/'+Activity.materia+'.png'").w-12.mx-auto
+    div.text-center: h1.text-dark.text-lg.font-bold.mt-2.leading-5 {{Activity.title}}
     div.text-center: .text-sm {{Activity.conf.materia}}
-    hr.mt-1
-    .menu-title.flex.justify-center.my-5
+    .flex.justify-center.my-2
         FichaTecnica
     hr.mb-1
     perfect-scrollbar.w-full

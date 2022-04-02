@@ -1,27 +1,12 @@
 <template lang="pug">
-Popper
-    BlocksRenderer(:item="data.term")
-    Icon.termIcon.animate__animated.animate__pulse.animate__infinite.animate__slow contact_support
+Popper(:class="data.class" :placement="data.placement" :arrow="true").relative
+    span
+        BlocksRenderer(:item="data.term")
+        Icon.termIcon.animate__animated.animate__pulse.animate__infinite.animate__slow.absolute.top-0.right-0 contact_support
     template(#content)
         template(v-for="(i, index) in data.content"  :key="index")
             BlocksRenderer(:item="i")
-//div(:title="data.d" @click="open").blockTerm
-    BlocksRenderer
-    //span(v-html="data.t" v-if="data.t")
-    //BlockImg(:data="{img:data.i}" v-if="data.i")
-    Icon contact_support
-    Popper
-        button
-        template(#content)
-            BlocksRenderer
-    //.termDefinition(v-if="tooltip")
-        template(v-if="typeof data.d==='string'")
-            p {{data.d}}
-        template(v-else)
-            template(v-for="(i, index) in data.d")
-                p(v-if="typeof i==='string'") {{i}}
-                BlockMath(v-else-if="i.math" :data="i")
-    
+
 </template>
 <script setup>
 import {ref} from 'vue'
