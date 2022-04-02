@@ -95,12 +95,11 @@ const onDragEnd = (e,drag) => {
             getResult()
 
             hovering.value = null
+            Audios.sBlockDrag.play()
 
         }
         if(!dropped){
             TweenLite.to(drag.target, .2, { x: 0, y: 0 })
-        } else {
-            Audios.sBlockDrag.play()
         }
     }
     storeInStatusFile()

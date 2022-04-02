@@ -1,8 +1,8 @@
 <template lang="pug">
-.blockSortable(:id="'block-'+blockid" ref="block")
+.blockSortable(:id="'block-'+blockid" ref="block" :class="[data.class]")
     draggable(v-model="itemsModel" item-key="id" @end="storeAnswer" :sort="(Blocked || Status.finalize)?false:true")
         template(#item="{element, index}")
-           div.sortable-item(:data="index+1" :class="[data.numbers?'shownumbers':'']")
+           div.sortable-item(:data="index+1" :class="[data.numbers?'shownumbers':'', data.classItem]")
                 .gestureIcon: Icon swipe_vertical
                 BlocksRenderer(:item="element" :blockid=" blockid+'-sortableitem' ")
 
@@ -96,6 +96,11 @@ currentInstance.appContext.config.globalProperties.emitter.on('finalize', (evt) 
 
 <style lang="sass" scoped>
 .blockSortable
+    &>div
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
     .sortable-item
         @include floatcard
         padding: 10px
@@ -105,7 +110,6 @@ currentInstance.appContext.config.globalProperties.emitter.on('finalize', (evt) 
         z-index: 1
         position: relative
         cursor: pointer
-        margin: 10px
         color: $dark
         padding-left: 40px
         .gestureIcon

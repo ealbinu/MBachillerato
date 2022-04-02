@@ -12,16 +12,19 @@ const Status = inject('statusFile')
 watch(
     ()=>Status.value,
     ()=>{
-        console.log('upd')
-    }
+        redraw()
+    },
+    {deep: true}
 )
 
 const lines = ref([])
 
 const redraw = () => {
+    setTimeout(()=>{
     for(var i in lines.value){
-            lines.value[i].position()
-        }
+        lines.value[i].position()
+    }
+    }, 250)
 }
 
 onMounted(()=>{

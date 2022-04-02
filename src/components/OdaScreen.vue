@@ -1,5 +1,5 @@
 <template lang="pug">
-section.screens(:id="'screen-'+screenindex" :style="cssVars" :class="[view ? 'desplegado' : '', 'pt-12 lg:pt-4']").m-h-screen.relative.px-2.pb-2
+section.screens(:id="'screen-'+screenindex" :style="cssVars" :class="[view ? 'desplegado' : '', 'pt-12 lg:pt-4', screen.class]" ).m-h-screen.relative.px-2.pb-2
     //perfect-scrollbar(ref="scroll").w-full
 
     template(v-for="(i, index) in screen.blocks" v-if="!screen.end")

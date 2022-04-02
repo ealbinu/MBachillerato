@@ -1,9 +1,9 @@
 <template lang="pug">
 
-.block(:style="cssVars" v-if="block.content.length").rounded
-    //::::::::::::::: BLOCKS
-    .blockContainer(:class="[block.class]")
-        BlocksRenderer( v-for="(i, index) in block.content" :item="i" :blockid="blockid+'-'+index" :key="index")
+.block(:style="cssVars" v-if="block.content.length" :class="[block.class]").rounded
+    //-::::::::::::::: BLOCKS
+    //-.blockContainer(:class="[block.class]")
+    BlocksRenderer( v-for="(i, index) in block.content" :item="i" :blockid="blockid+'-'+index" :key="index")
 
     //::::::::::::::: NAV BUTTONS
     template(v-if="!view")
@@ -102,9 +102,9 @@ setTimeout(function () {
     box-sizing: border-box
     position: relative
     max-width: 980px
-    .blockContainer
-        font-size: 1.1rem
-        padding: 1%
-        color: $clear
-        line-height: 1.4
+    //.blockContainer
+    font-size: 1.1rem
+    padding: 1%
+    color: $clear
+    line-height: 1.4
 </style>

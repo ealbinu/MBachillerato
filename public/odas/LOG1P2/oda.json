@@ -543,25 +543,7 @@
                             "columns":"1fr 1fr 1fr 1fr",
                             "columnsResponsive": "1fr 1fr",
                             "content": [
-                                {
-                                    "drag": 1,
-                                    "content": [ "Deductivos" ],
-                                    "bounds": "#screen-2",
-                                    "class": "max-w-[10rem] text-center mx-auto",
-                                    "dropzone": ".drop",
-                                    "correctId": "#b1",
-                                    "hover": "border-secondary"
-
-                                },
-                                {
-                                    "drag": 1,
-                                    "content": [ "Inductivos" ],
-                                    "bounds": "#screen-2",
-                                    "class": "max-w-[10rem] text-center mx-auto",
-                                    "dropzone": ".drop",
-                                    "correctId": "#b2",
-                                    "hover": "border-secondary"
-                                },
+                                
                                 {
                                     "drag": 1,
                                     "content": [ "Por enumeración" ],
@@ -579,8 +561,18 @@
                                     "dropzone": ".drop",
                                     "correctId": "#c3",
                                     "hover": "border-secondary"
-                                }
-                                ,{
+                                },
+                                {
+                                    "drag": 1,
+                                    "content": [ "Inductivos" ],
+                                    "bounds": "#screen-2",
+                                    "class": "max-w-[10rem] text-center mx-auto",
+                                    "dropzone": ".drop",
+                                    "correctId": "#b2",
+                                    "hover": "border-secondary"
+                                },
+                                
+                                {
                                     "drag": 1,
                                     "content": [ "Por autoridad" ],
                                     "bounds": "#screen-2",
@@ -597,6 +589,16 @@
                                     "dropzone": ".drop",
                                     "correctId": "#c5",
                                     "hover": "border-secondary"
+                                },
+                                {
+                                    "drag": 1,
+                                    "content": [ "Deductivos" ],
+                                    "bounds": "#screen-2",
+                                    "class": "max-w-[10rem] text-center mx-auto",
+                                    "dropzone": ".drop",
+                                    "correctId": "#b1",
+                                    "hover": "border-secondary"
+
                                 },
                                 {
                                     "drag": 1,

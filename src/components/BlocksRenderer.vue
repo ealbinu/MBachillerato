@@ -24,6 +24,8 @@ BlockText(v-else-if="item.text" :data="item" :key="blockid")
 BlockTextAnimation(v-else-if="item.textAnimation" :data="item" :key="blockid")
 //-Instructions
 BlockInstructions(v-else-if="item.instruction" :data="item" :key="blockid")
+//-Instructions-v2
+BlockInst(v-else-if="item.inst" :data="item" :key="blockid")
 //-Term
 BlockTerm(v-else-if="item.term" :data="item")
 //-Image
@@ -60,6 +62,9 @@ BlockCard(v-else-if="item.card" :data="item" :blockid="blockid")
 BlockDragItem(v-else-if="item.drag" :data="item" :blockid="blockid")
 //-Line
 BlockLine(v-else-if="item.line" :data="item")
+//-Repeater
+BlockRepeater(v-else-if="item.repeater" :data="item" :blockid="blockid")
+
 </template>
 <script setup>
 import {ref, inject} from 'vue'
@@ -78,6 +83,7 @@ import BlockSortable from './blocks/blockSortable.vue';
 import BlockText from './blocks/blockText.vue';
 import BlockIcon from './blocks/blockIcon.vue';
 import BlockInstructions from './blocks/blockInstructions.vue';
+import BlockInst from './blocks/blockInst.vue';
 import BlockTextAnimation from './blocks/blockTextAnimation.vue';
 import BlockInput from './blocks/blockInput.vue';
 import BlockColorize from './blocks/blockColorize.vue';
@@ -86,6 +92,7 @@ import BlockChatbot from './blocks/blockChatbot.vue';
 import BlockCard from './blocks/blockCard.vue';
 import BlockDragItem from './blocks/blockDragItem.vue';
 import BlockLine from './blocks/blockLine.vue';
+import BlockRepeater from './blocks/blockRepeater.vue';
 
 const props = defineProps({
     item: [Object, String],

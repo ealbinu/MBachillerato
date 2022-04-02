@@ -1,11 +1,12 @@
 <template lang="pug">
-Popper(:class="data.class" :placement="data.placement" :arrow="true").relative
-    span
+Popper(:class="data.class" :placement="data.placement" :arrow="true")
+    span.relative.mr-2
         BlocksRenderer(:item="data.term")
-        Icon.termIcon.animate__animated.animate__pulse.animate__infinite.animate__slow.absolute.top-0.right-0 contact_support
+        Icon.termIcon.animate__animated.animate__flash.animate__infinite.animate__slow.absolute.top-0(class="-right-3").text-xs contact_support
     template(#content)
-        template(v-for="(i, index) in data.content"  :key="index")
-            BlocksRenderer(:item="i")
+        div(class="min-w-[10rem] text-xs")
+            template(v-for="(i, index) in data.content"  :key="index")
+                BlocksRenderer(:item="i")
 
 </template>
 <script setup>

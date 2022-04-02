@@ -647,7 +647,7 @@
 		},
 		{
 			"title": "Ordena las listas",
-			"icon": "games",
+			"icon": "low_priority",
 			"steps": false,
 			"blocks": [
 				{
