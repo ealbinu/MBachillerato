@@ -248,9 +248,8 @@
                     "width": "80%",
                     "class": "flex justify-center flex-col items-center text-center",
                     "content": [{
-                            "class": "h3",
-                            "align": "center",
-                            "textAnimation": "¡Hola! Vamos a trabajar con algunas situaciones que evaluarás para definir si lo que se requiere es convencer o persuadir. <br> ¿De acuerdo? ¿Cómo te llamas?"
+                            "class": "h5 text-center"
+                            ,"textAnimation": "¡Hola! Vamos a trabajar con algunas situaciones que evaluarás para definir si lo que se requiere es convencer o persuadir. <br> ¿De acuerdo? ¿Cómo te llamas?"
                         },
                         { "br": 1 },
                         { "br": 1 },
@@ -333,9 +332,8 @@
                 {
                     "width": "100%",
                     "content": [{
-                            "class": "h5",
-                            "align": "center",
-                            "text": "3. El presidente municipal propone al cabildo aprobar un reglamento para la igualdad de género en el ayuntamiento. ¿Es necesario convencer o persuadir al cabildo?"
+                            "class": "h5 text-center"
+                            ,"text": "3. El presidente municipal propone al cabildo aprobar un reglamento para la igualdad de género en el ayuntamiento. ¿Es necesario convencer o persuadir al cabildo?"
                         },
                         { "br": 1 },
                         {
@@ -357,9 +355,8 @@
                         { "br": 1 },
                         { "br": 1 },
                         {
-                            "class": "h5",
-                            "align": "center",
-                            "text": "4. Un grupo de estudiantes realizan un performance para crear consciencia sobre el problema del cambio climático. ¿Es necesario convencer o persuadir para crear consciencia en el público?"
+                            "class": "h5 text-center"
+                            ,"text": "4. Un grupo de estudiantes realizan un performance para crear consciencia sobre el problema del cambio climático. ¿Es necesario convencer o persuadir para crear consciencia en el público?"
                         },
                         { "br": 1 },
                         {
@@ -383,9 +380,8 @@
                 {
                     "width": "100%",
                     "content": [{
-                            "class": "h5",
-                            "align": "center",
-                            "text": "5. Un reclutador de una universidad expone a un grupo de bachillerato las carreras que ofrece su institución. ¿Debe convencer o persuadir a los estudiantes de elegir la universidad que representa?"
+                            "class": "h5 text-center"
+                            ,"text": "5. Un reclutador de una universidad expone a un grupo de bachillerato las carreras que ofrece su institución. ¿Debe convencer o persuadir a los estudiantes de elegir la universidad que representa?"
                         },
                         { "br": 1 },
                         {
@@ -407,9 +403,8 @@
                         { "br": 1 },
                         { "br": 1 },
                         {
-                            "class": "h5",
-                            "align": "center",
-                            "text": "6. Un representante farmacéutico desea que un grupo de médicos prescriban un medicamento de reciente aparición. ¿Debe convencer o persuadir a los médicos para lograrlo?"
+                            "class": "h5 text-center"
+                            ,"text": "6. Un representante farmacéutico desea que un grupo de médicos prescriban un medicamento de reciente aparición. ¿Debe convencer o persuadir a los médicos para lograrlo?"
                         },
                         { "br": 1 },
                         {
@@ -433,9 +428,8 @@
                 {
                     "width": "100%",
                     "content": [{
-                            "class": "h5",
-                            "align": "center",
-                            "text": "7. Un integrante del equipo de futbol desea el puesto de capitán y se lo pide al entrenador. ¿Debe convencerlo o persuadirlo?"
+                            "class": "h5 text-center"
+                            ,"text": "7. Un integrante del equipo de futbol desea el puesto de capitán y se lo pide al entrenador. ¿Debe convencerlo o persuadirlo?"
                         },
                         { "br": 1 },
                         {
@@ -457,9 +451,8 @@
                         { "br": 1 },
                         { "br": 1 },
                         {
-                            "class": "h5",
-                            "align": "center",
-                            "text": "8. Una asociación inicia una campaña para dar a conocer los beneficios de una dieta saludable en la prevención de enfermedades. ¿Su campaña debe enfocarse en convencer o en persuadir al público?"
+                            "class": "h5 text-center"
+                            ,"text": "8. Una asociación inicia una campaña para dar a conocer los beneficios de una dieta saludable en la prevención de enfermedades. ¿Su campaña debe enfocarse en convencer o en persuadir al público?"
                         },
                         { "br": 1 },
                         {
@@ -504,9 +497,8 @@
                             "grid": 1,
                             "content": [{ "img": "img/im5.png", "class": "w-96 " },
                                 {
-                                    "class": "h5",
-                                    "align": "center",
-                                    "text": "1. Existen: pruebas de que las personas con síntomas leves o asintomáticas pueden contagiar a otras personas por lo que el uso del cubrebocas es una medida complementaria que ayuda a reducir los contagios."
+                                    "class": "h5 text-center"
+                                    ,"text": "1. Existen: pruebas de que las personas con síntomas leves o asintomáticas pueden contagiar a otras personas por lo que el uso del cubrebocas es una medida complementaria que ayuda a reducir los contagios."
                                 }
                             ]
                         },
@@ -533,9 +525,8 @@
                             "grid": 1,
                             "content": [{ "img": "img/im6.png", "class": "w-96 " },
                                 {
-                                    "class": "h5",
-                                    "align": "center",
-                                    "text": "2. Las vacunas de ARN tienen una ventaja sobre las de ADN ya que en éstas el material genético primero debe entrar en el núcleo de las células del huésped y ahí se transcribe a ARN mensajero para pasar al citoplasma donde en los ribosomas se produce la proteína."
+                                    "class": "h5 text-center"
+                                    ,"text": "2. Las vacunas de ARN tienen una ventaja sobre las de ADN ya que en éstas el material genético primero debe entrar en el núcleo de las células del huésped y ahí se transcribe a ARN mensajero para pasar al citoplasma donde en los ribosomas se produce la proteína."
                                 }
                             ]
                         },
@@ -562,9 +553,8 @@
                             "grid": 1,
                             "content": [{ "img": "img/im7.png", "class": "w-96 " },
                                 {
-                                    "class": "h5",
-                                    "align": "center",
-                                    "text": "3. Para utilizar el lenguaje inclusivo con éxito, los hablantes deben poseer el capital lingüístico legítimo y una conciencia metalingüística desarrollada para llevar a cabo los ajustes gramaticales correspondientes."
+                                    "class": "h5 text-center"
+                                    ,"text": "3. Para utilizar el lenguaje inclusivo con éxito, los hablantes deben poseer el capital lingüístico legítimo y una conciencia metalingüística desarrollada para llevar a cabo los ajustes gramaticales correspondientes."
                                 }
                             ]
                         },
@@ -591,9 +581,8 @@
                             "grid": 1,
                             "content": [{ "img": "img/im8.png", "class": "w-96 " },
                                 {
-                                    "class": "h5",
-                                    "align": "center",
-                                    "text": "4. Dado que la Real Academia simplemente explica cómo hablan la mayoría de los hablantes y lo recoge en las normas, cuando el uso del lenguaje inclusivo esté generalizado no tendrá más opción que aceptarlo."
+                                    "class": "h5 text-center"
+                                    ,"text": "4. Dado que la Real Academia simplemente explica cómo hablan la mayoría de los hablantes y lo recoge en las normas, cuando el uso del lenguaje inclusivo esté generalizado no tendrá más opción que aceptarlo."
                                 }
                             ]
                         },
@@ -620,9 +609,8 @@
                             "grid": 1,
                             "content": [{ "img": "img/im9.png", "class": "w-96 " },
                                 {
-                                    "class": "h5",
-                                    "align": "center",
-                                    "text": "5. Si no nos vacunamos corremos el riesgo de contraer enfermedades graves, muchas de las cuales pueden ser discapacitantes o mortales."
+                                    "class": "h5 text-center"
+                                    ,"text": "5. Si no nos vacunamos corremos el riesgo de contraer enfermedades graves, muchas de las cuales pueden ser discapacitantes o mortales."
                                 }
                             ]
                         },

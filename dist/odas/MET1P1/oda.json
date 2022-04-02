@@ -15,7 +15,7 @@
 				{
 					"width": "80%",
 					"content": [
-						{"text":"Ante lo desconocido, el ser humano puede recurrir a tres tipos de respuestas: en primer lugar, la mágica o mítica; en segundo lugar, la divina o religiosa; y, por último, la razonada o científica. Las dos primeras fueron el tipo de explicaciones que las personas le dieron en el pasado a todo aquello que constituía el entorno en que vivían. Los filósofos de la Grecia antigua fueron los primeros que buscaron las respuestas por medio del razonamiento y en el siglo XVII se sentaron las bases para la ciencia moderna, lo que nos permitió tener un conocimiento del mundo más exacto y, además, nos ha proporcionado las herramientas necesarias para solucionar gran parte de los problemas de la sociedad.", "align": "left", "class":"p"},
+						{"text":"Ante lo desconocido, el ser humano puede recurrir a tres tipos de respuestas: en primer lugar, la mágica o mítica; en segundo lugar, la divina o religiosa; y, por último, la razonada o científica. Las dos primeras fueron el tipo de explicaciones que las personas le dieron en el pasado a todo aquello que constituía el entorno en que vivían. Los filósofos de la Grecia antigua fueron los primeros que buscaron las respuestas por medio del razonamiento y en el siglo XVII se sentaron las bases para la ciencia moderna, lo que nos permitió tener un conocimiento del mundo más exacto y, además, nos ha proporcionado las herramientas necesarias para solucionar gran parte de los problemas de la sociedad.",  "class":"p text-left"},
 						{"br": 1},
 						{
 							"dialog": true,
@@ -30,7 +30,7 @@
 				{
 					"width": "80%",
 					"content": [
-						{"text":"El pensamiento es la capacidad humana de crear ideas y representaciones en la mente sobre lo que perciben los sentidos. La evolución del pensamiento humano es el origen del vasto conocimiento que la humanidad ha acumulado desde hace más de sesenta mil años, ideas, destrezas, valores, creencias, lenguajes y actitudes que se han desarrollado y transmitido de generación en generación, que han trascendido las distintas épocas históricas, que han sobrevivido a civilizaciones, imperios, guerras, etcétera.", "align": "left", "class":"p"}
+						{"text":"El pensamiento es la capacidad humana de crear ideas y representaciones en la mente sobre lo que perciben los sentidos. La evolución del pensamiento humano es el origen del vasto conocimiento que la humanidad ha acumulado desde hace más de sesenta mil años, ideas, destrezas, valores, creencias, lenguajes y actitudes que se han desarrollado y transmitido de generación en generación, que han trascendido las distintas épocas históricas, que han sobrevivido a civilizaciones, imperios, guerras, etcétera.",  "class":"p text-left"}
 					]
 				}
 
