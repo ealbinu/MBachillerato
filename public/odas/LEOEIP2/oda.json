@@ -1,0 +1,46 @@
+{
+    "id": "LEOEIP1",
+    "programa": "DGETI",
+    "materia": "LECTURAEOEI",
+    "asignatura": "Lógica I",
+    "title": "El texto y sus partes",
+    "bgimgs": 5,
+    "ficha": [
+        [ "Aprendizaje esperado", "Identifica el tema, la intención y las partes de expresiones orales y escritas." ],
+        ["Área de formación integral","Desarrollo de la comprensión lectora."]
+    ],
+    "screens": [
+        {
+            "title": "Categorías de palabras",
+            "icon": "info",
+            "steps": true,
+            "class": "flex flex-col justify-center",
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "grid":1,
+                            "columns": "2fr 1fr",
+                            "content":[
+                                {"textAnimation":"La comprensión lectora se refiere, no sólo a la capacidad de decodificar las palabras que componen un texto, sino a la habilidad de un lector para comprender su sentido completo, identificar las partes que lo componen, asociarlo a un tipo específico de texto y a formarse una idea sobre él, y argumentarla."},
+                                {"img":"img/im1.png"}
+                            ]
+                        }
+                    ],
+                    "buttonNextStep": "Siguiente"
+                }
+            ]
+        },
+        {
+            "title": "Finalizar",
+            "icon": "flag",
+            "end": true,
+            "blocks": [
+                {
+                    "content": []
+                }
+            ]
+        }
+    ]
+}
