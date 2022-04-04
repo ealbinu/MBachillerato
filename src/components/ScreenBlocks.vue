@@ -7,7 +7,7 @@
 
     //::::::::::::::: NAV BUTTONS
     template(v-if="!view")
-        .text-center.my-2.mb-16
+        .text-center.my-16
 
             // Auto
             template(v-if="steps")

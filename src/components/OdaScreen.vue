@@ -3,8 +3,8 @@ section.screens(:id="'screen-'+screenindex" :style="cssVars" :class="[view ? 'de
     //perfect-scrollbar(ref="scroll").w-full
 
     template(v-for="(i, index) in screen.blocks" v-if="!screen.end")
-        Transition(name="slide" mode="out-in" appear)
-            ScreenBlocks(:steps="screen.steps" :id="'block-'+screenindex+'-'+index" :islast="screen.blocks.length-1 == index" :block="i" v-show="useSteps(index)" @step-next="stepNext" @screen-next="$emit('screenNext', $event)" :blockid="screenindex+'-'+index")
+        Transition(name="screenfade" mode="out-in" appear)
+        ScreenBlocks(:steps="screen.steps" :id="'block-'+screenindex+'-'+index" :islast="screen.blocks.length-1 == index" :block="i" v-show="useSteps(index)" @step-next="stepNext" @screen-next="$emit('screenNext', $event)" :blockid="screenindex+'-'+index")
     template(v-else)
         ScreenBlockEnd(v-show="screen.end")
     OdaSteps(v-if="screen.steps && !view" :steps="screen.blocks.length")
