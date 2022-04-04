@@ -1,0 +1,151 @@
+{
+    "id": "ALG1P1A",
+    "programa": "DGETI",
+    "materia": "ALGEBRAI",
+    "asignatura": "Álgebra I",
+    "title": "Interpretación de variables",
+    "bgimgs": 5,
+    "ficha": [
+        ["Aprendizajes esperados", "Reconoce la existencia de las variables y distingue sus usos como número general, como incógnita y como relación funcional."]
+    ],
+    "screens": [{
+            "title": "Introducción",
+            "icon": "info",
+            "steps": true,
+            "blocks": [{
+                    "width": "100%",
+                    "content": [
+                        "En ",
+                        {
+                            "term": "álgebra",
+                            "content": ["Rama de las matemáticas que estudia la cantidad en general y se vale de números, símbolos y letras para resolver operaciones aritméticas."]
+                        },
+                        " es posible asignar valores numéricos a las letras (",
+                        {
+                            "term": "literales",
+                            "content": ["Es un concepto o magnitud que se expresa por medio letras."]
+                        },
+                        "), ya sea para representar una cantidad o para saber qué valor tiene un dato desconocido (",
+                        {
+                            "term": "incógnita",
+                            "content": ["Valor desconocido que es preciso determinar en una ecuación."]
+                        },
+                        "). A una o más literales relacionadas entre sí por medio de operaciones aritméticas se les llama ",
+                        {
+                            "term": "expresión algebraica",
+                            "content": ["Conjunto de números y literales que están relacionados entre sí por medio de los signos de operaciones aritméticas."]
+                        },
+                        ".",
+                        {
+                            "text": "En la siguiente representación, para encontrar el valor de la botella de metal se requiere conocer el valor de la botella de plástico."
+                        },
+                        {
+                            "group": 1,
+                            "class": "flex justify-center items-center",
+                            "content": [{
+                                    "img": "metal.png"
+                                },
+                                {
+                                    "math": " = 1 + 3 \\times",
+                                    "size": "2rem"
+                                },
+                                {
+                                    "img": "plastico.png"
+                                }
+                            ]
+                        }
+
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [{
+                            "group": 1,
+                            "class": "flex justify-center items-center",
+                            "content": [{
+                                    "term": {
+                                        "img": "metal.png"
+                                    },
+                                    "content": ["Si el valor de la botella de plástico es igual a 6, entonces el valor de la botella de metal se obtiene de la siguiente manera ", {
+                                        "math": "1 + 3 × 6 = 19.",
+                                        "dark": 1
+                                    }]
+                                },
+                                {
+                                    "math": " = 1 + 3 \\times",
+                                    "size": "2rem"
+                                },
+                                {
+                                    "img": "plastico.png"
+                                }
+                            ]
+                        },
+                        {
+                            "br": 1
+                        },
+                        "Esta representación puede emplearse como una expresión algebraica remplazando la botella de plástico por la literal ",
+                        {
+                            "math": "b"
+                        },
+                        " y la botella de metal por la literal ",
+                        {
+                            "math": "m"
+                        },
+                        ", de esta manera obtenemos la siguiente expresión.",
+                        {
+                            "math": " m = 1 + 3 \\times b",
+                            "size": "2rem",
+                            "block": 1
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        "En este caso, las literales ",
+                        {
+                            "math": "b"
+                        },
+                        " y ",
+                        {
+                            "math": "m"
+                        },
+                        ", al no tener un valor fijo, son consideradas como ",
+                        {
+                            "term": "variables",
+                            "content": ["Símbolo o letra con el que se representa una cantidad no especificada y que puede cambiar."]
+                        },
+                        ". Además, éstas tienen una ",
+                        {
+                            "term": "relación funcional",
+                            "content": ["Expresiones algebraicas que se utilizan para identificar la dependencia entre dos magnitudes o variables."]
+                        },
+                        " pues el valor de una (b) modifica el valor de la otra (m), es decir, el valor de una depende del valor de la otra, de lo que se deriva la clasificación de variables en dos tipos ",
+                        {
+                            "term": "dependientes",
+                            "content": ["Es aquella cuyo valor está en función del valor que adquiere la otra variable, llamada variable independiente."]
+                        },
+                        " e ",
+                        {
+                            "term": "independientes",
+                            "content": ["Es aquella cuyo valor no está en función de otra variable y que a su vez determina el valor de la otra variable, llamada variable dependiente."]
+                        },
+                        "."
+
+                    ]
+                }
+            ]
+        },
+
+
+        {
+            "title": "Finalizar",
+            "icon": "flag",
+            "end": true,
+            "blocks": [{
+                "content": []
+            }]
+        }
+
+    ]
+}
