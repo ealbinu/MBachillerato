@@ -1,0 +1,155 @@
+{
+    "id": "LEOEIP3",
+    "programa": "DGETI",
+    "materia": "LECTURAEOEI",
+    "asignatura": "Lógica I",
+    "title": "La argumentación",
+    "bgimgs": 4,
+    "ficha": [
+        [ "Aprendizaje esperado", "Emite y fundamenta por escrito una opinión original."],
+        ["Área de formación integral","Formación para el desarrollo sostenible."]
+    ],
+    "screens": [
+        {
+            "title": "Categorías de palabras",
+            "icon": "info",
+            "steps": true,
+            "class": "flex flex-col justify-center",
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {"class":"h1", "text":"La reseña crítica"},
+
+                        {
+                            "grid":1,
+                            "columns": "2fr 1fr",
+                            "content":[
+                                {"textAnimation":"La argumentación es un ejercicio consistente en aportar razones para defender la opinión que se tiene sobre un hecho, asunto u obra y lograr que sea adoptada por otras personas. Los argumentos le dan credibilidad a un discurso y permiten entender por qué una persona piensa de tal o cual manera sobre un tema en particular. Cuando dichas opiniones se presentan por escrito, de manera ordenada y coherente, se redacta un texto argumentativo, entre éstos se encuentra la <strong>reseña crítica</strong>."},
+                                {"img":"img/im1.png", "class": "rounded"}
+                            ]
+                        }
+                    ],
+                    "buttonNextStep": "Siguiente"
+                },
+                {
+                    "width": "100%",
+                    "content":[
+                        {"class":"h3", "text": "¿Qué es la reseña crítica y cuál es su estructura?"},
+                        {"br":1},
+                        {
+                            "grid": 1,
+                            "columns": "1fr 1fr",
+                            "content": [
+                                "La reseña crítica es un texto expositivo en tanto que presenta el contenido de una obra de manera detallada, destacando sus ideas principales así como sus aspectos interesantes; también es un texto argumentativo porque, además, el autor hace una valoración crítica sobre dicha obra. Las opiniones y juicios de valor que hace el autor de la reseña corresponden a su posición personal y deben estar fundamentados.",
+                                {
+                                    "group": 1,
+                                    "content":[
+                                        {"img":"img/im2.png", "class": "rounded"},
+                                        {"br":2},
+                                        "Presenta un sistema de argumentación conformado por elementos válidos, expresados con claridad y concisión, construido sobre las ideas y temáticas que el autor ha identificado, comprendido y analizado del texto fuente, en las que basa su opinión."
+                                    ]
+                                }
+                            ]
+                        }
+
+                    ],
+                    "buttonNextStep": "Siguiente"
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        "Escribirla implica, principalmente, haber comprendido muy bien la obra a reseñar para resumir lo esencial de su contenido, además de aclarar que la evaluación de la obra corresponde a la apreciación del escritor, dando al lector libertad de formarse su propia opinión.",
+                        {"br":2},
+                        "La habilidad de analizar una obra y reseñarla es una tarea compleja, requiere poner en práctica los conocimientos que se tienen en cuanto a planeación, comprensión y revisión de textos, además de la habilidad de poner por escrito las ideas de acuerdo a una estructura determinada, en este caso la del texto argumentativo.",
+                        {"br":2},
+                        {
+                            "grid":1,
+                            "columns": "1fr 1fr 1fr 1fr",
+                            "columnsResponsive": "1fr 1fr",
+                            "content": [
+                                {"img":"img/im3-1.png", "class":"animate__animated animate__fadeIn"},
+                                {"img":"img/im3-2.png", "class":"animate__animated animate__fadeIn animate__delay-1s"},
+                                {"img":"img/im3-3.png", "class":"animate__animated animate__fadeIn animate__delay-2s"},
+                                {"img":"img/im3-4.png", "class":"animate__animated animate__fadeIn animate__delay-3s"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Elementos de la reseña crítica",
+            "icon": "account_tree",
+            "steps": false,
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {"class":"h1", "text":"Elementos de la reseña crítica"},
+                        "La reseña crítica es un texto breve, pero su extensión es variable, de acuerdo al estilo del lector, del público destinatario y el medio de publicación. Puede organizarse de la siguiente manera.",
+                        {"br":2},
+                        {
+                            "diagram": 1,
+                            "mode": "horizontal",
+                            "expansion":1,
+                            "classItem": "max-w-[12rem] text-xs",
+                            "connectionsOptions": {
+                                "startSocket": "right",
+                                "endSocket": "left",
+                                "color": "rgba(200, 200, 200, 0.3)",
+                                "endPlug": "behind",
+                                "size": 3,
+                                "dash": {"animation": true}
+                            },
+                            "blocks": [
+                                [
+                                    {"id":"a1", "child":["b1"], "content":["Título 1"]},
+                                    {"id":"a2", "child":["b2"], "content":["Datos bibliográficos"]},
+                                    {"id":"a3", "child":["b3", "b4", "b5"], "content":["Cuerpo de la reseña."]},
+                                    {"id":"a4", "child":["b6"], "class":"bg-info", "content":["Valoración crítica personal (opinión original)"]},
+                                    {"id":"a5", "child":["b7"], "content":["Datos del reseñista"]}
+                                    
+                                ],
+                                [
+                                    {"id":"b1", "content":["De la reseña crítica."]},
+                                    {"id":"b2", "content":["Título de la obra, nombre del autor, fechas de nacimiento y fallecimiento del autor, fecha de publicación, nombre de la editorial."]},
+                                    {"id":"b3", "child":["c1"], "content":["Resúmen"]},
+                                    {"id":"b4", "child":["c2"], "content":["Descripción"]},
+                                    {"id":"b5", "child":["c3"], "class":"bg-warning", "content":["Evaluación (opinión fundamentada)"]},
+                                    {"id":"b6", "class":"bg-info", "content":["Aspectos positivos y / o negativos destacables referentes al contenido de la obra."]},
+                                    {"id":"b7", "content":["Nombre, puesto, ocupación, lugar de nacimiento, etcétera."]}
+                                ],
+                                [
+                                    {"id":"c1", "content":["Exposición breve y precisa del contenido de la obra."]},
+                                    {"id":"c2", "content":[
+                                        "Género y subgénero de la disciplina artística a la que pertenece.",
+                                        "Número de capítulos, ilustraciones, glosario, elementos adicionales.",
+                                        "Contenido y temática de la obra.",
+                                        "Público al que está dirigida la obra.",
+                                        "Trayectoria"
+                                    ]},
+                                    {"id":"c3", "class":"bg-warning" ,"content":[
+                                        "Equilibrio entre las partes y elementos de la obra, el discurso y el sentido del texto.",
+                                        "Aportes de la obra en el contexto y área específica en que se inscribe (literaria, científica, artística, etcétera).",
+                                        "Conclusión sobre el contenido y los objetivos de la obra."
+                                    ]}
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Finalizar",
+            "icon": "flag",
+            "end": true,
+            "blocks": [
+                {
+                    "content": []
+                }
+            ]
+        }
+    ]
+}

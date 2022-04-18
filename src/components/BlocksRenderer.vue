@@ -64,6 +64,9 @@ BlockDragItem(v-else-if="item.drag" :data="item" :blockid="blockid")
 BlockLine(v-else-if="item.line" :data="item")
 //-Repeater
 BlockRepeater(v-else-if="item.repeater" :data="item" :blockid="blockid")
+//-Diagram
+BlockDiagram(v-else-if="item.diagram" :data="item" :blockid="blockid")
+
 
 </template>
 <script setup>
@@ -93,6 +96,7 @@ import BlockCard from './blocks/blockCard.vue';
 import BlockDragItem from './blocks/blockDragItem.vue';
 import BlockLine from './blocks/blockLine.vue';
 import BlockRepeater from './blocks/blockRepeater.vue';
+import BlockDiagram from './blocks/blockDiagram.vue';
 
 const props = defineProps({
     item: [Object, String],

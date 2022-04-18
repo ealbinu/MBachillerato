@@ -12,7 +12,9 @@ const Status = inject('statusFile')
 watch(
     ()=>Status.value,
     ()=>{
-        redraw()
+        setTimeout(()=>{
+            redraw()
+        }, 250)
     },
     {deep: true}
 )
@@ -20,31 +22,50 @@ watch(
 const lines = ref([])
 
 const redraw = () => {
-    setTimeout(()=>{
+    
     for(var i in lines.value){
         lines.value[i].position()
     }
-    }, 250)
+    
 }
 
 onMounted(()=>{
     LeaderLine.positionByWindowResize = false
-    document.querySelector('.drawer-content').addEventListener('scroll', function() {
+    document.querySelector('.drawer-content').addEventListener('scroll', AnimEvent.add(function() {
         redraw()
-    })
-    window.addEventListener('resize', function() {
+    }))
+    window.addEventListener('resize', AnimEvent.add(function() {
         redraw()
-    })
+    }))
+    drawit()
+})
+
+const drawit = () => {
     for(var i  in props.data.connections){
         const conn = props.data.connections[i]
-        lines.value[i] = new LeaderLine(
-            document.querySelector(conn[0]),
-            document.querySelector(conn[1]),
-            props.data.options
-        )
+        if(document.querySelector(conn[0]) && document.querySelector(conn[1]) ) {
+            lines.value[i] = new LeaderLine(
+                document.querySelector(conn[0]),
+                document.querySelector(conn[1]),
+                props.data.options
+            )
+        }
     }
-    
+}
 
+const redrawit = () => {
+    for(var i in lines.value){
+        lines.value[i].remove()
+    }
+    lines.value = []
+    setTimeout(()=>{
+        drawit()
+        redraw()
+    }, 100)
+}
+
+defineExpose({
+    redrawit
 })
 
 </script>

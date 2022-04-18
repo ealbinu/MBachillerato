@@ -734,7 +734,7 @@
 
                             ],
                             "options": {
-                                "startSocket": "correctId",
+                                "startSocket": "right",
                                 "endSocket": "left",
                                 "path":"grid",
                                 "color": "rgba(200, 200, 200, 0.3)",

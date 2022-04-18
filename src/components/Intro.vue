@@ -10,7 +10,7 @@ input(type="checkbox" id="my-modal" class="modal-toggle" v-model="dialog")
             .hero-content.text-center.relative.z-10
                 .max-w-md.text-center
                     div.text-center: img(:src="'odas/assets/icons/'+Activity.programa+'/'+Activity.materia+'.png'").w-28.mx-auto
-                    h3.text-lg {{Activity.conf.programa == 'DGETI' ? 'Bachillerato Tecnológico' : 'Bachillerato General'}}
+                    h3.text-lg {{Activity.programa == 'DGETI' ? 'Bachillerato Tecnológico' : 'Bachillerato General'}}
                     h1.text-4xl.font-bold.mt-2 {{Activity.title}}
                     h2.text-xl {{Activity.conf.materia}}
                     .mt-10: button.btn(@click="close") Comenzar

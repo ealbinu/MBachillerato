@@ -230,11 +230,9 @@
                                 ["#a1", "#b2"],
                                 ["#b1", "#c1"],
                                 ["#b2", "#c2"]
-                                
-
                             ],
                             "options": {
-                                "startSocket": "correctId",
+                                "startSocket": "right",
                                 "endSocket": "left",
                                 "path":"grid",
                                 "color": "rgba(200, 200, 200, 0.3)",
