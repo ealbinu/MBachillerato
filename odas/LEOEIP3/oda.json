@@ -449,21 +449,23 @@
                                     "drag": 1,
                                     "content": [ {"img":"img/yellow.svg" ,"class":"max-w-[2rem]"} ],
                                     "bounds": "#screen-3",
-                                    "class": "max-w-[4rem]",
+                                    "class": "max-w-[4rem] mx-auto",
                                     "dropzone": ".drop",
                                     "correctId": "#amarillo",
-                                    "hover": "underline decoration-yellow-500",
-                                    "dropzoneClass": "underline decoration-yellow-500 decoration-4"
+                                    "hover": "bg-yellow-100",
+                                    "dropzoneClass": "underline decoration-yellow-500 decoration-4",
+                                    "dropzoneItems": 1
                                 },
                                 {
                                     "drag": 1,
                                     "content": [ {"img":"img/green.svg" ,"class":"max-w-[2rem]"} ],
                                     "bounds": "#screen-3",
-                                    "class": "max-w-[4rem]",
+                                    "class": "max-w-[4rem] mx-auto",
                                     "dropzone": ".drop",
                                     "correctId": "#verde",
-                                    "hover": "underline decoration-green-500",
-                                    "dropzoneClass": "underline decoration-green-500 decoration-4"
+                                    "hover": "bg-green-100",
+                                    "dropzoneClass": "underline decoration-green-500 decoration-4",
+                                    "dropzoneItems": 1
                                 }
                             ]
                         },
@@ -481,7 +483,7 @@
                                 {"class":"drop text-sm mt-1", "text":"Perteneciente al género narrativo, la obra se nutre de subgéneros como la epopeya, el mito y la leyenda. Narra las historias de algunos de los mitos y las leyendas de la antigua Grecia como una sola narración, dividida en 19 capítulos y con ilustraciones de Alan Langford. Incluye un glosario de los dioses de la antigua Grecia y un mapa con la ruta de los argonautas. El libro se completa con poesías introductorias extraídas de obras clásicas. Al recrear algunos de los mitos griegos más relevantes, los relatos abordan temas como el honor, el sacrificio, la lucha, la vida y la muerte, y la venganza, entre otros. Ambientada en la antigua Grecia y el Olimpo, los personajes son dioses y héroes, pero sobresale Heracles. Como autor de literatura infantil, estos relatos son recomendados para niños en su primera adolescencia y jóvenes, sin embargo, será plenamente disfrutable por toda persona interesada en la mitología griega.  Lancelyn es autor de otros libros inspirados en mitologías, entre los que sobresale La historia de Troya. Cabe mencionar que perteneció al exclusivo círculo literario de los <em>Inklings</em>, formado en torno a C. S. Lewis y J. R. R. Tolkien."},
                                 {"class":"drop text-sm mt-1", "text":"El autor ofrece un entramado narrativo que recoge y relaciona los mitos griegos más conocidos, relacionando cuidadosamente un mito con otro e intercalando citas, como epígrafe, que ligan cada historia con la tradición literaria occidental. La materia prima es todo un cosmos de un vigor inigualable, con el mérito de ser narrado con una combinación de frescura y respeto a los originales sinceramente admirable. En definitiva, los lectores descubrirán un mundo rico en imágenes y enseñanzas, que además les ayudará a comprender mejor la civilización de la que forman parte."},
                                 {"class":"drop text-sm mt-1", "text":"En un momento en el que la pérdida de referentes para la juventud es una queja constante, rescatar los mitos clásicos en los que se cimentó la civilización de la manera en la que lo hace el autor es una excelente oportunidad para dar vigencia a antiguos valores desplazados hoy en día por el espejismo de la modernidad y la tecnología."},
-                                {"class":"drop text-xs text-right mt-1 py-4", "text":"Santiago Marcos de Luna. Estudiante de bachillerato."}
+                                {"class":"drop text-xs text-right mt-1 py-4", "id":"verde" ,"text":"Santiago Marcos de Luna. Estudiante de bachillerato."}
                             ]
                         }
                     ]
