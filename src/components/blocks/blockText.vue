@@ -2,6 +2,7 @@
 .blockText(
     :style="cssVars"
     :class="[ data.class]"
+    :id="data.id"
     v-html="text"
     ).animate__animated
 </template>

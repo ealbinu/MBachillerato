@@ -3,6 +3,7 @@
     data-splitting
     :style="cssVars"
     :class="[ data.class]"
+    :id="data.id"
     v-html="text"
     ref="textsplit"
     )

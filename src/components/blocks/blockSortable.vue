@@ -4,7 +4,7 @@
         template(#item="{element, index}")
            div.sortable-item(:data="index+1" :class="[data.numbers?'shownumbers':'', data.classItem]")
                 .gestureIcon: Icon swipe_vertical
-                BlocksRenderer(:item="element" :blockid=" blockid+'-sortableitem' ")
+                BlocksRenderer(:item="element" :blockid=" blockid+'-sortableitem-'+index" :key="element")
 
 SolveModule(@solve="solve")
 </template>
@@ -37,6 +37,9 @@ const props = defineProps({
 
 const itemsModel = ref(_.shuffle(props.data.items))
 
+const dragging = ref(false)
+
+
 
 const builder = () => {
     if(Status.value.answers[props.blockid]){
@@ -55,7 +58,12 @@ const moved = () => {
 }
 const storeAnswer = () => {
     Status.value.answers[props.blockid] =  itemsModel.value
-
+    console.log('dragEnd')
+    
+    dragging.value = true
+    setTimeout(()=>{
+        dragging.value = false
+    }, 100)
 }
 
 

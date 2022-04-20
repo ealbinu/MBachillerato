@@ -1,6 +1,6 @@
 <template lang="pug">
 .card.bg-base-100(:class="[data.class]" :id="data.id").shadow-xl
-    .card-body.text-gray-700.px-2.py-4(class="min-h-[3rem]")
+    .card-body.text-gray-700(:class="['min-h-[3rem]' , data.classBody||'px-2 py-4']")
         template(v-for="(i, index) in data.content")
             BlocksRenderer(:item="i" :blockid="blockid+'-card-'+index")
         template(v-if="data.clickable")

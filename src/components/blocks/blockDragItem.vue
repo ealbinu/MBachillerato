@@ -31,6 +31,7 @@ const hovering = ref(null)
 
 const init = () => {
     if(Status.value.finalize){
+        finalize()
         return false
     }
     if(Blocked){
@@ -53,22 +54,31 @@ const init = () => {
 }
 
 const onDrag = (e,drag) => {
+    if(!startParent.value.isEqualNode(drag.target.parentElement)){
+        drag.endDrag()
+    }
     for(var i =0; i<dropzones.value.length; i++){
         var drop = dropzones.value[i]
         if(drag.hitTest(drop, '40%')){
-            drop.classList.add(props.data.hover)
+            drop.classList.add(...props.data.hover.split(' '))
             hovering.value = drop
             return false
         } else {
-            drop.classList.remove(props.data.hover)
+            drop.classList.remove(...props.data.hover.split(' '))
             hovering.value = null
         }
     }
 }
 const onClick = (e,drag) => {
+    if(startParent.value.isEqualNode(drag.target.parentElement)){
+        return false
+    }
     Audios.scancel.play()
+    
+    removeItemFromDropzone(drag.target.parentElement)
     startParent.value.append(drag.target)
     TweenLite.to(drag.target, 0.2, { x: 0, y: 0 })
+    
     startDragResult()
     storeInStatusFile()
 }
@@ -89,11 +99,21 @@ const onDragEnd = (e,drag) => {
     for(var i =0; i<dropzones.value.length; i++){
         if(hovering.value){
             TweenLite.to(drag.target, 0, { x: 0, y: 0 })
-            hovering.value.classList.remove(props.data.hover)
+            hovering.value.classList.remove(...props.data.hover.split(' '))
+            
+            if(!availableItemsInDropzone(hovering.value)){                
+                return false
+            }
+            
+            hovering.value.classList.add(...props.data.dropzoneClass.split(' '))
             hovering.value.append(drag.target)
 
+            itemsInDropzone(hovering.value)
+            //hovering.value.getAttribute('data-dropzoneitems')
+            //hovering.value.setAttribute('data-dropzoneitems', )
+            
+            
             getResult()
-
             hovering.value = null
             Audios.sBlockDrag.play()
 
@@ -103,6 +123,34 @@ const onDragEnd = (e,drag) => {
         }
     }
     storeInStatusFile()
+}
+
+const itemsInDropzone = (dropzone) => {
+    
+    if(!dropzone.hasAttribute('data-dropzoneitems')){
+        dropzone.setAttribute('data-dropzoneitems', 1)
+    } else {
+        var items = parseInt(dropzone.getAttribute('data-dropzoneitems'))
+        dropzone.setAttribute('data-dropzoneitems', items+1)
+    }
+}
+const availableItemsInDropzone = (dropzone) => {
+    var candrop = true
+    if(dropzone.hasAttribute('data-dropzoneitems') && props.data.dropzoneItems){
+        var items = parseInt(dropzone.getAttribute('data-dropzoneitems'))
+        console.log('hasAttr', props.data.dropzoneItems, items)
+            if(props.data.dropzoneItems <= items){
+                // cannot drop
+                candrop = false
+            }
+    }
+    return candrop
+}
+
+const removeItemFromDropzone = (dropzone) => {
+    var items = parseInt(dropzone.getAttribute('data-dropzoneitems'))
+    dropzone.setAttribute('data-dropzoneitems', items-1)
+    dropzone.classList.remove(...props.data.dropzoneClass.split(' '))
 }
 
 
@@ -127,6 +175,8 @@ const loadAnswers = () => {
         //Loading
         const parent = Status.value.answers[props.blockid]
         document.querySelector('#'+parent).append(block.value)
+        block.value.parentElement.classList.add(...props.data.dropzoneClass.split(' '))
+        itemsInDropzone(block.value.parentElement)
         getResult()
         
     } else{

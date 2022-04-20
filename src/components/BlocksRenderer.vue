@@ -3,69 +3,71 @@
 
 
 //-Simple text
-span(v-if="typeof item === 'string' " v-html="item")
+span(v-if="typeof itemdata === 'string' " v-html="itemdata")
 //-Simple variable
-span(v-else-if="item.variable " v-html="Status.answers[item.variable]")
+span(v-else-if="itemdata.variable " v-html="Status.answers[itemdata.variable]")
 //-Result variable
-span(v-else-if="item.variableR " v-html="Status.result[item.variableR]")
+span(v-else-if="itemdata.variableR " v-html="Status.result[itemdata.variableR]")
 //-Break
-template(v-else-if="item.br"): br(v-for="(i, index) in item.br")
+template(v-else-if="itemdata.br"): br(v-for="(i, index) in itemdata.br")
 //-Hr
-hr(v-else-if="item.hr").my-2
+hr(v-else-if="itemdata.hr").my-2
 //-Span Texts
-span(v-else-if="item.span" v-html="item.span" :class="[item.class]" )
+span(v-else-if="itemdata.span" v-html="itemdata.span" :class="[itemdata.class]" )
 //-Direct HTML
-div(v-else-if="item.html" v-html="item.html" :class="item.class" :id="item.id")
+div(v-else-if="itemdata.html" v-html="itemdata.html" :class="itemdata.class" :id="itemdata.id")
 //-Icon
-BlockIcon(v-else-if="item.icon" :data="item")
+BlockIcon(v-else-if="itemdata.icon" :data="itemdata")
 //-Text
-BlockText(v-else-if="item.text" :data="item" :key="blockid")
+BlockText(v-else-if="itemdata.text" :data="itemdata" :key="blockid")
 //-Text
-BlockTextAnimation(v-else-if="item.textAnimation" :data="item" :key="blockid")
+BlockTextAnimation(v-else-if="itemdata.textAnimation" :data="itemdata" :key="blockid")
 //-Instructions
-BlockInstructions(v-else-if="item.instruction" :data="item" :key="blockid")
+BlockInstructions(v-else-if="itemdata.instruction" :data="itemdata" :key="blockid")
 //-Instructions-v2
-BlockInst(v-else-if="item.inst" :data="item" :key="blockid")
+BlockInst(v-else-if="itemdata.inst" :data="itemdata" :key="blockid")
 //-Term
-BlockTerm(v-else-if="item.term" :data="item")
+BlockTerm(v-else-if="itemdata.term" :data="itemdata")
 //-Image
-BlockImg(v-else-if="item.img" :data="item")
+BlockImg(v-else-if="itemdata.img" :data="itemdata")
 //-Math jax
-BlockMath(v-else-if="item.math" :data="item")
+BlockMath(v-else-if="itemdata.math" :data="itemdata")
 //- Drag & drop
-BlockDragDrop(v-else-if="item.dragdrop" :data="item" :blockid="blockid")
+BlockDragDrop(v-else-if="itemdata.dragdrop" :data="itemdata" :blockid="blockid")
 //- Sortable
-BlockSortable(v-else-if="item.sortable" :data="item" :blockid="blockid")
+BlockSortable(v-else-if="itemdata.sortable" :data="itemdata" :blockid="blockid")
 //- Select
-BlockSelect(v-else-if="item.select" :data="item" :blockid="blockid")
+BlockSelect(v-else-if="itemdata.select" :data="itemdata" :blockid="blockid")
 //-Chart
-BlockChart(v-else-if="item.chart" :data="item" :blockid="blockid")
+BlockChart(v-else-if="itemdata.chart" :data="itemdata" :blockid="blockid")
 //-Dialog
-BlockDialog(v-else-if="item.dialog" :data="item" :blockid="blockid")
+BlockDialog(v-else-if="itemdata.dialog" :data="itemdata" :blockid="blockid")
 //-Plot
-BlockPlot(v-else-if="item.plot" :data="item" :blockid="blockid")
+BlockPlot(v-else-if="itemdata.plot" :data="itemdata" :blockid="blockid")
 //-Grid
-BlockGrid(v-else-if="item.grid" :data="item" :blockid="blockid")
+BlockGrid(v-else-if="itemdata.grid" :data="itemdata" :blockid="blockid")
 //-Group
-BlockGroup(v-else-if="item.group" :data="item" :blockid="blockid")
+BlockGroup(v-else-if="itemdata.group" :data="itemdata" :blockid="blockid")
 //-Input
-BlockInput(v-else-if="item.input" :data="item" :blockid="blockid")
+BlockInput(v-else-if="itemdata.input" :data="itemdata" :blockid="blockid")
 //-Colorize
-BlockColorize(v-else-if="item.colorize" :data="item" :blockid="blockid")
+BlockColorize(v-else-if="itemdata.colorize" :data="itemdata" :blockid="blockid")
 //-Css
-BlockCss(v-else-if="item.css" :data="item" :blockid="blockid")
+BlockCss(v-else-if="itemdata.css" :data="itemdata" :blockid="blockid")
 //-Chatbot
-BlockChatbot(v-else-if="item.chatbot" :data="item" :blockid="blockid")
+BlockChatbot(v-else-if="itemdata.chatbot" :data="itemdata" :blockid="blockid")
 //-Card
-BlockCard(v-else-if="item.card" :data="item" :blockid="blockid")
-//-Drag Single Item
-BlockDragItem(v-else-if="item.drag" :data="item" :blockid="blockid")
+BlockCard(v-else-if="itemdata.card" :data="itemdata" :blockid="blockid")
+//-Drag Single itemdata
+BlockDragItem(v-else-if="itemdata.drag" :data="itemdata" :blockid="blockid")
 //-Line
-BlockLine(v-else-if="item.line" :data="item")
+BlockLine(v-else-if="itemdata.line" :data="itemdata")
 //-Repeater
-BlockRepeater(v-else-if="item.repeater" :data="item" :blockid="blockid")
+BlockRepeater(v-else-if="itemdata.repeater" :data="itemdata" :blockid="blockid")
 //-Diagram
-BlockDiagram(v-else-if="item.diagram" :data="item" :blockid="blockid")
+BlockDiagram(v-else-if="itemdata.diagram" :data="itemdata" :blockid="blockid")
+//-Editor
+BlockEditor(v-else-if="itemdata.editor" :data="itemdata" :blockid="blockid")
 
 
 </template>
@@ -97,11 +99,27 @@ import BlockDragItem from './blocks/blockDragItem.vue';
 import BlockLine from './blocks/blockLine.vue';
 import BlockRepeater from './blocks/blockRepeater.vue';
 import BlockDiagram from './blocks/blockDiagram.vue';
+import BlockEditor from './blocks/blockEditor.vue';
+
 
 const props = defineProps({
     item: [Object, String],
     blockid: String
 })
+const Activity = inject('activityFile')
 const Status = inject('statusFile')
+
+const itemdata = ref(props.item)
+
+
+//Add symbol properties
+if(itemdata.value.symbol){
+    let symid = itemdata.value.symbol
+    let sym = Activity.symbols[symid]
+    for(var i in sym){
+        itemdata.value[i] = sym[i]
+    }
+}
+
 
 </script>
