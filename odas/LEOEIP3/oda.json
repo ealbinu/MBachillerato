@@ -408,7 +408,7 @@
             ]
         },
         {
-            "title": "Lectura",
+            "title": "Mitología para las nuevas generaciones",
             "icon": "article",
             "steps": true,
             "blocks": [
@@ -485,6 +485,109 @@
                                 {"class":"drop text-sm mt-1", "text":"En un momento en el que la pérdida de referentes para la juventud es una queja constante, rescatar los mitos clásicos en los que se cimentó la civilización de la manera en la que lo hace el autor es una excelente oportunidad para dar vigencia a antiguos valores desplazados hoy en día por el espejismo de la modernidad y la tecnología."},
                                 {"class":"drop text-xs text-right mt-1 py-4", "id":"verde" ,"text":"Santiago Marcos de Luna. Estudiante de bachillerato."}
                             ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {"inst":"Relaciona los elementos de la reseña con el párrafo que correspondan.", "iconinst":"swipe_vertical"},
+                        {"br":1},
+                        {
+                            "grid":1,
+                            "columns": "2fr 1fr",
+                            "columnsResponsive": "2fr 1fr",
+                            "content": [
+                                {"text":"Párrafos", "class":"text-center text-gray-400"},
+                                {"text":"Elementos de la reseña", "class":"text-center text-gray-400"}
+                            ]
+                        },
+                        {
+                            "grid":1,
+                            "class": "items-stretch",
+                            "columns": "2fr 1fr",
+                            "columnsResponsive": "2fr 1fr",
+                            "content": [
+                                {
+                                    "group": 1,
+                                    "class":"p-2 bg-base-100/25 rounded-md",
+                                    "content": [
+                                        {"class": "h6 text-center", "text": "Mitología para las nuevas generaciones"},
+                                        {"card":1, "class":"rounded-sm mt-1",  "classBody":"p-1", "content":[{"text":"1", "class":"badge badge-neutral-content badge-xs"},{"class":"text-xs", "text": "Relatos de los héroes griegos es un libro del escritor británico Roger Lancelyn Green (1918–1987) publicado originalmente en 1958 y reeditado por la prestigiosa editorial española Siruela en 2007."}]},
+                                        {"card":1, "class":"rounded-sm mt-1",  "classBody":"p-1", "content":[{"text":"2", "class":"badge badge-neutral-content badge-xs"},{"class":"text-xs", "text":"Partiendo de los mitos de la creación del universo hasta la muerte de Heracles, se relatan los grandes heroicos de la mitología griega, recreando los sucesos referentes a Perseo, Teseo, los argonautas y Heracles, a los que se suman otros episodios más breves, como los de Orfeo y Eurídice, el rey Midas, las desdichas de Edipo y las incursiones contra Tebas o algunas \"metamorfosis\", como las de Narciso o Jacinto."}]},
+                                        {"card":1, "class":"rounded-sm mt-1",  "classBody":"p-1", "content":[{"text":"3", "class":"badge badge-neutral-content badge-xs"},{"class":"text-xs", "text":"Perteneciente al género narrativo, la obra se nutre de subgéneros como la epopeya, el mito y la leyenda. Narra las historias de algunos de los mitos y las leyendas de la antigua Grecia como una sola narración, dividida en 19 capítulos y con ilustraciones de Alan Langford. Incluye un glosario de los dioses de la antigua Grecia y un mapa con la ruta de los argonautas. El libro se completa con poesías introductorias extraídas de obras clásicas. Al recrear algunos de los mitos griegos más relevantes, los relatos abordan temas como el honor, el sacrificio, la lucha, la vida y la muerte, y la venganza, entre otros. Ambientada en la antigua Grecia y el Olimpo, los personajes son dioses y héroes, pero sobresale Heracles. Como autor de literatura infantil, estos relatos son recomendados para niños en su primera adolescencia y jóvenes, sin embargo, será plenamente disfrutable por toda persona interesada en la mitología griega.  Lancelyn es autor de otros libros inspirados en mitologías, entre los que sobresale La historia de Troya. Cabe mencionar que perteneció al exclusivo círculo literario de los <em>Inklings</em>, formado en torno a C. S. Lewis y J. R. R. Tolkien."}]},
+                                        {"card":1, "class":"rounded-sm mt-1",  "classBody":"p-1", "content":[{"text":"4", "class":"badge badge-neutral-content badge-xs"},{"class":"text-xs", "text":"El autor ofrece un entramado narrativo que recoge y relaciona los mitos griegos más conocidos, relacionando cuidadosamente un mito con otro e intercalando citas, como epígrafe, que ligan cada historia con la tradición literaria occidental. La materia prima es todo un cosmos de un vigor inigualable, con el mérito de ser narrado con una combinación de frescura y respeto a los originales sinceramente admirable. En definitiva, los lectores descubrirán un mundo rico en imágenes y enseñanzas, que además les ayudará a comprender mejor la civilización de la que forman parte."}]},
+                                        {"card":1, "class":"rounded-sm mt-1",  "classBody":"p-1", "content":[{"text":"5", "class":"badge badge-neutral-content badge-xs"},{"class":"text-xs", "text":"En un momento en el que la pérdida de referentes para la juventud es una queja constante, rescatar los mitos clásicos en los que se cimentó la civilización de la manera en la que lo hace el autor es una excelente oportunidad para dar vigencia a antiguos valores desplazados hoy en día por el espejismo de la modernidad y la tecnología."}]},
+                                        {"class":"text-xs text-right mt-2","text":"Santiago Marcos de Luna. Estudiante de bachillerato."}
+                                    ]
+                                },
+                                {
+                                    "sortable": true,
+                                    "class": "h-full",
+                                    "numbers": true,
+                                    "items": [
+                                        "Datos bibliográficos.",
+                                        "Resumen.",
+                                        "Descripción.",
+                                        "Evaluación (opinión fundamentada).",
+                                        "Valoración crítica personal (opinión original)."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Escribe una opinión",
+            "icon": "article",
+            "steps": false,
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {"inst":"Lee atentamente los siguientes textos.", "iconinst":"preview"},
+                        {"br":1},
+                        {
+                            "grid":1,
+                            "columns":"1fr 1fr",
+                            "class": "items-stretch",
+                            "content":[
+                                {
+                                    "card":1,
+                                    "class":"h-full",
+                                    "content": [
+                                        {"class":"h5 text-bold", "text":"Texto A."},
+                                        "En términos ideales, el medio rural debería brindar a sus habitantes bienestar, traducido en accesibles servicios de salud, educación, empleos con salarios competitivos y condiciones de trabajo dignas, asegurando el respeto a la visión y tradiciones de sus habitantes, sin embargo, esto no está totalmente cubierto, ocasionando emigración a las ciudades en busca de mejores condiciones de vida, disminuyendo la población rural y dejando tierras y recursos naturales a disposición de intereses ajenos para su explotación por parte de empresas globales.",
+                                        {"class":"text-xs text-right mt-auto", "text":"Fuente: Hernández, E. & Santos, N. (2019). <em>Ciencia, Tecnología, Sociedad y Valores</em>. Guadalajara, México: Montenegro Editores."}
+                                    ]
+                                },
+                                {
+                                    "card":1,
+                                    "content": [
+                                        {"class":"h5 text-bold", "text":"Texto B."},
+                                        "Actualmente se lleva a cabo en el mundo una evolución del ámbito rural que significa nuevas oportunidades para millones de personas. La agricultura está pasando de ser una economía de subsistencia a una actividad que genera ingresos a través de la modernización, lo que implica un gran desarrollo de los medios de vida y de las oportunidades en el sector. Al mejorar el acceso a los conocimientos y las herramientas la productividad agrícola se ha incrementado, lo que implica más recursos para ámbitos rezagados como la educación y la salud, entre otros. De esta manera la población rural contribuye al crecimiento económico, la lucha contra el hambre y la pobreza.",
+                                        {"class":"text-xs text-right", "text":"Fuente: Napolitano, G. (2020). 5 maneras en que podemos apoyar a las jóvenes para que lideren la transformación rural. Organización de las Naciones Unidas para la Alimentación y la Cultura. Recuperado de: <a href=\"https://bit.ly/3vZF6Wd\" target=\"_blank\">https://bit.ly/3vZF6Wd</a> (Consulta: 29 de octubre de 2021)."}
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "100%",
+                    "content":[
+                        {"inst":"En el siguiente campo textual escribe una opinión sobre la vida en el campo, fundamentada en los textos que leíste. Añade las imágenes que consideres apropiadas para ilustrar tu texto.", "iconinst":"edit_note"},
+                        {"br":1},
+                        {
+                            "editor":1,
+                            "imgs": [
+                                {"img": "img/im4.jpg", "class":"w-[12rem] mx-auto"},
+                                {"img": "img/im5.jpg", "class":"w-[12rem] mx-auto"},
+                                {"img": "img/im6.jpg", "class":"w-[12rem] mx-auto"},
+                                {"img": "img/im7.jpg", "class":"w-[12rem] mx-auto"}
+                            ] 
                         }
                     ]
                 }
