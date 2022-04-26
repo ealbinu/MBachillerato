@@ -1,0 +1,383 @@
+{
+    "id": "LEOEIP2",
+    "programa": "DGETI",
+    "materia": "LECTURAEOEI",
+    "title": "El texto y sus partes",
+    "bgimgs": 5,
+    "ficha": [
+        [ "Aprendizaje esperado", "Identifica el tema, la intención y las partes de expresiones orales y escritas." ],
+        ["Área de formación integral","Desarrollo de la comprensión lectora."]
+    ],
+    "screens": [
+        {
+            "title": "Categorías de palabras",
+            "icon": "info",
+            "steps": true,
+            "class": "flex flex-col justify-center",
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "grid":1,
+                            "columns": "2fr 1fr",
+                            "content":[
+                                {"textAnimation":"La comprensión lectora se refiere, no sólo a la capacidad de decodificar las palabras que componen un texto, sino a la habilidad de un lector para comprender su sentido completo, identificar las partes que lo componen, asociarlo a un tipo específico de texto y a formarse una idea sobre él, y argumentarla."},
+                                {"img":"img/im1.png"}
+                            ]
+                        }
+                    ],
+                    "buttonNextStep": "Siguiente"
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "group": 1,
+                            "class": "grid grid-cols-2 gap-2",
+                            "content":[
+                                {
+                                    "card":1,
+                                    "class": "text-center",
+                                    "content":[
+                                        {"class":"h4", "text": "Partes de un texto"},
+                                        {"br":1},
+                                        {"class": "text-xs", "textAnimation": "<strong>Introducción:</strong> <br> Se presenta el tema central o las ideas principales."}
+                                        ,{"br":1},
+                                        {"class": "text-xs", "textAnimation": "<strong>Desarrollo:</strong> <br>Se explica, argumenta o discute la idea expuesta en la introducción, se emplean opiniones, hechos, ejemplos, razonamientos, etcétera."},
+                                        {"br":1},
+                                        {"class": "text-xs", "textAnimation": "<strong>Conclusión:</strong> <br> Se recapitula la idea principal en un breve resumen, se plantean una o varias ideas de cierre."},
+                                        {"br":1}
+                                    ]
+                                },
+                                {
+                                    "card":1,
+                                    "class": "text-center",
+                                    "content":[
+                                        {"class":"h4", "text": "Intención del texto"},
+                                        {"br":1},
+                                        {"class": "text-xs", "textAnimation": "<strong>Textos científicos:</strong> transmitir conocimiento.<br><strong>Textos literarios:</strong> narrar historias, transmitir emociones."}
+                                        ,{"br":1},
+                                        {"class": "text-xs", "textAnimation": "<strong>Textos formales:</strong> solicitar, informar, agradecer.<br><strong>Textos normativos:</strong> indicar normas comunitarias."},
+                                        {"br":1},
+                                        {"class": "text-xs", "textAnimation": "<strong>Textos didácticos / expositivos:</strong> enseñar, facilitar aprendizajes, transmitir conocimiento. <br> <strong>Textos persuasivos:</strong> influir en el comportamiento de las personas."},
+                                        {"br":1},
+                                        {"class": "text-xs", "textAnimation": "<strong>Periodísticos:</strong> informar de hechos y datos relevantes y actuales.<br> <strong>Textos personales:</strong> comunicación personal."},
+                                        {"br":1}
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "70%",
+                    "content": [
+                        {"class":"h5 text-bold", "textAnimation": "*Párrafo A"},
+                        {"br":1},
+                        {"class":"", "textAnimation": "El uso correcto de la lengua se cuestiona por razones políticas e ideológicas, la izquierda política promueve la incorrección ortográfica y gramatical como un acto libre y reaccionario, tildando a la autoridad lingüística de derechista y elitista. También lo hace el feminismo militante, aunque resulte comprensible pues el español es una lengua que ha mantenido a la mujer relegada durante siglos. De esta manera se alienta la trasgresión a las reglas para ajustar el habla a intereses específicos, no sólo ideológicos, incluso para ocultar deficiencias y falta de conocimientos."},
+                        {"br":2},
+                        {"class": "text-xs text-right", "text": "Fuente: Pérez-Reverte, A. (2018). Ahora le toca a la lengua española. Xl Semanal. Adaptado de: <a href='http://bit.ly/35XBEgM' target='_blank'>http://bit.ly/35XBEgM</a><br>(Consulta: 26 de octubre de 2021)."}
+                    ]
+                },
+                {
+                    "width": "70%",
+                    "content": [
+                        {"class":"h5 text-bold", "textAnimation": "*Párrafo B"},
+                        {"br":1},
+                        {"class":"", "textAnimation": "Sin embargo, debemos recordar que el habla es un mecanismo social vivo y versátil, pero también moldeado durante siglos; y que las academias lo que hacen es registrar el uso que en cada época hacen los hablantes y orientar sobre las reglas necesarias para comunicarse con exactitud y limpieza, así como para entender lo que se lee y se dice, tanto si ha sido dicho o escrito ahora como hace trescientos o quinientos años."},
+                        {"br":2},
+                        {"class": "text-xs text-right", "text": "Fuente: Pérez-Reverte, A. (2018). Ahora le toca a la lengua española. Xl Semanal. Adaptado de: <a href='http://bit.ly/35XBEgM' target='_blank'>http://bit.ly/35XBEgM</a><br>(Consulta: 26 de octubre de 2021)."}
+                    ]
+                },
+                {
+                    "width": "70%",
+                    "content": [
+                        {"class":"h5 text-bold", "textAnimation": "*Párrafo C"},
+                        {"br":1},
+                        {"class":"", "textAnimation": "Nuestra lengua es un patrimonio lingüístico de enorme importancia; un tesoro cultural perfeccionado a través de los siglos. Hablamos de una lengua que es utilizada por 550 millones de hablantes que, gracias a la Real Academia Española y sus academias hermanas, utilizan la misma Ortografía, la misma Gramática y el mismo Diccionario; algo que no sucede con ninguna otra lengua del mundo."},
+                        {"br":2},
+                        {"class": "text-xs text-right", "text": "Fuente: Pérez-Reverte, A. (2018). Ahora le toca a la lengua española. Xl Semanal. Adaptado de: <a href='http://bit.ly/35XBEgM' target='_blank'>http://bit.ly/35XBEgM</a><br>(Consulta: 26 de octubre de 2021)."}
+                    ],
+                    "buttonNextScreen": "Continuar"
+                }
+                
+            ]
+        },
+        {
+            "title": "Equo Bot",
+            "icon": "chat_bubble_outline",
+            "steps": false,
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "chatbot": 1,
+                            "content": [
+                                {
+                                    "id": 0,
+                                    "talk": "¡Hola! Mi nombre es Equo Bot, y te acompañaré en esta actividad. ¿Estás listo para comenzar?",
+                                    "options": [
+                                        [
+                                            "¡Comencemos!",
+                                            1
+                                        ],
+                                        [
+                                            "Tal vez más tarde",
+                                            "later"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "id": "later",
+                                    "talk": "Qué lástima, ¡Vuelve pronto! y presiona \"comenzar\" cuando gustes.",
+                                    "options": [
+                                        [
+                                            "Comenzar",
+                                            1
+                                        ]
+                                    ]
+                                }, {
+                                    "id":1,
+                                    "talk": "Para empezar, de acuerdo a la clasificación general de los textos, selecciona ¿Qué tipo de texto es?",
+                                    "options": [
+                                        ["Expositivo", 2],
+                                        ["Informativo", 1.1],
+                                        ["Literario", 1.1]
+                                    ]
+                                }, {
+                                    "id":1.1,
+                                    "talk": "Has memoria y recuerda tus clases de lectura, expresión oral y escrita, ¿qué tipo de texto es el que acabas  de leer?",
+                                    "auto": 1
+                                }, {
+                                    "id":2,
+                                    "talk":"¡Muy bien! Sigamos. ",
+                                    "auto":"3"
+                                }, {
+                                    "id":3,
+                                    "talk": "En cuanto a la estructura del texto, ¿a cuál párrafo corresponde la introducción? Elige la opción correcta.",
+                                    "auto": 4
+                                }, {
+                                    "id":4,
+                                    "talk": {
+                                        "grid": 1,
+                                        "columns": "1fr 1fr 1fr",
+                                        "class": "items-start",
+                                        "content": [
+                                            {
+                                                "group":1,
+                                                "content":[
+                                                    "<div class='badge badge-lg badge-info w-full'>A</div>",
+                                                    {"class":"text-xs p-1", "text": "El uso correcto de la lengua se cuestiona  por razones políticas e ideológicas,  alentando la incorrección ortográfica y  gramatical como un acto libre y  progresista, supuestamente propio de la  izquierda política, tildando a la autoridad  lingüística de derechista e incluso fascista.  También lo hace el feminismo militante,  aunque resulte comprensible por el hecho  de que lengua ha mantenido a la mujer  relegada durante siglos."}
+                                                ]
+                                            },{
+                                                "group":1,
+                                                "content":[
+                                                    "<div class='badge badge-lg badge-secondary w-full'>B</div>",
+                                                    {"class":"text-xs p-1", "text": "Sin embargo, debemos recordar que el  habla es un mecanismo social vivo y versátil,  pero también moldeado durante siglos; y  que las academias lo que hacen es registrar  el uso que en cada época hacen los  hablantes y orientar sobre las reglas  necesarias para comunicarse con exactitud  y limpieza, así como para entender lo que se  lee y se dice, tanto si ha sido dicho o escrito  ahora como hace trescientos o quinientos  años."}
+                                                ]
+                                            },{
+                                                "group":1,
+                                                "content":[
+                                                    "<div class='badge badge-lg badge-accent w-full'>C</div>",
+                                                    {"class":"text-xs p-1", "text": "Nuestra lengua es un patrimonio lingüístico de  enorme importancia; un tesoro cultural  perfeccionado a través de los siglos. Hablamos de  una lengua que es utilizada por 550 millones de  hablantes que, gracias a la Real Academia Española  y sus academias hermanas, utilizan la misma  Ortografía, la misma Gramática y el mismo  Diccionario; algo que no sucede con ninguna otra  lengua del mundo."}
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "options":[
+                                        ["A", 5],
+                                        ["B", 4.1],
+                                        ["C", 4.1]
+                                    ]
+                                },
+                                {
+                                    "id":4.1,
+                                    "talk":"Lee de nuevo los tres párrafos  para localizar el que presenta el  tema central y trata una vez  más.",
+                                    "auto": 3
+                                },
+                                {
+                                    "id":5,
+                                    "talk": "¡Es correcto!, la introducción  se encuentra en el inciso a.",
+                                    "auto":6
+                                },
+                                {
+                                    "id":6,
+                                    "talk":"¡Perfecto! Ahora, de acuerdo a su intención, selecciona ¿Qué tipo de texto es?",
+                                    "options": [
+                                        ["Científico", 6.1],
+                                        ["Persuasivo", 7],
+                                        ["Periodístico", 6.2]
+                                    ]
+                                },
+                                {
+                                    "id":6.1,
+                                    "talk":"¿Científico? Revisa tu respuesta  e intenta de nuevo.",
+                                    "auto": 6
+                                },
+                                {
+                                    "id":6.2,
+                                    "talk": "¿Periodístico?, ¿por qué lo consideras  así? Revisa tu respuesta e intenta de  nuevo.",
+                                    "auto": 6
+                                },
+                                {
+                                    "id": 7,
+                                    "talk":"¡Genio! ¡Tu respuesta es  correcta!",
+                                    "auto":8
+                                },
+                                {
+                                    "id":8,
+                                    "talk": "¿Identificaste el tema del texto? ¿Cuál es?",
+                                    "options": [
+                                        ["La defensa de la RAE ante las  acusaciones de elitismo.", 9],
+                                        ["La acusación a la RAE de  elitista por parte del autor.", 8.1],
+                                        ["La defensa de la lengua española  ante el feminismo.", 8.2]
+                                    ]
+                                }, 
+                                {
+                                    "id": 8.1,
+                                    "talk": "Lee con detenimiento el  primer párrafo e inténtalo de  nuevo.",
+                                    "auto":8
+                                },
+                                {
+                                    "id": 8.2,
+                                    "talk": "Relee con calma e inténtalo de  nuevo.",
+                                    "auto":8
+                                },
+                                {
+                                    "id":9,
+                                    "talk": "¡Excelente! Ya casi terminamos.",
+                                    "auto": 10
+                                },
+                                {
+                                    "id": 10,
+                                    "talk": "¿En cuál párrafo se desarrolla el tema central del texto?",
+                                    "auto": 11
+                                },
+                                {
+                                    "id":11,
+                                    "talk": {
+                                        "grid": 1,
+                                        "columns": "1fr 1fr 1fr",
+                                        "class": "items-start",
+                                        "content": [
+                                            {
+                                                "group":1,
+                                                "content":[
+                                                    "<div class='badge badge-lg badge-info w-full'>A</div>",
+                                                    {"class":"text-xs p-1", "text": "El uso correcto de la lengua se cuestiona  por razones políticas e ideológicas,  alentando la incorrección ortográfica y  gramatical como un acto libre y  progresista, supuestamente propio de la  izquierda política, tildando a la autoridad  lingüística de derechista e incluso fascista.  También lo hace el feminismo militante,  aunque resulte comprensible por el hecho  de que lengua ha mantenido a la mujer  relegada durante siglos."}
+                                                ]
+                                            },{
+                                                "group":1,
+                                                "content":[
+                                                    "<div class='badge badge-lg badge-secondary w-full'>B</div>",
+                                                    {"class":"text-xs p-1", "text": "Sin embargo, debemos recordar que el habla  es un mecanismo social vivo y versátil, pero  también moldeado durante siglos; y que las  academias lo que hacen es registrar el uso  que en cada época hacen los hablantes y  orientar sobre las reglas necesarias para  comunicarse con exactitud y limpieza, así  como para entender lo que se lee y se dice,  tanto si ha sido dicho o escrito ahora como  hace trescientos o quinientos años."}
+                                                ]
+                                            },{
+                                                "group":1,
+                                                "content":[
+                                                    "<div class='badge badge-lg badge-accent w-full'>C</div>",
+                                                    {"class":"text-xs p-1", "text": "Nuestra lengua es un patrimonio lingüístico de  enorme importancia; un tesoro cultural  perfeccionado a través de los siglos. Hablamos de  una lengua que es utilizada por 550 millones de  hablantes que, gracias a la Real Academia  Española y sus academias hermanas, utilizan la  misma Ortografía, la misma Gramática y el  mismo Diccionario; algo que no sucede con  ninguna otra lengua del mundo. "}
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "options":[
+                                        ["A", 11.1],
+                                        ["B", 12],
+                                        ["C", 11.2]
+                                    ]
+                                },
+                                {
+                                    "id": 11.1,
+                                    "talk":"Lee de nuevo el texto para  identificar en cuál párrafo se  explica, argumenta o discute el  tema, e intenta otra vez" ,
+                                    "auto":10
+                                },
+                                {
+                                    "id": 11.2,
+                                    "talk":"Te recomiendo leer de nuevo todo  el texto." ,
+                                    "auto":10
+                                },
+                                {
+                                    "id": 12,
+                                    "talk":"¡Felicidades!, has respondido  correctamente sobre la idea  principal del texto.",
+                                    "auto": 13
+                                },
+                                {
+                                    "id": 13,
+                                    "talk": "¡Bien! Y ahora, para finalizar...",
+                                    "auto": 14
+                                },
+                                {
+                                    "id": 14,
+                                    "talk": "¿en cuál párrafo se presenta la conclusión del texto?",
+                                    "auto": 15
+                                },
+                                {
+                                    "id":15,
+                                    "talk": {
+                                        "grid": 1,
+                                        "columns": "1fr 1fr 1fr",
+                                        "class": "items-start",
+                                        "content": [
+                                            {
+                                                "group":1,
+                                                "content":[
+                                                    "<div class='badge badge-lg badge-info w-full'>A</div>",
+                                                    {"class":"text-xs p-1", "text": "El uso correcto de la lengua se cuestiona  por razones políticas e ideológicas,  alentando la incorrección ortográfica y  gramatical como un acto libre y progresista, supuestamente propio de la  izquierda política, tildando a la autoridad  lingüística de derechista e incluso  fascista. También lo hace el feminismo  militante, aunque resulte comprensible  por el hecho de que lengua ha  mantenido a la mujer relegada durante  siglos."}
+                                                ]
+                                            },{
+                                                "group":1,
+                                                "content":[
+                                                    "<div class='badge badge-lg badge-secondary w-full'>B</div>",
+                                                    {"class":"text-xs p-1", "text": "Sin embargo, debemos recordar que el  habla es un mecanismo social vivo y  versátil, pero también moldeado durante  siglos; y que las academias lo que hacen es  registrar el uso que en cada época hacen  los hablantes y orientar sobre las reglas  necesarias para comunicarse con exactitud  y limpieza, así como para entender lo que  se lee y se dice, tanto si ha sido dicho o  escrito ahora como hace trescientos o  quinientos años."}
+                                                ]
+                                            },{
+                                                "group":1,
+                                                "content":[
+                                                    "<div class='badge badge-lg badge-accent w-full'>C</div>",
+                                                    {"class":"text-xs p-1", "text": "Nuestra lengua es un patrimonio lingüístico de  enorme importancia; un tesoro cultural perfeccionado a través de los siglos. Hablamos de  una lengua que es utilizada por 550 millones de  hablantes que, gracias a la Real Academia  Española y sus academias hermanas, utilizan la  misma Ortografía, la misma Gramática y el mismo  Diccionario; algo que no sucede con ninguna otra lengua del mundo."}
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "options":[
+                                        ["A", 15.1],
+                                        ["B", 15.2],
+                                        ["C", 16]
+                                    ]
+                                },
+                                {
+                                    "id": 15.1,
+                                    "talk": "Tu respuesta no es correcta.  Revisa de nuevo la pregunta.",
+                                    "auto": 14
+                                },
+                                {
+                                    "id": 15.2,
+                                    "talk": "Vuelve al texto, identifica en  dónde se plantea una idea de  cierre y elige la opción de respuesta.",
+                                    "auto": 14
+                                },
+                                {
+                                    "id": 16,
+                                    "talk": "¡Buen trabajo! Has finalizado la  actividad.",
+                                    "end": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Finalizar",
+            "icon": "flag",
+            "end": true,
+            "blocks": [
+                {
+                    "content": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,322 @@
+{
+    "id": "LEOEIP1",
+    "programa": "DGETI",
+    "materia": "LECTURAEOEI",
+    "title": "Clases de palabras",
+    "bgimgs": 5,
+    "ficha": [
+        [ "Aprendizaje esperado", "Muestra las distintas clases de palabras en algún texto, a través de la colaboración en un equipo con roles definidos." ],
+        ["Contenido específico", "El uso de las clases de palabras (sustantivo, adjetivo, pronombre, verbo, adverbio, preposición, conjunción)."],
+        ["Área de formación integral","Desarrollo de la comprensión lectora."]
+    ],
+    "screens": [
+        {
+            "title": "Categorías de palabras",
+            "icon": "info",
+            "steps": true,
+            "class": "flex flex-col justify-center",
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "group":1,
+                            "content":[
+                                {"textAnimation":"Las palabras expresan ideas, pensamientos, sentimientos, etcétera; por esta razón es necesario conocerlas, más allá de  su sonido o su representación gráfica, sino su significado y su relación con otras para que la comunicación sea precisa, es  decir, utilizar las palabras adecuadas nos permite transmitir fidedignamente nuestras ideas. <br> <br> Recuerda que las palabras son herramientas que el ser humano puede utilizar de manera inteligente, no olvidemos el  gran valor que tienen, las que se dicen y las que se callan. Nuestras palabras nos definen; nuestra forma de decirlas,  nuestra manera de usarlas nos expone a los demás, les dice quiénes somos y de dónde venimos."}
+                            ]
+                        }
+                    ],
+                    "buttonNextStep": "Siguiente"
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "group":1,
+                            "content":[
+                                {"textAnimation":"Las palabras son necesarias para expresarnos, pueden clasificarse de manera general según su función, su estructura, su  significado y su acentuación.<br><br>En cuanto a su función, todas las palabras intervienen en la producción del discurso, algunas, cuyo contenido es léxico,  nos remiten a la realidad extralingüística para nombrarla, hablar de sus cualidades, relaciones y características, las  acciones que ocurren en ella y las circunstancias en que se verifican. Otras, por su parte, expresan relaciones, matices y  nociones gramaticales referentes a la persona, al género o al número, por tal motivo se dice que su contenido es  gramatical."}
+                            ]
+                        }
+                    ],
+                    "buttonNextStep": "Siguiente"
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "group":1,
+                            "content":[
+                                {"class":"inline", "textAnimation":"Entre las palabras de contenido léxico se encuentran los"},
+                                " ",
+                                { "term": "sustantivos", "content": ["Palabra con que se designa a todos los seres y las entidades: personas, animales, plantas,  cosas reales o imaginarias, grupos, materias, acciones, cualidades, sucesos. "] },
+                                " ",
+                                {"class":"inline", "textAnimation": "los cuales se clasifican a su vez en propios y  comunes, los primeros designan el nombre particular de personas, ciudades, países, etcétera, mientras que los segundos  nombran entidades genéricas.<br><br>Por su parte, el "},
+                                " ",
+                                { "term": "adjetivo", "content": ["Palabra que califica o determina al sustantivo."] },
+                                " ",
+                                {"class":"inline", "textAnimation": "dado que expresa cualidades y propiedades del sustantivo, siempre aparecerá acompañándolo.  Cuando expresan cualidades, éstas presentan grados de significación, mientras que los adjetivos determinativos limitan  o precisan al sustantivo."}
+                            ]
+                        }
+                    ],
+                    "buttonNextStep": "Siguiente"
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "group":1,
+                            "content":[
+                                {"class":"inline", "textAnimation":"La palabra que ofrece más información de la realidad en una oración es el"},
+                                " ",
+                                { "term": "verbo", "content": ["Palabra que expresa acción, proceso, estado o cambio de estado."] },
+                                " ",
+                                {"class":"inline", "textAnimation": ", al ser la categoría con más accidentes  gramaticales: persona y número para indicar quién realiza la acción, singular o plural; el modo para expresar la actitud  del hablante ante lo que dice (indicativo, subjuntivo e imperativo); y el tiempo, que nos permite ubicar la acción  respecto al momento en que se habla, es decir, en el presente, en el pasado o en el futuro. También es la categoría que  más subclases presenta, pues los verbos se clasifican según su flexión, su significado y su estructura. <br><br> Los"},
+                                " ",
+                                { "term": "adverbios", "content": ["Palabra invariable que modifica a un verbo, a un adjetivo o a otro adverbio."] },
+                                " ",
+                                {"class":"inline", "textAnimation": "se asocian con la idea de circunstancia, es decir, expresan las cualidades de la acción verbal y las  condiciones en que ocurren las acciones, mientras que cuando se refieren a adjetivos u otros adverbios, intensifican su  significado."}
+                            ]
+                        }
+                    ],
+                    "buttonNextStep": "Siguiente"
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "group":1,
+                            "content":[
+                                {"class":"inline", "textAnimation":"En cuanto a las categorías de palabras de contenido gramatical, el"},
+                                " ",
+                                { "term": "artículo", "content": ["Palabra que determina al sustantivo."] },
+                                " ",
+                                {"class":"inline", "textAnimation": "identifica y especifica al sustantivo,  convirtiéndolo en un referente concreto del discurso, cumpliendo una función similar a la de los adjetivos  determinativos, razón por la que la Real Academia Española los incluyó en la categoría de los determinantes. <br><br> El"},
+                                " ",
+                                { "term": "pronombre", "content": ["Clase de palabra que sustituye y cumple las funciones de un sustantivo."] },
+                                " ",
+                                {"class":"inline", "textAnimation": "es una clase cerrada, es decir, no se incrementa con nuevas palabras, adquieren su significado por el  contexto y se utilizan para evitar la repetición de un sustantivo en el discurso, para señalar seres o cosas presentes  cuando se realiza la comunicación o para referirse a algo mencionado con anterioridad."}
+                            ]
+                        }
+                    ],
+                    "buttonNextStep": "Siguiente"
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "group":1,
+                            "content":[
+                                {"class":"inline", "textAnimation":"Otras palabras invariables son las"},
+                                " ",
+                                { "term": "preposiciones", "content": ["Palabras invariables que relacionan palabras con distinta categoría léxico sintáctica"] },
+                                " y las ",
+                                { "term": "conjunciones", "content": ["Palabras invariables que relacionan palabras y oraciones."] },
+                                " ",
+                                {"class":"inline", "textAnimation": ", las primeras tienen la función de introducir un  complemento y se emplean como nexos dentro de los sintagmas nominales o para conectarse con otros sintagmas. Las  segundas tienen la misma función, pero con la diferencia de que éstas sí vinculan palabras sintácticamente equivalentes. <br><br> La"},
+                                " ",
+                                { "term": "interjección", "content": ["Palabra invariable que forma un enunciado exclamativo."] },
+                                " ",
+                                {"class":"inline", "textAnimation": ", por su parte, no presenta contenido léxico o gramatical, sino afectivo. Se vincula directamente con la  función expresiva del lenguaje y son apelativas si instan a la acción (¡arre!, ¡vamos!) o expresivas si comunican estados  de ánimo (¡ay!, ¡caramba!). También se clasifican de acuerdo a su función gramatical."}
+                            ]
+                        },
+                        {"br":2}
+                    ],
+                    "buttonNextScreen": "Continuar"
+                }
+            ]
+        },
+        {
+            "title": "Organizador gráfico",
+            "icon":"account_tree",
+            "steps":false,
+            "blocks":[
+                {
+                    "width": "100%",
+                    "content": [
+                        
+                        {
+                            "inst": "Crea un organizador gráfico de las categorías de palabras utilizando los conceptos.",
+                            "iconinst": "pan_tool"
+                        },
+                        {"br":2},
+                        {
+                            "group": 1,
+                            "class": "grid grid-cols-4",
+                            "content": [
+                                {
+                                    "repeater": 1,
+                                    "items": [
+                                            {"content": ["Verbo"], "correctId": "#c1"},
+                                            {"content": ["Contenido gramatical"], "correctId": "#b2"},
+                                            {"content": ["Sustantivo"], "correctId": "#c1"},
+                                            {"content": ["Contenido léxico"], "correctId": "#b1"},
+                                            {"content": ["Adjetivo"], "correctId": "#c1"},
+                                            {"content": ["Categorías"], "correctId": "#a1"},
+                                            {"content": ["Conjunción"], "correctId": "#c2"},
+                                            {"content": ["Adverbio"], "correctId": "#c1"},
+                                            {"content": ["Preposición"], "correctId": "#c2"},
+                                            {"content": ["Artículo"], "correctId": "#c2"},
+                                            {"content": ["Pronombre"], "correctId": "#c2"}
+                                        ],
+                                    "properties": {
+                                        "drag": 1,
+                                        "bounds": "#screen-1",
+                                        "class": "max-w-[10rem] text-center mx-auto text-xs my-1",
+                                        "dropzone": ".drop"
+                                    }
+                                }
+                            ]
+                        },
+                        {"br":2},
+                        {
+                            "group":1,
+                            "class": "grid grid-cols-3 gap-12 items-center",
+                            "content":[
+                                {
+                                    "group":1,
+                                    "content":[
+                                        {
+                                            "group":1,
+                                            "id": "a1",
+                                            "class": "card drop min-w-[10rem] border-dashed border-2  bg-transparent min-h-[4rem] flex items-center justify-center",
+                                            "content":[]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "group":1,
+                                    "class": "flex flex-col justify-between mx-auto h-full  max-w-[10rem]",
+                                    "content": [
+                                        {
+                                            "group":1,
+                                            "id": "b1",
+                                            "class": "card drop min-w-[10rem] border-dashed border-2  bg-transparent min-h-[4rem] flex items-center justify-center",
+                                            "content":[]
+                                        },
+                                        {
+                                            "group":1,
+                                            "class": "card drop min-w-[10rem] border-dashed border-2  bg-transparent min-h-[4rem] flex items-center justify-center",
+                                            "id": "b2",
+                                            "content":[]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "group":1,
+                                    "class": "flex flex-col justify-between mx-auto h-full gap-4  max-w-[10rem] z-1",
+                                    "content": [
+                                        {
+                                            "group":1,
+                                            "class": "card drop min-w-[10rem] border-dashed border-2  bg-transparent min-h-[4rem] flex items-center justify-center",
+                                            "id": "c1",
+                                            "content":[]
+                                        },
+                                        {
+                                            "group":1,
+                                            "class": "card drop min-w-[10rem] border-dashed border-2  bg-transparent min-h-[4rem] flex items-center justify-center",
+                                            "id": "c2",
+                                            "content":[]
+                                        }
+                                    
+                                    ]
+                                }
+                            ]  
+                        },
+                        {
+                            "line": 1,
+                            "connections": [
+                                ["#a1", "#b1"],
+                                ["#a1", "#b2"],
+                                ["#b1", "#c1"],
+                                ["#b2", "#c2"]
+                            ],
+                            "options": {
+                                "startSocket": "right",
+                                "endSocket": "left",
+                                "path":"grid",
+                                "color": "rgba(200, 200, 200, 0.3)",
+                                "endPlug": "behind",
+                                "size": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Ordena las listas",
+            "icon": "games",
+            "steps": false,
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "inst": "Lee los siguientes textos e identifica a qué clase pertenecen las palabras resaltadas. Después, desplaza los nombres arriba o abajo según corresponda.",
+                            "iconinst": "low_priority"
+                        },
+                        {"br":2},
+                        {
+                            "group":1,
+                            "class": "grid grid-cols-2 gap-4",
+                            "content": [
+                                {
+                                    "group":1,
+                                    "class":"",
+                                    "content":[
+                                        {
+                                            "repeater": 1,
+                                            "items": [
+                                                {"content":["<span class=\"bg-info text-xs text-white rounded-full px-1 aspect-square inline-block\">1</span> <strong>Aristóteles</strong> instituyó la <strong>tesis</strong> de que lo <strong>social</strong> está inscrito en la <strong>naturaleza</strong> de la <strong>humanidad</strong>, sin embargo, las personas actúan sobre su propia <strong>realidad</strong> asociándose a otros por <strong>iniciativa</strong> buscando un <strong>fin</strong> común." ]},
+                                                {"content":["<span class=\"bg-info text-xs text-white rounded-full px-1 aspect-square inline-block\">2</span> <strong>Hace</strong> miles de años, los seres humanos <strong>eran</strong> pequeños grupos de cazadores-recolectores que <strong>iban</strong> de un lado a otro <strong>buscando</strong> comida."]},
+                                                {"content":["<span class=\"bg-info text-xs text-white rounded-full px-1 aspect-square inline-block\">3</span> Sancho Panza, al contemplar el estado tan <strong>deplorable</strong> de don Quijote, <strong>hambriento</strong>, <strong>viejo</strong>, <strong>cansado</strong> y sin dientes, lo nombra \"Caballero de la <strong>Triste</strong> Figura\", explicándole que se le ocurrió al verlo con la luz que se reflejaba, y le recalca que es la <strong>peor</strong> figura que ha visto."]},
+                                                {"content":["<span class=\"bg-info text-xs text-white rounded-full px-1 aspect-square inline-block\">4</span> Los sinónimos son una herramienta para explicar <strong>e</strong> interpretar los textos, con ellos es posible hacer una paráfrasis <strong>tanto</strong> constructiva <strong>como</strong> mecánica <strong>y</strong> aclarar el punto de vista <strong>o</strong> el mensaje del autor."]},
+                                                {"content":["<span class=\"bg-info text-xs text-white rounded-full px-1 aspect-square inline-block\">5</span> Cuando iba el otro día <strong>en</strong> el tren me erguí <strong>de</strong> pronto feliz <strong>sobre</strong> mis dos patas y empecé a manotear <strong>de</strong> alegría y <strong>a</strong> llamar la atención <strong>de</strong> todos <strong>para</strong> que vieran el paisaje."]},
+                                                {"content":["<span class=\"bg-info text-xs text-white rounded-full px-1 aspect-square inline-block\">6</span> Durante <strong>el</strong> ciclo cardiaco ocurren una serie de fenómenos, gracias a <strong>los</strong> cuales <strong>la</strong> sangre se va desplazando de un segmento a otro dentro <strong>del</strong> sistema cardiovascular."]},
+                                                {"content":["<span class=\"bg-info text-xs text-white rounded-full px-1 aspect-square inline-block\">7</span> Adriana asistió a un curso en la biblioteca. <strong>Ella</strong> está muy contenta porque en <strong>éste</strong> aprendió a clasificar libros y practicó con <strong>algunos</strong> que tiene en casa."]},
+                                                {"content":["<span class=\"bg-info text-xs text-white rounded-full px-1 aspect-square inline-block\">8</span> <strong>¡Hey! ¡Aquí!</strong>, le grité al tiempo que agitaba mi sombrero para lograr que me viera. <strong>¡Hola!</strong>, me dijo al tiempo que caminaba hacia mí con la mano extendida."]},
+                                                {"content":["<span class=\"bg-info text-xs text-white rounded-full px-1 aspect-square inline-block\">9</span> Todos los días salgo <strong>temprano</strong> para ir al trabajo, la oficina está <strong>lejos</strong> de mi casa y debo prever el tiempo de traslado, que es <strong>bastante</strong>. Quizás deba comprar un auto, no <strong>hoy</strong> ni <strong>mañana</strong>, pero lo haré <strong>tarde</strong> o <strong>temprano</strong>."]}
+                                            ],
+                                            "properties": {
+                                                "group":1,
+                                                "class": "card bg-white text-dark p-1 text-sm my-1 h-52 md:h-24 rounded-md leading-4 overflow-auto"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "sortable":1,
+                                    "numbers": true,
+                                    "class": "",
+                                    "classItem":"h-52 md:h-24",
+                                    "items": [
+                                        "Sustantivos",
+                                        "Verbos",
+                                        "Adjetivos",
+                                        "Conjunciones",
+                                        "Preposiciones",
+                                        "Artículos",
+                                        "Pronombres",
+                                        "Interjecciones",
+                                        "Adverbios"
+                                    ]
+                                }
+                            ]
+                        }
+
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Finalizar",
+            "icon": "flag",
+            "end": true,
+            "blocks": [
+                {
+                    "content": []
+                }
+            ]
+        }
+    ]
+}
