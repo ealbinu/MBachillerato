@@ -19,6 +19,11 @@ import daisyuiColors from 'daisyui/src/colors/themes'
 import Popper from "vue3-popper"
 
 
+import pluginBlocks from './utils/pluginBlocks'
+
+
+
+
 //Internal libs
 import backgroundGenerator from './components/backgroundGenerator.js'
 import materias from './materias.js'
@@ -27,7 +32,11 @@ import materias from './materias.js'
 import 'animate.css'
 import './index.css'
 
-
+/*
+window.baseurl = '../'
+if (location.hostname === "localhost" || location.hostname === "127.0.0.1"){
+}
+*/
 
 const consoleStyles = [
     'color: #446699',
@@ -47,6 +56,14 @@ app.use(Vue3Storage)
 app.use(PerfectScrollbar)
 app.use(VueApexCharts)
 
+
+
+
+
+
+
+
+
 app.component("Popper", Popper)
 
 gsap.registerPlugin(Draggable)
@@ -56,21 +73,22 @@ app.provide('view', ref(false))
 
 app.provide('hidemenu', ref(false))
 
+app.use(pluginBlocks)
 
 
 //- Audios
 /* sounds */
 app.provide('Audios', { 
-    sclick : new Wad({source : 'odas/assets/sounds/click.mp3' }),
-    scancel : new Wad({source : 'odas/assets/sounds/cancel.mp3'}),
-    sopen : new Wad({source : 'odas/assets/sounds/open.mp3'}),
-    sclose : new Wad({source : 'odas/assets/sounds/close.mp3'}),
-    schange: new Wad({source : 'odas/assets/sounds/change.mp3'}),
-    sBlockSelect: new Wad({source : 'odas/assets/sounds/blockSelect.mp3'}),
-    sBlockDrag: new Wad({source : 'odas/assets/sounds/blockDrag.mp3'}),
-    sfinalize: new Wad({source : 'odas/assets/sounds/end.mp3'}),
-    snotification: new Wad({source : 'odas/assets/sounds/notification.mp3'}),
-    ssend: new Wad({source : 'odas/assets/sounds/send.mp3'}),
+    sclick : new Wad({source : 'assets/sounds/click.mp3' }),
+    scancel : new Wad({source : 'assets/sounds/cancel.mp3'}),
+    sopen : new Wad({source : 'assets/sounds/open.mp3'}),
+    sclose : new Wad({source : 'assets/sounds/close.mp3'}),
+    schange: new Wad({source : 'assets/sounds/change.mp3'}),
+    sBlockSelect: new Wad({source : 'assets/sounds/blockSelect.mp3'}),
+    sBlockDrag: new Wad({source : 'assets/sounds/blockDrag.mp3'}),
+    sfinalize: new Wad({source : 'assets/sounds/end.mp3'}),
+    snotification: new Wad({source : 'assets/sounds/notification.mp3'}),
+    ssend: new Wad({source : 'assets/sounds/send.mp3'}),
 
  })
 
@@ -154,7 +172,7 @@ async function loadOdaFile(){
 
 
             const storage = useStorage(oda+'_')            
-            const res = await axios.get('./odas/'+oda+'/oda.json')
+            const res = await axios.get('../ODAS/'+oda+'/oda.json')
             const Activity = res.data
             Activity.conf = materias[Activity.programa][Activity.materia]
 
@@ -172,6 +190,7 @@ async function loadOdaFile(){
             
             app.provide('statusFile', statusFile)
             app.provide('builderFile', false)
+            app.provide('path', './ODAS/'+Activity.id+'/')
                         
             app.mount('#app')
 
@@ -253,6 +272,7 @@ async function loadOdaFile(){
             app.provide('statusFile', false)
             app.provide('activityFile', false)
             app.provide('builderFile', true)
+            
             app.mount('#app')
         } else {
            var container = document.getElementById("app")

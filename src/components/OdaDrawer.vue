@@ -1,6 +1,6 @@
 <template lang="pug">
 .menu.justify-between.rounded.w-56.overflow-y-auto.p-2.bg-white.m-1
-    div.text-center: img(:src="'odas/assets/icons/'+Activity.programa+'/'+Activity.materia+'.png'").w-12.mx-auto
+    div.text-center: img(:src="'assets/icons/'+Activity.programa+'/'+Activity.materia+'.png'").w-12.mx-auto
     div.text-center: h1.text-dark.text-lg.font-bold.mt-2.leading-5 {{Activity.title}}
     div.text-center: .text-sm {{Activity.conf.materia}}
     .flex.justify-center.my-2
@@ -9,10 +9,10 @@
     perfect-scrollbar.w-full
         ul.menu.bg-transparent.menu-vertical.w-full
              template(v-for="(i, index) in Activity.screens")
-                li( @click="goToScreen(index)")
-                    div.gap-px(:class="index == Status.screen ? 'active': ''")
-                        Icon(:class="['text-sm', index == Status.screen ? 'text-white': '']")  {{i.icon}}
-                        | &nbsp;{{i.title}}
+                li( @click="goToScreen(index)").mt-1
+                    div.gap-px(:class="index == Status.screen ? 'active': ''").p-2.leading-5
+                        Icon(:class="['text-sm', index == Status.screen ? 'text-white': 'text-primary']")  {{i.icon}}
+                        span.ml-1 {{i.title}}
     hr.mt-auto
     Progreso
     Puntaje

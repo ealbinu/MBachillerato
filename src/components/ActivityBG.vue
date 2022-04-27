@@ -25,6 +25,8 @@ setInterval(() => {
     }
 }, speedshow)
 
+
+
 </script>
 <style lang="sass" scoped>
 .activitybgcontainer

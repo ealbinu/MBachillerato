@@ -5,6 +5,7 @@ import liveReload from 'vite-plugin-live-reload'
 import vue from '@vitejs/plugin-vue'
 import ViteFonts from 'vite-plugin-fonts'
 
+
 // https://vitejs.dev/config/
 export default defineConfig({
   define: {
@@ -18,7 +19,7 @@ export default defineConfig({
         families: ['Fira Sans', 'Material+Icons']
       }
     }),
-    liveReload('public/odas/**/oda.json', {alwaysReload: false}),
+    liveReload('public/odas/**/oda.json', {alwaysReload: false})
   ],
   css: {
     preprocessorOptions: {
@@ -29,5 +30,5 @@ export default defineConfig({
       }
     }
   },
-  assetsInclude: ['**/assets/DGETI/*.png']
+  //assetsInclude: ['**/assets/DGETI/*.png'],
 })

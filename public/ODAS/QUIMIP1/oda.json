@@ -1,0 +1,395 @@
+{
+    "id": "QUIMIP1",
+    "programa": "DGETI",
+    "materia": "QUIMICAI",
+    "title": "Sistemas dispersos",
+    "bgimgs": 4,
+    "ficha": [
+        [
+            "Aprendizaje esperado",
+            "Comprende la utilidad y prevalencia de los sistemas dispersos en los sistemas biológicos y en el entorno."
+        ],
+        [
+            "Contenido central",
+            "¿Qué tienen en común las sustancias que constituyen nuestro cuerpo (saliva, lágrima, orina, sudor, sangre, excreta, semen, etcétera) con las sustancias que te rodean?"
+        ],
+        [
+            "Área de formación integral",
+            "Formación para el desarrollo sostenible."
+        ]
+    ],
+    "screens": [
+        {
+            "title": "Los sistemas dispersos en el cuerpo",
+            "icon": "info",
+            "steps": true,
+            "class": "flex flex-col justify-center",
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "textAnimation": "Sistemas dispersos",
+                            "class": "h3 text-center"
+                        },
+                        {"br":1},
+                        {
+                            "textAnimation": "Las sustancias que se encuentran en la naturaleza y en los organismos vivos son, en su mayoría, sistemas dispersos, es decir, mezclas de dos o más compuestos o elementos. El conocimiento de los componentes que los conforman y las características que presentan son de gran importancia ya que nos proporciona elementos para entender nuestro cuerpo y el entorno en el que vivimos y porque a partir de ellos se pueden diseñar metodologías para descontaminar el ambiente."
+                        },
+                        {"br":1},
+                        {
+                            "textAnimation": "Los <strong>sistemas dispersos</strong> son mezclas de dos o más sustancias, una de las cuales se halla en mayor proporción y se le conoce como fase dispersante o disolvente, mientras que a las sustancias que se encuentran en menor cantidad se les conoce como fases dispersas o solutos."
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "textAnimation": "Clasificación de los sistemas dispersos",
+                            "class": "h3 text-center"
+                        },
+                        {"br":1},
+                        {
+                            "textAnimation": "Los sistemas dispersos se clasifican según el tamaño que presenta la fase dispersa o soluto. En el siguiente esquema se presentan su clasificación y algunos ejemplos."
+                        },
+                        {"br":1},
+                        {
+                            "group":1,
+                            "class": "text-center",
+                            "content": [
+                                {"img": "img/diagrama1.svg"}
+
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "textAnimation": "Los sistemas dispersos en el cuerpo",
+                            "class": "h3 text-center"
+                        },
+                        {"br":1},
+                        {
+                            "textAnimation": "El cuerpo humano está constituido principalmente de agua y por ello los fluidos que lo componen o que se desechan del organismo tienen como principal componente el agua.<br><br>La sangre es un sistema disperso que a simple vista es homogéneo, pero si se utiliza un método de separación de mezclas como el centrifugado, se puede observar que está compuesta por plasma, glóbulos blancos, plaquetas y glóbulos rojos."
+                        },
+                        {"br":1},
+                        {
+                            "group":1,
+                            "class": "text-center grid grid-cols-3 items-center text-center",
+                            "content": [
+                                {"img": "img/tubo.svg", "class":"w-12 mx-auto", "id":"tubo"},
+                                {
+                                    "group":1,
+
+                                    "content": [
+                                        {"group":1, "id":"plasma", "content":[{ "term":"Plasma", "content":["52-62%"]}], "class":"rounded cursor-pointer" },
+                                        {"br":2},
+                                        {"group":1, "id":"blancos", "content":[{ "term":"Glóbulos blancos (leucocitos)", "content":["<1%"]}], "class":"rounded cursor-pointer" },
+                                        {"br":2},
+                                        {"group":1, "id":"plaquetas", "content":[{ "term":"Plaquetas", "content":["<1%"]}], "class":"rounded cursor-pointer" },
+                                        {"br":2},
+                                        {"group":1, "id":"rojos", "content":[{ "term":"Glóbulos rojos (eritrocitos)", "content":["38-48%"]}], "class":"rounded cursor-pointer" }
+                                    ]
+                                },
+                                {"img": "img/estructura_sola.svg", "class":"w-48 mx-auto", "id":"estructura"}
+
+                            ]
+                        },
+                        {
+                            "line": 1,
+                            "connections": [
+                                [["#tubo", "50%", "30%"], "#plasma"],
+                                [["#tubo", "50%", "60%"], "#blancos"],
+                                [["#tubo", "50%", "65%"], "#plaquetas"],
+                                [["#tubo", "50%", "80%"], "#rojos"]
+                            ],
+                            "options": {
+                                "x":"50%",
+                                "y": "50%",
+                                "startSocket": "right",
+                                "endSocket": "left",
+                                "path":"fluid",
+                                "color": "rgba(255, 255, 255, 0.9)",
+                                "startPlug": "arrow2",
+                                "endPlug": "behind",
+                                "size": 2
+                            }
+                        },
+                        {
+                            "line": 1,
+                            "connections": [
+                                [["#estructura", "36%", "14%"], "#plasma"],
+                                [["#estructura", "37%", "42%"], "#blancos"],
+                                [["#estructura", "50%", "66%"], "#plaquetas"],
+                                [["#estructura", "38%", "84%"], "#rojos"]
+                            ],
+                            "options": {
+                                "startSocket": "left",
+                                "endSocket": "right",
+                                "path":"fluid",
+                                "color": "rgba(255, 255, 255, 0.9)",
+                                "startPlug": "arrow2",
+                                "endPlug": "behind",
+                                "size": 2
+                            }
+                        },
+                        {"css": "#plasma{background:#edc772; color:#000;} #blancos{background:#aba3c7;}  #plaquetas{background:#a5754d;}  #rojos{background:#cb5049;} "}
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "class": "text-center",
+                    "content": [
+                        {
+                            "textAnimation": "Por otra parte, el semen también es un sistema disperso que está compuesto por agua, espermatozoides, sales, colesterol, proteínas y carbohidratos que le permiten a la célula sexual masculina transportarse."
+                        },
+                        {"br":2},
+                        {
+                            "img": "img/pantalla3-1.jpg",
+                            "class":"rounded max-w-[26rem] mx-auto"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Sistemas dispersos en el ambiente",
+            "icon": "info",
+            "steps": true,
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "textAnimation": "Sistemas dispersos en el ambiente",
+                            "class": "h3 text-center"
+                        },
+                        {"br":1},
+                        {
+                            "textAnimation": "Los sistemas dispersos son de gran importancia en el ámbito ambiental ya que las especies que viven en la Tierra dependen directa o indirectamente de ellos, por ejemplo, el aire que respiramos es una mezcla de gases como el nitrógeno, oxígeno, argón y vapor de agua; el agua de mares y océanos contienen múltiples sales disueltas en ellas que permiten que la vida marina prospere, por otra parte; las nubes son pequeñas gotas de agua (fase dispersa) que están distribuidas en el aire (fase dispersante) y forman los coloides llamados aerosoles de partículas líquidas. La formación de nubes no representa una problemática ambiental, pero si se liberan en el aire partículas sólidas se forman aerosoles de partículas sólidas y estos sí son una gran problemática ambiental."
+                        }
+                    ],
+                    "buttonNextStep": "Continuar"
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {"br":1},
+                        {
+                            "textAnimation": "Al respecto, la quema de hidrocarburos con una baja oxigenación produce la combustión incompleta de la materia orgánica, en la que la llama es de color amarillo y conduce a la generación de hollín. <br><br> El hollín es un polvo fino de color negro que, de acuerdo con el Instituto Nacional del Cáncer (2015), contiene carcinógenos como arsénico, cadmio y cromo que son de fácil absorción por el cuerpo humano y puede producir cáncer de piel. Como habrás notado en el entorno, el hollín se produce con facilidad a causa automóviles que no tienen un buen funcionamiento así como por desechos industriales."
+                        },
+                        {"br":2},
+                        {"group":1, "class":"text-center", "content": [
+                            {
+                                "img": "img/pantalla4-1.jpg",
+                                "class":"rounded max-w-[20rem]"
+                            }
+                        ]}
+                    ],
+                    "buttonNextScreen": "Continuar"
+                }
+            ]
+        },
+        {
+            "title": "Tipos de sistemas dispersos",
+            "icon": "info",
+            "steps": true,
+            "class": "flex flex-col justify-center",
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "textAnimation": "¿Cómo diferenciar entre los tipos de sistemas dispersos?",
+                            "class": "h3 text-center"
+                        },
+                        {"br":2},
+                        {
+                            "textAnimation":"Las disoluciones y los coloides tienen características macroscópicas similares en las que se observa una homogeneidad que no se logra apreciar en las suspensiones que, por lo general, en el transcurso de cortos periodos de tiempo se observa parte de la fase dispersa precipitada en el fondo del recipiente que lo contiene."
+                        },
+                        {"br":1},
+                        {
+                            "textAnimation":"A continuación se observan algunos ejemplos."
+                        }
+                        ,{"br":1},
+                        {"group":1, "class":"text-center", "content": [
+                            {
+                                "img": "img/pantalla5.png",
+                                "class":"rounded w-full"
+                            }
+                        ]}
+                    ],
+                    "buttonNextStep": "Siguiente"
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "textAnimation":"Al no contar con un microscopio para diferenciar entre los tipos de sistemas que macroscópicamente parecen homogéneos es posible emplear el efecto Tyndall."
+                        },
+                        {"br":1},
+                        {
+                            "textAnimation":"El efecto Tyndall consiste en la dispersión de un haz de luz cuando éste traspasa un medio que contiene un coloide. La luz se dispersa porque choca con las partículas que lo conforman, a diferencia de cuando el haz de luz atraviesa una disolución en la que el tamaño de la partícula del soluto es tan pequeño que la luz no colisiona con ella y no se dispersa."
+                        }
+                    ],
+                    "buttonNextScreen": "Realiza la simulación del siguiente experimento"
+                }
+            ]
+        },
+        {
+            "title": "Efecto Tyndall",
+            "icon": "science",
+            "steps": false,
+            "class": "bg-blue-200",
+            "blocks": [{
+                "width": "100%",
+                "content": [
+                    {
+                        "component": "simulation.vue"
+                    }
+                ]
+            }]
+        },
+        {
+            "title": "Ejercicio",
+            "icon": "games",
+            "steps": true,
+            "blocks": [
+                {
+                "width": "100%",
+                "content": [
+
+                    {
+                        "grid":1,
+                        "columns":"1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr",
+                        "columnsResponsive": "1fr 1fr 1fr 1fr",
+                        "content":[
+                            { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo1.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Arena"]},
+                            { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo2.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Azúcar"]},
+                            { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo3.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Detergente en polvo"]},
+                            { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo4.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Sal común"]},
+                            { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo5.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Leche"]}
+                            ,{ "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo6.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Alcohol eílico"]}
+                            ,{ "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo7.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Aceite"]}
+                            ,{ "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo8.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Cerillo"]}
+                        ]
+                    },
+                    {"br":2},
+                    {
+                        "inst":"De acuerdo a lo observado en la práctica virtual con el efecto Tyndall, desplaza la imagen hacia la opción que corresponda.", "iconinst":"pan_tool"
+                    },
+                    {"br":2},
+                    {
+                        "text":"1. Los tubos que contienen la mezcla de agua y azúcar (tubo 2) y agua con sal común (tubo 4) corresponden a una disolución, ya que el haz de luz no se dispersa.",
+                        "class": "h5"
+                    },
+                    {
+                        "dragdrop":1,
+                        "drags": [
+                            [
+                                {"group":1, "content":[{"img":"sim/tubo2.svg", "class":"w-6"}, {"img":"sim/tubo4.svg" , "class":"w-6"}]}, 
+                                "no",
+                                [
+                                    "Es correcto, ambas mezclas corresponden a una disolución.",
+                                    "Observa nuevamente la tabla de los ejemplos y recuerda cómo diferenciar los tipos de sistemas dispersos."
+                                ]
+                            ]
+                        ],
+                        "dropsLeft":[["Correcto.", "si"]],
+                        "dropsRight":[["Incorrecto.", "no"]]
+                    },
+                    {"br":2},
+                    {
+                        "text":"2. El tubo correspondiente a la mezcla de leche y agua, así como el del cerillo, son del tipo coloide porque dispersaron el haz de luz.",
+                        "class": "h5"
+                    },
+                    {
+                        "dragdrop":1,
+                        "drags": [
+                            [
+                                {"group":1, "content":[{"img":"sim/tubo5.svg", "class":"w-6"}, {"img":"sim/tubo7.svg" , "class":"w-6"}]}, 
+                                "no",
+                                [
+                                    "Tu respuesta es correcta.",
+                                    "Tu respuesta es incorrecta, da clic en el siguiente botón, para revisar de nuevo el efecto Tyndall en los sistemas dispersos."
+                                ]
+                            ]
+                        ],
+                        "dropsLeft":[["Correcto.", "si"]],
+                        "dropsRight":[["Incorrecto.", "no"]]
+                    },
+                    {"br":2},
+                    {
+                        "text":"3. Los tubos 1, 3 y 7 (agua con arena, agua con detergente en polvo y agua con aceite) corresponden a una suspensión porque se observó la separación de fases.",
+                        "class": "h5"
+                    },
+                    {
+                        "dragdrop":1,
+                        "drags": [
+                            [
+                                {"group":1, "content":[{"img":"sim/tubo1.svg", "class":"w-6"}, {"img":"sim/tubo3.svg" , "class":"w-6"}, {"img":"sim/tubo7.svg" , "class":"w-6"}]}, 
+                                "no",
+                                [
+                                    "La mezcla de agua combinada con algunos otros materiales como la arena, el detergente en polvo y el aceite son un ejemplo de suspensión ¡Bien por tu respuesta!",
+                                    "Tu respuesta es incorrecta, lee nuevamente la descripción de suspensión en la tabla de ejemplos sobre los tipos de sistemas dispersos."
+                                ]
+                            ]
+                        ],
+                        "dropsLeft":[["Correcto.", "si"]],
+                        "dropsRight":[["Incorrecto.", "no"]]
+                    },
+                    {"br":2},
+                    {
+                        "text":"4. Con el efecto Tyndall es posible identificar el coloide ya que dispersa el haz de luz y lo hace visible.",
+                        "class": "h5"
+                    },
+                    {
+                        "dragdrop":1,
+                        "drags": [
+                            [
+                                {"group":1, "content":[{"img":"sim/tubo8.svg", "class":"w-6"}]}, 
+                                "no",
+                                [
+                                    "Es correcto, gracias al efecto Tyndall podemos diferenciar a simple vista los tipos de sistemas dispersos.",
+                                    "Tu respuesta es incorrecta, revisa nuevamente el efecto Tyndall para los coloides."
+                                ]
+                            ]
+                        ],
+                        "dropsLeft":[["Correcto.", "si"]],
+                        "dropsRight":[["Incorrecto.", "no"]]
+                    },
+                    {"br":2}
+                ]
+            },
+            {
+                "width": "100%",
+                "content": [
+                    {"inst": "Por último, selecciona la conclusión que consideres correcta de las siguientes opciones.", "iconinst": "touch_app"},
+                    {"br":2},
+                    {
+                        "select":1,
+                        "columns": "1fr 1fr 1fr",
+                        "options": [
+                            ["Diferenciar los tipos de sistemas dispersos requiere de las características microscópicas que se observan de la materia, ya que con ellas es suficiente para determinar si la mezcla es una disolución, un coloide o una suspensión.", false],
+                            ["Diferenciar los tipos de sistemas dispersos requiere de las características macroscópicas de la materia que se observan al pasar un haz de luz a través de las mezclas y de identificar si se presenta o no el efecto Tyndall.", true],
+                            ["Diferenciar los tipos de sistemas dispersos requiere de las características macroscópicas que se obsrvan de la materia, ya que con ellas es suficiente para determinar si la mezcla es una disolución, un coloide o una suspensión.", false]
+                        ]
+                    }
+                ]
+            }
+        ]
+        },
+        
+        {
+            "title": "Finalizar",
+            "icon": "flag",
+            "end": true,
+            "blocks": [{
+                "content": []
+            }]
+        }
+    ]
+}

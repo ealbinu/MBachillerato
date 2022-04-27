@@ -1,5 +1,5 @@
 <template lang="pug">
-Popper(:class="data.class" :placement="data.placement" :arrow="true")
+Popper(:class="data.class" :placement="data.placement" :arrow="true" :id="data.id")
     span.relative.mr-2
         BlocksRenderer(:item="data.term")
         Icon.termIcon.animate__animated.animate__flash.animate__infinite.animate__slow.absolute.top-0(class="-right-3").text-xs contact_support

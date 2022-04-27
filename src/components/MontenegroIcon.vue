@@ -1,11 +1,11 @@
 <template lang="pug">
 
 .montenegroIcon(:duration="{enter:1000, leave: 3000}" appear :class="logo?'logo':'icon'")
-    img(src="/odas/assets/icons/Montenegro-icon.svg" v-if="!logo")
-    img(src="/odas/assets/icons/Montenegro.svg" v-else)
+    img(src="/assets/icons/Montenegro-icon.svg" v-if="!logo")
+    img(src="/assets/icons/Montenegro.svg" v-else)
 
 
-//.lottie.montenegroicon(:data-animation-path="'odas/assets/icons/micon.json'" data-anim-loop="true" data-name="montenegroicon")
+//.lottie.montenegroicon(:data-animation-path="'assets/icons/micon.json'" data-anim-loop="true" data-name="montenegroicon")
 
 </template>
 <script setup>

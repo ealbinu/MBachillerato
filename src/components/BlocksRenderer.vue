@@ -68,6 +68,11 @@ BlockRepeater(v-else-if="itemdata.repeater" :data="itemdata" :blockid="blockid")
 BlockDiagram(v-else-if="itemdata.diagram" :data="itemdata" :blockid="blockid")
 //-Editor
 BlockEditor(v-else-if="itemdata.editor" :data="itemdata" :blockid="blockid")
+//-Component Dynamic
+BlockComponent(v-else-if="itemdata.component" :data="itemdata" :blockid="blockid")
+//-Lottie
+BlockLottie(v-else-if="itemdata.lottie" :data="itemdata" :blockid="blockid" @completed="emit('completed')")
+
 
 
 </template>
@@ -100,8 +105,10 @@ import BlockLine from './blocks/blockLine.vue';
 import BlockRepeater from './blocks/blockRepeater.vue';
 import BlockDiagram from './blocks/blockDiagram.vue';
 import BlockEditor from './blocks/blockEditor.vue';
+import BlockComponent from './blocks/blockComponent.vue';
+import BlockLottie from './blocks/blockLottie.vue';
 
-
+const emit = defineEmits(['completed'])
 const props = defineProps({
     item: [Object, String],
     blockid: String

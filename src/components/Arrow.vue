@@ -20,7 +20,7 @@ setTimeout(() => {
     width: 100vw
     height: 100vh
     z-index: 999
-    background-image: url(odas/assets/imgs/arrow.svg)
+    background-image: url(assets/imgs/arrow.svg)
     background-size: 1200px
     background-repeat: no-repeat
     animation: arrownimate 1s linear

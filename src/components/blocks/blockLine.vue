@@ -40,18 +40,51 @@ onMounted(()=>{
     drawit()
 })
 
+const elementOrAnchor = (item) => {
+    var data = false
+    if(typeof item == 'string'){
+        data = document.querySelector(item)
+    } else {
+        var coords = {x:item[1],y:item[2]}
+        data = LeaderLine.pointAnchor(document.querySelector(item[0]), coords)
+    }
+    return data
+}
+
+const existsAnchor = (item) => {
+    var exists = false
+    if(typeof item == 'string'){
+        if(document.querySelector(item)){
+            exists = true
+        }
+    } else {
+        if(document.querySelector(item[0])){
+            exists = true
+        }
+    }
+    return exists
+}
+
 const drawit = () => {
     for(var i  in props.data.connections){
         const conn = props.data.connections[i]
-        if(document.querySelector(conn[0]) && document.querySelector(conn[1]) ) {
+        if(existsAnchor(conn[0]) && existsAnchor(conn[1]) ) {
+            var startElelement = elementOrAnchor(conn[0])
+            var endElement = elementOrAnchor(conn[1])
             lines.value[i] = new LeaderLine(
-                document.querySelector(conn[0]),
-                document.querySelector(conn[1]),
+                startElelement,
+                endElement,
                 props.data.options
             )
+            setTimeout(()=>{
+                redraw()
+            },250)
         }
     }
 }
+
+
+
 
 const redrawit = () => {
     for(var i in lines.value){

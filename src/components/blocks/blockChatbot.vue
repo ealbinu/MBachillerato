@@ -9,7 +9,7 @@ div.w-full.text-center
 
                     //-bot
                     .bubble.bot.flex.justify-start.items-center.my-1.text-left.animate__animated.animate__fadeInUp.animate__faster
-                        img(src="/odas/assets/icons/chatbot-bot.svg").w-12.mask.mask-squircle
+                        img(src="/assets/icons/chatbot-bot.svg").w-12.mask.mask-squircle
                         div.bg-gray-100.py-2.px-2.ml-1.rounded-xl.max-w-lg(:class="[findTalk(i.talk).class]")
                             BlocksRenderer(:item="findTalk(i.talk).talk" :blockid="blockid+'-chatbot-bot-'+index")
                             
@@ -17,7 +17,7 @@ div.w-full.text-center
                     .bubble.user.flex.justify-end.items-center.my-1.text-left(v-if="i.answer > -1" ).animate__animated.animate__fadeInUp.animate__faster
                         div.bg-primary.text-white.py-2.px-2.mr-1.rounded-xl.max-w-lg(:class="[ (i.isright!=null && Status.finalize ? (i.isright?'isok':'notok') : 'notevaluated'), 'min-w-[4rem]' ]").text-center
                             BlocksRenderer(:item="findAnswer(i)" :blockid="blockid+'-chatbot-user-'+index")
-                        img(src="/odas/assets/icons/chatbot-user.svg").w-12.mask.mask-squircle
+                        img(src="/assets/icons/chatbot-user.svg").w-12.mask.mask-squircle
 
                     //-userinput
                     .bg-red-400.rounded.my-2.w-full.p-2(v-if="findTalk(i.talk).options && currentTalk == i.talk && chattalk.length-1 == index").userinputbubble
@@ -34,9 +34,9 @@ div.w-full.text-center
                 //-bot writing
                 template(v-if="writing")
                     .bubble.bot.flex.justify-start.items-center.my-1.text-left
-                        img(src="/odas/assets/icons/chatbot-bot.svg").w-12.mask.mask-squircle
+                        img(src="/assets/icons/chatbot-bot.svg").w-12.mask.mask-squircle
                         div.bg-gray-100.py-2.px-1.ml-1.rounded-xl.max-w-md
-                            img(src="/odas/assets/icons/chatbot-writing.gif")
+                            img(src="/assets/icons/chatbot-writing.gif")
                
 // p {{Status.answers[blockid]}}
 

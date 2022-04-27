@@ -2,7 +2,7 @@
 .fixed.top-0.left-0.p-1.z-10.w-full(class="md:hidden")
     .navbar.bg-base-100.rounded.w-full
         .navbar-start
-            img(:src="'odas/assets/icons/'+Activity.programa+'/'+Activity.materia+'.png'").w-12
+            img(:src="'assets/icons/'+Activity.programa+'/'+Activity.materia+'.png'").w-12
         .navbar-center
             .text-lg.font-bold {{Activity.title}}
         .navbar-end.text-right
@@ -23,7 +23,7 @@
 
 .menu.bg-base-100.justify-between.rounded(class="w-56 hidden md:flex")
     div.menu-title
-        img(:src="'odas/assets/icons/'+Activity.programa+'/'+Activity.materia+'.png'").w-12.mx-auto
+        img(:src="'assets/icons/'+Activity.programa+'/'+Activity.materia+'.png'").w-12.mx-auto
     div.menu-title.text-center.text-lg {{Activity.title}}
     div.menu-title.text-center.text-sm {{Activity.conf.materia}}
     div.menu-title.my-5.flex.justify-center
@@ -51,7 +51,7 @@
         
         perfect-scrollbar.container
             div.area.text-center
-                img(:src="'odas/assets/icons/'+Activity.programa+'/'+Activity.materia+'.png'").w-3
+                img(:src="'assets/icons/'+Activity.programa+'/'+Activity.materia+'.png'").w-3
             div.area.text-center.areaTitle
                 .h4 {{Activity.title}}
                 .small {{Activity.conf.materia}}

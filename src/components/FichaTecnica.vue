@@ -12,7 +12,7 @@ import BlockDialog from './blocks/blockDialog.vue';
 const props = defineProps({})
 const Activity = inject('activityFile')
 
-const iconUrlImg = '<div class="tooltip" data-tip="Ficha Técnica"> <img src="odas/assets/icons/'+Activity.programa+'/ico-ficha-tecnica.png" class="w-12"> </div>'
+const iconUrlImg = '<div class="tooltip" data-tip="Ficha Técnica"> <img src="assets/icons/'+Activity.programa+'/ico-ficha-tecnica.png" class="w-12"> </div>'
 
 
 const fichagrid = ref([])
