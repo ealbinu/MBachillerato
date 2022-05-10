@@ -74,6 +74,9 @@
                                 "graph":1,
                                 "boundingbox": [-7, 7, 7, -7],
                                 "showNavigation": false
+                            },
+                            {
+                                
                             }
                         ]
                      },
