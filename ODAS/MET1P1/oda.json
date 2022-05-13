@@ -1,15 +1,18 @@
 {
 	"id": "MET1P1",
 	"programa": "DGB",
-	"materia": "algebra",
+	"materia": "METODOLOGIASII",
 	"title": "Tipos de pensamiento",
-	"aprendizajes": "Reconoce el papel de la Investigación Científica y sus conocimientos para identificar problemas sociales de su entorno.",
-	"contenidocentral": "",
+	"ficha": [
+		["Aprendizaje esperado", "Reconoce el papel de la Investigación Científica y sus conocimientos para identificar problemas sociales de su entorno."],
+		["Eje transversal","Eje transversal"]
+	],
 	"screens": [
 		{
 			"title": "Introducción",
 			"icon": "info",
 			"steps": true,
+            "class": "flex flex-col justify-center",
 			"blocks": [
 				{
 					"width": "80%",
@@ -18,127 +21,452 @@
 						{"br": 1},
 						{
 							"dialog": true,
-							"button": {"img":"imgs/caverna.jpg"},
+							"button": [{"img":"imgs/cavernah.jpg"}],
 							"buttonClass": "maxw-32",
 							"content": [
 								{"text":"El mito de la caverna fue creado por Platón para explicar cómo el ser humano, cuando está dentro de la caverna, ve sólo reflejos manipulados de la realidad hasta que un hombre finalmente escapa y puede observarla tal cual es. Esa persona, entonces, regresa y comparte con los demás su experiencia.<br> ¿Es la ciencia lo que le ha permitido al ser humano escapar de la caverna?"}
 							]
 						}
-					]
+					],
+					"buttonNextStep": "Continuar"
 				},
 				{
 					"width": "80%",
 					"content": [
 						{"text":"El pensamiento es la capacidad humana de crear ideas y representaciones en la mente sobre lo que perciben los sentidos. La evolución del pensamiento humano es el origen del vasto conocimiento que la humanidad ha acumulado desde hace más de sesenta mil años, ideas, destrezas, valores, creencias, lenguajes y actitudes que se han desarrollado y transmitido de generación en generación, que han trascendido las distintas épocas históricas, que han sobrevivido a civilizaciones, imperios, guerras, etcétera.",  "class":"p text-left"}
 					]
+				},
+				{
+				   "width": "100%",
+				   "content": [
+					   {
+						  "group": 1,
+						  "class": "table-pensamientohumano",
+						  "content":[
+							  
+								
+							{
+								"grid": 1,
+								"columns": "1fr",
+								"columnsResponsive": "1fr",
+								"class": "text-center h3",
+								"content":[
+									"Tipos de pensamiento humano"
+								]
+							},
+							{
+								"grid": 1,
+								"columns": "1fr 2fr",
+								"columnsResponsive": "1fr 2fr",
+								"content":[
+									{
+									   "group": 1,
+									   "class": "text-bold",
+									   "content":[
+										   "Pensamiento precientífico"
+									   ]
+									},
+									{
+										"group": 1,
+										"class": "text-sm",
+										"content":[
+											{
+												"group": 1,
+												"class": "grid grid-cols-2",
+												"content":[
+													{"term":"Mágico", "content":["Este tipo de pensamiento es el más primitivo, un ejemplo son las supersticiones."]},
+													"Supersticiones."
+												]
+											},
+											{
+												"group": 1,
+												"class": "grid grid-cols-2",
+												"content":[
+													{"term":"Mítico", "content":["Este tipo de pensamiento remite a los mitos que explican el origen del mundo."]},
+													"Mitos."
+												]
+											},
+											{
+												"group": 1,
+												"class": "grid grid-cols-2",
+												"content":[
+													{"term":"Intuitivo", "content":["Este tipo de pensamiento es producto de la percepción inmediata, un ejemplo son las premoniciones."]},
+													"Premoniciones."
+												]
+											},
+											{
+												"group": 1,
+												"class": "grid grid-cols-2",
+												"content":[
+													{"term":"Empírico.", "content":["Este tipo de pensamiento se basa en la experiencia directa y la percepción."]},
+													"Este tipo de pensamiento se basa en la experiencia directa y la <strong>percepción</strong>."
+												]
+											},
+											{
+												"group": 1,
+												"class": "grid grid-cols-2",
+												"content":[
+													{"term":"Religioso", "content":["Este tipo de pensamiento se expresa con las oraciones, en rituales y la creación de leyes morales."]},
+													"Oraciones."
+												]
+											}
+											
+										]
+									}
+								]
+							},
+							{
+								"grid": 1,
+								"columns": "1fr 2fr",
+								"columnsResponsive": "1fr 2fr",
+								"content":[
+									{
+									"group": 1,
+									"class": "text-bold",
+									"content":[
+											"Pensamiento ",
+											{"term":"filosófico", "content":["Este tipo de pensamiento se basa en el razonamiento y la argumentación."]}
+										]
+									},
+									{
+									   "group": 1,
+									   "class": "text-sm",
+									   "content":[
+										   "Cuestionamientos, razonamientos."
+									   ]
+									}
+								]
+							},
+							{
+								"grid": 1,
+								"columns": "1fr 2fr",
+								"columnsResponsive": "1fr 2fr",
+								"content":[
+									{
+										"group": 1,
+										"class": "text-bold",
+										"content":[
+											"Pensamiento ",
+											{"term":"científico", "content": ["Este tipo de pensamiento es objetivo, racional y se basa en un método."]}
+										]
+									},
+									{
+									   "group": 1,
+									   "class": "text-sm",
+									   "content":[
+										   "Método científico: <em>observación</em>, <em>hipótesis</em>, <em>experimentos</em>, <em>comprobaciones</em>, <em>teorías</em>, <em>leyes</em>."
+									   ]
+									}
+								]
+							}
+							]
+						},
+						{"br": 2},
+						{"class":"text-xs text-right", "text":"Fuente: Tipos de pensamiento humano. (2020). Instituto Europeo de Educación. Recuperado de: <a href=\"https://bit.ly/3nt5kxI\" target=\"_blank\">https://bit.ly/3nt5kxI</a> (Consulta: 18 de noviembre de 2021)."},
+						{"css":".table-pensamientohumano {     padding: 10px;     border-radius: 10px; } .table-pensamientohumano .blockGrid {     border-bottom: 1px dashed rgba(255, 255, 255, 0.3); } .table-pensamientohumano .blockGrid .grid:nth-child(odd) {     background: rgba(255, 255, 255, 0.1); } .table-pensamientohumano div {     padding: 1px; }"}
+				   ]
 				}
-
 			]
+		},
+
+		{
+		   "title": "Evolución del pensamiento humano",
+		   "icon": "dashboard",
+		   "steps": false,
+		   "class": "flex flex-col justify-center",
+		   "blocks": [
+				{
+				   "width": "100%",
+				   "content": [
+						{"inst": "Arrastra los elementos para armar una línea de tiempo de la evolución del pensamiento humano.", "iconinst":"pan_tool"},
+						{"br": 1},
+						{"class": "h3 text-center", "text": "Evolución del pensamiento humano"},
+						{"br": 1},
+						{
+						"group": 1,
+						"class": "snap-x snap-mandatory w-full overflow-scroll flex",
+						"content":[
+								{
+									"group": 1,
+									"class": "snap-start w-120 text-center  text-sm",
+									"content":[
+										{
+											"card": 1,
+											"class": "border-2 p-0 h-32 w-32 ",
+											"classBody": "flex justify-center items-center h-32 w-32 p-0",
+											"content":[
+												"Suceso"
+											]
+										},
+										{
+											"card": 1,
+											"class": "border-2 p-0 h-32 w-32 ",
+											"classBody": "flex justify-center items-center h-32 w-32 p-0",
+											"content":[
+												"Pensamiento"
+											]
+										},
+										{
+											"card": 1,
+											"class": "border-2 p-0 h-32 w-32 ",
+											"classBody": "flex justify-center items-center h-32 w-32 p-0",
+											"content":[
+												"Periodo"
+											]
+										}
+									]
+								},
+								{
+									"group": 1,
+									"class": "snap-start w-120 text-center",
+									"content":[
+										{ "id":"boxa1", "symbol":"timelineBox" },
+										{ "id":"boxa2", "symbol":"timelineBox" },
+										{ "id":"boxa3", "symbol":"timelineBox" }
+									]
+								},
+								{
+									"group": 1,
+									"class": "snap-start w-120 text-center",
+									"content":[
+										{ "id":"boxb1", "symbol":"timelineBox" },
+										{ "id":"boxb2", "symbol":"timelineBox" },
+										{ "id":"boxb3", "symbol":"timelineBox" }
+									]
+								},
+								{
+									"group": 1,
+									"class": "snap-start w-120 text-center",
+									"content":[
+										{ "id":"boxc1", "symbol":"timelineBox" },
+										{ "id":"boxc2", "symbol":"timelineBox" },
+										{ "id":"boxc3", "symbol":"timelineBox" }
+									]
+								},
+								{
+									"group": 1,
+									"class": "snap-start w-120 text-center",
+									"content":[
+										{ "id":"boxd1", "symbol":"timelineBox" },
+										{ "id":"boxd2", "symbol":"timelineBox" },
+										{ "id":"boxd3", "symbol":"timelineBox" }
+									]
+								},
+								{
+									"group": 1,
+									"class": "snap-start w-120 text-center",
+									"content":[
+										{ "id":"boxe1", "symbol":"timelineBox" },
+										{ "id":"boxe2", "symbol":"timelineBox" },
+										{ "id":"boxe3", "symbol":"timelineBox" }
+									]
+								},
+								{
+									"group": 1,
+									"class": "snap-start w-120 text-center",
+									"content":[
+										{ "id":"boxf1", "symbol":"timelineBox" },
+										{ "id":"boxf2", "symbol":"timelineBox" },
+										{ "id":"boxf3", "symbol":"timelineBox" }
+									]
+								}
+						]
+						},
+						{"br": 1},
+						{
+							"group": 1,
+							"class": "flex gap-2 flex-wrap justify-center",
+							"content":[
+								{
+									"symbol":"timelineDrag",
+									"content": [
+										"Fabricación de herramientas que requieren de capacidad cognitiva <span class=\"text-[8px]\">(puntas de flecha)</span>.",
+										{"img":"imgs/timeline/a1.png", "class":"w-12"}
+									],
+									"correctId": "#boxa1"
+								},
+								{
+									"symbol":"timelineDrag",
+									"content": [
+										"Pinturas rupestres relacionadas con rituales para favorecer la caza.",
+										{"img":"imgs/timeline/b1.png", "class":"w-12"}
+									],
+									"correctId": "#boxb1"
+								},
+								{
+									"symbol":"timelineDrag",
+									"content": [
+										"Enûma Elish, poema babilónico escrito en tablas de arcilla que narra el origen del universo.",
+										{"img":"imgs/timeline/c1.png", "class":"w-12"}
+									],
+									"correctId": "#boxc1"
+								},
+								{
+									"symbol":"timelineDrag",
+									"content": [
+										"Judaísmo, primera religión monoteísta.",
+										{"img":"imgs/timeline/d1.png", "class":"w-12"}
+									],
+									"correctId": "#boxd1"
+								},
+								{
+									"symbol":"timelineDrag",
+									"content": [
+										"Sócrates, considerado el verdadero iniciador de la filosofía.",
+										{"img":"imgs/timeline/e1.png", "class":"w-12"}
+									],
+									"correctId": "#boxe1"
+								},
+								{
+									"symbol":"timelineDrag",
+									"content": [
+										"René Descartes, padre del racionalismo y el método científico.",
+										{"img":"imgs/timeline/f1.png", "class":"w-12"}
+									],
+									"correctId": "#boxf1"
+								},
+								{
+									"symbol":"timelineDrag",
+									"content": ["Pensamiento primitivo."],
+									"correctId": "#boxa2"
+								},
+								{
+									"symbol":"timelineDrag",
+									"content": ["Pensamiento mágico."],
+									"correctId": "#boxb2"
+								},
+								{
+									"symbol":"timelineDrag",
+									"content": ["Pensamiento mítico."],
+									"correctId": "#boxc2"
+								},
+								{
+									"symbol":"timelineDrag",
+									"content": ["Pensamiento religioso."],
+									"correctId": "#boxd2"
+								},
+								{
+									"symbol":"timelineDrag",
+									"content": ["Pensamiento filosófico."],
+									"correctId": "#boxe2"
+								},
+								{
+									"symbol":"timelineDrag",
+									"content": ["Pensamiento científico."],
+									"correctId": "#boxf2"
+								},
+								{
+									"symbol":"timelineDrag",
+									"content": ["1.8 millones de años"],
+									"correctId": "#boxa3"
+								},
+								{
+									"symbol":"timelineDrag",
+									"content": ["22 000 a. n. e."],
+									"correctId": "#boxb3"
+								},
+								{
+									"symbol":"timelineDrag",
+									"content": ["1200 a. n. e."],
+									"correctId": "#boxc3"
+								},
+								{
+									"symbol":"timelineDrag",
+									"content": ["586 a. n. e."],
+									"correctId": "#boxd3"
+								},
+								{
+									"symbol":"timelineDrag",
+									"content": ["470 a. n. e."],
+									"correctId": "#boxe3"
+								},
+								{
+									"symbol":"timelineDrag",
+									"content": ["1596"],
+									"correctId": "#boxf3"
+								}
+								
+							]
+						}
+					]
+				}
+		   ]
 		},
 		{
 			"title": "Actividad",
 			"icon": "games",
-			"steps": true,
+			"steps": false,
 			"blocks": [
 				{
 					"width": "100%",
 					"content": [
-						"Lee los enunciados y desplaza la imagen hacia la opción que corresponda."
-					],
-					"buttonNextStep": "Comenzar"
-				},
-				{
-					"width": "100%",
-					"content": [
-						"1. La fabricación de herramientas como puntas de flecha por parte del ser humano primitivo tenía la intención de solucionar problemas sociales.",
+						{"inst": "Lee los enunciados y desplaza la imagen hacia la opción que corresponda.", "iconinst":"pan_tool"}
+						,{"br": 1},
+						{"class": "h5", "text": "1. La fabricación de herramientas como puntas de flecha por parte del ser humano primitivo tenía la intención de solucionar problemas sociales."},
 						{
 							"dragdrop": 1,
 							"drags": [
-								[{"img": "imgs/b/1.jpg", "class":"w-10"}, "f"]
+								[{"img": "imgs/b/1.jpg", "class":"w-20"}, "f", ["Correcto", "El ser humano primitivo utilizó sus capacidades cognitivas para ayudarse a cubrir sus necesidades básicas, su organización social era muy básica. Intenta de nuevo."]]
+								],
+							"dropsLeft": [["Verdadero", "v"]],
+							"dropsRight": [["Falso", "f"]]
+						},
+						{"br": 1},
+						{"class": "h5", "text": "2. Los seres humanos primitivos lograron crear herramientas gracias a la investigación científica."},
+						{
+							"dragdrop": 1,
+							"drags": [
+								[{"img": "imgs/b/2.jpg", "class":"w-20"}, "f", ["Correcto", "Aunque la creación de herramientas se basó en la observación, el método científico implica además la formulación de hipótesis, la experimentación y comprobación, teorías y leyes. Intenta de nuevo."]]
 							],
 							"dropsLeft": [["Verdadero", "v"]],
 							"dropsRight": [["Falso", "f"]]
-						}
-					]
-				},
-				{
-					"width": "100%",
-					"content": [
-						"2. Los seres humanos primitivos lograron crear herramientas gracias a la investigación científica.",
+						},
+						{"br": 1},
+						{"class": "h5", "text": "3. La costumbre de enterrar a los muertos se creó a partir del pensamiento mágico."},
 						{
 							"dragdrop": 1,
 							"drags": [
-								[{"img": "imgs/b/2.jpg", "class":"w-10"}, "v"]
+								[{"img": "imgs/b/3.jpg", "class":"w-20"}, "v", ["Correcto", "Las primeras manifestaciones de una creencia en la trascendencia y existencia del alma dieron pie a rituales que después se convertirían en prácticas religiosas. Intenta de nuevo."]]
 							],
 							"dropsLeft": [["Verdadero", "v"]],
 							"dropsRight": [["Falso", "f"]]
-						}
-					]
-				},
-				{
-					"width": "100%",
-					"content": [
-						"3. La costumbre de enterrar a los muertos se creó a partir del pensamiento mágico.",
+						},
+						{"br": 1},
+						{"class": "h5", "text": "4. El pensamiento mítico nació para explicar todo aquello que atemorizaba al ser humano."},
 						{
 							"dragdrop": 1,
 							"drags": [
-								[{"img": "imgs/b/3.jpg", "class":"w-10"}, "v"]
+								[{"img": "imgs/b/4.jpg", "class":"w-20"}, "v", ["Correcto", "El ser humano no entendía el origen de los fenómenos naturales y creó mitos para explicarlos. Intenta de nuevo."]]
 							],
 							"dropsLeft": [["Verdadero", "v"]],
 							"dropsRight": [["Falso", "f"]]
-						}
-					]
-				},
-				{
-					"width": "100%",
-					"content": [
-						"4. El pensamiento mítico nació para explicar todo aquello que atemorizaba al ser humano.",
+						},
+						{"br": 1},
+						{"class": "h5", "text": "5. El pensamiento filosófico deja de lado la búsqueda de respuestas para satisfacer la curiosidad humana."},
 						{
 							"dragdrop": 1,
 							"drags": [
-								[{"img": "imgs/b/4.jpg", "class":"w-10"}, "f"]
+								[{"img": "imgs/b/5.jpg", "class":"w-20"}, "f", ["Correcto", "La principal fuente de la actividad filosófica es el cuestionamiento. Intenta de nuevo."]]
 							],
 							"dropsLeft": [["Verdadero", "v"]],
 							"dropsRight": [["Falso", "f"]]
-						}
-					]
-				},
-				{
-					"width": "100%",
-					"content": [
-						"5. El pensamiento filosófico deja de lado la búsqueda de respuestas para satisfacer la curiosidad humana.",
+						},
+						{"br": 1},
+						{"class": "h5", "text": "6. El pensamiento científico tuvo un papel fundamental en el progreso de las sociedades humanas."},
 						{
 							"dragdrop": 1,
 							"drags": [
-								[{"img": "imgs/b/5.jpg", "class":"w-10"}, "v"]
+								[{"img": "imgs/b/6.jpg", "class":"w-10"}, "v", ["Correcto", "Los descubrimientos científicos que cambiaron al mundo han ocurrido en los últimos siglos, contrastando con miles de años de pensamiento mítico y religioso. Intenta de nuevo."]]
 							],
 							"dropsLeft": [["Verdadero", "v"]],
 							"dropsRight": [["Falso", "f"]]
-						}
-					]
-				},
-				{
-					"width": "100%",
-					"content": [
-						"6. El pensamiento científico tuvo un papel fundamental en el progreso de las sociedades humanas.",
+						},
+						{"br": 1},
+						{"class": "h5", "text": "7. El pensamiento religioso dio lugar a jerarquías sociales relacionadas con las prácticas religiosas."},
 						{
 							"dragdrop": 1,
 							"drags": [
-								[{"img": "imgs/b/6.jpg", "class":"w-10"}, "v"]
-							],
-							"dropsLeft": [["Verdadero", "v"]],
-							"dropsRight": [["Falso", "f"]]
-						}
-					]
-				},
-				{
-					"width": "100%",
-					"content": [
-						"7. El pensamiento religioso dio lugar a jerarquías sociales relacionadas con las prácticas religiosas.",
-						{
-							"dragdrop": 1,
-							"drags": [
-								[{"img": "imgs/b/7.jpg", "class":"w-10"}, "v"]
+								[{"img": "imgs/b/7.jpg", "class":"w-10"}, "v", ["Correcto", "Las primeras sociedades tuvieron una organización encabezada por la estructura religiosa. Intenta de nuevo."]]
 							],
 							"dropsLeft": [["Verdadero", "v"]],
 							"dropsRight": [["Falso", "f"]]
@@ -146,6 +474,292 @@
 					]
 				}
 			]
+		},
+		{
+		   "title": "Identifica el pensamiento",
+		   "icon": "info",
+		   "steps": false,
+		   "class": "flex flex-col justify-center",
+		   "blocks": [
+			   {
+				  "width": "100%",
+				  "content": [
+					  	
+					{"inst": "Identifica el tipo de pensamiento que corresponde a la interpretación de la situación que se presenta.", "iconinst":"touch_app"},
+					{"br": 1},
+					{
+					   "grid": 1,
+					   "columns": "1fr 1fr 1fr 1fr",
+					   "columnsResponsive": "1fr 1fr 1fr 1fr",
+					   "content":[
+						   {
+							   "symbol":"puzzlepieces",
+							   "button": [{"img":"imgs/puz/1.png", "class": "w-32 -scale-100"}],
+							   "content": [
+								   	{
+										"group": 1,
+										"class": "h5",
+										"content":[
+										"1. Rosa, madre de dos niñas y un niño, acudió con una ",
+											{"term": "curandera", "content": ["Persona que realiza prácticas de curación tradicionales y sanación con ayuda de hierbas, masajes e incluso recurriendo a espíritus o deidades."]},
+										" pues sospechaba que alguien les había hecho un mal de ojo a sus hijos."
+										]
+									},
+									{
+										"symbol": "puzzleselect",
+										"options": [
+											["Pensamiento mágico", true, "Respuesta correcta"],
+											["Pensamiento mítico", false, "Este tipo de pensamiento remite a los mitos que explican el origen del mundo."],
+											["Pensamiento religioso", false, "La sospecha de la madre se basa en una superstición. Intenta de nuevo."],
+											["Pensamiento filosófico", false, "Analiza el esquema e intenta una  vez más."]
+										]
+									}
+							   ],
+							   "id": "pz1",
+							   "states": {
+								   "opened": {
+											"classlist": 1,
+											"selector": "#pz1 button img",
+											"addClass": "transition-transform scale-100"
+										}
+								   
+							   }
+						   },
+						   {
+							"symbol":"puzzlepieces",
+							"button": [{"img":"imgs/puz/2.png", "class": "w-32 -scale-100"}],
+							"content": [
+								{
+									"group": 1,
+									"class": "h5",
+									"content":[
+									"2. Un joven activista afirma que la intoxicación es consecuencia del agravio a la ",
+									{"term": "Pachamama", "content": ["Diosa de la mitología inca que es venerada como diosa de la fertilidad y de la Tierra."]},
+									", la madre tierra, y propone realizar una ofrenda para enmendarlo."
+									]
+								},
+								{
+									"symbol": "puzzleselect",
+									"options": [
+										["Pensamiento mágico", false, "Este tipo de pensamiento es el más primitivo, un ejemplo son las supersticiones."],
+										["Pensamiento mítico", true, "Respuesta correcta"],
+										["Pensamiento religioso", false, "Analiza el esquema e intenta una  vez más."],
+										["Pensamiento filosófico", false, "El joven se refiere a una fuerza de la naturaleza de manera simbólica. Intenta de nuevo."]
+									]
+								}
+							],
+							"id": "pz2",
+							   "states": {
+								   "opened": {
+											"classlist": 1,
+											"selector": "#pz2 button img",
+											"addClass": "transition-transform scale-100"
+										}
+								   
+							   }
+						},
+						{
+							"symbol":"puzzlepieces",
+							"button": [{"img":"imgs/puz/3.png", "class": "w-32 -scale-100"}],
+							"content": [
+								{
+									"group": 1,
+									"class": "h5",
+									"content":[
+									"3. La madre de uno de los niños tuvo la sospecha de que algo estuviera ocurriendo en la escuela y lo mantuvo en casa hasta que se conociera la razón de los síntomas."
+									]
+								},
+								 {
+									 "symbol": "puzzleselect",
+									 "options": [
+										 ["Pensamiento filosófico", true, "Este tipo de pensamiento se basa en el razonamiento y la argumentación."],
+										 ["Pensamiento cientpifico", false, "La madre del niño tuvo una premonición. Intenta de nuevo."],
+										 ["Pensamiento intuitivo", true, "Respuesta correcta."],
+										 ["Pensamiento empírico", false, "Analiza el esquema e intenta una  vez más."]
+									 ]
+								 }
+							],
+							"id": "pz3",
+							   "states": {
+								   "opened": {
+											"classlist": 1,
+											"selector": "#pz3 button img",
+											"addClass": "transition-transform scale-100"
+										}
+								   
+							   }
+						},
+						{
+							"symbol":"puzzlepieces",
+							"button": [{"img":"imgs/puz/4.png", "class": "w-32 -scale-100"}],
+							"content": [
+								{
+									"group": 1,
+									"class": "h5",
+									"content":[
+										"4. Una de las maestras observó que la hora del receso coincidía con el momento en que, cada tercer día, rociaban ",
+										{"term": "pesticidas", "content": ["Sustancia química utilizada para eliminar plagas en animales y plantas."]},
+										" en la parcela contigua a la escuela y sugirió que podría estar relacionado con los malestares de los niños."
+									]
+								},
+								 {
+									 "symbol": "puzzleselect",
+									 "options": [
+										 ["Pensamiento religioso", false, "Este tipo de pensamiento se expresa con las oraciones, en rituales y la creación de leyes morales."],
+										 ["Pensamiento filosófico", false, "La maestra hizo la sugerencia basada en sus percepciones y experiencia. Intenta de nuevo."],
+										 ["Pensamiento intuitivo", false, "Analiza el esquema e intenta una  vez más."],
+										 ["Pensamiento empírico", true, "Respuesta correcta."]
+									 ]
+								 }
+							],
+							"id": "pz4",
+							   "states": {
+								   "opened": {
+											"classlist": 1,
+											"selector": "#pz4 button img",
+											"addClass": "transition-transform scale-100"
+										}
+								   
+							   }
+						}
+						,{
+							"symbol":"puzzlepieces",
+							"button": [{"img":"imgs/puz/5.png", "class": "w-32 -scale-100"}],
+							"content": [
+								{
+									"group": 1,
+									"class": "h5",
+									"content":[
+										"5. En la iglesia del lugar se organizó una jornada de oración para pedir por la salud de los niños afectados y una solución del problema."
+									]
+								},
+								 {
+									 "symbol": "puzzleselect",
+									 "options": [
+										 ["Pensamiento mágico", false, "Analiza el esquema e intenta una  vez más."],
+										 ["Pensamiento religioso", true, "Respuesta correcta."],
+										 ["Pensamiento filosófico", false, "Las personas realizan oraciones debido a su creencia en un Dios. Intenta de nuevo."],
+										 ["Pensamiento científico", false, "Este tipo de pensamiento es objetivo, racional y se basa en un <strong>método</strong>."]
+									 ]
+								 }
+							],
+							"id": "pz5",
+							   "states": {
+								   "opened": {
+											"classlist": 1,
+											"selector": "#pz5 button img",
+											"addClass": "transition-transform scale-100"
+										}
+								   
+							   }
+						}
+						,{
+							"symbol":"puzzlepieces",
+							"button": [{"img":"imgs/puz/6.png", "class": "w-32 -scale-100"}],
+							"content": [
+								{
+									"group": 1,
+									"class": "h5",
+									"content":[
+										"6. En la asamblea comunitaria realizada para tratar el asunto, una de las maestras mencionó que el problema del uso de pesticidas debe analizarse partir de la ",
+										{"term": "ética", "content": ["Rama de la filosofía que trata sobre el bien y el mal, los valores morales y la conducta humana."]},
+										" y el reconocimiento del valor ",
+										{"term": "intrínseco", "content": ["Lo que es propio de algo y no depende de la intervención de agentes externos o circunstanciales."]},
+										" de la tierra como un bien común, así la solución estará encaminada a preservar la integridad, estabilidad y armonía de la comunidad y el ",
+										{"term": "ecosistema", "content": ["Conjunto de especies que viven e interactúan entre sí y con los factores físicos del hábitat que comparten."]},
+										"."
+									]
+								},
+								 {
+									 "symbol": "puzzleselect",
+									 "options": [
+										 ["Pensamiento filosófico", true, "Respuesta correcta."],
+										 ["Pensamiento científico", false, "Analiza el esquema e intenta una vez más."],
+										 ["Pensamiento intuitivo", false, "Este tipo de pensamiento es producto de la percepción inmediata, un ejemplo son las <strong>premoniciones</strong>."],
+										 ["Pensamiento empírico", false, "Lo mencionado por la maestra se basa en un razonamiento de tipo ético. Intenta de nuevo."]
+									 ]
+								 }
+							],
+							"id": "pz6",
+							   "states": {
+								   "opened": {
+											"classlist": 1,
+											"selector": "#pz6 button img",
+											"addClass": "transition-transform scale-100"
+										}
+								   
+							   }
+						},
+						{
+							"symbol":"puzzlepieces",
+							"button": [{"img":"imgs/puz/7.png", "class": "w-32 -scale-100"}],
+							"content": [
+								{
+									"group": 1,
+									"class": "h5",
+									"content":[
+										"7. Tipos de pensamientos humanos que pertenecen al conocimiento precientífico."
+									]
+								},
+								 {
+									 "symbol": "puzzleselect",
+									 "options": [
+										 ["Pensamiento filosófico", false, "Analiza el esquema una vez más."],
+										 ["Pensamiento científico", false, "Este tipo de pensamiento es objetivo, racional y se basa en un <strong>método</strong>."],
+										 ["Pensamiento intuitivo", true, "Respuesta correcta."],
+										 ["Pensamiento empírico", true, "Respuesta correcta."]
+									 ]
+								 }
+							],
+							"id": "pz7",
+							   "states": {
+								   "opened": {
+											"classlist": 1,
+											"selector": "#pz7 button img",
+											"addClass": "transition-transform scale-100"
+										}
+								   
+							   }
+						},
+						{
+							"symbol":"puzzlepieces",
+							"button": [{"img":"imgs/puz/8.png", "class": "w-32 -scale-100"}],
+							"content": [
+								{
+									"group": 1,
+									"class": "h5",
+									"content":[
+										"8. Se realizó una investigación en la que se analizaron ",
+										{"term": "muestras", "content": ["Parte que se extrae de algo para tomarla como representativa del todo y así analizarla y estudiarla."]},
+										" de orina de estudiantes de kínder, primaria y telesecundaria. En todos los casos se detectó presencia de seis pesticidas entre los que se encuentran glifosato, 2,4-D, picloram y molinato."
+									]
+								},
+								 {
+									 "symbol": "puzzleselect",
+									 "options": [
+										 ["Pensamiento filosófico", false, "La investigación se llevó a cabo siguiendo un método, lo que arrojó resultados objetivos. Intenta de nuevo."],
+										 ["Pensamiento científico", true, "Respuesta correcta."],
+										 ["Pensamiento intuitivo", false, "Analiza el esquema e intenta una  vez más."],
+										 ["Pensamiento empírico", false, "Este tipo de pensamiento se basa en la experiencia directa y la <strong>percepción</strong>."]
+									 ]
+								 }
+							],
+							"id": "pz8",
+							   "states": {
+								   "opened": {
+											"classlist": 1,
+											"selector": "#pz8 button img",
+											"addClass": "transition-transform scale-100"
+										}
+								   
+							   }
+						}
+						   
+					   ]
+					}
+					]
+				}
+		   ]
 		},
 		{
             "title": "Finalizar",
@@ -157,5 +771,30 @@
                 }
             ]
         }
-	]
+	],
+	"symbols": {
+        "timelineBox": {
+			"group": 1,
+			"class": "dropzone card bg-transparent border-2 border-dashed border-accent flex justify-center items-center h-32 w-64",
+			"content":[" "]
+        },
+		"timelineDrag":{
+			"drag": 1,
+			"bounds": "#block-1-0",
+			"class": "w-[15rem] h-28 text-xs text-center",
+			"dropzone": ".dropzone",
+			"hover": "bg-secondary",
+			"dropzoneItems": "1"
+		},
+		"puzzlepieces": {
+			"dialog": 1,
+			"buttonClass": " hover:bg-transparent",
+			"timeout": 500,
+			"style": ""
+		},
+		"puzzleselect": {
+			"select": 1,
+			"columns": "1fr 1fr"
+		}
+    }
 }
