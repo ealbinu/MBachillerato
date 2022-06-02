@@ -1,15 +1,20 @@
 <template lang="pug">
 .dragItem(ref="block" :class="[data.class]").card.bg-base-100.text-black.rounded-md.shadow-xl
-    .card-body.p-3
+    .card-body.p-3.flex.justify-center.items-center.flex-col
         Icon(class="absolute top-0 left-1/2 transform -translate-x-1/2 text-xs text-gray-300") pan_tool
         template(v-for="(i, index) in data.content")
             BlocksRenderer(:item="i" :blockid="blockid+'-dragitem-'+index")
+
+.feedbackDragItem(v-if="result && data.feedback")
+    BlocksRenderer(:item="data.feedback[0]" :blockid="blockid+'-dragitem-feedback-ok'" v-if="result")
+    BlocksRenderer(:item="data.feedback[1]" :blockid="blockid+'-dragitem-feedback-error'" v-else)
+
 </template>
 <script setup>
 import {ref, inject, onMounted, getCurrentInstance} from 'vue'
 import BlocksRenderer from '../BlocksRenderer.vue';
 import Icon from '../icon.vue';
-
+const emit = defineEmits('completed')
 const props = defineProps({
     data: Object,
     blockid: String
@@ -28,7 +33,6 @@ const hovering = ref(null)
 
 
 
-
 const init = () => {
     if(Status.value.finalize){
         finalize()
@@ -37,7 +41,7 @@ const init = () => {
     if(Blocked){
         return false
     }
-
+    
     dropzones.value = document.querySelectorAll(props.data.dropzone)
 
     startParent.value = block.value.parentElement
@@ -60,11 +64,15 @@ const onDrag = (e,drag) => {
     for(var i =0; i<dropzones.value.length; i++){
         var drop = dropzones.value[i]
         if(drag.hitTest(drop, '40%')){
-            drop.classList.add(...props.data.hover.split(' '))
+            if(props.data.hover){
+                drop.classList.add(...props.data.hover.split(' '))
+            }
             hovering.value = drop
             return false
         } else {
-            drop.classList.remove(...props.data.hover.split(' '))
+            if(props.data.hover){
+                drop.classList.remove(...props.data.hover.split(' '))
+            }
             hovering.value = null
         }
     }
@@ -90,6 +98,7 @@ startDragResult()
 
 const getResult = () => {
     result.value = block.value.parentElement.matches(props.data.correctId)
+    emit('completed', result.value)
 }
 
 
@@ -99,20 +108,19 @@ const onDragEnd = (e,drag) => {
     for(var i =0; i<dropzones.value.length; i++){
         if(hovering.value){
             TweenLite.to(drag.target, 0, { x: 0, y: 0 })
-            hovering.value.classList.remove(...props.data.hover.split(' '))
-            
+            if(props.data.hover){
+                hovering.value.classList.remove(...props.data.hover.split(' '))
+            }
             if(!availableItemsInDropzone(hovering.value)){                
                 return false
             }
             
-            hovering.value.classList.add(...props.data.dropzoneClass.split(' '))
+            if(props.data.dropzoneClass){
+                hovering.value.classList.add(...props.data.dropzoneClass.split(' '))
+            }
+            //DROP
             hovering.value.append(drag.target)
-
             itemsInDropzone(hovering.value)
-            //hovering.value.getAttribute('data-dropzoneitems')
-            //hovering.value.setAttribute('data-dropzoneitems', )
-            
-            
             getResult()
             hovering.value = null
             Audios.sBlockDrag.play()
@@ -150,7 +158,9 @@ const availableItemsInDropzone = (dropzone) => {
 const removeItemFromDropzone = (dropzone) => {
     var items = parseInt(dropzone.getAttribute('data-dropzoneitems'))
     dropzone.setAttribute('data-dropzoneitems', items-1)
-    dropzone.classList.remove(...props.data.dropzoneClass.split(' '))
+    if(props.data.dropzoneClass){
+        dropzone.classList.remove(...props.data.dropzoneClass.split(' '))
+    }
 }
 
 
@@ -171,11 +181,15 @@ const finalize = () => {
 
 
 const loadAnswers = () => {
+    
     if(Status.value.answers[props.blockid]){
         //Loading
         const parent = Status.value.answers[props.blockid]
         document.querySelector('#'+parent).append(block.value)
-        block.value.parentElement.classList.add(...props.data.dropzoneClass.split(' '))
+        if(props.data.dropzoneClass){
+            block.value.parentElement.classList.add(...props.data.dropzoneClass.split(' '))
+            conso
+        }
         itemsInDropzone(block.value.parentElement)
         getResult()
         

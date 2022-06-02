@@ -6,7 +6,8 @@
     "bgimgs": 5,
     "ficha":[
         ["Aprendizajes esperados", "Reconoce la existencia de las variables y distingue sus usos como número general, como incógnita y como relación funcional."],
-        ["Contenido cental", "Uso de las variables y las expresiones algebraicas."]
+        ["Contenido central", "Conceptos básicos del lenguaje algebraico."],
+        ["Eje transversal", "Habilidades lectoras."]
     ],
     "screens": [
         {
@@ -101,14 +102,14 @@
                         },
                         {"br":1},
                         {"text": "1. Javier es gestor de recursos de una casa hogar para niños en situaciones vulnerables y logró que un autolavado done $5 por cada automóvil que lava al día. Para conocer las donaciones que obtiene en un día formuló la siguiente expresión algebraica:", "class":"h5"},
-                        {"math": "d = 5a", "block": true},
+                        {"math": "g = 5a", "block": true},
                         {
                             "dragdrop": true,
                             "drags": [
                                     [{"math": "g", "size": "1.5rem", "dark":1}, "vd"]
                                 ],
-                            "dropsLeft":[["Variable dependiente", "vd"]],
-                            "dropsRight":[["Variable independiente", "vi"]]
+                            "dropsLeft":[["Variable dependiente.", "vd"]],
+                            "dropsRight":[["Variable independiente.", "vi"]]
                         }
                     ]
                 },
@@ -122,8 +123,8 @@
                             "drags": [
                                     [{"math": "n", "size": "1.5rem", "dark":1}, "vi"]
                                 ],
-                            "dropsLeft":[["Variable dependiente", "vd"]],
-                            "dropsRight":[["Variable independiente", "vi"]]
+                            "dropsLeft":[["Variable dependiente.", "vd"]],
+                            "dropsRight":[["Variable independiente.", "vi"]]
                         }
                     ]
                 },
@@ -137,8 +138,8 @@
                             "drags": [
                                     [{"math": "p", "size": "1.5rem", "dark":1}, "vd"]
                                 ],
-                            "dropsLeft":[["Variable dependiente", "vd"]],
-                            "dropsRight":[["Variable independiente", "vi"]]
+                            "dropsLeft":[["Variable dependiente.", "vd"]],
+                            "dropsRight":[["Variable independiente.", "vi"]]
                         }
                     ]
                 },
@@ -152,8 +153,8 @@
                             "drags": [
                                     [{"math": "u", "size": "1.5rem", "dark":1}, "vi"]
                                 ],
-                            "dropsLeft":[["Variable dependiente", "vd"]],
-                            "dropsRight":[["Variable independiente", "vi"]]
+                            "dropsLeft":[["Variable dependiente.", "vd"]],
+                            "dropsRight":[["Variable independiente.", "vi"]]
                         }
                     ]
                 },
@@ -167,8 +168,8 @@
                             "drags": [
                                     [{"math": "a", "size": "1.5rem", "dark":1}, "vi"]
                                 ],
-                            "dropsLeft":[["Variable dependiente", "vd"]],
-                            "dropsRight":[["Variable independiente", "vi"]]
+                            "dropsLeft":[["Variable dependiente.", "vd"]],
+                            "dropsRight":[["Variable independiente.", "vi"]]
                         }
                     ]
                 }
@@ -186,7 +187,7 @@
                             "instruction":1,
                             "content": [
                                 {"icon": "back_hand", "size":"2rem", "class":"animate__animated animate__shakeX animate__slower animate__infinite"},
-                                "Lee los siguientes enunciados, identifica si la literal corresponde a una variable dependiente o independiente y desplázala hacia la opción correcta."
+                                "Identifica si la expresión algebraica representa la relación funcional en los siguientes enunciados y desplazala hacia la opción correcta."
                             ]
                         },
                         {"br": 1},
@@ -226,7 +227,7 @@
                             "dropsLeft":[["Corresponde.", "si"]],
                             "dropsRight":[["No corresponde.", "no"]]
                         },
-                        {"text": "5. El área de un trapecio es igual a la mitad suma de las bases multiplicada por la altura.", "class":"h5"},
+                        {"text": "5. El área de un trapecio es igual a la mitad de la suma de las bases multiplicada por la altura.", "class":"h5"},
                         {
                             "dragdrop": true,
                             "drags": [
@@ -251,7 +252,7 @@
                             "instruction":1,
                             "content": [
                                 {"icon": "touch_app", "size":"2rem", "class":"animate__animated animate__flash animate__slower animate__infinite"},
-                                "Lee los siguientes enunciados, identifica si la literal corresponde a una variable dependiente o independiente y desplázala hacia la opción correcta."
+                                "Lee los siguientes enunciados, identifica la expresión algebraica en la que se presenta el número generalizado y selecciona la opción correcta."
                             ]
                         },
                         {"br": 1},
@@ -270,7 +271,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"text": "2. Es la representación en lenguaje común de ", "class":"h5"},
+                        {"text": "2. Es la representación en lenguaje común de la siguiente expresión ", "class":"h5"},
                         {"math":"(4x - 2y)^2", "block": true},
                         {
                             "select": true,
@@ -301,7 +302,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"text": "4. Es la representación en lenguaje común de ", "class":"h5"},
+                        {"text": "4. Es la representación en lenguaje común de la siguiente expresión ", "class":"h5"},
                         {"math":"\\frac{9x}{(2y + 6)^2}", "block": true},
                         {
                             "select": true,

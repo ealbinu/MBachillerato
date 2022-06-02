@@ -1,5 +1,5 @@
 <template lang="pug">
-.blockGrid(:style="[cssVars, data.style]" :class="data.class")
+.blockGrid(:style="[cssVars, data.style]" :class="data.class" :id="data.id")
     template(v-for="(i, index) in data.content")
         .blockGridItem: BlocksRenderer(:item="i" :blockid="blockid+'-'+index")
 </template>

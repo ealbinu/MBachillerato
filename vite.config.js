@@ -19,7 +19,7 @@ export default defineConfig({
         families: ['Fira Sans', 'Material+Icons']
       }
     }),
-    liveReload('public/odas/**/oda.json', {alwaysReload: false})
+    liveReload('public/ODAS/**/oda.json', {alwaysReload: false})
   ],
   css: {
     preprocessorOptions: {

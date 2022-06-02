@@ -256,6 +256,8 @@ button
 
 .isok, .notok
     position: relative
+    padding-top: 28px
+    border-radius: 6px
     &:before, &:after
         content: ""
         position: absolute
@@ -275,12 +277,14 @@ button
         color: #fff
 .isok
     color: #fff
+    border: 2px dashed $high
     &:after
         content: "check"
     &:before
         background: $high
 .notok
     color: #fff
+    border: 2px dashed $negative
     &:after
         content: "clear"
     &:before

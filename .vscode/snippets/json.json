@@ -1,12 +1,183 @@
 {
-    "newSnippet": {
-        "prefix:" "newSnippet",
+    "snippet": {
+        "prefix": "snippet",
         "body": [
-            "\"$1\": ",
-            "   {",
-            "       \"prefix\": \"$2\",",
-            "       \"body\": []",
-            "   }"
+            "\"${1}\": {",
+            "   \"prefix\": \"${2}\",",
+            "   \"body\": [",
+                    "{",
+                    "       \"\": \"\" ",
+                    "}",
+            "   ]",
+            "}"
         ]
+    },
+    "animationcssAnimated": {
+        "prefix": "anim",
+        "body":[
+            "animate__animated"
+        ]
+    },
+    "animationcssAnimations": {
+        "prefix": "anim_",
+        "body":[
+            "animate__${1|bounce,flash,pulse,rubberBand,shakeX,shakeY,headShake,swing,tada,wobble,jello,heartBeart,backInDown,backInLeft,backInRight,backInUp,backOutDown,backOutLeft,backOutRight,backOutUp,bounceIn,bounceInDown,bounceInLeft,bounceInRight,bounceInUp,bounceOut,bounceOutDown,bounceOutLeft,bounceOutRight,bounceOutUp,fadeIn,fadeInDown,fadeInDownBig,fadeInLeft,fadeInLeftBig,fadeInRight,fadeInRightBig,fadeInUp,fadeInUpBig,fadeInTopLeft,fadeInTopRight,fadeInBottomLeft,fadeInBottomRight,fadeOut,fadeOutDown,fadeOutDownBig,fadeOutLeft,fadeOutLeftBig,fadeOutRight,fadeOutRightBig,fadeOutUp,fadeOutUpBig,fadeOutTopLeft,fadeOutTopRight,fadeOutBottomRight,fadeOutBottomLeft,flip,flipInX,flipInY,flipOutX,flipOutY,lightSpeedInRight,lightSpeedInLeft,lightSpeedOutRight,lightSpeedOutLeft,rotateIn,rotateInDownLeft,rotateInDownRight,rotateInUpLeft,rotateInUpRight,rotateOut,rotateOutDownLeft,rotateOutDownRight,rotateOutUpLeft,rotateOutUpRight,hinge,jackInTheBox,rollIn,rollOut,zoomIn,zoomInDown,zoomInLeft,zoomInRight,zoomInUp,zoomOut,zoomOutDown,zoomOutLeft,zoomOutRight,zoomOutUp,slideInDown,slideInLeft,slideInRight,slideInUp,slideOutDown,slideOutLeft,slideOutRight,slideOutUp|}"
+        ]
+    },
+    "animationcssUtilities": {
+        "prefix": "animu",
+        "body":[
+            "animate__${1|delay-2s,delay-3s,delay-4s,delay-5s,slow,slower,fast,faster,repeat-1,repeat-2,repeat-3,infinite|}"
+        ]
+    },
+
+    "brackets": {
+        "prefix": "ñ",
+        "body": [
+            "{\"${1}\": \"${2}\"},"
+        ]
+    },
+    "screen": {
+       "prefix": "screen",
+       "body": [
+            "{",
+            "   \"title\": \"\",",
+            "   \"icon\": \"${1|info,games,low_priority,account_tree,dashboard,chat_bubble_outline,article,south,scienceflag|}\",",
+            "   \"steps\": true,",
+            "   \"class\": \"flex flex-col justify-center\",",
+            "   \"blocks\": [",
+            "   ]",
+            "},"
+       ]
     }
+    
+    ,"block": {
+        "prefix": "block",
+        "body": [
+            "{",
+            "   \"width\": \"100%\",",
+            "   \"content\": [",
+            "       ${1}",
+            "   ]",
+            "}"
+        ]
+    },
+    "text": {
+        "prefix": "txt",
+        "body": [
+            "{\"class\": \"\", \"text\": \"${1}\"}"
+        ]
+    },
+    "term": {
+        "prefix": "term",
+        "body": [
+            "{\"term\": \"${1}\", \"content\": [\"${2}\"]},"
+        ]
+    },
+    "textAnimation": {
+        "prefix": "txtAnim",
+        "body": [
+            "{\"class\": \"\", \"textAnimation\": \"${1}\"}"
+        ]
+    },
+    "instructions": {
+        "prefix": "inst",
+        "body": [
+            "{\"inst\": \"${1}\", \"iconinst\":\"${2|touch_app,pan_tool,preview|}\"}"
+        ]
+    },
+    "br": {
+       "prefix": "br",
+       "body": [
+           "{\"br\": ${1|1,2,3|}},"
+       ]
+    },
+    "group": {
+    "prefix": "group",
+    "body": [
+            "{",
+            "   \"group\": 1,",
+            "   \"class\": \"\",",
+            "   \"content\":[",
+            "       ",
+            "   ]",
+            "}"
+       ]
+    },
+    "grid": {
+        "prefix": "grid",
+        "body": [
+            "{",
+            "   \"grid\": 1,",
+            "   \"columns\": \"1fr 1fr\",",
+            "   \"columnsResponsive\": \"1fr\",",
+            "   \"content\":[",
+            "       ",
+            "   ]",
+            "}"
+       ]
+    },
+    "select": {
+       "prefix": "select",
+       "body": [
+            "{",
+            "   \"select\": 1,",
+            "   \"columns\": \"1fr 1fr 1fr\",",
+            "   \"options\": [",
+            "       [{}, true],",
+            "       [{}, false]"
+            ,"   ],",
+            "   \"optionClass\": \" \",",
+            "   \"optionClassActive\": \" \",",
+            "   \"feedback\": [",
+            "       [],",  
+            "       []",  
+            "   ]",
+            "}"
+       ]
+    },
+    "dialog": {
+        "prefix": "dialog",
+        "body": [
+            "{",
+            "   \"dialog\": 1,",
+            "   \"button\": [],",
+            "   \"buttonClass\": \"\",",
+            "   \"style\": \"\",",
+            "   \"content\":[",
+            "       ",
+            "   ]",
+            "}"
+       ]
+    },
+    "card": {
+        "prefix": "card",
+        "body": [
+            "{",
+            "   \"card\": 1,",
+            "   \"class\": \"\",",
+            "   \"content\":[",
+            "       ",
+            "   ]",
+            "}"
+       ]
+    },
+    "drag": {
+       "prefix": "drag",
+       "body": [
+            "{",
+            "   \"drag\": 1,",
+            "   \"content\": [],",
+            "   \"bounds\": \"\",",
+            "   \"class\": \"\",",
+            "   \"dropzone\": \".drop\", ",
+            "   \"correctId\": \"#\", ",
+            "   \"hover\": \"\", ",
+            "   \"dropzoneClass\": \"\", ",
+            "   \"dropzoneItems\": \"\", ",
+            "}"
+       ]
+    }
+
+>>>>>>> Stashed changes
 }

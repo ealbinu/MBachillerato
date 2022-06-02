@@ -5,52 +5,57 @@
     "title": "Interpretación de variables",
     "bgimgs": 5,
     "ficha": [
-        ["Aprendizajes esperados", "Reconoce la existencia de las variables y distingue sus usos como número general, como incógnita y como relación funcional."]
+        ["Aprendizajes esperados", "Reconoce la existencia de las variables y distingue sus usos como número general, como incógnita y como relación funcional."],
+        ["Contenido central", "Uso de las variables y las expresiones algebraicas."],
+        ["Eje transversal", "Habilidades lectoras."]
     ],
     "screens": [{
             "title": "Introducción",
             "icon": "info",
             "steps": true,
+            "class": "flex flex-col justify-center",
             "blocks": [{
-                    "width": "100%",
+                    "width": "70%",
                     "content": [
-                        "En ",
-                        {
-                            "term": "álgebra",
-                            "content": ["Rama de las matemáticas que estudia la cantidad en general y se vale de números, símbolos y letras para resolver operaciones aritméticas."]
-                        },
-                        " es posible asignar valores numéricos a las letras (",
-                        {
-                            "term": "literales",
-                            "content": ["Es un concepto o magnitud que se expresa por medio letras."]
-                        },
-                        "), ya sea para representar una cantidad o para saber qué valor tiene un dato desconocido (",
-                        {
-                            "term": "incógnita",
-                            "content": ["Valor desconocido que es preciso determinar en una ecuación."]
-                        },
-                        "). A una o más literales relacionadas entre sí por medio de operaciones aritméticas se les llama ",
-                        {
-                            "term": "expresión algebraica",
-                            "content": ["Conjunto de números y literales que están relacionados entre sí por medio de los signos de operaciones aritméticas."]
-                        },
-                        ".",
-                        {
-                            "text": "En la siguiente representación, para encontrar el valor de la botella de metal se requiere conocer el valor de la botella de plástico."
-                        },
+                        {"group":1,
+                        "content":[
+                            "En ",
+                            {
+                                "term": "álgebra",
+                                "content": ["Rama de las matemáticas que estudia la cantidad en general y se vale de números, símbolos y letras para resolver operaciones aritméticas."]
+                            },
+                            " es posible asignar valores numéricos a las letras (",
+                            {
+                                "term": "literales",
+                                "content": ["Es un concepto o magnitud que se expresa por medio letras."]
+                            },
+                            "), ya sea para representar una cantidad o para saber qué valor tiene un dato desconocido (",
+                            {
+                                "term": "incógnita",
+                                "content": ["Valor desconocido que es preciso determinar en una ecuación."]
+                            },
+                            "). A una o más literales relacionadas entre sí por medio de operaciones aritméticas se les llama ",
+                            {
+                                "term": "expresión algebraica",
+                                "content": ["Conjunto de números y literales que están relacionados entre sí por medio de los signos de operaciones aritméticas."]
+                            },
+                            ".",
+                            {
+                                "text": "En la siguiente representación, para encontrar el valor de la botella de metal se requiere conocer el valor de la botella de plástico."
+                            }
+
+                        ]},
+                        {"br":2},
                         {
                             "group": 1,
-                            "class": "flex justify-center items-center",
-                            "content": [{
-                                    "img": "metal.png"
-                                },
+                            "class": "flex justify-center items-center animate__animated animate__pulse",
+                            "content": [
+                                {"img": "img/botellaMetal.svg", "class":"w-10 mr-2"},
                                 {
                                     "math": " = 1 + 3 \\times",
                                     "size": "2rem"
                                 },
-                                {
-                                    "img": "plastico.png"
-                                }
+                                {"img": "img/botellaPlastico.svg", "class":"w-12 ml-2"}
                             ]
                         }
 
@@ -70,6 +75,7 @@
                                         "dark": 1
                                     }]
                                 },
+
                                 {
                                     "math": " = 1 + 3 \\times",
                                     "size": "2rem"
@@ -82,24 +88,34 @@
                         {
                             "br": 1
                         },
-                        "Esta representación puede emplearse como una expresión algebraica remplazando la botella de plástico por la literal ",
                         {
-                            "math": "b"
+                            "grid":1,
+                            "columns": "1fr 3fr 1fr",
+                            "content":[
+                                {"lottie":"img/botellaMetal.json" ,"autoplay":true, "loop": true},
+                                {
+                                    "group":1,
+                                    "content":[
+                                        "Esta representación puede emplearse como una expresión algebraica remplazando la botella de plástico por la literal ",
+                                        {"math": "b"},
+                                        " y la botella de metal por la literal ",
+                                        { "math": "m" },
+                                        ", de esta manera obtenemos la siguiente expresión."
+                                    ]
+                                },
+                                {"lottie":"img/botellaPlastico.json" ,"autoplay":true, "loop": true}
+                            ]
                         },
-                        " y la botella de metal por la literal ",
+                        {"br":2},
                         {
-                            "math": "m"
-                        },
-                        ", de esta manera obtenemos la siguiente expresión.",
-                        {
-                            "math": " m = 1 + 3 \\times b",
+                            "math": " m = 1 + 3  b",
                             "size": "2rem",
                             "block": 1
                         }
                     ]
                 },
                 {
-                    "width": "100%",
+                    "width": "70%",
                     "content": [
                         "En este caso, las literales ",
                         {

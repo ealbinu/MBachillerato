@@ -1,47 +1,54 @@
 <template lang="pug">
-.blockDragDrop(:id="'block-'+blockid" ref="block")
-    //Droppables LEFT
-    section(v-if="data.dropsLeft").drops.dropsLeft
-            template(v-for="(i, index) in data.dropsLeft")
-                div.drop(:data="i[1]")
-                    //.content(v-if="typeof i[0] === 'string' " v-html="i[0]")
-                    //BlockMath(v-else-if="i[0].math" :data="i[0]" )
-                    BlocksRenderer(:item="i[0]" :blockid=" blockid+'-dropLeft-'+index ")
-    
-    //DRAGGABLES
-    section.drags
-        template(v-for="(i, index) in data.drags")
-            div.drag(:data="b64(i[1])" :data-index="index")
-                Icon pan_tool
-                //.content(v-if="typeof i[0] === 'string' " v-html="i[0]")
-                //BlockMath(v-else-if="i[0].math" :data="i[0]" )
-                BlocksRenderer(:item="i[0]" :blockid=" blockid+'-drag-'+index ")
-                //Feedback
-                template(v-if="i[2]")
-                    .feedback.f0.animate__animated.animate__flash: BlocksRenderer(:item="i[2][0]" :blockid=" blockid+'-dropRight-'+index+'-feedback' ")
-                    .feedback.f1.animate__animated.animate__flash: BlocksRenderer(:item="i[2][1]" :blockid=" blockid+'-dropRight-'+index+'-feedback' ")
+BlockReplacer(ref="replacer")
+    template(v-slot:main="")
+        .blockDragDrop(:id="'block-'+blockid" ref="block")
+            //Droppables LEFT
+            section(v-if="data.dropsLeft").drops.dropsLeft
+                    template(v-for="(i, index) in data.dropsLeft")
+                        div.drop(:data="i[1]")
+                            //.content(v-if="typeof i[0] === 'string' " v-html="i[0]")
+                            //BlockMath(v-else-if="i[0].math" :data="i[0]" )
+                            BlocksRenderer(:item="i[0]" :blockid=" blockid+'-dropLeft-'+index ")
+            
+            //DRAGGABLES
+            section.drags
+                template(v-for="(i, index) in data.drags")
+                    div.drag(:data="b64(i[1])" :data-index="index")
+                        Icon pan_tool
+                        //.content(v-if="typeof i[0] === 'string' " v-html="i[0]")
+                        //BlockMath(v-else-if="i[0].math" :data="i[0]" )
+                        BlocksRenderer(:item="i[0]" :blockid=" blockid+'-drag-'+index ")
+                        //Feedback
+                        template(v-if="i[2]")
+                            .feedback.f0.animate__animated.animate__flash: BlocksRenderer(:item="i[2][0]" :blockid=" blockid+'-dropRight-'+index+'-feedback' ")
+                            .feedback.f1.animate__animated.animate__flash: BlocksRenderer(:item="i[2][1]" :blockid=" blockid+'-dropRight-'+index+'-feedback' ")
 
-    //Droppables RIGHT
-    section(v-if="data.dropsRight").drops.dropsRight
-            template(v-for="(i, index) in data.dropsRight")
-                div.drop(:data="i[1]")
-                    //.content(v-if="typeof i[0] === 'string' " v-html="i[0]")
-                    //BlockMath(v-else-if="i[0].math" :data="i[0]" )
-                    BlocksRenderer(:item="i[0]" :blockid=" blockid+'-dropRight-'+index ")
+            //Droppables RIGHT
+            section(v-if="data.dropsRight").drops.dropsRight
+                    template(v-for="(i, index) in data.dropsRight")
+                        div.drop(:data="i[1]")
+                            //.content(v-if="typeof i[0] === 'string' " v-html="i[0]")
+                            //BlockMath(v-else-if="i[0].math" :data="i[0]" )
+                            BlocksRenderer(:item="i[0]" :blockid=" blockid+'-dropRight-'+index ")
+    template(v-slot:second="")
+        BlocksRenderer(:item="data.replace[0]" :blockid=" blockid+'-selectitem-feedback-ok'")
+        //BlocksRenderer(:item="data.replace[1]" :blockid=" blockid+'-selectitem-feedback-wrong'" v-else)
 SolveModule(@solve="solve")
 </template>
 
 <script setup>
-import { ref, getCurrentInstance, inject} from 'vue'
+import { ref, getCurrentInstance, inject, onMounted} from 'vue'
 import BlockMath from './blockMath.vue'
 import SolveModule from '../SolveModule.vue'
 import Icon from '../icon.vue'
 import BlocksRenderer from '../BlocksRenderer.vue';
+import BlockReplacer from './blockReplacer.vue';
 
 const Audios = inject('Audios')
 const Status = inject('statusFile')
 const Blocked = inject('blocked')
 const currentInstance = getCurrentInstance()
+const replacer = ref()
 
 const props = defineProps({
     blockid: String,
@@ -142,14 +149,24 @@ const storeInStatusFile = () => {
     Status.value.answers[props.blockid] = options
 }
 
+
 const initializer = setInterval(function () {
     if(Draggable){
-        createDrags()
-        clearInt()
+        //createDrags()
+        //clearInt()
     } else {
         //console.warn('Loading draggable')
     }
 }, 500)
+
+
+onMounted(()=>{
+    createDrags()
+    clearInt()
+})
+
+
+
 
 const clearInt = () => {
     //console.warn('cleaning')
@@ -174,6 +191,7 @@ const LoadStoredAnswers = () => {
                 var drag = document.querySelector(dragItems+'[data-index="'+op[0]+'"]')
                 var dropzone = document.querySelector(dropItems+'[data='+op[1]+']')
                 dropzone.append(drag)
+                isRightOrWrong(drag)
             }
         }
     } else {
@@ -206,6 +224,10 @@ const isRightOrWrong = (dragItem) => {
         dragItem.setAttribute('data-feedback', 0)
     } else {
         dragItem.setAttribute('data-feedback', 1)
+    }
+
+    if(props.data.replace!=undefined){
+        replacer.value.replace()
     }
 }
 

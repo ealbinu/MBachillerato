@@ -1,30 +1,46 @@
 <template lang="pug">
-.blockSelect(:id="'block-'+blockid" ref="block" :style="cssVars")
-    template(v-for="(i, index) in data.options")
-        div(@click="clicked(index)" :class="[ options[index] ? 'active '+data.optionClassActive : '' , data.optionClass || 'blockSelectOption' ]")
-            template(v-if="!data.optionClass")
-                Icon touch_app
-                .option-letter {{letterop(index)}}
-            BlocksRenderer(:item="i[0]" :blockid=" blockid+'-selectitem' ")
-//-Feedback
-.feedback.text-center
-    template(v-if="data.feedback && options.some( (e)=>{return e==true} )")
-        template(v-if="typeof data.feedback[result?0:1] == 'string'") 
-            //.animate__animated.animate__swing
-            BlocksRenderer(:item="data.feedback[result?0:1]"  :blockid=" blockid+'-selectitem-feedback'")
-        template(v-else)
-            template(v-for="(iblock, indexblock) in data.feedback[result?0:1]"  :key="indexblock")
-                //.animate__animated.animate__swing
-                BlocksRenderer(:item="iblock" :blockid=" blockid+'-selectitem-feedback-'+indexblock")
+//template(v-if="!replaceByFeedback")
+BlockReplacer(ref="replacer")
+    template(v-slot:main="")
+        .blockSelect(:id="'block-'+blockid" ref="block" :style="cssVars")
+            template(v-for="(i, index) in data.options")
+                div(@click="clicked(index, i)" :class="[ options[index] ? 'active '+data.optionClassActive : '' , data.optionClass || 'blockSelectOption' ]")
+                    template(v-if="!data.optionClass")
+                        Icon touch_app
+                        .option-letter {{letterop(index)}}
+                    BlocksRenderer(:item="i[0]" :blockid=" blockid+'-selectitem' ")
+        //-Feedback
+        .feedback.text-center.animate__animated.animate__pulse(v-if="!loading")
+            //-Feedback General
+            template(v-if="data.feedback && options.some( (e)=>{return e==true} )")
+                BlocksRenderer(:item="data.feedback[result?0:1]"  :blockid=" blockid+'-selectitem-feedback'")
+            //-Feedback Individual
+            template(v-if="selectedItem && selectedItem[2]")
+                BlocksRenderer(:item="selectedItem[2]"  :blockid=" blockid+'-selectitem-feedback'")
+                
+
+
+                //template(v-if="typeof data.feedback[result?0:1] == 'string'") 
+                    //.animate__animated.animate__swing
+                    BlocksRenderer(:item="data.feedback[result?0:1]"  :blockid=" blockid+'-selectitem-feedback'")
+                //template(v-else)
+                    template(v-for="(iblock, indexblock) in data.feedback[result?0:1]"  :key="indexblock")
+                        //.animate__animated.animate__swing
+                        BlocksRenderer(:item="iblock" :blockid=" blockid+'-selectitem-feedback-'+indexblock")
+    template(v-slot:second="")
+        BlocksRenderer(:item="data.replace[0]" :blockid=" blockid+'-selectitem-feedback-ok'" v-if="result")
+        BlocksRenderer(:item="data.replace[1]" :blockid=" blockid+'-selectitem-feedback-wrong'" v-else)
+
 SolveModule(@solve="solve")
 </template>
 <script setup>
-import {ref, getCurrentInstance, computed, inject} from 'vue'
+import {ref, getCurrentInstance, computed, inject, onMounted} from 'vue'
 import BlockMath from './blockMath.vue'
 import SolveModule from '../SolveModule.vue'
 import _ from 'lodash'
 import Icon from '../icon.vue'
 import BlocksRenderer from '../BlocksRenderer.vue'
+import BlockReplacer from './blockReplacer.vue'
 
 
 const result = ref(undefined)
@@ -32,7 +48,14 @@ const Status = inject('statusFile')
 const Blocked = inject('blocked')
 const Audios = inject('Audios')
 
+const replacer = ref()
+
+const replaceByFeedback = ref(false)
+
 const currentInstance = getCurrentInstance()
+
+const selectedItem = ref()
+const loading = ref(false)
 
 const props = defineProps({
     blockid: String,
@@ -59,6 +82,11 @@ const isRightOrWrong = () => {
     } else {
         result.value = false
     }
+
+    if(props.data.replace!=undefined){
+        replacer.value.replace()
+    }
+
 }
 
 
@@ -81,13 +109,13 @@ const builder = () => {
 
     //Load stored answers
     if(!Status.value.answers){
-        Status.value.answers = {}
+        Status.value.answers = []
     }
 
-    
-        
     if(Status.value.answers[props.blockid]){
-        options.value = Status.value.answers[props.blockid]
+        options.value = Status.value.answers[props.blockid][0]
+        selectedItem.value = Status.value.answers[props.blockid][1]
+
         isRightOrWrong()
     } else {
         Status.value.answers[props.blockid] = null
@@ -102,18 +130,24 @@ const isSingleSelectionFN = () => {
     if(counts>1){ singleSelection.value = false }
     //console.log(singleSelection.value?'SingleSelection':'Multiple')
 }
-builder()
+
 //- Builder 
+onMounted(()=>{
+    builder()
+})
 
 
-const clicked = (index) => {
+const clicked = (index, item) => {
     if(Blocked){
         return false
     }
     if(Status.value.finalize){
         return false
     }
+
+    selectedItem.value = item
     
+    loading.value = true
     
 
     Audios.sBlockSelect.play()
@@ -129,7 +163,12 @@ const clicked = (index) => {
     isRightOrWrong()
 
     //STORE in Status File
-    Status.value.answers[props.blockid] = options.value
+    Status.value.answers[props.blockid] = [options.value, selectedItem.value]
+
+    setTimeout(()=>{
+        loading.value = false
+    }, 50)
+
 }
 
 
@@ -144,7 +183,7 @@ const solve = () => {
         }
     }
     //STORE in Status File
-    Status.value.answers[props.blockid] = options.value
+    Status.value.answers[props.blockid] = [options.value, selectedItem.value]
 }
 
 
@@ -154,7 +193,7 @@ const solve = () => {
 
 
 const finalize = () => {
-    var dataOptions = props.data.options
+    /*var dataOptions = props.data.options
     var correctOptions = []
     for(var i=0; i<dataOptions.length; i++){
         correctOptions.push(dataOptions[i][1])
@@ -166,8 +205,26 @@ const finalize = () => {
         result.value = false
         block.value.classList.add('notok')
     }
+    */
+
+   isRightOrWrong()
+
+    if(result.value){
+        block.value.classList.add('isok')
+    } else {
+        block.value.classList.add('notok')
+    }
+
     Status.value.result[props.blockid] = result.value
+
 }
+
+
+
+
+
+
+
 
 currentInstance.appContext.config.globalProperties.emitter.on('solve', (evt) => {
     solve()

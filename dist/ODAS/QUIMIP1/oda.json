@@ -242,16 +242,276 @@
         {
             "title": "Efecto Tyndall",
             "icon": "science",
-            "steps": false,
-            "class": "bg-blue-200",
-            "blocks": [{
-                "width": "100%",
-                "content": [
-                    {
-                        "component": "simulation.vue"
-                    }
-                ]
-            }]
+            "steps": true,
+            "class": "bg-blue-200 flex flex-col justify-center items-center",
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {"class":"h4 text-center text-dark", "textAnimation": "¡Bienvenido! En esta práctica utilizarás los siguientes materiales y equipos."},
+                        {"lottie": "sim/1.json",  "segment": [0, 400], "loop":false}
+                    ],
+                    "buttonNextStep": "Siguiente"
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {"class":"h4 text-center text-dark", "textAnimation": "¡Bienvenido! En esta práctica utilizarás los siguientes materiales y equipos."},
+                        {"lottie": "sim/2.json",  "segment": [0, 230], "loop":false}
+                    ],
+                    "buttonNextStep": "Siguiente"
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {"inst":"Se deben marcar los tubos del 1 al 8 con el marcador.", "iconinst":"pan_tool"},
+                        {"br":2},
+                        {
+                            "dragdrop": 1
+                            ,"drags": [
+                                [{"img":"sim/marcador.svg", "class":"w-16 mx-auto"}, "vi"]
+                            ],
+                            "dropsRight":[
+                                [{"img":"sim/tubo-vacio.svg"}, "vi"]
+                            ],
+                            "replace": [
+                                {"lottie": "sim/3.json",  "segment": [0, 70], "loop":false}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {"inst":"Utiliza la piseta para adicionar 5ml de agua en la probeta.", "iconinst":"pan_tool"},
+                        {"br":2},
+                        {
+                            "dragdrop": 1
+                            ,"drags": [
+                                [{"img":"sim/piseta.svg", "class":"w-16 mx-auto"}, "vi"]
+                            ],
+                            "dropsRight":[
+                                [{"img":"sim/probeta.svg"}, "vi"]
+                            ],
+                            "replace": [
+                                {"lottie": "sim/3.json",  "segment": [90, 180], "loop":false}
+                            ]
+                        }
+                        
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {"inst":"Vierte el agua de la probeta en los tubos del 2 al 7", "iconinst":"pan_tool"},
+                        {"br":2},
+                        {
+                            "dragdrop": 1
+                            ,"drags": [
+                                [{"img":"sim/probeta-agua.svg", "class":"w-16 mx-auto"}, "vi"]
+                            ],
+                            "dropsRight":[
+                                [{"img":"sim/tubo-vacio.svg"}, "vi"]
+                            ],
+                            "replace": [
+                                {"lottie": "sim/3.json",  "segment": [200, 330], "loop":false}
+                            ]
+                        }
+                        
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {"class":"h4 text-center text-dark", "textAnimation": "Se adicionarán los materiales a cada tubo."},
+                        {"lottie": "sim/4.json", "autoplay":"true","loop":false}
+                    ],
+                    "buttonNextStep": "Siguiente"
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {"inst":"Sella los tubos de ensayo de 1 al 7.", "iconinst":"pan_tool"},
+                        {"br":2},
+                        {
+                            "select": 1,
+                            "columns": "1fr",
+                            "optionClass": "aspect-square card cursor-pointer flex justify-center items-center w-60 mx-auto",
+                            "options": [
+                                [{"img":"sim/tapon.svg", "class":"w-16 mx-auto"}, true]
+                            ],
+                            "replace": [
+                                {"lottie": "sim/5.json",  "autoplay":true, "loop":false}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {"inst":"Colocar los tubos en el agitador tipo vórtex para mezclar su contenido durante 5 segundos.", "iconinst":"pan_tool"},
+                        {"br":2},
+                        {
+                            "dragdrop": 1
+                            ,"drags": [
+                                [{"img":"sim/tubo1.svg", "class":"w-16 mx-auto"}, "vi"]
+                            ],
+                            "dropsRight":[
+                                [{"img":"sim/agitador.svg"}, "vi"]
+                            ],
+                            "replace": [
+                                {"lottie": "sim/6.json", "autoplay":true, "loop":false}
+                            ]
+                        }
+                        
+                    ]
+                },
+                {
+                  "width": "100%",
+                  "content": [
+                    {"inst":"Deja reposar por 5 minutos.", "iconinst":"pan_tool"},
+                    {"br":2},
+                    {"lottie": "sim/8.json", "autoplay":true, "loop":false}
+                  ],
+                  "buttonNextStep": "Siguiente"
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {"inst":"Haz clic en cada tubo para posicionarlo en la pinza del soporte universal y observa lo que sucede al incidir el haz de luz en el sistema disperso que contiene.", "iconinst":"pan_tool"},
+                        {"br":2},
+                        {
+                            "group":1,
+                            "class": "grid grid-cols-7 justify-center text-center",
+                            "content":[
+                                {
+                                    "dialog":1,
+                                    "button": [{"img":"sim/tubo1.svg", "class":"w-6"}],
+                                    "buttonClass": "",
+                                    "content": [{"lottie": "sim/10.json", "autoplay":true, "loop":false}]
+                                },
+                                {
+                                    "dialog":1,
+                                    "button": [{"img":"sim/tubo2.svg", "class":"w-6"}],
+                                    "buttonClass": "",
+                                    "content": [{"lottie": "sim/11.json", "autoplay":true, "loop":false}]
+                                },
+                                {
+                                    "dialog":1,
+                                    "button": [{"img":"sim/tubo3.svg", "class":"w-6"}],
+                                    "buttonClass": "",
+                                    "content": [{"lottie": "sim/12.json", "autoplay":true, "loop":false}]
+                                },
+                                {
+                                    "dialog":1,
+                                    "button": [{"img":"sim/tubo4.svg", "class":"w-6"}],
+                                    "buttonClass": "",
+                                    "content": [{"lottie": "sim/13.json", "autoplay":true, "loop":false}]
+                                },
+                                {
+                                    "dialog":1,
+                                    "button": [{"img":"sim/tubo5.svg", "class":"w-6"}],
+                                    "buttonClass": "",
+                                    "content": [{"lottie": "sim/14.json", "autoplay":true, "loop":false}]
+                                },
+                                {
+                                    "dialog":1,
+                                    "button": [{"img":"sim/tubo6.svg", "class":"w-6"}],
+                                    "buttonClass": "",
+                                    "content": [{"lottie": "sim/15.json", "autoplay":true, "loop":false}]
+                                },
+                                {
+                                    "dialog":1,
+                                    "button": [{"img":"sim/tubo7.svg", "class":"w-6"}],
+                                    "buttonClass": "",
+                                    "content": [{"lottie": "sim/16.json", "autoplay":true, "loop":false}]
+                                }
+                            ]
+                        }
+                    ],
+                    "buttonNextStep": "Siguiente"
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {"inst":"Enciende un cerillo, introdúcelo en el tubo número 8 y séllalo con el tapón.", "iconinst":"pan_tool"},
+                        {"br":2},
+                        {
+                            "select": 1,
+                            "columns": "1fr",
+                            "optionClass": "aspect-square card cursor-pointer flex justify-center items-center w-60 mx-auto",
+                            "options": [
+                                [{"img":"sim/cerillos.svg", "class":"w-16 mx-auto"}, true]
+                            ],
+                            "replace": [
+                                {"lottie": "sim/9.json",  "autoplay":true, "loop":false}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {"inst":"Haz clic en el tubo 8 para observar qué sucede al incidir el haz de luz en el sistema disperso que contiene.", "iconinst":"pan_tool"},
+                        {"br":2},
+                        {
+                            "group":1,
+                            "class": "grid grid-cols-8 justify-center text-center",
+                            "content":[
+                                {
+                                    "dialog":1,
+                                    "button": [{"img":"sim/tubo1.svg", "class":"w-6"}],
+                                    "buttonClass": "",
+                                    "content": [{"lottie": "sim/10.json", "autoplay":true, "loop":false}]
+                                },
+                                {
+                                    "dialog":1,
+                                    "button": [{"img":"sim/tubo2.svg", "class":"w-6"}],
+                                    "buttonClass": "",
+                                    "content": [{"lottie": "sim/11.json", "autoplay":true, "loop":false}]
+                                },
+                                {
+                                    "dialog":1,
+                                    "button": [{"img":"sim/tubo3.svg", "class":"w-6"}],
+                                    "buttonClass": "",
+                                    "content": [{"lottie": "sim/12.json", "autoplay":true, "loop":false}]
+                                },
+                                {
+                                    "dialog":1,
+                                    "button": [{"img":"sim/tubo4.svg", "class":"w-6"}],
+                                    "buttonClass": "",
+                                    "content": [{"lottie": "sim/13.json", "autoplay":true, "loop":false}]
+                                },
+                                {
+                                    "dialog":1,
+                                    "button": [{"img":"sim/tubo5.svg", "class":"w-6"}],
+                                    "buttonClass": "",
+                                    "content": [{"lottie": "sim/14.json", "autoplay":true, "loop":false}]
+                                },
+                                {
+                                    "dialog":1,
+                                    "button": [{"img":"sim/tubo6.svg", "class":"w-6"}],
+                                    "buttonClass": "",
+                                    "content": [{"lottie": "sim/15.json", "autoplay":true, "loop":false}]
+                                },
+                                {
+                                    "dialog":1,
+                                    "button": [{"img":"sim/tubo7.svg", "class":"w-6"}],
+                                    "buttonClass": "",
+                                    "content": [{"lottie": "sim/16.json", "autoplay":true, "loop":false}]
+                                },
+                                {
+                                    "dialog":1,
+                                    "button": [{"img":"sim/tubo8.svg", "class":"w-6"}],
+                                    "buttonClass": "",
+                                    "content": [{"lottie": "sim/17.json", "autoplay":true, "loop":false}]
+                                }
+                            ]
+                        }
+                    ],
+                    "buttonNextScreen": "Continuar"
+                }
+            ]
         },
         {
             "title": "Ejercicio",
@@ -271,10 +531,10 @@
                             { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo2.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Azúcar"]},
                             { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo3.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Detergente en polvo"]},
                             { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo4.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Sal común"]},
-                            { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo5.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Leche"]}
-                            ,{ "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo6.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Alcohol eílico"]}
-                            ,{ "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo7.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Aceite"]}
-                            ,{ "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo8.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Cerillo"]}
+                            { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo5.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Leche"]},
+                            { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo6.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Alcohol eílico"]},
+                            { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo7.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Aceite"]},
+                            { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo8.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Cerillo"]}
                         ]
                     },
                     {"br":2},

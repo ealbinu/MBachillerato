@@ -59,7 +59,7 @@ BlockChatbot(v-else-if="itemdata.chatbot" :data="itemdata" :blockid="blockid")
 //-Card
 BlockCard(v-else-if="itemdata.card" :data="itemdata" :blockid="blockid")
 //-Drag Single itemdata
-BlockDragItem(v-else-if="itemdata.drag" :data="itemdata" :blockid="blockid")
+BlockDragItem(v-else-if="itemdata.drag" :data="itemdata" :blockid="blockid" )
 //-Line
 BlockLine(v-else-if="itemdata.line" :data="itemdata")
 //-Repeater
@@ -72,13 +72,15 @@ BlockEditor(v-else-if="itemdata.editor" :data="itemdata" :blockid="blockid")
 BlockComponent(v-else-if="itemdata.component" :data="itemdata" :blockid="blockid")
 //-Lottie
 BlockLottie(v-else-if="itemdata.lottie" :data="itemdata" :blockid="blockid" @completed="emit('completed')")
-
-
+//-Graph JXG
+BlockGraph(v-else-if="itemdata.graph" :data="itemdata" :blockid="blockid")
+//-Classlist
+BlockClasslist(v-else-if="itemdata.classlist" :data="itemdata" :blockid="blockid")
 
 </template>
 <script setup>
 import {ref, inject} from 'vue'
-
+import _ from 'lodash'
 import BlockMath from './blocks/blockMath.vue';
 import BlockDragDrop from './blocks/blockDragDrop.vue';
 import BlockSelect from './blocks/blockSelect.vue';
@@ -107,6 +109,9 @@ import BlockDiagram from './blocks/blockDiagram.vue';
 import BlockEditor from './blocks/blockEditor.vue';
 import BlockComponent from './blocks/blockComponent.vue';
 import BlockLottie from './blocks/blockLottie.vue';
+import BlockGraph from './blocks/blockGraph.vue';
+import BlockClasslist from './blocks/blockClasslist.vue';
+
 
 const emit = defineEmits(['completed'])
 const props = defineProps({
@@ -126,6 +131,10 @@ if(itemdata.value.symbol){
     for(var i in sym){
         itemdata.value[i] = sym[i]
     }
+}
+//Shuffle attribute
+if(itemdata.value.shuffle){
+    itemdata.value[itemdata.value.shuffle] = _.shuffle(itemdata.value[itemdata.value.shuffle])
 }
 
 

@@ -22,7 +22,7 @@
                 div.my-3 A continuación podrás ver un resúmen de tus resultados:
                 .row.wrap
                     template(v-for="(i, index) in Status.result")
-                        div(:class="i?'isok':'notok'").px-3.ma-1.floatcard
+                        div(:class="i?'isok':'notok'").px-3.ma-1.floatcard.my-1
                             button.btn.btn-sm.m-1(@click="gotoUnanswered(index)").ma-1 {{unansweredBlock(index)}}
         template(v-else)
         //0 preguntas

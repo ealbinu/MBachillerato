@@ -3,7 +3,7 @@
     template(v-for="(i, index) in Activity.bgimgs")
         Transition(name="fadebg" mode="out-in")
             .ActBG(v-if="counter == (index+1)")
-                .ActivityBG(:style=" 'background-image:url(odas/'+Activity.id+'/bg/'+'bg'+(index+1)+'.jpg' + ')'  ")
+                .ActivityBG(:style=" 'background-image:url(ODAS/'+Activity.id+'/bg/'+'bg'+(index+1)+'.jpg' + ')'  ")
 
 </template>
 <script setup>

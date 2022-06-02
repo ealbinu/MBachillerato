@@ -228,6 +228,7 @@ async function loadOdaFile(){
             const saveDataToStorage = _.throttle(function (actual, prev) {
                 const enc =  Base64.btoa(JSON.stringify(actual.value))
                 storage.setStorageSync('status', enc)
+                storage.setStorageSync('test', actual.value)
                 const endData = {
                     status: enc,
                     results: statusFile.value.finalize? resultsFile.value : null
@@ -307,26 +308,5 @@ window.addEventListener('resize', function () {
 
 
 
-/*
-async function reLoadOdaFile(){
-    const queryString = window.location.search
-    const params = new URLSearchParams(queryString)
-    const oda = params.get('oda')
-    if(oda){
-        try {
-            const res = await axios.get('./odas/'+oda+'/oda.json')
-            app.provide('activityFile', res.data)
-        } catch (err){
-            alert('Ocurrió un error al cargar la ODA')
-            console.log(err)
-        }
-    }
-}
-
-// HRM event
-import.meta.hot.on('vite:beforeUpdate', () => {
-    reLoadOdaFile()
-})
-*/
 
 

@@ -39,7 +39,7 @@ const editor = ref()
 
 
 const insertarImg = (img) => {
-    var imageUrl = 'odas/'+Activity.id+'/'+img
+    var imageUrl = 'ODAS/'+Activity.id+'/'+img
     editor.value.blocks.insert("image", {url:imageUrl})
 }
 

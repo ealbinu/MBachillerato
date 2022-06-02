@@ -1,5 +1,5 @@
 <template lang="pug">
-.blockDialog(:style="[data.style]")
+.blockDialog(:style="[data.style]" :id="data.id")
     button(@click="open" :class="data.buttonClass").animate__animated.animate__pulse.animate__infinite.animate__slower
         template(v-for="(i, index) in data.button")
             BlocksRenderer(:item="i" :blockid="blockid+'-button-'+index")
@@ -13,11 +13,16 @@
                     template(v-for="(i, index) in data.content")
                         BlocksRenderer(:item="i" :blockid="blockid+'-content-'+index")
 
+template(v-if="data.states")
+    BlockStates(key="state" :states="['opened', 'closed']" :data="data.states" ref="states" :blockid="blockid+'-state'")
+
 </template>
 <script setup>
 import {ref, inject} from 'vue'
 import Icon from '../icon.vue'
 import BlocksRenderer from '../BlocksRenderer.vue'
+import BlockStates from './blockStates.vue'
+
 const Audios = inject('Audios')
 const HideMenu = inject('hidemenu')
 const props = defineProps({
@@ -26,14 +31,31 @@ const props = defineProps({
     hidesmenu: Boolean
 })
 const dialog = ref(false)
+const states = ref()
+
 const open = () => {
-    dialog.value = true
-    Audios.sopen.play()
-    if(props.hidesmenu){
-        HideMenu.value = true
+    if(states.value){
+        states.value.state('opened')
     }
+    let timeout = 0
+    if(props.data.timeout){
+        timeout = props.data.timeout
+    }
+
+    Audios.sopen.play()
+    setTimeout(()=>{
+        dialog.value = true
+        if(props.hidesmenu){
+            HideMenu.value = true
+        }
+    }, timeout)
+
+    
 }
 const close = () => {
+    if(states.value){
+        states.value.state('closed')
+    }
     dialog.value = false
     Audios.sclose.play()
     if(props.hidesmenu){

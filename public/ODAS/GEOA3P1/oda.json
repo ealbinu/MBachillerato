@@ -1,0 +1,123 @@
+{
+    "id": "GEOA3P1",
+    "programa": "DGETI",
+    "materia": "GEOMETRIAA",
+    "title": "Plano cartesiano",
+    "bgimgs": 5,
+    "ficha": [
+        [ "Aprendizaje esperado", "Ubica en el plano en distintos cuadrantes y localizan puntos en los ejes y los cuadrantes mediante sus coordenadas."],
+        ["Contenido específico", "Sistema de coordenadas cartesiano. Me oriento en el plano: ¿puedo hacer un mapa del sitio en el que vivo? ¿Qué ruta es más corta?"],
+        ["Área de formación integral","Actividades físicas y deportivas. Educación para la salud."]
+    ],
+    "screens": [
+        {
+            "title": "Plano cartesiano",
+            "icon": "info",
+            "steps": true,
+            "class": "flex flex-col justify-center",
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {"class":"h5", "textAnimation": "En el entorno de nuestra vida diaria podemos identificar diversos lugares a los que asistimos y a los que es preciso llegar puntuales, es decir, a una hora determinada. Entre estos lugares se encuentran, por ejemplo, la escuela, la oficina, el aeropuerto, el consultorio médico o el cine, entre otros. Cada uno de ellos se encuentra en una dirección específica que puede ubicarse por medio de distintos sistemas de referencias, como puntos de partida, distancia entre dos puntos, trayectorias de rectas y curvas en un sistema de coordenadas.  "}
+                        ,{"img":"img/im1hor.jpg", "class":"w-full my-[4rem] animate__animated animate__fadeIn animate__slower"},
+                        {"class":"h5", "textAnimation": "Lo anterior nos lleva a hacernos preguntas como: ¿qué ruta es recomendable seguir para que la distancia sea la más corta?, ¿qué tan lejos se encuentra cierto lugar desde el punto en donde estoy?, ¿cómo se llega a un lugar en menos tiempo?, etcétera. Para contestar a estas preguntas es necesario utilizar una herramienta que nos ayude."}
+                    ],
+                    "buttonNextStep": "Continuar"
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {"inst": "Analiza la siguiente situación y selecciona las respuestas correctas.", "iconinst":"preview"},
+                        {"br": 2},
+
+                        "Pedro trata de llevar una vida saludable y por tal motivo hace ejercicio todas las tardes, después del trabajo. Recientemente se mudó al centro de la ciudad y desea saber dónde está el gimnasio más cercano a su nueva casa. Al preguntar, una persona le responde que se encuentra a unas cuadras hacia el sur de la ciudad.",
+                        {"br": 2},
+                        {
+                           "grid": 1,
+                           "columns": "3fr 1fr",
+                           "columnsResponsive": "2fr 1fr",
+                           "content":[
+                               {"class": "h3", "text": "¿Qué elementos debe considerar Pedro para llegar a su destino?"},
+                               {"img": "img/im2.jpg"}
+                           ]
+                        },
+                        {
+                           "select": 1,
+                           "columns": "1fr 1fr 1fr",
+                           "options": [
+                               ["Ubicación", true],
+                               ["Referencias", true],
+                               ["Trayecto", true],
+                               ["Tiempo", true],
+                               ["Orientación", true],
+                               ["Clima", false]
+                           ],
+                           "feedback": [
+                               ["El plano cartesiano es una herramienta de apoyo, importante para trasladarse a un lugar."],
+                               []
+                           ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                     "El ",
+                     {
+                        "dialog": 1,
+                        "button": ["plano cartesiano"],
+                        "buttonClass": "btn btn-xs",
+                        "style": "",
+                        "content":[
+                            {
+                                "graph":1,
+                                "boundingbox": [-7, 7, 7, -7],
+                                "showNavigation": false
+                            },
+                            {
+                                
+                            }
+                        ]
+                     },
+                    " se conforma por dos ejes de ",
+                    {"term": "<strong>coordenadas</strong>", "content":["son dos líneas perpendiculares las cuales forman cuatro cuadrantes."]},
+                    "; abscisa \"<em>x</em>\" (horizontal) y ordenada \"<em>y</em>\" (vertical). El punto donde se intersecan ambas coordenadas se le conoce como origen y se representa con el \"0\". Lo integran, además. cuatro cuadrantes que generalmente se representan con números romanos. El plano cartesiano es una herramienta que sirve para localizar gráficamente puntos, líneas y funciones."
+                    ]
+                 }
+            ]
+        },
+        {
+            "title": "Pares Ordenados",
+            "icon": "info",
+            "steps": true,
+            "class": "flex flex-col justify-center",
+            "blocks": [
+                
+            ]
+        },
+        {
+            "title": "Actividad",
+            "icon": "info",
+            "steps": true,
+            "class": "flex flex-col justify-center",
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Finalizar",
+            "icon": "flag",
+            "end": true,
+            "blocks": [
+                {
+                    "content": []
+                }
+            ]
+        }
+    ]
+}

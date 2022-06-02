@@ -1,6 +1,6 @@
 var DGETI = {
   ALGEBRAI: {
-    materia: "Álgebra I",
+    materia: "Álgebra",
     color: "215 52% 42%",
   },
   LECTURAEOEI: {
@@ -73,21 +73,21 @@ var DGB = {
     materia: "Informática  I",
     color: "",
   },
-  LITERATURAI: {
-    materia: "Literatura  I",
-    color: "",
+  LITERATURA: {
+    materia: "Literatura",
+    color: "332 74% 58%",
   },
   MATEMATICASI: {
     materia: "Matemáticas  I",
-    color: "",
+    color: "40 95% 44%",
   },
   MATEMATICASIII: {
     materia: "Matemáticas  III",
     color: "",
   },
   METODOLOGIASII: {
-    materia: "Metodología de la Investigación  I",
-    color: "",
+    materia: "Metodología de la Investigación",
+    color: "248 42% 51%",
   },
   QUIMICAI: {
     materia: "Química  I",
