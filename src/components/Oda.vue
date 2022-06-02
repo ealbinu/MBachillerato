@@ -2,7 +2,7 @@
 .drawer.drawer-mobile
     input#sidebar(type="checkbox").drawer-toggle
     .drawer-content
-        label.z-10.btn.btn-sm.btn-outline.gap-2.drawer-button.fixed.top-2.left-2.text-xs(for="sidebar" class="lg:hidden").text-white
+        label(for="sidebar" class="z-10 btn btn-sm btn-outline gap-2 drawer-button fixed top-2 left-2 text-xs lg:hidden text-white")
             Icon menu_open
             | Abrir
         OdaActivity

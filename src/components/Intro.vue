@@ -2,7 +2,7 @@
 
 input(type="checkbox" id="my-modal" class="modal-toggle" v-model="dialog")
 .modal
-    .modal-box.relative(class="w-11/12 max-w-5xl")
+    div(class="modal-box relative w-11/12 max-w-5xl")
         //.absolute.right-2.top-2
             Icon dark_mode
             input(type="checkbox" data-act-class="darkmode" data-toggle-theme="dark,light").toggle
