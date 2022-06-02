@@ -1,8 +1,8 @@
 <template lang="pug">
 .menu.justify-between.rounded.w-56.overflow-y-auto.p-2.bg-white.m-1
     div.text-center: img(:src="'assets/icons/'+Activity.programa+'/'+Activity.materia+'.png'").w-12.mx-auto
-    div.text-center: h1.text-dark.text-lg.font-bold.mt-2.leading-5 {{Activity.title}}
     div.text-center: .text-sm {{Activity.conf.materia}}
+    div.text-center: h1.text-dark.text-lg.font-bold.mt-2.leading-5 {{Activity.title}}
     .flex.justify-center.my-2
         FichaTecnica
     hr.mb-1

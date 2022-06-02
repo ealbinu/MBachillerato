@@ -2,7 +2,7 @@
 import axios from 'axios'
 
 import Intro from './components/Intro.vue'
-import ActivitySidebar from './components/ActivitySidebar.vue'
+//import ActivitySidebar from './components/ActivitySidebar.vue'
 import ActivityWindow from './components/ActivityWindow.vue'
 import ActivityBuilder from './components/ActivityBuilder.vue'
 

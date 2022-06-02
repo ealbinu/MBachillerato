@@ -12,7 +12,7 @@ import BlockDialog from './blocks/blockDialog.vue';
 const props = defineProps({})
 const Activity = inject('activityFile')
 
-const iconUrlImg = '<div class="tooltip" data-tip="Ficha Técnica"> <img src="assets/icons/'+Activity.programa+'/ico-ficha-tecnica.png" class="w-12"> </div>'
+const iconUrlImg = '<div class="tooltip" data-tip="Ficha técnica"> <img src="assets/icons/'+Activity.programa+'/ico-ficha-tecnica.png" class="w-12"> </div>'
 
 
 const fichagrid = ref([])
@@ -31,7 +31,7 @@ const buttonBlock = {
     "button": { "html":iconUrlImg },
     "buttonClass": "",
     "content": [
-        {"text": "Ficha Técnica", "class":"text-4xl text-center", "align":"center"},
+        {"text": "Ficha técnica", "class":"text-4xl text-center", "align":"center"},
         {"group":1, "content": fichagrid.value}
     ]
 }

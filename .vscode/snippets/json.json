@@ -1,0 +1,12 @@
+{
+    "newSnippet": {
+        "prefix:" "newSnippet",
+        "body": [
+            "\"$1\": ",
+            "   {",
+            "       \"prefix\": \"$2\",",
+            "       \"body\": []",
+            "   }"
+        ]
+    }
+}

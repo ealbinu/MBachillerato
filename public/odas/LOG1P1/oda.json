@@ -2,12 +2,16 @@
     "id": "LOG1P1",
     "programa": "DGETI",
     "materia": "LOGICA",
-    "title": "Los fines de la argumentación",
+    "title": "Intención argumentativa",
     "bgimgs": 4,
     "ficha": [
         [
             "Aprendizaje esperado",
             "Evaluar si se cumplen, y de qué manera, las intenciones argumentativas en diferentes contextos."
+        ],
+        [
+            "Contenido específico",
+            " Intención argumentativa: persuadir, convencer, cuestionar, polemizar, demostrar, deliberar."
         ],
         [
             "Eje transversal",
@@ -19,6 +23,7 @@
             "title": "Intención argumentativa",
             "icon": "info",
             "steps": false,
+            "class": "flex justify-center items-center",
             "blocks": [
                 {
                     "width": "100%",
@@ -30,6 +35,7 @@
                         {
                             "grid": 1,
                             "content": [
+                                
                                 "Argumentar es una actividad que va más allá del estudio de la filosofía y la lógica. Se puede afirmar que se encuentra presente en todos los intercambios discursivos, desde los más formales hasta las conversaciones cotidianas en donde la argumentación se usa, incluso de forma inconsciente. La argumentación tiene cabida en donde sea necesario el debate constructivo, de aquí la importancia de conocer no sólo el cómo, sino el por qué y para qué se argumenta.",
                                 {
                                     "img": "img/im1.jpg",
