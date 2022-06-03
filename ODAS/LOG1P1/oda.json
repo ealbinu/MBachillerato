@@ -334,6 +334,7 @@
                                 },
                                 {
                                     "dragdrop": 1,
+                                    "blockafter": 1,
                                     "drags": [
                                         [
                                             {
@@ -377,6 +378,7 @@
                                 },
                                 {
                                     "dragdrop": 1,
+                                    "blockafter": 1,
                                     "drags": [
                                         [
                                             {
@@ -420,6 +422,7 @@
                                 },
                                 {
                                     "dragdrop": 1,
+                                    "blockafter": 1,
                                     "drags": [
                                         [
                                             {
@@ -463,6 +466,7 @@
                                 },
                                 {
                                     "dragdrop": 1,
+                                    "blockafter": 1,
                                     "drags": [
                                         [
                                             {
@@ -506,6 +510,7 @@
                                 },
                                 {
                                     "dragdrop": 1,
+                                    "blockafter": 1,
                                     "drags": [
                                         [
                                             {
