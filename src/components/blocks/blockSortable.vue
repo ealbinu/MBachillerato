@@ -2,7 +2,7 @@
 .blockSortable(:id="'block-'+blockid" ref="block" :class="[data.class]")
     draggable(v-model="itemsModel" item-key="id" @end="storeAnswer" :sort="(Blocked || Status.finalize)?false:true")
         template(#item="{element, index}")
-           div.sortable-item(:data="index+1" :class="[data.numbers?'shownumbers':'', data.classItem]")
+           div.sortable-item(:data="index+1" :class="[data.numbers?'shownumbers':'', data.classItem, 'mb-0.5']")
                 .gestureIcon: Icon swipe_vertical
                 BlocksRenderer(:item="element" :blockid=" blockid+'-sortableitem-'+index" :key="element")
 

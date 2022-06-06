@@ -6,7 +6,7 @@
     
     input(type="checkbox" :id="blockid" v-model="dialog").modal-toggle
     .modal
-        .modal-box.bg-white.text-primary
+        .modal-box.bg-white.text-primary(ref="itemBox")
             label(class="btn btn-sm btn-circle absolute right-2 top-2" @click="close"): Icon close
             .ma-1.pt-5
                 perfect-scrollbar
@@ -22,6 +22,10 @@ import {ref, inject} from 'vue'
 import Icon from '../icon.vue'
 import BlocksRenderer from '../BlocksRenderer.vue'
 import BlockStates from './blockStates.vue'
+import { onClickOutside } from '@vueuse/core'
+
+const itemBox = ref(null)
+
 
 const Audios = inject('Audios')
 const HideMenu = inject('hidemenu')
@@ -32,6 +36,13 @@ const props = defineProps({
 })
 const dialog = ref(false)
 const states = ref()
+
+    onClickOutside(itemBox, (event) => {
+        if(dialog.value) {
+            close()
+        }
+    })
+
 
 const open = () => {
     if(states.value){

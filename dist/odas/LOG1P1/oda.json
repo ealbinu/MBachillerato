@@ -2,12 +2,16 @@
     "id": "LOG1P1",
     "programa": "DGETI",
     "materia": "LOGICA",
-    "title": "Los fines de la argumentación",
+    "title": "Intención argumentativa",
     "bgimgs": 4,
     "ficha": [
         [
             "Aprendizaje esperado",
             "Evaluar si se cumplen, y de qué manera, las intenciones argumentativas en diferentes contextos."
+        ],
+        [
+            "Contenido específico",
+            " Intención argumentativa: persuadir, convencer, cuestionar, polemizar, demostrar, deliberar."
         ],
         [
             "Eje transversal",
@@ -19,21 +23,23 @@
             "title": "Intención argumentativa",
             "icon": "info",
             "steps": false,
+            "class": "flex justify-center items-center",
             "blocks": [
                 {
                     "width": "100%",
                     "content": [
                         {
-                            "text": "En contexto",
-                            "class": "h1"
+                            "textAnimation": "En contexto",
+                            "class": "h1 text-center"
                         },
                         {
                             "grid": 1,
+                            "columns": "1fr 1fr",
                             "content": [
-                                "Argumentar es una actividad que va más allá del estudio de la filosofía y la lógica. Se puede afirmar que se encuentra presente en todos los intercambios discursivos, desde los más formales hasta las conversaciones cotidianas en donde la argumentación se usa, incluso de forma inconsciente. La argumentación tiene cabida en donde sea necesario el debate constructivo, de aquí la importancia de conocer no sólo el cómo, sino el por qué y para qué se argumenta.",
+                                {"class": "text-2xl", "text": "Argumentar es una actividad que va más allá del estudio de la filosofía y la lógica. Se puede afirmar que se encuentra presente en todos los intercambios discursivos, desde los más formales hasta las conversaciones cotidianas en donde la argumentación se usa, incluso de forma inconsciente. La argumentación tiene cabida en donde sea necesario el debate constructivo, de aquí la importancia de conocer no sólo el cómo, sino el por qué y para qué se argumenta."},
                                 {
-                                    "img": "img/im1.jpg",
-                                    "class": "w-48"
+                                    "img": "img/im1.png",
+                                    "class": "w-full"
                                 }
                             ]
                         }
@@ -45,19 +51,21 @@
             "title": "Intenciones de la argumentación",
             "icon": "games",
             "steps": false,
+            "class": "flex justify-center items-center",
             "blocks": [
                 {
                     "width": "100%",
                     "content": [
                         {
-                            "text": "Intenciones de la argumentación",
-                            "class": "h1"
+                            "textAnimation": "Intenciones de la argumentación",
+                            "class": "h1 text-center mb-5"
                         },
                         {
                             "grid": 1,
                             "content": [
                                 {
                                     "group": 1,
+                                    "columns": "2fr 1fr",
                                     "content": [
                                         "Todas las personas argumentan, o al menos lo intentan, ya que en más de una ocasión hemos tratado de influir en otras personas para lograr fines específicos, lo cual significa que, de la misma manera, otras personas han utilizado argumentos para influir en nosotros para lograr sus propios fines, por ejemplo, cuando vemos un anuncio publicitario, la empresa que lo colocó tiene la intención de ",
                                         {
@@ -250,11 +258,12 @@
                                 },
                                 {
                                     "img": "img/im2.jpg",
-                                    "class": "w-48"
+                                    "class": "w-full"
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "buttonNextScreen": "Continuar a la actividad"
                 }
             ]
         },
@@ -266,17 +275,8 @@
                 {
                     "width": "100%",
                     "content": [
-                        {
-                            "instruction": 1,
-                            "content": [
-                                {
-                                    "icon": "touch_app",
-                                    "size": "2rem",
-                                    "class": "animate__animated animate__flash animate__slower animate__infinite"
-                                },
-                                "Selecciona SÍ o NO de acuerdo a la necesidad de argumentos de cada situación."
-                            ]
-                        },
+                        {"inst": "Lee los siguientes enunciados referentes a situaciones en diferentes contextos y selecciona Sí o No de acuerdo a la necesidad de argumentos de cada una de ellas.", "iconinst":"touch_app"},
+                        
                         {
                             "br": 1
                         },
@@ -290,6 +290,7 @@
                                 },
                                 {
                                     "dragdrop": 1,
+                                    "blockafter": 2,
                                     "drags": [
                                         [
                                             {
@@ -298,7 +299,7 @@
                                             },
                                             "si",
                                             [
-                                                "¡Correcto!",
+                                                "¡Correcto! Cuando participas en una polémica necesitas argumentos que apoyen tu postura.",
                                                 "Cuando participas en una <strong>polémica</strong> necesitas argumentos que apoyen tu postura."
                                             ]
                                         ]
@@ -333,6 +334,7 @@
                                 },
                                 {
                                     "dragdrop": 1,
+                                    "blockafter": 1,
                                     "drags": [
                                         [
                                             {
@@ -341,7 +343,7 @@
                                             },
                                             "si",
                                             [
-                                                "¡Correcto!",
+                                                "¡Correcto! Para establecer acuerdos es necesario llevar a cabo una deliberación.",
                                                 "Para establecer acuerdos es necesario llevar a cabo una <strong>deliberación</strong>."
                                             ]
                                         ]
@@ -376,6 +378,7 @@
                                 },
                                 {
                                     "dragdrop": 1,
+                                    "blockafter": 1,
                                     "drags": [
                                         [
                                             {
@@ -384,7 +387,7 @@
                                             },
                                             "no",
                                             [
-                                                "¡Correcto!",
+                                                "¡Correcto! Dado que existe un contrato firmado por la empleada, la directora no necesita convencer ni persuadir a la empleada de hacer su trabajo.",
                                                 "Dado que existe un contrato firmado por la empleada, la directora no necesita <strong>convencer</strong> o <strong>persuadir</strong> a la empleada de hacer su trabajo."
                                             ]
                                         ]
@@ -419,6 +422,7 @@
                                 },
                                 {
                                     "dragdrop": 1,
+                                    "blockafter": 1,
                                     "drags": [
                                         [
                                             {
@@ -427,7 +431,7 @@
                                             },
                                             "si",
                                             [
-                                                "¡Correcto!",
+                                                "¡Correcto! Para demostrar la inocencia de un acusado se necesitan evidencias.",
                                                 "Recuerda que para <strong>demostrar</strong> la inocencia de alguien se necesitan evidencias."
                                             ]
                                         ]
@@ -462,6 +466,7 @@
                                 },
                                 {
                                     "dragdrop": 1,
+                                    "blockafter": 1,
                                     "drags": [
                                         [
                                             {
@@ -470,7 +475,7 @@
                                             },
                                             "si",
                                             [
-                                                "¡Correcto!",
+                                                "¡Correcto! Para convencer a otra persona se necesitan argumentos.",
                                                 "Recuerda que para <strong>convencer</strong> a otra persona se necesitan argumentos."
                                             ]
                                         ]
@@ -505,6 +510,7 @@
                                 },
                                 {
                                     "dragdrop": 1,
+                                    "blockafter": 1,
                                     "drags": [
                                         [
                                             {
@@ -513,7 +519,7 @@
                                             },
                                             "no",
                                             [
-                                                "¡Correcto!",
+                                                "¡Correcto! Las leyes son incuestionables y deben cumplirse sin excepción.",
                                                 "Recuerda que las leyes son incuestionables y deben cumplirse sin excepción."
                                             ]
                                         ]
@@ -572,6 +578,7 @@
                                 },
                                 {
                                     "select": 1,
+                                    "blockafter": 2,
                                     "columns": "1fr 1fr",
                                     "options": [
                                         [
@@ -592,7 +599,7 @@
                                         ]
                                     ],
                                     "feedback": [
-                                        "¡Acertaste!",
+                                        "¡Acertaste! Se cuestiona a alguien con la intención de poner en duda lo que éste acepta o afirma, aportando, además, las pruebas y razonamientos necesarios.",
                                         "No acertaste. Observa cómo la pregunta tiene la intención de poner en duda lo aceptado o afirmado por alguien, aportando las pruebas y razonamientos para lograrlo. Intenta de nuevo."
                                     ]
                                 }
@@ -611,6 +618,7 @@
                             "content": [
                                 {
                                     "select": 1,
+                                    "blockafter": 2,
                                     "columns": "1fr 1fr",
                                     "options": [
                                         [
@@ -631,7 +639,7 @@
                                         ]
                                     ],
                                     "feedback": [
-                                        "¡Acertaste!",
+                                        "¡Acertaste! Una polémica se da cuando existen puntos de vista contrapuestos en un diálogo.",
                                         "Tu respuesta es incorrecta. En este caso la argumentación es parte de un diálogo controversial, en el que existen puntos de vista contrapuestos. Intenta de nuevo."
                                     ]
                                 },
@@ -658,6 +666,7 @@
                                 },
                                 {
                                     "select": 1,
+                                    "blockafter": 2,
                                     "columns": "1fr 1fr",
                                     "options": [
                                         [
@@ -678,7 +687,7 @@
                                         ]
                                     ],
                                     "feedback": [
-                                        "¡Acertaste!",
+                                        "¡Acertaste! En una deliberación se piensa detenidamente en los pros y contras de una elección o decisión antes de adoptarla.",
                                         "No acertaste. La intención de esta argumentación es pensar detenidamente los pros y contras de una elección o decisión antes de adoptarla. Intenta una vez más."
                                     ]
                                 }
@@ -697,6 +706,7 @@
                             "content": [
                                 {
                                     "select": 1,
+                                    "blockafter": 2,
                                     "columns": "1fr 1fr",
                                     "options": [
                                         [
@@ -717,7 +727,7 @@
                                         ]
                                     ],
                                     "feedback": [
-                                        "¡Acertaste!",
+                                        "¡Acertaste! Para convencer a alguien debes probar tu punto de manera racional, de forma tal que no se pueda negar ni contradecir.",
                                         "Tu respuesta es incorrecta. Observa como la argumentación intenta probar algo de manera racional, de forma tal que no se pueda negar ni contradecir. Inténtalo de nuevo."
                                     ]
                                 },
@@ -744,6 +754,7 @@
                                 },
                                 {
                                     "select": 1,
+                                    "blockafter": 2,
                                     "columns": "1fr 1fr",
                                     "options": [
                                         [
@@ -764,7 +775,7 @@
                                         ]
                                     ],
                                     "feedback": [
-                                        "¡Acertaste!",
+                                        "¡Acertaste! Cuando se busca inducir a una persona para que piense, crea o actúe de un modo determinado se recurre a la persuasión.",
                                         " Tu respuesta no es la correcta. Observa cómo lo que se busca con la argumentación es inducir a una persona para que piense, crea o actúe de un modo determinado. Intenta una vez más."
                                     ]
                                 }
@@ -783,6 +794,7 @@
                             "content": [
                                 {
                                     "select": 1,
+                                    "blockafter": 2,
                                     "columns": "1fr 1fr",
                                     "options": [
                                         [
@@ -803,7 +815,7 @@
                                         ]
                                     ],
                                     "feedback": [
-                                        "¡Acertaste!",
+                                        "¡Acertaste! Para demostrar algo debes hacer patente que esa verdad particular está comprendida en una verdad universal de la que se tiene completa certeza.",
                                         "Tu respuesta es incorrecta. Esta argumentación tiene la intención de hacer patente que una verdad particular está comprendida en una verdad universal de la que se tiene completa certeza. Inténtalo de nuevo."
                                     ]
                                 },
@@ -846,6 +858,7 @@
                         },
                         {
                             "select": 1,
+                            "blockafter": 1,
                             "class": "",
                             "columns": "1fr 1fr",
                             "options": [
@@ -867,26 +880,21 @@
                             "optionClass": "aspect-square card cursor-pointer flex justify-center items-center w-60 mx-auto",
                             "optionClassActive": "bg-white animate__animated animate__tada",
                             "feedback": [
-                                [
-                                    {
-                                        "css": "#block-4-1{background:rgba(97, 196, 84,0.7);  }"
-                                    },
-                                    "¡Correcto!",
-                                    {
-                                        "colorize": "rgba(97, 196, 84,1)",
-                                        "destroy": 1
-                                    }
-                                ],
-                                [
+                                
+                                    {"group":1,"content":[
+                                        {
+                                            "css": "#block-4-1{background:rgba(97, 196, 84,0.7);  }"
+                                        },
+                                        "¡Correcto! El argumento tiene la intención convencer mencionando beneficios ambientales que no se pueden negar ni contradecir."
+
+                                    ]}
+                                ,
+                                {"group":1,"content":[
                                     {
                                         "css": "#block-4-1{background:rgba(194, 85, 79, 0.7);}"
                                     },
-                                    "Tu respuesta no es la correcta.",
-                                    {
-                                        "colorize": "rgba(194, 85, 79,1)",
-                                        "destroy": 1
-                                    }
-                                ]
+                                    "Tu respuesta es incorrecta. El argumento tiene la intención de convencer mencionando beneficios ambientales que no se pueden negar ni contradecir, lo que apoya directamente tu propuesta."
+                                ]}
                             ]
                         }
                     ]
@@ -900,6 +908,7 @@
                         },
                         {
                             "select": 1,
+                            "blockafter": 1,
                             "class": "",
                             "columns": "1fr 1fr",
                             "options": [
@@ -921,26 +930,18 @@
                             "optionClass": "aspect-square card cursor-pointer flex justify-center items-center w-60 mx-auto",
                             "optionClassActive": "bg-white animate__animated animate__tada",
                             "feedback": [
-                                [
+                                {"group":1,"content":[
                                     {
                                         "css": "#block-4-2{background:rgba(97, 196, 84,0.7);  }"
                                     },
-                                    "¡Correcto!",
-                                    {
-                                        "colorize": "rgba(97, 196, 84,1)",
-                                        "destroy": 1
-                                    }
-                                ],
-                                [
+                                    "¡Correcto! El argumento expone una ventaja del uso de madera en la construcción de viviendas, pero la intención argumentativa es convencer al ayuntamiento de donar árboles para ser utilizados en un parque."
+                            ]},
+                                {"group":1,"content":[
                                     {
                                         "css": "#block-4-2{background:rgba(194, 85, 79, 0.7);}"
                                     },
-                                    "El argumento expone una ventaja del uso de madera en la construcción de viviendas, pero la intención argumentativa es convencer al ayuntamiento de donar árboles para ser utilizados en un parque.",
-                                    {
-                                        "colorize": "rgba(194, 85, 79,1)",
-                                        "destroy": 1
-                                    }
-                                ]
+                                    "Tu respuesta es incorrecta, pues el argumento expone una ventaja del uso de madera en la construcción de viviendas, pero la intención argumentativa es convencer al ayuntamiento de donar árboles para ser utilizados en un parque."
+                            ]}
                             ]
                         }
                     ]
@@ -954,6 +955,7 @@
                         },
                         {
                             "select": 1,
+                            "blockafter": 1,
                             "class": "",
                             "columns": "1fr 1fr",
                             "options": [
@@ -975,26 +977,18 @@
                             "optionClass": "aspect-square card cursor-pointer flex justify-center items-center w-60 mx-auto",
                             "optionClassActive": "bg-white animate__animated animate__tada",
                             "feedback": [
-                                [
+                                {"group":1,"content":[
                                     {
                                         "css": "#block-4-3{background:rgba(97, 196, 84,0.7);  }"
                                     },
-                                    "¡Correcto!",
-                                    {
-                                        "colorize": "rgba(97, 196, 84,1)",
-                                        "destroy": 1
-                                    }
-                                ],
-                                [
+                                    "¡Correcto!"
+                                ]},
+                                {"group":1,"content":[
                                     {
                                         "css": "#block-4-3{background:rgba(194, 85, 79, 0.7);}"
                                     },
-                                    "Tu respuesta no es la correcta.",
-                                    {
-                                        "colorize": "rgba(194, 85, 79,1)",
-                                        "destroy": 1
-                                    }
-                                ]
+                                    "Tu respuesta no es la correcta."
+                                ]}
                             ]
                         }
                     ]
@@ -1008,6 +1002,7 @@
                         },
                         {
                             "select": 1,
+                            "blockafter": 1,
                             "class": "",
                             "columns": "1fr 1fr",
                             "options": [
@@ -1029,26 +1024,18 @@
                             "optionClass": "aspect-square card cursor-pointer flex justify-center items-center w-60 mx-auto",
                             "optionClassActive": "bg-white animate__animated animate__tada",
                             "feedback": [
-                                [
+                                {"group":1,"content":[
                                     {
                                         "css": "#block-4-4{background:rgba(97, 196, 84,0.7);  }"
                                     },
-                                    "¡Correcto!",
-                                    {
-                                        "colorize": "rgba(97, 196, 84,1)",
-                                        "destroy": 1
-                                    }
-                                ],
-                                [
+                                    "¡Correcto! Con este argumento se busca persuadir, ya que se utiliza para logar que la otra persona adopte la propuesta como propia y la apruebe."
+                                ]},
+                                {"group":1,"content":[
                                     {
                                         "css": "#block-4-4{background:rgba(194, 85, 79, 0.7);}"
                                     },
-                                    "Tu respuesta no es la correcta.",
-                                    {
-                                        "colorize": "rgba(194, 85, 79,1)",
-                                        "destroy": 1
-                                    }
-                                ]
+                                    "Tu respuesta no es la correcta."
+                                ]}
                             ]
                         }
                     ]
@@ -1062,6 +1049,7 @@
                         },
                         {
                             "select": 1,
+                            "blockafter": 1,
                             "class": "",
                             "columns": "1fr 1fr",
                             "options": [
@@ -1083,26 +1071,18 @@
                             "optionClass": "aspect-square card cursor-pointer flex justify-center items-center w-60 mx-auto",
                             "optionClassActive": "bg-white animate__animated animate__tada",
                             "feedback": [
-                                [
+                                {"group":1,"content":[
                                     {
                                         "css": "#block-4-5{background:rgba(97, 196, 84,0.7);  }"
                                     },
-                                    "¡Correcto!",
-                                    {
-                                        "colorize": "rgba(97, 196, 84,1)",
-                                        "destroy": 1
-                                    }
-                                ],
-                                [
+                                    "¡Correcto!"
+                                ]},
+                                {"group":1,"content":[
                                     {
                                         "css": "#block-4-5{background:rgba(194, 85, 79, 0.7);}"
                                     },
-                                    "La deforestación es, sin duda, una problemática ambiental que presenta consecuencias negativas como la erosión, sin embargo, la intención argumentativa no es demostrar las consecuencias negativas de la deforestación sino las ventajas de reforestar. Además, el ejemplo expuesto está fuera de contexto.",
-                                    {
-                                        "colorize": "rgba(194, 85, 79,1)",
-                                        "destroy": 1
-                                    }
-                                ]
+                                    "Tu respuesta es incorrecta, pues este argumento tiene la intención de persuadir, ofreciendo razones para que la otra parte adopte la propuesta como propia y la apruebe."
+                                ]}
                             ]
                         }
                     ]
@@ -1116,6 +1096,7 @@
                         },
                         {
                             "select": 1,
+                            "blockafter": 1,
                             "class": "",
                             "columns": "1fr 1fr",
                             "options": [
@@ -1137,26 +1118,18 @@
                             "optionClass": "aspect-square card cursor-pointer flex justify-center items-center w-60 mx-auto",
                             "optionClassActive": "bg-white animate__animated animate__tada",
                             "feedback": [
-                                [
+                                {"group":1,"content":[
                                     {
                                         "css": "#block-4-6{background:rgba(97, 196, 84,0.7);  }"
                                     },
-                                    "¡Correcto!",
-                                    {
-                                        "colorize": "rgba(97, 196, 84,1)",
-                                        "destroy": 1
-                                    }
-                                ],
-                                [
+                                    "¡Correcto! El argumento tiene la finalidad de apoyar racionalmente un punto de vista polémico, pues hay quien puede pensar distinto y no apoyar la propuesta."
+                                ]},
+                                {"group":1,"content":[
                                     {
                                         "css": "#block-4-6{background:rgba(194, 85, 79, 0.7);}"
                                     },
-                                    "Tu respuesta no es la correcta.",
-                                    {
-                                        "colorize": "rgba(194, 85, 79,1)",
-                                        "destroy": 1
-                                    }
-                                ]
+                                    "Tu respuesta no es la correcta."
+                                ]}
                             ]
                         }
                     ]
@@ -1170,6 +1143,7 @@
                         },
                         {
                             "select": 1,
+                            "blockafter": 1,
                             "class": "",
                             "columns": "1fr 1fr",
                             "options": [
@@ -1191,26 +1165,18 @@
                             "optionClass": "aspect-square card cursor-pointer flex justify-center items-center w-60 mx-auto",
                             "optionClassActive": "bg-white animate__animated animate__tada",
                             "feedback": [
-                                [
+                                {"group":1,"content":[
                                     {
                                         "css": "#block-4-7{background:rgba(97, 196, 84,0.7);  }"
                                     },
-                                    "¡Correcto!",
-                                    {
-                                        "colorize": "rgba(97, 196, 84,1)",
-                                        "destroy": 1
-                                    }
-                                ],
-                                [
+                                    "¡Correcto! Con este argumento puedes demostrar los beneficios de tu propuesta."
+                                ]},
+                                {"group":1,"content":[
                                     {
                                         "css": "#block-4-7{background:rgba(194, 85, 79, 0.7);}"
                                     },
-                                    "La intención argumentativa de la petición es lograr que el ayuntamiento done árboles para reforestar el parque con fines ambientales y recreativos, no para darles un uso industrial.",
-                                    {
-                                        "colorize": "rgba(194, 85, 79,1)",
-                                        "destroy": 1
-                                    }
-                                ]
+                                    "Tu respuesta es incorrecta, pues este argumento, al apoyar de manera racional un punto de vista polémico, puede apoyar tu propuesta."
+                                ]}
                             ]
                         }
                     ]

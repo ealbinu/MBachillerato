@@ -116,10 +116,6 @@ async function loadOdaFile(){
     const dataStatus = params.get('status')
     const builder = params.get('builder')
 
-
-
-    // Materia
-
     
 
     // ODA IS IN TEST
@@ -147,6 +143,7 @@ async function loadOdaFile(){
         step: 0,
         answers: {},
         result: {},
+        inputsobj: {},
         finalize: false
     }
 

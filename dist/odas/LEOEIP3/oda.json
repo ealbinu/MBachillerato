@@ -2,17 +2,12 @@
     "id": "LEOEIP3",
     "programa": "DGETI",
     "materia": "LECTURAEOEI",
-    "title": "La argumentación",
+    "title": "La reseña crítica",
     "bgimgs": 4,
     "ficha": [
-        [
-            "Aprendizaje esperado",
-            "Emite y fundamenta por escrito una opinión original."
-        ],
-        [
-            "Área de formación integral",
-            "Formación para el desarrollo sostenible."
-        ]
+        ["Aprendizaje esperado","Emite y fundamenta por escrito una opinión original."],
+        ["Contenido específico", "El sustento de puntos de vista a partir de una lectura."],
+        [ "Eje transversal","Ambiental." ]
     ],
     "screens": [
         {
@@ -33,7 +28,7 @@
                             "columns": "2fr 1fr",
                             "content": [
                                 {
-                                    "textAnimation": "La argumentación es un ejercicio consistente en aportar razones para defender la opinión que se tiene sobre un hecho, asunto u obra y lograr que sea adoptada por otras personas. Los argumentos le dan credibilidad a un discurso y permiten entender por qué una persona piensa de tal o cual manera sobre un tema en particular. Cuando dichas opiniones se presentan por escrito, de manera ordenada y coherente, se redacta un texto argumentativo, entre éstos se encuentra la <strong>reseña crítica</strong>."
+                                    "textAnimation": "La <strong>argumentación</strong> es un ejercicio que consiste en aportar razones para defender la opinión que se tiene sobre un hecho, asunto u obra y lograr que ésta sea adoptada por otras personas. Los argumentos le dan credibilidad a un discurso y permiten entender por qué una persona piensa de tal o cual manera sobre un tema. Cuando dichas opiniones se presentan por escrito, de manera ordenada y coherente, se dice que se redacta un texto argumentativo. Entre este tipo de textos se encuentra la <strong>reseña crítica</strong>."
                                 },
                                 {
                                     "img": "img/im1.png",
@@ -127,7 +122,7 @@
                             "class": "h1",
                             "text": "Elementos de la reseña crítica"
                         },
-                        "La reseña crítica es un texto breve, pero su extensión es variable, de acuerdo al estilo del lector, del público destinatario y el medio de publicación. Puede organizarse de la siguiente manera.",
+                        "La reseña crítica es un texto breve, pero su extensión es variable, de acuerdo al estilo del lector, del público destinatario y el medio de publicación. Para ver cómo puede organizarse, haz clic en las palabras resaltadas para desplegar la información.",
                         {
                             "br": 2
                         },
@@ -154,7 +149,7 @@
                                             "b1"
                                         ],
                                         "content": [
-                                            "Título 1"
+                                            "Título"
                                         ]
                                     },
                                     {
@@ -207,7 +202,7 @@
                                     {
                                         "id": "b2",
                                         "content": [
-                                            "Título de la obra, nombre del autor, fechas de nacimiento y fallecimiento del autor, fecha de publicación, nombre de la editorial."
+                                            "Título de la obra, nombre del autor, fecha de publicación, nombre de la editorial."
                                         ]
                                     },
                                     {
@@ -216,7 +211,7 @@
                                             "c1"
                                         ],
                                         "content": [
-                                            "Resúmen"
+                                            "<strong>Resúmen</strong>"
                                         ]
                                     },
                                     {
@@ -225,7 +220,7 @@
                                             "c2"
                                         ],
                                         "content": [
-                                            "Descripción"
+                                            "<strong>Descripción</strong>"
                                         ]
                                     },
                                     {
@@ -235,7 +230,7 @@
                                         ],
                                         "class": "bg-warning",
                                         "content": [
-                                            "Evaluación (opinión fundamentada)"
+                                            "<strong>Evaluación (opinión fundamentada)</strong>"
                                         ]
                                     },
                                     {
@@ -248,7 +243,7 @@
                                     {
                                         "id": "b7",
                                         "content": [
-                                            "Nombre, puesto, ocupación, lugar de nacimiento, etcétera."
+                                            "Nombre, puesto, ocupación, lugar de nacimiento, fechas de nacimiento y fallecimiento del autor, etcétera."
                                         ]
                                     }
                                 ],
@@ -281,7 +276,8 @@
                                 ]
                             ]
                         }
-                    ]
+                    ],
+                    "buttonNextScreen": "Continuar a la actividad"
                 }
             ]
         },
@@ -293,7 +289,7 @@
                 {
                     "content": [
                         {
-                            "inst": "Lee los siguientes párrafos y da clic en el botón verde si pertenecen a una reseña crítica, de lo contrario haz clic en el botón anaranjado.",
+                            "inst": "Lee los siguientes párrafos y haz clic en el botón verde si pertenecen a una reseña crítica o en el botón anaranjado si no es así.",
                             "iconinst": "touch_app"
                         },
                         
@@ -312,7 +308,7 @@
                                         [{"text": "No pertenece", "class":"btn bg-orange-500"}, false]
                                     ],
                                     "feedback": [
-                                        false,
+                                        "¡Correcto! El texto menciona que se trata de una novela y habla de sus características, además de dar una opinión sobre ella. Todos estos son elementos de una reseña crítica.",
                                         "El texto menciona que se trata de una novela y habla de sus características, además de dar una opinión sobre ella. Intenta de nuevo."
                                     ]
                                 }  
@@ -333,7 +329,7 @@
                                         [{"text": "No pertenece", "class":"btn bg-orange-500"}, true]
                                     ],
                                     "feedback": [
-                                        false,
+                                        "¡Correcto! La información no es suficiente para determinar si la opinión se refiere a una obra en particular, por lo que no podemos afirmar que es parte de una reseña crítica.",
                                         "La información no es suficiente para determinar si la opinión se refiere a una obra en particular. Intenta de nuevo."
                                     ]
                                 }  
@@ -354,7 +350,7 @@
                                         [{"text": "No pertenece", "class":"btn bg-orange-500"}, false]
                                     ],
                                     "feedback": [
-                                        false,
+                                        "¡Correcto! Uno de los elementos de la reseña crítica es la mención de los datos bibliográficos de una obra.",
                                         "El texto menciona datos bibliográficos de una obra. Intenta de nuevo."
                                     ]
                                 }  
@@ -375,7 +371,7 @@
                                         [{"text": "No pertenece", "class":"btn bg-orange-500"}, false]
                                     ],
                                     "feedback": [
-                                        false,
+                                        "¡Correcto! El texto parece ser un resumen de la obra, uno de los elementos de la reseña crítica.",
                                         "El texto es un resumen de la obra. Intenta de nuevo."
                                     ]
                                 }  
@@ -396,7 +392,7 @@
                                         [{"text": "No pertenece", "class":"btn bg-orange-500"}, true]
                                     ],
                                     "feedback": [
-                                        false,
+                                        "¡Correcto! La información no es suficiente para determinar si la opinión se refiere a una obra en particular, por lo que no podemos afirmar que es parte de una reseña crítica.",
                                         "La información no es suficiente para determinar si la opinión se refiere a una obra en particular. Intenta de nuevo."
                                     ]
                                 }  
@@ -414,7 +410,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"inst": "Lee la siguiente reseña y después realiza lo que se indica." ,"iconinst":"preview"},
+                        {"inst": "Lee la siguiente reseña crítica y, después, realiza lo que se indica." ,"iconinst":"preview"},
                         {"br":2},
                         {
                             "textAnimation": "Mitología para las nuevas generaciones",
@@ -427,6 +423,14 @@
                         {"br":1},
                         {"textAnimation":"Perteneciente al género narrativo, la obra se nutre de subgéneros como la epopeya, el mito y la leyenda. Narra las historias de algunos de los mitos y las leyendas de la antigua Grecia como una sola narración, dividida en 19 capítulos y con ilustraciones de Alan Langford. Incluye un glosario de los dioses de la antigua Grecia y un mapa con la ruta de los argonautas. El libro se completa con poesías introductorias extraídas de obras clásicas. Al recrear algunos de los mitos griegos más relevantes, los relatos abordan temas como el honor, el sacrificio, la lucha, la vida y la muerte, y la venganza, entre otros. Ambientada en la antigua Grecia y el Olimpo, los personajes son dioses y héroes, pero sobresale Heracles. Como autor de literatura infantil, estos relatos son recomendados para niños en su primera adolescencia y jóvenes, sin embargo, será plenamente disfrutable por toda persona interesada en la mitología griega.  Lancelyn es autor de otros libros inspirados en mitologías, entre los que sobresale La historia de Troya. Cabe mencionar que perteneció al exclusivo círculo literario de los <em>Inklings</em>, formado en torno a C. S. Lewis y J. R. R. Tolkien."},
                         {"br":1},
+                        {
+                           "group": 1,
+                           "class": "text-center",
+                           "content":[
+                               {"img": "img/ha.png", "class":"mx-auto"}
+                           ]
+                        },
+                        {"br": 1},
                         {"textAnimation":"El autor ofrece un entramado narrativo que recoge y relaciona los mitos griegos más conocidos, relacionando cuidadosamente un mito con otro e intercalando citas, como epígrafe, que ligan cada historia con la tradición literaria occidental. La materia prima es todo un cosmos de un vigor inigualable, con el mérito de ser narrado con una combinación de frescura y respeto a los originales sinceramente admirable. En definitiva, los lectores descubrirán un mundo rico en imágenes y enseñanzas, que además les ayudará a comprender mejor la civilización de la que forman parte."},
                         {"br":1},
                         {"textAnimation":"En un momento en el que la pérdida de referentes para la juventud es una queja constante, rescatar los mitos clásicos en los que se cimentó la civilización de la manera en la que lo hace el autor es una excelente oportunidad para dar vigencia a antiguos valores desplazados hoy en día por el espejismo de la modernidad y la tecnología."},
@@ -438,7 +442,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"inst": "Subraya en color amarillo el título de la reseña y en color verde los datos del reseñista." ,"iconinst":"pan_tool"},
+                        {"inst": "Arrastra el lápiz de color amarillo al título de la reseña y el lápiz de color verde al párrafo que contiene los datos del reseñista." ,"iconinst":"pan_tool"},
                         {"br":1},
                         {
                             "group":1,
@@ -490,7 +494,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"inst":"Relaciona los elementos de la reseña con el párrafo que correspondan.", "iconinst":"swipe_vertical"},
+                        {"inst":"Desplaza los elementos de la reseña crítica que se encuentran en la columna izquierda arriba o abajo según el párrafo al que correspondan.", "iconinst":"swipe_vertical"},
                         {"br":1},
                         {
                             "grid":1,
@@ -546,7 +550,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"inst":"Lee atentamente los siguientes textos.", "iconinst":"preview"},
+                        {"inst":"Lee atentamente los siguientes textos y, después, realiza lo que se indica.", "iconinst":"preview"},
                         {"br":1},
                         {
                             "grid":1,
@@ -577,7 +581,7 @@
                 {
                     "title": "100%",
                     "content":[
-                        {"inst":"En el siguiente campo textual escribe una opinión sobre la vida en el campo, fundamentada en los textos que leíste. Añade las imágenes que consideres apropiadas para ilustrar tu texto.", "iconinst":"edit_note"},
+                        {"inst":"En el siguiente campo textual, escribe una opinión sobre la vida en el campo, fundamentada en los textos que leíste. Añade las imágenes que consideres apropiadas para ilustrar tu texto.", "iconinst":"edit_note"},
                         {"br":1},
                         {
                             "editor":1,
@@ -587,6 +591,23 @@
                                 {"img": "img/im6.jpg", "class":"w-[12rem] mx-auto"},
                                 {"img": "img/im7.jpg", "class":"w-[12rem] mx-auto"}
                             ] 
+                        },
+                        {"br": 1},
+                        {
+                           "group": 1,
+                           "class": "text-center",
+                           "content":[
+                               {
+                                  "dialog": 1,
+                                  "button": ["Comparar"],
+                                  "buttonClass": "btn",
+                                  "style": "",
+                                  "content":[
+                                      "Una conclusión a la que puede llegarse a partir de los dos textos es que, si bien la vida en el campo actualmente no ofrece oportunidades para las personas, la situación puede cambiar si se siguen los parámetros mundiales para modernizar la agricultura"
+                                  ]
+                               }
+                               
+                           ]
                         }
                     ]
                 }

@@ -50,10 +50,13 @@ const Blocked = inject('blocked')
 const currentInstance = getCurrentInstance()
 const replacer = ref()
 
+
 const props = defineProps({
     blockid: String,
-    data: Object
+    data: Object,
 })
+
+
 
 const result = ref()
 const block = ref()
@@ -62,9 +65,12 @@ var dragItems = dragsId + ' .drag'
 var dropItems = dragsId + ' .drop'
 var drops = null
 var draggables
+
+
+
+
 const createDrags = () => {
     drops = document.querySelectorAll(dragsId + ' .drop')
-    
     if(Blocked){
         return false
     }
@@ -73,12 +79,27 @@ const createDrags = () => {
         type:"x,y",
         bounds: dragsId,
         zIndexBoost:false,
-        onDrag: function (e) { DraggableOnDrag(e, this) },
+        //onDragStart: function(e){ DraggableOnDragStart(e,this) },
+        onDrag: function (e) { DraggableOnDrag(e, this)},
         onClick: function (e) { DraggableOnClick(e,this) },
         onDragEnd: function (e){ DraggableOnDragEnd(e,this) }
     })
+
+
+
 }
+
+
+
+
+
+
 const DraggableOnDrag = (e, drag) => {
+    
+    if(drag.interactionsCount==undefined){
+        drag.interactionsCount = 0
+    }
+
     for(var i = 0; i<drops.length; i++){
         if (drag.hitTest(drops[i], '40%')) {
             drag.target.classList.add('hover')
@@ -90,27 +111,37 @@ const DraggableOnDrag = (e, drag) => {
             
         }
     }
-    
-
 }
+
+
+
+
 const DraggableOnClick = (e, drag) => {
     if(result.value!=null){
         return false
     }
-    Audios.scancel.play()
+
+    if(drag.interactionsCount==undefined){
+        drag.interactionsCount = 0
+    }
+    
+    if(disableItem(drag)){
+    
     var drags = document.querySelector(dragsId+' .drags')
-    if(drag.target.parentElement!=drags){
-        drags.append(drag.target)
-        TweenLite.to(drag.target, 0.2, { x: 0, y: 0 });
-        drag.target.removeAttribute('data-feedback')
-        storeInStatusFile()
-        
+        if(drag.target.parentElement!=drags){
+            drags.append(drag.target)
+            TweenLite.to(drag.target, 0.2, { x: 0, y: 0 });
+            drag.target.removeAttribute('data-feedback')
+            storeInStatusFile()
+            Audios.scancel.play()
+        }
     }
 }
 const DraggableOnDragEnd = (e, drag) => {
+
     var dropped = false
     for(var i = 0; i<drops.length; i++){
-        if (drag.hitTest(drops[i], '40%')) {
+        if (drag.hitTest(drops[i], '40%') && disableItem(drag)) {
             dropped = true
             drops[i].append(drag.target)
             TweenLite.to(drag.target, 0.2, { x: 0, y: 0 });
@@ -118,9 +149,9 @@ const DraggableOnDragEnd = (e, drag) => {
             drops[i].classList.remove('hover')
             
             isRightOrWrong(drag.target)
-
             storeInStatusFile()
-
+            drag.interactionsCount+=1
+            return disableItem(drag)
         }
     }
     if(!dropped){
@@ -128,6 +159,21 @@ const DraggableOnDragEnd = (e, drag) => {
     } else {
         Audios.sBlockDrag.play()
     }
+
+}
+
+
+const disableItem = (drag) => {
+    let continueaction = true
+    if(props.data.blockafter!=undefined || props.data.blockafter >0){
+        if(drag.interactionsCount>=props.data.blockafter){
+            drag.disable()
+            continueaction = false
+        } else {
+            continueaction = true
+        }
+    }
+    return continueaction
 }
 
 
@@ -145,19 +191,8 @@ const storeInStatusFile = () => {
         var dropData = drgs[i].parentElement.getAttribute('data')
         options.push([dragDataIndex, dropData])
     }
-    
     Status.value.answers[props.blockid] = options
 }
-
-
-const initializer = setInterval(function () {
-    if(Draggable){
-        //createDrags()
-        //clearInt()
-    } else {
-        //console.warn('Loading draggable')
-    }
-}, 500)
 
 
 onMounted(()=>{
@@ -169,8 +204,6 @@ onMounted(()=>{
 
 
 const clearInt = () => {
-    //console.warn('cleaning')
-    clearInterval(initializer)
 
     //Load stored answers
     LoadStoredAnswers()
@@ -281,6 +314,7 @@ currentInstance.appContext.config.globalProperties.emitter.on('finalize', (evt) 
     display: block
 [data-feedback="1"] .feedback.f1
     display: block
+    border-color: $negative !important
 .blockDragDrop
     position: relative
     width: 90%

@@ -77,6 +77,9 @@ BlockGraph(v-else-if="itemdata.graph" :data="itemdata" :blockid="blockid")
 //-Classlist
 BlockClasslist(v-else-if="itemdata.classlist" :data="itemdata" :blockid="blockid")
 
+//-InputsObj
+span(v-else-if="itemdata.inputsobj") {{Status.inputsobj[itemdata.inputsobj]}}
+
 </template>
 <script setup>
 import {ref, inject} from 'vue'

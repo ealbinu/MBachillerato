@@ -55,7 +55,7 @@ const unansweredBlock = (blockid) => {
     var scr = sp[0]
     var blk = sp[1]
     var scrTitle = Activity.screens[scr].title
-    return scrTitle + ' > Bloque ' + blk
+    return scrTitle + ' > Ejercicio ' + blk
 }
 const gotoUnanswered = (blockid) => {
     var sp = blockid.split('-')

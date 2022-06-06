@@ -14,19 +14,31 @@ div.w-full.text-center
                             BlocksRenderer(:item="findTalk(i.talk).talk" :blockid="blockid+'-chatbot-bot-'+index")
                             
                     //-user
-                    .bubble.user.flex.justify-end.items-center.my-1.text-left(v-if="i.answer > -1" ).animate__animated.animate__fadeInUp.animate__faster
+                    .bubble.user.flex.justify-end.items-center.my-1.text-left(v-if="i.answer > -1 || typeof i.answer=='string'" ).animate__animated.animate__fadeInUp.animate__faster
                         div.bg-primary.text-white.py-2.px-2.mr-1.rounded-xl.max-w-lg(:class="[ (i.isright!=null && Status.finalize ? (i.isright?'isok':'notok') : 'notevaluated'), 'min-w-[4rem]' ]").text-center
-                            BlocksRenderer(:item="findAnswer(i)" :blockid="blockid+'-chatbot-user-'+index")
+
+                            template(v-if="typeof i.answer == 'number'")
+                                BlocksRenderer(:item="findAnswer(i)" :blockid="blockid+'-chatbot-user-'+index")
+                            template(v-else)
+                                BlocksRenderer(:item="Status.inputsobj[i.answer]" :blockid="blockid+'-chatbot-user-'+index")
                         img(src="/assets/icons/chatbot-user.svg").w-12.mask.mask-squircle
+                    
+
 
                     //-userinput
-                    .bg-red-400.rounded.my-2.w-full.p-2(v-if="findTalk(i.talk).options && currentTalk == i.talk && chattalk.length-1 == index").userinputbubble
-                        .userinput.flex.flex-wrap.justify-end.w-full.gap-1(v-if="findTalk(i.talk).options && i.talk==currentTalk")
+                    .bg-red-400.rounded.my-2.w-full.p-2(v-if="(findTalk(i.talk).options || findTalk(i.talk).input) && currentTalk == i.talk && chattalk.length-1 == index").userinputbubble
+                        .userinput.flex.flex-wrap.justify-end.w-full.gap-1(v-if="(findTalk(i.talk).options || findTalk(i.talk).input) && i.talk==currentTalk")
+                            //- SELECT
                             template(v-for="(iOp, indexOp) in findTalk(i.talk).options")
-                                div(@click="userinput(i.talk, indexOp, iOp)").btn.bg-primary.btn-sm.animate__animated.animate__pulse.animate__infinite.animate__slow.normal-case
+                                div(@click="userinput(i.talk, indexOp, iOp)" class="max-w-[50%]").btn.bg-primary.btn-sm.animate__animated.animate__pulse.animate__slow.normal-case.h-auto
                                     BlocksRenderer(:item="iOp[0]" :blockid="blockid+'-chatbot-userinput-'+indexOp")
-                    
-                    
+                            //- INPUT
+                            template(v-if="findTalk(i.talk).input")
+                                div().flex.items-center
+                                    input(type="text" v-model="Status.inputsobj[findTalk(i.talk).input[0]]" :placeholder="findTalk(i.talk).input[1]").input.input-bordered.w-full.text-dark
+                                    div(@click="userinputtext(i.talk, findTalk(i.talk).input)").btn.bg-primary.btn-sm.animate__animated.animate__pulse.animate__infinite.animate__slow.normal-case
+                                        Icon send
+
                 .my-2.w-full.px-2.py-4(v-if="ended").userinputbubble
                     .btn.btn-accent.btn-wide.animate__animated.animate__pulse.animate__infinite.animate__slow.my-2(@click="nextScreen") Siguiente
 
@@ -44,6 +56,7 @@ div.w-full.text-center
 <script setup>
 import {ref, inject, getCurrentInstance, watch, reactive, watchEffect} from 'vue'
 import BlocksRenderer from '../BlocksRenderer.vue';
+import Icon from '../icon.vue';
 
 const Audios = inject('Audios')
 const Status = inject('statusFile')
@@ -57,6 +70,7 @@ const props = defineProps({
 
 const ended = ref(false)
 const wrongs = ref(0)
+
 
 
 const scroll = ref()
@@ -79,6 +93,7 @@ const addTalk = (id) => {
 
     }, (Math.random()*1000)+400)
 }
+
 
 
 
@@ -151,9 +166,18 @@ const userinput = (talkId, optionId, selectedItem) => {
         return false
     }
     addTalkAnswer(talkId, optionId, selectedItem[2])
+    console.log('addTalkAnswer', talkId, optionId, selectedItem[2])
     addTalk(selectedItem[1])
+    console.log('addTalk', selectedItem[1])
     Audios.ssend.play()
 }
+
+const userinputtext = (talkId, inputsobj) => {
+    console.log(talkId, inputsobj[0], null)
+    addTalkAnswer(talkId, inputsobj[0], null)
+    addTalk(inputsobj[2])
+}
+
 
 const nextScreen = () => {
     Status.value.screen += 1
@@ -212,6 +236,5 @@ const finalize = () => {
 currentInstance.appContext.config.globalProperties.emitter.on('finalize', (evt) => {
     finalize()
 })
-
 
 </script>

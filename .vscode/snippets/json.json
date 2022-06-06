@@ -5,10 +5,9 @@
             "\"${1}\": {",
             "   \"prefix\": \"${2}\",",
             "   \"body\": [",
-                    "{",
-                    "       \"\": \"\" ",
-                    "}",
-            "   ]",
+            "       \"{\",",
+            "       \"}\""
+            ,"   ]",
             "}"
         ]
     },
@@ -177,6 +176,44 @@
             "   \"dropzoneItems\": \"\", ",
             "}"
        ]
+    },
+    "chatbot": {
+       "prefix": "chatbot",
+       "body": [
+        "{",
+        "   \"chatbot\": 1,",
+        "   \"content\":[]",
+        "}"
+       ]
+    },
+    "chatbotOption": {
+       "prefix": "chatbotOption",
+       "body": [
+			"{",
+			"	\"id\": $1,",
+			"	\"talk\": \"$2\",",
+			"	\"options\":[]",
+			"}"
+		]
+    },
+    "sortable": {
+       "prefix": "sortable",
+       "body": [
+           "{",
+           "    \"sortable\": 1,",
+           "    \"numbers\": 1,",
+           "    \"items\": []",
+           "}"
+       ]
+    },
+    "repeater": {
+       "prefix": "repeater",
+       "body": [
+        "{",
+        "   \"repeater\":1,",
+        "   \"items\": [],",
+        "   \"properties\": {}",
+        "}"
+       ]
     }
-
 }

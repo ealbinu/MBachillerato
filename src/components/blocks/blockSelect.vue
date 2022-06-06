@@ -4,13 +4,13 @@ BlockReplacer(ref="replacer")
     template(v-slot:main="")
         .blockSelect(:id="'block-'+blockid" ref="block" :style="cssVars")
             template(v-for="(i, index) in data.options")
-                div(@click="clicked(index, i)" :class="[ options[index] ? 'active '+data.optionClassActive : '' , data.optionClass || 'blockSelectOption' ]")
+                div(@click="clicked(index, i)" :class="[ options[index] ? 'active '+ (data.optionClassActive||'') : '' , data.optionClass || 'blockSelectOption' ]")
                     template(v-if="!data.optionClass")
                         Icon touch_app
                         .option-letter {{letterop(index)}}
                     BlocksRenderer(:item="i[0]" :blockid=" blockid+'-selectitem' ")
         //-Feedback
-        .feedback.text-center.animate__animated.animate__pulse(v-if="!loading")
+        .feedback.text-center.animate__animated.animate__pulse(v-if="!loading" :class="'f'+(result?0:1)")
             //-Feedback General
             template(v-if="data.feedback && options.some( (e)=>{return e==true} )")
                 BlocksRenderer(:item="data.feedback[result?0:1]"  :blockid=" blockid+'-selectitem-feedback'")
@@ -18,9 +18,7 @@ BlockReplacer(ref="replacer")
             template(v-if="selectedItem && selectedItem[2]")
                 BlocksRenderer(:item="selectedItem[2]"  :blockid=" blockid+'-selectitem-feedback'")
                 
-
-
-                //template(v-if="typeof data.feedback[result?0:1] == 'string'") 
+                //template(v-if="typeof data.feedback[result?0:1] == 'string'")
                     //.animate__animated.animate__swing
                     BlocksRenderer(:item="data.feedback[result?0:1]"  :blockid=" blockid+'-selectitem-feedback'")
                 //template(v-else)
@@ -28,9 +26,9 @@ BlockReplacer(ref="replacer")
                         //.animate__animated.animate__swing
                         BlocksRenderer(:item="iblock" :blockid=" blockid+'-selectitem-feedback-'+indexblock")
     template(v-slot:second="")
-        BlocksRenderer(:item="data.replace[0]" :blockid=" blockid+'-selectitem-feedback-ok'" v-if="result")
-        BlocksRenderer(:item="data.replace[1]" :blockid=" blockid+'-selectitem-feedback-wrong'" v-else)
-
+        BlocksRenderer(:item="{...data.replace[0], class:'f0'}" :blockid=" blockid+'-selectitem-feedback-ok'" v-if="result")
+        BlocksRenderer(:item="{...data.replace[1], class:'f1'}" :blockid=" blockid+'-selectitem-feedback-wrong'" v-else)
+    
 SolveModule(@solve="solve")
 </template>
 <script setup>
@@ -47,6 +45,8 @@ const result = ref(undefined)
 const Status = inject('statusFile')
 const Blocked = inject('blocked')
 const Audios = inject('Audios')
+
+const interactionsCount = ref(0)
 
 const replacer = ref()
 
@@ -144,6 +144,16 @@ const clicked = (index, item) => {
     if(Status.value.finalize){
         return false
     }
+
+    
+
+    if(props.data.blockafter!=undefined || props.data.blockafter >0){
+        if(interactionsCount.value>=props.data.blockafter){
+            return false
+        }
+    }
+    interactionsCount.value +=1
+
 
     selectedItem.value = item
     
@@ -246,6 +256,8 @@ const cssVars = computed(() => {
 </script>
 
 <style lang="sass">
+.feedback.f1
+    border-color: $negative !important
 .blockSelect
     width: 100%
     margin: 5% 0
