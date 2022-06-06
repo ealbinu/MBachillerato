@@ -1080,6 +1080,125 @@
            ]
         },
         {
+           "title": "Actividad",
+           "icon": "low_priority",
+           "steps": true,
+           "class": "flex flex-col justify-center",
+           "blocks": [
+               {
+                  "width": "100%",
+                  "content": [
+                      {"inst": "Selecciona y desliza hacia arriba o hacia abajo los elementos de la columna derecha al lugar que les corresponde en la columna izquierda.", "iconinst":"pan_tool"}
+                      ,{"br": 1},
+                      {
+                         "grid": 1,
+                         "columns": "1fr 1fr",
+                         "columnsResponsive": "1fr 1fr",
+                         "content":[
+                            {
+                                "repeater":1,
+                                "items": [
+                                    {"content": [{"class": "font-bold text-xl", "text": "1. Argumento principal"}]},
+                                    {"content": [{"class": "font-bold text-xl", "text": "2. Subargumento 1"}]},
+                                    {"content": [{"class": "font-bold text-xl", "text": "3. Contraargumento"}]},
+                                    {"content": [{"class": "font-bold text-xl", "text": "4. Subargumento 2"}]}
+                                ],
+                                "properties": {
+                                 "card": 1,
+                                 "class": "mt-0.5 mb-3"
+                                }
+                             },
+                            {
+                                 "sortable": 1,
+                                 "numbers": 1,
+                                 "items": [
+                                     "Los hombres y las mujeres deben tener las mismas oportunidades laborales.",
+                                     "Las diferencias biológicas no determinan el desarrollo intelectual y físico, por lo que debe haber equidad.",
+                                     "No puede haber igualdad absoluta pues hay trabajos que los hombres desarrollan mejor por su condición física.",
+                                     "Aunque existen diferencias físicas, los roles asignados a hombres y mujeres son construcciones sociales que privilegian al sexo masculino al darle exclusividad en trabajos que las mujeres pueden realizar."
+                                 ]
+                             }
+                         ]
+                      }
+                  ]
+               },
+               {
+                "width": "100%",
+                "content": [
+                    {"inst": "Selecciona y desliza hacia arriba o hacia abajo los elementos de la columna derecha al lugar que les corresponde en la columna izquierda.", "iconinst":"pan_tool"}
+                    ,{"br": 1},
+                    {
+                       "grid": 1,
+                       "columns": "1fr 1fr",
+                       "columnsResponsive": "1fr 1fr",
+                       "content":[
+                          {
+                              "repeater":1,
+                              "items": [
+                                  {"content": [{"class": "font-bold text-xl", "text": "1. Argumento principal"}]},
+                                  {"content": [{"class": "font-bold text-xl", "text": "2. Subargumento 1"}]},
+                                  {"content": [{"class": "font-bold text-xl", "text": "3. Contraargumento"}]},
+                                  {"content": [{"class": "font-bold text-xl", "text": "4. Subargumento 2"}]}
+                              ],
+                              "properties": {
+                               "card": 1,
+                               "class": "mt-0.5 mb-3"
+                              }
+                           },
+                          {
+                               "sortable": 1,
+                               "numbers": 1,
+                               "items": [
+                                   "La ciencia y la tecnología han traído más ventajas que desventajas a la sociedad.",
+                                   "Los avances en ciencia y tecnología en materia de salud han contribuido a aumentar la esperanza de vida de las personas y a que ésta pueda transcurrir con mayor confortabilidad.",
+                                   "La existencia de tratamientos médicos basados en la tecnología los hace costosos e inaccesibles para la mayoría de la población, lo cual incrementa la desigualdad social.",
+                                   "Si bien existen tratamientos médicos con alto costo monetario, existen programas sociales y humanitarios destinados a erradicar la desigualdad en su acceso."
+                               ]
+                           }
+                       ]
+                    }
+                ]
+             },
+             {
+                "width": "100%",
+                "content": [
+                    {"inst": "Selecciona y desliza hacia arriba o hacia abajo los elementos de la columna derecha al lugar que les corresponde en la columna izquierda.", "iconinst":"pan_tool"}
+                    ,{"br": 1},
+                    {
+                       "grid": 1,
+                       "columns": "1fr 1fr",
+                       "columnsResponsive": "1fr 1fr",
+                       "content":[
+                          {
+                              "repeater":1,
+                              "items": [
+                                  {"content": [{"class": "font-bold text-xl", "text": "1. Argumento principal"}]},
+                                  {"content": [{"class": "font-bold text-xl", "text": "2. Subargumento 1"}]},
+                                  {"content": [{"class": "font-bold text-xl", "text": "3. Contraargumento"}]},
+                                  {"content": [{"class": "font-bold text-xl", "text": "4. Subargumento 2"}]}
+                              ],
+                              "properties": {
+                               "card": 1,
+                               "class": "mt-0.5 mb-3"
+                              }
+                           },
+                          {
+                               "sortable": 1,
+                               "numbers": 1,
+                               "items": [
+                                   "Los hablantes de español debemos aprender a escribir con corrección gramatical y ortográfica.",
+                                   "El escritor ganador del premio Nobel afirmó que la corrección gramatical y ortográfica nos permite explotar al máximo la belleza y expresividad de nuestra lengua.",
+                                   "La vitalidad y belleza de la lengua española radica en su función comunicativa y en la creatividad de sus hablantes para que ésta se lleve a cabo, lo cual no es posible siguiendo la norma.",
+                                   "La creatividad es importante para la vitalidad de la lengua, pero asegurar que exista una norma que permita a todos los hablantes entenderse en un nivel estándar es fundamental para garantizar su existencia."
+                               ]
+                           }
+                       ]
+                    }
+                ]
+             }
+           ]
+        },
+        {
             "title": "Finalizar",
             "icon": "flag",
             "end": true,
