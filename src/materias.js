@@ -75,7 +75,7 @@ var DGB = {
   },
   LITERATURA: {
     materia: "Literatura",
-    color: "332 74% 58%",
+    color: "331 86% 64%",
   },
   MATEMATICASI: {
     materia: "Matemáticas  I",

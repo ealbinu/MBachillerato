@@ -2,3 +2,6 @@
 node_modules
 build
 node_modules/.cache/
+.DS_Store
+dist/.DS_Store
+dist/.DS_Store

@@ -1,0 +1,53 @@
+{
+    "id": "LOG1P1DGB",
+    "programa": "DGB",
+    "materia": "LITERATURA",
+    "title": "Los fines de la argumentación",
+    "bgimgs": 4,
+    "ficha": [
+        [
+            "Aprendizaje esperado",
+            "Evaluar si se cumplen, y de qué manera, las intenciones argumentativas en diferentes contextos."
+        ],
+        [
+            "Eje transversal",
+            "Habilidades lectoras."
+        ]
+    ],
+    "screens": [
+        {
+            "title": "",
+            "icon": "article",
+            "steps": true,
+            "class": "flex flex-col justify-center",
+            "blocks": [
+                {
+                   "width": "100%",
+                   "content": [
+                       {"class": "h1", "textAnimation": "En contexto"},
+                       {
+                          "grid": 1,
+                          "columns": "2fr 1fr",
+                          "columnsResponsive": "1fr",
+                          "content":[
+                              {"class": "", "text": "La literatura, como una de las bellas artes, genera productos culturales mediante técnicas y procedimientos en los que el código escrito adquiere particularidades y usos que lo diferencian de otros tipos de discurso y lo definen como una manifestación artística. La palabra es la materia prima de la literatura, y al conjunto de recursos expresivos lingüísticos, con estructuras, normas y reglas que caracterizan a la literatura, se le denomina marcas de literariedad. Como arte, un texto literario se convierte ante nosotros en experiencia estética, su contenido y expresión lingüística puede atraparnos o no, pero si lo hace, dicha experiencia se vuelve única y enriquecedora, de un valor incalculable."},
+                              {"img": ""}
+                              
+                          ]
+                       }
+                   ]
+                }
+            ]
+        },
+        {
+            "title": "Finalizar",
+            "icon": "flag",
+            "end": true,
+            "blocks": [
+                {
+                    "content": []
+                }
+            ]
+        }
+    ]
+}
