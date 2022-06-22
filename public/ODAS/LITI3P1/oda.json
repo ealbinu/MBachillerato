@@ -1,53 +1,631 @@
 {
-    "id": "LOG1P1DGB",
-    "programa": "DGB",
-    "materia": "LITERATURA",
-    "title": "Los fines de la argumentación",
-    "bgimgs": 4,
-    "ficha": [
-        [
-            "Aprendizaje esperado",
-            "Evaluar si se cumplen, y de qué manera, las intenciones argumentativas en diferentes contextos."
-        ],
-        [
-            "Eje transversal",
-            "Habilidades lectoras."
-        ]
+  "id": "LITI3P1",
+  "programa": "DGB",
+  "materia": "LITERATURA",
+  "title": "Literatura universal",
+  "bgimgs": 5,
+  "ficha": [
+    [
+      "Aprendizaje esperado",
+      "Distingue en manifestaciones estéticas de su contexto que la literatura es una expresión artística, en la cual de manera individual y colectiva puede participar activamente, promoviendo su defensa y preservación."
     ],
-    "screens": [
+    ["Eje transversal", "Habilidades lectoras."]
+  ],
+  "screens": [
+    {
+      "title": "Literatura universal",
+      "icon": "article",
+      "steps": true,
+      "class": "flex flex-col justify-center",
+      "blocks": [
         {
-            "title": "",
-            "icon": "article",
-            "steps": true,
-            "class": "flex flex-col justify-center",
-            "blocks": [
-                {
-                   "width": "100%",
-                   "content": [
-                       {"class": "h1", "textAnimation": "En contexto"},
-                       {
-                          "grid": 1,
-                          "columns": "2fr 1fr",
-                          "columnsResponsive": "1fr",
-                          "content":[
-                              {"class": "", "text": "La literatura, como una de las bellas artes, genera productos culturales mediante técnicas y procedimientos en los que el código escrito adquiere particularidades y usos que lo diferencian de otros tipos de discurso y lo definen como una manifestación artística. La palabra es la materia prima de la literatura, y al conjunto de recursos expresivos lingüísticos, con estructuras, normas y reglas que caracterizan a la literatura, se le denomina marcas de literariedad. Como arte, un texto literario se convierte ante nosotros en experiencia estética, su contenido y expresión lingüística puede atraparnos o no, pero si lo hace, dicha experiencia se vuelve única y enriquecedora, de un valor incalculable."},
-                              {"img": ""}
-                              
-                          ]
-                       }
-                   ]
-                }
-            ]
+          "width": "100%",
+          "content": [
+            { "class": "h1", "textAnimation": "En contexto" },
+            { "br": 1 },
+            {
+              "grid": 1,
+              "columns": "2fr 1fr",
+              "columnsResponsive": "1fr",
+              "content": [
+                "La literatura, como una de las bellas artes, genera productos culturales mediante técnicas y procedimientos en los que el código escrito adquiere particularidades y usos que lo diferencian de otros tipos de discurso y lo definen como una manifestación artística. La palabra es la materia prima de la literatura, y al conjunto de recursos expresivos lingüísticos, con estructuras, normas y reglas que caracterizan a la literatura, se le denomina marcas de literariedad. Como arte, un texto literario se convierte ante nosotros en experiencia estética, su contenido y expresión lingüística puede atraparnos o no, pero si lo hace, dicha experiencia se vuelve única y enriquecedora, de un valor incalculable.",
+                { "img": "img/im1.png" }
+              ]
+            }
+          ]
         },
         {
-            "title": "Finalizar",
-            "icon": "flag",
-            "end": true,
-            "blocks": [
+          "width": "100%",
+          "content": [
+            { "class": "h2", "textAnimation": "La literatura y la humanidad" },
+            { "br": 1 },
+            {
+              "grid": 1,
+              "columns": "2fr 1fr",
+              "columnsResponsive": "1fr",
+              "content": [
                 {
-                    "content": []
+                  "group": 1,
+                  "class": "",
+                  "content": [
+                    "Los textos literarios han sido creados específicamente para atraer y atrapar, y así lograr conmover, sensibilizar, divertir, entretener y estimular la imaginación del lector, haciendo uso de recursos estéticos y de un lenguaje particular, metafórico y connotativo.",
+                    { "br": 2 },
+                    "La lectura de textos literarios implica descifrar su significado y, al mismo tiempo, hacer una interpretación desde nuestra cosmovisión, motivada por las proyecciones e identificaciones que despierte en el lector. Además, por medio de métodos específicos es posible hacer múltiples interpretaciones de ellos, a partir de factores socioculturales e históricos, entre otros."
+                  ]
+                },
+                { "img": "img/im2.png" }
+              ]
+            },
+            {
+              "grid": 1,
+              "columns": "1fr 2fr",
+              "columnsResponsive": "1fr",
+              "content": [
+                { "img": "img/im3.png" },
+                "La lectura literaria es, entonces, además de una práctica lingüística, una actividad directamente relacionada con los más puros aspectos humanos, las emociones, motivaciones y experiencias de la vida personal, un aprendizaje que se edifica y se conquista desde el momento en que el lector descubre y redescubre nuevos mundos, nuevos saberes, y los integra a su propia vida."
+              ]
+            },
+            { "br": 2 },
+            "De acuerdo a la forma en que están escritos, podemos clasificar a los textos literarios en tres géneros.",
+            { "br": 2 },
+            {
+              "diagram": 1,
+              "mode": "vertical",
+              "expansion": 1,
+              "classItem": "max-w-[16rem] text-xs my-5",
+              "connectionsOptions": {
+                "startSocket": "bottom",
+                "endSocket": "top",
+                "color": "rgba(200,200,200,0.3)",
+                "endPlug": "behind",
+                "size": 3,
+                "dash": {
+                  "animation": true
                 }
-            ]
+              },
+              "blocks": [
+                [
+                  {
+                    "id": "a1",
+                    "class": "text-2xl",
+                    "child": ["b1", "b2", "b3"],
+                    "content": ["Géneros literarios"]
+                  }
+                ],
+                [
+                  {
+                    "id": "b1",
+                    "child": ["c1"],
+                    "content": [{ "img": "img/diag_ic1.png" }]
+                  },
+                  {
+                    "id": "b2",
+                    "child": ["c2"],
+                    "content": [{ "img": "img/diag_ic2.png" }]
+                  },
+                  {
+                    "id": "b3",
+                    "child": ["c3"],
+                    "content": [{ "img": "img/diag_ic3.png" }]
+                  }
+                ],
+                [
+                  {
+                    "id": "c1",
+                    "child": ["d1"],
+                    "content": ["Narrativo"]
+                  },
+                  {
+                    "id": "c2",
+                    "child": ["d2"],
+                    "content": ["Lírico"]
+                  },
+                  {
+                    "id": "c3",
+                    "child": ["d3"],
+                    "content": ["Dramático"]
+                  }
+                ],
+                [
+                  {
+                    "id": "d1",
+                    "child": ["e1"],
+                    "content": ["Relatos de ficción"]
+                  },
+                  {
+                    "id": "d2",
+                    "child": ["e2"],
+                    "content": ["Poemas"]
+                  },
+                  {
+                    "id": "d3",
+                    "child": ["e3"],
+                    "content": ["Teatro"]
+                  }
+                ],
+                [
+                  {
+                    "id": "e1",
+                    "class": "text-center",
+                    "content": ["Se clasifican de acuerdo a su temática"]
+                  },
+                  {
+                    "id": "e2",
+                    "class": "text-center",
+                    "content": [
+                      "Se clasifican de acuerdo a su estructura y temática."
+                    ]
+                  },
+                  {
+                    "id": "e3",
+                    "class": "text-center",
+                    "content": [
+                      "Se clasifican de acuerdo a sus extensiones, temáticas y formatos."
+                    ]
+                  }
+                ]
+              ]
+            },
+            { "br": 2 },
+            {
+              "grid": 1,
+              "columns": "1fr 1fr",
+              "columnsResponsive": "1fr",
+              "content": [
+                "La literatura ha acompañado a la humanidad en los distintos periodos de la historia, su importancia en el mundo es tal que no es posible pensar en dicha historia sin remitirnos a las grandes obras de los escritores que estuvieron en él para dar fe y dejar constancia de los hechos y sus circunstancias como un fiel reflejo de los valores y modos de vivir, hablar y actuar de cada época. Nombres como Homero, Miguel de Cervantes, William Shakespeare, Victor Hugo, Goethe, etcétera, se inscriben a la par de los grandes héroes y personajes que cambiaron el mundo con sus acciones.",
+                { "img": "img/im5.png" }
+              ]
+            },
+            { "br": 1 },
+            "Los autores mencionados crearon lo que suele conocerse como “obra maestra”: La Ilíada, El Quijote, Hamlet, Los Miserables y Fausto son obras literarias producto de una destreza técnica y estética llevada a un punto culminante; obras que tratan con maestría los temas e inquietudes más profundas del ser humano; son textos que lograron ir más allá de lo usual, consiguiendo así la trascendencia en el espacio y el tiempo. A estas obras, junto con otras más, se les conoce como obras literarias universales, es decir, obras que representan la memoria cultural de la humanidad. Una manera popular de llamarlas es “clásicos”."
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "title": "Marcas de literariedad",
+      "icon": "account_tree",
+      "steps": false,
+      "class": "flex flex-col justify-center",
+      "blocks": [
+        {
+          "width": "100%",
+          "content": [
+            {
+              "diagram": 1,
+              "mode": "horizontal",
+              "expansion": 1,
+              "classItem": "max-w-[12rem] text-xs",
+              "connectionsOptions": {
+                "startSocket": "right",
+                "endSocket": "left",
+                "color": "rgba(200,200,200,0.3)",
+                "endPlug": "behind",
+                "size": 3,
+                "dash": {
+                  "animation": true
+                }
+              },
+              "blocks": [
+                [
+                  {
+                    "id": "x1",
+                    "child": ["y1", "y2", "y3"],
+                    "class": "text-xl bg-blue-300",
+                    "content": ["Marcas de literariedad"]
+                  }
+                ],
+                [
+                  {
+                    "id": "y1",
+                    "class": "bg-cyan-300",
+                    "child": ["z1", "z2", "z3"],
+                    "content": ["Lenguaje literario"]
+                  },
+                  {
+                    "id": "y2",
+                    "class": "bg-green-300",
+                    "child": ["z4", "z5"],
+                    "content": ["Función poética"]
+                  },
+                  {
+                    "id": "y3",
+                    "class": "bg-orange-300",
+                    "child": ["z6", "z7", "z8"],
+                    "content": ["Formas de presentación"]
+                  }
+                ],
+                [
+                  {
+                    "id": "z1",
+                    "class": "bg-cyan-100",
+                    "content": ["Lenguaje connotativo"]
+                  },
+                  {
+                    "id": "z2",
+                    "class": "bg-cyan-100",
+                    "content": ["Polisemia"]
+                  },
+                  {
+                    "id": "z3",
+                    "class": "bg-cyan-100",
+                    "content": ["Figuras retóricas"]
+                  },
+                  {
+                    "id": "z4",
+                    "class": "bg-green-100",
+                    "content": ["Belleza expresiva"]
+                  },
+                  {
+                    "id": "z5",
+                    "class": "bg-green-100",
+                    "content": ["Efecto emotivo"]
+                  },
+                  {
+                    "id": "z6",
+                    "class": "bg-orange-100",
+                    "content": ["Prosa"]
+                  },
+                  {
+                    "id": "z7",
+                    "class": "bg-orange-100",
+                    "content": ["Verso"]
+                  },
+                  {
+                    "id": "z8",
+                    "class": "bg-orange-100",
+                    "content": ["Diálogo"]
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Actividad I",
+      "icon": "games",
+      "steps": true,
+      "class": "flex flex-col justify-center",
+      "blocks": [
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "Lee el siguiente texto y, después, selecciona la opción correcta.",
+              "iconinst": "preview"
+            },
+            { "br": 1 },
+            {
+              "group": 1,
+              "class": "bg-white/10 p-5 rounded",
+              "content": [
+                {
+                  "grid": 1,
+
+                  "columns": "2fr 1fr",
+                  "columnsResponsive": "1fr",
+                  "content": [
+                    {
+                      "class": "",
+                      "textAnimation": "“Si ese mundo larval y fantástico, donde lo vulgar y lo absurdo pululan con mayor abundancia, aunque en la tierra nos ofrece una idea de las condiciones del alma separada del cuerpo, sin duda pasaré mi eternidad lamentando el exquisito dominio de los sentidos y la ajustada perspectiva de la razón humana. Sin embargo, me sumerjo con cierta dulzura en esas vanas regiones de los sueños; por un segundo aprehendo ahí ciertos secretos que no tardan en escapárseme, y bebo en las fuentes”."
+                    },
+                    { "img": "img/im7.jpg" }
+                  ]
+                },
+                { "br": 1 },
+                {
+                  "class": "text-xs text-right",
+                  "text": "Yourcenar, Marguerite. (1998). Memorias de Adriano. Barcelona: Salvat."
+                }
+              ]
+            }
+          ],
+          "buttonNextStep": "Continuar"
+        },
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "Selecciona la opción correcta.",
+              "iconinst": "touch_app"
+            },
+            { "br": 1 },
+            {
+              "class": "h5",
+              "text": "a) Selecciona el fragmento en que aparece una figura retórica."
+            },
+            {
+              "select": 1,
+              "columns": "1fr 1fr 1fr",
+              "options": [
+                [
+                  "Nos ofrece una idea de las condiciones del alma separada del cuerpo.",
+                  false
+                ],
+                [
+                  "Pasaré mi eternidad lamentando el exquisito dominio de los sentidos.",
+                  false
+                ],
+                [
+                  "Me sumerjo con cierta dulzura en esas vanas regiones de los sueños.",
+                  true
+                ]
+              ],
+              "feedback": [
+                "¡Correcto!",
+                "En este caso la figura retórica presente,en el fragmento es una metáfora, busca dónde el significado de una palabra se utilice en otro sentido por medio de una relación de semejanza. Intenta de nuevo."
+              ]
+            }
+          ],
+          "buttonNextStep": "Continuar"
+        },
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "Selecciona la opción correcta.",
+              "iconinst": "touch_app"
+            },
+            { "br": 1 },
+            {
+              "class": "h5",
+              "text": "b) Selecciona las palabras con las que se busca darle belleza expresiva al mensaje."
+            },
+            {
+              "select": 1,
+              "columns": "1fr 1fr 1fr",
+              "options": [
+                ["Larval, pululan, exquisito, dulzura, vanas.", true],
+                ["Mundo, vulgar, tierra, alma, perspectiva.", false],
+                ["Ese, donde, con, mi, en, ahí, no.", false]
+              ],
+              "feedback": [
+                "¡Correcto!",
+                "Busca palabras que no suelen estar presentes en un texto o discurso habitual, cuyo significado aporte un sentido estético al texto. Intenta de nuevo."
+              ]
+            }
+          ],
+          "buttonNextStep": "Continuar"
+        },
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "Selecciona la opción correcta.",
+              "iconinst": "touch_app"
+            },
+            { "br": 1 },
+            {
+              "class": "h5",
+              "text": "Selecciona la característica presente en el texto que corresponda a la prosa."
+            },
+            {
+              "select": 1,
+              "columns": "1fr 1fr 1fr",
+              "options": [
+                ["Está sujeto a ritmo, rima y medida.", false],
+                [
+                  "Se escribe en toda la línea sin sujetarse a una medida específica.",
+                  true
+                ],
+                ["Presenta alternadamente lo que dicen los personajes.", false]
+              ],
+              "feedback": [
+                "¡Correcto!",
+                "Observa muy bien la forma en que está dispuesto el texto, eso puede darte la clave para la respuesta correcta. Intenta de nuevo."
+              ]
+            }
+          ],
+          "buttonNextScreen": "Siguiente"
+        }
+      ]
+    },
+    {
+      "title": "Autor universal",
+      "icon": "article",
+      "steps": true,
+      "class": "flex flex-col justify-center",
+      "blocks": [
+        {
+          "width": "100%",
+          "content": [
+            { "inst": "Lee el siguiente texto.", "iconinst": "preview" },
+            { "br": 1 },
+            {
+              "class": "h3 text-center",
+              "text": "¿Por qué un autor es universal?"
+            },
+            { "br": 2 },
+            {
+              "class": "",
+              "text": "La grandeza o universalidad de un autor no responden a criterios cuantitativos, no importa, por ejemplo, el número de ejemplares vendidos pues existen autores cuyo éxito ha sido efímero a pesar de ser creadores de obras que lograron ventas millonarias. En cambio, casos como el de Jane Austen, que no encontró una editorial que publicara Orgullo y prejuicio hasta dieciséis años después de escribirla; o el de Daniel Defoe, quien vendió el original de Robinson Crusoe en apenas 110 libras."
+            },
+            { "br": 1 },
+            {
+              "grid": 1,
+              "columns": "2fr 1fr",
+              "columnsResponsive": "1fr",
+              "content": [
+                {
+                  "class": "",
+                  "text": "Un autor universal escribe para expresarse a sí mismo, no para dirigirse a un público lector en particular, es decir, escribe para la humanidad. Busca explorar lo esencial de la vida, sondear el alma humana, por eso, más allá de la trama o del argumento de su obra, lo que atrae al lector es cómo se descubre, a través de la sensibilidad, lo más significativo y profundo de la naturaleza del ser humano."
+                },
+                { "img": "img/im8.jpg" }
+              ]
+            },
+            {
+              "class": "text-xs text-right",
+              "text": "Fuente: Azuar, R. (s. f.) Por qué un autor es universal. Biblioteca Virtual Miguel de Cervantes. <br>Recuperado de: https://bit.ly/3oxTiUu (Consulta: 8 de diciembre de 2021)."
+            }
+          ],
+          "buttonNextScreen": "Siguiente"
+        }
+      ]
+    },
+    {
+      "title": "Actividad II",
+      "icon": "games",
+      "steps": true,
+      "class": "flex flex-col justify-center",
+      "blocks": [
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "Lee las siguientes reseñas y selecciona Sí o No si de acuerdo a las características mencionadas se trata de una obra literaria universal o no.",
+              "iconinst": "touch_app"
+            },
+            { "br": 2 },
+            {
+              "class": "h5",
+              "text": "a) La obra es un relato clásico de la aventura del héroe, del camino que debe recorrer para cumplir una misión para la que está destinado, voluntaria o involuntariamente. Dividida en siete volúmenes, se desarrolla en un contexto de fantasía en el que actúan una serie de personajes entrañables para los millones de lectores de la saga. Temas como la amistad, el valor y la responsabilidad destacan en una trama en la que al final triunfa el bien sobre el mal."
+            },
+            { "br": 1 },
+            {
+              "select": 1,
+              "columns": "1fr 1fr",
+              "options": [
+                ["Sí", true],
+                ["No", false]
+              ],
+              "optionClass": "border-2 text-white text-center p-3 rounded cursor-pointer text-xl font-extrabold",
+              "optionClassActive": "bg-main !text-white",
+              "feedback": [
+                "En efecto, aunque se menciona que la obra es popular, la reseña no destaca aspectos de gran valor literario.",
+                "Lee nuevamente la reseña e identifica si se mencionan aspectos de valor literario."
+              ]
+            }
+          ]
+        },
+				{
+          "width": "100%",
+          "content": [
+            {
+              "inst": "Lee las siguientes reseñas y selecciona Sí o No si de acuerdo a las características mencionadas se trata de una obra literaria universal o no.",
+              "iconinst": "touch_app"
+            },
+            { "br": 2 },
+            {
+              "class": "h5",
+              "text": "b) Perteneciente al subgénero literario burlesco, el autor hace una crítica a distintos aspectos de la sociedad por medio de una parodia a las novelas de caballería. Un personaje entrañable, preso de la locura se lanza a una aventura, sin embargo, no es la acción lo primordial en la obra sino el mismo personaje y la interpretación desde varios puntos de vista de la realidad, haciéndola más compleja."
+            },
+            { "br": 1 },
+            {
+              "select": 1,
+              "columns": "1fr 1fr",
+              "options": [
+                ["Sí", true],
+                ["No", false]
+              ],
+              "optionClass": "border-2 text-white text-center p-3 rounded cursor-pointer text-xl font-extrabold",
+              "optionClassActive": "bg-main !text-white",
+              "feedback": [
+                "Así es, la reseña destaca cómo la obra interpreta la realidad de una manera compleja. Se trata de El Quijote, la más grande obra literaria de la lengua española.",
+                "Lee con detenimiento la reseña e identifica aspectos de valor literario."
+              ]
+            }
+          ]
+        },
+				{
+          "width": "100%",
+          "content": [
+            {
+              "inst": "Lee las siguientes reseñas y selecciona Sí o No si de acuerdo a las características mencionadas se trata de una obra literaria universal o no.",
+              "iconinst": "touch_app"
+            },
+            { "br": 2 },
+            {
+              "class": "h5",
+              "text": "d) La obra es la autobiografía de un preso condenado por un asesinato que no cometió y sus intentos de fuga, lo que finalmente logra, convirtiendo su hazaña en un ejemplo de ingenio, tesón y valentía. La novela fue un best-seller y cuenta con una segunda parte, su popularidad le ha valido para ser llevada al cine en dos ocasiones."
+            },
+            { "br": 1 },
+            {
+              "select": 1,
+              "columns": "1fr 1fr",
+              "options": [
+                ["Sí", false],
+                ["No", true]
+              ],
+              "optionClass": "border-2 text-white text-center p-3 rounded cursor-pointer text-xl font-extrabold",
+              "optionClassActive": "bg-main !text-white",
+              "feedback": [
+                "En efecto, aunque se menciona que la obra es popular, la reseña no destaca aspectos de gran valor literario.",
+                "Lee nuevamente la reseña e identifica si se mencionan aspectos de valor literario."
+              ]
+            }
+          ]
+        }
+				,{
+          "width": "100%",
+          "content": [
+            {
+              "inst": "Lee las siguientes reseñas y selecciona Sí o No si de acuerdo a las características mencionadas se trata de una obra literaria universal o no.",
+              "iconinst": "touch_app"
+            },
+            { "br": 2 },
+            {
+              "class": "h5",
+              "text": "e) La novela cuenta la historia de un hombre dispuesto a sacrificarlo todo con tal de saldar sus cuentas con un temible adversario, convirtiendo la trama en algo más que un relato de aventuras sino en la recreación del sentido de la existencia humana, en la dualidad del bien y el mal como los principios que guían las acciones y el destino de las personas."
+            },
+            { "br": 1 },
+            {
+              "select": 1,
+              "columns": "1fr 1fr",
+              "options": [
+                ["Sí", true],
+                ["No", false]
+              ],
+              "optionClass": "border-2 text-white text-center p-3 rounded cursor-pointer text-xl font-extrabold",
+              "optionClassActive": "bg-main !text-white",
+              "feedback": [
+                "En efecto, la obra reseñada contiene elementos de gran valor literario. Se trata de Moby Dick, un clásico de la literatura estadounidense.",
+                "Lee con detenimiento la reseña e identifica aspectos de valor literario."
+              ]
+            }
+          ]
+        },
+				{
+          "width": "100%",
+          "content": [
+            {
+              "inst": "Lee las siguientes reseñas y selecciona Sí o No si de acuerdo a las características mencionadas se trata de una obra literaria universal o no.",
+              "iconinst": "touch_app"
+            },
+            { "br": 2 },
+            {
+              "class": "h5",
+              "text": "c) La novela es, básicamente, una novela de aventuras que encanta por su carácter mítico, con personajes reales que viven situaciones que van de lo real a lo mágico, que transitan entre el territorio de los sueños al de la realidad. Las anécdotas relatadas en la historia dejan al lector la sensación de haber despertado de un sueño ya soñado, de haber visto su propio reflejo en el espejo del relato."
+            },
+            { "br": 1 },
+            {
+              "select": 1,
+              "columns": "1fr 1fr",
+              "options": [
+                ["Sí", true],
+                ["No", false]
+              ],
+              "optionClass": "border-2 text-white text-center p-3 rounded cursor-pointer text-xl font-extrabold",
+              "optionClassActive": "bg-main !text-white",
+              "feedback": [
+                "En efecto, la obra reseñada contiene elementos de gran valor literario. En este caso se trata de Cien años de soledad, la obra maestra de Gabriel García Márquez.",
+                "Lee con detenimiento la reseña e identifica aspectos de valor literario."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Finalizar",
+      "icon": "flag",
+      "end": true,
+      "blocks": [
+        {
+          "content": []
+        }
+      ]
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 <template lang="pug">
 
-.block(:style="cssVars" v-if="block.content.length" :class="[block.class]").rounded
+.block(:style="cssVars" v-if=" block.content.length" :class="[block.class]").rounded
     //-::::::::::::::: BLOCKS
     //-.blockContainer(:class="[block.class]")
     BlocksRenderer( v-for="(i, index) in block.content" :item="i" :blockid="blockid+'-'+index" :key="index")

@@ -191,5 +191,40 @@
       "   \"properties\": {}",
       "}"
     ]
+  },
+  "diagram": {
+    "prefix": "diagram",
+    "body": [
+      "{",
+      "   \"diagram\": 1,",
+      "   \"mode\": \"${1|horizontal,vertical|}\",",
+      "   \"expansion\": 1,",
+      "   \"classItem\": \"max-w-[12rem] text-xs\",",
+      "   \"connectionsOptions\": {",
+      "       \"startSocket\": \"right\",",
+      "       \"endSocket\": \"left\",",
+      "       \"color\": \"rgba(200,200,200,0.3)\",",
+      "       \"endPlug\": \"behind\",",
+      "       \"size\": 3,",
+      "       \"dash\": {",
+      "           \"animation\": true",
+      "       }",
+      "   },",
+      "   \"blocks\": [",
+      "       [",
+      "       ]",
+      "   ]",
+      "}"
+    ]
+  },
+  "diagramblock": {
+    "prefix": "diagramblock",
+    "body": [
+        "{",
+        "   \"id\": \"$1\",",
+        "   \"child\": [\"\"],",
+        "   \"content\": [],",
+        "},"
+    ]
   }
 }

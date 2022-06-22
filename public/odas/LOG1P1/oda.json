@@ -268,7 +268,7 @@
             ]
         },
         {
-            "title": "Actividad",
+            "title": "Actividad 1. Necesidad de argumentos",
             "icon": "games",
             "steps": true,
             "blocks": [
@@ -544,7 +544,7 @@
             ]
         },
         {
-            "title": "Intención argumentativa",
+            "title": "Actividad 2. Intención argumentativa",
             "icon": "games",
             "steps": true,
             "blocks": [
@@ -829,7 +829,7 @@
             ]
         },
         {
-            "title": "Argumentos",
+            "title": "Actividad 3. Argumentos útiles",
             "icon": "games",
             "steps": false,
             "blocks": [
@@ -940,7 +940,7 @@
                                     {
                                         "css": "#block-4-2{background:rgba(194, 85, 79, 0.7);}"
                                     },
-                                    "Tu respuesta es incorrecta, pues el argumento expone una ventaja del uso de madera en la construcción de viviendas, pero la intención argumentativa es convencer al ayuntamiento de donar árboles para ser utilizados en un parque."
+                                    "Tu respuesta es incorrecta, ya que el argumento expone una ventaja del uso de madera en la construcción de viviendas, pero la intención argumentativa es convencer al ayuntamiento de donar árboles para ser utilizados en un parque."
                             ]}
                             ]
                         }
@@ -981,13 +981,13 @@
                                     {
                                         "css": "#block-4-3{background:rgba(97, 196, 84,0.7);  }"
                                     },
-                                    "¡Correcto!"
+                                    "¡Correcto! Con este argumento se busca persuadir, es decir, se utilizan datos y razones relacionadas con tu solicitud para lograr que la otra persona adopte la propuesta como propia y la apruebe."
                                 ]},
                                 {"group":1,"content":[
                                     {
                                         "css": "#block-4-3{background:rgba(194, 85, 79, 0.7);}"
                                     },
-                                    "Tu respuesta no es la correcta."
+                                    "Tu respuesta es incorrecta, pues este argumento tiene la intención de persuadir, ofreciendo razones relacionadas con tu solicitud para que la otra parte adopte la propuesta como propia y la apruebe."
                                 ]}
                             ]
                         }
@@ -1028,13 +1028,13 @@
                                     {
                                         "css": "#block-4-4{background:rgba(97, 196, 84,0.7);  }"
                                     },
-                                    "¡Correcto! Con este argumento se busca persuadir, ya que se utiliza para logar que la otra persona adopte la propuesta como propia y la apruebe."
+                                    "¡Correcto! El argumento tiene la finalidad de apoyar racionalmente un punto de vista polémico, pues hay quien puede pensar distinto y no apoyar la propuesta."
                                 ]},
                                 {"group":1,"content":[
                                     {
                                         "css": "#block-4-4{background:rgba(194, 85, 79, 0.7);}"
                                     },
-                                    "Tu respuesta no es la correcta."
+                                    "Tu respuesta es incorrecta, pues este argumento, al apoyar de manera racional un punto de vista polémico, puede apoyar tu propuesta y convencer a quien puede pensar distinto."
                                 ]}
                             ]
                         }
@@ -1075,13 +1075,13 @@
                                     {
                                         "css": "#block-4-5{background:rgba(97, 196, 84,0.7);  }"
                                     },
-                                    "¡Correcto!"
+                                    "¡Correcto! No puedes utilizar este argumento porque la intención argumentativa no es demostrar las consecuencias negativas de la deforestación sino las ventajas de reforestar. Además, el ejemplo expuesto está fuera de contexto."
                                 ]},
                                 {"group":1,"content":[
                                     {
                                         "css": "#block-4-5{background:rgba(194, 85, 79, 0.7);}"
                                     },
-                                    "Tu respuesta es incorrecta, pues este argumento tiene la intención de persuadir, ofreciendo razones para que la otra parte adopte la propuesta como propia y la apruebe."
+                                    "Tu respuesta es incorrecta, pues, aunque la deforestación es una problemática ambiental que presenta consecuencias negativas como la erosión, la intención argumentativa no es demostrar sus consecuencias negativas sino las ventajas de reforestar. Además, el ejemplo expuesto está fuera de contexto."
                                 ]}
                             ]
                         }
@@ -1122,13 +1122,13 @@
                                     {
                                         "css": "#block-4-6{background:rgba(97, 196, 84,0.7);  }"
                                     },
-                                    "¡Correcto! El argumento tiene la finalidad de apoyar racionalmente un punto de vista polémico, pues hay quien puede pensar distinto y no apoyar la propuesta."
+                                    "¡Correcto! Con este argumento puedes demostrar los beneficios de tu propuesta."
                                 ]},
                                 {"group":1,"content":[
                                     {
                                         "css": "#block-4-6{background:rgba(194, 85, 79, 0.7);}"
                                     },
-                                    "Tu respuesta no es la correcta."
+                                    "Tu respuesta es incorrecta, este argumento expone los beneficios de tu propuesta."
                                 ]}
                             ]
                         }
@@ -1169,13 +1169,13 @@
                                     {
                                         "css": "#block-4-7{background:rgba(97, 196, 84,0.7);  }"
                                     },
-                                    "¡Correcto! Con este argumento puedes demostrar los beneficios de tu propuesta."
+                                    "¡Correcto! Puedes utilizar este argumento pues tu objetivo es lograr que el ayuntamiento done árboles para reforestar el parque con fines ambientales y recreativos, no para darles un uso industrial."
                                 ]},
                                 {"group":1,"content":[
                                     {
                                         "css": "#block-4-7{background:rgba(194, 85, 79, 0.7);}"
                                     },
-                                    "Tu respuesta es incorrecta, pues este argumento, al apoyar de manera racional un punto de vista polémico, puede apoyar tu propuesta."
+                                    "Tu respuesta es incorrecta, pues este argumento apoya el uso de los árboles con fines industriales, y tu objetivo es lograr que el ayuntamiento done árboles con fines ambientales y recreativos."
                                 ]}
                             ]
                         }

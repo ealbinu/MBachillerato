@@ -20,7 +20,7 @@
     ],
     "screens": [
         {
-            "title": "Los sistemas dispersos en el cuerpo",
+            "title": "Sistemas dispersos",
             "icon": "info",
             "steps": true,
             "class": "flex flex-col justify-center",
@@ -63,7 +63,15 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "title": "Los sistemas dispersos en el cuerpo",
+            "icon": "info",
+            "steps": true,
+            "class": "flex flex-col justify-center",
+            "blocks": [
                 {
                     "width": "100%",
                     "content": [
@@ -194,7 +202,7 @@
             ]
         },
         {
-            "title": "Tipos de sistemas dispersos",
+            "title": "¿Cómo diferenciar entre los tipos de sistemas dispersos?",
             "icon": "info",
             "steps": true,
             "class": "flex flex-col justify-center",
@@ -514,7 +522,7 @@
             ]
         },
         {
-            "title": "Ejercicio",
+            "title": "Actividad",
             "icon": "games",
             "steps": true,
             "blocks": [

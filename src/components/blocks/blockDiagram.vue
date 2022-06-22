@@ -1,5 +1,4 @@
 <template lang="pug">
-
 .grid(:class="[gridmode]").gap-2
     template(v-for="(i, index) in data.blocks")
         .flex(:class="[colsmode] ").gap-2.justify-evenly

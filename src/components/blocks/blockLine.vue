@@ -31,12 +31,16 @@ const redraw = () => {
 
 onMounted(()=>{
     LeaderLine.positionByWindowResize = false
-    document.querySelector('.drawer-content').addEventListener('scroll', AnimEvent.add(function() {
-        redraw()
-    }))
-    window.addEventListener('resize', AnimEvent.add(function() {
-        redraw()
-    }))
+    var drawercontent = document.querySelector('.drawer-content')
+    if(document.querySelector('.drawer-content')){
+        document.querySelector('.drawer-content').addEventListener('scroll', AnimEvent.add(function() {
+            redraw()
+        }))
+        window.addEventListener('resize', AnimEvent.add(function() {
+            redraw()
+        }))
+    }
+
     drawit()
 })
 

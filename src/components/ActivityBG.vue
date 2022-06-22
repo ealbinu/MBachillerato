@@ -45,7 +45,7 @@ setInterval(() => {
         width: 100%
         height: 100%
         overflow: hidden
-        opacity: 0.05
+        opacity: 0.2
         @include floatcard
         -webkit-mask-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))
         mask-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))
