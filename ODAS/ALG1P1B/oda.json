@@ -116,7 +116,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"text": "2. Manuel empezó su entrenamiento para participar en un maratón corriendo 1.2 km el primer día, después aumentó la distancia 0.3 km por día. Para conocer la distancia que corre de acuerdo con los días que trascurren, Manuel formuló la siguiente expresión algebraica.", "class":"h5"},
+                        {"text": "2. Manuel empezó su entrenamiento para participar en un maratón corriendo 1.2 km el primer día, después aumentó la distancia 0.3 km por día. Para conocer la distancia que corre de acuerdo con los días que transcurren, Manuel formuló la siguiente expresión algebraica.", "class":"h5"},
                         {"math": "d = 1.2 + 0.3n", "block": true},
                         {
                             "dragdrop": true,
@@ -187,7 +187,7 @@
                             "instruction":1,
                             "content": [
                                 {"icon": "back_hand", "size":"2rem", "class":"animate__animated animate__shakeX animate__slower animate__infinite"},
-                                "Identifica si la expresión algebraica representa la relación funcional en los siguientes enunciados y desplazala hacia la opción correcta."
+                                "Identifica si la expresión algebraica representa la relación funcional en los siguientes enunciados y desplázala hacia la opción correcta."
                             ]
                         },
                         {"br": 1},
@@ -271,7 +271,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"text": "2. Es la representación en lenguaje común de la siguiente expresión ", "class":"h5"},
+                        {"text": "2. Es la representación en lenguaje común de la siguiente expresión.", "class":"h5"},
                         {"math":"(4x - 2y)^2", "block": true},
                         {
                             "select": true,
@@ -302,7 +302,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"text": "4. Es la representación en lenguaje común de la siguiente expresión ", "class":"h5"},
+                        {"text": "4. Es la representación en lenguaje común de la siguiente expresión.", "class":"h5"},
                         {"math":"\\frac{9x}{(2y + 6)^2}", "block": true},
                         {
                             "select": true,
