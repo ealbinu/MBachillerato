@@ -101,7 +101,7 @@
                             ]
                         },
                         {"br":1},
-                        {"text": "1. Javier es gestor de recursos de una casa hogar para niños en situaciones vulnerables y logró que un autolavado done $5 por cada automóvil que lava al día. Para conocer las donaciones que obtiene en un día formuló la siguiente expresión algebraica:", "class":"h5"},
+                        {"text": "1. Javier es gestor de recursos de una casa hogar para niños en situaciones vulnerables y logró que un autolavado done $5 por cada automóvil que lava al día. Para conocer las donaciones que obtiene en un día formuló la siguiente expresión algebraica.", "class":"h5"},
                         {"math": "g = 5a", "block": true},
                         {
                             "dragdrop": true,
@@ -116,7 +116,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"text": "2. Manuel empezó su entrenamiento para participar en un maratón corriendo 1.2 km el primer día, después aumentó la distancia 0.3 km por día. Para conocer la distancia que corre de acuerdo con los días que trascurren, Manuel formuló la siguiente expresión algebraica:", "class":"h5"},
+                        {"text": "2. Manuel empezó su entrenamiento para participar en un maratón corriendo 1.2 km el primer día, después aumentó la distancia 0.3 km por día. Para conocer la distancia que corre de acuerdo con los días que trascurren, Manuel formuló la siguiente expresión algebraica.", "class":"h5"},
                         {"math": "d = 1.2 + 0.3n", "block": true},
                         {
                             "dragdrop": true,
@@ -131,7 +131,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"text":"3. El perímetro de un círculo está dado por la siguiente expresión algebraica:", "class":"h5"},
+                        {"text":"3. El perímetro de un círculo está dado por la siguiente expresión algebraica.", "class":"h5"},
                         {"math": "p = \\pi d", "block": true},
                         {
                             "dragdrop": true,
@@ -146,7 +146,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"text":"4. Lourdes inició un proyecto de nutrición en el que vende desayunos saludables. El paquete mensual de desayunos lo vende a $550, de los cuales destina $225 para gastos de insumos y renta del local, el resto es su ganancia. Para conocer sus ganancias escribió la siguiente expresión algebraica: ", "class":"h5"},
+                        {"text":"4. Lourdes inició un proyecto de nutrición en el que vende desayunos saludables. El paquete mensual de desayunos lo vende a $550, de los cuales destina $225 para gastos de insumos y renta del local, el resto es su ganancia. Para conocer sus ganancias escribió la siguiente expresión algebraica.", "class":"h5"},
                         {"math": "g = (550 – 225)u", "block": true},
                         {
                             "dragdrop": true,
@@ -161,7 +161,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"text":"5. María cultiva una parcela utilizando técnicas agroecológicas de la que obtiene una ganancia promedio anual de $50 000. Para conocer sus ganancias en varios años escribió la siguiente expresión algebraica: ", "class":"h5"},
+                        {"text":"5. María cultiva una parcela utilizando técnicas agroecológicas de la que obtiene una ganancia promedio anual de $50 000. Para conocer sus ganancias en varios años escribió la siguiente expresión algebraica.", "class":"h5"},
                         {"math": "g = 50\\ 000a", "block": true},
                         {
                             "dragdrop": true,
