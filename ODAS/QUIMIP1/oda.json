@@ -20,7 +20,7 @@
     ],
     "screens": [
         {
-            "title": "Los sistemas dispersos en el cuerpo",
+            "title": "Sistemas dispersos",
             "icon": "info",
             "steps": true,
             "class": "flex flex-col justify-center",
@@ -63,7 +63,15 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "title": "Los sistemas dispersos en el cuerpo",
+            "icon": "info",
+            "steps": true,
+            "class": "flex flex-col justify-center",
+            "blocks": [
                 {
                     "width": "100%",
                     "content": [
@@ -85,13 +93,13 @@
                                     "group":1,
 
                                     "content": [
-                                        {"group":1, "id":"plasma", "content":[{ "term":"Plasma", "content":["52-62%"]}], "class":"rounded cursor-pointer" },
+                                        {"group":1, "id":"plasma", "content":[{ "term":"Plasma", "content":["52-62 %"]}], "class":"rounded cursor-pointer" },
                                         {"br":2},
-                                        {"group":1, "id":"blancos", "content":[{ "term":"Glóbulos blancos (leucocitos)", "content":["<1%"]}], "class":"rounded cursor-pointer" },
+                                        {"group":1, "id":"blancos", "content":[{ "term":"Glóbulos blancos (leucocitos)", "content":["<1 %"]}], "class":"rounded cursor-pointer" },
                                         {"br":2},
-                                        {"group":1, "id":"plaquetas", "content":[{ "term":"Plaquetas", "content":["<1%"]}], "class":"rounded cursor-pointer" },
+                                        {"group":1, "id":"plaquetas", "content":[{ "term":"Plaquetas", "content":["<1 %"]}], "class":"rounded cursor-pointer" },
                                         {"br":2},
-                                        {"group":1, "id":"rojos", "content":[{ "term":"Glóbulos rojos (eritrocitos)", "content":["38-48%"]}], "class":"rounded cursor-pointer" }
+                                        {"group":1, "id":"rojos", "content":[{ "term":"Glóbulos rojos (eritrocitos)", "content":["38-48 %"]}], "class":"rounded cursor-pointer" }
                                     ]
                                 },
                                 {"img": "img/estructura_sola.svg", "class":"w-48 mx-auto", "id":"estructura"}
@@ -179,7 +187,7 @@
                     "content": [
                         {"br":1},
                         {
-                            "textAnimation": "Al respecto, la quema de hidrocarburos con una baja oxigenación produce la combustión incompleta de la materia orgánica, en la que la llama es de color amarillo y conduce a la generación de hollín. <br><br> El hollín es un polvo fino de color negro que, de acuerdo con el Instituto Nacional del Cáncer (2015), contiene carcinógenos como arsénico, cadmio y cromo que son de fácil absorción por el cuerpo humano y puede producir cáncer de piel. Como habrás notado en el entorno, el hollín se produce con facilidad a causa automóviles que no tienen un buen funcionamiento así como por desechos industriales."
+                            "textAnimation": "Al respecto, la quema de hidrocarburos con una baja oxigenación produce la combustión incompleta de la materia orgánica, en la que la llama es de color amarillo y conduce a la generación de hollín. <br><br> El hollín es un polvo fino de color negro que, de acuerdo con el Instituto Nacional del Cáncer (2015), contiene carcinógenos como arsénico, cadmio y cromo que son de fácil absorción por el cuerpo humano y puede producir cáncer de piel. Como habrás notado en el entorno, el hollín se produce con facilidad a causa de automóviles que no tienen un buen funcionamiento así como por desechos industriales."
                         },
                         {"br":2},
                         {"group":1, "class":"text-center", "content": [
@@ -194,7 +202,7 @@
             ]
         },
         {
-            "title": "Tipos de sistemas dispersos",
+            "title": "¿Cómo diferenciar entre los tipos de sistemas dispersos?",
             "icon": "info",
             "steps": true,
             "class": "flex flex-col justify-center",
@@ -243,20 +251,22 @@
             "title": "Efecto Tyndall",
             "icon": "science",
             "steps": true,
-            "class": "bg-blue-200 flex flex-col justify-center items-center",
+            "class": "bg-blue-400 flex flex-col justify-center items-center",
             "blocks": [
                 {
                     "width": "100%",
                     "content": [
-                        {"class":"h4 text-center text-dark", "textAnimation": "¡Bienvenido! En esta práctica utilizarás los siguientes materiales y equipos."},
+                        {"class":"h4 text-center", "textAnimation": "¡Bienvenido! En esta práctica virtual aprenderás a diferenciar entre los tipos de sistemas dispersos mediante el efecto Tyndall. A continuación, se presentan los materiales y equipos que se utilizarán en el experimento."},
                         {"lottie": "sim/1.json",  "segment": [0, 400], "loop":false}
+                        ,{"br": 1},
+                        {"class": "text-center text-dark", "text": "Para continuar, haz clic en <strong>SIGUIENTE</strong>."}
                     ],
                     "buttonNextStep": "Siguiente"
                 },
                 {
                     "width": "100%",
                     "content": [
-                        {"class":"h4 text-center text-dark", "textAnimation": "¡Bienvenido! En esta práctica utilizarás los siguientes materiales y equipos."},
+                        {"class":"h4 text-center", "textAnimation": "Además de los materiales enlistados, también se necesitarán:"},
                         {"lottie": "sim/2.json",  "segment": [0, 230], "loop":false}
                     ],
                     "buttonNextStep": "Siguiente"
@@ -264,8 +274,8 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"inst":"Se deben marcar los tubos del 1 al 8 con el marcador.", "iconinst":"pan_tool"},
-                        {"br":2},
+                        {"class": "h4 text-center", "textAnimation": "Primero se numeran los tubos para identificar a cuál se le añadió cada material."}
+                        ,{"br":2},
                         {
                             "dragdrop": 1
                             ,"drags": [
@@ -275,7 +285,7 @@
                                 [{"img":"sim/tubo-vacio.svg"}, "vi"]
                             ],
                             "replace": [
-                                {"lottie": "sim/3.json",  "segment": [0, 70], "loop":false}
+                                {"lottie": "sim/3.json",  "segment": [0, 70], "loop":false, "speed": 0.3}
                             ]
                         }
                     ]
@@ -283,7 +293,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"inst":"Utiliza la piseta para adicionar 5ml de agua en la probeta.", "iconinst":"pan_tool"},
+                        {"class": "h4 text-center", "textAnimation": "Utilizar la piseta para verter agua en la probeta hasta llegar a la marca de los 10 mililitros."},
                         {"br":2},
                         {
                             "dragdrop": 1
@@ -294,7 +304,7 @@
                                 [{"img":"sim/probeta.svg"}, "vi"]
                             ],
                             "replace": [
-                                {"lottie": "sim/3.json",  "segment": [90, 180], "loop":false}
+                                {"lottie": "sim/3.json",  "segment": [90, 180], "loop":false, "speed": 0.3}
                             ]
                         }
                         
@@ -303,8 +313,8 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"inst":"Vierte el agua de la probeta en los tubos del 2 al 7", "iconinst":"pan_tool"},
-                        {"br":2},
+                       {"class": "h4 text-center", "textAnimation": "Posteriormente, se agregan los 10 mililitros de agua al tubo con el número 1 y se realiza esta acción en los tubos 2 a 7."}
+                        ,{"br":2},
                         {
                             "dragdrop": 1
                             ,"drags": [
@@ -323,7 +333,7 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"class":"h4 text-center text-dark", "textAnimation": "Se adicionarán los materiales a cada tubo."},
+                        {"class":"h4 text-center", "textAnimation": "Se adicionan los materiales a cada tubo."},
                         {"lottie": "sim/4.json", "autoplay":"true","loop":false}
                     ],
                     "buttonNextStep": "Siguiente"
@@ -331,7 +341,15 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"inst":"Sella los tubos de ensayo de 1 al 7.", "iconinst":"pan_tool"},
+                        {
+                           "grid": 1,
+                           "columns": "2fr 1fr",
+                           "columnsResponsive": "1fr",
+                           "content":[
+                               {"class": "h4 text-center", "textAnimation": "Para evitar la pérdida del contenido de los tubos, estos se sellan con los tapones de goma."}
+                               ,{"symbol": "tablacontenidos"}
+                           ]
+                        },
                         {"br":2},
                         {
                             "select": 1,
@@ -349,7 +367,15 @@
                 {
                     "width": "100%",
                     "content": [
-                        {"inst":"Colocar los tubos en el agitador tipo vórtex para mezclar su contenido durante 5 segundos.", "iconinst":"pan_tool"},
+                        {
+                            "grid": 1,
+                            "columns": "2fr 1fr",
+                            "columnsResponsive": "1fr",
+                            "content":[
+                                {"class": "h4 text-center", "textAnimation": "Se procede a agitar cada uno de los tubos en el agitador tipo vórtex para tratar de disolver su contenido."}
+                                ,{"symbol": "tablacontenidos"}
+                            ]
+                         },
                         {"br":2},
                         {
                             "dragdrop": 1
@@ -360,7 +386,7 @@
                                 [{"img":"sim/agitador.svg"}, "vi"]
                             ],
                             "replace": [
-                                {"lottie": "sim/6.json", "autoplay":true, "loop":false}
+                                {"lottie": "sim/6.json", "autoplay":true, "loop":false, "speed": 0.6}
                             ]
                         }
                         
@@ -369,72 +395,34 @@
                 {
                   "width": "100%",
                   "content": [
-                    {"inst":"Deja reposar por 5 minutos.", "iconinst":"pan_tool"},
+                    {
+                        "grid": 1,
+                        "columns": "2fr 1fr",
+                        "columnsResponsive": "1fr",
+                        "content":[
+                            {"class": "h4 text-center", "textAnimation": "Una vez que se agitaron todos los tubos, se procede a esperar para determinar si en alguno de ellos ocurre una separación de fases."}
+                            ,{"symbol": "tablacontenidos"}
+                        ]
+                    },
                     {"br":2},
-                    {"lottie": "sim/8.json", "autoplay":true, "loop":false}
+                    {"lottie": "sim/8.json", "autoplay":true, "loop":false, "speed": 0.3},
+                    {"br": 1},
+                    {"class": "h4 text-center", "textAnimation": "Observa los tubos, registra en cuales ocurrió una separación de fases y reflexiona: ¿a qué tipo de sistema disperso pertenecen los tubos con separación de fases?, ¿qué materiales contenían y por qué no se homogenizaron?"}
                   ],
                   "buttonNextStep": "Siguiente"
                 },
                 {
                     "width": "100%",
                     "content": [
-                        {"inst":"Haz clic en cada tubo para posicionarlo en la pinza del soporte universal y observa lo que sucede al incidir el haz de luz en el sistema disperso que contiene.", "iconinst":"pan_tool"},
-                        {"br":2},
                         {
-                            "group":1,
-                            "class": "grid grid-cols-7 justify-center text-center",
+                            "grid": 1,
+                            "columns": "2fr 1fr",
+                            "columnsResponsive": "1fr",
                             "content":[
-                                {
-                                    "dialog":1,
-                                    "button": [{"img":"sim/tubo1.svg", "class":"w-6"}],
-                                    "buttonClass": "",
-                                    "content": [{"lottie": "sim/10.json", "autoplay":true, "loop":false}]
-                                },
-                                {
-                                    "dialog":1,
-                                    "button": [{"img":"sim/tubo2.svg", "class":"w-6"}],
-                                    "buttonClass": "",
-                                    "content": [{"lottie": "sim/11.json", "autoplay":true, "loop":false}]
-                                },
-                                {
-                                    "dialog":1,
-                                    "button": [{"img":"sim/tubo3.svg", "class":"w-6"}],
-                                    "buttonClass": "",
-                                    "content": [{"lottie": "sim/12.json", "autoplay":true, "loop":false}]
-                                },
-                                {
-                                    "dialog":1,
-                                    "button": [{"img":"sim/tubo4.svg", "class":"w-6"}],
-                                    "buttonClass": "",
-                                    "content": [{"lottie": "sim/13.json", "autoplay":true, "loop":false}]
-                                },
-                                {
-                                    "dialog":1,
-                                    "button": [{"img":"sim/tubo5.svg", "class":"w-6"}],
-                                    "buttonClass": "",
-                                    "content": [{"lottie": "sim/14.json", "autoplay":true, "loop":false}]
-                                },
-                                {
-                                    "dialog":1,
-                                    "button": [{"img":"sim/tubo6.svg", "class":"w-6"}],
-                                    "buttonClass": "",
-                                    "content": [{"lottie": "sim/15.json", "autoplay":true, "loop":false}]
-                                },
-                                {
-                                    "dialog":1,
-                                    "button": [{"img":"sim/tubo7.svg", "class":"w-6"}],
-                                    "buttonClass": "",
-                                    "content": [{"lottie": "sim/16.json", "autoplay":true, "loop":false}]
-                                }
+                                {"class": "h4 text-center", "textAnimation": "Por último, se enciende un cerillo, se introduce en el tubo 8 y se sella rápidamente con el tapón de goma, con el fin de que los gases producidos en la combustión del cerillo permanezcan en su interior."}
+                                ,{"symbol": "tablacontenidos2"}
                             ]
-                        }
-                    ],
-                    "buttonNextStep": "Siguiente"
-                },
-                {
-                    "width": "100%",
-                    "content": [
-                        {"inst":"Enciende un cerillo, introdúcelo en el tubo número 8 y séllalo con el tapón.", "iconinst":"pan_tool"},
+                         },
                         {"br":2},
                         {
                             "select": 1,
@@ -446,13 +434,23 @@
                             "replace": [
                                 {"lottie": "sim/9.json",  "autoplay":true, "loop":false}
                             ]
-                        }
+                        },
+                        {"br": 1},
+                        {"class": "h4 text-center", "textAnimation": "Para determinar si los sistemas dispersos son soluciones, suspensiones o coloides, se coloca cada tubo en el soporte universal y se hace pasar un haz de luz láser a través del contenido. Anota tus observaciones de cada tubo. Una vez que hagas tus anotaciones, haz clic en SIGUIENTE para ver cada uno de los ocho tubos"}
                     ]
                 },
                 {
                     "width": "100%",
                     "content": [
-                        {"inst":"Haz clic en el tubo 8 para observar qué sucede al incidir el haz de luz en el sistema disperso que contiene.", "iconinst":"pan_tool"},
+                        {
+                            "grid": 1,
+                            "columns": "2fr 1fr",
+                            "columnsResponsive": "1fr",
+                            "content":[
+                                {"class": "h4 text-center", "textAnimation": "Haz clic en cada tubo para observar qué sucede al incidir el haz de luz en el sistema disperso que contiene."}
+                                ,{"symbol": "tablacontenidos2"}
+                            ]
+                         },
                         {"br":2},
                         {
                             "group":1,
@@ -460,51 +458,59 @@
                             "content":[
                                 {
                                     "dialog":1,
+                                    "modalClass": "bg-blue-200",
                                     "button": [{"img":"sim/tubo1.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/10.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/10.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "modalClass": "bg-blue-200",
                                     "button": [{"img":"sim/tubo2.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/11.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/11.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "modalClass": "bg-blue-200",
                                     "button": [{"img":"sim/tubo3.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/12.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/12.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "modalClass": "bg-blue-200",
                                     "button": [{"img":"sim/tubo4.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/13.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/13.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "modalClass": "bg-blue-200",
                                     "button": [{"img":"sim/tubo5.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/14.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/14.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "modalClass": "bg-blue-200",
                                     "button": [{"img":"sim/tubo6.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/15.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/15.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "modalClass": "bg-blue-200",
                                     "button": [{"img":"sim/tubo7.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/16.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/16.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "modalClass": "bg-blue-200",
                                     "button": [{"img":"sim/tubo8.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/17.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/17.json", "autoplay":true, "loop":true}]
                                 }
                             ]
                         }
@@ -514,7 +520,7 @@
             ]
         },
         {
-            "title": "Ejercicio",
+            "title": "Actividad",
             "icon": "games",
             "steps": true,
             "blocks": [
@@ -527,14 +533,14 @@
                         "columns":"1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr",
                         "columnsResponsive": "1fr 1fr 1fr 1fr",
                         "content":[
-                            { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo1.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Arena"]},
-                            { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo2.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Azúcar"]},
-                            { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo3.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Detergente en polvo"]},
-                            { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo4.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Sal común"]},
-                            { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo5.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Leche"]},
-                            { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo6.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Alcohol eílico"]},
-                            { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo7.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Aceite"]},
-                            { "card":1, "class":"text-center" ,"content":[{"img":"sim/tubo8.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Cerillo"]}
+                            { "card":1, "class":"text-center text-xs" ,"content":[{"img":"sim/tubo1.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Arena"]},
+                            { "card":1, "class":"text-center text-xs" ,"content":[{"img":"sim/tubo2.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Azúcar"]},
+                            { "card":1, "class":"text-center text-xs" ,"content":[{"img":"sim/tubo3.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Detergente"]},
+                            { "card":1, "class":"text-center text-xs" ,"content":[{"img":"sim/tubo4.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Sal"]},
+                            { "card":1, "class":"text-center text-xs" ,"content":[{"img":"sim/tubo5.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Leche"]},
+                            { "card":1, "class":"text-center text-xs" ,"content":[{"img":"sim/tubo6.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Alcohol"]},
+                            { "card":1, "class":"text-center text-xs" ,"content":[{"img":"sim/tubo7.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Aceite"]},
+                            { "card":1, "class":"text-center text-xs" ,"content":[{"img":"sim/tubo8.svg", "class":"w-6 mx-auto animate__animated animate__wobble"}, "Cerillo"]}
                         ]
                     },
                     {"br":2},
@@ -551,10 +557,10 @@
                         "drags": [
                             [
                                 {"group":1, "content":[{"img":"sim/tubo2.svg", "class":"w-6"}, {"img":"sim/tubo4.svg" , "class":"w-6"}]}, 
-                                "no",
+                                "si",
                                 [
-                                    "Es correcto, ambas mezclas corresponden a una disolución.",
-                                    "Observa nuevamente la tabla de los ejemplos y recuerda cómo diferenciar los tipos de sistemas dispersos."
+                                    "¡Correcto! Los tubos 2 y 4 contienen azúcar y sal, respectivamente. Ambos compuestos forman disoluciones en agua, por ello, en la práctica virtual no se observó la dispersión de luz.",
+                                    "Recuerda que en la práctica virtual no hubo la dispersión de luz al incidir el haz en estos dos tubos, por lo que se tratan de disoluciones."
                                 ]
                             ]
                         ],
@@ -563,18 +569,18 @@
                     },
                     {"br":2},
                     {
-                        "text":"2. El tubo correspondiente a la mezcla de leche y agua, así como el del cerillo, son del tipo coloide porque dispersaron el haz de luz.",
+                        "text":"2. El tubo correspondiente a la mezcla de leche y agua (tubo 5), así como el del cerillo (tubo 8), son del tipo coloide porque dispersaron el haz de luz.",
                         "class": "h5"
                     },
                     {
                         "dragdrop":1,
                         "drags": [
                             [
-                                {"group":1, "content":[{"img":"sim/tubo5.svg", "class":"w-6"}, {"img":"sim/tubo7.svg" , "class":"w-6"}]}, 
-                                "no",
+                                {"group":1, "content":[{"img":"sim/tubo5.svg", "class":"w-6"}, {"img":"sim/tubo8.svg" , "class":"w-6"}]}, 
+                                "si",
                                 [
-                                    "Tu respuesta es correcta.",
-                                    "Tu respuesta es incorrecta, da clic en el siguiente botón, para revisar de nuevo el efecto Tyndall en los sistemas dispersos."
+                                    "¡Correcto! Los tubos 5 y 8 contienen leche y humo de la combustión del cerillo, respectivamente. Ambos forman coloides, por ello, en la práctica virtual se observó la dispersión de luz.",
+                                    "Recuerda que en la práctica virtual hubo la dispersión de luz al incidir el haz en estos dos tubos, por lo que se tratan de coloides."
                                 ]
                             ]
                         ],
@@ -591,10 +597,10 @@
                         "drags": [
                             [
                                 {"group":1, "content":[{"img":"sim/tubo1.svg", "class":"w-6"}, {"img":"sim/tubo3.svg" , "class":"w-6"}, {"img":"sim/tubo7.svg" , "class":"w-6"}]}, 
-                                "no",
+                                "si",
                                 [
-                                    "La mezcla de agua combinada con algunos otros materiales como la arena, el detergente en polvo y el aceite son un ejemplo de suspensión ¡Bien por tu respuesta!",
-                                    "Tu respuesta es incorrecta, lee nuevamente la descripción de suspensión en la tabla de ejemplos sobre los tipos de sistemas dispersos."
+                                    "¡Correcto! En los tres tubos hubo separación de fases, por lo que el tamaño de partícula sobrepasa los 0.5 µm y con ello se clasifican como suspensiones.",
+                                    "Recuerda que, en la práctica virtual se observó la separación de fases, que es una característica de las suspensiones."
                                 ]
                             ]
                         ],
@@ -611,10 +617,10 @@
                         "drags": [
                             [
                                 {"group":1, "content":[{"img":"sim/tubo8.svg", "class":"w-6"}]}, 
-                                "no",
+                                "si",
                                 [
-                                    "Es correcto, gracias al efecto Tyndall podemos diferenciar a simple vista los tipos de sistemas dispersos.",
-                                    "Tu respuesta es incorrecta, revisa nuevamente el efecto Tyndall para los coloides."
+                                    "¡Correcto! El efecto Tyndall sirve para diferenciar una disolución de un coloide, ya que éste último dispersa la luz, a diferencia de la disolución.",
+                                    "Recuerda que, el efecto Tyndall sirve para diferenciar una disolución de un coloide, ya que éste último dispersa la luz, a diferencia de la disolución."
                                 ]
                             ]
                         ],
@@ -651,5 +657,29 @@
                 "content": []
             }]
         }
-    ]
+    ],
+    "symbols": {
+        "tablacontenidos": {
+            "dialog": 1,
+            "button": ["Tabla de contenidos"],
+            "class": "text-right w-full",
+            "buttonClass": "btn ml-auto",
+            "modalClass": "",
+            "style": "",
+            "content":[
+                {"html": "<table class='w-full table table-compact text-center table-zebra'><thead><tr><th>Tubo</th><th>Contenido</th></tr></thead><tbody><tr><td>1</td><td>Arena</td></tr><tr><td>2</td><td>Azúcar</td></tr><tr><td>3</td><td>Detergente</td></tr><tr><td>4</td><td>Sal</td></tr><tr><td>5</td><td>Leche</td></tr><tr><td>6</td><td>Alcohol</td></tr><tr><td>7</td><td>Aceite</td></tr><tr></tr></tbody></table>", "class":"text-center"}
+            ]
+        },
+        "tablacontenidos2": {
+            "dialog": 1,
+            "button": ["Tabla de contenidos"],
+            "class": "text-right w-full",
+            "buttonClass": "btn ml-auto",
+            "modalClass": "",
+            "style": "",
+            "content":[
+                {"html": "<table class='w-full table table-compact text-center table-zebra'><thead><tr><th>Tubo</th><th>Contenido</th></tr></thead><tbody><tr><td>1</td><td>Arena</td></tr><tr><td>2</td><td>Azúcar</td></tr><tr><td>3</td><td>Detergente</td></tr><tr><td>4</td><td>Sal</td></tr><tr><td>5</td><td>Leche</td></tr><tr><td>6</td><td>Alcohol</td></tr><tr><td>7</td><td>Aceite</td></tr><tr><td>8</td><td>Cerillo apagado</td></tr></tbody></table>", "class":"text-center"}
+            ]
+        }
+    }
 }
