@@ -6,7 +6,7 @@
     
     input(type="checkbox" :id="blockid" v-model="dialog").modal-toggle
     .modal
-        .modal-box.bg-white.text-primary(ref="itemBox")
+        .modal-box.bg-white.text-primary(ref="itemBox" :class="[data.class]")
             label(class="btn btn-sm btn-circle absolute right-2 top-2" @click="close"): Icon close
             .ma-1.pt-5
                 perfect-scrollbar

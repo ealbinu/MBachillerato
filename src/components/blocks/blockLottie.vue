@@ -1,6 +1,7 @@
 <template lang="pug">
 .blockLottie(ref="block").relative
-    .btn.btn-circle.btn-sm.absolute.bottom-1.right-1.z-10(@click="replay"): Icon replay 
+    .btn.btn-circle.btn-sm.absolute.bottom-1.right-1.z-10(@click="replay"): Icon replay
+
 </template>
 <script setup>
 
@@ -26,6 +27,10 @@ const Path = inject('path')
 const block = ref()
 const item = ref()
 
+
+
+
+
 const { stop } = useIntersectionObserver(
     block,
     ([{ isIntersecting }], observerElement) => {
@@ -33,16 +38,15 @@ const { stop } = useIntersectionObserver(
     replay()
     },
 )
-
+const looping = props.data.loop!= undefined ? props.data.loop : true
 onMounted(()=>{
     item.value = lottie.loadAnimation({
         container: block.value,
-        loop: props.data.loop!= undefined ? props.data.loop : true,
+        loop: looping,
         autoplay: false,
         path: Path + props.data.lottie,
     })
-    
-    
+        
     item.value.addEventListener('config_ready', function () {
         //Speed
         if(props.data.speed) { item.value.setSpeed(props.data.speed) }

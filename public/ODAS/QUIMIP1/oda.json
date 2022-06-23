@@ -93,13 +93,13 @@
                                     "group":1,
 
                                     "content": [
-                                        {"group":1, "id":"plasma", "content":[{ "term":"Plasma", "content":["52-62%"]}], "class":"rounded cursor-pointer" },
+                                        {"group":1, "id":"plasma", "content":[{ "term":"Plasma", "content":["52-62 %"]}], "class":"rounded cursor-pointer" },
                                         {"br":2},
-                                        {"group":1, "id":"blancos", "content":[{ "term":"Glóbulos blancos (leucocitos)", "content":["<1%"]}], "class":"rounded cursor-pointer" },
+                                        {"group":1, "id":"blancos", "content":[{ "term":"Glóbulos blancos (leucocitos)", "content":["<1 %"]}], "class":"rounded cursor-pointer" },
                                         {"br":2},
-                                        {"group":1, "id":"plaquetas", "content":[{ "term":"Plaquetas", "content":["<1%"]}], "class":"rounded cursor-pointer" },
+                                        {"group":1, "id":"plaquetas", "content":[{ "term":"Plaquetas", "content":["<1 %"]}], "class":"rounded cursor-pointer" },
                                         {"br":2},
-                                        {"group":1, "id":"rojos", "content":[{ "term":"Glóbulos rojos (eritrocitos)", "content":["38-48%"]}], "class":"rounded cursor-pointer" }
+                                        {"group":1, "id":"rojos", "content":[{ "term":"Glóbulos rojos (eritrocitos)", "content":["38-48 %"]}], "class":"rounded cursor-pointer" }
                                     ]
                                 },
                                 {"img": "img/estructura_sola.svg", "class":"w-48 mx-auto", "id":"estructura"}
@@ -187,7 +187,7 @@
                     "content": [
                         {"br":1},
                         {
-                            "textAnimation": "Al respecto, la quema de hidrocarburos con una baja oxigenación produce la combustión incompleta de la materia orgánica, en la que la llama es de color amarillo y conduce a la generación de hollín. <br><br> El hollín es un polvo fino de color negro que, de acuerdo con el Instituto Nacional del Cáncer (2015), contiene carcinógenos como arsénico, cadmio y cromo que son de fácil absorción por el cuerpo humano y puede producir cáncer de piel. Como habrás notado en el entorno, el hollín se produce con facilidad a causa automóviles que no tienen un buen funcionamiento así como por desechos industriales."
+                            "textAnimation": "Al respecto, la quema de hidrocarburos con una baja oxigenación produce la combustión incompleta de la materia orgánica, en la que la llama es de color amarillo y conduce a la generación de hollín. <br><br> El hollín es un polvo fino de color negro que, de acuerdo con el Instituto Nacional del Cáncer (2015), contiene carcinógenos como arsénico, cadmio y cromo que son de fácil absorción por el cuerpo humano y puede producir cáncer de piel. Como habrás notado en el entorno, el hollín se produce con facilidad a causa de automóviles que no tienen un buen funcionamiento así como por desechos industriales."
                         },
                         {"br":2},
                         {"group":1, "class":"text-center", "content": [
@@ -283,7 +283,7 @@
                                 [{"img":"sim/tubo-vacio.svg"}, "vi"]
                             ],
                             "replace": [
-                                {"lottie": "sim/3.json",  "segment": [0, 70], "loop":false}
+                                {"lottie": "sim/3.json",  "segment": [0, 70], "loop":false, "speed": 0.3}
                             ]
                         }
                     ]
@@ -302,7 +302,7 @@
                                 [{"img":"sim/probeta.svg"}, "vi"]
                             ],
                             "replace": [
-                                {"lottie": "sim/3.json",  "segment": [90, 180], "loop":false}
+                                {"lottie": "sim/3.json",  "segment": [90, 180], "loop":false, "speed": 0.3}
                             ]
                         }
                         
@@ -368,7 +368,7 @@
                                 [{"img":"sim/agitador.svg"}, "vi"]
                             ],
                             "replace": [
-                                {"lottie": "sim/6.json", "autoplay":true, "loop":false}
+                                {"lottie": "sim/6.json", "autoplay":true, "loop":false, "speed": 0.6}
                             ]
                         }
                         
@@ -379,7 +379,7 @@
                   "content": [
                     {"inst":"Deja reposar por 5 minutos.", "iconinst":"pan_tool"},
                     {"br":2},
-                    {"lottie": "sim/8.json", "autoplay":true, "loop":false}
+                    {"lottie": "sim/8.json", "autoplay":true, "loop":false, "speed": 0.3}
                   ],
                   "buttonNextStep": "Siguiente"
                 },
@@ -394,45 +394,52 @@
                             "content":[
                                 {
                                     "dialog":1,
+                                    "class": "bg-blue-200",
                                     "button": [{"img":"sim/tubo1.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/10.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/10.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "class": "bg-blue-200",
                                     "button": [{"img":"sim/tubo2.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/11.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/11.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "class": "bg-blue-200",
                                     "button": [{"img":"sim/tubo3.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/12.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/12.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "class": "bg-blue-200",
                                     "button": [{"img":"sim/tubo4.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/13.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/13.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "class": "bg-blue-200",
                                     "button": [{"img":"sim/tubo5.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/14.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/14.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "class": "bg-blue-200",
                                     "button": [{"img":"sim/tubo6.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/15.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/15.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "class": "bg-blue-200",
                                     "button": [{"img":"sim/tubo7.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/16.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/16.json", "autoplay":true, "loop":true}]
                                 }
                             ]
                         }
@@ -468,51 +475,59 @@
                             "content":[
                                 {
                                     "dialog":1,
+                                    "class": "bg-blue-200",
                                     "button": [{"img":"sim/tubo1.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/10.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/10.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "class": "bg-blue-200",
                                     "button": [{"img":"sim/tubo2.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/11.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/11.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "class": "bg-blue-200",
                                     "button": [{"img":"sim/tubo3.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/12.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/12.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "class": "bg-blue-200",
                                     "button": [{"img":"sim/tubo4.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/13.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/13.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "class": "bg-blue-200",
                                     "button": [{"img":"sim/tubo5.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/14.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/14.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "class": "bg-blue-200",
                                     "button": [{"img":"sim/tubo6.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/15.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/15.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "class": "bg-blue-200",
                                     "button": [{"img":"sim/tubo7.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/16.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/16.json", "autoplay":true, "loop":true}]
                                 },
                                 {
                                     "dialog":1,
+                                    "class": "bg-blue-200",
                                     "button": [{"img":"sim/tubo8.svg", "class":"w-6"}],
                                     "buttonClass": "",
-                                    "content": [{"lottie": "sim/17.json", "autoplay":true, "loop":false}]
+                                    "content": [{"lottie": "sim/17.json", "autoplay":true, "loop":true}]
                                 }
                             ]
                         }
