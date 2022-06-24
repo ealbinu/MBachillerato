@@ -21,7 +21,7 @@
                 button(@click="$emit('screenNext', 1)").btn.btn-accent.btn-wide Continuar
 
             template(v-if="block.buttonNextStep")
-                button(@click="$emit('stepNext')").btn.btn-ghost.text-white {{block.buttonNextStep}}
+                button(@click="$emit('stepNext')").btn.btn-primary.text-white {{block.buttonNextStep}}
             template(v-if="block.buttonNextScreen")
                 button(@click="$emit('screenNext', 1)").btn.btn-accent.btn-wide {{block.buttonNextScreen}}
 

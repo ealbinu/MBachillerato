@@ -2,21 +2,22 @@
     "id": "ALG1P2",
     "programa": "DGETI",
     "materia": "ALGEBRAI",
-    "title": "Tasas, razones y proporciones",
+    "title": "Variación",
     "bgimgs": 4,
     "ficha": [
         [
             "Aprendizaje esperado",
-            "Simboliza y generaliza fenómenos lineales y fenómenos cuadráticos mediante el empleo de variables."
+            "Caracteriza una relación proporcional directa."
         ],
         [
             "Contenido central",
-            "Representación y resolución de sistemas de ecuaciones lineales."
-        ]
+            "Variación proporcional."
+        ],
+        ["Eje transversal", "Habilidades lectoras."]
     ],
     "screens": [
         {
-            "title": "Equo Bot",
+            "title": "Introducción",
             "icon": "chat_bubble_outline",
             "steps": false,
             "blocks": [
@@ -72,7 +73,7 @@
                                 },
                                 {
                                     "id": 4,
-                                    "talk": "Natalia es diseñadora <em>freelance</em> y trabaja en un espacio de coworking que cuenta con dos modalidades de servicio, la primera consiste en la renta de un cubículo que incluye una computadora con acceso a internet por el que se hace un pago inicial de $5.50 dólares y un costo de $12 por hora. En la segunda opción se le proporciona al cliente la clave de acceso a internet para conectar una computadora portátil a un costo de $12 por hora.",
+                                    "talk": "Natalia es diseñadora <em>freelance</em> y trabaja en un espacio de <em>coworking</em> que cuenta con dos modalidades de servicio, la primera consiste en la renta de un cubículo que incluye una computadora con acceso a internet por el que se hace un pago inicial de $5.50 dólares y un costo de $12 por hora. En la segunda opción se le proporciona al cliente la clave de acceso a internet para conectar una computadora portátil a un costo de $12 por hora.",
                                     "auto": 5
                                 },
                                 {
@@ -90,8 +91,8 @@
                                                 "grid": 1,
                                                 "columns": "1fr 1fr",
                                                 "content": [
-                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr><th>Tiempo (h)</th><th>Costo ($)</th></tr></thead><tbody><tr><td>0</td><td>5.50</td></tr><tr><td>1</td><td>17.50</td></tr><tr><td>2</td><td>29.50</td></tr><tr><td>3</td><td>41.50</td></tr><tr><td>4</td><td>53.50</td></tr></tbody></table>",
-                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr><th>Tiempo (h)</th><th>Costo ($)</th></tr></thead><tbody><tr><td>0</td><td>0</td></tr><tr><td>1</td><td>12</td></tr><tr><td>2</td><td>24</td></tr><tr><td>3</td><td>36</td></tr><tr><td>4</td><td>48</td></tr></tbody></table>"
+                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr> <th class='normal-case'>Tiempo (h)</th> <th class='normal-case'>Costo ($)</th></tr></thead><tbody><tr><td>0</td><td>5.50</td></tr><tr><td>1</td><td>17.50</td></tr><tr><td>2</td><td>29.50</td></tr><tr><td>3</td><td>41.50</td></tr><tr><td>4</td><td>53.50</td></tr></tbody></table>",
+                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr> <th class='normal-case'>Tiempo (h)</th> <th class='normal-case'>Costo ($)</th></tr></thead><tbody><tr><td>0</td><td>0</td></tr><tr><td>1</td><td>12</td></tr><tr><td>2</td><td>24</td></tr><tr><td>3</td><td>36</td></tr><tr><td>4</td><td>48</td></tr></tbody></table>"
                                                 ]
                                             },
                                             {
@@ -102,8 +103,8 @@
                                                 "grid": 1,
                                                 "columns": "1fr 1fr",
                                                 "content": [
-                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr><th>Tiempo (h)</th><th>Costo ($)</th></tr></thead><tbody><tr><td>0</td><td>12</td></tr><tr><td>1</td><td>24</td></tr><tr><td>2</td><td>36</td></tr><tr><td>3</td><td>48</td></tr><tr><td>4</td><td>72</td></tr></tbody></table>",
-                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr><th>Tiempo (h)</th><th>Costo ($)</th></tr></thead><tbody><tr><td>0</td><td>5.50</td></tr><tr><td>1</td><td>12</td></tr><tr><td>2</td><td>24</td></tr><tr><td>3</td><td>36</td></tr><tr><td>4</td><td>48</td></tr></tbody></table>"
+                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr> <th class='normal-case'>Tiempo (h)</th> <th class='normal-case'>Costo ($)</th></tr></thead><tbody><tr><td>0</td><td>12</td></tr><tr><td>1</td><td>24</td></tr><tr><td>2</td><td>36</td></tr><tr><td>3</td><td>48</td></tr><tr><td>4</td><td>72</td></tr></tbody></table>",
+                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr> <th class='normal-case'>Tiempo (h)</th> <th class='normal-case'>Costo ($)</th></tr></thead><tbody><tr><td>0</td><td>5.50</td></tr><tr><td>1</td><td>12</td></tr><tr><td>2</td><td>24</td></tr><tr><td>3</td><td>36</td></tr><tr><td>4</td><td>48</td></tr></tbody></table>"
                                                 ]
                                             }
                                         ]
@@ -154,14 +155,14 @@
                                                 "group": 1,
                                                 "content": [
                                                     "<div class='badge badge-lg badge-info w-full'>A</div>",
-                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr><th>Tiempo (h)</th><th>Costo ($)</th></tr></thead><tbody><tr><td>0</td><td>5.50</td></tr><tr><td>1</td><td>17.50</td></tr><tr><td>2</td><td>29.50</td></tr><tr><td>3</td><td>41.50</td></tr><tr><td>4</td><td>53.50</td></tr></tbody></table>"
+                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr> <th class='normal-case'>Tiempo (h)</th> <th class='normal-case'>Costo ($)</th></tr></thead><tbody><tr><td>0</td><td>5.50</td></tr><tr><td>1</td><td>17.50</td></tr><tr><td>2</td><td>29.50</td></tr><tr><td>3</td><td>41.50</td></tr><tr><td>4</td><td>53.50</td></tr></tbody></table>"
                                                 ]
                                             },
                                             {
                                                 "group": 1,
                                                 "content": [
                                                     "<div class='badge badge-lg badge-success w-full'>B</div>",
-                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr><th>Tiempo (h)</th><th>Costo ($)</th></tr></thead><tbody><tr><td>0</td><td>0</td></tr><tr><td>1</td><td>12</td></tr><tr><td>2</td><td>24</td></tr><tr><td>3</td><td>36</td></tr><tr><td>4</td><td>48</td></tr></tbody></table>"
+                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr> <th class='normal-case'>Tiempo (h)</th> <th class='normal-case'>Costo ($)</th></tr></thead><tbody><tr><td>0</td><td>0</td></tr><tr><td>1</td><td>12</td></tr><tr><td>2</td><td>24</td></tr><tr><td>3</td><td>36</td></tr><tr><td>4</td><td>48</td></tr></tbody></table>"
                                                 ]
                                             }
                                         ]
@@ -199,7 +200,7 @@
                                 },
                                 {
                                     "id": 14,
-                                    "talk": "La renta de una computadora con acceso a internet tiene un costo de inicio que impide que las variables de tiempo y costo presenten al mismo tiempo un valor de cero.",
+                                    "talk": "La renta de un cubículo que incluye computadora con acceso a internet tiene un costo de inicio que impide que las variables de tiempo y costo presenten al mismo tiempo un valor de cero.",
                                     "auto": "15"
                                 },
                                 {
@@ -215,60 +216,51 @@
                                         "columns": "1fr",
                                         "content": [
                                             {
-                                                "group": 1,
-                                                "content": [
-                                                    "<div class='badge badge-lg badge-info w-full'>A</div>",
-                                                    {
-                                                        "plot": true,
-                                                        "yAxis": {
-                                                            "domain": [
-                                                                0,
-                                                                60
+                                               "grid": 1,
+                                               "columns": "1fr 1fr",
+                                               "columnsResponsive": "1fr 1fr",
+                                               "content":[
+                                                   {
+                                                      "group": 1,
+                                                      "content":[
+                                                        "<div class='badge badge-lg badge-info w-full'>A</div>",
+                                                        {
+                                                            "graph":1,
+                                                            "options": {
+                                                                "boundingbox": [-1, 60, 6, -10],
+                                                                "axis": true
+                                                            },
+                                                            "create": [
+                                                                [ "line",  [[-0.5,0],[6,60]], {"fixed":true} ]
                                                             ],
-                                                            "label": "Costo ($)  "
-                                                        },
-                                                        "xAxis": {
-                                                            "domain": [
-                                                                0,
-                                                                6
-                                                            ],
-                                                            "label": "Tiempo (h)  "
-                                                        },
-                                                        "data": [
-                                                            {
-                                                                "fn": "5+x^1*12"
+                                                            "tags": {
+                                                                "left": "Costo ($)",
+                                                                "bottom": "Tiempo (h)"
                                                             }
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "group": 1,
-                                                "content": [
-                                                    "<div class='badge badge-lg badge-success w-full'>B</div>",
-                                                    {
-                                                        "plot": true,
-                                                        "yAxis": {
-                                                            "domain": [
-                                                                0,
-                                                                60
-                                                            ],
-                                                            "label": "Costo ($)  "
-                                                        },
-                                                        "xAxis": {
-                                                            "domain": [
-                                                                0,
-                                                                6
-                                                            ],
-                                                            "label": "Tiempo (h)  "
-                                                        },
-                                                        "data": [
-                                                            {
-                                                                "fn": "x^1*13"
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
+                                                        }
+                                                      ]
+                                                   },
+                                                   {
+                                                    "group": 1,
+                                                    "content":[
+                                                      "<div class='badge badge-lg badge-success w-full'>B</div>",
+                                                      {
+                                                          "graph":1,
+                                                          "options": {
+                                                              "boundingbox": [-1, 60, 6, -10],
+                                                              "axis": true
+                                                          },
+                                                          "create": [
+                                                              [ "line",  [[0,0],[6,60]], {"fixed":true} ]
+                                                          ],
+                                                          "tags": {
+                                                              "left": "Costo ($)",
+                                                              "bottom": "Tiempo (h)"
+                                                          }
+                                                      }
+                                                    ]
+                                                 }
+                                               ]
                                             }
                                         ]
                                     },
@@ -290,7 +282,7 @@
                                 },
                                 {
                                     "id": 17,
-                                    "talk": "Como puedes observar, aunque se extendiera la gráfica de la renta de una computadora a valores negativos de x, esta gráfica nunca pasaría por el punto (0, 0).",
+                                    "talk": "Como puedes observar, aunque se extendiera la gráfica de la renta de una computadora a valores negativos de <em>x</em>, esta gráfica nunca pasaría por el punto (0, 0).",
                                     "auto": 18
                                 },
                                 {
@@ -300,7 +292,7 @@
                                 },
                                 {
                                     "id": 19,
-                                    "talk": "Envíame una ecuacion que corresponda a una variación lineal.",
+                                    "talk": "Elige la ecuación que corresponda a una variación lineal.",
                                     "options": [
                                         [
                                             {
@@ -361,11 +353,11 @@
                                     "talk": "Ahora, ¿qué sucede si en ambas ecuaciones la variable independiente adquiere el valor de cero?",
                                     "options": [
                                         [
-                                            "En la expresión algebraica con variación lineal, la variable dependiente adquiere un valor de 5.50.",
+                                            "En la expresión algebraica con variación lineal, la variable dependiente adquiere un valor de 5.50",
                                             24
                                         ],
                                         [
-                                            "En la expresión algebraica con variación lineal, la variable dependiente adquiere un valor de cero.",
+                                            "En la expresión algebraica con variación lineal, la variable dependiente adquiere un valor de cero",
                                             23.1
                                         ]
                                     ]
@@ -382,10 +374,10 @@
                                 },
                                 {
                                     "id": 25,
-                                    "talk": "A la <strong>variación proporcional directa</strong>, a diferencia de la variación lineal, sí es posible ubicarla desde el punto (0, 0) al graficar la recta que se obtiene, es decir, tanto la variable dependiente como la independiente pueden tener el valor de cero al mismo tiempo.<br><br>Recordemos el planteamiento inicial. Natalia es diseñadora freelance y trabaja en un espacio de coworking que cuenta con dos modalidades de servicio, la primera consiste en la renta de un cubículo que incluye una computadora con acceso a internet por el que se hace un pago inicial de $5.50 dólares y un costo de $12 dólares por hora. En la segunda opción se le proporciona al cliente la clave de acceso a internet para conectar una computadora portátil a un costo de $12 dólares por hora.<br><br>¿Qué tipo de variación presenta la renta de la clave de acceso a internet?",
+                                    "talk": "Al graficar ecuaciones con <strong>variación proporcional directa</strong>, la recta que se obtiene siempre pasa por el punto (0, 0), es decir, la variable dependiente y la independiente adquieren el valor de cero a la vez. Por lo que se cumple con la forma generalizada <em>y = kx</em>, donde <em>k</em> es una constante.<br><br>Recordemos el planteamiento inicial. Natalia es diseñadora <em>freelance</em> y trabaja en un espacio de <em>coworking</em> que cuenta con dos modalidades de servicio, la primera consiste en la renta de un cubículo que incluye una computadora con acceso a internet por el que se hace un pago inicial de $5.50 dólares y un costo de $12 dólares por hora. En la segunda opción se le proporciona al cliente la clave de acceso a internet para conectar una computadora portátil a un costo de $12 dólares por hora.<br><br>¿Qué tipo de variación presenta la renta de un cubículo con clave de acceso a internet?",
                                     "options": [
                                         [
-                                            "Variación proporcional directa.",
+                                            "Variación proporcional directa",
                                             26
                                         ],
                                         [
@@ -401,7 +393,7 @@
                                 },
                                 {
                                     "id": 26,
-                                    "talk": "¡Correcto!<br>La renta de la clave de acceso a internet se trata de una variable proporcional directa ya que concuerda con la forma generalizada de este tipo de variación.",
+                                    "talk": "¡Correcto!<br>La renta del cubículo con la clave de acceso a internet se trata de una variación proporcional directa, ya que concuerda con la forma generalizada de este tipo de variación.",
                                     "auto": 27
                                 },
                                 {
@@ -416,7 +408,7 @@
             ]
         },
         {
-            "title": "Bloque 2",
+            "title": "Actividad",
             "icon": "chat_bubble_outline",
             "steps": false,
             "blocks": [
@@ -582,7 +574,7 @@
                                                 "content": [
                                                     "<div class='badge badge-lg badge-info w-full'>C</div>",
                                                     {
-                                                        "math": "y-8=2x+3", "dark": 1
+                                                        "math": "y-8=2x-3", "dark": 1
                                                     }
                                                 ]
                                             },
@@ -599,7 +591,7 @@
                                     },
                                     "options":[
 										["A",7,false],
-										["B",7,true],
+										["B",7,false],
 										["C",7,false],
 										["D",7,true]
 									]
@@ -680,21 +672,21 @@
                                                 "group": 1,
                                                 "content": [
                                                     "<div class='badge badge-lg badge-info w-full'>A</div>",
-                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr><th>Aplicación (u)</th><th>Costo ($)</th></tr></thead><tbody><tr><td>2</td><td>300</td></tr><tr><td>3</td><td>450</td></tr><tr><td>4</td><td>600</td></tr><tr><td>5</td><td>750</td></tr><tr><td>6</td><td>900</td></tr></tbody></table>"
+                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr> <th class='normal-case'>Aplicación (u)</th> <th class='normal-case'>Costo ($)</th></tr></thead><tbody><tr><td>2</td><td>300</td></tr><tr><td>3</td><td>450</td></tr><tr><td>4</td><td>600</td></tr><tr><td>5</td><td>750</td></tr><tr><td>6</td><td>900</td></tr></tbody></table>"
                                                 ]
                                             },
                                             {
                                                 "group": 1,
                                                 "content": [
                                                     "<div class='badge badge-lg badge-success w-full'>B</div>",
-                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr><th>Aplicación (u)</th><th>Costo ($)</th></tr></thead><tbody><tr><td>2</td><td>370</td></tr><tr><td>3</td><td>520</td></tr><tr><td>4</td><td>670</td></tr><tr><td>5</td><td>820</td></tr><tr><td>6</td><td>970</td></tr></tbody></table>"
+                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr> <th class='normal-case'>Aplicación (u)</th> <th class='normal-case'>Costo ($)</th></tr></thead><tbody><tr><td>2</td><td>370</td></tr><tr><td>3</td><td>520</td></tr><tr><td>4</td><td>670</td></tr><tr><td>5</td><td>820</td></tr><tr><td>6</td><td>970</td></tr></tbody></table>"
                                                 ]
                                             },
                                             {
                                                 "group": 1,
                                                 "content": [
                                                     "<div class='badge badge-lg badge-info w-full'>C</div>",
-                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr><th>Aplicación (u)</th><th>Costo ($)</th></tr></thead><tbody><tr><td>2</td><td>240</td></tr><tr><td>3</td><td>360</td></tr><tr><td>4</td><td>480</td></tr><tr><td>5</td><td>600</td></tr><tr><td>6</td><td>720</td></tr></tbody></table>"
+                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr> <th class='normal-case'>Aplicación (u)</th> <th class='normal-case'>Costo ($)</th></tr></thead><tbody><tr><td>2</td><td>240</td></tr><tr><td>3</td><td>360</td></tr><tr><td>4</td><td>480</td></tr><tr><td>5</td><td>600</td></tr><tr><td>6</td><td>720</td></tr></tbody></table>"
 
                                                 ]
                                             },
@@ -702,7 +694,7 @@
                                                 "group": 1,
                                                 "content": [
                                                     "<div class='badge badge-lg badge-success w-full'>D</div>",
-                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr><th>Aplicación (u)</th><th>Costo ($)</th></tr></thead><tbody><tr><td>2</td><td>160</td></tr><tr><td>3</td><td>240</td></tr><tr><td>4</td><td>320</td></tr><tr><td>5</td><td>400</td></tr><tr><td>6</td><td>480</td></tr></tbody></table>"
+                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr> <th class='normal-case'>Aplicación (u)</th> <th class='normal-case'>Costo ($)</th></tr></thead><tbody><tr><td>2</td><td>160</td></tr><tr><td>3</td><td>240</td></tr><tr><td>4</td><td>320</td></tr><tr><td>5</td><td>400</td></tr><tr><td>6</td><td>480</td></tr></tbody></table>"
 
                                                 ]
                                             }
@@ -735,21 +727,21 @@
                                                 "group": 1,
                                                 "content": [
                                                     "<div class='badge badge-lg badge-info w-full'>A</div>",
-                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr><th>Consulta (u)</th><th>Costo ($)</th></tr></thead><tbody><tr><td>1</td><td>1 400</td></tr><tr><td>2</td><td>2 600</td></tr><tr><td>3</td><td>3 800</td></tr><tr><td>4</td><td>5 000</td></tr><tr><td>5</td><td>6 200</td></tr></tbody></table>"
+                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr> <th class='normal-case'>Consulta (u)</th> <th class='normal-case'>Costo ($)</th></tr></thead><tbody><tr><td>1</td><td>1 400</td></tr><tr><td>2</td><td>2 600</td></tr><tr><td>3</td><td>3 800</td></tr><tr><td>4</td><td>5 000</td></tr><tr><td>5</td><td>6 200</td></tr></tbody></table>"
                                                 ]
                                             },
                                             {
                                                 "group": 1,
                                                 "content": [
                                                     "<div class='badge badge-lg badge-success w-full'>B</div>",
-                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr><th>Consulta (u)</th><th>Costo ($)</th></tr></thead><tbody><tr><td>1</td><td>900</td></tr><tr><td>2</td><td>1 600</td></tr><tr><td>3</td><td>2 300</td></tr><tr><td>4</td><td>3 000</td></tr><tr><td>5</td><td>3 700</td></tr></tbody></table>"
+                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr> <th class='normal-case'>Consulta (u)</th> <th class='normal-case'>Costo ($)</th></tr></thead><tbody><tr><td>1</td><td>900</td></tr><tr><td>2</td><td>1 600</td></tr><tr><td>3</td><td>2 300</td></tr><tr><td>4</td><td>3 000</td></tr><tr><td>5</td><td>3 700</td></tr></tbody></table>"
                                                 ]
                                             },
                                             {
                                                 "group": 1,
                                                 "content": [
                                                     "<div class='badge badge-lg badge-info w-full'>C</div>",
-                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr><th>Consulta (u)</th><th>Costo ($)</th></tr></thead><tbody><tr><td>1</td><td>700</td></tr><tr><td>2</td><td>1 200</td></tr><tr><td>3</td><td>1 700</td></tr><tr><td>4</td><td>2 200</td></tr><tr><td>5</td><td>2 700</td></tr></tbody></table>"
+                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr> <th class='normal-case'>Consulta (u)</th> <th class='normal-case'>Costo ($)</th></tr></thead><tbody><tr><td>1</td><td>700</td></tr><tr><td>2</td><td>1 200</td></tr><tr><td>3</td><td>1 700</td></tr><tr><td>4</td><td>2 200</td></tr><tr><td>5</td><td>2 700</td></tr></tbody></table>"
 
                                                 ]
                                             },
@@ -757,7 +749,7 @@
                                                 "group": 1,
                                                 "content": [
                                                     "<div class='badge badge-lg badge-success w-full'>D</div>",
-                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr><th>Consulta (u)</th><th>Costo ($)</th></tr></thead><tbody><tr><td>1</td><td>600</td></tr><tr><td>2</td><td>1 200</td></tr><tr><td>3</td><td>1 800</td></tr><tr><td>4</td><td>2 400</td></tr><tr><td>5</td><td>3 000</td></tr></tbody></table>"
+                                                    "<table class= 'table table-compact text-center  table-zebra'><thead><tr> <th class='normal-case'>Consulta (u)</th> <th class='normal-case'>Costo ($)</th></tr></thead><tbody><tr><td>1</td><td>600</td></tr><tr><td>2</td><td>1 200</td></tr><tr><td>3</td><td>1 800</td></tr><tr><td>4</td><td>2 400</td></tr><tr><td>5</td><td>3 000</td></tr></tbody></table>"
 
                                                 ]
                                             }

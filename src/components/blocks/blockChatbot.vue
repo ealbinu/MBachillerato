@@ -3,14 +3,14 @@
 
 div.w-full.text-center
     .mockup-window.border.bg-slate-500
-        .flex.justify-end.flex-col.px-4.bg-white.text-dark(class="h-[34rem]")
+        .flex.justify-end.flex-col.px-4.bg-white.text-dark(class="h-[50rem] max-height-screen")
             perfect-scrollbar(ref="scroll").h-full.w-full.flex.flex-col.justify-between
                 template(v-for="(i, index) in chattalk")
 
                     //-bot
                     .bubble.bot.flex.justify-start.items-center.my-1.text-left.animate__animated.animate__fadeInUp.animate__faster
                         img(src="/assets/icons/chatbot-bot.svg").w-12.mask.mask-squircle
-                        div.bg-gray-100.py-2.px-2.ml-1.rounded-xl.max-w-lg(:class="[findTalk(i.talk).class]")
+                        div.bg-gray-100.py-2.px-2.ml-1.rounded-xl.max-w-xl(:class="[findTalk(i.talk).class]")
                             BlocksRenderer(:item="findTalk(i.talk).talk" :blockid="blockid+'-chatbot-bot-'+index")
                             
                     //-user

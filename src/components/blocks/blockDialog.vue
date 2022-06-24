@@ -1,12 +1,12 @@
 <template lang="pug">
-.blockDialog(:style="[data.style]" :id="data.id")
+.blockDialog(:style="[data.style]" :id="data.id"  :class="[data.class]")
     button(@click="open" :class="data.buttonClass").animate__animated.animate__pulse.animate__infinite.animate__slower
         template(v-for="(i, index) in data.button")
             BlocksRenderer(:item="i" :blockid="blockid+'-button-'+index")
     
     input(type="checkbox" :id="blockid" v-model="dialog").modal-toggle
     .modal
-        .modal-box.bg-white.text-primary(ref="itemBox" :class="[data.class]")
+        .modal-box.bg-white.text-primary(ref="itemBox" :class="[data.modalClass]")
             label(class="btn btn-sm btn-circle absolute right-2 top-2" @click="close"): Icon close
             .ma-1.pt-5
                 perfect-scrollbar
