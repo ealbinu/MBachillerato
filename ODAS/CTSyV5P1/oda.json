@@ -1,0 +1,588 @@
+{
+  "id": "CTSyV5P1",
+  "programa": "DGETI",
+  "materia": "CIENCIATSV",
+  "title": "Urbanización",
+  "bgimgs": 4,
+  "ficha": [
+    [
+      "Aprendizaje esperado",
+      "Interpreta la solución de un sistema de ecuaciones lineales."
+    ],
+    [
+      "Contenido central",
+      "Representación y resolución de sistemas de ecuaciones lineales."
+    ],
+    ["Eje transversal", "Habilidades lectoras."]
+  ],
+  "screens": [
+    {
+      "title": "En contexto",
+      "icon": "info",
+      "steps": true,
+      "class": "flex flex-col justify-center",
+      "blocks": [
+        {
+          "width": "100%",
+          "content": [
+            { "class": "h1 text-center", "textAnimation": "En contexto" },
+            { "br": 1 },
+            {
+              "grid": 1,
+              "columns": "2fr 1fr",
+              "columnsResponsive": "1fr",
+              "content": [
+                {
+                  "group": 1,
+                  "class": "",
+                  "content": [
+                    "Existe la idea generalizada de que las ciudades proveen un estilo de vida y un estándar de calidad más alto que el de las áreas rurales. En los países desarrollados dicha distinción ya no existe, sin embargo, en el resto de los países aún hay localidades que se caracterizan por un estilo de vida verdaderamente rural. De ahí que las personas migren del campo a la ciudad no sólo en busca de empleo, sino en la búsqueda de ese estilo y ese estándar de calidad que incluye, por ejemplo, disponibilidad de energía eléctrica y agua potable dentro de la vivienda, fácil acceso a la atención médica, escuelas de todos los niveles académicos y diversas alternativas para la recreación, a lo que habría que sumar la amplia oferta de comestibles y mercancías de todo tipo."
+                  ]
+                },
+                { "img": "img/01.jpg" }
+              ]
+            }
+          ],
+          "buttonNextScreen": "Continuar"
+        }
+      ]
+    },
+    {
+      "title": "Urbanización",
+      "icon": "info",
+      "steps": true,
+      "class": "flex flex-col justify-center",
+      "blocks": [
+        {
+          "width": "100%",
+          "content": [
+            { "class": "h1 text-center", "textAnimation": "Urbanización" },
+            { "br": 1 },
+            "La urbanización es un proceso por medio del cual la población y las principales actividades económicas, políticas y sociales se concentran en las ciudades. Es un fenómeno producto de la historia y de las relaciones sociales.",
+            { "br": 1 },
+            "Las ciudades son espacios complejos y dinámicos, son el eje de las sociedades humanas y han evolucionado junto con éstas. Nacieron por diversas causas, una de ellas fue el clima propicio y la accesibilidad al agua, pero existen otras como las características del terreno que permitían defenderlas de los ataques enemigos, la ubicación estratégica para el comercio, además de las que surgieron por motivos religiosos y políticos.",
+            { "br": 1 },
+            "En la actualidad algunas ciudades se han expandido de tal manera que se han creado áreas metropolitanas integradas por varias ciudades e, incluso, megalópolis, que son la unión de áreas metropolitanas y conurbaciones.",
+            { "br": 2 },
+            {
+              "class": "h3 text-center",
+              "text": "¿Cómo han evolucionado las ciudades?"
+            },
+            {
+              "class": "h4 text-center",
+              "text": "Observa cuál ha sido el proceso de urbanización del mundo."
+            },
+            { "br": 1 },
+            {
+              "slides": 1,
+              "class": "bg-white p-5 rounded  text-dark",
+              "content": [
+                { "img": "img/02.jpg" },
+                {
+                  "group": 1,
+                  "class": "",
+                  "content": [
+                    { "class": "h4 text-center", "text": "La ciudad antigua" },
+                    { "br": 1 },
+                    {
+                      "grid": 1,
+                      "columns": "1fr 1fr",
+                      "columnsResponsive": "1fr",
+                      "content": [
+                        "Surgen en valles fluviales y climas templados. Son amuralladas, con caseríos concentrados, un palacio y un templo. <br>Ejemplos: Ur y Babilonia en Mesopotamia.",
+                        {
+                          "img": "img/03.jpg",
+                          "class": "rounded",
+                          "caption": "*Ruinas de Babilonia en Hillah, Iraq."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "group": 1,
+                  "class": "",
+                  "content": [
+                    { "class": "h4 text-center", "text": "La ciudad política" },
+                    { "br": 1 },
+                    {
+                      "grid": 1,
+                      "columns": "1fr 1fr",
+                      "columnsResponsive": "1fr",
+                      "content": [
+                        "Crea el espacio público, trazado de cuadrícula e infraestructura como alcantarillado y acueductos. <br>Ejemplos: Atenas, Roma.",
+                        {
+                          "img": "img/04.jpg",
+                          "class": "rounded",
+                          "caption": "*Ruinas del foro en Roma, Italia."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "group": 1,
+                  "class": "",
+                  "content": [
+                    {
+                      "class": "h4 text-center",
+                      "text": "La ciudad comercial"
+                    },
+                    { "br": 1 },
+                    {
+                      "grid": 1,
+                      "columns": "1fr 1fr",
+                      "columnsResponsive": "1fr",
+                      "content": [
+                        "Destaca la ciudad medieval cristiana organizada en torno a la catedral y sus mercados. <br>Ejemplos: Génova, Hamburgo, Lübeck.",
+                        {
+                          "img": "img/05.jpg",
+                          "class": "rounded",
+                          "caption": "*Lübeck, Alemania."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "group": 1,
+                  "class": "",
+                  "content": [
+                    {
+                      "class": "h4 text-center",
+                      "text": "La ciudad industrial"
+                    },
+                    { "br": 1 },
+                    {
+                      "grid": 1,
+                      "columns": "1fr 1fr",
+                      "columnsResponsive": "1fr",
+                      "content": [
+                        "Se caracteriza por la alteración del paisaje urbano, la densificación y el crecimiento espacial. <br>Ejemplos: Londres, Chicago",
+                        {
+                          "img": "img/06.jpg",
+                          "class": "rounded",
+                          "caption": "*Londres, Inglaterra."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "group": 1,
+                  "class": "",
+                  "content": [
+                    {
+                      "class": "h4 text-center",
+                      "text": "La ciudad post-industrial"
+                    },
+                    { "br": 1 },
+                    {
+                      "grid": 1,
+                      "columns": "1fr 1fr",
+                      "columnsResponsive": "1fr",
+                      "content": [
+                        "Se caracteriza por su gran concentración demográfica, parece no tener límite por lo que crea megalópolis y conurbaciones. <br>Ejemplos: Nueva York, Tokio.",
+                        {
+                          "img": "img/07.jpg",
+                          "class": "rounded",
+                          "caption": "*Tokio, Japón."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "group": 1,
+                  "class": "",
+                  "content": [
+                    {
+                      "class": "h4 text-center",
+                      "text": "La ciudad en el Tercer Mundo"
+                    },
+                    { "br": 1 },
+                    {
+                      "grid": 1,
+                      "columns": "1fr 1fr",
+                      "columnsResponsive": "1fr",
+                      "content": [
+                        "Se caracterizan por un permanente flujo migratorio, contrastes socioeconómicos, caos de tráfico, insuficiencia en la vivienda y altos niveles de delincuencia. <br>Ejemplos: Ciudad de México, Delhi, Rio de Janeiro.",
+                        {
+                          "img": "img/08.jpg",
+                          "class": "rounded",
+                          "caption": "*Delhi, India."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "buttonNextScreen": "Continuar"
+        }
+      ]
+    },
+    {
+      "title": "Actividad 1. ¿Rural o urbano?",
+      "icon": "games",
+      "steps": true,
+      "class": "flex flex-col justify-center",
+      "blocks": [
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "I. Selecciona Rural o Urbano según corresponda a los siguientes elementos.",
+              "iconinst": "touch_app"
+            },
+            { "br": 1 },
+            {
+              "group": 1,
+              "class": "text-center",
+              "content": [
+                { "img": "img/09.jpg", "class": "max-w-[20rem]" },
+                { "br": 2 },
+                {
+                  "class": "h4 text-center",
+                  "text": "1. Baja densidad de población."
+                }
+              ]
+            },
+            {
+              "select": 1,
+              "columns": "1fr 1fr",
+              "options": [
+                ["Rural", true],
+                ["Urbano", false]
+              ],
+              "feedback": [
+                "¡Así es! En el entorno rural la densidad de población es baja, en contraste con las ciudades, donde es muy alta.",
+                "Recuerda que la densidad se refiere a la concentración de personas en un espacio. Intenta de nuevo."
+              ]
+            }
+          ]
+        },
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "I. Selecciona Rural o Urbano según corresponda a los siguientes elementos.",
+              "iconinst": "touch_app"
+            },
+            { "br": 1 },
+            {
+              "group": 1,
+              "class": "text-center",
+              "content": [
+                { "img": "img/10.jpg", "class": "max-w-[20rem]" },
+                { "br": 2 },
+                {
+                  "class": "h4 text-center",
+                  "text": "2. Diversidad sociocultural."
+                }
+              ]
+            },
+            {
+              "select": 1,
+              "columns": "1fr 1fr",
+              "options": [
+                ["Rural", false],
+                ["Urbano", true]
+              ],
+              "feedback": [
+                "¡Correcto! En las ciudades, al haber mayor concentración de personas, la diversidad sociocultural es más amplia.",
+                "Recuerda que a mayor concentración de personas es mayor la diversidad. Intenta de nuevo."
+              ]
+            }
+          ]
+        },
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "I. Selecciona Rural o Urbano según corresponda a los siguientes elementos.",
+              "iconinst": "touch_app"
+            },
+            { "br": 1 },
+            {
+              "group": 1,
+              "class": "text-center",
+              "content": [
+                { "img": "img/11.jpg", "class": "max-w-[20rem]" },
+                { "br": 2 },
+                {
+                  "class": "h4 text-center",
+                  "text": "3. Mayores conflictos sociales."
+                }
+              ]
+            },
+            {
+              "select": 1,
+              "columns": "1fr 1fr",
+              "options": [
+                ["Rural", false],
+                ["Urbano", true]
+              ],
+              "feedback": [
+                "¡Exacto! La gran cantidad de personas que viven en las ciudades genera conflictos como la inseguridad y el desempleo.",
+                "Recuerda que a mayor cantidad de personas disminuye la disponibilidad de recursos, lo que se vuelve una fuente de conflictos. Intenta de nuevo."
+              ]
+            }
+          ]
+        },
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "I. Selecciona Rural o Urbano según corresponda a los siguientes elementos.",
+              "iconinst": "touch_app"
+            },
+            { "br": 1 },
+            {
+              "group": 1,
+              "class": "text-center",
+              "content": [
+                { "img": "img/12.jpg", "class": "max-w-[20rem]" },
+                { "br": 2 },
+                {
+                  "class": "h4 text-center",
+                  "text": "4. Escasez de infraestructura."
+                }
+              ]
+            },
+            {
+              "select": 1,
+              "columns": "1fr 1fr",
+              "options": [
+                ["Rural", true],
+                ["Urbano", false]
+              ],
+              "feedback": [
+                "¡Muy bien! El entorno rural no demanda grandes obras de infraestructura.",
+                "A mayor cantidad de personas es mayor la necesidad de obras y elementos para el buen desarrollo de sus actividades. Intenta de nuevo."
+              ]
+            }
+          ]
+        },
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "I. Selecciona Rural o Urbano según corresponda a los siguientes elementos.",
+              "iconinst": "touch_app"
+            },
+            { "br": 1 },
+            {
+              "group": 1,
+              "class": "text-center",
+              "content": [
+                { "img": "img/13.jpg", "class": "max-w-[20rem]" },
+                { "br": 2 },
+                {
+                  "class": "h4 text-center",
+                  "text": "5. Grandes índices de emigración."
+                }
+              ]
+            },
+            {
+              "select": 1,
+              "columns": "1fr 1fr",
+              "options": [
+                ["Rural", true],
+                ["Urbano", false]
+              ],
+              "feedback": [
+                "¡Correcto! En el entorno rural las actividades económicas son muy pocas, lo que ocasiona que haya menos trabajo e ingresos, motivando a las personas a emigrar a las ciudades.",
+                "Las personas buscan mejores condiciones de vida, razón por la que pueden verse en la necesidad de dejar su lugar de residencia. Intenta de nuevo."
+              ]
+            }
+          ]
+        },
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "I. Selecciona Rural o Urbano según corresponda a los siguientes elementos.",
+              "iconinst": "touch_app"
+            },
+            { "br": 1 },
+            {
+              "group": 1,
+              "class": "text-center",
+              "content": [
+                { "img": "img/14.jpg", "class": "max-w-[20rem]" },
+                { "br": 2 },
+                {
+                  "class": "h4 text-center",
+                  "text": "6. Gran división del trabajo"
+                }
+              ]
+            },
+            {
+              "select": 1,
+              "columns": "1fr 1fr",
+              "options": [
+                ["Rural", false],
+                ["Urbano", true]
+              ],
+              "feedback": [
+                "¡Excelente! Al existir mayor actividad socioeconómica, el trabajo se especializa y diversifica.",
+                "Al existir mayor actividad socioeconómica, la oferta laboral aumenta. Intenta de nuevo."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Actividad 2. ",
+      "icon": "games",
+      "steps": false,
+      "class": "flex flex-col justify-center",
+      "blocks": [
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "II.  Arrastra y coloca los pines en el plano de la ciudad para indicar cada una de las partes que la conforman, de acuerdo a las características que se mencionan.",
+              "iconinst": "pan_tool"
+            },
+            { "br": 1 },
+            {
+              "group": 1,
+              "class": "grid grid-cols-4 gap-2",
+              "content": [
+                {
+                  "repeater": 1,
+                  "items": [
+                    {
+						"content":[
+							{"term": "Centro histórico", "class":"text-xs", "content": ["Es la parte más antigua de la ciudad. En ella se llevan a cabo actividades culturales, administrativas y comerciales. Mantiene una función residencial."]},
+							{
+								"symbol": "pindrags",
+								"correctId": "#b"
+							}
+						]
+					},
+                    {
+						"content":[
+							{"term": "Barrios residenciales", "class":"text-xs", "content": ["Casas en deterioro progresivo por su antigüedad y por industrias que funcionaron en el pasado."]},
+							{
+								"symbol": "pindrags",
+								"correctId": "#c"
+							}
+						]
+					},
+					{
+						"content":[
+							{"term": "Zonas residenciales", "class":"text-xs", "content": ["Casas de mejor calidad, unifamiliares y de lujo."]},
+							{
+								"symbol": "pindrags",
+								"correctId": "#g"
+							}
+						]
+					},
+					{
+						"content":[
+							{"term": "Periferia", "class":"text-xs", "content": ["Viviendas de mala calidad, falta de infraestructura, espacios marginales."]},
+							{
+								"symbol": "pindrags",
+								"correctId": "#a"
+							}
+						]
+					},
+					{
+						"content":[
+							{"term": "Zonas residenciales suburbanas", "class":"text-xs", "content": ["Casas dormitorio, fraccionamientos exclusivos, pueblos satélites."]},
+							{
+								"symbol": "pindrags",
+								"correctId": "#i"
+							}
+						]
+					},
+					{
+						"content":[
+							{"term": "Polígonos industriales", "class":"text-xs", "content": ["Concentran la actividad industrial."]},
+							{
+								"symbol": "pindrags",
+								"correctId": "#e"
+							}
+						]
+					},
+					{
+						"content":[
+							{"term": "Parques empresariales y tecnológicos", "class":"text-xs", "content": ["Presencia de universidades, empresas innovadoras, instituciones de investigación y empresas."]},
+							{
+								"symbol": "pindrags",
+								"correctId": "#h"
+							}
+						]
+					},
+					{
+						"content":[
+							{"term": "Centros comerciales y de ocio", "class":"text-xs", "content": ["Edificios de gran tamaño con locales comerciales, oficinas y servicios de entretenimiento."]},
+							{
+								"symbol": "pindrags",
+								"correctId": "#d"
+							}
+						]
+					}
+                  ],
+                  "properties": {
+						  "group": 1,
+						  "class": "bg-white rounded text-dark text-xs text-center p-2"                    
+                  }
+                }
+              ]
+            },
+			{"br": 1},
+			{
+				"group": 1,
+				"class": "relative",
+				"content":[
+				 { "img": "img/map.png", "class":"w"},
+				 {"html": " ", "class":"absolute w-[13%] h-[45%] left-[1%] top-[2%]  drop", "id":"a"},
+				 {"html": " ", "class":"absolute w-[16%] h-[45%] left-[23%] top-[2%]  drop", "id":"b"},
+				 {"html": " ", "class":"absolute w-[16%] h-[45%] left-[42%] top-[2%]  drop", "id":"c"},
+				 {"html": " ", "class":"absolute w-[16%] h-[45%] left-[60%] top-[2%]  drop", "id":"d"},
+				 {"html": " ", "class":"absolute w-[19%] h-[45%] left-[79%] top-[2%]  drop", "id":"e"},
+				 
+				 {"html": " ", "class":"absolute w-[11%] h-[45%] left-[1%] top-[52%]  drop", "id":"f"},
+				 {"html": " ", "class":"absolute w-[19%] h-[45%] left-[22%] top-[52%]  drop", "id":"g"},
+				 {"html": " ", "class":"absolute w-[17%] h-[45%] left-[43%] top-[52%]  drop", "id":"h"},
+				 {"html": " ", "class":"absolute w-[13%] h-[45%] left-[63%] top-[52%]  drop", "id":"i"},
+				 {"html": " ", "class":"absolute w-[19%] h-[45%] left-[79%] top-[52%]  drop", "id":"j"}
+				]
+			 }
+          ],
+		  "buttonNextScreen": "Continuar"
+        }
+      ]
+    },
+    {
+      "title": "Finalizar",
+      "icon": "flag",
+      "end": true,
+      "blocks": [
+        {
+          "content": []
+        }
+      ]
+    }
+  ],
+  "symbols": {
+	"pindrags": {
+		"drag": 1,
+		"bounds": "",
+		"class": "w-1/2 max-w-[2.5rem] bg-transparent mx-auto",
+		"dropzone": ".drop",
+		"content":[
+			{ "img": "img/pin.png" }
+		],
+		"hover": "border-2 border-dashed rounded-full",
+		"dropzoneClass": "flex justify-center items-center flex-wrap",
+		"dropzoneItems": ""
+	}
+  }
+}
