@@ -1,0 +1,733 @@
+{
+  "id": "TLR1P1",
+  "programa": "DGB",
+  "materia": "TALLERLRI",
+  "title": "Funciones del lenguaje",
+  "bgimgs": 4,
+  "ficha": [
+    [
+      "Aprendizaje esperado",
+      "Aplica las funciones del lenguaje en los diversos contextos en que se desenvuelve."
+    ],
+    ["Eje transversal", "Social."]
+  ],
+  "screens": [
+    {
+      "title": "Lenguaje",
+      "icon": "info",
+      "steps": true,
+      "class": "flex flex-col justify-center",
+      "blocks": [
+        {
+          "width": "100%",
+          "content": [
+            {
+              "class": "text-center h5",
+              "textAnimation": "El lenguaje es la facultad humana de expresarse y comunicarse mediante sistemas de signos; su intención primordial es la de comunicar, y sus funciones son los diferentes objetivos, propósitos y servicios que se le dan al momento de utilizarse, las cuales están igualmente relacionadas con los elementos del proceso comunicativo: a cada elemento del proceso le corresponde una función del lenguaje."
+            },
+            { "br": 1 },
+            {
+              "img": "img/im1.png",
+              "class": "rounded-full animate__animated animate__zoomIn  animate__delay-2s"
+            }
+          ]
+        },
+        {
+          "width": "100%",
+          "content": [
+            "La comunicación implica un <strong>proceso</strong>, es decir, una serie de fases sucesivas, en el que entran en juego un conjunto de elementos básicos. Esto ha sido un tema de interés que ha producido diversos intentos de desarrollar un modelo de dicho proceso. En la antigua Grecia, Aristóteles escribió en su Retórica que la comunicación comprende tres elementos:",
+            {
+              "grid": 1,
+              "class": "my-5",
+              "columns": "1fr 1fr 1fr",
+              "columnsResponsive": "1fr",
+              "content": [
+                {
+                  "group": 1,
+                  "class": "bg-white text-dark rounded p-1 animate__animated animate__bounce ",
+                  "content": [
+                    "a) la persona que habla (<strong>emisor</strong>)"
+                  ]
+                },
+                {
+                  "group": 1,
+                  "class": "bg-white text-dark rounded p-1 animate__animated animate__bounce animate__delay-1s",
+                  "content": [
+                    "b) el discurso que pronuncia (<strong>mensaje</strong>)"
+                  ]
+                },
+                {
+                  "group": 1,
+                  "class": "bg-white text-dark rounded p-1 animate__animated animate__bounce animate__delay-2s ",
+                  "content": [
+                    "c) la persona que escucha (<strong>receptor</strong>)"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "width": "100%",
+          "content": [
+            "La mayoría de los modelos conocidos hasta ahora son similares a éste, variando sólo en complejidad.",
+            { "br": 2 },
+            "Ahora bien, para establecer la comunicación es necesario que tano el emisor como el receptor le atribuyan al mensaje el mismo significado, esto sólo es posible si ambos comparten el mismo sistema de signos y reglas para formular mensajes (<strong>código</strong>). El mensaje además debe enviarse a través de un medio determinado (<strong>canal</strong>) y codificarse e interpretarse de acuerdo a la situación en que se lleva a cabo el proceso (<strong>contexto</strong>).",
+            { "br": 2 },
+            "Una vez recibido el mensaje, el receptor debe responder, ya sea con una conducta o generando un nuevo mensaje, convirtiéndose así en emisor (<strong>retroalimentación</strong>). Sin esta interacción el proceso no se completa, hablamos entonces no de comunicación, sino de un simple acto de transmisión de información. Finalmente, en el proceso puede haber interferencia o barreras (<strong>ruido</strong>) que pueden estar presentes en cada uno de los elementos.",
+            { "br": 2 },
+            "En el proceso comunicativo, de acuerdo a la intención del hablante, siempre predomina una de las funciones del lenguaje."
+          ],
+          "buttonNextScreen": "Continuar"
+        }
+      ]
+    },
+    {
+      "title": "Funciones del lenguajes",
+      "icon": "info",
+      "steps": false,
+      "class": "flex flex-col justify-center",
+      "blocks": [
+        {
+          "width": "100%",
+          "content": [
+            {
+              "class": "text-center h3",
+              "textAnimation": "Funciones del lenguaje"
+            },
+            { "br": 1 },
+            {
+              "grid": 1,
+              "columns": "1fr 1fr 1fr",
+              "columnsResponsive": "1fr 1fr",
+              "content": [
+                {
+                  "dialog": 1,
+                  "button": [
+                    {
+                      "lottie": "face/emotiva.json",
+                      "loop": true,
+                      "noreplaybtn": true
+                    }
+                  ],
+                  "buttonClass": "!bg-transparent",
+                  "class": "text-center text-dark mt-40",
+                  "content": [
+                    {
+                      "lottie": "face/emotiva.json",
+                      "loop": true,
+                      "class": "w-60 mx-auto",
+                      "noreplaybtn": true
+                    },
+                    { "class": "h3", "text": "Emotiva (emisor)" },
+                    "Actitud del hablante respecto de lo que dice."
+                  ]
+                },
+                {
+                  "dialog": 1,
+                  "button": [
+                    {
+                      "lottie": "face/apelativa.json",
+                      "loop": true,
+                      "noreplaybtn": true
+                    }
+                  ],
+                  "buttonClass": "!bg-transparent",
+                  "class": "text-center text-dark",
+                  "content": [
+                    {
+                      "lottie": "face/apelativa.json",
+                      "loop": true,
+                      "class": "w-60 mx-auto",
+                      "noreplaybtn": true
+                    },
+                    { "class": "h3", "text": "Apelativa (receptor)" },
+                    "Apelación que el hablante hace al oyente."
+                  ]
+                },
+                {
+                  "dialog": 1,
+                  "button": [
+                    {
+                      "lottie": "face/referencial.json",
+                      "loop": true,
+                      "noreplaybtn": true
+                    }
+                  ],
+                  "buttonClass": "!bg-transparent",
+                  "class": "text-center text-dark mt-40",
+                  "content": [
+                    {
+                      "lottie": "face/referencial.json",
+                      "loop": true,
+                      "class": "w-60 mx-auto",
+                      "noreplaybtn": true
+                    },
+                    { "class": "h3", "text": "Referencial (contexto)" },
+                    "Información, asunto, tema del que se habla."
+                  ]
+                },
+                {
+                  "dialog": 1,
+                  "button": [
+                    {
+                      "lottie": "face/fatica.json",
+                      "loop": true,
+                      "noreplaybtn": true
+                    }
+                  ],
+                  "buttonClass": "!bg-transparent",
+                  "class": "text-center text-dark",
+                  "content": [
+                    {
+                      "lottie": "face/fatica.json",
+                      "loop": true,
+                      "class": "w-60 mx-auto",
+                      "noreplaybtn": true
+                    },
+                    { "class": "h3", "text": "Fática (canal)" },
+                    "Establece y mantiene el contacto con el oyente."
+                  ]
+                },
+                {
+                  "dialog": 1,
+                  "button": [
+                    {
+                      "lottie": "face/metalinguistica.json",
+                      "loop": true,
+                      "noreplaybtn": true
+                    }
+                  ],
+                  "buttonClass": "!bg-transparent",
+                  "class": "text-center text-dark mt-40",
+                  "content": [
+                    {
+                      "lottie": "face/metalinguistica.json",
+                      "loop": true,
+                      "class": "w-60 mx-auto",
+                      "noreplaybtn": true
+                    },
+                    { "class": "h3", "text": "Metalingüistica (código)" },
+                    "Se trata sobre el lenguaje mismo."
+                  ]
+                },
+                {
+                  "dialog": 1,
+                  "button": [
+                    {
+                      "lottie": "face/poetica.json",
+                      "loop": true,
+                      "noreplaybtn": true
+                    }
+                  ],
+                  "buttonClass": "!bg-transparent",
+                  "class": "text-center text-dark",
+                  "content": [
+                    {
+                      "lottie": "face/poetica.json",
+                      "loop": true,
+                      "class": "w-60 mx-auto",
+                      "noreplaybtn": true
+                    },
+                    { "class": "h3 ", "text": "Poética (mensaje)" },
+                    "El mensaje tiene un fin estético."
+                  ]
+                }
+              ]
+            },
+            {
+              "class": "",
+              "text": "Así, las expresiones de emoción hacen uso de la función emotiva; las peticiones o mandatos, de la función apelativa; al hacer una exposición de un tema en particular se trata de la función referencial; el primer mensaje que se envía con el fin de iniciar una conversación representa la función fática; las definiciones o explicaciones de conceptos en particular son ejemplos de la función metalingüística; y, finalmente, el uso de figuras retóricas en el mensaje refiere a la función poética."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Actividad 1",
+      "icon": "games",
+      "steps": true,
+      "class": "flex flex-col justify-center",
+      "blocks": [
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "Observa atentamente las siguientes viñetas.",
+              "iconinst": "preview"
+            },
+            { "br": 1 },
+            {
+              "slides": 1,
+              "class": "",
+              "content": [
+                {
+                  "group": 1,
+                  "class": "relative w-fit h-fit mx-auto",
+                  "content": [
+                    { "img": "hist/a1.png" },
+                    {
+                      "img": "hist/a2.png",
+                      "class": "absolute left-0 top-0 animate__animated animate__zoomIn animate__delay-2s "
+                    },
+                    {
+                      "img": "hist/a3.png",
+                      "class": "absolute left-0 top-0 animate__animated animate__zoomIn animate__delay-3s"
+                    }
+                  ]
+                },
+                {
+                  "group": 1,
+                  "class": "relative w-fit h-fit mx-auto",
+                  "content": [
+                    { "img": "hist/b1.png" },
+                    {
+                      "img": "hist/b2.png",
+                      "class": "absolute left-0 top-0 animate__animated animate__zoomIn animate__delay-2s "
+                    }
+                  ]
+                },
+                {
+                  "group": 1,
+                  "class": "relative w-fit h-fit mx-auto",
+                  "content": [
+                    { "img": "hist/c1.png" },
+                    {
+                      "img": "hist/c2.png",
+                      "class": "absolute left-0 top-0 animate__animated animate__zoomIn animate__delay-2s "
+                    }
+                  ]
+                },
+                {
+                  "group": 1,
+                  "class": "relative w-fit h-fit mx-auto",
+                  "content": [
+                    { "img": "hist/d1.png" },
+                    {
+                      "img": "hist/d2.png",
+                      "class": "absolute left-0 top-0 animate__animated animate__zoomIn animate__delay-2s "
+                    },
+                    {
+                      "img": "hist/d3.png",
+                      "class": "absolute left-0 top-0 animate__animated animate__zoomIn animate__delay-3s"
+                    }
+                  ]
+                },
+                {
+                  "group": 1,
+                  "class": "relative w-fit h-fit mx-auto",
+                  "content": [
+                    { "img": "hist/e1.png" },
+                    {
+                      "img": "hist/e2.png",
+                      "class": "absolute left-0 top-0 animate__animated animate__zoomIn animate__delay-2s "
+                    }
+                  ]
+                },
+                {
+                  "group": 1,
+                  "class": "relative w-fit h-fit mx-auto",
+                  "content": [
+                    { "img": "hist/f1.png" },
+                    {
+                      "img": "hist/f2.png",
+                      "class": "absolute left-0 top-0 animate__animated animate__zoomIn animate__delay-2s "
+                    },
+                    {
+                      "img": "hist/f3.png",
+                      "class": "absolute left-0 top-0 animate__animated animate__zoomIn animate__delay-3s"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "buttonNextStep": "Continuar"
+        },
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "Lee el diálogo de la viñeta y relaciónalo con la función del lenguaje que le corresponda. ",
+              "iconinst": "touch_app"
+            },
+            { "br": 1 },
+            {
+              "grid": 1,
+              "columns": "1fr 1fr",
+              "columnsResponsive": "1fr",
+              "content": [
+                { "img": "img/im4.png" },
+                {
+                  "select": 1,
+                  "columns": "1fr 1fr 1fr",
+                  "columnsResponsive": "1fr 1fr 1fr",
+                  "options": [
+                    ["Fática.", true, "Respuesta correcta."],
+                    [
+                      "Emotiva.",
+                      false,
+                      "Recuerda que un saludo tiene la intención de establecer el contacto con el oyente e iniciar una conversación. Intenta de nuevo."
+                    ],
+                    [
+                      "Apelativa.",
+                      false,
+                      "Al hacer uso de la función apelativa se busca influir en el oyente para que éste haga algo. Intenta de nuevo."
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "grid": 1,
+              "class": "mt-40",
+              "columns": "1fr 1fr",
+              "columnsResponsive": "1fr",
+              "content": [
+                {
+                  "select": 1,
+                  "columns": "1fr 1fr 1fr",
+                  "columnsResponsive": "1fr 1fr 1fr",
+                  "options": [
+                    [
+                      "1. Apelativa.<br>2. Emotiva..",
+                      false,
+                      "Víctor expresa una emoción al ver a Ricardo y después busca influir en él para que haga algo, en este caso, responder a su pregunta. Intenta de nuevo."
+                    ],
+                    [
+                      "1. Referencial. <br>2. Fática.",
+                      false,
+                      "Con la función referencial se proporciona información mientras que con la fática se establece y mantiene contacto con el oyente. Intenta de nuevo."
+                    ],
+                    [
+                      "1. Emotiva. <br>2. Apelativa..",
+                      true,
+                      "Respuesta correcta."
+                    ]
+                  ]
+                },
+                { "img": "img/im5.png" }
+              ]
+            },
+            {
+              "grid": 1,
+              "class": "mt-40",
+              "columns": "1fr 1fr",
+              "columnsResponsive": "1fr",
+              "content": [
+                { "img": "img/im6.png" },
+                {
+                  "select": 1,
+                  "columns": "1fr 1fr 1fr",
+                  "columnsResponsive": "1fr 1fr 1fr",
+                  "options": [
+                    [
+                      "Metalingüística.",
+                      false,
+                      "La función metalingüística se enfoca en el lenguaje mismo. Intenta de nuevo."
+                    ],
+                    ["Referencial.", true, "Respuesta correcta."],
+                    [
+                      "Poética.",
+                      false,
+                      "Ricardo le brinda a Víctor información sobre el asunto del que hablan. Intenta de nuevo."
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "grid": 1,
+              "class": "mt-40",
+              "columns": "1fr 1fr",
+              "columnsResponsive": "1fr",
+              "content": [
+                {
+                  "select": 1,
+                  "columns": "1fr 1fr 1fr",
+                  "columnsResponsive": "1fr 1fr 1fr",
+                  "options": [
+                    [
+                      "1. Apelativa. <br>2. Referencial y metalingüística..",
+                      true,
+                      "Respuesta correcta."
+                    ],
+                    [
+                      "1. Poética y fática. <br>2. Referencial..",
+                      false,
+                      "Víctor pregunta a Ricardo, busca que realice la acción de responder, después Ricardo le informa que no entendió, pero le dice una definición y éstas tienen la función de explicar al lenguaje mismo. Intenta de nuevo."
+                    ],
+                    [
+                      "1. Referencial y fática. <br>2. Apelativa..",
+                      false,
+                      "Con la función referencial se proporciona información mientras que con la fática se establece y mantiene contacto con el oyente. Al hacer uso de la función apelativa se busca influir en el oyente para que éste haga algo. Intenta de nuevo."
+                    ]
+                  ]
+                },
+                { "img": "img/im7.png" }
+              ]
+            },
+            {
+              "grid": 1,
+              "class": "mt-40",
+              "columns": "1fr 1fr",
+              "columnsResponsive": "1fr",
+              "content": [
+                { "img": "img/im8.png" },
+                {
+                  "select": 1,
+                  "columns": "1fr 1fr 1fr",
+                  "columnsResponsive": "1fr 1fr 1fr",
+                  "options": [
+                    [
+                      "Poética.",
+                      false,
+                      "Con la función poética el lenguaje tiene un fin estético. Intenta de nuevo."
+                    ],
+                    [
+                      "Apelativa..",
+                      false,
+                      "Víctor se siente frustrado y le comunica a Ricardo dicha emoción. Intenta de nuevo."
+                    ],
+                    ["Emotiva.", true, "Respuesta correcta."]
+                  ]
+                }
+              ]
+            },
+            {
+              "grid": 1,
+              "class": "mt-40",
+              "columns": "1fr 1fr",
+              "columnsResponsive": "1fr",
+              "content": [
+                {
+                  "select": 1,
+                  "columns": "1fr 1fr 1fr",
+                  "columnsResponsive": "1fr 1fr 1fr",
+                  "options": [
+                    [
+                      "1. Poética. <br>2. Referencial. <br>3. Apelativa..",
+                      true,
+                      "Con la función poética el lenguaje tiene un fin estético, con la función referencial se proporciona información y con la función apelativa se busca influir en el oyente para que éste haga algo."
+                    ],
+                    [
+                      "1. Poética. <br>2. Referencial. <br>3. Fática..",
+                      false,
+                      "Respuesta correcta."
+                    ],
+                    [
+                      "1. Poética. <br>2. Fática. <br>3. Referencial..",
+                      false,
+                      "Ricardo se expresa de una manera estética sobre Bety, Víctor le informa lo que piensa al respecto y finalmente se despide. Intenta de nuevo."
+                    ]
+                  ]
+                },
+                { "img": "img/im9.png" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Actividad 2",
+      "icon": "games",
+      "steps": true,
+      "class": "flex flex-col justify-center",
+      "blocks": [
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "Aplica las funciones del lenguaje de acuerdo al contexto que se indica. Desplaza la imagen hacia la opción que corresponda.",
+              "iconinst": "touch_app"
+            },
+            { "br": 1 },
+            {
+              "class": "h4",
+              "text": "1. ¿Qué función del lenguaje aplicarías si deseas escribir una carta para persuadir a la directora de apoyar una campaña en favor de los derechos humanos en tu escuela?"
+            },
+            { "br": 1 },
+            {
+              "dragdrop": 1,
+              "drags": [
+                [
+                  { "img": "img/im10.png" },
+                  "ok",
+                  [
+                    "Respuesta correcta.",
+                    "Piensa con más calma, en dicha función el mensaje tiene un fin estético. Inténtalo de nuevo."
+                  ]
+                ]
+              ],
+              "dropsLeft": [["Función poética", "ok"]],
+              "dropsRight": [["Función emotiva", "no"]]
+            }
+          ]
+        },
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "Aplica las funciones del lenguaje de acuerdo al contexto que se indica. Desplaza la imagen hacia la opción que corresponda.",
+              "iconinst": "touch_app"
+            },
+            { "br": 1 },
+            {
+              "class": "h4",
+              "text": "2. ¿Cuál función aplicas cuando le explicas a tu compañero el significado de la palabra “inclusión”?"
+            },
+            { "br": 1 },
+            {
+              "dragdrop": 1,
+              "drags": [
+                [
+                  { "img": "img/im11.png" },
+                  "ok",
+                  [
+                    "Respuesta correcta.",
+                    "Recuerda cuál es la función del lenguaje que trata sobre el lenguaje mismo. Intenta una vez más."
+                  ]
+                ]
+              ],
+              "dropsLeft": [["Función metalingüística", "ok"]],
+              "dropsRight": [["Función fática", "no"]]
+            }
+          ]
+        },
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "Aplica las funciones del lenguaje de acuerdo al contexto que se indica. Desplaza la imagen hacia la opción que corresponda.",
+              "iconinst": "touch_app"
+            },
+            { "br": 1 },
+            {
+              "class": "h4",
+              "text": "3. ¿Qué función del lenguaje necesitas para darle la bienvenida a una persona que no has visto en mucho tiempo?"
+            },
+            { "br": 1 },
+            {
+              "dragdrop": 1,
+              "drags": [
+                [
+                  { "img": "img/im12.png" },
+                  "ok",
+                  [
+                    "Respuesta correcta.",
+                    "En este caso la clave es la actitud del hablante respecto de lo que dice, inténtalo de nuevo."
+                  ]
+                ]
+              ],
+              "dropsLeft": [["Función emotiva", "ok"]],
+              "dropsRight": [["Función poética", "no"]]
+            }
+          ]
+        },
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "Aplica las funciones del lenguaje de acuerdo al contexto que se indica. Desplaza la imagen hacia la opción que corresponda.",
+              "iconinst": "touch_app"
+            },
+            { "br": 1 },
+            {
+              "class": "h4",
+              "text": "4. Imagina que deseas que uno de tus compañeros deje de llamarte con un apodo que no te gusta. ¿Cuál función es la necesaria en este caso?"
+            },
+            { "br": 1 },
+            {
+              "dragdrop": 1,
+              "drags": [
+                [
+                  { "img": "img/im13.png" },
+                  "ok",
+                  [
+                    "Respuesta correcta.",
+                    "La función que necesitas en este caso se centra en el receptor, a quien se hace una petición. Intenta otra vez."
+                  ]
+                ]
+              ],
+              "dropsLeft": [["Función referencial", "no"]],
+              "dropsRight": [["Función apelativa", "ok"]]
+            }
+          ]
+        },
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "Aplica las funciones del lenguaje de acuerdo al contexto que se indica. Desplaza la imagen hacia la opción que corresponda.",
+              "iconinst": "touch_app"
+            },
+            { "br": 1 },
+            {
+              "class": "h4",
+              "text": "5. Debes compartirle a tu hermano información muy importante sobre el cambio climático, ¿cuál función del lenguaje aplica en este caso?"
+            },
+            { "br": 1 },
+            {
+              "dragdrop": 1,
+              "drags": [
+                [
+                  { "img": "img/im14.png" },
+                  "ok",
+                  [
+                    "Respuesta correcta.",
+                    "La respuesta correcta es la función en la que el contexto es el elemento central, trata una vez más."
+                  ]
+                ]
+              ],
+              "dropsLeft": [["Función apelativa", "no"]],
+              "dropsRight": [["Función referencial", "ok"]]
+            }
+          ]
+        },
+        {
+          "width": "100%",
+          "content": [
+            {
+              "inst": "Aplica las funciones del lenguaje de acuerdo al contexto que se indica. Desplaza la imagen hacia la opción que corresponda.",
+              "iconinst": "touch_app"
+            },
+            { "br": 1 },
+            {
+              "class": "h4",
+              "text": "6. ¿Cuál función se aplica cuando debes dar por terminada una conversación y despedirte?"
+            },
+            { "br": 1 },
+            {
+              "dragdrop": 1,
+              "drags": [
+                [
+                  { "img": "img/im15.png" },
+                  "ok",
+                  [
+                    "Respuesta correcta.",
+                    "Recuerda la función con la que se establece y mantiene el contacto con el receptor. Intenta de nuevo."
+                  ]
+                ]
+              ],
+              "dropsLeft": [["Función fática", "ok"]],
+              "dropsRight": [["Función expresiva", "no"]]
+            }
+          ],
+          "buttonNextScreen": "Siguiente"
+        }
+      ]
+    },
+    {
+      "title": "Finalizar",
+      "icon": "flag",
+      "end": true,
+      "blocks": [
+        {
+          "content": []
+        }
+      ]
+    }
+  ],
+  "symbols": {}
+}
