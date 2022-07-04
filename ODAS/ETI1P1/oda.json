@@ -1,0 +1,580 @@
+{
+  "id": "ETI1P1",
+  "programa": "DGB",
+  "materia": "ETICA",
+  "title": "Sócrates o la virtud del diálogo",
+  "bgimgs": 4,
+  "ficha": [
+    [
+      "Aprendizaje esperado",
+      "Aplica las funciones del lenguaje en los diversos contextos en que se desenvuelve."
+    ],
+    ["Eje transversal", "Social."]
+  ],
+  "screens": [
+    {
+       "title": "En contexto",
+       "icon": "info",
+       "steps": true,
+       "class": "flex flex-col justify-center",
+       "blocks": [
+        {
+           "width": "100%",
+           "content": [
+               {"class": "h1 text-center", "textAnimation": "En contexto"},
+               {"br": 1}
+               ,{"class": "", "text": "<strong>Dialéctica</strong> es una palabra que proviene del griego y significa “conversación”, así pues, la dialéctica es el arte de la conversación. El método socrático es un método dialéctico, dado que está basado en hacer y responder preguntas para estimular el pensamiento crítico. Involucra cuestionar una idea, llevar al otro a contradecirse y debilitar así su punto de vista, ayudando de esta manera a que la otra persona descubra ideas o creencias sobre el tema que se discute."},
+               {"br": 1},
+               {
+                  "group": 1,
+                  "class": "txt-center",
+                  "content":[
+                    { "img": "img/1.png", "class":" animate__animated animate__swing animate__slower "} 
+                  ]
+               }
+           ],
+           "buttonNextScreen": "Continuar"
+        }
+       ]
+    },
+    {
+       "title": "El método socrático",
+       "icon": "info",
+       "steps": true,
+       "class": "flex flex-col justify-center",
+       "blocks": [
+        {
+           "width": "100%",
+           "content": [
+               {"class": "text-center h3", "text": "El método socrático, hoy"},
+               {"br": 1},
+               {"class": "", "text": "El llamado “método socrático” no hace referencia a técnicas o procedimientos específicos relacionados con una idea o tesis rigurosa, más bien se refiere a la actitud con que se ve y actúa en el mundo, y de comprender la realidad. Dicha actitud comprende tanto a la ironía con la que se reconoce a la propia ignorancia como al arte de ayudar a “dar a luz” a las ideas mediante el diálogo, la reflexión y el autoanálisis (mayéutica)."},
+               {"br": 2},
+               {
+                  "grid": 1,
+                  "columns": "1fr 1fr",
+                  "columnsResponsive": "1fr",
+                  "content":[
+                      {"class": "", "text": "El método consta de dos fases. En primer lugar, la ironía, que consiste en hacer preguntas al estudiante para refutar sus respuestas, con el fin de que éste sea consciente de su ignorancia en un tema del que creía saber, ignorancia que para Sócrates era la sabiduría verdadera. La segunda fase consistía en guiar las respuestas del estudiante mediante razonamientos inductivos."},
+                      { "img": "img/2.png", "class": "" }
+                  ]
+               },
+               {"br": 2},
+               {"class": "", "text": "Quizás sea difícil implantar este método en las aulas del día de hoy, sin embargo, debe realizarse un esfuerzo para llevar a los estudiantes ese afán de conocerse a uno mismo, fomentar el pensamiento autónomo y crítico y propiciar su madurez intelectual y moral. El método socrático busca despertar en los estudiantes un verdadero y permanente deseo de saber, convirtiéndolos en los propios artífices de su formación."},
+               {"br": 2},
+               {"class": "text-right text-xs", "text": "Fuente: Baltar, E. (2016). El método socrático hoy. Para una enseñanza y práctica dialógica de la filosofía. Revista española de pedagogía. Recuperado de: https://bit.ly/3GKZcc6 (Consulta: 1 de noviembre de 2021)."}
+           ],
+           "buttonNextStep": "Siguiente"
+        },
+        {
+           "width": "100%",
+           "content": [
+               {"class": "text-center h3", "text": "Eutidemo o del disputador, o de la mentira sofística frente a la  verdad dialéctica (fragmento)"},
+               {"br": 2},
+               {
+                  "grid": 1,
+                  "columns": "2fr 1fr",
+                  "columnsResponsive": "1fr",
+                  "content":[
+                    {
+                       "repeater":1,
+                       "items": [
+                         {"textAnimation": "- <em>¿Dónde lo dejamos? Clinias, dímelo, te lo suplico. ¿No era en aquel punto, en que estábamos de acuerdo en que es preciso entregarnos al estudio de la filosofía?</em>"},
+                         {"textAnimation":"- El mismo - respondió."},
+                         {"textAnimation":"- <em>¿No es la filosofía la adquisición de una ciencia?</em>"},
+                         {"textAnimation":"- Ciertamente."},
+                         {"textAnimation":"- <em>¿Pero qué ciencia es la que conviene adquirir?, ¿no es la que nos puede ser provechosa?</em>"},
+                         {"textAnimation":"- La misma."},
+                         {"textAnimation":"- <em>Si recorriendo el mundo supiéramos dar con un país donde se encuentre el oro abundante, ¿este conocimiento nos sería útil?</em>"},
+                         {"textAnimation":"- Es posible —dijo."},
+                         {"textAnimation":"- <em>¿Pero no te acuerdas que antes convinimos en que todo el oro del mundo es inútil, aun cuando lo poseyéramos, sin necesidad de profundizar la tierra ni de usar del arte de convertir las piedras en oro, si no sabemos hacer de él un buen uso?</em>"},
+                         {"textAnimation":"- Me acuerdo."},
+                         {"textAnimation":"- <em>Por consiguiente, ninguna ciencia, ni el arte de enriquecerse, ni la medicina, ni otra alguna es útil, si no enseña a servirse de aquello de que se trata.</em>"},
+                         {"textAnimation":"- Él lo confesó."},
+                         {"textAnimation":"- <em>Por ejemplo: la que nos hiciese inmortales de nada nos serviría, si no nos enseñaba a servirnos de la inmortalidad conforme a lo que hemos dicho.</em>"},
+                         {"textAnimation":"- En esto convinimos ambos."},
+                         {"textAnimation":"- <em>¿Tenemos necesidad, mi querido Clinias, de una ciencia que sepa hacer y sepa usar de aquello que ella trata?</em>"},
+                         {"textAnimation":"- Lo confieso - dijo."},
+                         {"textAnimation":"- <em>No es necesario que aprendamos la ciencia del constructor de liras, porque hay mucha diferencia entre un constructor y un tocador de lira: la manera de hacer una lira y la de hacer uso de ella no son las mismas, ¿no es así?</em>"},
+                         {"textAnimation":"- Sin duda."},
+                         {"textAnimation":"- <em>¿Qué necesidad tenemos del arte de hacer flautas, puesto que no se aprende a hacer uso de ellas?</em>"}
+                         ,{"textAnimation":"- Lo concedió."}
+                       ],
+                       "properties": {
+                         "class": "my-2"
+                       }
+                    },
+                    { "img": "img/3.jpg", "class": "" }
+                  ]
+               },
+               {"br": 1},
+               {"class": "text-right text-xs", "text": "Fuente: Platón. (1871). Eutidemo o el disputador. Filosofía.org. Recuperado de: https://bit.ly/3LbpLrY (Consulta: 23 de marzo de 2022)."}
+           ],
+           "buttonNextScreen": "Continuar"
+        }
+       ]
+    },
+    {
+       "title": "Actividad 1. ¿Aplico la ética socrática en mis decisiones?",
+       "icon": "chat_bubble_outline",
+       "steps": true,
+       "class": "flex flex-col justify-center",
+       "blocks": [
+        {
+           "width": "100%",
+           "content": [
+               {"inst": "I. Con base en los textos anteriores, selecciona la opción correcta.", "iconinst":"touch_app"},
+               {
+                  "chatbot": 1,
+                  "content":[
+                    {
+                      "id": 0,
+                      "talk": "Hola. Sin duda, Sócrates fue un personaje bastante interesante, ¿verdad? Vamos a explorar tu punto de vista a partir de sus ideas en torno a las decisiones que tomas. ¿Estás listo?",
+                      "options":[
+                        ["Sí", 2],
+                        ["Aún no", 1.1]
+                      ]
+                    },
+                    {
+                      "id": 1.1,
+                      "talk": "¡Qué lástima! El diálogo será muy interesante, vuelve cuando estés listo.",
+                      "options": [
+                        ["Estoy listo", 2]
+                      ]
+                    },
+                    {
+                      "id": 2,
+                      "talk": "¡Perfecto! Vamos a empezar, el diálogo será muy interesante.",
+                      "auto":3
+                    },
+                    {
+                      "id": 3,
+                      "talk": "En este momento, ¿cuál es la decisión más trascendental que debes tomar respecto a tu futuro?",
+                      "options":[
+                        ["Elegir la carrera que voy a estudiar.", 3.1],
+                        ["Elegir la pareja con quien me voy a casar.", 3.2],
+                        ["Elegir la marca de la consola de videojuegos para comprar.", 3.3]
+                      ]
+                    },
+                    {
+                      "id": 3.1,
+                      "talk": "¡Es una elección acertada!",
+                      "auto":4
+                    },
+                    {
+                      "id": 3.2,
+                      "talk": "Sin duda es una elección importante, pero, ¿no deberías contar con un patrimonio y una fuente de ingresos para poder hacer una vida en pareja? Elige otra respuesta.",
+                      "auto":3
+                    },
+                    {
+                      "id": 3.3,
+                      "talk": "La recreación es un aspecto importante para tu desarrollo personal, pero ¿esta decisión impactará en tu futuro o sólo en tu presente? Reflexiona y elige otra opción.",
+                      "auto":3
+                    },
+                    {
+                      "id": 4,
+                      "talk": "Ahora, ¿qué harías si tu padre te exigiera estudiar medicina porque él y tu abuelo lo hicieron y así continuarías la tradición, pero no es de tu agrado?",
+                      "options":[
+                        ["Aceptar, pues él tampoco estaba de acuerdo con su padre, pero al final aceptó y le tomó el gusto a la profesión.", 4.1],
+                        ["Aceptar, con la condición que me permita estudiar otra carrera de manera paralela.", 4.2],
+                        ["Exponer a mi padre los motivos por los cuales no me agrada la medicina y, además, compartirle los detalles de la carrera que me atrae.", 4.3]
+                      ]
+                    },
+                    {
+                      "id": 4.1,
+                      "talk": "Posiblemente pasaría lo mismo contigo, pero, ¿si no ocurre? ¿crees que la medicina es una profesión que puede ejercerse a pesar de no tener vocación para ella? Elige otra respuesta.",
+                      "auto":4
+                    },
+                    {
+                      "id": 4.2,
+                      "talk": "¿Estás consciente de que medicina es una carrera que exige mucho tiempo y dedicación? ¿Estás seguro de ser capaz combinar ambos estudios sin descuidar alguno de los dos? Intenta de nuevo",
+                      "auto":4
+                    },
+                    {
+                      "id": 4.3,
+                      "talk": "¡Muy buena decisión!",
+                      "auto":5
+                    },
+                    {
+                      "id": 5,
+                      "talk": "Reflexiona sobre la siguiente situación: un amigo te cuenta que presenció la volcadura de un vehículo que transportaba mercancías. El chofer salió ileso, sin embargo, en la confusión del momento algunas personas aprovecharon para tomar algunas de las mercancías, argumentando que eran mercancías aseguradas, razón por la que decidió tomar algunas. ¿Qué le dirías si tú sabes que el hecho de estar aseguradas no significa que dejen de tener dueño y, por lo tanto, tomarlas es un robo?",
+                      "options":[
+                        ["No le diría nada, pues no quiero acusarlo de ladrón.", 5.1],
+                        ["Se lo diría amablemente, asegurándome de que entienda que ignorar una ley no es excusa para no cumplirla y tampoco perdona la culpa ni el castigo por incumplirla.", 5.2],
+                        ["Le diría que me ha decepcionado, pues ahora es un ladrón.", 5.3]
+                      ]
+                    },
+                    {
+                      "id": 5.1,
+                      "talk": "¿Podría ser posible que al decirle evites que cuando se encuentre en otra situación similar en el futuro y cometa otro robo? Intenta de nuevo.",
+                      "auto": 5
+                    },
+                    {
+                      "id": 5.2,
+                      "talk": "¡Has hecho una gran elección!",
+                      "auto": 6
+                    },
+                    {
+                      "id": 5.3,
+                      "talk": "¿Es justo tratarlo así y acusarlo sólo por haber cometido un error? ¿No puedes darle una oportunidad para enmendarlo? Intenta otra vez.",
+                      "auto": 5
+                    },
+                    {
+                      "id": 6,
+                      "talk": "Para terminar, imagina que en tu comunidad existe una tradición que se practica desde hace varias décadas, sin embargo, al recordar tus clases de Ética y las lecturas que has hecho en ella, llegas a la conclusión de que no es moralmente válida en la actualidad, así que buscas el apoyo de tu maestro para presentar una propuesta para que se cancele, pero, en lugar de apoyarte, te advierte que sería muy difícil que te tomaran en serio. ¿Qué harías al respecto?",
+                      "options":[
+                        ["Le recordaría que, como maestro de Ética, debe fomentar y apoyar el pensamiento crítico de sus alumnos.", 7],
+                        ["Le diría que no esperas cambiar nada por el momento, pero que él mismo te ha enseñado a cuestionar las ideas sin importar qué tan arraigadas estén.", 7],
+                        ["Le recordaría que participar de dicha práctica a pesar de saber que está mal es cometer una injusticia.", 7]
+                      ]
+                    },
+                    {
+                      "id": 7,
+                      "talk": "Elegiste correctamente, entendiste muy bien las ideas de Sócrates y las aplicas en tus reflexiones y decisiones, ahora, ¿las otras opciones no te parecen válidas? ¿La que elegiste es la única que podría funcionar? Puedes terminar aquí el ejercicio o verificar qué pasaría si eliges otra de las opciones.",
+                      "end": true
+                    }
+                  ]
+               }
+           ]
+        }
+       ]
+    },
+    {
+       "title": "Actividad 2. Escuelas éticas.",
+       "icon": "low_priority",
+       "steps": false,
+       "class": "flex flex-col justify-center",
+       "blocks": [
+        {
+           "width": "100%",
+           "content": [
+               {"inst": "Lee el siguiente dilema ético y relaciona cada guía de acción con la escuela ética y autor que corresponda. Sube o baja los elementos de la columna derecha para hacerlos coincidir con la columna izquierda.", "iconinst":"pan_tool"},
+               {"br": 2},
+               {"class": "h4 text-center", "text": "¿Tengo derecho de conservar un billete si lo encontré tirado en el patio de la escuela?"},
+               {"br": 1}
+              ,{
+                  "sortable": 1,
+                  "numbers": 0,
+                  "related": [
+                    "El bien se alcanza mediante la sabiduría, a la que se llega reflexionando para descubrir por uno mismo lo que es bueno y justo: ¿el billete pertenece a alguien?, ¿tomar lo que pertenece a otra persona es justo o injusto?, ¿existe una instancia que resguarde el billete y a la que puede acudir el dueño para recuperarlo? ¿qué esperaría que ocurriera si fuera mi billete?",
+                    "El bien se alcanza mediante la virtud, entendida como término medio: si un extremo es conservar el billete y el otro dejarlo donde está, el justo medio sería llevarlo a la dirección para que el dueño lo busque ahí.",
+                    "El bien se alcanza en ausencia de las pasiones pues actuar buscando sólo el placer tiene consecuencias que pueden ser perjudiciales: si conservo el billete puedo comprar cosas, pero perjudicaría al dueño o éste podría descubrirme y reclamarme.",
+                    "El bien se alcanza mediante el imperativo categórico y la buena voluntad: conservar el billete sería robar pues, aunque esté perdido tiene un dueño, esto es una ley universal, por lo que aceptar que robar es malo y llevarlo a la dirección por voluntad propia sería lo correcto."
+                  ],
+                  "items": [
+                    "Intelectualismo<br>Moral<br>Sócrates",
+                    "Eudemonismo<br>Aristóteles",
+                    "Hedonismo<br>Epicuro",
+                    "Ética Kantiana<br>Kant"
+                  ]
+              }
+           ]
+        }
+       ]
+    },
+    {
+       "title": "Actividad 3. Axiomas de la ética socrática",
+       "icon": "games",
+       "steps": true,
+       "class": "flex flex-col justify-center",
+       "blocks": [
+        {
+           "width": "100%",
+           "content": [
+             {
+                "group": 1,
+                "class": "my-1 text-center",
+                "content":[
+                  {"symbol": "axiomas"},
+                  {
+                    "symbol": "justinjust",
+                    "options": [
+                      ["A", true],
+                      ["B", false],
+                      ["C", false],
+                      ["D", false],
+                      ["E", false],
+                      {
+                       "content": [
+                         {
+                            "group": 1,
+                            "class": "text-center",
+                            "content":[
+                              {"br": 2},
+                             { "img": "img/justo.svg", "class": "h-20" },
+                             {"br": 2},
+                             {"class": "bg-white text-dark rounded p-2 h4", "textAnimation": "Un estudiante informa al profesor de {Etica que varios de sus compañeros han obtenido una copia del exámen final a pesar del riesgo que éstos tomen represalias."},
+                             {"br": 2},
+                             { "img": "img/injusto.svg", "class": "h-20" } 
+                             ,{"br": 2}
+                            ]
+                         }
+                       ]
+                      },
+                      ["A", false],
+                      ["B", false],
+                      ["C", false],
+                      ["D", false],
+                      ["E", false]
+                  ],
+                  "feedback": [
+                    "¡Muy bien! El estudiante consideró que el robo era una injusticia y, por lo tanto, lo justo era denunciarla, sin importar las consecuencias.",
+                    "Toma en cuenta que el estudiante consideró sólo lo justo o injusto del acto, no las consecuencias. Intenta de nuevo."
+                ]
+                  },
+                  {"symbol": "justinjustcss"}
+                ]
+             }
+           ]
+        },
+        {
+          "width": "100%",
+          "content": [
+            {
+               "group": 1,
+               "class": "my-1 text-center",
+               "content":[
+                 {"symbol": "axiomas"},
+                 {
+                   "symbol": "justinjust",
+                   "options": [
+                     ["A", false],
+                     ["B", false],
+                     ["C", false],
+                     ["D", false],
+                     ["E", false],
+                     {
+                      "content": [
+                        {
+                           "group": 1,
+                           "class": "text-center",
+                           "content":[
+                             {"br": 2},
+                            { "img": "img/justo.svg", "class": "h-20" },
+                            {"br": 2},
+                            {"class": "bg-white text-dark rounded p-2 h4", "textAnimation": "Un jóven decide desvelarse la noche previa a su exámen de ingreso a la universidad."},
+                            {"br": 2},
+                            { "img": "img/injusto.svg", "class": "h-20" } 
+                            ,{"br": 2}
+                           ]
+                        }
+                      ]
+                     },
+                     ["A", false],
+                     ["B", false],
+                     ["C", true],
+                     ["D", false],
+                     ["E", false]
+                 ],
+                 "feedback": [
+                   "¡Muy bien! La joven tomó una decisión pensando en su superación personal, en su bienestar y en tener mayores oportunidades laborales en el futuro.",
+                   "Toma en cuenta que la decisión de la joven redundará en su beneficio. Intenta de nuevo."
+               ]
+                 },
+                 {"symbol": "justinjustcss"}
+               ]
+            }
+          ]
+       },
+       {
+        "width": "100%",
+        "content": [
+          {
+             "group": 1,
+             "class": "my-1 text-center",
+             "content":[
+               {"symbol": "axiomas"},
+               {
+                 "symbol": "justinjust",
+                 "options": [
+                   ["A", false],
+                   ["B", false],
+                   ["C", false],
+                   ["D", false],
+                   ["E", false],
+                   {
+                    "content": [
+                      {
+                         "group": 1,
+                         "class": "text-center",
+                         "content":[
+                           {"br": 2},
+                          { "img": "img/justo.svg", "class": "h-20" },
+                          {"br": 2},
+                          {"class": "bg-white text-dark rounded p-2 h4", "textAnimation": "Una jóven obtiene un lugar en la selección de volibol gracias al rumor infundado de que la jugadora titular presentó un acta de nacimiento alterada."},
+                          {"br": 2},
+                          { "img": "img/injusto.svg", "class": "h-20" } 
+                          ,{"br": 2}
+                         ]
+                      }
+                    ]
+                   },
+                   ["A", false],
+                   ["B", false],
+                   ["C", true],
+                   ["D", false],
+                   ["E", false]
+               ],
+               "feedback": [
+                 "¡Bien! La joven debió buscar la verdad sobre su compañera y no aprovecharse del rumor para obtener un beneficio.",
+                 "Observa que la joven obtuvo su lugar gracias a un acto moralmente cuestionable. Intenta de nuevo."
+             ]
+               },
+               {"symbol": "justinjustcss"}
+             ]
+          }
+        ]
+     },
+     {
+      "width": "100%",
+      "content": [
+        {
+           "group": 1,
+           "class": "my-1 text-center",
+           "content":[
+             {"symbol": "axiomas"},
+             {
+               "symbol": "justinjust",
+               "options": [
+                 ["A", false],
+                 ["B", false],
+                 ["C", false],
+                 ["D", true],
+                 ["E", false],
+                 {
+                  "content": [
+                    {
+                       "group": 1,
+                       "class": "text-center",
+                       "content":[
+                         {"br": 2},
+                        { "img": "img/justo.svg", "class": "h-20" },
+                        {"br": 2},
+                        {"class": "bg-white text-dark rounded p-2 h4", "textAnimation": "Una jóven emigra de su pueblo a la capital para estudiar una licenciatura."},
+                        {"br": 2},
+                        { "img": "img/injusto.svg", "class": "h-20" } 
+                        ,{"br": 2}
+                       ]
+                    }
+                  ]
+                 },
+                 ["A", false],
+                 ["B", false],
+                 ["C", false],
+                 ["D", false],
+                 ["E", false]
+             ],
+             "feedback": [
+               "¡Muy bien! La joven tomó una decisión pensando en su superación personal, en su bienestar y en tener mayores oportunidades laborales en el futuro.",
+               "Toma en cuenta que la decisión de la joven redundará en su beneficio. Intenta de nuevo."
+           ]
+             },
+             {"symbol": "justinjustcss"}
+           ]
+        }
+      ]
+   },
+   {
+    "width": "100%",
+    "content": [
+      {
+         "group": 1,
+         "class": "my-1 text-center",
+         "content":[
+           {"symbol": "axiomas"},
+           {
+             "symbol": "justinjust",
+             "options": [
+               ["A", false],
+               ["B", false],
+               ["C", false],
+               ["D", false],
+               ["E", true],
+               {
+                "content": [
+                  {
+                     "group": 1,
+                     "class": "text-center",
+                     "content":[
+                       {"br": 2},
+                      { "img": "img/justo.svg", "class": "h-20" },
+                      {"br": 2},
+                      {"class": "bg-white text-dark rounded p-2 h4", "textAnimation": "Un jóven decide abstenerse de asistir a una fiesta donde se venderá alcohol porque sabe que habrá menores de edad y, por lo tanto, será una fiesta ilegal."},
+                      {"br": 2},
+                      { "img": "img/injusto.svg", "class": "h-20" } 
+                      ,{"br": 2}
+                     ]
+                  }
+                ]
+               },
+               ["A", false],
+               ["B", false],
+               ["C", false],
+               ["D", false],
+               ["E", false]
+           ],
+           "feedback": [
+             "¡Correcto! El joven sabe que participar de algo ilegal es contrario a la rectitud y, por lo tanto, traerá desorden a su vida y su alma.",
+             "Considera que, al elegir conforme a la rectitud, el joven puede considerarse un buen ser humano ya que su alma está en orden. Intenta de nuevo."
+         ]
+           },
+           {"symbol": "justinjustcss"}
+         ]
+      }
+    ]
+ }
+       ]
+    },
+    {
+      "title": "Finalizar",
+      "icon": "flag",
+      "end": true,
+      "blocks": [
+        {
+          "content": []
+        }
+      ]
+    }
+  ],
+  "symbols": {
+    "axiomas": {
+         "group": 1,
+         "class": "",
+         "content":[
+            {"inst": "Lee los siguientes enunciados y selecciona según corresponda a las siguientes preguntas. <br>- ¿El acto es justo o injusto? <br>- ¿A cuál axioma de la ética socrática se hace referencia?", "iconinst":"touch_app"},
+            {"br": 1},   
+            {
+               "dialog": 1,
+               "button": ["Axiomas de la ética socrática"],
+               "buttonClass": "btn btn-accent",
+               "modalClass": "text-left p-10"
+               ,"content":[
+                   {"class": "h5 text-center font-extrabold", "text": "Axiomas de la ética socrática"},
+                   {"br": 1},
+                   {"class": "", "text": "a) Todo agente que contempla realizar un acto debe considerar únicamente si ese acto es justo o injusto"},
+                   {"br": 1},
+                   {"class": "", "text": "b) Todo acto o decisión es racional si y sólo si persigue un bien para el agente."},
+                   {"br": 1},
+                   {"class": "", "text": "c) Algo es bueno para un agente si y sólo si es moralmente recto."},
+                   {"br": 1},
+                   {"class": "", "text": "d) Todo agente quiere su propio bien real."},
+                   {"br": 1},
+                   {"class": "", "text": "e) Para todo ente <em>e,e</em> es bueno si y sólo si posee el orden correspondiente."},
+                   {"br": 1},
+                   {"class": "text-xs text-right", "text": "Fuente: Gómez-Lobo, A (1989). <em>Los axiomas de la ética socrática.</em> <br>Estudios Públicos, 34 [Archivo PDF]."}
+               ]
+             },
+             {"br": 1}
+         ]  
+   },
+   "justinjust": {
+    "select": 1,
+    "columns": "1fr 1fr 1fr 1fr 1fr",
+    "columnsResponsive": "1fr 1fr 1fr 1fr 1fr",
+    "letters": false,
+    "optionClass": "justinjust cursor-pointer font-extrabold rounded-full w-fit mx-auto px-8 py-1 border-2 border-white/10 shadow-xl",
+    "optionClassActive": "bg-accent shadow-lg border-white/100"
+ },
+ "justinjustcss":  {"css": ".justinjust:nth-child(1){transform:rotate(-20deg) translatey(4rem)}.justinjust:nth-child(2){transform:rotate(-10deg) translatey(1rem)}.justinjust:nth-child(4){transform:rotate(10deg) translatey(1rem)}.justinjust:nth-child(5){transform:rotate(20deg) translatey(4rem)}.justinjust:nth-child(7){transform:rotate(20deg) translatey(-4rem)}.justinjust:nth-child(8){transform:rotate(10deg) translatey(-1rem)}.justinjust:nth-child(10){transform:rotate(-10deg) translatey(-1rem)}.justinjust:nth-child(11){transform:rotate(-20deg) translatey(-4rem)}"}
+  }
+}
