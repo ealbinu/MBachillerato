@@ -345,11 +345,11 @@
                           "items": [
                               { "content": ["Energía química"],"correctId": "" },
                               { "content": ["Energía nuclear"],"correctId": "" },
-                              { "content": ["Energía eléctrica"],"correctId": "#box1" },
-                              { "content": ["Energía gravitacional"],"correctId": "" },
-                              { "content": ["Energía mecánica"],"correctId": "#box2" },
-                              { "content": ["Energía lumínica"],"correctId": "" },
-                              { "content": ["Energía térmica"],"correctId": "#box3" },
+                              { "content": ["Energía eléctrica"],"correctId": "#elec" },
+                              { "content": ["Energía gravitacional"],"correctId": "#grav" },
+                              { "content": ["Energía mecánica"],"correctId": "#mec" },
+                              { "content": ["Energía lumínica"],"correctId": "#lumi" },
+                              { "content": ["Energía térmica"],"correctId": "" },
                               { "content": ["Energía sonora"],"correctId": "" }
                           ],
                           "properties": {
@@ -367,9 +367,10 @@
                           "class": "relative",
                           "content":[
                               {"img": "img/formas2.png"},
-                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[15%] top-[14%] w-[40%] h-[20%]", "id":"box1"},
-                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[25%] top-[48%] w-[40%] h-[20%]", "id":"box2"},
-                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[15%] top-[74%] w-[40%] h-[20%]", "id":"box3"}
+                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[5%] top-[14%] w-[40%] h-[20%]", "id":"elec"},
+                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[15%] top-[48%] w-[40%] h-[20%]", "id":"lumi"},
+                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[15%] top-[74%] w-[40%] h-[20%]", "id":"mec"},
+                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[60%] top-[27%] w-[40%] h-[20%]", "id":"grav"}
                           ]
                        }
                        
@@ -390,13 +391,13 @@
                        {
                           "repeater":1,
                           "items": [
-                              { "content": ["Energía química"],"correctId": "" },
+                              { "content": ["Energía química"],"correctId": "#q" },
                               { "content": ["Energía nuclear"],"correctId": "" },
-                              { "content": ["Energía eléctrica"],"correctId": "#box1" },
+                              { "content": ["Energía eléctrica"],"correctId": "#e" },
                               { "content": ["Energía gravitacional"],"correctId": "" },
-                              { "content": ["Energía mecánica"],"correctId": "#box2" },
-                              { "content": ["Energía lumínica"],"correctId": "" },
-                              { "content": ["Energía térmica"],"correctId": "#box3" },
+                              { "content": ["Energía mecánica"],"correctId": "#m" },
+                              { "content": ["Energía lumínica"],"correctId": "#l" },
+                              { "content": ["Energía térmica"],"correctId": "" },
                               { "content": ["Energía sonora"],"correctId": "" }
                           ],
                           "properties": {
@@ -414,9 +415,10 @@
                           "class": "relative",
                           "content":[
                               {"img": "img/formas3.png"},
-                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[15%] top-[14%] w-[40%] h-[20%]", "id":"box1"},
-                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[25%] top-[48%] w-[40%] h-[20%]", "id":"box2"},
-                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[15%] top-[74%] w-[40%] h-[20%]", "id":"box3"}
+                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[15%] top-[34%] w-[40%] h-[20%]", "id":"q"},
+                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[5%] top-[58%] w-[40%] h-[20%]", "id":"e"},
+                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[35%] top-[79%] w-[40%] h-[20%]", "id":"m"}
+                              ,{"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[59%] top-[54%] w-[40%] h-[20%]", "id":"l"}
                           ]
                        }
                        
@@ -437,13 +439,13 @@
                        {
                           "repeater":1,
                           "items": [
-                              { "content": ["Energía química"],"correctId": "" },
+                              { "content": ["Energía química"],"correctId": "#qu" },
                               { "content": ["Energía nuclear"],"correctId": "" },
-                              { "content": ["Energía eléctrica"],"correctId": "#box1" },
-                              { "content": ["Energía gravitacional"],"correctId": "" },
-                              { "content": ["Energía mecánica"],"correctId": "#box2" },
-                              { "content": ["Energía lumínica"],"correctId": "" },
-                              { "content": ["Energía térmica"],"correctId": "#box3" },
+                              { "content": ["Energía eléctrica"],"correctId": "#el" },
+                              { "content": ["Energía gravitacional"],"correctId": "#gr" },
+                              { "content": ["Energía mecánica"],"correctId": "#me" },
+                              { "content": ["Energía lumínica"],"correctId": "#lu" },
+                              { "content": ["Energía térmica"],"correctId": "#te" },
                               { "content": ["Energía sonora"],"correctId": "" }
                           ],
                           "properties": {
@@ -461,9 +463,12 @@
                           "class": "relative",
                           "content":[
                               {"img": "img/formas4.png"},
-                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[15%] top-[14%] w-[40%] h-[20%]", "id":"box1"},
-                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[25%] top-[48%] w-[40%] h-[20%]", "id":"box2"},
-                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[15%] top-[74%] w-[40%] h-[20%]", "id":"box3"}
+                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[55%] top-[1%] w-[30%] h-[15%]", "id":"lu"},
+                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[1%] top-[48%] w-[30%] h-[15%]", "id":"gr"},
+                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[35%] top-[66%] w-[30%] h-[15%]", "id":"qu"}
+                              ,{"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[35%] top-[82%] w-[30%] h-[15%]", "id":"te"}
+                              ,{"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[57%] top-[24%] w-[30%] h-[15%]", "id":"me"}
+                              ,{"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[22%] top-[1%] w-[30%] h-[15%]", "id":"el"}
                           ]
                        }
                        
@@ -554,15 +559,15 @@
                     {
                         "repeater":1,
                         "items": [
-                            { "content": ["Geotérmica"],"correctId": "" },
-                            { "content": ["Nuclear"],"correctId": "" },
-                            { "content": ["Gas natural"],"correctId": "#box1" },
-                            { "content": ["Hidráulica"],"correctId": "" },
-                            { "content": ["Biomasa"],"correctId": "#box2" },
-                            { "content": ["Eólica"],"correctId": "" },
-                            { "content": ["Petróleo"],"correctId": "#box3" },
-                            { "content": ["Solar"],"correctId": "" }
-                            ,{ "content": ["Carbón"],"correctId": "" }
+                            { "content": ["Geotérmica"],"correctId": "#b6" },
+                            { "content": ["Nuclear"],"correctId": "#b3" },
+                            { "content": ["Gas natural"],"correctId": "#b5" },
+                            { "content": ["Hidráulica"],"correctId": "#b4" },
+                            { "content": ["Biomasa"],"correctId": "#b8" },
+                            { "content": ["Eólica"],"correctId": "#b7" },
+                            { "content": ["Petróleo"],"correctId": "#b2" },
+                            { "content": ["Solar"],"correctId": "#b9" }
+                            ,{ "content": ["Carbón"],"correctId": "#b1" }
                             ,{ "content": ["Mareomotriz"],"correctId": "" }
                         ],
                         "properties": {
@@ -576,16 +581,31 @@
                         }
                     },
                     {
-                        "group": 1,
-                        "class": "relative",
-                        "content":[
-                            {"class": "h4 text-center", "text": "Fuentes de energía que utiliza la población mexicana."},
-                            {"br": 2},
-                            {"img": "img/grafica.png", "class":"w-1/2"},
-                            {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[15%] top-[14%] w-[40%] h-[20%]", "id":"box1"},
-                            {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[25%] top-[48%] w-[40%] h-[20%]", "id":"box2"},
-                            {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[15%] top-[74%] w-[40%] h-[20%]", "id":"box3"}
-                        ]
+                       "group": 1,
+                       "class": "text-center",
+                       "content":[
+                           {"class": "h4 text-center", "text": "Fuentes de energía que utiliza la población mexicana."},
+                           {
+                               "group": 1,
+                               "class": "relative",
+                               "content":[
+                                   {"br": 2},
+                                   {"img": "img/grafica.png", "class":"w-1/2"},
+                                   {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[38%] top-[10%] w-[20%] h-[14%]", "id":"b1"},
+                                   {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[60%] top-[14%] w-[20%] h-[14%]", "id":"b2"},
+                                   {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[65%] top-[34%] w-[20%] h-[14%]", "id":"b3"},
+                                   {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[65%] top-[64%] w-[20%] h-[14%]", "id":"b4"},
+                                   {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[50%] top-[80%] w-[20%] h-[14%]", "id":"b5"},
+                                   {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[20%] top-[80%] w-[20%] h-[14%]", "id":"b6"}
+                                   ,{"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[15%] top-[60%] w-[20%] h-[14%]", "id":"b7"}
+                                   ,{"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[15%] top-[40%] w-[20%] h-[14%]", "id":"b8"}
+                                   ,{"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[17%] top-[20%] w-[20%] h-[14%]", "id":"b9"}
+
+                                   
+                               ]
+                           }
+                           
+                       ]
                     }
                     
                 ]
