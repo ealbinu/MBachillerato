@@ -54,12 +54,59 @@ function draw() {
 
 }
 
+function springMult(dinaY, dinaYDiv, numb){
+  return dinaY+dinaYDiv*numb
+}
+
 function drawSpring() {
   // Draw base
   fill(0.2);
   let baseWidth = 0.5 * ps + -8;
   fill(230)
-  rect(width / 2 - baseWidth, ps + springHeight, width / 2 + baseWidth, height, 10, 10 , 0, );
+  
+  line(width/2 - baseWidth)
+
+  var rectX = width / 2 - baseWidth
+  var rectY = ps + springHeight
+  var rectW = width / 2 + baseWidth
+  var rectH = height
+
+
+  //rect(rectX, rectY, rectW, rectH, 10, 10 , 0, );
+  
+  strokeWeight(20);
+  let strokeDark = 20
+  let strokeLight = 4
+  let springDark = color(200,204,228);
+  let springDark2 = color(190,194,208);
+  let springLight = color(240,244,255, 100);
+
+  let dinaY = rectH-Math.round(rectH - rectY)
+  
+  let dinaYDiv = Math.round((rectH - dinaY)/9)
+  
+
+
+  strokeWeight(strokeDark);
+  
+  stroke(springDark2);
+  line(rectX, springMult(dinaY, dinaYDiv, 1) , rectW, springMult(dinaY, dinaYDiv, 0));
+  for(var i in [0,1,2,3]){
+    strokeWeight(strokeDark);
+    stroke(springDark);
+    line(rectX, springMult(dinaY, dinaYDiv, 1+(i*2)) , rectW, springMult(dinaY, dinaYDiv, 2+(i*2)));
+    stroke(springDark2);
+    line(rectX, springMult(dinaY, dinaYDiv, 3+(i*2)) , rectW, springMult(dinaY, dinaYDiv, 2+(i*2)));
+    //Light
+    stroke(springLight);
+    strokeWeight(strokeLight);
+    line(rectX, springMult(dinaY-5, dinaYDiv, 1+(i*2)) , rectW, springMult(dinaY, dinaYDiv, 2+(i*2))-5);
+    line(rectX, springMult(dinaY-5, dinaYDiv, 3+(i*2)) , rectW, springMult(dinaY, dinaYDiv, 2+(i*2))-5);
+  }
+  noStroke()
+
+
+
 
   // Set color and draw top bar
   if (over || move) {
@@ -68,8 +115,13 @@ function drawSpring() {
     fill('#94a71a');
   }
 
-  rect(left, ps, right, ps + springHeight, 10);
+  rect(left, ps, right, ps + springHeight, 7);
+  fill(255,255,255,50);
+  rect(left, ps, right, ps + springHeight-20, 40);
+  fill(0,0,0,50);
+  rect(left, ps+20, right, ps + springHeight, 40);
   //Forcebar
+  fill(200)
   text('Energía potencial ', 20, 30);
   fill(50)
   rect(20, 50, 280, 40)
