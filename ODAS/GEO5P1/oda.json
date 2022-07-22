@@ -768,16 +768,16 @@
                {"inst": "Consulta en el catálogo de mapas topográficos del INEGI, disponible en el enlace <a href='https://bit.ly/3FXx6Ky' target='_blank'>https://bit.ly/3FXx6Ky</a>, localiza los municipios que se muestran a continuación y señala con color rojo las zonas con riesgo de inundación en cada mapa.", "iconinst":"touch_app"},
                 {"br": 2},
                 {"class": "h4", "text": "1. Zona limítrofe de los municipios de San Pedro Tlaquepaque y Tonalá en el estado de Jalisco, México."},
-                { "img": "map/1.png ", "class": "" },
+                { "img": "map/1.jpg ", "class": "" },
                 {"br": 2},
                 {"class": "h4", "text": "2. Municipio de Valle de Chalco Solidaridad en el Estado de México, México."},
-                { "img": "map/2.png ", "class": "" },
+                { "img": "map/2.jpg ", "class": "" },
                 {"br": 2},
                 {"class": "h4", "text": "3. Municipio de Tula de Allende en el estado de Hidalgo, México."},
-                { "img": "map/3.png ", "class": "" },
+                { "img": "map/3.jpg ", "class": "" },
                 {"br": 2},
                 {"class": "h4", "text": "4. Municipio de Guatacalca en el estado de Tabasco, México."},
-                { "img": "map/4.png ", "class": "" }
+                { "img": "map/4.jpg ", "class": "" }
             ]
         }
        ]
@@ -906,7 +906,7 @@
            "content": [
                {"inst": "Observa el mapa topográfico de algunas localidades de Tabasco y contesta las preguntas.", "iconinst":"touch_app"},
                {"br": 2},
-               { "img": "topo/1.png", "class": "" },
+               { "img": "topo/1.jpg", "class": "" },
                {"br": 2},
                {"class": "", "text": "1. ¿Consideras que las localidades que se muestran en el mapa tienen riesgo de inundación? Justifica tu respuesta."},
                {"editor": 1}
@@ -918,7 +918,7 @@
             "content": [
                 {"inst": "Observa el mapa topográfico de algunas localidades de Tabasco y contesta las preguntas.", "iconinst":"touch_app"},
                 {"br": 2},
-                { "img": "topo/1.png", "class": "" },
+                { "img": "topo/1.jpg", "class": "" },
                 {"br": 2},
                 {"class": "", "text": "2. Investiga qué municipios de Tabasco sufrieron inundaciones en el 2020 y contesta: ¿las localidades que se muestran en el mapa pertenecen a dichos municipios? Justifica tu respuesta."},
                 {"editor": 1}
@@ -930,7 +930,7 @@
             "content": [
                 {"inst": "Observa el mapa topográfico de algunas localidades de Tabasco y contesta las preguntas.", "iconinst":"touch_app"},
                 {"br": 2},
-                { "img": "topo/1.png", "class": "" },
+                { "img": "topo/1.jpg", "class": "" },
                 {"br": 2},
                 {"class": "", "text": "3. ¿Qué propones para disminuir las afectaciones en zonas como las que se muestran en el mapa? Justifica tu respuesta."},
                 {"editor": 1}
@@ -942,7 +942,7 @@
             "content": [
                 {"inst": "Observa el mapa topográfico de algunas localidades de Tabasco y contesta las preguntas.", "iconinst":"touch_app"},
                 {"br": 2},
-                { "img": "topo/1.png", "class": "" },
+                { "img": "topo/1.jpg", "class": "" },
                 {"br": 2},
                 {"class": "", "text": "4. ¿Qué importancia tiene conocer las zonas de riesgo del lugar en el que vives? Justifica tu respuesta."},
                 {"editor": 1}
