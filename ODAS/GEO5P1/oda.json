@@ -1,0 +1,965 @@
+{
+  "id": "GEO5P1",
+  "programa": "DGB",
+  "materia": "GEOGRAFIA",
+  "title": "Recursos cartográficos y su aplicación",
+  "bgimgs": 5,
+  "ficha": [
+    [
+      "Aprendizaje esperado",
+      "Examina diversos recursos cartográficos, para explicar de manera asertiva el espacio geográfico de su entorno."
+    ],
+    ["Eje transversal", "Social."]
+  ],
+  "screens": [
+    {
+      "title": "Recursos cartográficos y su aplicación",
+      "icon": "info",
+      "steps": true,
+      "class": "flex flex-col justify-center",
+      "blocks": [
+        {
+          "width": "100%",
+          "content": [
+            {
+              "class": "h2 text-center",
+              "textAnimation": "Recursos cartográficos y su aplicación"
+            },
+            { "br": 1 },
+            {
+              "group": 1,
+              "class": "text-center",
+              "content": [
+                {
+                  "img": "img/1.jpg",
+                  "class": "rounded shadow-md max-w-[30rem]"
+                }
+              ]
+            },
+            { "br": 1 },
+            "Los recursos cartográficos engloban a todos aquellos materiales que representan de forma simplificada un espacio geográfico, ya sea en la superficie terrestre o en cualquier otro cuerpo celeste. Examinarlos permite explicar de manera efectiva los espacios geográficos del entorno y con ello detectar los posibles riesgos o viabilidad de que un asentamiento humano se establezca en uno u otro lugar."
+          ]
+        },
+        {
+          "width": "100%",
+          "content": [
+            "El ser humano ha representado los lugares de su entorno desde la prehistoria, cuando utilizaba las paredes de las cuevas en las que vivían para dibujar los lugares en los que podían encontrar agua y comida, es decir, las zonas de caza y acuíferos.",
+            { "br": 2 },
+            "En la actualidad contamos con diferentes tecnologías para localizar y llegar a cualquier lugar que necesitemos, como un domicilio específico, por ejemplo. Por ello es de gran importancia conocer los recursos cartográficos, para emplear correctamente aquél que sea más conveniente en una situación determinada.",
+            { "br": 2 },
+            {
+              "inst": "Haz clic en cada elemento para conocer más acerca de él.",
+              "iconinst": "touch_app"
+            },
+            { "br": 2 },
+            {
+              "grid": 1,
+              "columns": "1fr 1fr 1fr",
+              "columnsResponsive": "2fr",
+              "content": [
+                {
+                  "dialog": 1,
+                  "button": ["Paralelos"],
+                  "buttonClass": "btn btn-warning",
+                  "style": "",
+                  "content": [
+                    { "class": "text-bold h2", "text": "Paralelos" },
+                    {
+                      "iframe": "globe/paralelos.html",
+                      "class": "aspect-square"
+                    }
+                  ]
+                },
+                {
+                  "dialog": 1,
+                  "button": ["Ecuador"],
+                  "buttonClass": "btn btn-warning",
+                  "style": "",
+                  "content": [
+                    { "class": "text-bold h2", "text": "Ecuador" },
+                    { "iframe": "globe/ecuador.html", "class": "aspect-square" }
+                  ]
+                },
+                {
+                  "dialog": 1,
+                  "button": ["Meridianos"],
+                  "buttonClass": "btn btn-warning",
+                  "style": "",
+                  "content": [
+                    { "class": "text-bold h2", "text": "Meridianos" },
+                    {
+                      "iframe": "globe/meridianos.html",
+                      "class": "aspect-square"
+                    }
+                  ]
+                },
+                {
+                  "dialog": 1,
+                  "button": ["Trópico de Cáncer"],
+                  "buttonClass": "btn btn-warning",
+                  "style": "",
+                  "content": [
+                    { "class": "text-bold h2", "text": "Trópico de Cáncer" },
+                    { "iframe": "globe/tcancer.html", "class": "aspect-square" }
+                  ]
+                },
+                {
+                  "dialog": 1,
+                  "button": ["Círculo polar ártico"],
+                  "buttonClass": "btn btn-warning",
+                  "style": "",
+                  "content": [
+                    { "class": "text-bold h2", "text": "Círculo polar ártico" },
+                    { "iframe": "globe/cartico.html", "class": "aspect-square" }
+                  ]
+                },
+                {
+                  "dialog": 1,
+                  "button": ["Círculo polar antártico"],
+                  "buttonClass": "btn btn-warning",
+                  "style": "",
+                  "content": [
+                    {
+                      "class": "text-bold h2",
+                      "text": "Círculo polar antártico"
+                    },
+                    {
+                      "iframe": "globe/cantartico.html",
+                      "class": "aspect-square"
+                    }
+                  ]
+                },
+                {
+                  "dialog": 1,
+                  "button": ["Trópico de Capricornio"],
+                  "buttonClass": "btn btn-warning",
+                  "style": "",
+                  "content": [
+                    {
+                      "class": "text-bold h2",
+                      "text": "Trópico de Capricornio"
+                    },
+                    {
+                      "iframe": "globe/tcapricornio.html",
+                      "class": "aspect-square"
+                    }
+                  ]
+                },
+                {
+                  "dialog": 1,
+                  "button": ["Meridiano de Greenwich"],
+                  "buttonClass": "btn btn-warning",
+                  "style": "",
+                  "content": [
+                    {
+                      "class": "text-bold h2",
+                      "text": "Meridiano de Greenwich"
+                    },
+                    {
+                      "iframe": "globe/greenwich.html",
+                      "class": "aspect-square"
+                    }
+                  ]
+                }
+              ]
+            },
+            { "br": 2 },
+            "Por otra parte, para localizar un punto sobre la superficie terrestre se tienen como referencias espaciales la latitud, la longitud y la altitud. Éstas permiten conocer exactamente dónde se encuentra cualquier sitio sobre la faz de la Tierra. Para ello, se forma una red de paralelos y meridianos, y al punto exacto de localización le corresponden unas coordenadas únicas.",
+            { "br": 2 },
+            { "class": "h3", "text": "Coordenadas geográficas" },
+            { "br": 2 },
+            {
+              "grid": 1,
+              "columns": "1fr 1fr 1fr",
+              "columnsResponsive": "1fr",
+              "content": [
+                {
+                  "group": 1,
+                  "class": "bg-white text-dark rounded p-2",
+                  "content": [
+                    { "class": "text-bold text-center", "text": "Latitud" },
+                    "Es la distancia, expresada en grados, entre la línea ecuatorial y los polos. Según la posición respecto del hemisferio será norte  o sur.",
+                    { "img": "img/2a.png", "class": "" }
+                  ]
+                },
+                {
+                  "group": 1,
+                  "class": "bg-white text-dark rounded p-2",
+                  "content": [
+                    { "class": "text-bold text-center", "text": "Longitud" },
+                    "Es la distancia, expresada en grados, entre el meridiano cero y un punto de la superficie terrestre. Según la posición respecto del hemisferio será oeste o este, con una longitud máxima de 180° en el antimeridiano  a Greenwich.",
+                    { "img": "img/2b.png", "class": "" }
+                  ]
+                },
+                {
+                  "group": 1,
+                  "class": "bg-white text-dark rounded p-2",
+                  "content": [
+                    { "class": "text-bold text-center", "text": "Altitud" },
+                    "Es la distancia vertical entre un punto de la Tierra y el nivel del mar. Si se miden por encima de ésta, se lee metros sobre el nivel del mar (msnm), y si se mide por debajo, metros bajo el nivel del mar (mbnm).",
+                    { "br": 2 },
+                    { "img": "img/2c.png", "class": "" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mapas",
+      "icon": "info",
+      "steps": true,
+      "class": "flex flex-col justify-center",
+      "blocks": [
+        {
+          "width": "100%",
+          "content": [
+            { "class": "text-center h2", "textAnimation": "Mapas" },
+            { "br": 2 },
+            "Un mapa es la representación gráfica y métrica de un territorio. Es muy útil para representar países, estados o regiones específicas. Los mapas ayudan a mostrar de manera generalizada la información de un determinado lugar.",
+            { "br": 2 },
+            "Para tener una mayor comprensión de un mapa deben considerarse cuatro aspectos primordiales: la <strong>proyección</strong>, la <strong>escala</strong>, la <strong>orientación</strong> y la <strong>simbología</strong>.",
+            { "br": 4 },
+            { "class": "h3", "text": "Proyección" },
+            { "br": 1 },
+            "La Tierra es un geoide que está ligeramente achatado en los polos y ensanchado en el ecuador. Para representarla se utilizan los tres grandes tipos de proyecciones: cónica, azimutal y cilíndrica.",
+            { "br": 2 },
+            {
+              "inst": "Haz clic en los tipos de proyecciones para conocer más al respecto.",
+              "iconinst": "touch_app"
+            },
+            { "br": 2 },
+            {
+              "grid": 1,
+              "columns": "1fr 1fr 1fr",
+              "columnsResponsive": "1fr",
+              "class": "text-center",
+              "content": [
+                {
+                  "dialog": 1,
+                  "button": ["Proyección cónica"],
+                  "buttonClass": "btn btn-secondary",
+                  "class": "",
+                  "content": [
+                    {
+                      "class": "text-bold text-center",
+                      "text": "Proyección cónica"
+                    },
+                    { "br": 2 },
+                    "Se caracteriza porque la esfera terrestre se traslada a un cono. El trazo toca las latitudes medias en las líneas paralelas. En dicha proyección los paralelos se muestran como arcos <strong>concéntricos</strong> y los meridianos como líneas rectas que coinciden en uno de los polos.",
+                    { "br": 2 },
+                    { "img": "img/pconica.jpg", "class": "rounded" }
+                  ]
+                },
+                {
+                  "dialog": 1,
+                  "button": ["Proyección azimutal"],
+                  "buttonClass": "btn btn-secondary",
+                  "class": "",
+                  "content": [
+                    {
+                      "class": "text-bold text-center",
+                      "text": "Proyección azimutal"
+                    },
+                    { "br": 2 },
+                    "Se obtiene al proyectar la superficie del globo terráqueo sobre un plano colocado de manera tangente, encima de algún punto específico, por ejemplo, el Polo Norte o el Polo Sur. En esta proyección los paralelos forman círculos y los meridianos aparecen como líneas rectas que se unen en el centro.",
+                    { "br": 2 },
+                    { "img": "img/pazimutal.jpg", "class": "rounded" }
+                  ]
+                },
+                {
+                  "dialog": 1,
+                  "button": ["Proyección cilíndrica"],
+                  "buttonClass": "btn btn-secondary",
+                  "class": "",
+                  "content": [
+                    {
+                      "class": "text-bold text-center",
+                      "text": "Proyección cilíndrica"
+                    },
+                    { "br": 2 },
+                    "Se proyecta sobre un cilindro y se obtiene como resultado una red de paralelos y meridianos.",
+                    { "br": 2 },
+                    { "class": "text-bold", "text": "Mercator" },
+                    "En esta proyección el hemisferio norte aparece más grande que el hemisferio sur. La forma de los países cercanos al ecuador es más exacta; los más cercanos a las latitudes altas aparecen alargados.",
+                    { "br": 1 },
+                    { "img": "img/pmercator.jpg", "class": "rounded" },
+                    { "br": 2 },
+                    { "class": "text-bold", "text": "Peters" },
+                    "Este tipo de proyección permite la representación más real de las dimensiones de los continentes.",
+                    { "br": 1 },
+                    { "img": "img/ppeters.jpg", "class": "rounded" },
+                    { "br": 2 },
+                    { "class": "text-bold", "text": "Robinson" },
+                    "Esta proyección presenta dimensiones más realistas, así como la forma curveada de la Tierra.",
+                    { "br": 1 },
+                    { "img": "img/probinson.jpg", "class": "rounded" }
+                  ]
+                }
+              ]
+            },
+            { "br": 4 },
+            { "class": "h3", "text": "Escala" },
+            { "br": 1 },
+            "Es la relación matemática entre la dimensión real de la superficie representada y la dimensión en el mapa.",
+            { "br": 2 },
+            {
+              "inst": "Haz clic en los tipos de escalas para conocer más al respecto.",
+              "iconinst": "touch_app"
+            },
+            { "br": 2 },
+            {
+              "grid": 1,
+              "columns": "1fr 1fr",
+              "columnsResponsive": "1fr 1fr",
+              "class": "text-center",
+              "content": [
+                {
+                  "dialog": 1,
+                  "button": ["Numérica"],
+                  "buttonClass": "btn btn-secondary",
+                  "class": "",
+                  "content": [
+                    { "class": "text-bold text-center", "text": "Numérica" },
+                    { "br": 2 },
+                    "Se expresa mediante una fracción cuyo numerador siempre será el número 1. Por ejemplo, si encontramos un mapa con escala 1: 200 000 significa que un centímetro de longitud en el mismo representa 200 000 centímetros de longitud real, lo cual se lee uno a doscientos mil.",
+                    { "br": 2 },
+                    { "img": "img/numerica.png", "class": "rounded " }
+                  ]
+                },
+                {
+                  "dialog": 1,
+                  "button": ["Gráfica"],
+                  "buttonClass": "btn btn-secondary",
+                  "class": "",
+                  "content": [
+                    { "class": "text-bold text-center", "text": "Gráfica" },
+                    { "br": 2 },
+                    "Sirve para medir distancias en un mapa. Ésta se representa mediante una recta dividida, en la cual se indica a cuántas unidades (metros, kilómetros, millas) equivale cada segmento de la recta.",
+                    { "br": 2 },
+                    { "img": "img/grafica.png", "class": "rounded" }
+                  ]
+                }
+              ]
+            },
+            { "br": 4 },
+            { "class": "h3", "text": "Orientación" },
+            { "br": 1 },
+            "Es la perspectiva que se tiene respecto al entorno desde cualquier punto en el que se encuentre. Para ello anteriormente se utilizaba la salida y la puesta del Sol para identificar el este y el oeste, respectivamente; posteriormente se utilizaron las brújulas y, en la actualidad, el giroscopio de un celular permite orientarnos. En los mapas se suele utilizar la rosa de los vientos o meridiana.",
+            { "br": 4 },
+            { "class": "h3", "text": "Simbología" },
+            { "br": 1 },
+            "Es el conjunto de signos convencionales o símbolos que sirven para identificar sitios de interés como hospitales, aeropuertos, estacionamientos, museos, iglesias, ríos montañas, lagos, etcétera.",
+            { "br": 2 },
+            "En México, el Instituto Nacional de Estadística y Geografía (INEGI) es el encargado de establecer la normativa que rige la simbología que se presenta en mapas. Con ello establece la dimensión y el color de los símbolos de acuerdo con la escala del mapa. Es importante mencionar que algunos de estos símbolos están estandarizados a nivel internacional y se utilizan en las aplicaciones de geoposicionamiento, aunque en algunas ocasiones se hacen leves cambios de color y diseño, sin embargo, siguen siendo útiles para identificar los sitios de interés.",
+            { "br": 2 },
+            {
+              "inst": "Haz clic en los siguientes símbolos para concer su significado.",
+              "iconinst": "touch_app"
+            },
+            { "br": 2 },
+            {
+              "grid": 1,
+              "columns": "1fr 1fr 1fr",
+              "columnsResponsive": "1fr 1fr",
+              "content": [
+                {
+                  "repeater": 1,
+                  "items": [
+                    {
+                      "button": [{ "img": "simbologia/sim1.png", "class": "" }],
+                      "content": [
+                        {
+                          "img": "simbologia/sim1.png",
+                          "class": "max-w-[10rem]"
+                        },
+                        {
+                          "class": "h3",
+                          "textAnimation": "Centro de asistencia médica"
+                        }
+                      ]
+                    },
+                    {
+                      "button": [{ "img": "simbologia/sim2.png", "class": "" }],
+                      "content": [
+                        {
+                          "img": "simbologia/sim2.png",
+                          "class": "max-w-[10rem]"
+                        },
+                        { "class": "h3", "textAnimation": "Pirámide" }
+                      ]
+                    },
+                    {
+                      "button": [{ "img": "simbologia/sim3.png", "class": "" }],
+                      "content": [
+                        {
+                          "img": "simbologia/sim3.png",
+                          "class": "max-w-[10rem]"
+                        },
+                        {
+                          "class": "h3",
+                          "textAnimation": "Malpaís (terreno volcánico)"
+                        }
+                      ]
+                    },
+                    {
+                      "button": [{ "img": "simbologia/sim4.png", "class": "" }],
+                      "content": [
+                        {
+                          "img": "simbologia/sim4.png",
+                          "class": "max-w-[10rem]"
+                        },
+                        { "class": "h3", "textAnimation": "Escuela" }
+                      ]
+                    },
+                    {
+                      "button": [{ "img": "simbologia/sim5.png", "class": "" }],
+                      "content": [
+                        {
+                          "img": "simbologia/sim5.png",
+                          "class": "max-w-[10rem]"
+                        },
+                        { "class": "h3", "textAnimation": "Templo" }
+                      ]
+                    },
+                    {
+                      "button": [{ "img": "simbologia/sim6.png", "class": "" }],
+                      "content": [
+                        {
+                          "img": "simbologia/sim6.png",
+                          "class": "max-w-[10rem]"
+                        },
+                        { "class": "h3", "textAnimation": "Manantial" }
+                      ]
+                    },
+                    {
+                      "button": [{ "img": "simbologia/sim7.png", "class": "" }],
+                      "content": [
+                        {
+                          "img": "simbologia/sim7.png",
+                          "class": "max-w-[10rem]"
+                        },
+                        {
+                          "class": "h3",
+                          "textAnimation": "Aeropuerto internacional"
+                        }
+                      ]
+                    },
+                    {
+                      "button": [{ "img": "simbologia/sim8.png", "class": "" }],
+                      "content": [
+                        {
+                          "img": "simbologia/sim8.png",
+                          "class": "max-w-[10rem]"
+                        },
+                        { "class": "h3", "textAnimation": "Vía férrea" }
+                      ]
+                    },
+                    {
+                      "button": [{ "img": "simbologia/sim9.png", "class": "" }],
+                      "content": [
+                        {
+                          "img": "simbologia/sim9.png",
+                          "class": "max-w-[10rem]"
+                        },
+                        { "class": "h3", "textAnimation": "Mina" }
+                      ]
+                    },
+                    {
+                      "button": [
+                        { "img": "simbologia/sim10.png", "class": "" }
+                      ],
+                      "content": [
+                        {
+                          "img": "simbologia/sim10.png",
+                          "class": "max-w-[10rem]"
+                        },
+                        {
+                          "class": "h3",
+                          "textAnimation": "Aeropuerto nacional"
+                        }
+                      ]
+                    },
+                    {
+                      "button": [
+                        { "img": "simbologia/sim11.png", "class": "" }
+                      ],
+                      "content": [
+                        {
+                          "img": "simbologia/sim11.png",
+                          "class": "max-w-[10rem]"
+                        },
+                        { "class": "h3", "textAnimation": "Vegetación densa" }
+                      ]
+                    },
+                    {
+                      "button": [
+                        { "img": "simbologia/sim12.png", "class": "" }
+                      ],
+                      "content": [
+                        {
+                          "img": "simbologia/sim12.png",
+                          "class": "max-w-[10rem]"
+                        },
+                        {
+                          "class": "h3",
+                          "textAnimation": "Muelle o embarcadero"
+                        }
+                      ]
+                    },
+                    {
+                      "button": [
+                        { "img": "simbologia/sim13.png", "class": "" }
+                      ],
+                      "content": [
+                        {
+                          "img": "simbologia/sim13.png",
+                          "class": "max-w-[10rem]"
+                        },
+                        { "class": "h3", "textAnimation": "Presa" }
+                      ]
+                    },
+                    {
+                      "button": [
+                        { "img": "simbologia/sim14.png", "class": "" }
+                      ],
+                      "content": [
+                        {
+                          "img": "simbologia/sim14.png",
+                          "class": "max-w-[10rem]"
+                        },
+                        {
+                          "class": "h3",
+                          "textAnimation": "Terreno sujeto a inundación"
+                        }
+                      ]
+                    },
+                    {
+                      "button": [
+                        { "img": "simbologia/sim15.png", "class": "" }
+                      ],
+                      "content": [
+                        {
+                          "img": "simbologia/sim15.png",
+                          "class": "max-w-[10rem]"
+                        },
+                        { "class": "h3", "textAnimation": "Nieve" }
+                      ]
+                    }
+                  ],
+                  "properties": {
+                    "dialog": 1,
+                    "buttonClass": "max-w-[10rem]",
+                    "class": "text-center"
+                  }
+                }
+              ]
+            },
+            { "br": 2 },
+            "La simbología de los mapas también se utiliza en las aplicaciones de geoposicionamiento, aunque en estos casos los símbolos están más relacionados con los sitios de interés comercial, social, recreativo y cultural. Algunos de los símbolos más utilizados se muestran a continuación.",
+            { "br": 2 },
+            {
+              "inst": "Haz clic en cada símbolo para conocer su significado.",
+              "iconinst": "touch_app"
+            },
+            { "br": 2 },
+            {
+              "grid": 1,
+              "columns": "1fr 1fr 1fr 1fr 1fr",
+              "columnsResponsive": "1fr 1fr 1fr",
+              "class": "text-center",
+              "content": [
+                {
+                  "repeater": 1,
+                  "items": [
+                    {
+                      "items": [
+                        { "img": "icons/i1.png", "class": "max-w-[8rem]" },
+                        { "class": "text-bold py-4", "text": "Restaurante" }
+                      ]
+                    },
+                    {
+                        "items": [
+                          { "img": "icons/i2.png", "class": "max-w-[8rem]" },
+                          { "class": "text-bold py-4", "text": "Café" }
+                        ]
+                      },
+                      {
+                        "items": [
+                          { "img": "icons/i3.png", "class": "max-w-[8rem]" },
+                          { "class": "text-bold py-4", "text": "Bar" }
+                        ]
+                      },
+                      {
+                        "items": [
+                          { "img": "icons/i4.png", "class": "max-w-[8rem]" },
+                          { "class": "text-bold py-4", "text": "Eventos" }
+                        ]
+                      },
+                      {
+                        "items": [
+                          { "img": "icons/i5.png", "class": "max-w-[8rem]" },
+                          { "class": "text-bold py-4", "text": "Centro recreativo" }
+                        ]
+                      },
+                      {
+                        "items": [
+                          { "img": "icons/i6.png", "class": "max-w-[8rem]" },
+                          { "class": "text-bold py-4", "text": "Hotel" }
+                        ]
+                      },
+                      {
+                        "items": [
+                          { "img": "icons/i7.png", "class": "max-w-[8rem]" },
+                          { "class": "text-bold py-4", "text": "Parque" }
+                        ]
+                      },
+                      {
+                        "items": [
+                          { "img": "icons/i8.png", "class": "max-w-[8rem]" },
+                          { "class": "text-bold py-4", "text": "Centro comercial" }
+                        ]
+                      },
+                      {
+                        "items": [
+                          { "img": "icons/i9.png", "class": "max-w-[8rem]" },
+                          { "class": "text-bold py-4", "text": "Hospital" }
+                        ]
+                      },
+                      {
+                        "items": [
+                          { "img": "icons/i10.png", "class": "max-w-[8rem]" },
+                          { "class": "text-bold py-4", "text": "Banco" }
+                        ]
+                      },
+                      {
+                        "items": [
+                          { "img": "icons/i11.png", "class": "max-w-[8rem]" },
+                          { "class": "text-bold py-4", "text": "Gasolinería" }
+                        ]
+                      },
+                      {
+                        "items": [
+                          { "img": "icons/i12.png", "class": "max-w-[8rem]" },
+                          { "class": "text-bold py-4", "text": "Estacionamiento" }
+                        ]
+                      },
+                      {
+                        "items": [
+                          { "img": "icons/i13.png", "class": "max-w-[8rem]" },
+                          { "class": "text-bold py-4", "text": "Teatro" }
+                        ]
+                      },
+                      {
+                        "items": [
+                          { "img": "icons/i14.png", "class": "max-w-[8rem]" },
+                          { "class": "text-bold py-4", "text": "Escuela" }
+                        ]
+                      }
+                  ],
+                  "properties": {
+                    "switch": 1,
+                    "click": true,
+                    "class": "aspect-square flex justify-center items-center bg-white rounded-full text-dark"
+                  }
+                }
+              ]
+            },
+            {"br": 2},
+            {"class": "text-right text-xs", "text": "<strong>Fuentes:</strong> Caire, J. (2002). Cartografía Básica. México: UNAM. Carrascal, E. (2007). Metodología para el análisis e interpretación de los mapas. México: UNAM - Instituto de Geografía."}
+          ]
+        }
+      ]
+    },
+    {
+       "title": "Actividad I",
+       "icon": "games",
+       "steps": true,
+       "class": "flex flex-col justify-center",
+       "blocks": [
+        {
+           "width": "100%",
+           "content": [
+               {"inst": "Arrastra los nombres de los principales paralelos al lugar que les corresponde en el mapa.", "iconinst":"pan_tool"},
+               {"br": 1},
+               {
+                  "grid": 1,
+                  "columns": "1fr 2fr",
+                  "columnsResponsive": "1fr",
+                  "content":[
+                        {
+                           "group": 1,
+                           "class": "",
+                           "content":[
+                               {
+                                  "repeater":1,
+                                  "items": [
+                                     {
+                                         "content": ["Trópico de capricornio"],
+                                         "correctId": "#tcapricornio"
+                                     },
+                                     {
+                                         "content": ["Ecuador"],
+                                         "correctId": "#ecuador"
+                                     },
+                                     {
+                                         "content": ["Círculo polar ártico"],
+                                         "correctId": "#cartico"
+                                     },
+                                     {
+                                         "content": ["Círculo polar antártico"],
+                                         "correctId": "#cantartico"
+                                     },
+                                     {
+                                         "content": ["Trópico de cáncer"],
+                                         "correctId": "#tcancer"
+                                     }
+                                  ],
+                                  "properties": 
+                                     {
+                                         "drag": 1,
+                                         "bounds": "#screen-2",
+                                         "class": "my-1 w-fit mx-auto",
+                                         "dropzone": ".drop",
+                                         "droppedClass": "text-xs block !w-full",
+                                         "dropzoneClass": "",
+                                        "hover": "border-accent" 
+                                     }
+                               }
+                           ]
+                        },
+                        {
+                           "group": 1,
+                           "class": "relative",
+                           "content":[
+                                { "img": "img/zonas.png", "class": "w-full" },
+                                {"html": " ", "id":"cartico" ,"class":"drop dropItem absolute w-[30%] h-[15%] right-[5%] top-[6%] bg-black/30"},
+                                {"html": " ", "id":"tcancer" ,"class":"drop dropItem absolute w-[30%] h-[15%] right-[5%] top-[33%] bg-black/30"},
+                                {"html": " ", "id":"ecuador" ,"class":"drop dropItem absolute w-[30%] h-[15%] right-[5%] top-[50%] bg-black/30"},
+                                {"html": " ", "id":"tcapricornio" ,"class":"drop dropItem absolute w-[30%] h-[15%] right-[5%] top-[68%] bg-black/30"},
+                                {"html": " ", "id":"cantartico" ,"class":"drop dropItem absolute w-[30%] h-[15%] right-[5%] top-[85%] bg-black/30"}
+                           ]
+                        }
+                  ]
+               },
+               {"br": 2},
+               {"inst": "Contesta las siguientes preguntas.", "iconinst":"touch_app"},
+               {"br": 2},
+               {"class": "h4 text-center", "text": "a) ¿Los principales paralelos guardan alguna relación con las regiones climáticas del mundo? Justifica tu respuesta."},
+               { "editor":1 }
+               ,{"br": 2},
+               {"class": "h4 text-center", "text": "b) ¿Entre qué paralelos se presentan las regiones más cálidos del planeta? Justifica tu respuesta."},
+               { "editor":1 }
+           ]
+        }
+       ]
+    },
+    {
+       "title": "Actividad II",
+       "icon": "info",
+       "steps": true,
+       "class": "flex flex-col justify-center",
+       "blocks": [
+        {
+           "width": "100%",
+           "content": [
+               {"inst": "Consulta en el catálogo de mapas topográficos del INEGI, disponible en el enlace <a href='https://bit.ly/3FXx6Ky' target='_blank'>https://bit.ly/3FXx6Ky</a>, localiza los municipios que se muestran a continuación y señala con color rojo las zonas con riesgo de inundación en cada mapa.", "iconinst":"touch_app"},
+                {"br": 2},
+                {"class": "h4", "text": "1. Zona limítrofe de los municipios de San Pedro Tlaquepaque y Tonalá en el estado de Jalisco, México."},
+                { "img": "map/1.png ", "class": "" },
+                {"br": 2},
+                {"class": "h4", "text": "2. Municipio de Valle de Chalco Solidaridad en el Estado de México, México."},
+                { "img": "map/2.png ", "class": "" },
+                {"br": 2},
+                {"class": "h4", "text": "3. Municipio de Tula de Allende en el estado de Hidalgo, México."},
+                { "img": "map/3.png ", "class": "" },
+                {"br": 2},
+                {"class": "h4", "text": "4. Municipio de Guatacalca en el estado de Tabasco, México."},
+                { "img": "map/4.png ", "class": "" }
+            ]
+        }
+       ]
+    },
+    {
+       "title": "Actividad III",
+       "icon": "games",
+       "steps": true,
+       "class": "flex flex-col justify-center",
+       "blocks": [
+        {
+           "width": "100%",
+           "content": [
+               {"inst": "Selecciona la opción correcta.", "iconinst":"touch_app"},
+               {"br": 2},
+               {"class": "h4 text-center", "text": "1. Javier es un biólogo marino que investiga el efecto del cambio climático en la población de pingüinos de las regiones polares. ¿Qué tipo de proyección le conviene utilizar para localizar dichas poblaciones?"},
+               {
+                  "select": 1,
+                  "columns": "1fr 1fr 1fr 1fr",
+                  "options": [
+                      ["Robinson", false],
+                      ["Azimutal", true],
+                      ["Cónica", false],
+                      ["Peters", false]
+                  ]
+               },
+               {"br": 2},
+               {"class": "h4 text-center", "text": "2. Es el tipo de proyección que se emplea para el trazo de continentes, rescata principalmente a países ubicados en latitudes medias."},
+               {
+                  "select": 1,
+                  "columns": "1fr 1fr 1fr 1fr",
+                  "options": [
+                      ["Robinson", false],
+                      ["Azimutal", false],
+                      ["Cónica", true],
+                      ["Peters", false]
+                  ]
+               },
+               {"br": 2},
+               {"class": "h4 text-center", "text": "3. Es la proyección en la que el único meridiano recto es el meridiano de Greenwich."},
+               {
+                  "select": 1,
+                  "columns": "1fr 1fr 1fr 1fr",
+                  "options": [
+                      ["Robinson", true],
+                      ["Azimutal", false],
+                      ["Cónica", false],
+                      ["Peters", false]
+                  ]
+               },
+               {"br": 2},
+               {"class": "h4 text-center", "text": "4. ¿Qué proyección utilizarías si quisieras observar con más detalle la región del ecuador?"},
+               {
+                  "select": 1,
+                  "columns": "1fr 1fr 1fr 1fr",
+                  "options": [
+                      ["Robinson", false],
+                      ["Azimutal", false],
+                      ["Cónica", true],
+                      ["Peters", false]
+                  ]
+               },
+               {"br": 2},
+               {"class": "h4 text-center", "text": "5. ¿Cuál es la proyección en la que los continentes tienen la representación más real del tamaño?"},
+               {
+                  "select": 1,
+                  "columns": "1fr 1fr 1fr 1fr",
+                  "options": [
+                      ["Robinson", false],
+                      ["Azimutal", false],
+                      ["Cónica", false],
+                      ["Peters", true]
+                  ]
+               }
+           ]
+        }
+       ]
+    },
+    {
+       "title": "Actividad IV",
+       "icon": "article",
+       "steps": true,
+       "class": "flex flex-col justify-center",
+       "blocks": [
+        {
+           "width": "100%",
+           "content": [
+               {"inst": "A partir del planteamiento, contesta las siguientes preguntas.", "iconinst":"touch_app"},
+               {"br": 2},
+               "Paola Morán es una atleta mexicana que compitió en la prueba individual de los 400 metros planos en los recientes Juegos Olímpicos de Tokio 2020, los cuales se pospusieron al 2021 a causa de la pandemia de COVID. La carrera se llevó a cabo en el estadio olímpico, que está marcado con el pin de color rojo, y ella se hospedó en la villa olímpica. En la siguiente imagen se muestra un mapa de las cercanías al complejo olímpico.",
+               {"br": 2},
+               {
+                  "grid": 1,
+                  "columns": "1fr 1fr",
+                  "columnsResponsive": "1fr",
+                  "content":[
+                      {
+                       "group": 1,
+                       "class": "",
+                       "content":[
+                           "1. Uno de sus acompañantes no pudo hospedarse en el complejo olímpico, por lo que buscó alojamiento en el hotel más cercano al estadio en dónde compitió Paola. ¿Qué distancia recorrería caminando en línea recta si la entrada al estadio está justo en frente de la villa olímpica? Utiliza únicamente un decimal en tu respuesta. Caminando en línea recta recorrería alrededor de 1.1 km.",
+                           { "editor":1, "class":"h-60"},
+                           {"br": 2},
+                           "2. En caso de que el acompañante de Paola requiera visitar un hospital, ¿cuántas opciones tiene cerca? De acuerdo con el mapa tiene 2 hospitales cercanos.",
+                           { "editor":1 , "class":"h-60"},
+                           {"br": 2},
+                           "3. Investiga el símbolo que se usa en Japón para señalar a las escuelas. ¿Cuántas escuelas se muestran en el mapa? En el mapa se muestran 2 escuelas.",
+                           { "editor":1 , "class":"h-60"}
+                       ]
+                    },
+                    { "img": "img/5.png", "class": "" }
+                  ]
+               }
+           ]
+        }
+       ]
+    },
+    {
+       "title": "Actividad V",
+       "icon": "article",
+       "steps": true,
+       "class": "flex flex-col justify-center",
+       "blocks": [
+        {
+           "width": "100%",
+           "content": [
+               {"inst": "Observa el mapa topográfico de algunas localidades de Tabasco y contesta las preguntas.", "iconinst":"touch_app"},
+               {"br": 2},
+               { "img": "topo/1.png", "class": "" },
+               {"br": 2},
+               {"class": "", "text": "1. ¿Consideras que las localidades que se muestran en el mapa tienen riesgo de inundación? Justifica tu respuesta."},
+               {"editor": 1}
+           ],
+           "buttonNextStep": "Siguiente"
+        },
+        {
+            "width": "100%",
+            "content": [
+                {"inst": "Observa el mapa topográfico de algunas localidades de Tabasco y contesta las preguntas.", "iconinst":"touch_app"},
+                {"br": 2},
+                { "img": "topo/1.png", "class": "" },
+                {"br": 2},
+                {"class": "", "text": "2. Investiga qué municipios de Tabasco sufrieron inundaciones en el 2020 y contesta: ¿las localidades que se muestran en el mapa pertenecen a dichos municipios? Justifica tu respuesta."},
+                {"editor": 1}
+            ],
+            "buttonNextStep": "Siguiente"
+         },
+         {
+            "width": "100%",
+            "content": [
+                {"inst": "Observa el mapa topográfico de algunas localidades de Tabasco y contesta las preguntas.", "iconinst":"touch_app"},
+                {"br": 2},
+                { "img": "topo/1.png", "class": "" },
+                {"br": 2},
+                {"class": "", "text": "3. ¿Qué propones para disminuir las afectaciones en zonas como las que se muestran en el mapa? Justifica tu respuesta."},
+                {"editor": 1}
+            ],
+            "buttonNextStep": "Siguiente"
+         },
+         {
+            "width": "100%",
+            "content": [
+                {"inst": "Observa el mapa topográfico de algunas localidades de Tabasco y contesta las preguntas.", "iconinst":"touch_app"},
+                {"br": 2},
+                { "img": "topo/1.png", "class": "" },
+                {"br": 2},
+                {"class": "", "text": "4. ¿Qué importancia tiene conocer las zonas de riesgo del lugar en el que vives? Justifica tu respuesta."},
+                {"editor": 1}
+            ],
+            "buttonNextScreen": "Continuar"
+         }
+       ]
+    },
+    {
+      "title": "Finalizar",
+      "icon": "flag",
+      "end": true,
+      "blocks": [
+        {
+          "content": []
+        }
+      ]
+    }
+  ]
+}

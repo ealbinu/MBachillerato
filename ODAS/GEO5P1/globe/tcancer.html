@@ -1,0 +1,38 @@
+
+<head>
+    <style> body { margin: 0; } </style>
+  
+    <script src="//unpkg.com/three"></script>
+  
+    <script src="//unpkg.com/globe.gl"></script>
+    <!--<script src="../../dist/globe.gl.js"></script>-->
+  </head>
+  
+  <body>
+    <div id="globeViz"></div>
+  
+    <script>
+      const world = Globe({ animateIn: false })
+        (document.getElementById('globeViz'))
+        .backgroundColor('#fff')
+        .globeImageUrl('earthC.jpg')
+        .bumpImageUrl('earthCBump.jpg');
+  
+      // Auto-rotate
+      world.controls().autoRotate = true;
+      world.controls().autoRotateSpeed = 0.35;
+  
+      // Add clouds sphere
+      const CLOUDS_IMG_URL = 'tcancer.png';
+      const CLOUDS_ALT = 0.05;
+  
+      new THREE.TextureLoader().load(CLOUDS_IMG_URL, cloudsTexture => {
+        const clouds = new THREE.Mesh(
+          new THREE.SphereBufferGeometry(world.getGlobeRadius() * (1 + CLOUDS_ALT), 75, 75),
+          new THREE.MeshPhongMaterial({ map: cloudsTexture, transparent: true, side: THREE.DoubleSide })
+        );
+        world.scene().add(clouds);
+
+      });
+    </script>
+  </body>
