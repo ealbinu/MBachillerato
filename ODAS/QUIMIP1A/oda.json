@@ -1,0 +1,706 @@
+{
+    "id": "QUIMIP1A",
+    "programa": "DGB",
+    "materia": "QUIMICAI",
+    "title": "La química y su impacto en la humanidad",
+    "bgimgs": 4,
+    "ficha": [
+        [
+            "Aprendizaje esperado",
+            "Distingue la interrelación de la Química con otras ciencias, de acuerdo a su contexto, reconociendo el impacto de ésta en el desarrollo de la humanidad."
+        ],
+        [
+            "Eje transversal",
+            "Habilidades lectoras."
+        ]
+    ],
+    "screens": [
+        {
+            "title": "La química y su impacto en la humanidad",
+            "icon": "info",
+            "steps": true,
+            "class": "flex flex-col justify-center",
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "class": "h3 text-center",
+                            "textAnimation": "La química y su impacto en la humanidad"
+                        },
+                        {
+                            "br": 2
+                        },
+                        {
+                            "group": 1,
+                            "class": "text-center",
+                            "content": [
+                                {
+                                    "img": "img/i1.jpg",
+                                    "class": "max-w-[30rem]"
+                                }
+                            ]
+                        },
+                        {
+                            "br": 2
+                        },
+                        {
+                            "class": "",
+                            "text": "La química cumple un papel importante en diversos aspectos de la vida cotidiana, por ejemplo, en el desarrollo de tecnologías para comprender y predecir los distintos fenómenos naturales, para lo cual se complementa con otras ciencias como la física, la biología o las matemáticas. Dichas tecnologías permiten desde el aprovechamiento de recursos energéticos hasta la prevención de desastres y salvar vidas"
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "class": "text-center h3",
+                            "textAnimation": "La química y las ciencias que se relacionan con ella"
+                        },
+                        {
+                            "br": 2
+                        },
+                        {
+                            "grid": 1,
+                            "columns": "1fr 1fr",
+                            "columnsResponsive": "1fr",
+                            "content": [
+                                {
+                                    "group": 1,
+                                    "class": "",
+                                    "content": [
+                                        "La <strong>química</strong> es la ",
+                                        {
+                                            "term": "ciencia",
+                                            "content": [
+                                                "Es una agrupación de conocimientos verificables que se obtiene por medio la observación, el razonamiento sistemático y la experimentación."
+                                            ]
+                                        },
+                                        " que se encarga de estudiar la ",
+                                        {
+                                            "term": "materia",
+                                            "content": [
+                                                "Es todo aquello que ocupa un lugar en el espacio."
+                                            ]
+                                        },
+                                        " sus características, sus propiedades y sus transformaciones. Dado que todas las cosas que se encuentran a tu alrededor son materia, entonces todo entra en el campo de estudio de la química. ",
+                                        {
+                                            "br": 2
+                                        },
+                                        "La química no es una ciencia aislada, ésta se complementa con el conocimiento de otras ciencias para poder explicar de forma más exacta los principios que la fundamentan. Por ejemplo, el diseño de los modelos atómicos que los químicos utilizan para explicar la reactividad y formación de los enlaces entre los átomos de una molécula surge de la relación entre las matemáticas, la física y la química.",
+                                        {
+                                            "br": 2
+                                        },
+                                        {
+                                            "inst": "Haz clic en las ciencias que se muestran en el esquema para conocer su contribución en la creación de modelos atómicos.",
+                                            "iconinst": "touch_app"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "group": 1,
+                                    "class": "text-center",
+                                    "content": [
+                                        {
+                                            "grid": 1,
+                                            "columns": "1fr 1fr",
+                                            "columnsResponsive": "1fr",
+                                            "content": [
+                                                {
+                                                    "dialog": 1,
+                                                    "button": [
+                                                        {
+                                                            "img": "img/ma2.png",
+                                                            "class": ""
+                                                        }
+                                                    ],
+                                                    "buttonClass": "hover:bg-transparent",
+                                                    "style": "",
+                                                    "content": [
+                                                        "Aporta el lenguaje para representar de forma cuantitativa o numérica los modelos atómicos."
+                                                    ]
+                                                },
+                                                {
+                                                    "dialog": 1,
+                                                    "button": [
+                                                        {
+                                                            "img": "img/ma3.png",
+                                                            "class": ""
+                                                        }
+                                                    ],
+                                                    "buttonClass": "hover:bg-transparent",
+                                                    "style": "",
+                                                    "content": [
+                                                        "Aporta las leyes que rigen la materia a escala microscópica y cómo afectan a las partículas subatómicas."
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "img": "img/ma1.png",
+                                            "class": ""
+                                        },
+                                        {
+                                            "dialog": 1,
+                                            "button": [
+                                                {
+                                                    "img": "img/ma4.png",
+                                                    "class": "max-w-[30%]"
+                                                }
+                                            ],
+                                            "buttonClass": "hover:bg-transparent",
+                                            "style": "",
+                                            "content": [
+                                                "Utiliza los modelos creados por la física y las matemáticas para predecir la formación de los enlaces entre los átomos de una molécula."
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                           "group": 1,
+                           "class": "text-center",
+                           "content":[
+                               {
+                                   "img": "img/2.jpg",
+                                   "class": "max-w-[20rem] rounded-xl shadow-xl"
+                               }
+                               
+                           ]
+                        }
+                        ,{
+                            "br": 2
+                        },
+                        "La química auxilia a otras ciencias y se interrelaciona con ellas, ya sea para generar nuevos conocimientos como para darle una aplicación a los ya existentes. Es considerada una ciencia central, pues es la conexión entre varias ciencias.",
+                        {
+                            "br": 2
+                        },
+                        {
+                            "inst": "Haz clic en cada una de las ciencias que se interrelacionan con la química para observar sus áreas de conocimiento y las aportaciones que hacen al estudio de los fenómenos naturales.",
+                            "iconinst": "touch_app"
+                        },
+                        {
+                            "br": 2
+                        },
+                        {
+                            "grid": 1,
+                            "columns": "1fr 1fr 1fr 1fr",
+                            "columnsResponsive": "1fr 1fr",
+                            "gap": "2rem",
+                            "content": [
+                                {
+                                   "switch":1,
+                                   "click":true,
+                                   "items": [
+                                    {
+                                       "group": 1,
+                                       "class": "text-center",
+                                       "content":[
+                                           "Matemáticas",
+                                           { "img": "img/ram/1.jpg", "class": " rounded-full w-full" }
+                                       ]
+                                    }
+                                    ,{
+                                       "group": 1,
+                                       "class": "bg-white rounded p-1 text-dark text-sm",
+                                       "content":[
+                                            "Es la ciencia que estudia las propiedades que tienen los números y establece relaciones entre ellos. <br> Las matemáticas aportan un lenguaje para describir fenómenos naturales de forma numérica y facilitar su estudio."
+                                       ]
+                                    }
+                                   ]
+                                },
+                                {
+                                    "switch":1,
+                                    "click":true,
+                                    "items": [
+                                     {
+                                        "group": 1,
+                                        "class": "text-center",
+                                        "content":[
+                                            "Física",
+                                            { "img": "img/ram/2.jpg", "class": " rounded-full w-full" }
+                                        ]
+                                     }
+                                     ,{
+                                        "group": 1,
+                                        "class": "bg-white rounded p-1 text-dark text-sm",
+                                        "content":[
+                                             "Es la ciencia que estudia las propiedades de la materia, la energía, el tiempo y el espacio.  La física aporta los principios y las leyes que rigen la materia y los fenómenos naturales."
+                                        ]
+                                     }
+                                    ]
+                                 },
+                                 {
+                                    "switch":1,
+                                    "click":true,
+                                    "items": [
+                                     {
+                                        "group": 1,
+                                        "class": "text-center",
+                                        "content":[
+                                            "Biología",
+                                            { "img": "img/ram/3.jpg", "class": " rounded-full w-full" }
+                                        ]
+                                     }
+                                     ,{
+                                        "group": 1,
+                                        "class": "bg-white rounded p-1 text-dark text-sm",
+                                        "content":[
+                                             "Es la ciencia que estudia la estructura, el funcionamiento, la evolución, la distribución, el comportamiento y las relaciones de los seres vivos.<br>La biología aporta la clasificación y las características de los seres vivos que experimentan un fenómeno natural y la interacción que tienen con el medio que los rodea."
+                                        ]
+                                     }
+                                    ]
+                                 },
+                                 {
+                                    "switch":1,
+                                    "click":true,
+                                    "items": [
+                                     {
+                                        "group": 1,
+                                        "class": "text-center",
+                                        "content":[
+                                            "Geografía",
+                                            { "img": "img/ram/4.jpg", "class": " rounded-full w-full" }
+                                        ]
+                                     }
+                                     ,{
+                                        "group": 1,
+                                        "class": "bg-white rounded p-1 text-dark text-sm",
+                                        "content":[
+                                             "Es la ciencia que estudia las sociedades, los territorios, los lugares y las regiones que se encuentran en la superficie terrestre. La geografía aporta la ubicación de los fenómenos naturales y las condiciones en las que ocurren."
+                                        ]
+                                     }
+                                    ]
+                                 },
+                                 {
+                                    "switch":1,
+                                    "click":true,
+                                    "items": [
+                                     {
+                                        "group": 1,
+                                        "class": "text-center",
+                                        "content":[
+                                            "Geología",
+                                            { "img": "img/ram/5.jpg", "class": " rounded-full w-full" }
+                                        ]
+                                     }
+                                     ,{
+                                        "group": 1,
+                                        "class": "bg-white rounded p-1 text-dark text-sm",
+                                        "content":[
+                                             "Es la ciencia que estudia la formación, la evolución, la composición y la estructura interna y externa del planeta Tierra.<br>La geología aporta el conocimiento de los componentes del planeta Tierra y las transformaciones que estos sufren frente a los diferentes fenómenos naturales."
+                                        ]
+                                     }
+                                    ]
+                                 },
+                                 {
+                                    "switch":1,
+                                    "click":true,
+                                    "items": [
+                                     {
+                                        "group": 1,
+                                        "class": "text-center",
+                                        "content":[
+                                            "Astronomía",
+                                            { "img": "img/ram/6.jpg", "class": " rounded-full w-full" }
+                                        ]
+                                     }
+                                     ,{
+                                        "group": 1,
+                                        "class": "bg-white rounded p-1 text-dark text-sm",
+                                        "content":[
+                                             "Es la ciencia que estudia el movimiento, la posición, la distancia, la estructura, la evolución y las leyes que rigen a los cuerpos celestes.<br>La astronomía aporta la descripción de cuerpos celestes, fenómenos astronómicos y las leyes naturales que los rigen."
+                                        ]
+                                     }
+                                    ]
+                                 },
+                                 {
+                                    "switch":1,
+                                    "click":true,
+                                    "items": [
+                                     {
+                                        "group": 1,
+                                        "class": "text-center",
+                                        "content":[
+                                            "Historia",
+                                            { "img": "img/ram/7.jpg", "class": " rounded-full w-full" }
+                                        ]
+                                     }
+                                     ,{
+                                        "group": 1,
+                                        "class": "bg-white rounded p-1 text-dark text-sm",
+                                        "content":[
+                                             "Es la ciencia que estudia y relata de forma cronológica hechos que pertenecen al pasado.  La historia aporta el contexto en el que sucedió un hecho o evento."
+                                        ]
+                                     }
+                                    ]
+                                 },
+                                 {
+                                    "switch":1,
+                                    "click":true,
+                                    "items": [
+                                     {
+                                        "group": 1,
+                                        "class": "text-center",
+                                        "content":[
+                                            "Antropología",
+                                            { "img": "img/ram/8.jpg", "class": " rounded-full w-full" }
+                                        ]
+                                     }
+                                     ,{
+                                        "group": 1,
+                                        "class": "bg-white rounded p-1 text-dark text-sm",
+                                        "content":[
+                                             "Es la ciencia que estudia los aspectos culturales, los sociales, los de organización y los biológicos del ser humano.<br>La antropología aporta el comportamiento del ser humano frente a un fenómeno natural en diferentes contextos históricos y culturales."
+                                        ]
+                                     }
+                                    ]
+                                 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                   "width": "100%",
+                   "content": [
+                       "La interrelación de las ciencias permite estudiar a mayor profundidad y desde diferentes puntos de vista los fenómenos y hechos que ocurren en la naturaleza. Por ejemplo, los conocimientos de la química, la biología y la geografía son útiles para los paleontólogos en su estudio de los restos fósiles, quienes, a su vez, aportan datos que los historiadores utilizan para narrar los sucesos del pasado.",
+                       {"br": 2},
+                       {"inst": "Haz clic en las ciencias que se muestran en el esquema para conocer su contribución en el estudio de los fósiles.", "iconinst":"touch_app"},
+                       {"br": 2}
+                       ,{
+                          "grid": 1,
+                          "columns": "1fr 2fr 1fr",
+                          "columnsResponsive": "1fr 2fr 1fr",
+                          "class": "bg-white p-2 rounded-xl",
+                          "content":[
+                              {
+                                 "group": 1,
+                                 "class": "flex flex-col space-y-4 justify-center items-center",
+                                 "content":[
+                                     {
+                                        "dialog": 1,
+                                        "button": ["Química"],
+                                        "buttonClass": "btn",
+                                        "id":"fosilQ",
+                                        "style": "",
+                                        "content":[
+                                            "Aporta la técnica llamada datación isotópica, para identificar el tiempo en el que el organismo estuvo vivo."
+                                        ]
+                                     },
+                                     {
+                                        "dialog": 1,
+                                        "button": ["Geografía"],
+                                        "buttonClass": "btn",
+                                        "id":"fosilG",
+                                        "style": "",
+                                        "content":[
+                                            "Aporta la ubicación en la que se encontró el fósil y la recreación del posible ambiente en el que estuvo."
+                                        ]
+                                     },
+                                     {
+                                        "dialog": 1,
+                                        "button": ["Biología"],
+                                        "buttonClass": "btn",
+                                        "id":"fosilB",
+                                        "style": "",
+                                        "content":[
+                                            "Aporta la especie a la que pertenece el fósil, su evolución y su relación con otras especies."
+                                        ]
+                                     }
+
+                                 ]
+                              },
+                              {
+                                 "group": 1,
+                                 "class": "text-center",
+                                 "content":[
+                                     { "img": "img/3.png", "class": "max-w-[10rem]", "id":"fosil"}
+                                 ]
+                              }
+                              ,{
+                                 "group": 1,
+                                 "class": "flex justify-center items-center",
+                                 "content":[
+                                    {
+                                        "dialog": 1,
+                                        "button": ["Historia"],
+                                        "buttonClass": "btn",
+                                        "id":"fosilH",
+                                        "style": "",
+                                        "content":[
+                                            "Explica la historia de la vida en la Tierra por medio del registro fósil."
+                                        ]
+                                     }
+                                 ]
+                              },
+                              {
+                                "line": 1,
+                                "connections": [
+                                    ["#fosilQ", "#fosil"],
+                                    ["#fosilG", "#fosil"],
+                                    ["#fosilB", "#fosil"],
+                                    ["#fosil", "#fosilH"]
+                                ],
+                                "options": {
+                                    "color": "rgba(200, 200, 200, 0.5)",
+                                    
+                                    "size": 10
+                                }
+                            }
+                          ]
+                       }
+                       
+                   ]
+                },
+                {
+                   "width": "100%",
+                   "content": [
+                       {"class": "h3 text-center", "textAnimation": "Las ramas de la química"},
+                       {"br": 2},
+                       "La relación de la química con otras ciencias da lugar a sus diferentes áreas o ramas. De esta manera le es posible realizar análisis y aportaciones más detalladas.",
+                       {"br": 2},
+                       {"inst": "Haz clic en las ramas de la química para identificar sus áreas de conocimiento, sus subdivisiones y sus aplicaciones.", "iconinst":"touch_app"},
+                       {"br": 2},
+                       {
+                          "grid": 1,
+                          "class":"text-center",
+                          "columns": "1fr 1fr 1fr",
+                          "columnsResponsive": "1fr 1fr",
+                          "content":[
+                              {
+                                 "dialog": 1,
+                                 "button": ["Fisicoquímica"],
+                                 "buttonClass": "aspect-square p-1",
+                                "modalClass": "bg-main  min-w-[80vw]",
+                                 "content":[
+                                     { "img": "img/fisicoquimica.png", "class": "" }
+                                 ]
+                              },
+                              {
+                                "dialog": 1,
+                                "button": ["Bioquímica"],
+                                "buttonClass": "aspect-square p-1 w-full",
+                               "modalClass": "bg-main min-w-[80vw]",
+                                "content":[
+                                    { "img": "img/bioquimica.png", "class": "" }
+                                ]
+                             },
+                             {
+                                "dialog": 1,
+                                "button": ["Inorgánica"],
+                                "buttonClass": "aspect-square p- w-full",
+                               "modalClass": "bg-main min-w-[80vw]",
+                                "content":[
+                                    { "img": "img/inorganica.png", "class": "" }
+                                ]
+                             },
+                             {
+                                "dialog": 1,
+                                "button": ["Orgánica"],
+                                "buttonClass": "aspect-square p-1 w-full",
+                               "modalClass": "bg-main min-w-[80vw]",
+                                "content":[
+                                    { "img": "img/organica.png", "class": "" }
+                                ]
+                             },
+                             {
+                                "dialog": 1,
+                                "button": ["Analítica"],
+                                "buttonClass": "aspect-square p-1 w-full",
+                               "modalClass": "bg-main min-w-[80vw]",
+                                "content":[
+                                    { "img": "img/analitica.png", "class": "" }
+                                ]
+                             }
+                          ]
+                       }
+                   ]
+                },
+                {
+                   "width": "100%",
+                   "content": [
+                       {"class": "h3 text-center", "textAnimation": "Implicaciones de la química en el desarrollo de la ciencia y la tecnología"},
+                       {"br": 2},
+                       "Los conocimientos que la química desarrolla tienen un impacto directo en la tecnología y, por lo tanto, en tu vida. En los siguientes recuadros se mencionan algunos ejemplos de su contribución en diversos aspectos de la cotidianidad.",
+                       {"br": 2},
+                       {"class": "text-center h4", "text": "Contribuciones que la química realiza en aspectos de la vida diaria"},
+                        {
+                           "slides": 1,
+                           "class": "",
+                           "content": [
+                            {
+                               "group": 1,
+                               "class": "bg-white p-4 text-dark my-5 rounded-lg shadow max-w-[30rem] mx-auto",
+                               "content":[
+                                   {"class": "h5 text-center text-bold", "text": "Alimentación"},
+                                   {"br": 2},
+                                   "- Desarrollo de técnicas de conservación de los alimentos.",
+                                   {"br": 1},
+                                   "- Determinación de la cantidad de nutrientes en los alimentos."
+                               ]
+                            },
+                            {
+                                "group": 1,
+                                "class": "bg-white p-4 text-dark my-5 rounded-lg shadow max-w-[30rem] mx-auto",
+                                "content":[
+                                    {"class": "h5 text-center text-bold", "text": "Higiene"},
+                                    {"br": 2},
+                                    "- Producción de productos de higiene personal como el jabón, la pasta de dientes y las cremas.",
+                                    {"br": 1},
+                                    "- Producción de gel antibacterial y desinfectantes."
+                                ]
+                             },
+                             {
+                                "group": 1,
+                                "class": "bg-white p-4 text-dark my-5 rounded-lg shadow max-w-[30rem] mx-auto",
+                                "content":[
+                                    {"class": "h5 text-center text-bold", "text": "Salud"},
+                                    {"br": 2},
+                                    "- Elaboración de nuevos fármacos para combatir diferentes enfermedades.",
+                                    {"br": 1},
+                                    "- Desarrollo de métodos de detección de enfermedades."
+                                ]
+                             },
+                             {
+                                "group": 1,
+                                "class": "bg-white p-4 text-dark my-5 rounded-lg shadow max-w-[30rem] mx-auto",
+                                "content":[
+                                    {"class": "h5 text-center text-bold", "text": "Comunicación y recreación"},
+                                    {"br": 2},
+                                    "- Elaboración de materiales con propiedades aislantes y conductoras para la construcción de los celulares y las computadoras."
+                                ]
+                             },
+                             {
+                                "group": 1,
+                                "class": "bg-white p-4 text-dark my-5 rounded-lg shadow max-w-[30rem] mx-auto",
+                                "content":[
+                                    {"class": "h5 text-center text-bold", "text": "Seguridad"},
+                                    {"br": 2},
+                                    "- Elaboración de materiales anticorrosivos e inflamables para fines industriales.",
+                                    {"br": 1},
+                                    "- Desarrollo de métodos de detección de peligros químicos."
+                                ]
+                             },
+                             {
+                                "group": 1,
+                                "class": "bg-white p-4 text-dark my-5 rounded-lg shadow max-w-[30rem] mx-auto",
+                                "content":[
+                                    {"class": "h5 text-center text-bold", "text": "Deportes"},
+                                    {"br": 2},
+                                    "- Elaboración de materiales antiderrapantes y livianos para el desarrollo de calzado deportivo.",
+                                    {"br": 1},
+                                    "- Producción de bebidas energéticas y rehidratantes."
+                                ]
+                             }
+                           ]
+                        }
+
+                   ]
+                }
+            ]
+        },
+        {
+           "title": "Actividad",
+           "icon": "games",
+           "steps": true,
+           "class": "flex flex-col justify-center",
+           "blocks": [
+            {
+               "width": "100%",
+               "content": [
+                   {"inst": "Selecciona dos ramas de la química que realicen una aportación en los siguientes eventos.", "iconinst":"touch_app"},
+                   {"br": 2},
+                   {"class": "h4", "text": "1. Determinación de la cantidad de oxígeno presente en la sangre de una persona."},
+                   {"br": 2},
+                   {
+                      "select": 1,
+                      "columns": "1fr 1fr 1fr",
+                      "options": [
+                          ["Bioquímica", true],
+                          ["Fisicoquímica", false],
+                          ["Orgánica", false],
+                          ["Inorgánica", false],
+                          ["Analítica", true]
+                      ],
+                      "feedback": [
+                          "¡Correcto! La bioquímica estudia los componentes y las reacciones que competen a los seres vivos, mientras que la química analítica se encarga de desarrollar métodos para cuantificar la materia.",
+                          "Recuerda que la bioquímica estudia los componentes y las reacciones que competen a los seres vivos, mientras que la química analítica se encarga de desarrollar métodos para cuantificar la materia."
+                      ]
+                   },
+                   {"br": 2},
+                   {"class": "h4", "text": "2. Creación de un polímero aislante de la corriente eléctrica para el desarrollo de guantes y botas de trabajo."},
+                   {"br": 2},
+                   {
+                      "select": 1,
+                      "columns": "1fr 1fr 1fr",
+                      "options": [
+                          ["Bioquímica", false],
+                          ["Fisicoquímica", true],
+                          ["Orgánica", true],
+                          ["Inorgánica", false],
+                          ["Analítica", false]
+                      ],
+                      "feedback": [
+                          "¡Correcto! La fisicoquímica estudia los fenómenos químicos desde el punto de vista de la física pura y una de sus subdivisiones es la electroquímica, mientras que la química orgánica estudia la forma en que el carbono se enlaza consigo mismo y con otros elementos, y una de sus subdivisiones es la de química de polímeros.",
+                          "Recuerda que la fisicoquímica estudia los fenómenos químicos desde el punto de vista de la física pura y una de sus subdivisiones es la electroquímica, mientras que la química orgánica estudia la forma en que el carbono se enlaza consigo mismo y con otros elementos, y una de sus subdivisiones es la de química de polímeros."
+                      ]
+                   },
+                   {"br": 2},
+                   {"class": "h4", "text": "3. Desarrollo de un medicamento a base de una planta medicinal."},
+                   {"br": 2},
+                   {
+                      "select": 1,
+                      "columns": "1fr 1fr 1fr",
+                      "options": [
+                          ["Bioquímica", true],
+                          ["Fisicoquímica", false],
+                          ["Orgánica", false],
+                          ["Inorgánica", false],
+                          ["Analítica", true]
+                      ],
+                      "feedback": [
+                          "¡Correcto! La bioquímica estudia los componentes y las reacciones que competen a los seres vivos, mientras que la química orgánica estudia la forma en que el carbono se enlaza consigo mismo y con otros elementos, y una de sus subdivisiones es la de química de productos naturales.",
+                          "Recuerda que la bioquímica estudia los componentes y las reacciones que competen a los seres vivos, mientras que la química orgánica estudia la forma en que el carbono se enlaza consigo mismo y con otros elementos, y una de sus subdivisiones es la de química de productos naturales."
+                      ]
+                   },
+                   {"br": 2},
+                   {"class": "h4", "text": "4. Determinación del tipo de metales presentes en una aleación."},
+                   {"br": 2},
+                   {
+                      "select": 1,
+                      "columns": "1fr 1fr 1fr",
+                      "options": [
+                          ["Bioquímica", true],
+                          ["Fisicoquímica", false],
+                          ["Orgánica", false],
+                          ["Inorgánica", false],
+                          ["Analítica", true]
+                      ],
+                      "feedback": [
+                          "¡Correcto! La química inorgánica estudia los compuestos y las reacciones de los elementos diferentes al carbono como los metales, mientras que la química analítica se encarga de desarrollar métodos para identificar la materia.",
+                          "Recuerda que la química inorgánica estudia los compuestos y las reacciones de los elementos diferentes al carbono como los metales, mientras que la química analítica se encarga de desarrollar métodos para identificar la materia."
+                      ]
+                   }
+               ]
+            }
+           ]
+        },
+        {
+            "title": "Finalizar",
+            "icon": "flag",
+            "end": true,
+            "blocks": [
+                {
+                    "content": []
+                }
+            ]
+        }
+    ],
+    "symbols": {}
+}
