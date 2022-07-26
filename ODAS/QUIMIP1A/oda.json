@@ -164,17 +164,16 @@
                     "width": "100%",
                     "content": [
                         {
-                           "group": 1,
-                           "class": "text-center",
-                           "content":[
-                               {
-                                   "img": "img/2.jpg",
-                                   "class": "max-w-[20rem] rounded-xl shadow-xl"
-                               }
-                               
-                           ]
-                        }
-                        ,{
+                            "group": 1,
+                            "class": "text-center",
+                            "content": [
+                                {
+                                    "img": "img/2.jpg",
+                                    "class": "max-w-[20rem] rounded-xl shadow-xl"
+                                }
+                            ]
+                        },
+                        {
                             "br": 2
                         },
                         "La química auxilia a otras ciencias y se interrelaciona con ellas, ya sea para generar nuevos conocimientos como para darle una aplicación a los ya existentes. Es considerada una ciencia central, pues es la conexión entre varias ciencias.",
@@ -195,501 +194,1482 @@
                             "gap": "2rem",
                             "content": [
                                 {
-                                   "switch":1,
-                                   "click":true,
-                                   "items": [
-                                    {
-                                       "group": 1,
-                                       "class": "text-center",
-                                       "content":[
-                                           "Matemáticas",
-                                           { "img": "img/ram/1.jpg", "class": " rounded-full w-full" }
-                                       ]
-                                    }
-                                    ,{
-                                       "group": 1,
-                                       "class": "bg-white rounded p-1 text-dark text-sm",
-                                       "content":[
-                                            "Es la ciencia que estudia las propiedades que tienen los números y establece relaciones entre ellos. <br> Las matemáticas aportan un lenguaje para describir fenómenos naturales de forma numérica y facilitar su estudio."
-                                       ]
-                                    }
-                                   ]
+                                    "switch": 1,
+                                    "click": true,
+                                    "items": [
+                                        {
+                                            "group": 1,
+                                            "class": "text-center",
+                                            "content": [
+                                                "Matemáticas",
+                                                {
+                                                    "img": "img/ram/1.jpg",
+                                                    "class": " rounded-full w-full"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "group": 1,
+                                            "class": "bg-white rounded p-1 text-dark text-sm",
+                                            "content": [
+                                                "Es la ciencia que estudia las propiedades que tienen los números y establece relaciones entre ellos. <br> Las matemáticas aportan un lenguaje para describir fenómenos naturales de forma numérica y facilitar su estudio."
+                                            ]
+                                        }
+                                    ]
                                 },
                                 {
-                                    "switch":1,
-                                    "click":true,
+                                    "switch": 1,
+                                    "click": true,
                                     "items": [
-                                     {
-                                        "group": 1,
-                                        "class": "text-center",
-                                        "content":[
-                                            "Física",
-                                            { "img": "img/ram/2.jpg", "class": " rounded-full w-full" }
-                                        ]
-                                     }
-                                     ,{
-                                        "group": 1,
-                                        "class": "bg-white rounded p-1 text-dark text-sm",
-                                        "content":[
-                                             "Es la ciencia que estudia las propiedades de la materia, la energía, el tiempo y el espacio.  La física aporta los principios y las leyes que rigen la materia y los fenómenos naturales."
-                                        ]
-                                     }
+                                        {
+                                            "group": 1,
+                                            "class": "text-center",
+                                            "content": [
+                                                "Física",
+                                                {
+                                                    "img": "img/ram/2.jpg",
+                                                    "class": " rounded-full w-full"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "group": 1,
+                                            "class": "bg-white rounded p-1 text-dark text-sm",
+                                            "content": [
+                                                "Es la ciencia que estudia las propiedades de la materia, la energía, el tiempo y el espacio.  La física aporta los principios y las leyes que rigen la materia y los fenómenos naturales."
+                                            ]
+                                        }
                                     ]
-                                 },
-                                 {
-                                    "switch":1,
-                                    "click":true,
+                                },
+                                {
+                                    "switch": 1,
+                                    "click": true,
                                     "items": [
-                                     {
-                                        "group": 1,
-                                        "class": "text-center",
-                                        "content":[
-                                            "Biología",
-                                            { "img": "img/ram/3.jpg", "class": " rounded-full w-full" }
-                                        ]
-                                     }
-                                     ,{
-                                        "group": 1,
-                                        "class": "bg-white rounded p-1 text-dark text-sm",
-                                        "content":[
-                                             "Es la ciencia que estudia la estructura, el funcionamiento, la evolución, la distribución, el comportamiento y las relaciones de los seres vivos.<br>La biología aporta la clasificación y las características de los seres vivos que experimentan un fenómeno natural y la interacción que tienen con el medio que los rodea."
-                                        ]
-                                     }
+                                        {
+                                            "group": 1,
+                                            "class": "text-center",
+                                            "content": [
+                                                "Biología",
+                                                {
+                                                    "img": "img/ram/3.jpg",
+                                                    "class": " rounded-full w-full"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "group": 1,
+                                            "class": "bg-white rounded p-1 text-dark text-sm",
+                                            "content": [
+                                                "Es la ciencia que estudia la estructura, el funcionamiento, la evolución, la distribución, el comportamiento y las relaciones de los seres vivos.<br>La biología aporta la clasificación y las características de los seres vivos que experimentan un fenómeno natural y la interacción que tienen con el medio que los rodea."
+                                            ]
+                                        }
                                     ]
-                                 },
-                                 {
-                                    "switch":1,
-                                    "click":true,
+                                },
+                                {
+                                    "switch": 1,
+                                    "click": true,
                                     "items": [
-                                     {
-                                        "group": 1,
-                                        "class": "text-center",
-                                        "content":[
-                                            "Geografía",
-                                            { "img": "img/ram/4.jpg", "class": " rounded-full w-full" }
-                                        ]
-                                     }
-                                     ,{
-                                        "group": 1,
-                                        "class": "bg-white rounded p-1 text-dark text-sm",
-                                        "content":[
-                                             "Es la ciencia que estudia las sociedades, los territorios, los lugares y las regiones que se encuentran en la superficie terrestre. La geografía aporta la ubicación de los fenómenos naturales y las condiciones en las que ocurren."
-                                        ]
-                                     }
+                                        {
+                                            "group": 1,
+                                            "class": "text-center",
+                                            "content": [
+                                                "Geografía",
+                                                {
+                                                    "img": "img/ram/4.jpg",
+                                                    "class": " rounded-full w-full"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "group": 1,
+                                            "class": "bg-white rounded p-1 text-dark text-sm",
+                                            "content": [
+                                                "Es la ciencia que estudia las sociedades, los territorios, los lugares y las regiones que se encuentran en la superficie terrestre. La geografía aporta la ubicación de los fenómenos naturales y las condiciones en las que ocurren."
+                                            ]
+                                        }
                                     ]
-                                 },
-                                 {
-                                    "switch":1,
-                                    "click":true,
+                                },
+                                {
+                                    "switch": 1,
+                                    "click": true,
                                     "items": [
-                                     {
-                                        "group": 1,
-                                        "class": "text-center",
-                                        "content":[
-                                            "Geología",
-                                            { "img": "img/ram/5.jpg", "class": " rounded-full w-full" }
-                                        ]
-                                     }
-                                     ,{
-                                        "group": 1,
-                                        "class": "bg-white rounded p-1 text-dark text-sm",
-                                        "content":[
-                                             "Es la ciencia que estudia la formación, la evolución, la composición y la estructura interna y externa del planeta Tierra.<br>La geología aporta el conocimiento de los componentes del planeta Tierra y las transformaciones que estos sufren frente a los diferentes fenómenos naturales."
-                                        ]
-                                     }
+                                        {
+                                            "group": 1,
+                                            "class": "text-center",
+                                            "content": [
+                                                "Geología",
+                                                {
+                                                    "img": "img/ram/5.jpg",
+                                                    "class": " rounded-full w-full"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "group": 1,
+                                            "class": "bg-white rounded p-1 text-dark text-sm",
+                                            "content": [
+                                                "Es la ciencia que estudia la formación, la evolución, la composición y la estructura interna y externa del planeta Tierra.<br>La geología aporta el conocimiento de los componentes del planeta Tierra y las transformaciones que estos sufren frente a los diferentes fenómenos naturales."
+                                            ]
+                                        }
                                     ]
-                                 },
-                                 {
-                                    "switch":1,
-                                    "click":true,
+                                },
+                                {
+                                    "switch": 1,
+                                    "click": true,
                                     "items": [
-                                     {
-                                        "group": 1,
-                                        "class": "text-center",
-                                        "content":[
-                                            "Astronomía",
-                                            { "img": "img/ram/6.jpg", "class": " rounded-full w-full" }
-                                        ]
-                                     }
-                                     ,{
-                                        "group": 1,
-                                        "class": "bg-white rounded p-1 text-dark text-sm",
-                                        "content":[
-                                             "Es la ciencia que estudia el movimiento, la posición, la distancia, la estructura, la evolución y las leyes que rigen a los cuerpos celestes.<br>La astronomía aporta la descripción de cuerpos celestes, fenómenos astronómicos y las leyes naturales que los rigen."
-                                        ]
-                                     }
+                                        {
+                                            "group": 1,
+                                            "class": "text-center",
+                                            "content": [
+                                                "Astronomía",
+                                                {
+                                                    "img": "img/ram/6.jpg",
+                                                    "class": " rounded-full w-full"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "group": 1,
+                                            "class": "bg-white rounded p-1 text-dark text-sm",
+                                            "content": [
+                                                "Es la ciencia que estudia el movimiento, la posición, la distancia, la estructura, la evolución y las leyes que rigen a los cuerpos celestes.<br>La astronomía aporta la descripción de cuerpos celestes, fenómenos astronómicos y las leyes naturales que los rigen."
+                                            ]
+                                        }
                                     ]
-                                 },
-                                 {
-                                    "switch":1,
-                                    "click":true,
+                                },
+                                {
+                                    "switch": 1,
+                                    "click": true,
                                     "items": [
-                                     {
-                                        "group": 1,
-                                        "class": "text-center",
-                                        "content":[
-                                            "Historia",
-                                            { "img": "img/ram/7.jpg", "class": " rounded-full w-full" }
-                                        ]
-                                     }
-                                     ,{
-                                        "group": 1,
-                                        "class": "bg-white rounded p-1 text-dark text-sm",
-                                        "content":[
-                                             "Es la ciencia que estudia y relata de forma cronológica hechos que pertenecen al pasado.  La historia aporta el contexto en el que sucedió un hecho o evento."
-                                        ]
-                                     }
+                                        {
+                                            "group": 1,
+                                            "class": "text-center",
+                                            "content": [
+                                                "Historia",
+                                                {
+                                                    "img": "img/ram/7.jpg",
+                                                    "class": " rounded-full w-full"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "group": 1,
+                                            "class": "bg-white rounded p-1 text-dark text-sm",
+                                            "content": [
+                                                "Es la ciencia que estudia y relata de forma cronológica hechos que pertenecen al pasado.  La historia aporta el contexto en el que sucedió un hecho o evento."
+                                            ]
+                                        }
                                     ]
-                                 },
-                                 {
-                                    "switch":1,
-                                    "click":true,
+                                },
+                                {
+                                    "switch": 1,
+                                    "click": true,
                                     "items": [
-                                     {
-                                        "group": 1,
-                                        "class": "text-center",
-                                        "content":[
-                                            "Antropología",
-                                            { "img": "img/ram/8.jpg", "class": " rounded-full w-full" }
-                                        ]
-                                     }
-                                     ,{
-                                        "group": 1,
-                                        "class": "bg-white rounded p-1 text-dark text-sm",
-                                        "content":[
-                                             "Es la ciencia que estudia los aspectos culturales, los sociales, los de organización y los biológicos del ser humano.<br>La antropología aporta el comportamiento del ser humano frente a un fenómeno natural en diferentes contextos históricos y culturales."
-                                        ]
-                                     }
+                                        {
+                                            "group": 1,
+                                            "class": "text-center",
+                                            "content": [
+                                                "Antropología",
+                                                {
+                                                    "img": "img/ram/8.jpg",
+                                                    "class": " rounded-full w-full"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "group": 1,
+                                            "class": "bg-white rounded p-1 text-dark text-sm",
+                                            "content": [
+                                                "Es la ciencia que estudia los aspectos culturales, los sociales, los de organización y los biológicos del ser humano.<br>La antropología aporta el comportamiento del ser humano frente a un fenómeno natural en diferentes contextos históricos y culturales."
+                                            ]
+                                        }
                                     ]
-                                 }
+                                }
                             ]
                         }
                     ]
                 },
                 {
-                   "width": "100%",
-                   "content": [
-                       "La interrelación de las ciencias permite estudiar a mayor profundidad y desde diferentes puntos de vista los fenómenos y hechos que ocurren en la naturaleza. Por ejemplo, los conocimientos de la química, la biología y la geografía son útiles para los paleontólogos en su estudio de los restos fósiles, quienes, a su vez, aportan datos que los historiadores utilizan para narrar los sucesos del pasado.",
-                       {"br": 2},
-                       {"inst": "Haz clic en las ciencias que se muestran en el esquema para conocer su contribución en el estudio de los fósiles.", "iconinst":"touch_app"},
-                       {"br": 2}
-                       ,{
-                          "grid": 1,
-                          "columns": "1fr 2fr 1fr",
-                          "columnsResponsive": "1fr 2fr 1fr",
-                          "class": "bg-white p-2 rounded-xl",
-                          "content":[
-                              {
-                                 "group": 1,
-                                 "class": "flex flex-col space-y-4 justify-center items-center",
-                                 "content":[
-                                     {
-                                        "dialog": 1,
-                                        "button": ["Química"],
-                                        "buttonClass": "btn",
-                                        "id":"fosilQ",
-                                        "style": "",
-                                        "content":[
-                                            "Aporta la técnica llamada datación isotópica, para identificar el tiempo en el que el organismo estuvo vivo."
-                                        ]
-                                     },
-                                     {
-                                        "dialog": 1,
-                                        "button": ["Geografía"],
-                                        "buttonClass": "btn",
-                                        "id":"fosilG",
-                                        "style": "",
-                                        "content":[
-                                            "Aporta la ubicación en la que se encontró el fósil y la recreación del posible ambiente en el que estuvo."
-                                        ]
-                                     },
-                                     {
-                                        "dialog": 1,
-                                        "button": ["Biología"],
-                                        "buttonClass": "btn",
-                                        "id":"fosilB",
-                                        "style": "",
-                                        "content":[
-                                            "Aporta la especie a la que pertenece el fósil, su evolución y su relación con otras especies."
-                                        ]
-                                     }
-
-                                 ]
-                              },
-                              {
-                                 "group": 1,
-                                 "class": "text-center",
-                                 "content":[
-                                     { "img": "img/3.png", "class": "max-w-[10rem]", "id":"fosil"}
-                                 ]
-                              }
-                              ,{
-                                 "group": 1,
-                                 "class": "flex justify-center items-center",
-                                 "content":[
-                                    {
-                                        "dialog": 1,
-                                        "button": ["Historia"],
-                                        "buttonClass": "btn",
-                                        "id":"fosilH",
-                                        "style": "",
-                                        "content":[
-                                            "Explica la historia de la vida en la Tierra por medio del registro fósil."
-                                        ]
-                                     }
-                                 ]
-                              },
-                              {
-                                "line": 1,
-                                "connections": [
-                                    ["#fosilQ", "#fosil"],
-                                    ["#fosilG", "#fosil"],
-                                    ["#fosilB", "#fosil"],
-                                    ["#fosil", "#fosilH"]
-                                ],
-                                "options": {
-                                    "color": "rgba(200, 200, 200, 0.5)",
-                                    
-                                    "size": 10
-                                }
-                            }
-                          ]
-                       }
-                       
-                   ]
-                },
-                {
-                   "width": "100%",
-                   "content": [
-                       {"class": "h3 text-center", "textAnimation": "Las ramas de la química"},
-                       {"br": 2},
-                       "La relación de la química con otras ciencias da lugar a sus diferentes áreas o ramas. De esta manera le es posible realizar análisis y aportaciones más detalladas.",
-                       {"br": 2},
-                       {"inst": "Haz clic en las ramas de la química para identificar sus áreas de conocimiento, sus subdivisiones y sus aplicaciones.", "iconinst":"touch_app"},
-                       {"br": 2},
-                       {
-                          "grid": 1,
-                          "class":"text-center",
-                          "columns": "1fr 1fr 1fr",
-                          "columnsResponsive": "1fr 1fr",
-                          "content":[
-                              {
-                                 "dialog": 1,
-                                 "button": ["Fisicoquímica"],
-                                 "buttonClass": "aspect-square p-1",
-                                "modalClass": "bg-main  min-w-[80vw]",
-                                 "content":[
-                                     { "img": "img/fisicoquimica.png", "class": "" }
-                                 ]
-                              },
-                              {
-                                "dialog": 1,
-                                "button": ["Bioquímica"],
-                                "buttonClass": "aspect-square p-1 w-full",
-                               "modalClass": "bg-main min-w-[80vw]",
-                                "content":[
-                                    { "img": "img/bioquimica.png", "class": "" }
-                                ]
-                             },
-                             {
-                                "dialog": 1,
-                                "button": ["Inorgánica"],
-                                "buttonClass": "aspect-square p- w-full",
-                               "modalClass": "bg-main min-w-[80vw]",
-                                "content":[
-                                    { "img": "img/inorganica.png", "class": "" }
-                                ]
-                             },
-                             {
-                                "dialog": 1,
-                                "button": ["Orgánica"],
-                                "buttonClass": "aspect-square p-1 w-full",
-                               "modalClass": "bg-main min-w-[80vw]",
-                                "content":[
-                                    { "img": "img/organica.png", "class": "" }
-                                ]
-                             },
-                             {
-                                "dialog": 1,
-                                "button": ["Analítica"],
-                                "buttonClass": "aspect-square p-1 w-full",
-                               "modalClass": "bg-main min-w-[80vw]",
-                                "content":[
-                                    { "img": "img/analitica.png", "class": "" }
-                                ]
-                             }
-                          ]
-                       }
-                   ]
-                },
-                {
-                   "width": "100%",
-                   "content": [
-                       {"class": "h3 text-center", "textAnimation": "Implicaciones de la química en el desarrollo de la ciencia y la tecnología"},
-                       {"br": 2},
-                       "Los conocimientos que la química desarrolla tienen un impacto directo en la tecnología y, por lo tanto, en tu vida. En los siguientes recuadros se mencionan algunos ejemplos de su contribución en diversos aspectos de la cotidianidad.",
-                       {"br": 2},
-                       {"class": "text-center h4", "text": "Contribuciones que la química realiza en aspectos de la vida diaria"},
+                    "width": "100%",
+                    "content": [
+                        "La interrelación de las ciencias permite estudiar a mayor profundidad y desde diferentes puntos de vista los fenómenos y hechos que ocurren en la naturaleza. Por ejemplo, los conocimientos de la química, la biología y la geografía son útiles para los paleontólogos en su estudio de los restos fósiles, quienes, a su vez, aportan datos que los historiadores utilizan para narrar los sucesos del pasado.",
                         {
-                           "slides": 1,
-                           "class": "",
-                           "content": [
-                            {
-                               "group": 1,
-                               "class": "bg-white p-4 text-dark my-5 rounded-lg shadow max-w-[30rem] mx-auto",
-                               "content":[
-                                   {"class": "h5 text-center text-bold", "text": "Alimentación"},
-                                   {"br": 2},
-                                   "- Desarrollo de técnicas de conservación de los alimentos.",
-                                   {"br": 1},
-                                   "- Determinación de la cantidad de nutrientes en los alimentos."
-                               ]
-                            },
-                            {
-                                "group": 1,
-                                "class": "bg-white p-4 text-dark my-5 rounded-lg shadow max-w-[30rem] mx-auto",
-                                "content":[
-                                    {"class": "h5 text-center text-bold", "text": "Higiene"},
-                                    {"br": 2},
-                                    "- Producción de productos de higiene personal como el jabón, la pasta de dientes y las cremas.",
-                                    {"br": 1},
-                                    "- Producción de gel antibacterial y desinfectantes."
-                                ]
-                             },
-                             {
-                                "group": 1,
-                                "class": "bg-white p-4 text-dark my-5 rounded-lg shadow max-w-[30rem] mx-auto",
-                                "content":[
-                                    {"class": "h5 text-center text-bold", "text": "Salud"},
-                                    {"br": 2},
-                                    "- Elaboración de nuevos fármacos para combatir diferentes enfermedades.",
-                                    {"br": 1},
-                                    "- Desarrollo de métodos de detección de enfermedades."
-                                ]
-                             },
-                             {
-                                "group": 1,
-                                "class": "bg-white p-4 text-dark my-5 rounded-lg shadow max-w-[30rem] mx-auto",
-                                "content":[
-                                    {"class": "h5 text-center text-bold", "text": "Comunicación y recreación"},
-                                    {"br": 2},
-                                    "- Elaboración de materiales con propiedades aislantes y conductoras para la construcción de los celulares y las computadoras."
-                                ]
-                             },
-                             {
-                                "group": 1,
-                                "class": "bg-white p-4 text-dark my-5 rounded-lg shadow max-w-[30rem] mx-auto",
-                                "content":[
-                                    {"class": "h5 text-center text-bold", "text": "Seguridad"},
-                                    {"br": 2},
-                                    "- Elaboración de materiales anticorrosivos e inflamables para fines industriales.",
-                                    {"br": 1},
-                                    "- Desarrollo de métodos de detección de peligros químicos."
-                                ]
-                             },
-                             {
-                                "group": 1,
-                                "class": "bg-white p-4 text-dark my-5 rounded-lg shadow max-w-[30rem] mx-auto",
-                                "content":[
-                                    {"class": "h5 text-center text-bold", "text": "Deportes"},
-                                    {"br": 2},
-                                    "- Elaboración de materiales antiderrapantes y livianos para el desarrollo de calzado deportivo.",
-                                    {"br": 1},
-                                    "- Producción de bebidas energéticas y rehidratantes."
-                                ]
-                             }
-                           ]
+                            "br": 2
+                        },
+                        {
+                            "inst": "Haz clic en las ciencias que se muestran en el esquema para conocer su contribución en el estudio de los fósiles.",
+                            "iconinst": "touch_app"
+                        },
+                        {
+                            "br": 2
+                        },
+                        {
+                            "grid": 1,
+                            "columns": "1fr 2fr 1fr",
+                            "columnsResponsive": "1fr 2fr 1fr",
+                            "class": "bg-white p-2 rounded-xl",
+                            "content": [
+                                {
+                                    "group": 1,
+                                    "class": "flex flex-col space-y-4 justify-center items-center",
+                                    "content": [
+                                        {
+                                            "dialog": 1,
+                                            "button": [
+                                                "Química"
+                                            ],
+                                            "buttonClass": "btn",
+                                            "id": "fosilQ",
+                                            "style": "",
+                                            "content": [
+                                                "Aporta la técnica llamada datación isotópica, para identificar el tiempo en el que el organismo estuvo vivo."
+                                            ]
+                                        },
+                                        {
+                                            "dialog": 1,
+                                            "button": [
+                                                "Geografía"
+                                            ],
+                                            "buttonClass": "btn",
+                                            "id": "fosilG",
+                                            "style": "",
+                                            "content": [
+                                                "Aporta la ubicación en la que se encontró el fósil y la recreación del posible ambiente en el que estuvo."
+                                            ]
+                                        },
+                                        {
+                                            "dialog": 1,
+                                            "button": [
+                                                "Biología"
+                                            ],
+                                            "buttonClass": "btn",
+                                            "id": "fosilB",
+                                            "style": "",
+                                            "content": [
+                                                "Aporta la especie a la que pertenece el fósil, su evolución y su relación con otras especies."
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "group": 1,
+                                    "class": "text-center",
+                                    "content": [
+                                        {
+                                            "img": "img/3.png",
+                                            "class": "max-w-[10rem]",
+                                            "id": "fosil"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "group": 1,
+                                    "class": "flex justify-center items-center",
+                                    "content": [
+                                        {
+                                            "dialog": 1,
+                                            "button": [
+                                                "Historia"
+                                            ],
+                                            "buttonClass": "btn",
+                                            "id": "fosilH",
+                                            "style": "",
+                                            "content": [
+                                                "Explica la historia de la vida en la Tierra por medio del registro fósil."
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "line": 1,
+                                    "connections": [
+                                        [
+                                            "#fosilQ",
+                                            "#fosil"
+                                        ],
+                                        [
+                                            "#fosilG",
+                                            "#fosil"
+                                        ],
+                                        [
+                                            "#fosilB",
+                                            "#fosil"
+                                        ],
+                                        [
+                                            "#fosil",
+                                            "#fosilH"
+                                        ]
+                                    ],
+                                    "options": {
+                                        "color": "rgba(200, 200, 200, 0.5)",
+                                        "size": 10
+                                    }
+                                }
+                            ]
                         }
-
-                   ]
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "class": "h3 text-center",
+                            "textAnimation": "Las ramas de la química"
+                        },
+                        {
+                            "br": 2
+                        },
+                        "La relación de la química con otras ciencias da lugar a sus diferentes áreas o ramas. De esta manera le es posible realizar análisis y aportaciones más detalladas.",
+                        {
+                            "br": 2
+                        },
+                        {
+                            "inst": "Haz clic en las ramas de la química para identificar sus áreas de conocimiento, sus subdivisiones y sus aplicaciones.",
+                            "iconinst": "touch_app"
+                        },
+                        {
+                            "br": 2
+                        },
+                        {
+                            "grid": 1,
+                            "class": "text-center",
+                            "columns": "1fr 1fr 1fr",
+                            "columnsResponsive": "1fr 1fr",
+                            "content": [
+                                {
+                                    "dialog": 1,
+                                    "button": [
+                                        "Fisicoquímica"
+                                    ],
+                                    "buttonClass": "aspect-square p-1",
+                                    "modalClass": "bg-main  min-w-[80vw]",
+                                    "content": [
+                                        {
+                                            "img": "img/fisicoquimica.png",
+                                            "class": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "dialog": 1,
+                                    "button": [
+                                        "Bioquímica"
+                                    ],
+                                    "buttonClass": "aspect-square p-1 w-full",
+                                    "modalClass": "bg-main min-w-[80vw]",
+                                    "content": [
+                                        {
+                                            "img": "img/bioquimica.png",
+                                            "class": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "dialog": 1,
+                                    "button": [
+                                        "Inorgánica"
+                                    ],
+                                    "buttonClass": "aspect-square p- w-full",
+                                    "modalClass": "bg-main min-w-[80vw]",
+                                    "content": [
+                                        {
+                                            "img": "img/inorganica.png",
+                                            "class": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "dialog": 1,
+                                    "button": [
+                                        "Orgánica"
+                                    ],
+                                    "buttonClass": "aspect-square p-1 w-full",
+                                    "modalClass": "bg-main min-w-[80vw]",
+                                    "content": [
+                                        {
+                                            "img": "img/organica.png",
+                                            "class": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "dialog": 1,
+                                    "button": [
+                                        "Analítica"
+                                    ],
+                                    "buttonClass": "aspect-square p-1 w-full",
+                                    "modalClass": "bg-main min-w-[80vw]",
+                                    "content": [
+                                        {
+                                            "img": "img/analitica.png",
+                                            "class": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "class": "h3 text-center",
+                            "textAnimation": "Implicaciones de la química en el desarrollo de la ciencia y la tecnología"
+                        },
+                        {
+                            "br": 2
+                        },
+                        "Los conocimientos que la química desarrolla tienen un impacto directo en la tecnología y, por lo tanto, en tu vida. En los siguientes recuadros se mencionan algunos ejemplos de su contribución en diversos aspectos de la cotidianidad.",
+                        {
+                            "br": 2
+                        },
+                        {
+                            "class": "text-center h4",
+                            "text": "Contribuciones que la química realiza en aspectos de la vida diaria"
+                        },
+                        {
+                            "slides": 1,
+                            "class": "",
+                            "content": [
+                                {
+                                    "group": 1,
+                                    "class": "bg-white p-4 text-dark my-5 rounded-lg shadow max-w-[30rem] mx-auto",
+                                    "content": [
+                                        {
+                                            "class": "h5 text-center text-bold",
+                                            "text": "Alimentación"
+                                        },
+                                        {
+                                            "br": 2
+                                        },
+                                        "- Desarrollo de técnicas de conservación de los alimentos.",
+                                        {
+                                            "br": 1
+                                        },
+                                        "- Determinación de la cantidad de nutrientes en los alimentos."
+                                    ]
+                                },
+                                {
+                                    "group": 1,
+                                    "class": "bg-white p-4 text-dark my-5 rounded-lg shadow max-w-[30rem] mx-auto",
+                                    "content": [
+                                        {
+                                            "class": "h5 text-center text-bold",
+                                            "text": "Higiene"
+                                        },
+                                        {
+                                            "br": 2
+                                        },
+                                        "- Producción de productos de higiene personal como el jabón, la pasta de dientes y las cremas.",
+                                        {
+                                            "br": 1
+                                        },
+                                        "- Producción de gel antibacterial y desinfectantes."
+                                    ]
+                                },
+                                {
+                                    "group": 1,
+                                    "class": "bg-white p-4 text-dark my-5 rounded-lg shadow max-w-[30rem] mx-auto",
+                                    "content": [
+                                        {
+                                            "class": "h5 text-center text-bold",
+                                            "text": "Salud"
+                                        },
+                                        {
+                                            "br": 2
+                                        },
+                                        "- Elaboración de nuevos fármacos para combatir diferentes enfermedades.",
+                                        {
+                                            "br": 1
+                                        },
+                                        "- Desarrollo de métodos de detección de enfermedades."
+                                    ]
+                                },
+                                {
+                                    "group": 1,
+                                    "class": "bg-white p-4 text-dark my-5 rounded-lg shadow max-w-[30rem] mx-auto",
+                                    "content": [
+                                        {
+                                            "class": "h5 text-center text-bold",
+                                            "text": "Comunicación y recreación"
+                                        },
+                                        {
+                                            "br": 2
+                                        },
+                                        "- Elaboración de materiales con propiedades aislantes y conductoras para la construcción de los celulares y las computadoras."
+                                    ]
+                                },
+                                {
+                                    "group": 1,
+                                    "class": "bg-white p-4 text-dark my-5 rounded-lg shadow max-w-[30rem] mx-auto",
+                                    "content": [
+                                        {
+                                            "class": "h5 text-center text-bold",
+                                            "text": "Seguridad"
+                                        },
+                                        {
+                                            "br": 2
+                                        },
+                                        "- Elaboración de materiales anticorrosivos e inflamables para fines industriales.",
+                                        {
+                                            "br": 1
+                                        },
+                                        "- Desarrollo de métodos de detección de peligros químicos."
+                                    ]
+                                },
+                                {
+                                    "group": 1,
+                                    "class": "bg-white p-4 text-dark my-5 rounded-lg shadow max-w-[30rem] mx-auto",
+                                    "content": [
+                                        {
+                                            "class": "h5 text-center text-bold",
+                                            "text": "Deportes"
+                                        },
+                                        {
+                                            "br": 2
+                                        },
+                                        "- Elaboración de materiales antiderrapantes y livianos para el desarrollo de calzado deportivo.",
+                                        {
+                                            "br": 1
+                                        },
+                                        "- Producción de bebidas energéticas y rehidratantes."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
         {
-           "title": "Actividad",
-           "icon": "games",
-           "steps": true,
-           "class": "flex flex-col justify-center",
-           "blocks": [
-            {
-               "width": "100%",
-               "content": [
-                   {"inst": "Selecciona dos ramas de la química que realicen una aportación en los siguientes eventos.", "iconinst":"touch_app"},
-                   {"br": 2},
-                   {"class": "h4", "text": "1. Determinación de la cantidad de oxígeno presente en la sangre de una persona."},
-                   {"br": 2},
-                   {
-                      "select": 1,
-                      "columns": "1fr 1fr 1fr",
-                      "options": [
-                          ["Bioquímica", true],
-                          ["Fisicoquímica", false],
-                          ["Orgánica", false],
-                          ["Inorgánica", false],
-                          ["Analítica", true]
-                      ],
-                      "feedback": [
-                          "¡Correcto! La bioquímica estudia los componentes y las reacciones que competen a los seres vivos, mientras que la química analítica se encarga de desarrollar métodos para cuantificar la materia.",
-                          "Recuerda que la bioquímica estudia los componentes y las reacciones que competen a los seres vivos, mientras que la química analítica se encarga de desarrollar métodos para cuantificar la materia."
-                      ]
-                   },
-                   {"br": 2},
-                   {"class": "h4", "text": "2. Creación de un polímero aislante de la corriente eléctrica para el desarrollo de guantes y botas de trabajo."},
-                   {"br": 2},
-                   {
-                      "select": 1,
-                      "columns": "1fr 1fr 1fr",
-                      "options": [
-                          ["Bioquímica", false],
-                          ["Fisicoquímica", true],
-                          ["Orgánica", true],
-                          ["Inorgánica", false],
-                          ["Analítica", false]
-                      ],
-                      "feedback": [
-                          "¡Correcto! La fisicoquímica estudia los fenómenos químicos desde el punto de vista de la física pura y una de sus subdivisiones es la electroquímica, mientras que la química orgánica estudia la forma en que el carbono se enlaza consigo mismo y con otros elementos, y una de sus subdivisiones es la de química de polímeros.",
-                          "Recuerda que la fisicoquímica estudia los fenómenos químicos desde el punto de vista de la física pura y una de sus subdivisiones es la electroquímica, mientras que la química orgánica estudia la forma en que el carbono se enlaza consigo mismo y con otros elementos, y una de sus subdivisiones es la de química de polímeros."
-                      ]
-                   },
-                   {"br": 2},
-                   {"class": "h4", "text": "3. Desarrollo de un medicamento a base de una planta medicinal."},
-                   {"br": 2},
-                   {
-                      "select": 1,
-                      "columns": "1fr 1fr 1fr",
-                      "options": [
-                          ["Bioquímica", true],
-                          ["Fisicoquímica", false],
-                          ["Orgánica", false],
-                          ["Inorgánica", false],
-                          ["Analítica", true]
-                      ],
-                      "feedback": [
-                          "¡Correcto! La bioquímica estudia los componentes y las reacciones que competen a los seres vivos, mientras que la química orgánica estudia la forma en que el carbono se enlaza consigo mismo y con otros elementos, y una de sus subdivisiones es la de química de productos naturales.",
-                          "Recuerda que la bioquímica estudia los componentes y las reacciones que competen a los seres vivos, mientras que la química orgánica estudia la forma en que el carbono se enlaza consigo mismo y con otros elementos, y una de sus subdivisiones es la de química de productos naturales."
-                      ]
-                   },
-                   {"br": 2},
-                   {"class": "h4", "text": "4. Determinación del tipo de metales presentes en una aleación."},
-                   {"br": 2},
-                   {
-                      "select": 1,
-                      "columns": "1fr 1fr 1fr",
-                      "options": [
-                          ["Bioquímica", true],
-                          ["Fisicoquímica", false],
-                          ["Orgánica", false],
-                          ["Inorgánica", false],
-                          ["Analítica", true]
-                      ],
-                      "feedback": [
-                          "¡Correcto! La química inorgánica estudia los compuestos y las reacciones de los elementos diferentes al carbono como los metales, mientras que la química analítica se encarga de desarrollar métodos para identificar la materia.",
-                          "Recuerda que la química inorgánica estudia los compuestos y las reacciones de los elementos diferentes al carbono como los metales, mientras que la química analítica se encarga de desarrollar métodos para identificar la materia."
-                      ]
-                   }
-               ]
-            }
-           ]
+            "title": "Actividad",
+            "icon": "games",
+            "steps": true,
+            "class": "flex flex-col justify-center",
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "inst": "Selecciona dos ramas de la química que realicen una aportación en los siguientes eventos.",
+                            "iconinst": "touch_app"
+                        },
+                        {
+                            "br": 2
+                        },
+                        {
+                            "class": "h4",
+                            "text": "1. Determinación de la cantidad de oxígeno presente en la sangre de una persona."
+                        },
+                        {
+                            "br": 2
+                        },
+                        {
+                            "select": 1,
+                            "columns": "1fr 1fr 1fr",
+                            "options": [
+                                [
+                                    "Bioquímica",
+                                    true
+                                ],
+                                [
+                                    "Fisicoquímica",
+                                    false
+                                ],
+                                [
+                                    "Orgánica",
+                                    false
+                                ],
+                                [
+                                    "Inorgánica",
+                                    false
+                                ],
+                                [
+                                    "Analítica",
+                                    true
+                                ]
+                            ],
+                            "feedback": [
+                                "¡Correcto! La bioquímica estudia los componentes y las reacciones que competen a los seres vivos, mientras que la química analítica se encarga de desarrollar métodos para cuantificar la materia.",
+                                "Recuerda que la bioquímica estudia los componentes y las reacciones que competen a los seres vivos, mientras que la química analítica se encarga de desarrollar métodos para cuantificar la materia."
+                            ]
+                        },
+                        {
+                            "br": 2
+                        },
+                        {
+                            "class": "h4",
+                            "text": "2. Creación de un polímero aislante de la corriente eléctrica para el desarrollo de guantes y botas de trabajo."
+                        },
+                        {
+                            "br": 2
+                        },
+                        {
+                            "select": 1,
+                            "columns": "1fr 1fr 1fr",
+                            "options": [
+                                [
+                                    "Bioquímica",
+                                    false
+                                ],
+                                [
+                                    "Fisicoquímica",
+                                    true
+                                ],
+                                [
+                                    "Orgánica",
+                                    true
+                                ],
+                                [
+                                    "Inorgánica",
+                                    false
+                                ],
+                                [
+                                    "Analítica",
+                                    false
+                                ]
+                            ],
+                            "feedback": [
+                                "¡Correcto! La fisicoquímica estudia los fenómenos químicos desde el punto de vista de la física pura y una de sus subdivisiones es la electroquímica, mientras que la química orgánica estudia la forma en que el carbono se enlaza consigo mismo y con otros elementos, y una de sus subdivisiones es la de química de polímeros.",
+                                "Recuerda que la fisicoquímica estudia los fenómenos químicos desde el punto de vista de la física pura y una de sus subdivisiones es la electroquímica, mientras que la química orgánica estudia la forma en que el carbono se enlaza consigo mismo y con otros elementos, y una de sus subdivisiones es la de química de polímeros."
+                            ]
+                        },
+                        {
+                            "br": 2
+                        },
+                        {
+                            "class": "h4",
+                            "text": "3. Desarrollo de un medicamento a base de una planta medicinal."
+                        },
+                        {
+                            "br": 2
+                        },
+                        {
+                            "select": 1,
+                            "columns": "1fr 1fr 1fr",
+                            "options": [
+                                [
+                                    "Bioquímica",
+                                    true
+                                ],
+                                [
+                                    "Fisicoquímica",
+                                    false
+                                ],
+                                [
+                                    "Orgánica",
+                                    false
+                                ],
+                                [
+                                    "Inorgánica",
+                                    false
+                                ],
+                                [
+                                    "Analítica",
+                                    true
+                                ]
+                            ],
+                            "feedback": [
+                                "¡Correcto! La bioquímica estudia los componentes y las reacciones que competen a los seres vivos, mientras que la química orgánica estudia la forma en que el carbono se enlaza consigo mismo y con otros elementos, y una de sus subdivisiones es la de química de productos naturales.",
+                                "Recuerda que la bioquímica estudia los componentes y las reacciones que competen a los seres vivos, mientras que la química orgánica estudia la forma en que el carbono se enlaza consigo mismo y con otros elementos, y una de sus subdivisiones es la de química de productos naturales."
+                            ]
+                        },
+                        {
+                            "br": 2
+                        },
+                        {
+                            "class": "h4",
+                            "text": "4. Determinación del tipo de metales presentes en una aleación."
+                        },
+                        {
+                            "br": 2
+                        },
+                        {
+                            "select": 1,
+                            "columns": "1fr 1fr 1fr",
+                            "options": [
+                                [
+                                    "Bioquímica",
+                                    true
+                                ],
+                                [
+                                    "Fisicoquímica",
+                                    false
+                                ],
+                                [
+                                    "Orgánica",
+                                    false
+                                ],
+                                [
+                                    "Inorgánica",
+                                    false
+                                ],
+                                [
+                                    "Analítica",
+                                    true
+                                ]
+                            ],
+                            "feedback": [
+                                "¡Correcto! La química inorgánica estudia los compuestos y las reacciones de los elementos diferentes al carbono como los metales, mientras que la química analítica se encarga de desarrollar métodos para identificar la materia.",
+                                "Recuerda que la química inorgánica estudia los compuestos y las reacciones de los elementos diferentes al carbono como los metales, mientras que la química analítica se encarga de desarrollar métodos para identificar la materia."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Actividad II",
+            "icon": "games",
+            "steps": true,
+            "class": "flex flex-col justify-center",
+            "blocks": [
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "inst": "Lee y analiza los siguientes planteamientos. Después identifica las ciencias que se interrelacionan en el planteamiento y arrástralas a la posición que les corresponde en la tabla.",
+                            "iconinst": "pan_tool"
+                        },
+                        {"br": 2},
+                        {
+                           "group": 1,
+                           "class": "px-2 py-5 bg-white text-dark rounded-xl shadow-xl text-sm",
+                           "content":[
+                               { "img": "img/act2/1.jpg", "class": "float-right max-w-[30%] ml-3 mb-3 rounded-xl shadow " },
+                               "1. Las polillas <em>Biston beturia</em> se caracterizan por tener una coloración parecida a la de los troncos de los abedules que les permite camuflarse de sus predadores. En Inglaterra, antes del siglo XIX, las polillas tenían un color blanco pardo al igual que la corteza de los troncos de estos árboles; sin embargo, en pleno auge de la revolución industrial, la atmósfera comenzó a llenarse de polvo de carbón proveniente de las máquinas que lo utilizaban como combustible, posteriormente se depositó en la corteza de los abedules lo que causó el oscurecimiento en su tronco, por lo que la polilla perdió toda oportunidad de camuflarse, obligándola a cambiar su apariencia a un tono más obscuro para no ser devorada por sus predadores. En el 2016 se determinó por medio de estudios genéticos que la polilla <em>Biston beturia</em> tuvo una mutación genética que le permitió transformar su apariencia para poder adaptarse a su nuevo medio."
+                           ]
+                        },
+                        {"class": "text-xs text-right", "text": "Fuente: Schneibel, A. (2016). La Revolución Industrial llevó a estas polillas a cambiar de color. Scientific American Español. Recuperado de: https://bit.ly/3tiqFNi (Consulta: 16 de marzo de 2022)."}
+                        ,{"br": 2},
+                        {
+                           "grid": 1,
+                           "columns": "1fr 1fr 1fr",
+                           "columnsResponsive": "1fr 1fr",
+                           "class":"bg-white/10 rounded p-2 mb-5",
+                           "content":[
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Química"],
+                                   "correctId": "#a1"
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Física"],
+                                 "correctId": ""
+                             },
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Geología"],
+                                   "correctId": ""
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Historia"],
+                                 "correctId": "#a3"
+                             },
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Biología"],
+                                   "correctId": "#a2"
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Matemáticas"],
+                                 "correctId": ""
+                             },
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Astronomía"],
+                                   "correctId": ""
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Antropología"],
+                                 "correctId": ""
+                             },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Geografía"],
+                                 "correctId": "#a4"
+                             }
+                           ]
+                        },
+                        {
+                           "grid": 1,
+                           "columns": "1fr 3fr",
+                           "columnsResponsive": "1fr 3fr",
+                           "class":"bg-white text-dark p-1 rounded text-sm",
+                           "content":[
+                            {"class": "text-bold text-center", "text": "Ciencia"}
+                            ,"Aportación que realizó para explicar el cambio de color en las polillas <em>Biston beturia</em>"
+                           ]
+                        },
+                        {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"a1"},
+                             "Identificó la sustancia que transformó el color de los árboles de abedul."
+                            ]
+                         },
+                         {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":""},
+                             "Identificó la genética de la polilla Biston beturia."
+                            ]
+                         },
+                         {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":""},
+                             "Estudió el periodo de tiempo en el que la polilla <em>Biston beturia</em> cambió de coloración."
+                            ]
+                         },
+                         {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":""},
+                             "Estudió los cambios en la atmósfera generados por las máquinas de vapor en Inglaterra."
+                            ]
+                         }
+                        
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "inst": "Lee y analiza los siguientes planteamientos. Después identifica las ciencias que se interrelacionan en el planteamiento y arrástralas a la posición que les corresponde en la tabla.",
+                            "iconinst": "pan_tool"
+                        },
+                        {"br": 2},
+                        {
+                           "group": 1,
+                           "class": "px-2 py-5 bg-white text-dark rounded-xl shadow-xl text-sm",
+                           "content":[
+                               { "img": "img/act2/2.jpg", "class": "float-right max-w-[30%] ml-3 mb-3 rounded-xl shadow " },
+                               "2. La <em>Dysphania ambrosioides</em>, también conocida como epazote, es una hierba que tiene hojas de color verde obscuro y flores en racimos sencillos generalmente de vida corta. Es utilizada ampliamente en México desde antes de la llegada de los españoles, su nombre deriva del náhuatl <em>epaztl</em> que significa zorrillo, lo que hace referencia al aroma tan fuerte y peculiar de la planta. Está incluida entre las principales plantas medicinales de México gracias a su función como antiparasitario, antiinflamatorio, antiácido y antiséptico. Debido a esto varias compañías farmacéuticas la estudian para separar los compuestos que contiene e identificar las funciones de cada uno de ellos."
+                           ]
+                        },
+                        {"class": "text-right text-xs", "text": "Fuente: González, A. (2000). Epazote. Herbal safety. Recuperado de: https://bit.ly/3Jns8rt (Consulta: 16 de marzo de 2022)."}
+                        ,{"br": 2},
+                        {
+                           "grid": 1,
+                           "columns": "1fr 1fr 1fr",
+                           "columnsResponsive": "1fr 1fr",
+                           "class":"bg-white/10 rounded p-2 mb-5",
+                           "content":[
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Química"],
+                                   "correctId": "#b2"
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Física"],
+                                 "correctId": ""
+                             },
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Geología"],
+                                   "correctId": ""
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Historia"],
+                                 "correctId": ""
+                             },
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Biología"],
+                                   "correctId": "#b3"
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Matemáticas"],
+                                 "correctId": ""
+                             },
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Astronomía"],
+                                   "correctId": ""
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Antropología"],
+                                 "correctId": "#b4"
+                             },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Geografía"],
+                                 "correctId": "#b1"
+                             }
+                           ]
+                        },
+                        {
+                           "grid": 1,
+                           "columns": "1fr 3fr",
+                           "columnsResponsive": "1fr 3fr",
+                           "class":"bg-white text-dark p-1 rounded text-sm",
+                           "content":[
+                            {"class": "text-bold text-center", "text": "Ciencia"}
+                            ,"Aportación que realizó para explicar el cambio de color en las polillas <em>Biston beturia</em>"
+                           ]
+                        },
+                        {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"b1"},
+                             "Identificó la sustancia que transformó el color de los árboles de abedul."
+                            ]
+                         },
+                         {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"b2"},
+                             "Identificó la genética de la polilla Biston beturia."
+                            ]
+                         },
+                         {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"b3"},
+                             "Estudió el periodo de tiempo en el que la polilla <em>Biston beturia</em> cambió de coloración."
+                            ]
+                         },
+                         {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"b4"},
+                             "Estudió los cambios en la atmósfera generados por las máquinas de vapor en Inglaterra."
+                            ]
+                         }
+                        
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "inst": "Lee y analiza los siguientes planteamientos. Después identifica las ciencias que se interrelacionan en el planteamiento y arrástralas a la posición que les corresponde en la tabla.",
+                            "iconinst": "pan_tool"
+                        },
+                        {"br": 2},
+                        {
+                           "group": 1,
+                           "class": "px-2 py-5 bg-white text-dark rounded-xl shadow-xl text-sm",
+                           "content":[
+                               { "img": "img/act2/3.jpg", "class": "float-right max-w-[30%] ml-3 mb-3 rounded-xl shadow " },
+                               "3. El carbono 14 (<sup>14</sup>C) es un isótopo radioactivo que se encuentra en pequeñas cantidades en la naturaleza que se genera y desintegra en un ciclo continuo. Los seres vivos incorporamos carbono constantemente a nuestro sistema durante toda la vida por medio de los alimentos en los organismos heterótrofos o el dióxido de carbono (CO2) en el caso de los organismos autótrofos, es por esto que todos los seres vivos tienen cantidades pequeñas pero constantes de este isótopo. Cuando un ser vivo muere se rompe el ciclo de absorción de 14C por lo que la cantidad del isótopo disminuye con el paso del tiempo en los restos del organismo. Por ello la edad que tiene un fósil es determinada por medio de la cantidad de 14C que aún conserva."
+                           ]
+                        },
+                        {"class": "text-right text-xs", "text": "Fuente: ¿Qué es el carbono 14 y cómo funciona? (2022). Beta Analytic Testing Laboratory. Recuperado de: https://bit.ly/36tSVDW (Consulta: 16 de marzo de 2022)."}
+                        ,{"br": 2},
+                        {
+                           "grid": 1,
+                           "columns": "1fr 1fr 1fr",
+                           "columnsResponsive": "1fr 1fr",
+                           "class":"bg-white/10 rounded p-2 mb-5",
+                           "content":[
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Química"],
+                                   "correctId": "#c4"
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Física"],
+                                 "correctId": ""
+                             },
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Geología"],
+                                   "correctId": ""
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Historia"],
+                                 "correctId": "#c1"
+                             },
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Biología"],
+                                   "correctId": "#c2"
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Matemáticas"],
+                                 "correctId": ""
+                             },
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Astronomía"],
+                                   "correctId": ""
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Antropología"],
+                                 "correctId": ""
+                             },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Geografía"],
+                                 "correctId": "#c3"
+                             }
+                           ]
+                        },
+                        {
+                           "grid": 1,
+                           "columns": "1fr 3fr",
+                           "columnsResponsive": "1fr 3fr",
+                           "class":"bg-white text-dark p-1 rounded text-sm",
+                           "content":[
+                            {"class": "text-bold text-center", "text": "Ciencia"}
+                            ,"Aportación que realizó para explicar el cambio de color en las polillas <em>Biston beturia</em>"
+                           ]
+                        },
+                        {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"c1"},
+                             "Identificó la sustancia que transformó el color de los árboles de abedul."
+                            ]
+                         },
+                         {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"c2"},
+                             "Identificó la genética de la polilla Biston beturia."
+                            ]
+                         },
+                         {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"c3"},
+                             "Estudió el periodo de tiempo en el que la polilla <em>Biston beturia</em> cambió de coloración."
+                            ]
+                         },
+                         {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"c4"},
+                             "Estudió los cambios en la atmósfera generados por las máquinas de vapor en Inglaterra."
+                            ]
+                         }
+                        
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "inst": "Lee y analiza los siguientes planteamientos. Después identifica las ciencias que se interrelacionan en el planteamiento y arrástralas a la posición que les corresponde en la tabla.",
+                            "iconinst": "pan_tool"
+                        },
+                        {"br": 2},
+                        {
+                           "group": 1,
+                           "class": "px-2 py-5 bg-white text-dark rounded-xl shadow-xl text-sm",
+                           "content":[
+                               { "img": "img/act2/4.jpg", "class": "float-right max-w-[30%] ml-3 mb-3 rounded-xl shadow " },
+                               "4. La lluvia ácida es cualquier precipitación que contiene niveles elevados de ácido nítrico y ácido sulfúrico. La presencia de estos ácidos en la lluvia es resultado de la unión de los óxidos de nitrógeno y de azufre, que se producen por la contaminación de las fábricas, las centrales eléctricas y en la quema de productos derivados del petróleo, con el agua contenida en el aire. Algunos de los efectos de la lluvia ácida se observan en las estatuas, los monumentos y las construcciones que están elaboradas con materiales como el mármol o la piedra caliza, estructuras principalmente derivadas del carbonato de calcio (CaCO3), o por alguna clase de aleación metálica. En nuestro país, se aprecian estos deterioros en la fachada de los edificios coloniales, así como en el Ángel de la Independencia y en La Minerva. Por otra parte, cuando la lluvia ácida llega al suelo disuelve el magnesio y el calcio presentes en el mismo volviéndolo infértil, tal es el caso de los bosques que rodean la Zona Metropolitana del Valle de México y del Parque Nacional del Desierto de los Leones. "
+                           ]
+                        },
+                        {"class": "text-right text-xs", "text": "Fuente: Guzmán, F. (2022). Lluvia ácida deteriora los monumentos históricos. Gaceta UNAM. Recuperado de: https://bit.ly/3KR0iE5 (Consulta: 16 de marzo de 2022)."}
+                        ,{"br": 2},
+                        {
+                           "grid": 1,
+                           "columns": "1fr 1fr 1fr",
+                           "columnsResponsive": "1fr 1fr",
+                           "class":"bg-white/10 rounded p-2 mb-5",
+                           "content":[
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Química"],
+                                   "correctId": "#d3"
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Física"],
+                                 "correctId": ""
+                             },
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Geología"],
+                                   "correctId": "#d2"
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Historia"],
+                                 "correctId": ""
+                             },
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Biología"],
+                                   "correctId": ""
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Matemáticas"],
+                                 "correctId": ""
+                             },
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Astronomía"],
+                                   "correctId": ""
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Antropología"],
+                                 "correctId": "#d1"
+                             },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Geografía"],
+                                 "correctId": "#d4"
+                             }
+                           ]
+                        },
+                        {
+                           "grid": 1,
+                           "columns": "1fr 3fr",
+                           "columnsResponsive": "1fr 3fr",
+                           "class":"bg-white text-dark p-1 rounded text-sm",
+                           "content":[
+                            {"class": "text-bold text-center", "text": "Ciencia"}
+                            ,"Aportación que realizó para explicar el cambio de color en las polillas <em>Biston beturia</em>"
+                           ]
+                        },
+                        {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"d1"},
+                             "Identificó la sustancia que transformó el color de los árboles de abedul."
+                            ]
+                         },
+                         {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"d2"},
+                             "Identificó la genética de la polilla Biston beturia."
+                            ]
+                         },
+                         {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"d3"},
+                             "Estudió el periodo de tiempo en el que la polilla <em>Biston beturia</em> cambió de coloración."
+                            ]
+                         },
+                         {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"d4"},
+                             "Estudió los cambios en la atmósfera generados por las máquinas de vapor en Inglaterra."
+                            ]
+                         }
+                        
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "inst": "Lee y analiza los siguientes planteamientos. Después identifica las ciencias que se interrelacionan en el planteamiento y arrástralas a la posición que les corresponde en la tabla.",
+                            "iconinst": "pan_tool"
+                        },
+                        {"br": 2},
+                        {
+                           "group": 1,
+                           "class": "px-2 py-5 bg-white text-dark rounded-xl shadow-xl text-sm",
+                           "content":[
+                               { "img": "img/act2/5.jpg", "class": "float-right max-w-[30%] ml-3 mb-3 rounded-xl shadow " },
+                               "5. Las estrellas son cúmulos de plasma de forma esférica con luz propia. Esta luz es el resultado de una serie de reacciones de químicas que ocurren en su interior. Para poder identificar los elementos y compuestos que reaccionan en una estrella, se estudia la luz que ésta emite por medio de telescopios y programas especializados que permiten traducir las emisiones en forma numérica para facilitar su estudio. A partir de las emisiones se ha determinado cuáles son los principales elementos que las conforman y las reacciones que ocurren en su formación. Por ejemplo, la composición de la mayoría de las estrellas es hidrógeno y helio, algunas de ellas contienen metales como el hierro, el cromo o conjuntos de metales pesados, que fueron formados a partir de reacciones nucleares de fusión."
+                           ]
+                        },
+                        {"class": "text-right text-xs", "text": "Fuente: Sánchez, P. y Pérez, P. (2020). ¿Cómo sabemos de qué están hechas las estrellas? El País. Recuperado de: https://bit.ly/3tjzab7 (Consulta: 16 de marzo de 2022)."}
+                        ,{"br": 2},
+                        {
+                           "grid": 1,
+                           "columns": "1fr 1fr 1fr",
+                           "columnsResponsive": "1fr 1fr",
+                           "class":"bg-white/10 rounded p-2 mb-5",
+                           "content":[
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Química"],
+                                   "correctId": "#e1"
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Física"],
+                                 "correctId": "#e4"
+                             },
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Geología"],
+                                   "correctId": ""
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Historia"],
+                                 "correctId": ""
+                             },
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Biología"],
+                                   "correctId": ""
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Matemáticas"],
+                                 "correctId": "#e3"
+                             },
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Astronomía"],
+                                   "correctId": "#e2"
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Antropología"],
+                                 "correctId": ""
+                             },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Geografía"],
+                                 "correctId": ""
+                             }
+                           ]
+                        },
+                        {
+                           "grid": 1,
+                           "columns": "1fr 3fr",
+                           "columnsResponsive": "1fr 3fr",
+                           "class":"bg-white text-dark p-1 rounded text-sm",
+                           "content":[
+                            {"class": "text-bold text-center", "text": "Ciencia"}
+                            ,"Aportación que realizó para explicar el cambio de color en las polillas <em>Biston beturia</em>"
+                           ]
+                        },
+                        {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"e1"},
+                             "Identificó la sustancia que transformó el color de los árboles de abedul."
+                            ]
+                         },
+                         {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"e2"},
+                             "Identificó la genética de la polilla Biston beturia."
+                            ]
+                         },
+                         {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"e3"},
+                             "Estudió el periodo de tiempo en el que la polilla <em>Biston beturia</em> cambió de coloración."
+                            ]
+                         },
+                         {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"e4"},
+                             "Estudió los cambios en la atmósfera generados por las máquinas de vapor en Inglaterra."
+                            ]
+                         }
+                        
+                    ]
+                },
+                {
+                    "width": "100%",
+                    "content": [
+                        {
+                            "inst": "Lee y analiza los siguientes planteamientos. Después identifica las ciencias que se interrelacionan en el planteamiento y arrástralas a la posición que les corresponde en la tabla.",
+                            "iconinst": "pan_tool"
+                        },
+                        {"br": 2},
+                        {
+                           "group": 1,
+                           "class": "px-2 py-5 bg-white text-dark rounded-xl shadow-xl text-sm",
+                           "content":[
+                               { "img": "img/act2/6.jpg", "class": "float-right max-w-[30%] ml-3 mb-3 rounded-xl shadow " },
+                               "6. El peyote es un cactus endémico de la zona norte de México que contiene feniletilamina, un alcaloide que genera fuertes alucinaciones. De acuerdo con estudios neurológicos, la feniletilamina funciona como un neurotransmisor que produce modificaciones fisiológicas como la excitación, la taquicardia y el insomnio. El uso de este alucinógeno está regulado por las autoridades. Sin embargo, algunas poblaciones indígenas asentadas en la Sierra Madre Occidental, como los huicholes utilizan este cactus para sus prácticas religiosas, en las cuales las alucinaciones causadas por el peyote son asociadas a la comunicación con sus dioses y sus ancestros."
+                           ]
+                        },
+                        {"class": "text-right text-xs", "text": "Fuente: Huang, R. (2021). La ruta sagrada del peyote. The New York Times. Recuperado de: https://nyti.ms/3KOYXhe (Consulta: 16 de marzo de 2022)."}
+                        ,{"br": 2},
+                        {
+                           "grid": 1,
+                           "columns": "1fr 1fr 1fr",
+                           "columnsResponsive": "1fr 1fr",
+                           "class":"bg-white/10 rounded p-2 mb-5",
+                           "content":[
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Química"],
+                                   "correctId": "#f3"
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Física"],
+                                 "correctId": ""
+                             },
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Geología"],
+                                   "correctId": ""
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Historia"],
+                                 "correctId": ""
+                             },
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Biología"],
+                                   "correctId": "#f4"
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Matemáticas"],
+                                 "correctId": ""
+                             },
+                               {
+                                  "symbol": "act2Drag",
+                                   "content": ["Astronomía"],
+                                   "correctId": ""
+                               },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Antropología"],
+                                 "correctId": "#f2"
+                             },
+                               {
+                                "symbol": "act2Drag",
+                                 "content": ["Geografía"],
+                                 "correctId": "#f1"
+                             }
+                           ]
+                        },
+                        {
+                           "grid": 1,
+                           "columns": "1fr 3fr",
+                           "columnsResponsive": "1fr 3fr",
+                           "class":"bg-white text-dark p-1 rounded text-sm",
+                           "content":[
+                            {"class": "text-bold text-center", "text": "Ciencia"}
+                            ,"Aportación que realizó para explicar el cambio de color en las polillas <em>Biston beturia</em>"
+                           ]
+                        },
+                        {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"f1"},
+                             "Identificó la sustancia que transformó el color de los árboles de abedul."
+                            ]
+                         },
+                         {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"f2"},
+                             "Identificó la genética de la polilla Biston beturia."
+                            ]
+                         },
+                         {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"f3"},
+                             "Estudió el periodo de tiempo en el que la polilla <em>Biston beturia</em> cambió de coloración."
+                            ]
+                         },
+                         {
+                            "grid": 1,
+                            "columns": "1fr 3fr",
+                            "columnsResponsive": "1fr 3fr",
+                            "class":" p-1 rounded text-sm",
+                            "content":[
+                             {"html": " ", "class":"dropItem drop  h-16", "id":"f4"},
+                             "Estudió los cambios en la atmósfera generados por las máquinas de vapor en Inglaterra."
+                            ]
+                         }
+                        
+                    ]
+                }
+            ]
         },
         {
             "title": "Finalizar",
@@ -702,5 +1682,15 @@
             ]
         }
     ],
-    "symbols": {}
+    "symbols": {
+        "act2Drag": {
+            "drag": 1,
+            "bounds": "",
+            "class": "w-fit h-fit mx-auto",
+            "dropzone": ".drop", 
+            "hover": "", 
+            "dropzoneClass": "", 
+            "dropzoneItems": "" 
+        }
+    }
 }
