@@ -5,7 +5,7 @@
     "title": "Interpretación de variables",
     "bgimgs": 5,
     "ficha": [
-        ["Aprendizajes esperados", "Reconoce la existencia de las variables y distingue sus usos como número general, como incógnita y como relación funcional."],
+        ["Aprendizaje esperado", "Reconoce la existencia de las variables y distingue sus usos como número general, como incógnita y como relación funcional."],
         ["Contenido central", "Uso de las variables y las expresiones algebraicas."],
         ["Eje transversal", "Habilidades lectoras."]
     ],
@@ -70,10 +70,13 @@
                                     "term": {
                                         "img": "metal.png"
                                     },
-                                    "content": ["Si el valor de la botella de plástico es igual a 6, entonces el valor de la botella de metal se obtiene de la siguiente manera ", {
+                                    "content": [
+                                        "Si el valor de la botella de plástico es igual a 6, entonces el valor de la botella de metal se obtiene de la siguiente manera ",
+                                         {
                                         "math": "1 + 3 × 6 = 19.",
-                                        "dark": 1
-                                    }]
+                                            "dark": 1,
+                                            "size": "inherit"
+                                        }]
                                 },
 
                                 {
@@ -96,7 +99,7 @@
                                 {
                                     "group":1,
                                     "content":[
-                                        "Esta representación puede emplearse como una expresión algebraica remplazando la botella de plástico por la literal ",
+                                        "Esta representación puede emplearse como una expresión algebraica reemplazando la botella de plástico por la literal ",
                                         {"math": "b"},
                                         " y la botella de metal por la literal ",
                                         { "math": "m" },
@@ -119,11 +122,13 @@
                     "content": [
                         "En este caso, las literales ",
                         {
-                            "math": "b"
+                            "math": "b",
+                            "class": "!bg-yellow-400/30"
                         },
                         " y ",
                         {
-                            "math": "m"
+                            "math": "m",
+                            "class": "!bg-green-400/30"
                         },
                         ", al no tener un valor fijo, son consideradas como ",
                         {
@@ -135,7 +140,11 @@
                             "term": "relación funcional",
                             "content": ["Expresiones algebraicas que se utilizan para identificar la dependencia entre dos magnitudes o variables."]
                         },
-                        " pues el valor de una (b) modifica el valor de la otra (m), es decir, el valor de una depende del valor de la otra, de lo que se deriva la clasificación de variables en dos tipos ",
+                        " pues el valor de una (",
+                        {"math": "b", "class": "!bg-yellow-400/30"},
+                        ") modifica el valor de la otra (",
+                        {"math": "m", "class": "!bg-green-400/30"},
+                        "), es decir, el valor de una depende del valor de la otra, de lo que se deriva la clasificación de variables en dos tipos ",
                         {
                             "term": "dependientes",
                             "content": ["Es aquella cuyo valor está en función del valor que adquiere la otra variable, llamada variable independiente."]
