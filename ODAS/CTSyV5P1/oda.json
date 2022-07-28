@@ -7,13 +7,13 @@
   "ficha": [
     [
       "Aprendizaje esperado",
-      "Interpreta la solución de un sistema de ecuaciones lineales."
+      "Identifica los elementos que implican la transformación de sociedades rurales a urbanas."
     ],
     [
       "Contenido central",
-      "Representación y resolución de sistemas de ecuaciones lineales."
+      "La transformación de sociedades rurales a urbanas."
     ],
-    ["Eje transversal", "Habilidades lectoras."]
+    ["Eje transversal", "Social."]
   ],
   "screens": [
     {
@@ -36,7 +36,13 @@
                   "group": 1,
                   "class": "",
                   "content": [
-                    "Existe la idea generalizada de que las ciudades proveen un estilo de vida y un estándar de calidad más alto que el de las áreas rurales. En los países desarrollados dicha distinción ya no existe, sin embargo, en el resto de los países aún hay localidades que se caracterizan por un estilo de vida verdaderamente rural. De ahí que las personas migren del campo a la ciudad no sólo en busca de empleo, sino en la búsqueda de ese estilo y ese estándar de calidad que incluye, por ejemplo, disponibilidad de energía eléctrica y agua potable dentro de la vivienda, fácil acceso a la atención médica, escuelas de todos los niveles académicos y diversas alternativas para la recreación, a lo que habría que sumar la amplia oferta de comestibles y mercancías de todo tipo."
+                    "Existe la idea generalizada de que las ciudades proveen un estilo de vida y un ",
+                    {"term": "estándar", "content": ["Modelo o referencia de algo en particular."]},
+                    " de calidad más alto que el de las áreas rurales. En los países desarrollados dicha distinción ya no existe, sin embargo, en el resto de los países aún hay localidades que se caracterizan por un estilo de vida verdaderamente rural. De ahí que las personas ",
+                    {"term": "migren", "content": ["Cambiar de lugar de residencia."]},
+                    " del campo a la ciudad no sólo en busca de empleo, sino en la búsqueda de ese estilo y ese estándar de calidad que incluye, por ejemplo, disponibilidad de energía eléctrica y agua potable dentro de la vivienda, fácil acceso a la atención médica, escuelas de todos los niveles académicos y diversas alternativas para la ",
+                    {"term": "recreación", "content": ["Actividad que se realiza con fines de diversión o relajamiento."]},
+                    ", a lo que habría que sumar la amplia oferta de comestibles y mercancías de todo tipo."
                   ]
                 },
                 { "img": "img/01.jpg" }
@@ -58,11 +64,11 @@
           "content": [
             { "class": "h1 text-center", "textAnimation": "Urbanización" },
             { "br": 1 },
-            "La urbanización es un proceso por medio del cual la población y las principales actividades económicas, políticas y sociales se concentran en las ciudades. Es un fenómeno producto de la historia y de las relaciones sociales.",
+            "La <strong>urbanización</strong> es un proceso por medio del cual la población y las principales actividades económicas, políticas y sociales se concentran en las ciudades. Es un fenómeno producto de la historia y de las relaciones sociales.",
             { "br": 1 },
             "Las ciudades son espacios complejos y dinámicos, son el eje de las sociedades humanas y han evolucionado junto con éstas. Nacieron por diversas causas, una de ellas fue el clima propicio y la accesibilidad al agua, pero existen otras como las características del terreno que permitían defenderlas de los ataques enemigos, la ubicación estratégica para el comercio, además de las que surgieron por motivos religiosos y políticos.",
             { "br": 1 },
-            "En la actualidad algunas ciudades se han expandido de tal manera que se han creado áreas metropolitanas integradas por varias ciudades e, incluso, megalópolis, que son la unión de áreas metropolitanas y conurbaciones.",
+            "En la actualidad algunas ciudades se han expandido de tal manera que se han creado áreas metropolitanas integradas por varias ciudades e, incluso, <strong><megalópolis</strong>, que son la unión de <strong>áreas metropolitanas</strong> y conurbaciones.",
             { "br": 2 },
             {
               "class": "h3 text-center",
@@ -70,7 +76,7 @@
             },
             {
               "class": "h4 text-center",
-              "text": "Observa cuál ha sido el proceso de urbanización del mundo."
+              "text": "Observa cuál ha sido el <strong class='text-yellow-400'>proceso de urbanización del mundo</strong>."
             },
             { "br": 1 },
             {
@@ -89,8 +95,17 @@
                       "columns": "1fr 1fr",
                       "columnsResponsive": "1fr",
                       "content": [
-                        "Surgen en valles fluviales y climas templados. Son amuralladas, con caseríos concentrados, un palacio y un templo. <br>Ejemplos: Ur y Babilonia en Mesopotamia.",
                         {
+                           "group": 1,
+                           "class": "",
+                           "content":[
+                             "Surgen en valles ",
+                             {"term": "fluviales", "content": ["Referente a los ríos."]},
+                             " y climas templados. Son amuralladas, con caseríos concentrados, un palacio y un templo. <br>Ejemplos: Ur y Babilonia en Mesopotamia."
+                               
+                           ]
+                        }
+                        ,{
                           "img": "img/03.jpg",
                           "class": "rounded",
                           "caption": "*Ruinas de Babilonia en Hillah, Iraq."
@@ -110,8 +125,17 @@
                       "columns": "1fr 1fr",
                       "columnsResponsive": "1fr",
                       "content": [
-                        "Crea el espacio público, trazado de cuadrícula e infraestructura como alcantarillado y acueductos. <br>Ejemplos: Atenas, Roma.",
                         {
+                           "group": 1,
+                           "class": "",
+                           "content":[
+                             "Crea el espacio público, trazado de cuadrícula e ",
+                             {"term": "infraestructura", "content": ["Obras y elementos necesarios para el funcionamiento óptimo de una ciudad o país."]},
+                             " como alcantarillado y acueductos. <br>Ejemplos: Atenas, Roma."
+                               
+                           ]
+                        }
+                        ,{
                           "img": "img/04.jpg",
                           "class": "rounded",
                           "caption": "*Ruinas del foro en Roma, Italia."
@@ -158,8 +182,17 @@
                       "columns": "1fr 1fr",
                       "columnsResponsive": "1fr",
                       "content": [
-                        "Se caracteriza por la alteración del paisaje urbano, la densificación y el crecimiento espacial. <br>Ejemplos: Londres, Chicago",
                         {
+                           "group": 1,
+                           "class": "",
+                           "content":[
+                             "Se caracteriza por la alteración del paisaje urbano, la ",
+                             {"term": "densificación", "content": ["Concentración de personas en una porción de terreno."]},
+                             " y el crecimiento espacial. <br>Ejemplos: Londres, Chicago"
+                               
+                           ]
+                        }
+                        ,{
                           "img": "img/06.jpg",
                           "class": "rounded",
                           "caption": "*Londres, Inglaterra."
@@ -182,7 +215,16 @@
                       "columns": "1fr 1fr",
                       "columnsResponsive": "1fr",
                       "content": [
-                        "Se caracteriza por su gran concentración demográfica, parece no tener límite por lo que crea megalópolis y conurbaciones. <br>Ejemplos: Nueva York, Tokio.",
+                        {
+                           "group": 1,
+                           "class": "",
+                           "content":[
+                             "Se caracteriza por su gran concentración demográfica, parece no tener límite por lo que crea megalópolis y ",
+                             {"term": "conurbaciones", "content": ["Fenómeno en el que varias poblaciones entran en contacto físico por el crecimiento progresivo."]},
+                             ". <br>Ejemplos: Nueva York, Tokio."
+                               
+                           ]
+                        },
                         {
                           "img": "img/07.jpg",
                           "class": "rounded",
@@ -217,7 +259,9 @@
                   ]
                 }
               ]
-            }
+            },
+            {"br": 1},
+            {"class": "text-right text-xs", "text": "Fuente: Anzano, J. (2010). El proceso de urbanización en el mundo. Proyecto Clío 36. Recuperado de: https://bit.ly/3ehqRV3 (Consulta: 17 de diciembre del 2021"}
           ],
           "buttonNextScreen": "Continuar"
         }
@@ -380,8 +424,13 @@
                 { "img": "img/13.jpg", "class": "max-w-[20rem]" },
                 { "br": 2 },
                 {
-                  "class": "h4 text-center",
-                  "text": "5. Grandes índices de emigración."
+                   "group": 1,
+                   "class": "h4 text-center",
+                   "content":[
+                     "5. Grandes índices de ",
+                     {"term": "emigración", "content": ["Dejar el lugar de residencia para ir a otro por  diversos motivos. No confundir con <strong>inmigrar</strong>, que es  llegar y establecerse en un lugar para residir en él."]}
+                       
+                   ]
                 }
               ]
             },
@@ -436,7 +485,7 @@
       ]
     },
     {
-      "title": "Actividad 2. ",
+      "title": "Actividad 2. Las partes de una ciudad ",
       "icon": "games",
       "steps": false,
       "class": "flex flex-col justify-center",
