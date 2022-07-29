@@ -14,8 +14,8 @@
             "¿Qué tienen en común las sustancias que constituyen nuestro cuerpo (saliva, lágrima, orina, sudor, sangre, excreta, semen, etcétera) con las sustancias que te rodean?"
         ],
         [
-            "Área de formación integral",
-            "Formación para el desarrollo sostenible."
+            "Eje transversal",
+            "Ambiental."
         ]
     ],
     "screens": [
@@ -34,7 +34,7 @@
                         },
                         {"br":1},
                         {
-                            "textAnimation": "Las sustancias que se encuentran en la naturaleza y en los organismos vivos son, en su mayoría, sistemas dispersos, es decir, mezclas de dos o más compuestos o elementos. El conocimiento de los componentes que los conforman y las características que presentan son de gran importancia ya que nos proporciona elementos para entender nuestro cuerpo y el entorno en el que vivimos y porque a partir de ellos se pueden diseñar metodologías para descontaminar el ambiente."
+                            "textAnimation": "Las sustancias que se encuentran en la naturaleza y en los organismos vivos son, en su mayoría, sistemas dispersos, es decir, mezclas de dos o más compuestos o elementos. El conocimiento de los componentes que los conforman y las características que presentan son de gran importancia ya que nos proporcionan elementos para entender nuestro cuerpo y el entorno en el que vivimos y porque a partir de ellos se pueden diseñar metodologías para descontaminar el ambiente."
                         },
                         {"br":1},
                         {
@@ -277,8 +277,9 @@
                         {"class": "h4 text-center", "textAnimation": "Primero se numeran los tubos para identificar a cuál se le añadió cada material."}
                         ,{"br":2},
                         {
-                            "dragdrop": 1
-                            ,"drags": [
+                            "dragdrop": 1,
+                            "noEvaluable": true,
+                            "drags": [
                                 [{"img":"sim/marcador.svg", "class":"w-16 mx-auto"}, "vi"]
                             ],
                             "dropsRight":[
@@ -296,8 +297,9 @@
                         {"class": "h4 text-center", "textAnimation": "Utilizar la piseta para verter agua en la probeta hasta llegar a la marca de los 10 mililitros."},
                         {"br":2},
                         {
-                            "dragdrop": 1
-                            ,"drags": [
+                            "dragdrop": 1,
+                            "noEvaluable": true,
+                            "drags": [
                                 [{"img":"sim/piseta.svg", "class":"w-16 mx-auto"}, "vi"]
                             ],
                             "dropsRight":[
@@ -316,8 +318,9 @@
                        {"class": "h4 text-center", "textAnimation": "Posteriormente, se agregan los 10 mililitros de agua al tubo con el número 1 y se realiza esta acción en los tubos 2 a 7."}
                         ,{"br":2},
                         {
-                            "dragdrop": 1
-                            ,"drags": [
+                            "dragdrop": 1,
+                            "noEvaluable": true,
+                            "drags": [
                                 [{"img":"sim/probeta-agua.svg", "class":"w-16 mx-auto"}, "vi"]
                             ],
                             "dropsRight":[
@@ -353,6 +356,7 @@
                         {"br":2},
                         {
                             "select": 1,
+                            "noEvaluable": true,
                             "columns": "1fr",
                             "optionClass": "aspect-square card cursor-pointer flex justify-center items-center w-60 mx-auto",
                             "options": [
@@ -378,8 +382,9 @@
                          },
                         {"br":2},
                         {
-                            "dragdrop": 1
-                            ,"drags": [
+                            "dragdrop": 1,
+                            "noEvaluable": true,
+                            "drags": [
                                 [{"img":"sim/tubo1.svg", "class":"w-16 mx-auto"}, "vi"]
                             ],
                             "dropsRight":[
@@ -426,6 +431,7 @@
                         {"br":2},
                         {
                             "select": 1,
+                            "noEvaluable": true,
                             "columns": "1fr",
                             "optionClass": "aspect-square card cursor-pointer flex justify-center items-center w-60 mx-auto",
                             "options": [
@@ -435,13 +441,14 @@
                                 {"lottie": "sim/9.json",  "autoplay":true, "loop":false}
                             ]
                         },
-                        {"br": 1},
-                        {"class": "h4 text-center", "textAnimation": "Para determinar si los sistemas dispersos son soluciones, suspensiones o coloides, se coloca cada tubo en el soporte universal y se hace pasar un haz de luz láser a través del contenido. Anota tus observaciones de cada tubo. Una vez que hagas tus anotaciones, haz clic en SIGUIENTE para ver cada uno de los ocho tubos"}
+                        {"br": 1}
                     ]
                 },
                 {
                     "width": "100%",
                     "content": [
+                        {"class": "h4 text-center", "textAnimation": "Para determinar si los sistemas dispersos son soluciones, suspensiones o coloides, se coloca cada tubo en el soporte universal y se hace pasar un haz de luz láser a través del contenido."},
+                        {"br": 2},
                         {
                             "grid": 1,
                             "columns": "2fr 1fr",
@@ -520,7 +527,7 @@
             ]
         },
         {
-            "title": "Actividad",
+            "title": "Diferencias entre los tipos de sistemas dispersos",
             "icon": "games",
             "steps": true,
             "blocks": [
@@ -629,6 +636,7 @@
                     },
                     {"br":2}
                 ]
+                //"buttonFinalize": "Enviar respuestas"
             },
             {
                 "width": "100%",
