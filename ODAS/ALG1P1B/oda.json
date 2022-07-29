@@ -5,7 +5,7 @@
     "title": "Variables",
     "bgimgs": 5,
     "ficha":[
-        ["Aprendizajes esperados", "Reconoce la existencia de las variables y distingue sus usos como número general, como incógnita y como relación funcional."],
+        ["Aprendizaje esperado", "Reconoce la existencia de las variables y distingue sus usos como número general, como incógnita y como relación funcional."],
         ["Contenido central", "Conceptos básicos del lenguaje algebraico."],
         ["Eje transversal", "Habilidades lectoras."]
     ],
@@ -147,7 +147,7 @@
                     "width": "100%",
                     "content": [
                         {"text":"4. Lourdes inició un proyecto de nutrición en el que vende desayunos saludables. El paquete mensual de desayunos lo vende a $550, de los cuales destina $225 para gastos de insumos y renta del local, el resto es su ganancia. Para conocer sus ganancias escribió la siguiente expresión algebraica.", "class":"h5"},
-                        {"math": "g = (550 – 225)u", "block": true},
+                        {"math": "g = (550 \\, – \\, 225)u", "block": true},
                         {
                             "dragdrop": true,
                             "drags": [
