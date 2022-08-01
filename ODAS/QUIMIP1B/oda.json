@@ -28,17 +28,16 @@
             },
             { "br": 1 },
             {
-              "grid": 1,
-              "columns": "2fr 1fr",
-              "columnsResponsive": "1fr",
+               "group": 1,
+               "class": "text-center",
+               "content":[
+                { "img": "img/1.jpg", "class": "max-w-[30rem]" }
+               ]
+            },
+            {"br": 2},
+            {
               "class": "",
-              "content": [
-                {
-                  "class": "",
-                  "text": "La energía es la capacidad que tiene un sistema para realizar un trabajo. Al igual que la materia, la energía siempre está presente en el entorno, por lo que distinguir entre los tipos de energía, así como conocer sus características e interrelación permitirá ser conscientes de su importancia. Por otra parte, conocer las fuentes de las que proviene la energía eléctrica que se usa en los hogares y la energía que se utiliza en el transporte, proporcionará las herramientas para elegir de forma consciente los cuidados y fuentes de energía que minimicen el impacto en el planeta."
-                },
-                { "img": "img/1.jpg", "class": "" }
-              ]
+              "text": "La energía es la capacidad que tiene un sistema para realizar un trabajo. Al igual que la materia, la energía siempre está presente en el entorno, por lo que distinguir entre los tipos de energía, así como conocer sus características e interrelación permitirá ser conscientes de su importancia. Por otra parte, conocer las fuentes de las que proviene la energía eléctrica que se usa en los hogares y la energía que se utiliza en el transporte, proporcionará las herramientas para elegir de forma consciente los cuidados y fuentes de energía que minimicen el impacto en el planeta."
             }
           ]
         },
@@ -97,9 +96,9 @@
                                                {
                                                   "dialog": 1,
                                                   "button": ["Energía térmica o calorífica"],
-                                                  "buttonClass": "btn btn-error",
+                                                  "buttonClass": "btn btn-error btn-block",
                                                   "content":[
-                                                      {"class": "", "text": "Energía térmica o calorífica"},
+                                                      {"class": "text-bold h3", "text": "Energía térmica o calorífica"},
                                                       {"br": 1},
                                                        "La <strong>energía térmica o calorífica</strong> se asocia al movimiento o vibración de las moléculas que constituyen la materia. Cuando las moléculas vibran a mayor intensidad se manifiesta un aumento en la temperatura, a su vez, esto puede ser producido por una fuente de calor externa, como una estufa, carbón, leña, etcétera."
                                                        ,{"br": 1},
@@ -109,11 +108,13 @@
                                                {
                                                    "dialog": 1,
                                                    "button": ["Energía química"],
-                                                   "buttonClass": "btn btn-error",
+                                                   "buttonClass": "btn btn-error btn-block",
                                                    "content":[
-                                                        {"class": "", "text": "Energía química"},
+                                                        {"class": "text-bold h3", "text": "Energía química"},
                                                        {"br": 1},
-                                                        "La <strong>energía química</strong> es aquella energía que está contenida en los enlaces que conforman a la materia y que se libera a través de una reacción química. Por ejemplo, los combustibles de origen fósil guardan en sus enlaces la energía que se libera en forma de calor y luz cuando éstos reaccionan con el oxígeno en la combustión. Esta forma de energía también está presente en las pilas y acumuladores.",
+                                                        "La <strong>energía química</strong> es aquella energía que está contenida en los ",
+                                                        {"term": "enlaces", "content": ["Es la fuerza que mantiene unidos a los átomos en un compuesto."]},
+                                                        " que conforman a la materia y que se libera a través de una reacción química. Por ejemplo, los combustibles de origen fósil guardan en sus enlaces la energía que se libera en forma de calor y luz cuando éstos reaccionan con el oxígeno en la combustión. Esta forma de energía también está presente en las pilas y acumuladores.",
                                                         {"br": 2},
                                                         {"class": "p-2 bg-gray-200 rounded text-dark", "text": "Una explosión sucede cuando se libera la energía química contenida en una molécula o grupo de moléculas de forma muy rápida y violenta. Por ejemplo, la nitroglicerina es un compuesto altamente reactivo que sólo necesita un poco de fricción o superar los 41 °C para hacer explosión. "},
                                                         {"br": 1},
@@ -123,17 +124,21 @@
                                                 {
                                                    "dialog": 1,
                                                    "button": ["Energía nuclear"],
-                                                   "buttonClass": "btn btn-error",
+                                                   "buttonClass": "btn btn-error btn-block",
                                                    "content":[
-                                                       {"class": "", "text": "Energía nuclear"},
+                                                       {"class": "text-bold h3", "text": "Energía nuclear"},
                                                        {"br": 1},
                                                        "La <strong>energía nuclear</strong> es la que se encuentra resguardada en los átomos y se libera de manera espontánea o artificial, por medio de la fusión o la fisión de los núcleos atómicos.",
                                                        {"br": 2},
-                                                        "La <strong>fisión</strong> es el proceso mediante el cual un átomo radiactivo se descompone en otros más pequeños y libera grandes cantidades de energía. En la siguiente animación se representa la fisión de un átomo, es importante que observes que este proceso ocurre en cadena y una vez que comienza no se puede detener, sin embargo, el proceso se puede ralentizar por medio del agua o el grafito, situación aprovechada en la generación de electricidad en las centrales nucleares.",
-                                                        { "lottie" : "img/fision.json", "loop":true, "speed":0.7 },
+                                                        "La <strong>fisión</strong> es el proceso mediante el cual un ",
+                                                        {"term": "átomo radiactivo", "content": ["Es un átomo inestable que libera energía a través de la radiación."]},
+                                                        " se descompone en otros más pequeños y libera grandes cantidades de energía. Este proceso ocurre en cadena y una vez que comienza no se puede detener, sin embargo, el proceso se puede ralentizar por medio del agua, principio utilizado en la generación de electricidad en las centrales nucleares.",
+                                                        { "noreplaybtn":true, "lottie" : "img/fision.json", "loop":true, "speed":0.7 },
                                                         {"br": 2},
-                                                        "La <strong>fusión</strong> es el proceso mediante el cual dos núcleos de átomos pequeños se unen para formar un átomo más pesado, la unión generalmente produce una partícula con elevada energía. A diferencia de la fisión, la fusión, aún no es aprovechada en la generación de electricidad a pesar de las investigaciones multidisciplinarias. Observa en la siguiente animación cómo ocurre la fusión de dos isótopos del hidrógeno para formar un átomo de helio."
-                                                        ,{ "lottie" : "img/fision2.json", "loop":true, "speed":0.7 }
+                                                        "La <strong>fusión</strong> es el proceso mediante el cual dos núcleos de átomos pequeños se unen para formar un átomo más pesado, la unión generalmente produce una partícula con elevada energía. A diferencia de la fisión, este proceso aún no es aprovechado en la generación de electricidad. Observa la siguiente animación cómo ocurre la fusión de dos ",
+                                                        {"term": "isótopos", "content": ["Son dos o más átomos del mismo elemento que difieren en la composición de las partículas de su núcleo, lo que provoca que no tenga la misma masa."]},
+                                                        " del hidrógeno para formar un átomo de helio."
+                                                        ,{ "noreplaybtn":true, "lottie" : "img/fision2.json", "loop":true, "speed":0.7 }
 
 
                                                    ]
@@ -141,11 +146,13 @@
                                                 {
                                                    "dialog": 1,
                                                    "button": ["Energía eléctrica"],
-                                                   "buttonClass": "btn btn-error",
+                                                   "buttonClass": "btn btn-error btn-block",
                                                    "content":[
-                                                       {"class": "", "text": "Energía eléctrica"},
+                                                       {"class": "text-bold h3", "text": "Energía eléctrica"},
                                                        {"br": 1},
-                                                        "La <strong>energía eléctrica</strong> resulta de la diferencia de potencial eléctrico entre dos puntos, esto provoca un flujo de electrones que se pueden transportar a través de múltiples sustancias conductoras, como el cobre, hierro, soluciones salinas, fibra óptica, etcétera."
+                                                        "La <strong>energía eléctrica</strong> resulta de la diferencia de ",
+                                                        {"term": "potencial eléctrico", "content": ["Es el trabajo que se debe realizar por unidad de carga para desplazar a ésta en un campo eléctrico."]},
+                                                        " entre dos puntos, esto provoca un flujo de electrones que se pueden transportar a través de múltiples sustancias conductoras, como el cobre, hierro, soluciones salinas, fibra óptica, etcétera."
                                                         ,{"br": 2},
                                                         { "img": "img/electrica.jpg", "class": "" }
                                                    ]
@@ -153,24 +160,24 @@
                                                {
                                                   "dialog": 1,
                                                   "button": ["Energía sonora"],
-                                                  "buttonClass": "btn btn-error",
+                                                  "buttonClass": "btn btn-error btn-block",
                                                   "content":[
-                                                      {"class": "", "text": "Energía térmica o calorífica"},
+                                                      {"class": "text-bold h3", "text": "Energía sonora"},
                                                       {"br": 1},
-                                                       "La <strong>energía térmica o calorífica</strong> se asocia al movimiento o vibración de las moléculas que constituyen la materia. Cuando las moléculas vibran a mayor intensidad se manifiesta un aumento en la temperatura, a su vez, esto puede ser producido por una fuente de calor externa, como una estufa, carbón, leña, etcétera.",
+                                                       "La <strong>energía sonora</strong> se transmite o transporta a través de las ondas sonoras, éstas se producen a partir de un cuerpo en vibración.",
                                                        {"br": 2},
                                                        {"audio": "img/ring.mp3"},
-                                                       { "lottie" : "img/sonoro.json", "loop":true, "speed": 1 }
+                                                       { "noreplaybtn":true, "lottie" : "img/sonoro.json", "loop":true, "speed": 1 }
                                                   ]
                                                },
                                                {
                                                    "dialog": 1,
                                                    "button": ["Energía gravitacional"],
-                                                   "buttonClass": "btn btn-error",
+                                                   "buttonClass": "btn btn-error btn-block",
                                                    "content":[
-                                                       {"class": "", "text": "Energía gravitacional"},
+                                                       {"class": "text-bold h3", "text": "Energía gravitacional"},
                                                        {"br": 1},
-                                                        "La <strong>energía gravitacional</strong> está asociada al campo gravitatorio y a la posición de un objeto. Es una de las energías que se aprecia fácilmente a nuestro alrededor, basta con ver el efecto que ocurre al soltar algo de una altura determinada para saber cómo actúa sobre un cuerpo.",
+                                                        "La <strong>energía gravitacional</strong> está asociada al campo gravitatorio y a la posición de un objeto. Es una forma de energía que se aprecia fácilmente a nuestro alrededor, basta con observar lo que sucede al soltar algo desde una altura determinada para saber cómo actúa sobre un cuerpo. ",
                                                         {"br": 2},
                                                         {
                                                            "group": 1,
@@ -184,13 +191,13 @@
                                                 {
                                                    "dialog": 1,
                                                    "button": ["Energía mecánica"],
-                                                   "buttonClass": "btn btn-error",
+                                                   "buttonClass": "btn btn-error btn-block",
                                                    "content":[
-                                                       {"class": "", "text": "Energía mecánica"},
+                                                       {"class": "text-bold h3", "text": "Energía mecánica"},
                                                        {"br": 1},
                                                         "La <strong>energía mecánica</strong> es aquella que está guardada en un objeto por la aplicación de una fuerza externa. Un ejemplo es la energía resguardada en un resorte comprimido.",
                                                         {"br": 2},
-                                                        {"inst": "Arrastra la tapa verde para aplicar fuerza en el resorte y liberar energía mecánica", "iconinst":"pan_tool"}
+                                                        {"inst": "Presiona o jala la tapa verde para aplicar fuerza de compresión o expansión en el resorte y suéltala para liberar la energía mecánica.", "iconinst":"pan_tool"}
 
                                                         ,{"iframe": "spring.html", "class": "w-80 h-80 mx-auto rounded-lg my-5"}
                                                    ]
@@ -198,9 +205,9 @@
                                                 {
                                                    "dialog": 1,
                                                    "button": ["Energía luminosa o lumínica"],
-                                                   "buttonClass": "btn btn-error",
+                                                   "buttonClass": "btn btn-error btn-block",
                                                    "content":[
-                                                   {"class": "", "text": "Energía luminosa o lumínica"},
+                                                   {"class": "text-bold h3", "text": "Energía luminosa o lumínica"},
                                                        {"br": 1},
                                                         "La <strong>energía luminosa o lumínica</strong> se manifiesta cuando los electrones que forman parte de los átomos se mueven a estados excitados y al regresar a niveles basales liberan energía en forma de luz.",
                                                         {"br": 2},
@@ -236,17 +243,19 @@
                               }
                            }
                            
-                       ]
+                        ]
                     }
-                   ,{ "lottie" : "img/aero.json", "loop":true, "speed": 1 }
-               ]
-            }
+                    ,{ "noreplaybtn":true, "lottie" : "img/aero.json", "loop":true, "speed": 1 }
+                ]
+            },
+            {"br": 1},
+            {"class": "text-right text-xs", "text": "Fuentes: Brown, T., LeMay, E., Bursten, B. y Burdge, J. (2004). <em>Química, la ciencia central</em>. México: Pearson educación. Hewitt, P. (2016).<em> Física conceptual</em>. (12<sup>a</sup> ed.) México: Pearson Educación."}
           ]
         }
       ]
     },
     {
-       "title": "Clasifica las formas de energía",
+       "title": "Actividad I. ¿Energía potencial o cinética?",
        "icon": "games",
        "steps": false,
        "class": "flex flex-col justify-center",
@@ -278,7 +287,7 @@
        ]
     },
     {
-       "title": "Formas de energía",
+       "title": "Actividad II. Formas de energía",
        "icon": "games",
        "steps": true,
        "class": "flex flex-col justify-center",
@@ -286,36 +295,43 @@
         {
            "width": "100%",
            "content": [
-               {"inst": "Arrastra las formas de energía al lugar que corresponda en las siguientes imágenes. Puedes utilizar las pistas que se presentan, pero tu calificación será menor.", "iconinst":"pan_tool"},
+               {"inst": "Arrastra las formas de energía al lugar que corresponda en las siguientes imágenes. ", "iconinst":"pan_tool"},
                {"br": 1},
                {
                   "grid": 1,
                   "columns": "1fr 2fr",
                   "columnsResponsive": "1fr",
                   "content":[
-                      {
-                         "repeater":1,
-                         "items": [
-                             { "content": ["Energía química"],"correctId": "" },
-                             { "content": ["Energía nuclear"],"correctId": "" },
-                             { "content": ["Energía eléctrica"],"correctId": "#box1" },
-                             { "content": ["Energía gravitacional"],"correctId": "" },
-                             { "content": ["Energía mecánica"],"correctId": "#box2" },
-                             { "content": ["Energía lumínica"],"correctId": "" },
-                             { "content": ["Energía térmica"],"correctId": "#box3" },
-                             { "content": ["Energía sonora"],"correctId": "" }
-                         ],
-                         "properties": {
-                              "drag": 1,
-                              "bounds": "",
-                              "class": "w-fit m-0.5",
-                              "dropzone": ".dropItem", 
-                              "hover": "", 
-                              "dropzoneClass": "", 
-                              "dropzoneItems": "" 
-                         }
-                      },
-                      {
+                    {
+                       "group": 1,
+                       "class": "",
+                       "content":[
+                           {
+                              "repeater":1,
+                              "items": [
+                                  { "content": ["Energía química"],"correctId": "" },
+                                  { "content": ["Energía nuclear"],"correctId": "" },
+                                  { "content": ["Energía eléctrica"],"correctId": "#box1" },
+                                  { "content": ["Energía gravitacional"],"correctId": "" },
+                                  { "content": ["Energía mecánica"],"correctId": "#box2" },
+                                  { "content": ["Energía lumínica"],"correctId": "" },
+                                  { "content": ["Energía térmica"],"correctId": "#box3" },
+                                  { "content": ["Energía sonora"],"correctId": "" }
+                              ],
+                              "properties": {
+                                   "drag": 1,
+                                   "bounds": "",
+                                   "class": " m-0.5",
+                                   "dropzone": ".dropItem", 
+                                   "hover": "", 
+                                   "dropzoneClass": "", 
+                                   "dropzoneItems": "" 
+                              }
+                           }
+                           
+                       ]
+                    }
+                      ,{
                          "group": 1,
                          "class": "relative",
                          "content":[
@@ -333,36 +349,43 @@
         {
             "width": "100%",
             "content": [
-                {"inst": "Arrastra las formas de energía al lugar que corresponda en las siguientes imágenes. Puedes utilizar las pistas que se presentan, pero tu calificación será menor.", "iconinst":"pan_tool"},
+                {"inst": "Arrastra las formas de energía al lugar que corresponda en las siguientes imágenes. ", "iconinst":"pan_tool"},
                 {"br": 1},
                 {
                    "grid": 1,
                    "columns": "1fr 2fr",
                    "columnsResponsive": "1fr",
                    "content":[
-                       {
-                          "repeater":1,
-                          "items": [
-                              { "content": ["Energía química"],"correctId": "" },
-                              { "content": ["Energía nuclear"],"correctId": "" },
-                              { "content": ["Energía eléctrica"],"correctId": "#elec" },
-                              { "content": ["Energía gravitacional"],"correctId": "#grav" },
-                              { "content": ["Energía mecánica"],"correctId": "#mec" },
-                              { "content": ["Energía lumínica"],"correctId": "#lumi" },
-                              { "content": ["Energía térmica"],"correctId": "" },
-                              { "content": ["Energía sonora"],"correctId": "" }
-                          ],
-                          "properties": {
-                               "drag": 1,
-                               "bounds": "",
-                               "class": "w-fit m-0.5",
-                               "dropzone": ".dropItem", 
-                               "hover": "", 
-                               "dropzoneClass": "", 
-                               "dropzoneItems": "" 
-                          }
-                       },
-                       {
+                    {
+                       "group": 1,
+                       "class": "",
+                       "content":[
+                           {
+                              "repeater":1,
+                              "items": [
+                                  { "content": ["Energía química"],"correctId": "" },
+                                  { "content": ["Energía nuclear"],"correctId": "" },
+                                  { "content": ["Energía eléctrica"],"correctId": "#elec" },
+                                  { "content": ["Energía gravitacional"],"correctId": "#grav" },
+                                  { "content": ["Energía mecánica"],"correctId": "#mec" },
+                                  { "content": ["Energía lumínica"],"correctId": "#lumi" },
+                                  { "content": ["Energía térmica"],"correctId": "" },
+                                  { "content": ["Energía sonora"],"correctId": "" }
+                              ],
+                              "properties": {
+                                   "drag": 1,
+                                   "bounds": "",
+                                   "class": " m-0.5",
+                                   "dropzone": ".dropItem", 
+                                   "hover": "", 
+                                   "dropzoneClass": "", 
+                                   "dropzoneItems": "" 
+                              }
+                           }
+                           
+                       ]
+                    }
+                       ,{
                           "group": 1,
                           "class": "relative",
                           "content":[
@@ -381,36 +404,43 @@
          {
             "width": "100%",
             "content": [
-                {"inst": "Arrastra las formas de energía al lugar que corresponda en las siguientes imágenes. Puedes utilizar las pistas que se presentan, pero tu calificación será menor.", "iconinst":"pan_tool"},
+                {"inst": "Arrastra las formas de energía al lugar que corresponda en las siguientes imágenes. ", "iconinst":"pan_tool"},
                 {"br": 1},
                 {
                    "grid": 1,
                    "columns": "1fr 2fr",
                    "columnsResponsive": "1fr",
                    "content":[
-                       {
-                          "repeater":1,
-                          "items": [
-                              { "content": ["Energía química"],"correctId": "#q" },
-                              { "content": ["Energía nuclear"],"correctId": "" },
-                              { "content": ["Energía eléctrica"],"correctId": "#e" },
-                              { "content": ["Energía gravitacional"],"correctId": "" },
-                              { "content": ["Energía mecánica"],"correctId": "#m" },
-                              { "content": ["Energía lumínica"],"correctId": "#l" },
-                              { "content": ["Energía térmica"],"correctId": "" },
-                              { "content": ["Energía sonora"],"correctId": "" }
-                          ],
-                          "properties": {
-                               "drag": 1,
-                               "bounds": "",
-                               "class": "w-fit m-0.5",
-                               "dropzone": ".dropItem", 
-                               "hover": "", 
-                               "dropzoneClass": "", 
-                               "dropzoneItems": "" 
-                          }
-                       },
-                       {
+                    {
+                       "group": 1,
+                       "class": "",
+                       "content":[
+                           {
+                              "repeater":1,
+                              "items": [
+                                  { "content": ["Energía química"],"correctId": "#q" },
+                                  { "content": ["Energía nuclear"],"correctId": "" },
+                                  { "content": ["Energía eléctrica"],"correctId": "#e" },
+                                  { "content": ["Energía gravitacional"],"correctId": "" },
+                                  { "content": ["Energía mecánica"],"correctId": "#m" },
+                                  { "content": ["Energía lumínica"],"correctId": "#l" },
+                                  { "content": ["Energía térmica"],"correctId": "" },
+                                  { "content": ["Energía sonora"],"correctId": "" }
+                              ],
+                              "properties": {
+                                   "drag": 1,
+                                   "bounds": "",
+                                   "class": "m-0.5",
+                                   "dropzone": ".dropItem", 
+                                   "hover": "", 
+                                   "dropzoneClass": "", 
+                                   "dropzoneItems": "" 
+                              }
+                           }
+                           
+                       ]
+                    }
+                       ,{
                           "group": 1,
                           "class": "relative",
                           "content":[
@@ -429,46 +459,53 @@
          {
             "width": "100%",
             "content": [
-                {"inst": "Arrastra las formas de energía al lugar que corresponda en las siguientes imágenes. Puedes utilizar las pistas que se presentan, pero tu calificación será menor.", "iconinst":"pan_tool"},
+                {"inst": "Arrastra las formas de energía al lugar que corresponda en las siguientes imágenes. ", "iconinst":"pan_tool"},
                 {"br": 1},
                 {
                    "grid": 1,
                    "columns": "1fr 2fr",
                    "columnsResponsive": "1fr",
                    "content":[
-                       {
-                          "repeater":1,
-                          "items": [
-                              { "content": ["Energía química"],"correctId": "#qu" },
-                              { "content": ["Energía nuclear"],"correctId": "" },
-                              { "content": ["Energía eléctrica"],"correctId": "#el" },
-                              { "content": ["Energía gravitacional"],"correctId": "#gr" },
-                              { "content": ["Energía mecánica"],"correctId": "#me" },
-                              { "content": ["Energía lumínica"],"correctId": "#lu" },
-                              { "content": ["Energía térmica"],"correctId": "#te" },
-                              { "content": ["Energía sonora"],"correctId": "" }
-                          ],
-                          "properties": {
-                               "drag": 1,
-                               "bounds": "",
-                               "class": "w-fit m-0.5",
-                               "dropzone": ".dropItem", 
-                               "hover": "", 
-                               "dropzoneClass": "", 
-                               "dropzoneItems": "" 
-                          }
-                       },
-                       {
+                    {
+                       "group": 1,
+                       "class": "",
+                       "content":[
+                           {
+                              "repeater":1,
+                              "items": [
+                                  { "content": ["Energía química"],"correctId": "#qu" },
+                                  { "content": ["Energía nuclear"],"correctId": "" },
+                                  { "content": ["Energía eléctrica"],"correctId": "#el" },
+                                  { "content": ["Energía gravitacional"],"correctId": "#gr" },
+                                  { "content": ["Energía mecánica"],"correctId": "#me" },
+                                  { "content": ["Energía lumínica"],"correctId": "#lu" },
+                                  { "content": ["Energía térmica"],"correctId": "#te" },
+                                  { "content": ["Energía sonora"],"correctId": "" }
+                              ],
+                              "properties": {
+                                   "drag": 1,
+                                   "bounds": "",
+                                   "class": " m-0.5",
+                                   "dropzone": ".dropItem", 
+                                   "hover": "", 
+                                   "dropzoneClass": "", 
+                                   "dropzoneItems": "" 
+                              }
+                           }
+                           
+                       ]
+                    }
+                       ,{
                           "group": 1,
                           "class": "relative",
                           "content":[
                               {"img": "img/formas4.png"},
-                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[55%] top-[1%] w-[30%] h-[15%]", "id":"lu"},
-                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[1%] top-[48%] w-[30%] h-[15%]", "id":"gr"},
-                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[35%] top-[66%] w-[30%] h-[15%]", "id":"qu"}
-                              ,{"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[35%] top-[82%] w-[30%] h-[15%]", "id":"te"}
-                              ,{"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[57%] top-[24%] w-[30%] h-[15%]", "id":"me"}
-                              ,{"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[22%] top-[1%] w-[30%] h-[15%]", "id":"el"}
+                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[55%] top-[1%] w-[26%] h-[15%]", "id":"lu"},
+                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[1%] top-[48%] w-[26%] h-[15%]", "id":"gr"},
+                              {"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[20%] top-[75%] w-[26%] h-[15%]", "id":"qu"}
+                              ,{"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[30%] top-[52%] w-[26%] h-[15%]", "id":"te"}
+                              ,{"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[70%] top-[75%] w-[26%] h-[15%]", "id":"me"}
+                              ,{"html": " ", "class":"dropItem drop z-10 !bg-teal-500/20 absolute bg-white left-[74%] top-[40%] w-[26%] h-[15%]", "id":"el"}
                           ]
                        }
                        
@@ -479,7 +516,7 @@
        ]
     },
     {
-       "title": "Transformación de energía",
+       "title": "Actividad III. La energía en la obesidad y el sobrepeso",
        "icon": "games",
        "steps": false,
        "class": "flex flex-col justify-center",
@@ -489,7 +526,15 @@
            "content": [
                {"inst": "Escucha el siguiente pódcast y selecciona las opciones correctas.", "iconinst":"preview"},
                {"br": 1},
-               {"audio": "img/ring.mp3"},
+               {
+                  "group": 1,
+                  "class": "text-center",
+                  "content":[
+                      { "img": "img/podcast.png", "class": "w-20" }
+                      
+                  ]
+               },
+               {"audio": "img/podcast.mp3"},
                {"br": 2},
                {"class": "h3", "text": "1. ¿Qué forma de energía es la que entra al organismo mediante el consumo de alimentos?"},
                {"br": 1},
@@ -509,7 +554,7 @@
                   ],
                   "feedback": [
                       "¡Correcto! Los alimentos proveen al cuerpo de energía química.",
-                      "Inténtalo nuevamente y utiliza alguna de las pistas disponibles."
+                      "Recuerda que en los alimentos hay moléculas que proporcionan energía."
                   ]
                },
                {"br": 2},
@@ -529,8 +574,8 @@
                       ["Energía sonora", true]
                   ],
                   "feedback": [
-                      "¡Correcto! La energía que se ingiere en los alimentos se utiliza para el movimiento de los músculos, en la regulación de la temperatura corporal y en energía sonora al utilizar la cuerdas vocales.",
-                      "Inténtalo nuevamente y utiliza alguna de las pistas disponibles."
+                      "¡Correcto! La energía que se ingiere en los alimentos se utiliza para el movimiento de los músculos, en la regulación de la temperatura corporal y en energía sonora al utilizar las cuerdas vocales.",
+                      "Recuerda que el cuerpo humano utiliza la energía en sus actividades diarias en las que se encuentran moverse, mantener la temperatura corporal y hablar."
                   ]
                }
                
@@ -541,46 +586,52 @@
     },
 
     {
-       "title": "Fuentes de energía que utiliza la población mexicana",
-       "icon": "account_tree",
+       "title": "Fuentes de energía en México",
+       "icon": "games",
        "steps": true,
        "class": "flex flex-col justify-center",
        "blocks": [
         {
            "width": "100%",
            "content": [
-            {"inst": "Consulta en el siguiente enlace https://bit.ly/3ymR8wi el balance nacional de energía publicado por la Secretaría de Energía en 2021 las fuentes de energía que utiliza la población mexicana y arrastra las fuentes a la siguiente gráfica, de acuerdo con el porcentaje de energía obtenida a partir de las mismas.", "iconinst":"pan_tool"},
+            {"inst": "Consulta en el siguiente enlace <a href='https://bit.ly/3ymR8wi' target='_blank'>https://bit.ly/3ymR8wi</a> el balance nacional de energía publicado por la Secretaría de Energía en 2021 las fuentes de energía que utiliza la población mexicana y arrastra las fuentes a la siguiente gráfica, de acuerdo con el porcentaje de energía obtenida a partir de las mismas.", "iconinst":"pan_tool"},
             {"br": 1},
             {
                 "grid": 1,
-                "columns": "1fr 2fr",
+                "columns": "1fr",
                 "columnsResponsive": "1fr",
                 "content":[
                     {
-                        "repeater":1,
-                        "items": [
-                            { "content": ["Geotérmica"],"correctId": "#b6" },
-                            { "content": ["Nuclear"],"correctId": "#b3" },
-                            { "content": ["Gas natural"],"correctId": "#b5" },
-                            { "content": ["Hidráulica"],"correctId": "#b4" },
-                            { "content": ["Biomasa"],"correctId": "#b8" },
-                            { "content": ["Eólica"],"correctId": "#b7" },
-                            { "content": ["Petróleo"],"correctId": "#b2" },
-                            { "content": ["Solar"],"correctId": "#b9" }
-                            ,{ "content": ["Carbón"],"correctId": "#b1" }
-                            ,{ "content": ["Mareomotriz"],"correctId": "" }
-                        ],
-                        "properties": {
-                            "drag": 1,
-                            "bounds": "",
-                            "class": "w-fit m-0.5",
-                            "dropzone": ".dropItem", 
-                            "hover": "", 
-                            "dropzoneClass": "", 
-                            "dropzoneItems": "" 
-                        }
-                    },
-                    {
+                       "group": 1,
+                       "class": "flex flex-wrap justify-center items-center",
+                       "content":[
+                           {
+                               "repeater":1,
+                               "items": [
+                                   { "content": ["Geotérmica"],"correctId": "#b6" },
+                                   { "content": ["Nuclear"],"correctId": "#b3" },
+                                   { "content": ["Gas natural"],"correctId": "#b5" },
+                                   { "content": ["Hidráulica"],"correctId": "#b4" },
+                                   { "content": ["Biomasa"],"correctId": "#b8" },
+                                   { "content": ["Eólica"],"correctId": "#b7" },
+                                   { "content": ["Petróleo"],"correctId": "#b2" },
+                                   { "content": ["Solar"],"correctId": "#b9" }
+                                   ,{ "content": ["Carbón"],"correctId": "#b1" }
+                                   ,{ "content": ["Mareomotriz"],"correctId": "" }
+                               ],
+                               "properties": {
+                                   "drag": 1,
+                                   "bounds": "",
+                                   "class": "w-fit m-0.5",
+                                   "dropzone": ".dropItem", 
+                                   "hover": "", 
+                                   "dropzoneClass": "", 
+                                   "dropzoneItems": "" 
+                               }
+                           }
+                       ]
+                    }
+                    ,{
                        "group": 1,
                        "class": "text-center",
                        "content":[
