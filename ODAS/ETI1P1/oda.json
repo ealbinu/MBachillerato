@@ -7,8 +7,9 @@
   "ficha": [
     [
       "Aprendizaje esperado",
-      "Aplica las funciones del lenguaje en los diversos contextos en que se desenvuelve."
+      "Argumenta diferentes puntos de vista desde las principales escuelas éticas de pensamiento filosófico favoreciendo la reflexión crítica en su toma de decisiones."
     ],
+    ["Contenido central", "Reconoce la importancia de la ética de acuerdo a diversas escuelas éticas de pensamiento filosófico."],
     ["Eje transversal", "Social."]
   ],
   "screens": [
@@ -46,6 +47,32 @@
         {
            "width": "100%",
            "content": [
+              {"class": "text-bold", "text": "El método socrático"},
+              {"br": 2},
+               {"class": "text-center h3", "text": "Sócrates, fundador de la ética"},
+               {"br": 2},
+               "Sócrates es considerado el fundador de la ética porque insistía en tratar temas como la esencia de la virtud, de la bondad, de la santidad y de la justicia. También le daba mucha importancia al conocimiento interior, en oposición al conocimiento del mundo.",
+               {"br": 1},
+               {
+                  "grid": 1,
+                  "columns": "1fr 1fr",
+                  "columnsResponsive": "1fr",
+                  "content":[
+                      "Buscaba una esencia universal con validez para todas las virtudes y sostenía que la ignorancia es la causa de los vicios, es decir, que quien actúa mal lo hace por ignorancia, por no conocer el bien que podría haber hecho.",
+                      { "img": "img/socrates.jpg", "class": "rounded max-w-[16rem]" }
+                  ]
+               },
+               {"br": 1},
+               "Otra de sus tesis éticas es la cadena de injusticias. Con ella afirmaba que más valía sufrir una injusticia que cometerla, pues, la persona que la comete se ve disminuida en valores morales, mientras que cuando la sufre sólo se ve disminuida en valores infrahumanos o inframorales, lo que es preferible en tal caso.",
+               {"br": 2},
+               {"class": "text-right text-xs", "text": "Fuente: Gutiérrez, R. (1978). <em>Introducción a la Ética</em>. México: Esfinge."}
+           ]
+        }
+        ,{
+           "width": "100%",
+           "content": [
+            {"class": "text-bold", "text": "El método socrático"},
+              {"br": 2},
                {"class": "text-center h3", "text": "El método socrático, hoy"},
                {"br": 1},
                {"class": "", "text": "El llamado “método socrático” no hace referencia a técnicas o procedimientos específicos relacionados con una idea o tesis rigurosa, más bien se refiere a la actitud con que se ve y actúa en el mundo, y de comprender la realidad. Dicha actitud comprende tanto a la ironía con la que se reconoce a la propia ignorancia como al arte de ayudar a “dar a luz” a las ideas mediante el diálogo, la reflexión y el autoanálisis (mayéutica)."},
@@ -62,13 +89,15 @@
                {"br": 2},
                {"class": "", "text": "Quizás sea difícil implantar este método en las aulas del día de hoy, sin embargo, debe realizarse un esfuerzo para llevar a los estudiantes ese afán de conocerse a uno mismo, fomentar el pensamiento autónomo y crítico y propiciar su madurez intelectual y moral. El método socrático busca despertar en los estudiantes un verdadero y permanente deseo de saber, convirtiéndolos en los propios artífices de su formación."},
                {"br": 2},
-               {"class": "text-right text-xs", "text": "Fuente: Baltar, E. (2016). El método socrático hoy. Para una enseñanza y práctica dialógica de la filosofía. Revista española de pedagogía. Recuperado de: https://bit.ly/3GKZcc6 (Consulta: 1 de noviembre de 2021)."}
+               {"class": "text-right text-xs", "text": "Fuente: Baltar, E. (2016). El método socrático hoy. Para una enseñanza y práctica dialógica de la filosofía. <em>Revista española de pedagogía</em>. Recuperado de: https://bit.ly/3GKZcc6 (Consulta: 1 de noviembre de 2021)."}
            ],
            "buttonNextStep": "Siguiente"
         },
         {
            "width": "100%",
            "content": [
+            {"class": "text-bold", "text": "El método socrático"},
+              {"br": 2},
                {"class": "text-center h3", "text": "Eutidemo o del disputador, o de la mentira sofística frente a la  verdad dialéctica (fragmento)"},
                {"br": 2},
                {
@@ -256,7 +285,7 @@
                   "sortable": 1,
                   "numbers": 0,
                   "related": [
-                    "El bien se alcanza mediante la sabiduría, a la que se llega reflexionando para descubrir por uno mismo lo que es bueno y justo: ¿el billete pertenece a alguien?, ¿tomar lo que pertenece a otra persona es justo o injusto?, ¿existe una instancia que resguarde el billete y a la que puede acudir el dueño para recuperarlo? ¿qué esperaría que ocurriera si fuera mi billete?",
+                    "El bien se alcanza mediante la sabiduría, a la que se llega reflexionando para descubrir por uno mismo lo que es bueno y justo: ¿el billete pertenece a alguien?, ¿tomar lo que pertenece a otra persona es justo o injusto?, ¿existe una instancia que resguarde el billete y a la que puede acudir el dueño para recuperarlo?, ¿qué esperaría que ocurriera si fuera mi billete?",
                     "El bien se alcanza mediante la virtud, entendida como término medio: si un extremo es conservar el billete y el otro dejarlo donde está, el justo medio sería llevarlo a la dirección para que el dueño lo busque ahí.",
                     "El bien se alcanza en ausencia de las pasiones pues actuar buscando sólo el placer tiene consecuencias que pueden ser perjudiciales: si conservo el billete puedo comprar cosas, pero perjudicaría al dueño o éste podría descubrirme y reclamarme.",
                     "El bien se alcanza mediante el imperativo categórico y la buena voluntad: conservar el billete sería robar pues, aunque esté perdido tiene un dueño, esto es una ley universal, por lo que aceptar que robar es malo y llevarlo a la dirección por voluntad propia sería lo correcto."
@@ -303,7 +332,7 @@
                               {"br": 2},
                              { "img": "img/justo.svg", "class": "h-20" },
                              {"br": 2},
-                             {"class": "bg-white text-dark rounded p-2 h4", "textAnimation": "Un estudiante informa al profesor de {Etica que varios de sus compañeros han obtenido una copia del exámen final a pesar del riesgo que éstos tomen represalias."},
+                             {"class": "bg-white text-dark rounded p-2 h4", "textAnimation": "Un estudiante informa al profesor de Ética que varios de sus compañeros han obtenido una copia del exámen final a pesar del riesgo de que éstos tomen represalias."},
                              {"br": 2},
                              { "img": "img/injusto.svg", "class": "h-20" } 
                              ,{"br": 2}
@@ -352,7 +381,7 @@
                              {"br": 2},
                             { "img": "img/justo.svg", "class": "h-20" },
                             {"br": 2},
-                            {"class": "bg-white text-dark rounded p-2 h4", "textAnimation": "Un jóven decide desvelarse la noche previa a su exámen de ingreso a la universidad."},
+                            {"class": "bg-white text-dark rounded p-2 h4", "textAnimation": "Un joven decide desvelarse la noche previa a su examen de ingreso a la universidad."},
                             {"br": 2},
                             { "img": "img/injusto.svg", "class": "h-20" } 
                             ,{"br": 2}
@@ -361,8 +390,8 @@
                       ]
                      },
                      ["A", false],
-                     ["B", false],
-                     ["C", true],
+                     ["B", true],
+                     ["C", false],
                      ["D", false],
                      ["E", false]
                  ],
@@ -401,7 +430,7 @@
                            {"br": 2},
                           { "img": "img/justo.svg", "class": "h-20" },
                           {"br": 2},
-                          {"class": "bg-white text-dark rounded p-2 h4", "textAnimation": "Una jóven obtiene un lugar en la selección de volibol gracias al rumor infundado de que la jugadora titular presentó un acta de nacimiento alterada."},
+                          {"class": "bg-white text-dark rounded p-2 h4", "textAnimation": "Una joven obtiene un lugar en la selección de volibol gracias al rumor infundado de que la jugadora titular presentó un acta de nacimiento alterada."},
                           {"br": 2},
                           { "img": "img/injusto.svg", "class": "h-20" } 
                           ,{"br": 2}
@@ -450,7 +479,7 @@
                          {"br": 2},
                         { "img": "img/justo.svg", "class": "h-20" },
                         {"br": 2},
-                        {"class": "bg-white text-dark rounded p-2 h4", "textAnimation": "Una jóven emigra de su pueblo a la capital para estudiar una licenciatura."},
+                        {"class": "bg-white text-dark rounded p-2 h4", "textAnimation": "Una joven emigra de su pueblo a la capital para estudiar una licenciatura."},
                         {"br": 2},
                         { "img": "img/injusto.svg", "class": "h-20" } 
                         ,{"br": 2}
@@ -499,7 +528,7 @@
                        {"br": 2},
                       { "img": "img/justo.svg", "class": "h-20" },
                       {"br": 2},
-                      {"class": "bg-white text-dark rounded p-2 h4", "textAnimation": "Un jóven decide abstenerse de asistir a una fiesta donde se venderá alcohol porque sabe que habrá menores de edad y, por lo tanto, será una fiesta ilegal."},
+                      {"class": "bg-white text-dark rounded p-2 h4", "textAnimation": "Un joven decide abstenerse de asistir a una fiesta donde se venderá alcohol porque sabe que habrá menores de edad y, por lo tanto, será una fiesta ilegal."},
                       {"br": 2},
                       { "img": "img/injusto.svg", "class": "h-20" } 
                       ,{"br": 2}
@@ -541,7 +570,7 @@
          "group": 1,
          "class": "",
          "content":[
-            {"inst": "Lee los siguientes enunciados y selecciona según corresponda a las siguientes preguntas. <br>- ¿El acto es justo o injusto? <br>- ¿A cuál axioma de la ética socrática se hace referencia?", "iconinst":"touch_app"},
+            {"inst": "Lee los siguientes enunciados y selecciona según corresponda a las siguientes preguntas. <br>- ¿El acto es justo o injusto? <br>- ¿A cuál axioma de la ética socrática se hace referencia? (Para consultar los axiomas, haz clic en el botón)", "iconinst":"touch_app"},
             {"br": 1},   
             {
                "dialog": 1,
@@ -559,7 +588,7 @@
                    {"br": 1},
                    {"class": "", "text": "d) Todo agente quiere su propio bien real."},
                    {"br": 1},
-                   {"class": "", "text": "e) Para todo ente <em>e,e</em> es bueno si y sólo si posee el orden correspondiente."},
+                   {"class": "", "text": "e) Para todo ente <em>e, e</em> es bueno si y sólo si posee el orden correspondiente."},
                    {"br": 1},
                    {"class": "text-xs text-right", "text": "Fuente: Gómez-Lobo, A (1989). <em>Los axiomas de la ética socrática.</em> <br>Estudios Públicos, 34 [Archivo PDF]."}
                ]

@@ -5,11 +5,12 @@
 	"title": "Tipos de pensamiento",
 	"ficha": [
 		["Aprendizaje esperado", "Reconoce el papel de la Investigación Científica y sus conocimientos para identificar problemas sociales de su entorno."],
-		["Eje transversal","Eje transversal"]
+		["Contenido específico","Identifica el conocimiento científico"]
+		,["Eje transversal","Social"]
 	],
 	"screens": [
 		{
-			"title": "Introducción",
+			"title": "En contexto. Tipos de pensamiento humano",
 			"icon": "info",
 			"steps": true,
             "class": "flex flex-col justify-center",
@@ -17,6 +18,8 @@
 				{
 					"width": "80%",
 					"content": [
+						{"class": "h2 text-center text-bold", "textAnimation": "En contexto"},
+						{"br": 1},
 						{"text":"Ante lo desconocido, el ser humano puede recurrir a tres tipos de respuestas: en primer lugar, la mágica o mítica; en segundo lugar, la divina o religiosa; y, por último, la razonada o científica. Las dos primeras fueron el tipo de explicaciones que las personas le dieron en el pasado a todo aquello que constituía el entorno en que vivían. Los filósofos de la Grecia antigua fueron los primeros que buscaron las respuestas por medio del razonamiento y en el siglo XVII se sentaron las bases para la ciencia moderna, lo que nos permitió tener un conocimiento del mundo más exacto y, además, nos ha proporcionado las herramientas necesarias para solucionar gran parte de los problemas de la sociedad.",  "class":"p text-left"},
 						{"br": 1},
 						{
@@ -33,27 +36,17 @@
 				{
 					"width": "80%",
 					"content": [
-						{"text":"El pensamiento es la capacidad humana de crear ideas y representaciones en la mente sobre lo que perciben los sentidos. La evolución del pensamiento humano es el origen del vasto conocimiento que la humanidad ha acumulado desde hace más de sesenta mil años, ideas, destrezas, valores, creencias, lenguajes y actitudes que se han desarrollado y transmitido de generación en generación, que han trascendido las distintas épocas históricas, que han sobrevivido a civilizaciones, imperios, guerras, etcétera.",  "class":"p text-left"}
-					]
-				},
-				{
-				   "width": "100%",
-				   "content": [
+						{"class": "h2 text-center text-bold", "textAnimation": "Tipos de pensamiento humano"},
+						{"br": 1},
+						{"text":"El pensamiento es la capacidad humana de crear ideas y representaciones en la mente sobre lo que perciben los sentidos. La evolución del pensamiento humano es el origen del vasto conocimiento que la humanidad ha acumulado desde hace más de sesenta mil años, ideas, destrezas, valores, creencias, lenguajes y actitudes que se han desarrollado y transmitido de generación en generación, que han trascendido las distintas épocas históricas, que han sobrevivido a civilizaciones, imperios, guerras, etcétera.",  "class":"p text-left"},
+						{"br": 1},
 					   {
 						  "group": 1,
 						  "class": "table-pensamientohumano",
 						  "content":[
 							  
 								
-							{
-								"grid": 1,
-								"columns": "1fr",
-								"columnsResponsive": "1fr",
-								"class": "text-center h3",
-								"content":[
-									"Tipos de pensamiento humano"
-								]
-							},
+							
 							{
 								"grid": 1,
 								"columns": "1fr 2fr",
@@ -75,7 +68,7 @@
 												"class": "grid grid-cols-2",
 												"content":[
 													{"term":"Mágico", "content":["Este tipo de pensamiento es el más primitivo, un ejemplo son las supersticiones."]},
-													"Supersticiones."
+													"Supersticiones"
 												]
 											},
 											{
@@ -83,7 +76,7 @@
 												"class": "grid grid-cols-2",
 												"content":[
 													{"term":"Mítico", "content":["Este tipo de pensamiento remite a los mitos que explican el origen del mundo."]},
-													"Mitos."
+													"Mitos"
 												]
 											},
 											{
@@ -91,15 +84,15 @@
 												"class": "grid grid-cols-2",
 												"content":[
 													{"term":"Intuitivo", "content":["Este tipo de pensamiento es producto de la percepción inmediata, un ejemplo son las premoniciones."]},
-													"Premoniciones."
+													"Premoniciones"
 												]
 											},
 											{
 												"group": 1,
 												"class": "grid grid-cols-2",
 												"content":[
-													{"term":"Empírico.", "content":["Este tipo de pensamiento se basa en la experiencia directa y la percepción."]},
-													"Este tipo de pensamiento se basa en la experiencia directa y la <strong>percepción</strong>."
+													{"term":"Empírico", "content":["Este tipo de pensamiento se basa en la experiencia directa y la percepción."]},
+													"Este tipo de pensamiento se basa en la experiencia directa y la <strong>percepción</strong>"
 												]
 											},
 											{
@@ -107,7 +100,7 @@
 												"class": "grid grid-cols-2",
 												"content":[
 													{"term":"Religioso", "content":["Este tipo de pensamiento se expresa con las oraciones, en rituales y la creación de leyes morales."]},
-													"Oraciones."
+													"Oraciones"
 												]
 											}
 											
@@ -132,7 +125,7 @@
 									   "group": 1,
 									   "class": "text-sm",
 									   "content":[
-										   "Cuestionamientos, razonamientos."
+										   "Cuestionamientos, razonamientos"
 									   ]
 									}
 								]
@@ -154,7 +147,7 @@
 									   "group": 1,
 									   "class": "text-sm",
 									   "content":[
-										   "Método científico: <em>observación</em>, <em>hipótesis</em>, <em>experimentos</em>, <em>comprobaciones</em>, <em>teorías</em>, <em>leyes</em>."
+										   "Método científico: <em>observación</em>, <em>hipótesis</em>, <em>experimentos</em>, <em>comprobaciones</em>, <em>teorías</em>, <em>leyes</em>"
 									   ]
 									}
 								]
@@ -170,7 +163,7 @@
 		},
 
 		{
-		   "title": "Evolución del pensamiento humano",
+		   "title": "Actividad 1. Evolución del pensamiento humano",
 		   "icon": "dashboard",
 		   "steps": false,
 		   "class": "flex flex-col justify-center",
@@ -362,7 +355,7 @@
 								},
 								{
 									"symbol":"timelineDrag",
-									"content": ["22 000 a. n. e."],
+									"content": ["22000 a. n. e."],
 									"correctId": "#boxb3"
 								},
 								{
@@ -393,7 +386,7 @@
 		   ]
 		},
 		{
-			"title": "Actividad",
+			"title": "Actividad 2. Tipo de pensamiento humano",
 			"icon": "games",
 			"steps": false,
 			"blocks": [
@@ -476,7 +469,7 @@
 			]
 		},
 		{
-		   "title": "Identifica el pensamiento",
+		   "title": "Actividad 3. Análisis de un caso",
 		   "icon": "info",
 		   "steps": false,
 		   "class": "flex flex-col justify-center",
@@ -484,9 +477,28 @@
 			   {
 				  "width": "100%",
 				  "content": [
-					  	
+					
+					
+
+
 					{"inst": "Identifica el tipo de pensamiento que corresponde a la interpretación de la situación que se presenta.", "iconinst":"touch_app"},
-					{"br": 1},
+					{"br": 2},
+					{"class": "text-bold", "text": "Lee el siguiente caso ocurrido en un pueblo de Jalisco."}
+					,{"br": 1},
+
+					{
+					   "grid": 1,
+					   "columns": "2fr 1fr",
+					   "columnsResponsive": "1fr",
+					   "class":"bg-white/10 rounded p-2",
+					   "content":[
+						   "En El Mentidero, localidad del municipio de Autlán, Jalisco, rodeada por sembradíos de productos como pepino y caña de azúcar, varios niños comenzaron a presentar síntomas de intoxicación como fuertes dolores de cabeza, vómitos constantes y desvanecimientos. Lo mismo ocurrió con los 53 alumnos de la telesecundaria.",
+						   { "img": "imgs/caso.jpg", "class": "rounded" }
+					   ]
+					}
+					,{"class": "text-xs text-right", "text": "Fuente: Redacción/Sin embargo. (2019). El Mentidero, la comunidad de Jalisco donde adolescentes y niños orinan pesticidas. <em>Sin embargo.mx.</em> Recuperado de: https://bit.ly/3pZdFcA (Consulta: 14 de diciembre de 2021)."}
+					
+					,{"br": 3},
 					{
 					   "grid": 1,
 					   "columns": "1fr 1fr 1fr 1fr",
@@ -661,7 +673,7 @@
 									"group": 1,
 									"class": "h5",
 									"content":[
-										"6. En la asamblea comunitaria realizada para tratar el asunto, una de las maestras mencionó que el problema del uso de pesticidas debe analizarse partir de la ",
+										"6. En la asamblea comunitaria realizada para tratar el asunto, una de las maestras mencionó que el problema del uso de pesticidas debe analizarse a partir de la ",
 										{"term": "ética", "content": ["Rama de la filosofía que trata sobre el bien y el mal, los valores morales y la conducta humana."]},
 										" y el reconocimiento del valor ",
 										{"term": "intrínseco", "content": ["Lo que es propio de algo y no depende de la intervención de agentes externos o circunstanciales."]},
@@ -740,7 +752,7 @@
 										 ["Pensamiento filosófico", false, "La investigación se llevó a cabo siguiendo un método, lo que arrojó resultados objetivos. Intenta de nuevo."],
 										 ["Pensamiento científico", true, "Respuesta correcta."],
 										 ["Pensamiento intuitivo", false, "Analiza el esquema e intenta una  vez más."],
-										 ["Pensamiento empírico", false, "Este tipo de pensamiento se basa en la experiencia directa y la <strong>percepción</strong>."]
+										 ["Pensamiento empírico", false, "Este tipo de pensamiento se basa en la experiencia directa y las <strong>percepciones</strong>."]
 									 ]
 								 }
 							],
