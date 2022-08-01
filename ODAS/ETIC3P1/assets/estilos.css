@@ -1,0 +1,275 @@
+.actividad_3_separador{
+  clear: both;
+  height:70px;
+margin-top:10px;
+}
+
+.pregunta{
+  border:1.5px solid;
+  padding:10px;
+  margin-bottom:10px;
+  cursor:hand;
+  cursor:pointer;
+}
+
+.pregunta_correcta{
+  background-color:rgba(0,255,0,0.7);
+}
+
+.pregunta_incorrecta{
+  background-color:rgba(255,0,0,0.7);
+}
+
+.pregunta_retro_correcta{
+  border:3px dotted #0f0;
+  padding:10px;
+  text-align: center;
+}
+
+.pregunta_retro_incorrecta{
+  border:3px dotted #f00;
+  padding:10px;
+  text-align: center;
+}
+
+.pregunta_marca_ok{
+  position:absolute;
+  margin-top:-7px;
+  left:-40px;
+  width:40px;
+}
+
+.pregunta_marca_ok img{
+  width:100%;
+}
+.draggable-4 {   
+      width: 90px; padding: 0.5em; float: left;  
+      margin: 0px 5px 10px 0;  
+      cursor:grab;
+}  
+
+.draggable-5 {   
+      width: 150px; 
+      padding: 0.5em; 
+      float: left;  
+      text-align:center;
+      border:1.5px solid;
+      cursor:grab;
+   } 
+
+   .draggable-5nd {   
+    width: 150px; 
+    padding: 0.5em; 
+    float: left;  
+    text-align:center;
+    border:1.5px solid;
+
+ } 
+
+.droppable-7 {   
+      width: 100px; min-height: 70px;margin:5px; 
+   
+   }  
+
+   .droppable-4 {   
+      position:absolute;
+      width: 100%;
+      height:100%;
+      margin-top:20px;
+      font-size:1em;
+      top:-20px;
+      left:0px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;      
+   }  
+
+  
+   .sortable_fijo_3 li{
+    padding:10px;
+    height:100px;
+    background: #fff;
+    color:#000;
+    border:2px solid #000;
+    margin-bottom:10px;
+    border-radius: 15px;
+    text-align:center;
+    overflow: hidden;
+    display: flex;
+  
+   justify-content: center;
+   position:relative;
+
+margin-top:20px;
+margin-bottom:20px;
+  }
+
+  .sortable_fijo_3 li img{
+    width:70px;
+
+  }
+
+.sortable_fijo_3{
+padding-top:20px;
+padding-bottom:20px;
+
+  }
+
+.sortable_3{
+padding-top:20px;
+padding-bottom:20px;
+
+  }
+
+
+
+  .sortable_3 li{
+    padding:10px;
+    height:100px;
+    background: #fff;
+    color:#000;
+    border:2px solid #000;
+    margin-bottom:10px;
+    border-radius: 15px;
+    cursor: grab;
+    overflow: hidden;
+    display: flex;
+   align-items: center;
+margin-top:20px;
+margin-bottom:20px;
+  }
+
+  .finalizar_puntos{
+    position:absolute;
+    right:3px;
+    bottom:3px;
+    font-size:0.8em;
+    background-color: #fff;
+    color:#000;
+    padding:5px;
+    border-radius: 5px;
+}
+
+
+  .tipo_fuente{
+    margin-top:20px;
+    font-size:0.8em;
+  }
+
+   .div_cuadro_4{
+      position:relative;
+      border:1px solid;
+      padding:10px;
+      margin:1%;
+      width:23%;
+      float:left;
+      padding-bottom:50px;
+   }
+
+   .div_cuadro_4_in{
+    position:relative;
+    padding:10px;
+    margin:1%;
+    width:23%;
+    float:left;
+    padding-bottom:50px;
+ }
+
+   .div_cuadro_finalizar , .div_cuadro_finalizar1 {
+      position:relative;
+      border:3px dotted #fff;
+      padding:10px;
+      margin:5px;
+      width:30%;
+      float:left;
+      cursor: hand;
+      cursor: pointer;
+      height:100px;
+      overflow:hidden;
+
+
+    }
+
+    .div_cuadro_finalizar_w{
+      border:3px dotted #ff0;
+    }
+
+    .div_cuadro_finalizar_x{
+      border:3px dotted #00f;
+    }
+
+    .div_cuadro_finalizar_c{
+      border:3px dotted #0f0;
+      background-image: url("correcto.png");
+      background-repeat: no-repeat;
+     background-size: 30px 30px;
+     background-position: right top;
+    }
+
+    .div_cuadro_finalizar_i{
+      border:3px dotted #f00;
+      background-image: url("incorrecto.png");
+      background-repeat: no-repeat;
+     background-size: 30px 30px;
+     background-position: right top;
+    }
+
+     .bg-primary{
+      background-color: #b8262f;
+     }
+
+     li div.active{
+      background-color: #b8262f;
+     }
+
+     .active i.material-icons{
+      color: #fff;
+     }
+
+     .material-icons , #exFicha{
+      color:#b8262f;
+     }
+
+     #exFicha{
+      background-image: url("fondo_ficha.jpg");
+      background-repeat: no-repeat;
+     background-size: cover;
+   
+     }
+
+     .menu li:active div{
+      background:#ef3a45;
+     }
+
+     .btn-active{
+      background-color:#b8262f !important;
+     }
+
+     .menu_lateral{
+      height: 100%;
+      overflow-y: auto;
+      background-color: #fff;
+    }
+
+
+     @media (max-width: 600px) {
+      .actividad_3_separador{
+        clear: both;
+        height:110px;
+        margin-top:10px;
+  
+      }
+
+      .word{
+        font-size:0.8em;
+      }
+      
+      .div_cuadro_4{
+        font-size:0.8em;
+     }
+
+     .div_cuadro_finalizar , .div_cuadro_finalizar1 {
+      width:95%;  
+      height:auto;
+     }
+      }
