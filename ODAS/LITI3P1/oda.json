@@ -9,13 +9,14 @@
       "Aprendizaje esperado",
       "Distingue en manifestaciones estéticas de su contexto que la literatura es una expresión artística, en la cual de manera individual y colectiva puede participar activamente, promoviendo su defensa y preservación."
     ],
+    ["Contenido específico", "Distingue las marcas de literariedad mediante la lectura de textos modelo."],
     ["Eje transversal", "Habilidades lectoras."]
   ],
   "screens": [
     {
-      "title": "Literatura universal",
+      "title": "En contexto.",
       "icon": "article",
-      "steps": true,
+      "steps": false,
       "class": "flex flex-col justify-center",
       "blocks": [
         {
@@ -33,7 +34,15 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+       "title": " La literatura y la humanidad",
+       "icon": "info",
+       "steps": false,
+       "class": "flex flex-col justify-center",
+       "blocks": [
         {
           "width": "100%",
           "content": [
@@ -48,9 +57,15 @@
                   "group": 1,
                   "class": "",
                   "content": [
-                    "Los textos literarios han sido creados específicamente para atraer y atrapar, y así lograr conmover, sensibilizar, divertir, entretener y estimular la imaginación del lector, haciendo uso de recursos estéticos y de un lenguaje particular, metafórico y connotativo.",
+                    "Los ",
+                    {"term": "textos literarios", "content": ["Son textos cuya función es expresiva y son escritos con intención estética. Ejemplos de estos son las novelas, los cuentos, los poemas y las obras de teatro."]},
+                    " han sido creados específicamente para atraer y atrapar, y así lograr conmover, sensibilizar, divertir, entretener y estimular la imaginación del lector, haciendo uso de recursos estéticos y de un lenguaje particular, metafórico y connotativo.",
                     { "br": 2 },
-                    "La lectura de textos literarios implica descifrar su significado y, al mismo tiempo, hacer una interpretación desde nuestra cosmovisión, motivada por las proyecciones e identificaciones que despierte en el lector. Además, por medio de métodos específicos es posible hacer múltiples interpretaciones de ellos, a partir de factores socioculturales e históricos, entre otros."
+                    "La lectura de textos literarios implica descifrar su significado y, al mismo tiempo, hacer una ",
+                    {"term": "interpretación", "content": ["La hermenéutica es el arte de interpretar textos. Consiste en establecer un diálogo entre lector y texto para comprender con precisión y profundidad su sentido, involucrando múltiples significados y diversos puntos de vista. Como todo arte, requiere práctica y ejercitación constante; en este sentido, la interpretación se cultiva a través del estudio y la lectura constante, llevando la comprensión lectora un paso más adelante."]},
+                    " desde nuestra ",
+                    {"term": "cosmovisión", "content": ["El término cosmovisión es una adaptación de la palabra alemana <em>weltanschauung</em> (welt = mundo, y anschauen = observar). Este término fue adoptado en las ciencias sociales, especialmente en la filosofía, y se refiere a la manera en que percibimos nuestra individualidad y rasgos culturales desde nuestro interior. Son las creencias a partir de la cuales se forma nuestra imagen del mundo y con la que interpretamos nuestra naturaleza. Todos tenemos una cosmovisión y tendemos a actuar de acuerdo a ella, es decir, nuestro comportamiento tanto individual como social se da y cambia en función de la cosmovisión."]},
+                    ", motivada por las proyecciones e identificaciones que despierte en el lector. Además, por medio de métodos específicos es posible hacer múltiples interpretaciones de ellos, a partir de factores socioculturales e históricos, entre otros."
                   ]
                 },
                 { "img": "img/im2.png" }
@@ -62,7 +77,16 @@
               "columnsResponsive": "1fr",
               "content": [
                 { "img": "img/im3.png" },
-                "La lectura literaria es, entonces, además de una práctica lingüística, una actividad directamente relacionada con los más puros aspectos humanos, las emociones, motivaciones y experiencias de la vida personal, un aprendizaje que se edifica y se conquista desde el momento en que el lector descubre y redescubre nuevos mundos, nuevos saberes, y los integra a su propia vida."
+                {
+                   "group": 1,
+                   "class": "",
+                   "content":[
+                     "La ",
+                     {"term": "lectura literaria", "content": ["El lector literario es aquel que ha desarrollado un hábito lector voluntario de textos literarios, su motivación es el placer estético y tiene una gran capacidad selectiva, aunque es común que tenga un mayor gusto en particular por un género o subgénero."]},
+                     " es, entonces, además de una práctica lingüística, una actividad directamente relacionada con los más puros aspectos humanos, las emociones, motivaciones y experiencias de la vida personal, un aprendizaje que se edifica y se conquista desde el momento en que el lector descubre y redescubre nuevos mundos, nuevos saberes, y los integra a su propia vida."
+                       
+                   ]
+                }
               ]
             },
             { "br": 2 },
@@ -177,20 +201,24 @@
               ]
             },
             { "br": 1 },
-            "Los autores mencionados crearon lo que suele conocerse como “obra maestra”: La Ilíada, El Quijote, Hamlet, Los Miserables y Fausto son obras literarias producto de una destreza técnica y estética llevada a un punto culminante; obras que tratan con maestría los temas e inquietudes más profundas del ser humano; son textos que lograron ir más allá de lo usual, consiguiendo así la trascendencia en el espacio y el tiempo. A estas obras, junto con otras más, se les conoce como obras literarias universales, es decir, obras que representan la memoria cultural de la humanidad. Una manera popular de llamarlas es “clásicos”."
+            "Los autores mencionados crearon lo que suele conocerse como “obra maestra”: <em>La Ilíada, El Quijote, Hamlet, Los Miserables y Fausto</em> son obras literarias producto de una destreza técnica y estética llevada a un punto culminante; obras que tratan con maestría los temas e inquietudes más profundas del ser humano; son textos que lograron ir más allá de lo usual, consiguiendo así la trascendencia en el espacio y el tiempo. A estas obras, junto con otras más, se les conoce como ",
+            {"term": "obras literarias universales", "content": ["<strong>Clásicos de la literatura universal.</strong><br>1. Don Quijote de la Mancha (Miguel de Cervantes Saavedra).<br>2. Hamlet (William Shakespeare).<br>3. Los Miserables (Víctor Hugo).<br>4. Crimen y castigo (Fiodor Dostoievsky).<br>5. Fausto (Goethe).<br>6. La Divina Comedia (Dante Alighieri).<br>7. Moby Dick (Herman Melville).<br>8. Cien años de soledad (Gabriel García Márquez).<br>9. Ulises (James Joyce).<br>10. En busca del tiempo perdido (Marcel Proust)"]},
+            ", es decir, obras que representan la memoria cultural de la humanidad. Una manera popular de llamarlas es “clásicos”."
           ]
         }
-      ]
+       ]
     },
     {
-      "title": "Marcas de literariedad",
-      "icon": "account_tree",
-      "steps": false,
+      "title": "Actividad 1. Marcas de literariedad",
+      "icon": "games",
+      "steps": true,
       "class": "flex flex-col justify-center",
       "blocks": [
         {
           "width": "100%",
           "content": [
+            {"inst": "Haz clic en los botones para descubrir el esquema de las marcas de literariedad.", "iconinst":"touch_app"},
+            {"br": 2},
             {
               "diagram": 1,
               "mode": "horizontal",
@@ -279,16 +307,9 @@
                 ]
               ]
             }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Actividad I",
-      "icon": "games",
-      "steps": true,
-      "class": "flex flex-col justify-center",
-      "blocks": [
+          ],
+          "buttonNextStep": "Siguiente"
+        },
         {
           "width": "100%",
           "content": [
@@ -317,12 +338,12 @@
                 { "br": 1 },
                 {
                   "class": "text-xs text-right",
-                  "text": "Yourcenar, Marguerite. (1998). Memorias de Adriano. Barcelona: Salvat."
+                  "text": "Yourcenar, Marguerite. (1998). <em>Memorias de Adriano</em>. Barcelona: Salvat."
                 }
               ]
             }
-          ],
-          "buttonNextStep": "Continuar"
+          ]
+          
         },
         {
           "width": "100%",
@@ -423,7 +444,7 @@
       ]
     },
     {
-      "title": "Autor universal",
+      "title": "¿Por qué un autor es universal?",
       "icon": "article",
       "steps": true,
       "class": "flex flex-col justify-center",
@@ -440,7 +461,7 @@
             { "br": 2 },
             {
               "class": "",
-              "text": "La grandeza o universalidad de un autor no responden a criterios cuantitativos, no importa, por ejemplo, el número de ejemplares vendidos pues existen autores cuyo éxito ha sido efímero a pesar de ser creadores de obras que lograron ventas millonarias. En cambio, casos como el de Jane Austen, que no encontró una editorial que publicara Orgullo y prejuicio hasta dieciséis años después de escribirla; o el de Daniel Defoe, quien vendió el original de Robinson Crusoe en apenas 110 libras."
+              "text": "La grandeza o universalidad de un autor no responden a criterios cuantitativos, no importa, por ejemplo, el número de ejemplares vendidos pues existen autores cuyo éxito ha sido efímero a pesar de ser creadores de obras que lograron ventas millonarias. En cambio, casos como el de Jane Austen, que no encontró una editorial que publicara <em>Orgullo y prejuicio</em> hasta dieciséis años después de escribirla; o el de Daniel Defoe, quien vendió el original de Robinson Crusoe en apenas 110 libras."
             },
             { "br": 1 },
             {
@@ -457,7 +478,7 @@
             },
             {
               "class": "text-xs text-right",
-              "text": "Fuente: Azuar, R. (s. f.) Por qué un autor es universal. Biblioteca Virtual Miguel de Cervantes. <br>Recuperado de: https://bit.ly/3oxTiUu (Consulta: 8 de diciembre de 2021)."
+              "text": "Fuente: Azuar, R. (s. f.) Por qué un autor es universal. <em>Biblioteca Virtual Miguel de Cervantes.</em> <br>Recuperado de: https://bit.ly/3oxTiUu (Consulta: 8 de diciembre de 2021)."
             }
           ],
           "buttonNextScreen": "Siguiente"
@@ -465,7 +486,7 @@
       ]
     },
     {
-      "title": "Actividad II",
+      "title": "Actividad 2. Obras literarias universales",
       "icon": "games",
       "steps": true,
       "class": "flex flex-col justify-center",
